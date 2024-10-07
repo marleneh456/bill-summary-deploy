@@ -407,6 +407,9 @@ nav ul li a:hover {
 /* Mobile-specific styles */
 @media (max-width: 768px) {
   /* Ensure form and contact info stack vertically */
+  .contact-page {
+    margin: 0; /* Adjust margin to fit mobile screen */
+  }
   .contact-form-container {
     flex-direction: column; /* Stack form and info */
     padding: 70px; /* Reduce padding for mobile */
@@ -415,90 +418,29 @@ nav ul li a:hover {
   .contact-page h1 {
     font-size: 28px; /* Smaller font size for mobile */
   }
-
-  .contact-page p {
-    font-size: 12px; /* Smaller paragraph text */
+  
+  .contact-info h3 {
+    font-size: 18px; /* Adjust the font size for headers */
   }
-
-  .contact-form {
-    //width: 100%; /* Make form full width */
+  .contact-page p {
+    font-size: 14px; /* Smaller paragraph text */
   }
 
   .contact-info {
     margin-top: 20px; /* Add space between form and contact info */
-    //width: 190%; /* Make contact info full width */
     text-align: center; /* Center align the contact info on mobile */
   }
 
   .contact-info p {
     font-size: 13px; /* Smaller contact info text */
+	padding: 30px 0; /* Add padding for better spacing */
   }
 
   /* Adjust button size for mobile */
   .contact-form button {
     padding: 10px 20px;
     font-size: 16px; /* Larger button text for better touch targets */
-  }
-}
-/* General Mobile Styles */
-@media (max-width: 768px) {
-  /* Adjust the padding and layout of the contact page */
-  .contact-page {
-    //padding: 10px; /* Reduce padding */
-    //box-shadow: none; /* Remove shadow on mobile for simplicity */
-    margin: 0; /* Adjust margin to fit mobile screen */
-  }
-
-  .contact-page h1 {
-    //font-size: 40px; /* Smaller font for title on mobile */
-    //margin-bottom: 10px; /* Reduce margin below title */
-  }
-
-  /* Adjust form container layout */
-  .contact-form-container {
-    //flex-direction: column; /* Stack form and contact info vertically */
-    //align-items: center; /* Center align the items */
-  }
-
-  .contact-form {
-    //width: 100%; /* Full width for form */
-    //margin-bottom: 20px; /* Add margin below form */
-  }
-
-  /* Adjust the width of input fields and button */
-  .contact-form input,
-  .contact-form textarea {
-    //width: 90%; /* Make input fields responsive */
-    //margin: 5px 0; /* Add small margins */
-  }
-
-  .contact-form button {
-	//margin-top: 50px;  
-    width: 100%; /* Full width button */
-  }
-
-  /* Adjust the contact information section */
-  .contact-info {
-    //width: 100%; /* Full width for the contact info */
-    //text-align: center; /* Center the text */
-    padding: 30px 0; /* Add padding for better spacing */
-  }
-
-  .contact-info h3 {
-    font-size: 18px; /* Adjust the font size for headers */
-    //margin-bottom: 5px; /* Reduce margin below headers */
-  }
-
-  .contact-info p {
-    font-size: 14px; /* Adjust the font size for paragraphs */
-    //margin-bottom: 10px; /* Reduce margin between lines */
-    //display: block; /* Ensure each item is on its own line */
-  }
-
-  /* Ensure phone number and email are visible */
-  .contact-info p {
-    //visibility: visible; /* Ensure visibility */
-    //display: block; /* Stack the information */
+	width: 100%; /* Full width button */
   }
 }
 /* About Page */
