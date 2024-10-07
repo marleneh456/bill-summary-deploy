@@ -13,7 +13,7 @@ function Footer() {
         {/* Footer Logo and Copyright Section */}
         <div className="footer-logo">
           {/* Company logo and copyright text */}
-          <img src="/images/logo.png" alt="Company Logo" />
+          <img src="./images/logo.png" alt="Company Logo" />
           <p>© 2024 Bill Summary. All Rights Reserved.</p>
         </div>
 
