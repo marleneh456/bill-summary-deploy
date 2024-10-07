@@ -31,17 +31,17 @@ function AboutPage() {
             <p>AI for Summarization</p>
           </div>
           <div className="tech-card">
-            <img src="./images/react.png" alt="React" className="tech-icon" />
+            <img src="./images/react.png" alt="React" className="tech-icon"/>
             <h4>React</h4>
             <p>Frontend Development</p>
           </div>
           <div className="tech-card">
-            <img src="./images/flask.jpg" alt="Flask" className="tech-icon" />
+            <img src="./images/flask.jpg" alt="Flask" className="tech-icon"/>
             <h4>Flask</h4>
             <p>Backend Development</p>
           </div>
           <div className="tech-card">
-            <img src="./images/api.png" alt="REST API" className="tech-icon" />
+            <img src="./images/api.png" alt="REST API" className="tech-icon"/>
             <h4>REST API</h4>
             <p>Web-based API</p>
           </div>
