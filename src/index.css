@@ -414,7 +414,7 @@ nav ul li a:hover {
   .contact-form-container {
     flex-direction: column; /* Stack form and info */
     padding: 70px; /* Reduce padding for mobile */
-	width: 600px;
+	//width: 600px;
 	margin-bottom: 150px;
   }
 
