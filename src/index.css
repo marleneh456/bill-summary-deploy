@@ -116,7 +116,7 @@ nav ul li a:hover {
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .navbar {
     flex-direction: row; /* Align items in a row */
 	flex-direction: column; /* Stack items vertically */
@@ -241,7 +241,7 @@ nav ul li a:hover {
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .upload-container {
     margin-bottom: 150px; /* Reduced padding */
 	width: 300px; /* Fixed width for upload container */
@@ -406,7 +406,7 @@ nav ul li a:hover {
 }
 
 /* Mobile-specific styles */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   /* Ensure form and contact info stack vertically */
   .contact-page {
     margin: 0; /* Adjust margin to fit mobile screen */
@@ -414,6 +414,8 @@ nav ul li a:hover {
   .contact-form-container {
     flex-direction: column; /* Stack form and info */
     padding: 70px; /* Reduce padding for mobile */
+	width: 600px;
+	margin-bottom: 150px;
   }
 
   .contact-info p {
@@ -425,6 +427,7 @@ nav ul li a:hover {
     padding: 10px 20px;
     font-size: 16px; /* Larger button text for better touch targets */
 	width: 100%; /* Full width button */
+	margin-top: 10px;
   }
 }
 /* About Page */
@@ -606,7 +609,7 @@ nav ul li a:hover {
 }
 
 /* Mobile-specific styles for About Page */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
   /* About the Project section */
   .about-description {
