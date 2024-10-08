@@ -130,7 +130,7 @@ nav ul li a:hover {
   .nav-links.open {
     display: flex;
 	margin-bottom: 15px;
-	margin-right: auto;
+	margin-right: 300px;
 	margin-top: 20px;
   }
 
@@ -240,6 +240,19 @@ nav ul li a:hover {
   transform: translateY(-3px); /* Lift effect on hover */
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .upload-container {
+    margin-bottom: 150px; /* Reduced padding */
+	width: 300px; /* Fixed width for upload container */
+  }
+
+  .upload-dropzone {
+    padding: 20px; /* Reduced padding */
+  }
+}
+
+
 /* Footer Styles */
 .footer {
   background-color: #082c6c; /* Footer background color */
@@ -298,18 +311,6 @@ nav ul li a:hover {
 .footer-social a:hover {
   color: #ffde59; /* Change color on hover */
   transform: translateY(-2px); /* Lift effect on hover */
-}
-
-/* Responsive adjustments */
-@media (max-width: 600px) {
-  .upload-container {
-    width: 90%; /* Full width on small screens */
-    padding: 10px; /* Reduced padding */
-  }
-
-  .upload-dropzone {
-    padding: 20px; /* Reduced padding */
-  }
 }
 
 /* Contact Page General Styles */
@@ -415,25 +416,8 @@ nav ul li a:hover {
     padding: 70px; /* Reduce padding for mobile */
   }
 
-  .contact-page h1 {
-    font-size: 28px; /* Smaller font size for mobile */
-  }
-  
-  .contact-info h3 {
-    font-size: 18px; /* Adjust the font size for headers */
-  }
-  .contact-page p {
-    font-size: 14px; /* Smaller paragraph text */
-  }
-
-  .contact-info {
-    margin-top: 20px; /* Add space between form and contact info */
-    text-align: center; /* Center align the contact info on mobile */
-  }
-
   .contact-info p {
-    font-size: 13px; /* Smaller contact info text */
-	padding: 30px 0; /* Add padding for better spacing */
+	margin-bottom: 38px; /* Add padding for better spacing */
   }
 
   /* Adjust button size for mobile */
