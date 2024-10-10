@@ -173,7 +173,7 @@ nav ul li a:hover {
   border: 2px dashed #082c6c; /* Dashed border for dropzone */
   border-radius: 12px; /* Rounded corners */
   background-color: #f9fafb; /* Light background */
-  padding: 50px; /* Padding for dropzone */
+  padding: 25px; /* Padding for dropzone */
   position: relative; /* For positioning child elements */
   cursor: pointer; /* Pointer cursor on hover */
   transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
@@ -221,8 +221,9 @@ nav ul li a:hover {
   color: #ff4a4a; /* Change color on hover */
 }
 
+/* Buttons */
 .upload-btn {
-  margin-top: 15px; /* Margin above button */
+  margin: 15px 10px; /* Add space between buttons */
   padding: 10px 20px; /* Padding for button */
   background-color: #082c6c; /* Button background color */
   color: white; /* Text color */
@@ -238,6 +239,14 @@ nav ul li a:hover {
 .upload-btn:hover {
   background-color: #061d48; /* Change background on hover */
   transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Button Container */
+.upload-btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
 }
 
 /* Responsive adjustments */
@@ -654,13 +663,12 @@ nav ul li a:hover {
 }
 
 
-/* Container for the loading spinner and text */
+/* Loading Spinner */
 .loading-spinner {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack the spinner and text vertically */
-    align-items: center; /* Center the spinner and text horizontally */
-    justify-content: center; /* Center the spinner and text vertically */
-    height: 100vh; /* Full viewport height, so the spinner is vertically centered */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
 }
 
 /* Styles for the spinning circle */
@@ -689,4 +697,86 @@ nav ul li a:hover {
     font-size: 1rem; /* Set the font size of the loading text */
     color: #333; /* Dark grey text color */
     margin-top: 10px; /* Add space above the text */
+}
+
+/* Typewriting animation for the summary text */
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Blinking Cursor */
+.blinking-cursor {
+  background-color: black;
+  animation: blink 1s steps(2) infinite;
+  vertical-align: middle; /* Aligns cursor in the middle of the text */
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Summary Box */
+.animated-summary pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  text-align: left;
+  max-width: 90%;
+  height: 300px; /* Increased height to make the box larger */
+  //width: 1000px;
+  overflow-y: scroll; /* Enable vertical scrolling */
+  //overflow-x: hidden; /* Hide horizontal scroll */
+}
+
+/* Summary Box */
+.summary-box {
+  margin-top: 20px;
+  text-align: center;
+  position: relative; /* Ensures that elements inside don't get overlapped */
+  //margin-bottom: 80px;
+}
+
+.animated-summary {
+  padding-bottom: 50px; /* Extra padding to ensure space for buttons */
+}
+
+/* Popup styles */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 600px;
+  position: relative;
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
 }

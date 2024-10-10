@@ -20,7 +20,7 @@ function Navbar() {
     <header className="navbar">
       {/* Logo and Title Section */}
       <div className="logo-container">
-        <img src="./images/logo.png" alt="Company Logo" className="logo" />
+        <img src="./images/logo.png" alt="Company Logo" className="logo" onClick={() => window.location.href = '/'} />
         <h2 className="bill-summary">What's in the Bill?</h2>
       </div>
 
