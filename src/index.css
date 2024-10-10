@@ -663,13 +663,13 @@ nav ul li a:hover {
 }
 
 
-/* Container for the loading spinner and text */
+/* Loading spinner box */
 .loading-spinner {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack the spinner and text vertically */
-    align-items: center; /* Center the spinner and text horizontally */
-    justify-content: center; /* Center the spinner and text vertically */
-    height: 100vh; /* Full viewport height, so the spinner is vertically centered */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px; /* Adjusted height for spinner box */
 }
 
 /* Styles for the spinning circle */
@@ -695,9 +695,11 @@ nav ul li a:hover {
 
 /* Styles for the loading text below the spinner */
 .loading-spinner p {
-    font-size: 1rem; /* Set the font size of the loading text */
-    color: #333; /* Dark grey text color */
-    margin-top: 3px; /* Add space above the text */
+  font-size: 1rem;
+  color: #333;
+  margin-top: 3px;
+  text-align: center;
+  padding: 0 20px; /* Add padding to text to ensure it's not too close to edges */
 }
 
 /* Typewriting animation for the summary text */
@@ -768,8 +770,10 @@ nav ul li a:hover {
   background: white;
   padding: 20px;
   border-radius: 10px;
-  width: 600px;
+  width: 680px; /* Adjusted width to be smaller */
+  max-width: 90%; /* Ensures it scales on smaller screens */
   position: relative;
+  box-sizing: border-box; /* Ensures padding is included in total width */
 }
 
 .close-popup {
