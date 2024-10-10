@@ -663,12 +663,13 @@ nav ul li a:hover {
 }
 
 
-/* Loading Spinner */
+/* Container for the loading spinner and text */
 .loading-spinner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack the spinner and text vertically */
+    align-items: center; /* Center the spinner and text horizontally */
+    justify-content: center; /* Center the spinner and text vertically */
+    height: 100vh; /* Full viewport height, so the spinner is vertically centered */
 }
 
 /* Styles for the spinning circle */
@@ -696,7 +697,7 @@ nav ul li a:hover {
 .loading-spinner p {
     font-size: 1rem; /* Set the font size of the loading text */
     color: #333; /* Dark grey text color */
-    margin-top: 10px; /* Add space above the text */
+    margin-top: 3px; /* Add space above the text */
 }
 
 /* Typewriting animation for the summary text */
