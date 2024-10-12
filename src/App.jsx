@@ -154,9 +154,9 @@ function App() {
               <div>
                 {/* Step 1: Welcome statement */}
                 <div className="welcome-section">
-                  <h1  className="welcome-statement">Meet the AI that explains what the govt is actually doing</h1>
+                  <h1>Meet the AI that explains what the govt is actually doing</h1>
                   <p>Our AI directly summarizes official US govt bills to inform you, instead of confusing you.</p>
-                  <button className="try-it-btn" onClick={togglePopup} className="upload-btn">
+                  <button className="try-it-btn" onClick={togglePopup}>
                     Try It Yourself!
                   </button>
                 </div>
