@@ -12,145 +12,164 @@ main {
 
 /* General Navbar Styles */
 .navbar {
-  display: flex; /* Use flexbox for navigation layout */
-  justify-content: space-between; /* Space between logo and nav items */
-  align-items: center; /* Center items vertically */
-  padding: 5px 5px; /* Padding around the navbar */
-  background-color: #1a3d6c; /* Navbar background color */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-  position: relative; /* Position relative for absolute elements inside */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: #1a3d6c;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .logo-container {
-  display: flex; /* Flexbox for logo and title alignment */
-  align-items: center; /* Center items vertically */
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-  width: 50px; /* Fixed width for logo */
-  height: auto; /* Maintain aspect ratio */
-  margin-right: 10px; /* Space between logo and title */
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
 }
 
 .bill-summary {
-  color: white; /* Text color for the title */
-  font-size: 24px; /* Font size for the title */
-  font-weight: bold; /* Bold text */
-}
-
-nav ul {
-  list-style: none; /* Remove bullet points */
-  display: flex; /* Horizontal list */
-  gap: 15px; /* Space between list items */
-  margin: 0; /* Reset margin */
-  padding: 0; /* Reset padding */
-}
-
-nav ul li {
-  padding: 8px; /* Padding for list items */
-}
-
-nav ul li a {
-  color: white; /* Text color for links */
-  background-color: #4a5c79; /* Background color for links */
-  padding: 8px 15px; /* Padding for links */
-  border-radius: 15px; /* Rounded corners */
-  text-decoration: none; /* Remove underline */
-  font-size: 14px; /* Font size for links */
-  transition: background-color 0.3s ease; /* Smooth background change */
-}
-
-nav ul li a:hover {
-  background-color: #3d4e66; /* Change background on hover */
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Shadow on hover */
-}
-
-/* Mobile Menu Button */
-.mobile-menu-button {
-  display: none;
-  background-color: #4a5c79;
   color: white;
-  border: none;
-  font-size: 14px;
-  cursor: pointer;
-  border-radius: 15px;
-  padding: 8px 15px;
-  position: absolute; /* Make it absolute */
-  margin-right: 300px; /* Position it on the right side */
-  margin-top: 10px; /* Slightly down from the top */
+  font-size: 24px;
+  font-weight: bold;
 }
 
-/* Animation for mobile menu */
-@keyframes slideDown {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+/* Desktop Navigation */
+.desktop-nav-links {
+  display: flex;
+  margin-left: auto;
 }
 
-@keyframes slideUp {
-  from {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  to {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
+.desktop-nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
 }
 
-/* Mobile Menu Toggle */
-.nav-links.open {
-  display: block;
-  align-items: center; /* Center items vertically */
-  animation: slideDown 0.3s ease-in-out; /* Slide down effect when opened */
+.desktop-nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #4a5c79;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
 }
 
-.nav-links.close {
-  display: none;
-  animation: slideUp 0.3s ease-in-out; /* Slide up effect when closed */
+.desktop-nav-links ul li a:hover {
+  background-color: #3d4e66;
 }
 
-/* Responsive Styles */
-@media (max-width: 1000px) {
-  .navbar {
-    flex-direction: row; /* Align items in a row */
-	flex-direction: column; /* Stack items vertically */
+/* Mobile-specific styles */
+@media (max-width: 1024px) {
+  /* Hide desktop nav-links on mobile */
+  .desktop-nav-links {
+    display: none;
   }
 
+  /* Show mobile menu button */
+  .mobile-menu-button {
+    display: block; /* Ensure the button is visible on mobile */
+    background-color: #4a5c79;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 8px 15px;
+    z-index: 10;
+    position: absolute; /* Ensure the button is positioned correctly */
+    right: 10px; /* Align it to the right */
+    top: 10px;  /* Align it to the top */
+  }
+
+  /* Sliding Mobile Menu */
   .nav-links {
     display: none;
-    flex-direction: column; /* Make links vertical */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #1a3d6c;
+    z-index: 9;
+    flex-direction: row; /* Change from column to row */
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
   }
 
   .nav-links.open {
     display: flex;
-	margin-bottom: 15px;
-	margin-right: 300px;
-	margin-top: 20px;
+    animation: slideIn 0.1s forwards;
   }
 
-  .mobile-menu-button {
-    display: flex; 
-  }
-  
-  .bill-summary {
-	font-size: 20px; /* Font size for the title */
+  .nav-links.close {
+    animation: slideOut 0.1s forwards;
   }
 
-  .logo {
-    margin-left: 30px; /* Space between logo and title */
+   /* Mobile Links Horizontal */
+  .nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Make the list horizontal */
+    gap: 20px; /* Space between each link */
   }
 
-  nav ul {
-   flex-direction: column; 
-   gap: 2; 
+  .nav-links ul li {
+    margin: 20px 0;
+  }
+
+  .nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: #4a5c79;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+  }
+
+  .nav-links ul li a:hover {
+    background-color: #3d4e66;
+  }
+
+  /* Slide in and out animations */
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
   }
 }
+
+/* Hide mobile menu button on larger screens */
+@media (min-width: 1025px) {
+  .mobile-menu-button {
+    display: none;
+  }
+}
+
+
+
+
 
 
 /* Upload Container */
@@ -250,7 +269,7 @@ nav ul li a:hover {
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .upload-container {
     margin-bottom: 150px; /* Reduced padding */
 	width: 300px; /* Fixed width for upload container */
@@ -415,14 +434,14 @@ nav ul li a:hover {
 }
 
 /* Mobile-specific styles */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   /* Ensure form and contact info stack vertically */
   .contact-page {
     margin: 0; /* Adjust margin to fit mobile screen */
   }
   .contact-form-container {
     flex-direction: column; /* Stack form and info */
-    padding: 70px; /* Reduce padding for mobile */
+    padding: 50px; /* Reduce padding for mobile */
 	//width: 600px;
 	margin-bottom: 150px;
   }
@@ -618,7 +637,7 @@ nav ul li a:hover {
 }
 
 /* Mobile-specific styles for About Page */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
   /* About the Project section */
   .about-description {

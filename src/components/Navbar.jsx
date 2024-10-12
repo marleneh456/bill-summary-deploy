@@ -1,51 +1,83 @@
-/* 
-  The Navbar component provides a navigation bar for the application. 
-  It includes the company logo and title, along with links to different pages: Home, About, and Contact. 
-  The Link component from react-router-dom is used to enable client-side routing, allowing users to navigate 
-  without refreshing the entire page.
-*/
-
-import React, { useState } from "react";
-import { Link } from "react-router-dom"; // Importing Link for navigation between pages
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // State for mobile menu toggle
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
-  // Toggle menu visibility for mobile
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1024);
+    };
+    window.addEventListener("resize", handleResize);
+
+    handleResize(); // Check screen size when component mounts
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
     <header className="navbar">
-      {/* Logo and Title Section */}
       <div className="logo-container">
-        <img src="./images/logo.png" alt="Company Logo" className="logo" onClick={() => window.location.href = '/'} />
+        <img
+          src="./images/logo.png"
+          alt="Company Logo"
+          className="logo"
+          onClick={() => (window.location.href = "/")}
+        />
         <h2 className="bill-summary">What's in the Bill?</h2>
       </div>
 
-      {/* Mobile menu button */}
-      <button className="mobile-menu-button" onClick={toggleMenu}>
-        &#9776; {/* This represents a hamburger icon */}
-      </button>
+      {/* Show Desktop Navigation on large screens */}
+      {!isMobile && (
+        <nav className="desktop-nav-links">
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+          </ul>
+        </nav>
+      )}
 
-      {/* Navigation Menu */}
-      <nav className={`nav-links ${isMenuOpen ? "open" : " "}`}>
-        <ul>
-          <li>
-            <Link to="/" onClick={toggleMenu}>Home</Link>
-          </li>
-          <li>
-            <Link to="/about" onClick={toggleMenu}>About</Link>
-          </li>
-          <li>
-            <Link to="/contact" onClick={toggleMenu}>Contact</Link>
-          </li>
-        </ul>
-      </nav>
+      {/* Show Mobile Menu Button and Links on small screens */}
+      {isMobile && (
+        <>
+          <button className="mobile-menu-button" onClick={toggleMenu}>
+            {isMenuOpen ? <span>&times;</span> : <span>&#9776;</span>}
+          </button>
+          <nav className={`nav-links ${isMenuOpen ? "open" : "close"}`}>
+            <ul>
+              <li>
+                <Link to="/" onClick={toggleMenu}>
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/about" onClick={toggleMenu}>
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" onClick={toggleMenu}>
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </>
+      )}
     </header>
   );
 }
 
 export default Navbar;
-
