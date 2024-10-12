@@ -1,6 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 function AboutPage() {
+  const [showTopBtn, setShowTopBtn] = useState(false);
+
+  // Show the button when scrolling down
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.pageYOffset > 300) {
+        setShowTopBtn(true);
+      } else {
+        setShowTopBtn(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // Scroll to top function
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="about-page">
       {/* About Section */}
@@ -21,6 +47,7 @@ function AboutPage() {
       <section className="technologies">
         <h2>Technologies Used</h2>
         <div className="tech-grid">
+          {/* Technology cards */}
           <div className="tech-card">
             <img
               src="./images/ai.png"
@@ -31,7 +58,7 @@ function AboutPage() {
             <p>AI for Summarization</p>
           </div>
           <div className="tech-card">
-            <img src="./images/react.png" alt="React" className="tech-icon"/>
+            <img src="./images/react.png" alt="React" className="tech-icon" />
             <h4>React</h4>
             <p>Frontend Development</p>
           </div>
@@ -52,22 +79,17 @@ function AboutPage() {
       <section className="meet-the-team">
         <h1>Meet the Team</h1>
         <div className="team-columns">
-          {/* AI Team */}
+          {/* Team sections */}
           <div className="team-section">
-            <h3> AI Team</h3>
-            {/* First row - Mentor */}
+            <h3>AI Team</h3>
             <div className="team-row mentor">
               <div className="team-member large">
-                <img
-                  src="./images/taylor.jpg"
-                  alt="Taylor"
-                  className="team-photo"
-                />
+                <img src="./images/taylor.jpg" alt="Taylor" className="team-photo" />
                 <h4>Taylor</h4>
                 <p>Team Mentor - AI Model</p>
               </div>
             </div>
-            {/* Second row - Two members */}
+          {/* Second row - Two members */}
             <div className="team-row">
               <div className="team-member">
                 <img
@@ -179,6 +201,13 @@ function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* Go to Top Button */}
+      {showTopBtn && (
+        <button className="go-top-btn" onClick={scrollToTop}>
+          ↑
+        </button>
+      )}
     </div>
   );
 }

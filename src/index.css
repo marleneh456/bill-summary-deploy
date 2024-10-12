@@ -10,6 +10,35 @@ main {
   flex-grow: 1; /* Allow main content to expand and push the footer down */
 }
 
+/* Welcome Section Styling */
+.welcome-section {
+  text-align: center;
+  padding: 50px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.try-it-btn {
+  padding: 10px 20px;
+  background-color: #4a5c79;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.try-it-btn:hover {
+  background-color: #061d48;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 1024px) {
+  .welcome-section {
+  margin-bottom: 80px;
+}
+
+}
+
 /* General Navbar Styles */
 .navbar {
   display: flex;
@@ -167,11 +196,6 @@ main {
   }
 }
 
-
-
-
-
-
 /* Upload Container */
 .upload-container {
   text-align: center; /* Center text */
@@ -268,17 +292,35 @@ main {
   margin-top: 20px;
 }
 
-/* Responsive adjustments */
+/* Mobile adjustments */
 @media (max-width: 1024px) {
-  .upload-container {
-    margin-bottom: 150px; /* Reduced padding */
-	width: 300px; /* Fixed width for upload container */
+  /* Popup Content for mobile */
+  .popup-content {
+	font-size: 10px;
+	max-width: 90%; /* Ensures it scales on smaller screens */
   }
 
-  .upload-dropzone {
-    padding: 20px; /* Reduced padding */
+  /* Upload Container inside the popup */
+  .upload-container {
+    width: 75%; /* Make the upload box fit within the mobile screen */
+    padding: 5px; /* Adjust padding for mobile */
+    margin: 20px auto; /* Center the upload container */
+	margin-bottom: 5px;
   }
+   /* Text adjustments */
+  .upload-dropzone p {
+    font-size: 14px; /* Slightly smaller text for mobile */
+  }
+  .upload-dropzone {
+    padding: 15px; /* Reduce padding in mobile view */
+  }
+  
+  .upload-btn{
+	font-size: 12px;
+  }
+  
 }
+
 
 
 /* Footer Styles */
@@ -636,6 +678,27 @@ main {
   padding-bottom: 100px; /* Adjust this value to increase/decrease space between content and footer */
 }
 
+/* Go to Top Button Styles */
+.go-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4a5c79;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow */
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.go-top-btn:hover {
+  background-color: #061d48; /* Darker on hover */
+}
+
 /* Mobile-specific styles for About Page */
 @media (max-width: 1024px) {
 
@@ -678,6 +741,12 @@ main {
   .tech-grid {
     flex-direction: column; /* Stack technologies vertically */
     align-items: center; /* Center-align the cards */
+  }
+  
+  .go-top-btn {
+    bottom: 15px;
+    right: 15px;
+    font-size: 20px;
   }
 }
 
@@ -764,7 +833,6 @@ main {
   margin-top: 20px;
   text-align: center;
   position: relative; /* Ensures that elements inside don't get overlapped */
-  //margin-bottom: 80px;
 }
 
 .animated-summary {
@@ -803,4 +871,27 @@ main {
   border: none;
   font-size: 24px;
   cursor: pointer;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 1024px) {
+  /* Summary Box adjustments for mobile */
+  .animated-summary pre {
+    //max-width: 80%; /* Ensure the summary box uses full screen width */
+    height: 80px; /* Adjusted height for mobile */
+    padding: 20px; /* Reduced padding for mobile */
+    margin: 10px auto; /* Adjust margin for mobile */
+    overflow-y: auto; /* Ensure scrolling works on smaller screens */
+  }
+
+  /* Adjustments for buttons inside summary box */
+  .summary-box {
+    margin-top: 80px;
+  }
+
+  /* Adjust close button for mobile */
+  .close-popup {
+	margin: 80px auto;
+	font-size: 18px;
+  }
 }
