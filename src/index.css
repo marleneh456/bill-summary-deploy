@@ -328,38 +328,59 @@ main {
   border: none;
   font-size: 24px;
   cursor: pointer;
+  color: #000000;
 }
 
-/* Mobile adjustments */
-
-/* 
-@media (max-width: 1024px) {
-
+/* Mobile adjustments for portrait and landscape */
+@media (max-width: 1024px) and (orientation: portrait) {
   .popup-content {
-	font-size: 10px;
-	max-width: 90%; 
+    max-width: 90%;
   }
 
   .upload-container {
-    width: 75%; 
-    padding: 5px; 
-    margin: 20px auto; 
-	margin-bottom: 5px;
+    width: 80%; /* Adjust to take most of the screen width */
+    padding: 20px; /* Reduce padding for smaller screens */
   }
-  
+
+  .upload-btn {
+    font-size: 14px;
+  }
+
   .upload-dropzone p {
-    font-size: 14px; 
+    font-size: 14px; /* Slightly reduce text size */
   }
-  .upload-dropzone {
-    padding: 15px; 
-  }
-  
-  .upload-btn{
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  .popup-content {
+    max-width: 700px; /* Keep this for reference */
+    max-height: 300px; /* Adjust the height for landscape mode */
 	font-size: 12px;
   }
+
+  /* Adjust the upload container size specifically for landscape mode */
+  .upload-container { 
+    max-width: 400px; /* Set a maximum width so it doesn't stretch too much */
+    padding: 1px; /* Adjust padding for landscape */
+    margin: 1px auto; /* Center the container */
+	font-size: 10px;
+  }
+
+  .upload-btn {
+    font-size: 12px; /* Reduce button text size */
+  }
   
+  .upload-dropzone{
+    width: 280px;
+	margin-left: 40px;
+  }
+
+  .upload-dropzone p {
+    font-size: 12px; /* Reduce the font size inside the dropzone */
+  }
 }
-*/
+
+
 
 /* Loading spinner box */
 .loading-spinner {
@@ -389,6 +410,17 @@ main {
   text-align: center;
   padding: 0 20px; /* Add padding to text to ensure it's not too close to edges */
 }
+
+@media (max-width: 1024px) and (orientation: landscape) {
+	.loading-spinner p{
+	  font-size: 20px;
+	}
+	
+	.loading-spinner h3{
+		font-size: 18px;
+	}
+}
+	
 
 /* Keyframes to animate the spinner's rotation */
 @keyframes spin {
@@ -467,21 +499,18 @@ main {
 
 /* Mobile-specific adjustments */
 
-/*
-@media (max-width: 1024px) {
- 
-  .animated-summary pre {
-    height: 80px; 
-    padding: 20px; 
-    margin: 10px auto; 
-    overflow-y: auto; /
-  }
 
+@media (max-width: 1024px) {
   .summary-box {
-    margin-top: 80px;
-  }
+    margin-top: 20px;
+  }  
 }
-*/
+
+@media (max-width: 1024px) and (orientation: landscape){
+	.summary-box {
+    height: 80px;
+  }
+}   
 
 /* Footer Styles */
 .footer {
