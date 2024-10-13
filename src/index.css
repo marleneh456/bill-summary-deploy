@@ -353,7 +353,7 @@ main {
 
 @media (max-width: 1024px) and (orientation: landscape) {
   .popup-content {
-    max-width: 600px; /* Keep this for reference */
+    max-width: 900px; /* Keep this for reference */
     max-height: 300px; /* Adjust the height for landscape mode */
 	font-size: 12px;
   }
@@ -411,17 +411,6 @@ main {
   padding: 0 20px; /* Add padding to text to ensure it's not too close to edges */
 }
 
-@media (max-width: 1024px) {
-	.loading-spinner p{
-	  font-size: 20px;
-	}
-	
-	.loading-spinner h3{
-		font-size: 18px;
-	}
-}
-	
-
 /* Keyframes to animate the spinner's rotation */
 @keyframes spin {
     0% {
@@ -432,6 +421,25 @@ main {
     }
 }
 
+@media (max-width: 1024px) {
+  .loading-spinner p{
+	  font-size: 15px;
+	}
+	
+	.loading-spinner h3{
+		font-size: 12px;
+	}  
+}
+
+@media (max-width: 1024px) and (orientation: landscape){
+	.loading-spinner p{
+	  font-size: 12px;
+	}
+	
+	.loading-spinner h3{
+		font-size: 18px;
+	}
+} 
 
 /* Typewriting animation for the summary text */
 @keyframes typewriter {
