@@ -31,13 +31,16 @@ main {
   background-color: #061d48;
 }
 
+
 /* Mobile-specific styles */
+
 @media (max-width: 1024px) {
   .welcome-section {
   margin-bottom: 80px;
 }
 
 }
+
 
 /* General Navbar Styles */
 .navbar {
@@ -95,6 +98,7 @@ main {
 }
 
 /* Mobile-specific styles */
+
 @media (max-width: 1024px) {
   /* Hide desktop nav-links on mobile */
   .desktop-nav-links {
@@ -292,27 +296,62 @@ main {
   margin-top: 20px;
 }
 
+/* Popup styles */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 680px; /* Adjusted width to be smaller */
+  max-width: 90%; /* Ensures it scales on smaller screens */
+  position: relative;
+  box-sizing: border-box; /* Ensures padding is included in total width */
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 /* Mobile adjustments */
+
+/* 
 @media (max-width: 1024px) {
-  /* Popup Content for mobile */
+
   .popup-content {
 	font-size: 10px;
-	max-width: 90%; /* Ensures it scales on smaller screens */
+	max-width: 90%; 
   }
 
-  /* Upload Container inside the popup */
   .upload-container {
-    width: 75%; /* Make the upload box fit within the mobile screen */
-    padding: 5px; /* Adjust padding for mobile */
-    margin: 20px auto; /* Center the upload container */
+    width: 75%; 
+    padding: 5px; 
+    margin: 20px auto; 
 	margin-bottom: 5px;
   }
-   /* Text adjustments */
+  
   .upload-dropzone p {
-    font-size: 14px; /* Slightly smaller text for mobile */
+    font-size: 14px; 
   }
   .upload-dropzone {
-    padding: 15px; /* Reduce padding in mobile view */
+    padding: 15px; 
   }
   
   .upload-btn{
@@ -320,8 +359,129 @@ main {
   }
   
 }
+*/
+
+/* Loading spinner box */
+.loading-spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px; /* Adjusted height for spinner box */
+}
+
+/* Styles for the spinning circle */
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1); /* Light grey border */
+    border-left-color: #000080; /* Dark blue color for the left side of the spinner */
+    border-radius: 50%; /* Make the spinner round (a circle) */
+    width: 40px; /* Set the width of the spinner */
+    height: 40px; /* Set the height of the spinner */
+    animation: spin 1s linear infinite; /* Apply the spinning animation */
+    margin-bottom: 10px; /* Add space below the spinner */
+}
+
+/* Styles for the loading text below the spinner */
+.loading-spinner p {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 3px;
+  text-align: center;
+  padding: 0 20px; /* Add padding to text to ensure it's not too close to edges */
+}
+
+/* Keyframes to animate the spinner's rotation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg); /* Initial state: no rotation */
+    }
+    100% {
+        transform: rotate(360deg); /* Final state: full 360 degree rotation */
+    }
+}
 
 
+/* Typewriting animation for the summary text */
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Blinking Cursor */
+.blinking-cursor {
+  background-color: black;
+  animation: blink 1s steps(2) infinite;
+  vertical-align: middle; /* Aligns cursor in the middle of the text */
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Summary Box */
+.animated-summary pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  text-align: left;
+  max-width: 90%;
+  height: 300px; /* Increased height to make the box larger */
+  overflow-y: scroll; /* Enable vertical scrolling */
+}
+
+/* Summary Box */
+.summary-box {
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+  max-width: 90%; /* Ensure it scales on smaller screens */
+  height: 250px; /* Height for scrollable box */
+  overflow-y: auto; /* Enable vertical scrolling */
+  border: 1px solid #ccc; /* Border for the summary box */
+  padding: 10px; /* Padding inside the box */
+  background-color: #f9f9f9; /* Light background for readability */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Ensures words break correctly and don't overflow */
+.summary-box-pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; /* Break long words */
+  font-size: 14px;
+  text-align: left;
+  color: #333;
+}
+
+.animated-summary {
+  padding-bottom: 50px; /* Extra padding to ensure space for buttons */
+}
+
+/* Mobile-specific adjustments */
+
+/*
+@media (max-width: 1024px) {
+ 
+  .animated-summary pre {
+    height: 80px; 
+    padding: 20px; 
+    margin: 10px auto; 
+    overflow-y: auto; /
+  }
+
+  .summary-box {
+    margin-top: 80px;
+  }
+}
+*/
 
 /* Footer Styles */
 .footer {
@@ -747,168 +907,5 @@ main {
     bottom: 15px;
     right: 15px;
     font-size: 20px;
-  }
-}
-
-
-/* Loading spinner box */
-.loading-spinner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 250px; /* Adjusted height for spinner box */
-}
-
-/* Styles for the spinning circle */
-.spinner {
-    border: 4px solid rgba(0, 0, 0, 0.1); /* Light grey border */
-    border-left-color: #000080; /* Dark blue color for the left side of the spinner */
-    border-radius: 50%; /* Make the spinner round (a circle) */
-    width: 40px; /* Set the width of the spinner */
-    height: 40px; /* Set the height of the spinner */
-    animation: spin 1s linear infinite; /* Apply the spinning animation */
-    margin-bottom: 10px; /* Add space below the spinner */
-}
-
-/* Keyframes to animate the spinner's rotation */
-@keyframes spin {
-    0% {
-        transform: rotate(0deg); /* Initial state: no rotation */
-    }
-    100% {
-        transform: rotate(360deg); /* Final state: full 360 degree rotation */
-    }
-}
-
-/* Styles for the loading text below the spinner */
-.loading-spinner p {
-  font-size: 1rem;
-  color: #333;
-  margin-top: 3px;
-  text-align: center;
-  padding: 0 20px; /* Add padding to text to ensure it's not too close to edges */
-}
-
-/* Typewriting animation for the summary text */
-@keyframes typewriter {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-/* Blinking Cursor */
-.blinking-cursor {
-  background-color: black;
-  animation: blink 1s steps(2) infinite;
-  vertical-align: middle; /* Aligns cursor in the middle of the text */
-}
-
-@keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-/* Summary Box */
-.animated-summary pre {
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  margin: 20px auto;
-  padding: 15px;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  font-size: 14px;
-  text-align: left;
-  max-width: 90%;
-  height: 300px; /* Increased height to make the box larger */
-  //width: 1000px;
-  overflow-y: scroll; /* Enable vertical scrolling */
-  //overflow-x: hidden; /* Hide horizontal scroll */
-}
-
-/* Summary Box */
-.summary-box {
-  margin-top: 20px;
-  text-align: center;
-  position: relative;
-  max-width: 90%; /* Ensure it scales on smaller screens */
-  height: 250px; /* Height for scrollable box */
-  overflow-y: auto; /* Enable vertical scrolling */
-  border: 1px solid #ccc; /* Border for the summary box */
-  padding: 10px; /* Padding inside the box */
-  background-color: #f9f9f9; /* Light background for readability */
-  border-radius: 5px; /* Rounded corners */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
-}
-
-/* Ensures words break correctly and don't overflow */
-.summary-box-pre {
-  white-space: pre-wrap;
-  word-wrap: break-word; /* Break long words */
-  font-size: 14px;
-  text-align: left;
-  color: #333;
-}
-
-.animated-summary {
-  padding-bottom: 50px; /* Extra padding to ensure space for buttons */
-}
-
-/* Popup styles */
-.popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-}
-
-.popup-content {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  width: 680px; /* Adjusted width to be smaller */
-  max-width: 90%; /* Ensures it scales on smaller screens */
-  position: relative;
-  box-sizing: border-box; /* Ensures padding is included in total width */
-}
-
-.close-popup {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-/* Mobile-specific adjustments */
-@media (max-width: 1024px) {
-  /* Summary Box adjustments for mobile */
-  .animated-summary pre {
-    //max-width: 80%; /* Ensure the summary box uses full screen width */
-    height: 80px; /* Adjusted height for mobile */
-    padding: 20px; /* Reduced padding for mobile */
-    margin: 10px auto; /* Adjust margin for mobile */
-    overflow-y: auto; /* Ensure scrolling works on smaller screens */
-  }
-
-  /* Adjustments for buttons inside summary box */
-  .summary-box {
-    margin-top: 80px;
-  }
-
-  /* Adjust close button for mobile */
-  .close-popup {
-	margin: 80px auto;
-	font-size: 30px;
   }
 }
