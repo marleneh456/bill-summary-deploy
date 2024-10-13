@@ -353,7 +353,7 @@ main {
 
 @media (max-width: 1024px) and (orientation: landscape) {
   .popup-content {
-    max-width: 700px; /* Keep this for reference */
+    max-width: 600px; /* Keep this for reference */
     max-height: 300px; /* Adjust the height for landscape mode */
 	font-size: 12px;
   }
@@ -411,7 +411,7 @@ main {
   padding: 0 20px; /* Add padding to text to ensure it's not too close to edges */
 }
 
-@media (max-width: 1024px) and (orientation: landscape) {
+@media (max-width: 1024px) {
 	.loading-spinner p{
 	  font-size: 20px;
 	}
