@@ -1,58 +1,61 @@
-// App.jsx
+// Import necessary dependencies and components
+import React, { useState } from 'react'; // React and useState for managing state
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // React Router for page navigation
+import Navbar from './components/Navbar'; // Navigation bar component
+import Footer from './components/Footer'; // Footer component
+import ContactPage from './components/ContactPage'; // Contact page component
+import AboutPage from './components/AboutPage'; // About page component
+import UploadBoxPopup from './components/UploadBoxPopup'; // Component for the upload box modal
+import LoadingPopup from './components/LoadingPopup'; // Component for showing a loading popup
+import SummaryPopup from './components/SummaryPopup'; // Component to show the parsed summary
+import XMLParser from './components/XMLParser';  // XML parsing function for handling files
 
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import ContactPage from './components/ContactPage';
-import AboutPage from './components/AboutPage';
-import UploadBoxPopup from './components/UploadBoxPopup';
-import LoadingPopup from './components/LoadingPopup';
-import SummaryPopup from './components/SummaryPopup';
-import XMLParser from './components/XMLParser';  // For parsing XML and converting to .docx
-
+// Main functional component for the app
 function App() {
-  const [step, setStep] = useState(1); // Track current step
-  const [isLoading, setIsLoading] = useState(false); // Manage loading state
-  const [parsedText, setParsedText] = useState(''); // Store parsed XML text
-  const [isPopupOpen, setIsPopupOpen] = useState(false); // Manage modal popup state
+  // State management
+  const [step, setStep] = useState(1); // Track the current step in the process (welcome, upload, etc.)
+  const [isLoading, setIsLoading] = useState(false); // Show/hide loading spinner
+  const [parsedText, setParsedText] = useState(''); // Store the result of the parsed XML
+  const [isPopupOpen, setIsPopupOpen] = useState(false); // Manage whether the popup is open or closed
 
-  // Function to toggle the modal popup
+  // Function to toggle the modal popup open and go to step 2 (upload)
   const togglePopup = () => {
-    setIsPopupOpen(!isPopupOpen);
-    setStep(2); // Open upload step
+    setIsPopupOpen(!isPopupOpen); // Toggle the popup state
+    setStep(2); // Set step to 2 (show upload step)
   };
 
-  // Function to handle closing the popup
+  // Function to close the modal popup and return to step 1 (welcome)
   const closePopup = () => {
-    setIsPopupOpen(false);
-    setStep(1); // Go back to welcome step
+    setIsPopupOpen(false); // Close the popup
+    setStep(1); // Go back to the welcome step
   };
 
-  // Function to handle file upload and parsing
+  // Function to handle XML file upload and start parsing
   const handleGenerateSummary = (xmlFile) => {
-    setIsLoading(true); // Show loading spinner
+    setIsLoading(true); // Start showing the loading spinner
     setTimeout(() => {
-      XMLParser(xmlFile, setParsedText, setIsLoading, setStep); // Parse the XML file and update state
-    }, 3000); // Simulate 3-second loading
+      // Simulate loading time before parsing the file
+      XMLParser(xmlFile, setParsedText, setIsLoading, setStep); // Parse the XML file and update states
+    }, 3000); // 3-second delay for the spinner to simulate a loading experience
   };
 
-  // Function to reset and go back to the upload box (Step 2)
+  // Function to reset the process and start over (go back to upload step)
   const handleStartOver = () => {
-    setParsedText(''); // Clear the parsed text
-    setStep(2); // Go back to the upload box step
+    setParsedText(''); // Clear the parsed text state
+    setStep(2); // Go back to the upload step
   };
 
   return (
     <Router>
-      <Navbar />
+      <Navbar /> {/* Render the navigation bar */}
       <main style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Routes>
+          {/* Define route for home page */}
           <Route
             path="/"
             element={
               <div>
-                {/* Step 1: Welcome statement */}
+                {/* Step 1: Welcome section */}
                 <div className="welcome-section">
                   <h1>Meet the AI that explains what the govt is actually doing</h1>
                   <p>Our AI directly summarizes official US govt bills to inform you, instead of confusing you.</p>
@@ -61,27 +64,30 @@ function App() {
                   </button>
                 </div>
 
-                {/* Render popups conditionally based on step */}
+                {/* Conditionally render different steps or modals based on step */}
                 {isPopupOpen && (
                   <>
+                    {/* Step 2: Upload box if not loading */}
                     {step === 2 && !isLoading && (
                       <UploadBoxPopup onGenerateSummary={handleGenerateSummary} closePopup={closePopup} />
                     )}
+                    {/* Step 3: Show loading spinner */}
                     {isLoading && <LoadingPopup />}
+                    {/* Step 4: Show parsed summary */}
                     {step === 4 && <SummaryPopup parsedText={parsedText} closePopup={closePopup} handleStartOver={handleStartOver} />}
                   </>
                 )}
               </div>
             }
           />
+          {/* Define routes for other pages */}
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/about" element={<AboutPage />} />
         </Routes>
       </main>
-      <Footer />
+      <Footer /> {/* Render the footer */}
     </Router>
   );
 }
 
-export default App;
-
+export default App; // Export the App component as default

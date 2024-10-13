@@ -1,63 +1,72 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react"; // Import React and hooks (useState, useEffect)
+import { Link } from "react-router-dom"; // Import Link from react-router-dom for navigation
 
 function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // State to control mobile menu visibility
+  const [isMobile, setIsMobile] = useState(false); // State to track whether the screen size is mobile
 
+  // useEffect to handle screen resizing and toggle mobile view
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 1024);
+      setIsMobile(window.innerWidth <= 1024); // Set isMobile to true if the screen width is 1024px or less
     };
-    window.addEventListener("resize", handleResize);
 
-    handleResize(); // Check screen size when component mounts
+    window.addEventListener("resize", handleResize); // Add event listener for window resizing
 
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+    handleResize(); // Call handleResize immediately to set the initial state
 
+    return () => window.removeEventListener("resize", handleResize); // Cleanup the event listener on unmount
+  }, []); // Empty dependency array ensures this runs only on component mount/unmount
+
+  // Toggle mobile menu visibility
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen(!isMenuOpen); // Flip the isMenuOpen state (open if closed, close if open)
   };
 
   return (
     <header className="navbar">
       <div className="logo-container">
+        {/* Logo image that redirects to home page when clicked */}
         <img
           src="./images/logo.png"
           alt="Company Logo"
           className="logo"
-          onClick={() => (window.location.href = "/")}
+          onClick={() => (window.location.href = "/")} // Redirect to home page on logo click
         />
-        <h2 className="bill-summary">What's in the Bill?</h2>
+        <h2 className="bill-summary">What's in the Bill?</h2> {/* Company title */}
       </div>
 
-      {/* Show Desktop Navigation on large screens */}
+      {/* Show Desktop Navigation on larger screens (when isMobile is false) */}
       {!isMobile && (
         <nav className="desktop-nav-links">
           <ul>
+            {/* Each Link navigates to different pages */}
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">Home</Link> {/* Link to home page */}
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/about">About</Link> {/* Link to about page */}
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact">Contact</Link> {/* Link to contact page */}
             </li>
           </ul>
         </nav>
       )}
 
-      {/* Show Mobile Menu Button and Links on small screens */}
+      {/* Show Mobile Menu Button and Links when isMobile is true */}
       {isMobile && (
         <>
+          {/* Mobile menu button that toggles between hamburger and close icon */}
           <button className="mobile-menu-button" onClick={toggleMenu}>
-            {isMenuOpen ? <span>&times;</span> : <span>&#9776;</span>}
+            {isMenuOpen ? <span>&times;</span> : <span>&#9776;</span>} {/* Show &times; if open, otherwise show &#9776; */}
           </button>
+
+          {/* Mobile navigation that opens or closes based on isMenuOpen state */}
           <nav className={`nav-links ${isMenuOpen ? "open" : "close"}`}>
             <ul>
               <li>
+                {/* Each link closes the menu after clicking */}
                 <Link to="/" onClick={toggleMenu}>
                   Home
                 </Link>
@@ -80,4 +89,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Navbar; // Export the Navbar component for use in other parts of the app

@@ -1,26 +1,25 @@
-
-import React, { useState } from 'react';
+import React, { useState } from 'react'; // Import React and the useState hook
 
 function UploadBox({ onGenerateSummary }) {
-  const [file, setFile] = useState(null); // State to hold the uploaded file
+  const [file, setFile] = useState(null); // State to keep track of the uploaded file
 
   // Function to handle file selection
   const handleFileChange = (event) => {
-    setFile(event.target.files[0]); // Update state with the selected file
+    setFile(event.target.files[0]); // Sets the selected file to state
   };
 
   // Function to handle file upload
   const handleFileUpload = () => {
     if (file) {
-      onGenerateSummary(file); // Pass the file to generate summary
+      onGenerateSummary(file); // Passes the file to the parent component via the onGenerateSummary callback
     } else {
-      console.log("No file selected."); // Log message if no file is selected
+      console.log("No file selected."); // Logs a message if no file is selected
     }
   };
 
   return (
     <div className="upload-container">
-	{/* Title and instructions */}
+      {/* Title and instructions */}
       <h3>Upload Your Bill</h3>
       <p>Upload your bill to be summarized by AI</p>
 
@@ -29,16 +28,16 @@ function UploadBox({ onGenerateSummary }) {
         <p>Choose File to upload</p>
         <input
           type="file"
-          accept=".xml" // Accept only XML files
-          onChange={handleFileChange} // Handle file selection
+          accept=".xml" // Restrict file input to only accept XML files
+          onChange={handleFileChange} // Handles file selection
           className="file-input"
         />
-        {/* Display selected file information */}
+        {/* Conditionally render file name and a remove button if a file is selected */}
         {file && (
           <div className="file-selected">
-            Selected File: {file.name}
+            Selected File: {file.name} {/* Displays the selected file name */}
             <button onClick={() => setFile(null)} className="remove-btn">
-              &times; {/* Button to remove selected file */}
+              &times; {/* Button to clear the selected file */}
             </button>
           </div>
         )}
@@ -52,4 +51,4 @@ function UploadBox({ onGenerateSummary }) {
   );
 }
 
-export default UploadBox;
+export default UploadBox; // Exports the component to be used in other parts of the app

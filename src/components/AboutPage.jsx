@@ -1,29 +1,29 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react"; // Import React, and the hooks useState and useEffect
 
 function AboutPage() {
-  const [showTopBtn, setShowTopBtn] = useState(false);
+  const [showTopBtn, setShowTopBtn] = useState(false); // State to control the visibility of the "Go to Top" button
 
-  // Show the button when scrolling down
+  // Hook to handle the scroll event and show the button when user scrolls down
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.pageYOffset > 300) {
-        setShowTopBtn(true);
+    const handleScroll = () => { // Function to check the scroll position
+      if (window.pageYOffset > 300) { // If the scroll position is greater than 300px
+        setShowTopBtn(true); // Show the "Go to Top" button
       } else {
-        setShowTopBtn(false);
+        setShowTopBtn(false); // Hide the "Go to Top" button
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll); // Add event listener for scrolling
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScroll); // Cleanup the event listener on component unmount
     };
-  }, []);
+  }, []); // Empty dependency array to only run on component mount/unmount
 
-  // Scroll to top function
+  // Function to scroll back to the top of the page
   const scrollToTop = () => {
     window.scrollTo({
-      top: 0,
-      behavior: "smooth",
+      top: 0, // Scroll to the top of the page
+      behavior: "smooth", // Smooth scrolling animation
     });
   };
 
@@ -63,12 +63,12 @@ function AboutPage() {
             <p>Frontend Development</p>
           </div>
           <div className="tech-card">
-            <img src="./images/flask.jpg" alt="Flask" className="tech-icon"/>
+            <img src="./images/flask.jpg" alt="Flask" className="tech-icon" />
             <h4>Flask</h4>
             <p>Backend Development</p>
           </div>
           <div className="tech-card">
-            <img src="./images/api.png" alt="REST API" className="tech-icon"/>
+            <img src="./images/api.png" alt="REST API" className="tech-icon" />
             <h4>REST API</h4>
             <p>Web-based API</p>
           </div>
@@ -84,12 +84,16 @@ function AboutPage() {
             <h3>AI Team</h3>
             <div className="team-row mentor">
               <div className="team-member large">
-                <img src="./images/taylor.jpg" alt="Taylor" className="team-photo" />
+                <img
+                  src="./images/taylor.jpg"
+                  alt="Taylor"
+                  className="team-photo"
+                />
                 <h4>Taylor</h4>
                 <p>Team Mentor - AI Model</p>
               </div>
             </div>
-          {/* Second row - Two members */}
+            {/* Second row - Two members */}
             <div className="team-row">
               <div className="team-member">
                 <img
@@ -203,13 +207,14 @@ function AboutPage() {
       </section>
 
       {/* Go to Top Button */}
-      {showTopBtn && (
-        <button className="go-top-btn" onClick={scrollToTop}>
-          ↑
-        </button>
-      )}
+	  {showTopBtn && (
+	  <button className="go-top-btn" onClick={scrollToTop}>
+	  &uarr; {/* Use upwards arrow symbol */}
+	  </button>
+	)}
+
     </div>
   );
 }
 
-export default AboutPage;
+export default AboutPage; // Export the component for use in other parts of the app
