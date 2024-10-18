@@ -117,44 +117,47 @@ main {
 
   .nav-links {
     display: none; /* Hides the mobile navigation links initially */
-    position: fixed; /* Fixes the position of the navigation on the viewport */
-    top: 0; /* Aligns the navigation to the top */
-    left: 0; /* Aligns the navigation to the left */
-    width: 100%; /* Makes the navigation take up the full width */
-    height: 100vh; /* Makes the navigation take up the full height */
-    background-color: #1a3d6c; /* Sets the background color */
-    z-index: 9; /* Ensures the navigation appears behind the menu button */
-    flex-direction: row; /* Arranges the links horizontally */
-    justify-content: center; /* Centers the links */
-    align-items: center; /* Vertically centers the links */
-    transition: transform 0.3s ease-in-out; /* Adds smooth transitions for showing and hiding */
+    position: absolute; /* Changes position to absolute */
+    top: 70px; /* Pushes the navigation links down by 60px */
+    left: 0;
+    width: 100%;
+    background-color: #1a3d6c; /* Background color */
+    justify-content: center; /* Centers the navigation links */
+    z-index: 9; /* Ensure the navigation appears above other elements */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
   }
 
+  /* Show navigation links when the menu is open */
   .nav-links.open {
-    display: flex; /* Shows the links when the menu is open */
-    animation: slideIn 0.1s forwards; /* Animates the links sliding in */
+    display: flex; /* Makes links visible */
+    flex-direction: column; /* Stacks links vertically */
+    animation: slideDown 0.1s forwards; /* Sliding down effect */
   }
 
+  /* Close animation */
   .nav-links.close {
-    animation: slideOut 0.1s forwards; /* Animates the links sliding out */
+    animation: slideUp 0.1s forwards; /* Sliding up effect */
   }
 
   .nav-links ul {
-    list-style: none; /* Removes bullet points from the links */
-    padding: 0; /* Removes padding around the links */
-    margin: 0; /* Removes margin around the links */
-    display: flex; /* Arranges the links horizontally */
+    list-style: none; /* Removes bullets */
+    padding: 0;
+    margin: 0;
+	display: flex; /* Arranges the links horizontally */
     gap: 20px; /* Adds space between the links */
+	margin-left: 65px; 
+	margin-top: 30px;
+	margin-bottom: 20px;
   }
 
   .nav-links ul li {
-    margin: 20px 0; /* Adds space between each link */
+    margin: 10px 0; /* Adds space between each link */
   }
 
   .nav-links ul li a {
     color: white; /* Makes the link text white */
     text-decoration: none; /* Removes the underline from the links */
-    font-size: 24px; /* Sets the font size for the links */
+    font-size: 18px; /* Sets the font size for the links */
     padding: 10px 20px; /* Adds padding inside the links */
     background-color: #4a5c79; /* Sets the background color */
     border-radius: 15px; /* Rounds the corners */
@@ -165,21 +168,25 @@ main {
     background-color: #3d4e66; /* Changes the background color on hover */
   }
 
-  @keyframes slideIn {
+  @keyframes slideDown {
     from {
-      transform: translateX(-100%); /* Starts off-screen on the left */
+      opacity: 0;
+      transform: translateY(-20px); /* Start 20px above */
     }
     to {
-      transform: translateX(0); /* Slides the links into view */
+      opacity: 1;
+      transform: translateY(0); /* Move to original position */
     }
   }
 
-  @keyframes slideOut {
+  @keyframes slideUp {
     from {
-      transform: translateX(0); /* Starts in view */
+      opacity: 1;
+      transform: translateY(0); /* Start at original position */
     }
     to {
-      transform: translateX(-100%); /* Slides the links out of view */
+      opacity: 0;
+      transform: translateY(-20px); /* Slide 20px up */
     }
   }
 }
