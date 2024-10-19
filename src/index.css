@@ -145,8 +145,7 @@ main {
     margin: 0; /* Removes margin around the links */
 	display: flex; /* Arranges the links horizontally */
     gap: 20px; /* Adds space between the links */
-	gap: 20px; /* Adds 20px of space between each link */
-	margin-left: 65px; /* Adds 65px of space on the left side of the links */
+	margin-left: auto; 
 	margin-top: 30px; /* Adds 30px of space above the links */
 	margin-bottom: 20px; /* Adds 20px of space below the links */
   }
@@ -160,6 +159,101 @@ main {
     text-decoration: none; /* Removes the underline from the links */
     font-size: 18px; /* Sets the font size for the links */
     padding: 10px 20px; /* Adds padding inside the links */
+    background-color: #4a5c79; /* Sets the background color */
+    border-radius: 15px; /* Rounds the corners */
+    transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
+  }
+
+  .nav-links ul li a:hover {
+    background-color: #3d4e66; /* Changes the background color on hover */
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px); /* Start 20px above */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Move to original position */
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 1;
+      transform: translateY(0); /* Start at original position */
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-20px); /* Slide 20px up */
+    }
+  }
+}
+
+/* Mobile Landscape-specific Styles */
+@media (max-width: 1024px) and (orientation: landscape) {
+  .desktop-nav-links {
+    display: none; /* Hides the desktop navigation on mobile */
+  }
+
+  .mobile-menu-button {
+    display: block; /* Makes the menu button visible on mobile */
+    background-color: #4a5c79; /* Sets the button's background color */
+    color: white; /* Makes the button text white */
+    border: none; /* Removes the button border */
+    font-size: 24px; /* Increases the button's font size */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+    border-radius: 15px; /* Rounds the button's corners */
+    padding: 8px 15px; /* Adds padding to the button */
+    z-index: 10; /* Ensures the button stays above other elements */
+    position: absolute; /* Positions the button relative to the viewport */
+    right: 10px; /* Positions the button 10px from the right edge */
+    top: 10px; /* Positions the button 10px from the top */
+  }
+
+
+  .nav-links {
+    display: none; /* Hides the mobile navigation links initially */
+    position: absolute; /* Changes position to absolute */
+    top: 70px; /* Pushes the navigation links down by 70px */
+    left: 0; /* Aligns the navigation to the left */
+    width: 100%; /* Makes the navigation take up the full width */
+    background-color: #1a3d6c; /* Background color */
+    justify-content: flex-start; /* Align navigation links to the left */
+    z-index: 9; /* Ensure the navigation appears above other elements */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+  }
+
+  /* Show navigation links when the menu is open */
+  .nav-links.open {
+    display: flex; /* Makes links visible */
+    flex-direction: row; /* Arrange links horizontally */
+    animation: slideDown 0.1s forwards; /* Sliding down effect */
+    justify-content: flex-start; /* Align links to the left */
+  }
+
+  .nav-links ul {
+    list-style: none; /* Removes bullets */
+    padding: 0; /* Removes padding around the links */
+    margin: 0; /* Removes margin around the links */
+    display: flex; /* Arranges the links horizontally */
+    flex-direction: row; /* Arrange links horizontally */
+    gap: 20px; /* Adds space between links */
+    margin-left: auto; /* Align links to the left */
+    margin-top: 20px; /* Adds space above the links */
+    margin-bottom: 20px; /* Adds space below the links */
+  }
+
+  .nav-links ul li {
+    margin: 10px 0; /* Adds space between each link */
+  }
+
+  .nav-links ul li a {
+    color: white; /* Makes the link text white */
+    text-decoration: none; /* Removes the underline from the links */
+    font-size: 16px; /* Sets the font size for the links */
+    padding: 10px 15px; /* Adds padding inside the links */
     background-color: #4a5c79; /* Sets the background color */
     border-radius: 15px; /* Rounds the corners */
     transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
@@ -313,62 +407,6 @@ main {
   box-sizing: border-box; /* Ensures padding is included in the element's width */
 }
 
-.download-btn{
-  margin: 15px 10px; /* Adds margin around the button */
-  padding: 10px 20px; /* Adds padding inside the button */
-  background-color: #4682B4; /* Sets the background color */
-  color: white; /* Makes the button text white */
-  border: none; /* Removes the border */
-  border-radius: 40px; /* Rounds the button's corners */
-  font-size: 16px; /* Sets the font size */
-  font-weight: 600; /* Makes the text bold */
-  cursor: pointer; /* Changes the cursor to pointer on hover */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Adds smooth transitions */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
-}
-
-.download-btn:hover {
-  background-color: #396a93; /* Changes the background color on hover */
-  transform: translateY(-3px); /* Lifts the button on hover */
-}
-
-.do-it-again-btn {
-  margin: 15px 10px; /* Adds margin around the button */
-  padding: 10px 20px; /* Adds padding inside the button */
-  background-color: #4682B4; /* Sets the background color */
-  color: white; /* Makes the button text white */
-  border: none; /* Removes the border */
-  border-radius: 40px; /* Rounds the button's corners */
-  font-size: 16px; /* Sets the font size */
-  font-weight: 600; /* Makes the text bold */
-  cursor: pointer; /* Changes the cursor to pointer on hover */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Adds smooth transitions */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
-}
-
-.do-it-again-btn:hover {
-  background-color: #396a93; /* Changes the background color on hover */
-  transform: translateY(-3px); /* Lifts the button on hover */
-}
-
-.pause-play-btn {
-  margin: 15px 10px; /* Adds margin around the button */
-  padding: 10px 20px; /* Adds padding inside the button */
-  background-color: #4682B4; /* Sets the background color */
-  color: white; /* Makes the button text white */
-  border: none; /* Removes the border */
-  border-radius: 40px; /* Rounds the button's corners */
-  font-size: 16px; /* Sets the font size */
-  font-weight: 600; /* Makes the text bold */
-  cursor: pointer; /* Changes the cursor to pointer on hover */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Adds smooth transitions */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
-}
-
-.pause-play-btn:hover {
-  background-color: #396a93; /* Changes the background color on hover */
-  transform: translateY(-3px); /* Lifts the button on hover */
-}
 .close-popup {
   position: absolute; /* Positions the button inside the popup */
   top: 10px; /* Aligns it to the top */
@@ -547,17 +585,112 @@ main {
   padding-bottom: 50px; /* Adds extra padding at the bottom */
 }
 
+.download-btn{
+  margin: 15px 10px; /* Adds margin around the button */
+  padding: 10px 20px; /* Adds padding inside the button */
+  background-color: #4682B4; /* Sets the background color */
+  color: white; /* Makes the button text white */
+  border: none; /* Removes the border */
+  border-radius: 40px; /* Rounds the button's corners */
+  font-size: 16px; /* Sets the font size */
+  font-weight: 600; /* Makes the text bold */
+  cursor: pointer; /* Changes the cursor to pointer on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Adds smooth transitions */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+}
+
+.download-btn:hover {
+  background-color: #396a93; /* Changes the background color on hover */
+  transform: translateY(-3px); /* Lifts the button on hover */
+}
+
+.do-it-again-btn {
+  margin: 15px 10px; /* Adds margin around the button */
+  padding: 10px 20px; /* Adds padding inside the button */
+  background-color: #4682B4; /* Sets the background color */
+  color: white; /* Makes the button text white */
+  border: none; /* Removes the border */
+  border-radius: 40px; /* Rounds the button's corners */
+  font-size: 16px; /* Sets the font size */
+  font-weight: 600; /* Makes the text bold */
+  cursor: pointer; /* Changes the cursor to pointer on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Adds smooth transitions */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+}
+
+.do-it-again-btn:hover {
+  background-color: #396a93; /* Changes the background color on hover */
+  transform: translateY(-3px); /* Lifts the button on hover */
+}
+
+.pause-play-btn {
+  margin: 15px 10px; /* Adds margin around the button */
+  padding: 10px 20px; /* Adds padding inside the button */
+  background-color: #4682B4; /* Sets the background color */
+  color: white; /* Makes the button text white */
+  border: none; /* Removes the border */
+  border-radius: 40px; /* Rounds the button's corners */
+  font-size: 16px; /* Sets the font size */
+  font-weight: 600; /* Makes the text bold */
+  cursor: pointer; /* Changes the cursor to pointer on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Adds smooth transitions */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+}
+
+.pause-play-btn:hover {
+  background-color: #396a93; /* Changes the background color on hover */
+  transform: translateY(-3px); /* Lifts the button on hover */
+}
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (orientation: portrait) {
   .summary-box {
-    margin-top: 20px; /* Adds space on mobile */
+    margin-top: 20px; 
+	margin-bottom: 10px;
+  }
+  
+  .download-btn {
+	margin: 0; /* Adds margin around the button */
+    padding: 5px 20px; /* Adds padding inside the button */
+	font-size: 10px;
+  }
+  
+  .do-it-again-btn {
+	margin: 10px; /* Adds margin around the button */
+    padding: 5px 20px; /* Adds padding inside the button */
+	font-size: 10px;
+  }
+  
+  .pause-play-btn{
+	margin: 0; /* Adds margin around the button */
+    padding: 5px 10px; /* Adds padding inside the button */
+	font-size: 10px;
   }
 }
 
 @media (max-width: 1024px) and (orientation: landscape) {
   .summary-box {
     height: 80px; /* Reduces height for landscape mode */
+	margin-top: 20px; 
+	margin-bottom: 10px;
+  }
+  
+  .download-btn {
+	margin: 0; /* Adds margin around the button */
+    padding: 5px 20px; /* Adds padding inside the button */
+	font-size: 10px;
+  }
+  
+  .do-it-again-btn {
+	margin: 10px; /* Adds margin around the button */
+    padding: 5px 20px; /* Adds padding inside the button */
+	font-size: 10px;
+  }
+  
+  .pause-play-btn{
+	margin: 0; /* Adds margin around the button */
+    padding: 5px 20px; /* Adds padding inside the button */
+	font-size: 10px;
   }
 }
 
