@@ -50,7 +50,7 @@ function AboutPage() {
           {/* Technology cards */}
           <div className="tech-card">
             <img
-              src="./images/ai.png"
+              src="/bill-summary-deploy/images/ai.png"
               alt="Google T5 Small"
               className="tech-icon"
             />
@@ -58,17 +58,17 @@ function AboutPage() {
             <p>AI for Summarization</p>
           </div>
           <div className="tech-card">
-            <img src="./images/react.png" alt="React" className="tech-icon" />
+            <img src="/bill-summary-deploy/images/react.png" alt="React" className="tech-icon" />
             <h4>React</h4>
             <p>Frontend Development</p>
           </div>
           <div className="tech-card">
-            <img src="./images/flask.jpg" alt="Flask" className="tech-icon" />
+            <img src="/bill-summary-deploy/images/flask.jpg" alt="Flask" className="tech-icon" />
             <h4>Flask</h4>
             <p>Backend Development</p>
           </div>
           <div className="tech-card">
-            <img src="./images/api.png" alt="REST API" className="tech-icon" />
+            <img src="/bill-summary-deploy/images/api.png" alt="REST API" className="tech-icon" />
             <h4>REST API</h4>
             <p>Web-based API</p>
           </div>
@@ -85,7 +85,7 @@ function AboutPage() {
             <div className="team-row mentor">
               <div className="team-member large">
                 <img
-                  src="./images/taylor.jpg"
+                  src="/bill-summary-deploy/images/taylor.jpg"
                   alt="Taylor"
                   className="team-photo"
                 />
@@ -97,7 +97,7 @@ function AboutPage() {
             <div className="team-row">
               <div className="team-member">
                 <img
-                  src="./images/member1.jpg"
+                  src="/bill-summary-deploy/images/member1.jpg"
                   alt="Member 1"
                   className="team-photo"
                 />
@@ -105,7 +105,7 @@ function AboutPage() {
               </div>
               <div className="team-member">
                 <img
-                  src="./images/member2.avif"
+                  src="/bill-summary-deploy/images/member2.avif"
                   alt="Member 2"
                   className="team-photo"
                 />
@@ -116,7 +116,7 @@ function AboutPage() {
             <div className="team-row">
               <div className="team-member">
                 <img
-                  src="./images/member3.jpg"
+                  src="/bill-summary-deploy/images/member3.jpg"
                   alt="Member 3"
                   className="team-photo"
                 />
@@ -124,7 +124,7 @@ function AboutPage() {
               </div>
               <div className="team-member">
                 <img
-                  src="./images/member4.jpg"
+                  src="/bill-summary-deploy/images/member4.jpg"
                   alt="Member 4"
                   className="team-photo"
                 />
@@ -132,7 +132,7 @@ function AboutPage() {
               </div>
               <div className="team-member">
                 <img
-                  src="./images/member5.jpg"
+                  src="/bill-summary-deploy/images/member5.jpg"
                   alt="Member 5"
                   className="team-photo"
                 />
@@ -148,7 +148,7 @@ function AboutPage() {
             <div className="team-row mentor">
               <div className="team-member large">
                 <img
-                  src="./images/scott.jpg"
+                  src="/bill-summary-deploy/images/scott.jpg"
                   alt="Scott"
                   className="team-photo"
                 />
@@ -160,7 +160,7 @@ function AboutPage() {
             <div className="team-row">
               <div className="team-member">
                 <img
-                  src="./images/member8.jpg"
+                  src="/bill-summary-deploy/images/member8.jpg"
                   alt="Member 8"
                   className="team-photo"
                 />
@@ -168,7 +168,7 @@ function AboutPage() {
               </div>
               <div className="team-member">
                 <img
-                  src="./images/member9.jpg"
+                  src="/bill-summary-deploy/images/member9.jpg"
                   alt="Member 9"
                   className="team-photo"
                 />
@@ -179,7 +179,7 @@ function AboutPage() {
             <div className="team-row">
               <div className="team-member">
                 <img
-                  src="./images/member10.jpg"
+                  src="/bill-summary-deploy/images/member10.jpg"
                   alt="Member 10"
                   className="team-photo"
                 />
@@ -187,7 +187,7 @@ function AboutPage() {
               </div>
               <div className="team-member">
                 <img
-                  src="./images/member11.jpg"
+                  src="/bill-summary-deploy/images/member11.jpg"
                   alt="Member 11"
                   className="team-photo"
                 />
@@ -195,7 +195,7 @@ function AboutPage() {
               </div>
               <div className="team-member">
                 <img
-                  src="./images/member12.jpg"
+                  src="/bill-summary-deploy/images/member12.jpg"
                   alt="Member 12"
                   className="team-photo"
                 />
