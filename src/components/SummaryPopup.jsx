@@ -1,27 +1,29 @@
-import React, { useState, useEffect } from 'react'; // Import necessary hooks from React
-import { Document, Packer, Paragraph, TextRun } from 'docx'; // Import document creation tools from docx
-import { saveAs } from 'file-saver'; // Import file saving function from file-saver
+import React, { useState, useEffect } from 'react';
+import { Document, Packer, Paragraph, TextRun } from 'docx';
+import { saveAs } from 'file-saver';
 
 function SummaryPopup({ parsedText, closePopup, handleStartOver }) {
+  const disclaimerText = `Disclaimer: Please note, that while our AI-powered summary aims to provide an accurate overview of this bill, the whatisnthebill.ai summary may not provide all pertinent topics or relevant details from within the bill. We encourage you to refer to the full text for a complete understanding of the bill. Thank you for using whatisinthebill.ai.\n\n`;
+
+  const fullText = disclaimerText + parsedText; // Prepend disclaimer to parsed text
   const [animatedText, setAnimatedText] = useState(''); // Store progressively animated text
   const [index, setIndex] = useState(0); // Track the current character index in the typewriter effect
   const [isPaused, setIsPaused] = useState(false); // Track if the animation is paused
   const [isAnimationDone, setIsAnimationDone] = useState(false); // Track if animation is complete
 
-  // Typewriter animation effect using useEffect
+  // Typewriter animation effect
   useEffect(() => {
-    if (index < parsedText.length && !isPaused) {
+    if (index < fullText.length && !isPaused) {
       const interval = setInterval(() => {
-        setAnimatedText((prev) => prev + parsedText[index]); // Add one character at a time to the animated text
+        setAnimatedText((prev) => prev + fullText[index]); // Add one character at a time to the animated text
         setIndex((prevIndex) => prevIndex + 1); // Increment the character index
       }, 50); // Speed of the typewriter effect
       return () => clearInterval(interval); // Cleanup interval on unmount or re-render
     }
-
-    if (index === parsedText.length) {
+    if (index === fullText.length) {
       setIsAnimationDone(true); // Mark animation as complete
     }
-  }, [index, isPaused, parsedText]);
+  }, [index, isPaused, fullText]);
 
   // Toggle play/pause of the typewriter animation
   const handlePausePlay = () => {
@@ -30,18 +32,29 @@ function SummaryPopup({ parsedText, closePopup, handleStartOver }) {
 
   // Function to download the parsed summary as a .docx file
   const handleDownloadDocx = () => {
+    const lines = fullText.split('\n'); // Split the text by lines
+
+    // Create a paragraph for each line
+    const paragraphs = lines.map((line) =>
+      new Paragraph({
+        children: [
+          new TextRun({
+            text: line, // Add the line of text
+            break: 1,   // Ensure it breaks lines properly
+          }),
+        ],
+      })
+    );
+
     const doc = new Document({
       sections: [
         {
           properties: {},
-          children: [
-            new Paragraph({
-              children: [new TextRun(parsedText)], // Insert the parsed text into the document
-            }),
-          ],
+          children: paragraphs, // Add paragraphs to the document
         },
       ],
     });
+
     Packer.toBlob(doc).then((blob) => {
       saveAs(blob, 'summary.docx'); // Save the document as 'summary.docx'
     });
@@ -60,28 +73,46 @@ function SummaryPopup({ parsedText, closePopup, handleStartOver }) {
           </pre>
         </div>
 
-        <div className="upload-btn-container">
-          {/* Download, Restart, Play/Pause buttons */}
-          <button className="upload-btn" onClick={handleDownloadDocx}>
-            <i className="fas fa-download"></i> Download
+        <div className="summary-btns-container">
+          {/* Download button */}
+          <button className="download-btn" onClick={handleDownloadDocx}>
+            <img
+              src="./images/download.svg"
+              alt="Download"
+              style={{ width: '20px', marginRight: '8px', opacity: 0.6}} // Add opacity here
+            />
+            Download
           </button>
-          <button className="upload-btn" onClick={handleStartOver}>
-            <i className="fas fa-redo"></i><br /> Do it again
+
+          {/* Restart button */}
+          <button className="do-it-again-btn" onClick={handleStartOver}>
+            <img
+              src="./images/redo.svg"
+              alt="Redo"
+              style={{ width: '20px', marginRight: '8px'}} // Add opacity here
+            />
+            Do it again
           </button>
+
+          {/* Play/Pause button */}
           {!isAnimationDone && (
-            <button className="upload-btn icon-only" onClick={handlePausePlay}>
-              {isPaused ? <i className="fas fa-play"></i> : <i className="fas fa-pause"></i>}
+            <button className="pause-play-btn" onClick={handlePausePlay}>
+              <img
+                src={isPaused ? "./images/play.svg" : "./images/pause.svg"}
+                alt={isPaused ? "Play" : "Pause"}
+                style={{ width: '20px'}} // Add opacity here
+              />
             </button>
           )}
         </div>
 
-        {/* Close button for the popup */}
+        {/* Close button */}
         <button className="close-popup" onClick={closePopup}>
-          &times;
+          &#x2715; {/* Entity for multiplication sign (close icon) */}
         </button>
       </div>
     </div>
   );
 }
 
-export default SummaryPopup; // Export the component for use in other parts of the app
+export default SummaryPopup;

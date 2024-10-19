@@ -268,7 +268,7 @@ main {
   color: #ff4a4a; /* Changes the color on hover */
 }
 
-/* Buttons */
+/* Upload Button */
 .upload-btn {
   margin: 15px 10px; /* Adds margin around the button */
   padding: 10px 20px; /* Adds padding inside the button */
@@ -312,6 +312,62 @@ main {
   box-sizing: border-box; /* Ensures padding is included in the element's width */
 }
 
+.download-btn{
+  margin: 15px 10px; /* Adds margin around the button */
+  padding: 10px 20px; /* Adds padding inside the button */
+  background-color: #4682B4; /* Sets the background color */
+  color: white; /* Makes the button text white */
+  border: none; /* Removes the border */
+  border-radius: 40px; /* Rounds the button's corners */
+  font-size: 16px; /* Sets the font size */
+  font-weight: 600; /* Makes the text bold */
+  cursor: pointer; /* Changes the cursor to pointer on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Adds smooth transitions */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+}
+
+.download-btn:hover {
+  background-color: #396a93; /* Changes the background color on hover */
+  transform: translateY(-3px); /* Lifts the button on hover */
+}
+
+.do-it-again-btn {
+  margin: 15px 10px; /* Adds margin around the button */
+  padding: 10px 20px; /* Adds padding inside the button */
+  background-color: #4682B4; /* Sets the background color */
+  color: white; /* Makes the button text white */
+  border: none; /* Removes the border */
+  border-radius: 40px; /* Rounds the button's corners */
+  font-size: 16px; /* Sets the font size */
+  font-weight: 600; /* Makes the text bold */
+  cursor: pointer; /* Changes the cursor to pointer on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Adds smooth transitions */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+}
+
+.do-it-again-btn:hover {
+  background-color: #396a93; /* Changes the background color on hover */
+  transform: translateY(-3px); /* Lifts the button on hover */
+}
+
+.pause-play-btn {
+  margin: 15px 10px; /* Adds margin around the button */
+  padding: 10px 20px; /* Adds padding inside the button */
+  background-color: #4682B4; /* Sets the background color */
+  color: white; /* Makes the button text white */
+  border: none; /* Removes the border */
+  border-radius: 40px; /* Rounds the button's corners */
+  font-size: 16px; /* Sets the font size */
+  font-weight: 600; /* Makes the text bold */
+  cursor: pointer; /* Changes the cursor to pointer on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Adds smooth transitions */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+}
+
+.pause-play-btn:hover {
+  background-color: #396a93; /* Changes the background color on hover */
+  transform: translateY(-3px); /* Lifts the button on hover */
+}
 .close-popup {
   position: absolute; /* Positions the button inside the popup */
   top: 10px; /* Aligns it to the top */
@@ -411,19 +467,11 @@ main {
   .loading-spinner p {
     font-size: 15px; /* Increases font size */
   }
-
-  .loading-spinner h3 {
-    font-size: 12px; /* Decreases header font size */
-  }
 }
 
 @media (max-width: 1024px) and (orientation: landscape) {
   .loading-spinner p {
     font-size: 12px; /* Decreases text size */
-  }
-
-  .loading-spinner h3 {
-    font-size: 18px; /* Increases header size */
   }
 }
 
@@ -497,6 +545,8 @@ main {
 .animated-summary {
   padding-bottom: 50px; /* Adds extra padding at the bottom */
 }
+
+
 
 @media (max-width: 1024px) {
   .summary-box {
