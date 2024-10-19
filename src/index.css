@@ -118,9 +118,9 @@ main {
   .nav-links {
     display: none; /* Hides the mobile navigation links initially */
     position: absolute; /* Changes position to absolute */
-    top: 70px; /* Pushes the navigation links down by 60px */
-    left: 0;
-    width: 100%;
+    top: 70px; /* Pushes the navigation links down by 70px */
+    left: 0; /* Aligns the navigation to the left */
+    width: 100%; /* Makes the navigation take up the full width */
     background-color: #1a3d6c; /* Background color */
     justify-content: center; /* Centers the navigation links */
     z-index: 9; /* Ensure the navigation appears above other elements */
@@ -141,13 +141,14 @@ main {
 
   .nav-links ul {
     list-style: none; /* Removes bullets */
-    padding: 0;
-    margin: 0;
+    padding: 0; /* Removes padding around the links */
+    margin: 0; /* Removes margin around the links */
 	display: flex; /* Arranges the links horizontally */
     gap: 20px; /* Adds space between the links */
-	margin-left: 65px; 
-	margin-top: 30px;
-	margin-bottom: 20px;
+	gap: 20px; /* Adds 20px of space between each link */
+	margin-left: 65px; /* Adds 65px of space on the left side of the links */
+	margin-top: 30px; /* Adds 30px of space above the links */
+	margin-bottom: 20px; /* Adds 20px of space below the links */
   }
 
   .nav-links ul li {
