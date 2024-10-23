@@ -108,7 +108,7 @@ function SummaryPopup({ parsedText, closePopup, handleStartOver }) {
 
         {/* Close button */}
         <button className="close-popup" onClick={closePopup}>
-          &#x2715; {/* Entity for multiplication sign (close icon) */}
+          &times; {/* The &times; represents the close (X) icon */}
         </button>
       </div>
     </div>

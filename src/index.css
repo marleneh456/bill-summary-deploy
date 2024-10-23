@@ -402,7 +402,6 @@ main {
   padding: 20px; /* Adds padding around the popup content */
   border-radius: 10px; /* Rounds the corners */
   width: 680px; /* Sets a fixed width */
-  max-width: 90%; /* Ensures it scales on smaller screens */
   position: relative; /* Positions elements relative to the popup */
   box-sizing: border-box; /* Ensures padding is included in the element's width */
 }
@@ -421,11 +420,11 @@ main {
 /* Mobile Adjustments */
 @media (max-width: 1024px) and (orientation: portrait) {
   .popup-content {
-    max-width: 90%; /* Ensures it scales well on smaller screens */
+    max-width: 370px; /* Ensures it scales well on smaller screens */
   }
 
   .upload-container {
-    width: 80%; /* Adjusts the container width */
+    width: 90%; /* Adjusts the container width */
     padding: 20px; /* Reduces padding for smaller screens */
   }
 
@@ -563,8 +562,8 @@ main {
   margin-top: 20px; /* Adds space above the summary box */
   text-align: center; /* Centers the text */
   position: relative; /* Positions the box relative to other elements */
-  max-width: 90%; /* Ensures it scales on smaller screens */
-  height: 250px; /* Sets a fixed height */
+  max-width: 650px; /* Ensures it scales on smaller screens */
+  height: 350px; /* Sets a fixed height */
   overflow-y: auto; /* Enables vertical scrolling */
   border: 1px solid #ccc; /* Adds a border */
   padding: 10px; /* Adds padding */
@@ -588,19 +587,20 @@ main {
 /* Button Container */
 .summary-btns-container {
   display: flex;
-  justify-content: center;
+  align-items: center;
   gap: 10px;
   margin-top: 20px;
 }
 
 /* Button Styles */
 .download-btn, .do-it-again-btn, .pause-play-btn {
-  padding: 10px 20px;
+  padding: 5px 10px;
+  width: 90%; /* Full width buttons */
   background-color: #4682B4;
   color: white;
   border: none;
   border-radius: 40px;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
@@ -614,38 +614,26 @@ main {
 
 /* Portrait Mobile Styles */
 @media (max-width: 1024px) and (orientation: portrait) {
-  .summary-box {
-    margin-top: 20px; 
-	margin-bottom: 10px;
-  }
-  
   .summary-btns-container {
     flex-direction: column; /* Stack buttons vertically */
-    align-items: center;
-	margin-top: 20px; /* Add some space above the buttons */
   }
   
-  .download-btn, .do-it-again-btn, .pause-play-btn {
-    width: 90%; /* Full width buttons */
-	padding: 5px 10px;
-	font-size: 12px;
+  .summary-box {
+    width: 300px; /* Ensures it scales on smaller screens */	
+	height: 280px; /* Reduces height for landscape mode */
+	margin-top: auto;
   }
+  
+  .download-btn, .do-it-again-btn, .pause-play-btn{
+	width: 100%; /* Full width buttons */
+  }
+  
 }
 
 /* Landscape Mobile Styles */
 @media (max-width: 1024px) and (orientation: landscape) {
   .summary-box {
     height: 80px; /* Reduces height for landscape mode */	
-  }
-   
-  .summary-btns-container {
-    margin-top: 20px; /* Add some space above the buttons */
-  }
-  
-  .download-btn, .do-it-again-btn, .pause-play-btn{ 
-    width: 90%; /* Full width buttons */
-	padding: 5px 10px;
-	font-size: 12px;
   }
 }
 
