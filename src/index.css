@@ -585,112 +585,74 @@ main {
   padding-bottom: 50px; /* Adds extra padding at the bottom */
 }
 
-.download-btn{
-  margin: 15px 10px; /* Adds margin around the button */
-  padding: 10px 20px; /* Adds padding inside the button */
-  background-color: #4682B4; /* Sets the background color */
-  color: white; /* Makes the button text white */
-  border: none; /* Removes the border */
-  border-radius: 40px; /* Rounds the button's corners */
-  font-size: 16px; /* Sets the font size */
-  font-weight: 600; /* Makes the text bold */
-  cursor: pointer; /* Changes the cursor to pointer on hover */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Adds smooth transitions */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+/* Button Container */
+.summary-btns-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
 }
 
-.download-btn:hover {
-  background-color: #396a93; /* Changes the background color on hover */
-  transform: translateY(-3px); /* Lifts the button on hover */
+/* Button Styles */
+.download-btn, .do-it-again-btn, .pause-play-btn {
+  padding: 10px 20px;
+  background-color: #4682B4;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.do-it-again-btn {
-  margin: 15px 10px; /* Adds margin around the button */
-  padding: 10px 20px; /* Adds padding inside the button */
-  background-color: #4682B4; /* Sets the background color */
-  color: white; /* Makes the button text white */
-  border: none; /* Removes the border */
-  border-radius: 40px; /* Rounds the button's corners */
-  font-size: 16px; /* Sets the font size */
-  font-weight: 600; /* Makes the text bold */
-  cursor: pointer; /* Changes the cursor to pointer on hover */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Adds smooth transitions */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+.download-btn:hover, .do-it-again-btn:hover, .pause-play-btn:hover {
+  background-color: #396a93;
+  transform: translateY(-3px);
 }
 
-.do-it-again-btn:hover {
-  background-color: #396a93; /* Changes the background color on hover */
-  transform: translateY(-3px); /* Lifts the button on hover */
-}
-
-.pause-play-btn {
-  margin: 15px 10px; /* Adds margin around the button */
-  padding: 10px 20px; /* Adds padding inside the button */
-  background-color: #4682B4; /* Sets the background color */
-  color: white; /* Makes the button text white */
-  border: none; /* Removes the border */
-  border-radius: 40px; /* Rounds the button's corners */
-  font-size: 16px; /* Sets the font size */
-  font-weight: 600; /* Makes the text bold */
-  cursor: pointer; /* Changes the cursor to pointer on hover */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Adds smooth transitions */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
-}
-
-.pause-play-btn:hover {
-  background-color: #396a93; /* Changes the background color on hover */
-  transform: translateY(-3px); /* Lifts the button on hover */
-}
-
-
+/* Portrait Mobile Styles */
 @media (max-width: 1024px) and (orientation: portrait) {
   .summary-box {
     margin-top: 20px; 
 	margin-bottom: 10px;
   }
   
-  .download-btn {
-	margin: 0; /* Adds margin around the button */
-    padding: 5px 20px; /* Adds padding inside the button */
-	font-size: 10px;
+  .summary-btns-container {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center;
+	font-size: 16px;
   }
   
-  .do-it-again-btn {
-	margin: 10px; /* Adds margin around the button */
-    padding: 5px 20px; /* Adds padding inside the button */
-	font-size: 10px;
-  }
-  
-  .pause-play-btn{
-	margin: 0; /* Adds margin around the button */
-    padding: 5px 10px; /* Adds padding inside the button */
-	font-size: 10px;
+  .download-btn, .do-it-again-btn, .pause-play-btn {
+    width: 90%; /* Full width buttons */
+	padding: 5px 10px;
   }
 }
 
+/* Landscape Mobile Styles */
 @media (max-width: 1024px) and (orientation: landscape) {
   .summary-box {
-    height: 80px; /* Reduces height for landscape mode */
-	margin-top: 20px; 
-	margin-bottom: 10px;
+    max-height: 60px; /* Reduces height for landscape mode */
+  }
+
+  .summary-btns-container {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center;
   }
   
-  .download-btn {
-	margin: 0; /* Adds margin around the button */
-    padding: 5px 20px; /* Adds padding inside the button */
-	font-size: 10px;
+  .download-btn, .do-it-again-btn, .pause-play-btn {
+    padding: 5px 10px;
+	width: 90%; /* Full width buttons */
+	font-size: 12px;
   }
-  
-  .do-it-again-btn {
-	margin: 10px; /* Adds margin around the button */
-    padding: 5px 20px; /* Adds padding inside the button */
-	font-size: 10px;
-  }
-  
-  .pause-play-btn{
-	margin: 0; /* Adds margin around the button */
-    padding: 5px 20px; /* Adds padding inside the button */
-	font-size: 10px;
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+  .summary-btns-container {
+    flex-direction: row; /* Keep buttons horizontal */
   }
 }
 
