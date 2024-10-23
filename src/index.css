@@ -420,7 +420,7 @@ main {
 /* Mobile Adjustments */
 @media (max-width: 1024px) and (orientation: portrait) {
   .popup-content {
-    max-width: 370px; /* Ensures it scales well on smaller screens */
+    max-width: 380px; /* Ensures it scales well on smaller screens */
   }
 
   .upload-container {
@@ -619,8 +619,8 @@ main {
   }
   
   .summary-box {
-    width: 300px; /* Ensures it scales on smaller screens */	
-	height: 280px; /* Reduces height for landscape mode */
+    width: 315px; 	
+	height: 280px; 
 	margin-top: auto;
   }
   
