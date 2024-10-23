@@ -422,6 +422,11 @@ main {
   .popup-content {
     max-width: 380px; /* Ensures it scales well on smaller screens */
   }
+  
+  .close-popup {
+	right: 8px; /* Aligns it to the right */
+	font-size: 20px; /* Increases the font size */
+  }
 
   .upload-container {
     width: 90%; /* Adjusts the container width */
@@ -442,6 +447,11 @@ main {
     max-width: 900px; /* Keeps a larger width in landscape mode */
     max-height: 300px; /* Limits the height */
     font-size: 12px; /* Adjusts the text size */
+  }
+  
+  .close-popup {
+	right: 6px; /* Aligns it to the right */
+	font-size: 18px; /* Increases the font size */
   }
   
   .upload-container {
