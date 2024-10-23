@@ -409,7 +409,7 @@ main {
 .close-popup {
   position: absolute; /* Positions the button inside the popup */
   top: 2px; /* Aligns it to the top */
-  right: 4px; /* Aligns it to the right */
+  right: 12px; /* Aligns it to the right */
   background: none; /* Removes the background */
   border: none; /* Removes the border */
   font-size: 24px; /* Increases the font size */
@@ -421,10 +421,6 @@ main {
 @media (max-width: 1024px) and (orientation: portrait) {
   .popup-content {
     max-width: 380px; /* Ensures it scales well on smaller screens */
-  }
-  
-  .close-popup{
-	right: 10px;
   }
 
   .upload-container {
@@ -446,10 +442,6 @@ main {
     max-width: 900px; /* Keeps a larger width in landscape mode */
     max-height: 300px; /* Limits the height */
     font-size: 12px; /* Adjusts the text size */
-  }
-
-  .close-popup{
-	right: 8px;
   }
   
   .upload-container {

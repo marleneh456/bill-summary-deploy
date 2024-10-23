@@ -12,7 +12,7 @@ function UploadBoxPopup({ onGenerateSummary, closePopup }) {
         </button>
 
         {/* Title of the popup */}
-        <h4>Get Started: Select your bill XML file</h4>
+        <h3>Get Started: Select your bill XML file</h3>
 
         {/* Render the UploadBox component, passing the onGenerateSummary function */}
         <UploadBox onGenerateSummary={onGenerateSummary} />
