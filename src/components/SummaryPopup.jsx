@@ -108,7 +108,7 @@ function SummaryPopup({ parsedText, closePopup, handleStartOver }) {
 
         {/* Close button */}
         <button className="close-popup" onClick={closePopup}>
-          &times; {/* The &times; represents the close (X) icon */}
+          &#x2715; {/* The &times; represents the close (X) icon */}
         </button>
       </div>
     </div>

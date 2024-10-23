@@ -8,7 +8,7 @@ function UploadBoxPopup({ onGenerateSummary, closePopup }) {
       <div className="popup-content">
         {/* Close button */}
         <button className="close-popup" onClick={closePopup}>
-          &times; {/* The &times; represents the close (X) icon */}
+          &#x2715; {/* The &times; represents the close (X) icon */}
         </button>
 
         {/* Title of the popup */}
