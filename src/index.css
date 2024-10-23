@@ -407,9 +407,9 @@ main {
 }
 
 .close-popup {
-  position: fixed; /* Positions the button inside the popup */
-  top: auto; /* Aligns it to the top */
-  left: 1070px; /* Aligns it to the right */
+  position: absolute; /* Positions the button inside the popup */
+  top: 2px; /* Aligns it to the top */
+  right: 4px; /* Aligns it to the right */
   background: none; /* Removes the background */
   border: none; /* Removes the border */
   font-size: 24px; /* Increases the font size */
@@ -449,7 +449,7 @@ main {
   }
 
   .close-popup{
-	left: 690px;
+	right: 6px;
   }
   
   .upload-container {
