@@ -412,9 +412,8 @@ main {
   right: 12px; /* Aligns it to the right */
   background: none; /* Removes the background */
   border: none; /* Removes the border */
-  font-size: 24px; /* Increases the font size */
   cursor: pointer; /* Pointer cursor */
-  color: #000000; /* Sets the button's color */
+  font-size: 18px;
 }
 
 /* Mobile Adjustments */
@@ -424,8 +423,8 @@ main {
   }
   
   .close-popup {
-	right: 8px; /* Aligns it to the right */
-	font-size: 20px; /* Increases the font size */
+	right: 4px; /* Aligns it to the right */
+	font-size: 12px;
   }
 
   .upload-container {
@@ -450,8 +449,8 @@ main {
   }
   
   .close-popup {
-	right: 6px; /* Aligns it to the right */
-	font-size: 18px; /* Increases the font size */
+	right: 4px; /* Aligns it to the right */
+	font-size: 12px;
   }
   
   .upload-container {

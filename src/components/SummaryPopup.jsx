@@ -108,7 +108,10 @@ function SummaryPopup({ parsedText, closePopup, handleStartOver }) {
 
         {/* Close button */}
         <button className="close-popup" onClick={closePopup}>
-          &#x2715; {/* The &times; represents the close (X) icon */}
+            <img
+                src="./bill-summary-deploy/images/close-icon.svg"
+				style={{ width: '20px'}} 
+            />
         </button>
       </div>
     </div>

@@ -8,7 +8,10 @@ function UploadBoxPopup({ onGenerateSummary, closePopup }) {
       <div className="popup-content">
         {/* Close button */}
         <button className="close-popup" onClick={closePopup}>
-          &#x2715; {/* The #x2715 represents the close (X) icon */}
+            <img
+                src="./bill-summary-deploy/images/close-icon.svg"
+                style={{ width: '20px'}} 
+            />
         </button>
 
         {/* Title of the popup */}
