@@ -409,7 +409,7 @@ main {
 .close-popup {
   position: absolute; /* Positions the button inside the popup */
   top: 0; /* Aligns it to the top */
-  right: 4px; /* Aligns it to the right */
+  left: 650px; 
   background: none; /* Removes the background */
   border: none; /* Removes the border */
   font-size: 24px; /* Increases the font size */
