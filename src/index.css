@@ -622,37 +622,30 @@ main {
   .summary-btns-container {
     flex-direction: column; /* Stack buttons vertically */
     align-items: center;
-	font-size: 16px;
+	margin-top: 20px; /* Add some space above the buttons */
   }
   
   .download-btn, .do-it-again-btn, .pause-play-btn {
     width: 90%; /* Full width buttons */
 	padding: 5px 10px;
+	font-size: 12px;
   }
 }
 
 /* Landscape Mobile Styles */
 @media (max-width: 1024px) and (orientation: landscape) {
   .summary-box {
-    max-height: 60px; /* Reduces height for landscape mode */
+    height: 80px; /* Reduces height for landscape mode */	
   }
-
+   
   .summary-btns-container {
-    flex-direction: column; /* Stack buttons vertically */
-    align-items: center;
+    margin-top: 20px; /* Add some space above the buttons */
   }
   
-  .download-btn, .do-it-again-btn, .pause-play-btn {
-    padding: 5px 10px;
-	width: 90%; /* Full width buttons */
+  .download-btn, .do-it-again-btn, .pause-play-btn{ 
+    width: 90%; /* Full width buttons */
+	padding: 5px 10px;
 	font-size: 12px;
-  }
-}
-
-/* Desktop Styles */
-@media (min-width: 1025px) {
-  .summary-btns-container {
-    flex-direction: row; /* Keep buttons horizontal */
   }
 }
 
