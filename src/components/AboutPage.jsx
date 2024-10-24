@@ -101,8 +101,9 @@ function AboutPage() {
                   Head Project Manager and Lead Artificial Intelligence Engineer
                 </p>
                 <p>
-                  M.S. in Software Engineering with concentration in Artificial Intelligence, Machine Learning, Deep Learning, and Big Data - MTSU 
-				  <br /> B.S. Computer Science - MTSU
+                  M.S. in Software Engineering with concentration in Arificial
+                  Intelligence, Machine Learning, Deep Learning, and Big Data -
+                  MTSU B.S. Computer Science - MTSU
                 </p>
               </div>
             </div>
