@@ -61,9 +61,8 @@ main {
 }
 
 .title-card {
-  width: 300px; /* Sets the width of the logo */
+  width: 350px; /* Sets the width of the logo */
   height: auto; /* Ensures the logo keeps its aspect ratio */
-  margin-right: 10px; /* Adds space to the right of the logo */
 }
 
 /* Desktop Navigation */
@@ -112,13 +111,13 @@ main {
     z-index: 10; /* Ensures the button stays above other elements */
     position: absolute; /* Positions the button relative to the viewport */
     right: 10px; /* Positions the button 10px from the right edge */
-    top: 10px; /* Positions the button 10px from the top */
+    top: 5x; /* Positions the button 10px from the top */
   }
 
   .nav-links {
     display: none; /* Hides the mobile navigation links initially */
     position: absolute; /* Changes position to absolute */
-    top: 70px; /* Pushes the navigation links down by 70px */
+    top: 55px; /* Pushes the navigation links down by 55px */
     left: 0; /* Aligns the navigation to the left */
     width: 100%; /* Makes the navigation take up the full width */
     background-color: #1a3d6c; /* Background color */
@@ -167,6 +166,10 @@ main {
   .nav-links ul li a:hover {
     background-color: #3d4e66; /* Changes the background color on hover */
   }
+  
+  .title-card {
+	width: 200px; /* Sets the width of the logo */
+  }
 
   @keyframes slideDown {
     from {
@@ -209,13 +212,13 @@ main {
     z-index: 10; /* Ensures the button stays above other elements */
     position: absolute; /* Positions the button relative to the viewport */
     right: 10px; /* Positions the button 10px from the right edge */
-    top: 10px; /* Positions the button 10px from the top */
+    top: 5x; /* Positions the button 10px from the top */
   }
 
   .nav-links {
     display: none; /* Hides the mobile navigation links initially */
     position: absolute; /* Changes position to absolute */
-    top: 70px; /* Pushes the navigation links down by 70px */
+    top: 55px; /* Pushes the navigation links down by 55px */
     left: 0; /* Aligns the navigation to the left */
     width: 100%; /* Makes the navigation take up the full width */
     background-color: #1a3d6c; /* Background color */
@@ -261,7 +264,7 @@ main {
   .nav-links ul li a:hover {
     background-color: #3d4e66; /* Changes the background color on hover */
   }
-
+  
   @keyframes slideDown {
     from {
       opacity: 0;
@@ -975,12 +978,7 @@ main {
 
 /* Ensure both cards have the same size */
 .team-member.large {
-  width: 100%; /* Full width for both profiles */
-  min-height: 350px; /* Ensure minimum height is consistent */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  min-height: 400px; /* Ensure minimum height is consistent */
 }
 
 .team-member p {
@@ -1031,48 +1029,157 @@ main {
   background-color: #061d48; /* Changes the background color on hover */
 }
 
-/* Mobile-specific Styles for About Page */
-@media (max-width: 1024px) {
+/* Mobile-specific Styles */
+
+/* Portrait Mode (for screens less than 1024px wide) */
+
+@media (max-width: 1024px) and (orientation: portrait) {
+  .about-page {
+    padding: 20px;
+    background-color: #f0f4f8;
+    font-family: "Poppins", sans-serif;
+  }
+
   .about-description {
-    font-size: 0.8rem; /* Reduces the font size */
-    padding: 5px; /* Reduces padding */
-    word-wrap: break-word; /* Ensures long words wrap */
-    text-overflow: ellipsis; /* Adds ellipsis for overflow */
-    max-width: 100%; /* Ensures the content stays within the viewport */
+    font-size: 1rem;
+    padding: 5px;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  .team-columns {
+    flex-direction: column;
+    align-items: center;
   }
 
   .team-section {
-    animation: slide-down 0.5s ease-out forwards; /* Adds a sliding animation */
+    max-width: 100%;
+    margin-bottom: 20px;
+    animation: slide-down 0.5s ease-out forwards;
   }
 
   @keyframes slide-down {
     from {
       opacity: 0;
-      transform: translateY(-20px); /* Starts from a higher position */
+      transform: translateY(-20px);
     }
     to {
       opacity: 1;
-      transform: translateY(0); /* Ends in the normal position */
+      transform: translateY(0);
     }
   }
 
   .team-row {
-    flex-direction: column; /* Stacks the team members vertically */
-    align-items: center; /* Centers the team members */
+    flex-direction: column;
+    align-items: center;
   }
 
   .team-member {
-    margin-bottom: 20px; /* Adds space below the member */
+    margin-bottom: 20px;
+    width: 90%;
+  }
+
+  .team-member.large {
+    min-height: 150px;
+  }
+
+  .team-member img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+  }
+
+  .team-member h4 {
+    font-size: 1rem;
+    margin-top: 5px;
   }
 
   .tech-grid {
-    flex-direction: column; /* Stacks the technology cards vertically */
-    align-items: center; /* Centers the cards */
+    flex-direction: column;
+    align-items: center;
   }
 
   .go-top-btn {
-    bottom: 15px; /* Reduces the position from the bottom */
-    right: 15px; /* Reduces the position from the right */
-    font-size: 20px; /* Reduces the font size */
+    bottom: 15px;
+    right: 15px;
+    font-size: 20px;
   }
 }
+
+/* Landscape Mode (for screens less than 1024px wide) */
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  .about-page {
+    padding: 20px;
+  }
+
+  .team-columns {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .team-section {
+    max-width: 45%;
+    margin-bottom: 20px;
+    animation: slide-down 0.5s ease-out forwards;
+  }
+
+  .team-row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .team-member.large {
+    min-height: 370px;
+  }
+
+  .team-member {
+    min-height: 400px; /* Set uniform height for all members */
+    align-items: center;
+    justify-content: center;
+    padding: 15px; /* Ensure even padding */
+    box-sizing: border-box; /* Include padding within height */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a shadow */
+    margin: 10px;
+  }
+  
+  .team-member img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+  }
+
+  .team-member h4 {
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+
+  .team-member p {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+
+  .tech-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tech-card {
+    width: 30%;
+    margin: 15px;
+  }
+
+  .go-top-btn {
+    bottom: 15px;
+    right: 15px;
+    font-size: 20px;
+  }
+}
+
