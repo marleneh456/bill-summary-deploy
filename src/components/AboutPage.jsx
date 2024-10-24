@@ -208,7 +208,7 @@ function AboutPage() {
             <div className="team-row">
               <div className="team-member">
                 <img
-                  src="./bill-summary-deploy/images/Herrick.jpg"
+                  src="./bill-summary-deploy/images/member2.avif"
                   alt="Member 14"
                   className="team-photo"
                 />
@@ -347,7 +347,7 @@ function AboutPage() {
             <div className="team-row">
               <div className="team-member">
                 <img
-                  src="./bill-summary-deploy/images/Herrick.jpg"
+                  src="./bill-summary-deploy/images/member1.jpg"
                   alt="Member 14"
                   className="team-photo"
                 />
