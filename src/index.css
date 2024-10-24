@@ -977,6 +977,22 @@ main {
   margin-top: 5px; /* Adds space above the text */
 }
 
+.github-link {
+  margin-right: 10px; /* Adjusts space between the icon and the text */
+  vertical-align: middle; /* Ensures alignment with the text */
+  color: black;
+}
+
+.username-link {
+  text-decoration: none; /* Removes underline */
+  color: black; /* Sets text color */
+  font-weight: normal;
+}
+
+.username-link:hover {
+  text-decoration: underline; /* Adds underline on hover */
+}
+
 /* Ensure both cards have the same size */
 .team-member.large {
   min-height: 400px; /* Ensure minimum height is consistent */
@@ -984,7 +1000,7 @@ main {
 
 .team-member p {
   font-family: "Jacques Francois", serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   color: #7f7f7f;
 }
@@ -1008,23 +1024,6 @@ main {
 
 .meet-the-team {
   padding-bottom: 100px; /* Adds padding at the bottom */
-}
-
-.github-link {
-  margin-right: 10px; /* Adjusts space between the icon and the text */
-  vertical-align: middle; /* Ensures alignment with the text */
-  color: black;
-}
-
-.username-link {
-  font-size: 1rem; /* Adjusts the font size */
-  text-decoration: none; /* Removes underline */
-  color: black; /* Sets text color */
-  font-weight: normal;
-}
-
-.username-link:hover {
-  text-decoration: underline; /* Adds underline on hover */
 }
 
 .go-top-btn {
@@ -1098,11 +1097,11 @@ main {
   .team-member {
     margin-bottom: 20px;
     width: 90%;
-	min-height: 250px;
+	min-height: 300px;
   }
 
   .team-member.large {
-    min-height: 250px;
+    min-height: 300px;
   }
 
   .team-member img {
@@ -1112,10 +1111,13 @@ main {
   }
 
   .team-member h4 {
-    font-size: 1rem;
+    font-size: 14px;
     margin-top: 5px;
   }
-
+  
+  .team-member p {
+	font-size: 12px;
+  }
   .tech-grid {
     flex-direction: column;
     align-items: center;
@@ -1152,11 +1154,11 @@ main {
   }
 
   .team-member.large {
-    min-height: 400px;
+    min-height: 500px;
   }
 
   .team-member {
-    min-height: 450px; /* Set uniform height for all members */
+    min-height: 400px; /* Set uniform height for all members */
     align-items: center;
     justify-content: center;
     padding: 15px; /* Ensure even padding */
@@ -1174,8 +1176,12 @@ main {
   }
 
   .team-member h4 {
-    font-size: 1rem;
+    font-size: 14px;
     margin-top: 5px;
+  }
+  
+  .team-member p {
+	font-size: 12px;
   }
 
   .tech-grid {
