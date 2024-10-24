@@ -1098,10 +1098,11 @@ main {
   .team-member {
     margin-bottom: 20px;
     width: 90%;
+	min-height: 250px;
   }
 
   .team-member.large {
-    min-height: 150px;
+    min-height: 250px;
   }
 
   .team-member img {
@@ -1155,7 +1156,7 @@ main {
   }
 
   .team-member {
-    min-height: 400px; /* Set uniform height for all members */
+    min-height: 450px; /* Set uniform height for all members */
     align-items: center;
     justify-content: center;
     padding: 15px; /* Ensure even padding */
