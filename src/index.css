@@ -1159,12 +1159,6 @@ main {
     margin-top: 5px;
   }
 
-  .team-member p {
-    text-align: center;
-    font-size: 0.9rem;
-    margin-top: 5px;
-  }
-
   .tech-grid {
     flex-direction: row;
     flex-wrap: wrap;
