@@ -5,8 +5,10 @@ function AboutPage() {
 
   // Hook to handle the scroll event and show the button when user scrolls down
   useEffect(() => {
-    const handleScroll = () => { // Function to check the scroll position
-      if (window.pageYOffset > 300) { // If the scroll position is greater than 300px
+    const handleScroll = () => {
+      // Function to check the scroll position
+      if (window.pageYOffset > 300) {
+        // If the scroll position is greater than 300px
         setShowTopBtn(true); // Show the "Go to Top" button
       } else {
         setShowTopBtn(false); // Hide the "Go to Top" button
@@ -50,7 +52,7 @@ function AboutPage() {
           {/* Technology cards */}
           <div className="tech-card">
             <img
-              src="/bill-summary-deploy/images/ai.png"
+              src="./bill-summary-deploy/images/ai.png"
               alt="Google T5 Small"
               className="tech-icon"
             />
@@ -58,17 +60,17 @@ function AboutPage() {
             <p>AI for Summarization</p>
           </div>
           <div className="tech-card">
-            <img src="/bill-summary-deploy/images/react.png" alt="React" className="tech-icon" />
+            <img src="./bill-summary-deploy/images/react.png" alt="React" className="tech-icon" />
             <h4>React</h4>
             <p>Frontend Development</p>
           </div>
           <div className="tech-card">
-            <img src="/bill-summary-deploy/images/flask.jpg" alt="Flask" className="tech-icon" />
+            <img src="./bill-summary-deploy/images/flask.jpg" alt="Flask" className="tech-icon" />
             <h4>Flask</h4>
             <p>Backend Development</p>
           </div>
           <div className="tech-card">
-            <img src="/bill-summary-deploy/images/api.png" alt="REST API" className="tech-icon" />
+            <img src="./bill-summary-deploy/images/api.png" alt="REST API" className="tech-icon" />
             <h4>REST API</h4>
             <p>Web-based API</p>
           </div>
@@ -85,58 +87,139 @@ function AboutPage() {
             <div className="team-row mentor">
               <div className="team-member large">
                 <img
-                  src="/bill-summary-deploy/images/taylor.jpg"
+                  src="./bill-summary-deploy/images/Taylor.jpg"
                   alt="Taylor"
                   className="team-photo"
                 />
-                <h4>Taylor</h4>
-                <p>Team Mentor - AI Model</p>
+                <h4>
+                  Taylor Hartman{" "}
+                  <a href="https://github.com/cheaptrix2" target="_blank">
+                    <i className="fab fa-github social-icon"></i>
+                  </a>
+                </h4>
+                <p>
+                  Head Project Manager and Lead Artificial Intelligence Engineer
+                </p>
+                <p>
+                  M.S. in Software Engineering with concentration in Artificial Intelligence, Machine Learning, Deep Learning, and Big Data - MTSU 
+				  <br /> B.S. Computer Science - MTSU
+                </p>
               </div>
             </div>
-            {/* Second row - Two members */}
+            {/* Second row */}
             <div className="team-row">
               <div className="team-member">
                 <img
-                  src="/bill-summary-deploy/images/member1.jpg"
+                  src="./bill-summary-deploy/images/Wasim.png"
                   alt="Member 1"
                   className="team-photo"
                 />
-                <h4>Member 1</h4>
+                <h4>
+                  Wasim Mondal{" "}
+                  <a href="https://github.com/wasimmondal" target="_blank">
+                    <i className="fab fa-github social-icon"></i>
+                  </a>
+                </h4>
+                <p>Artificial Intelligence Team Leader</p>
+                <p>B.S. Computer Science - MTSU</p>
               </div>
               <div className="team-member">
                 <img
-                  src="/bill-summary-deploy/images/member2.avif"
+                  src="./bill-summary-deploy/images/Chris.jpg"
                   alt="Member 2"
                   className="team-photo"
                 />
-                <h4>Member 2</h4>
+                <h4>
+                  Chris Keiningham{" "}
+                  <a href="https://github.com/chriskein1" target="_blank">
+                    <i className="fab fa-github social-icon"></i>
+                  </a>
+                </h4>
+                <p>Artificial Intelligence Engineer</p>
+                <p>B.S. Computer Science - MTSU</p>
               </div>
             </div>
-            {/* Third row - Three members */}
+            {/* Third row */}
             <div className="team-row">
               <div className="team-member">
                 <img
-                  src="/bill-summary-deploy/images/member3.jpg"
+                  src="./bill-summary-deploy/images/Tyler.jpg"
                   alt="Member 3"
                   className="team-photo"
                 />
-                <h4>Member 3</h4>
+                <h4>
+                  Tyler Stickel{" "}
+                  <a href="https://github.com/Sarafae" target="_blank">
+                    <i className="fab fa-github social-icon"></i>
+                  </a>
+                </h4>
+                <p>Artificial Intelligence Engineer</p>
+                <p>B.S. Computer Science - MTSU</p>
               </div>
               <div className="team-member">
                 <img
-                  src="/bill-summary-deploy/images/member4.jpg"
+                  src="./bill-summary-deploy/images/Evan.jpg"
                   alt="Member 4"
                   className="team-photo"
                 />
-                <h4>Member 4</h4>
+                <h4>
+                  Evan Smith{" "}
+                  <a href="https://github.com/EvanSmith1016" target="_blank">
+                    <i className="fab fa-github social-icon"></i>
+                  </a>
+                </h4>
+                <p>Artificial Intelligence Engineer</p>
+                <p>B.S. Computer Science - MTSU</p>
               </div>
+            </div>
+            {/* Fourth row */}
+            <div className="team-row">
               <div className="team-member">
                 <img
-                  src="/bill-summary-deploy/images/member5.jpg"
+                  src="./bill-summary-deploy/images/Om.jpg"
                   alt="Member 5"
                   className="team-photo"
                 />
-                <h4>Member 5</h4>
+                <h4>
+                  Om Patel{" "}
+                  <a href="https://github.com/Omp200g" target="_blank">
+                    <i className="fab fa-github social-icon"></i>
+                  </a>
+                </h4>
+                <p>Artificial Intelligence Engineer</p>
+                <p>B.S. Computer Science - MTSU</p>
+              </div>
+              <div className="team-member">
+                <img
+                  src="./bill-summary-deploy/images/Jacob.jpg"
+                  alt="Member 6"
+                  className="team-photo"
+                />
+                <h4>
+                  Jacob Sherlin{" "}
+                  <a href="https://github.com/jacobsherlin" target="_blank">
+                    <i className="fab fa-github social-icon"></i>
+                  </a>
+                </h4>
+                <p>Artificial Intelligence Engineer</p>
+                <p>B.S. Computer Science - MTSU</p>
+              </div>
+            </div>
+            <div className="team-row">
+              <div className="team-member">
+                <img
+                  src="./bill-summary-deploy/images/Herrick.jpg"
+                  alt="Member 14"
+                  className="team-photo"
+                />
+                <h4>
+                  Nahid Hasan{" "}
+                  <a href="https://github.com/" target="_blank">
+                    <i className="fab fa-github social-icon"></i>
+                  </a>
+                </h4>
+                <p>Artificial Intelligence Engineer</p>
+                <p>B.S. Computer Science - MTSU</p>
               </div>
             </div>
           </div>
@@ -148,58 +231,134 @@ function AboutPage() {
             <div className="team-row mentor">
               <div className="team-member large">
                 <img
-                  src="/bill-summary-deploy/images/scott.jpg"
+                  src="./bill-summary-deploy/images/Scott.jpg"
                   alt="Scott"
                   className="team-photo"
                 />
-                <h4>Scott</h4>
-                <p>Team Mentor - REST API</p>
+                <h4>
+                  Scott Hartsell{" "}
+                  <a href="https://github.com/jasonscotth" target="_blank">
+                    <i className="fab fa-github social-icon"></i>
+                  </a>
+                </h4>
+                <p>Assistant Project Manager and Lead Backend Engineer</p>
+                <p>B.S. Computer Science - MTSU</p>
               </div>
             </div>
-            {/* Second row - Two members */}
+            {/* Second row  */}
             <div className="team-row">
               <div className="team-member">
                 <img
-                  src="/bill-summary-deploy/images/member8.jpg"
+                  src="./bill-summary-deploy/images/Marlene.jpg"
                   alt="Member 8"
                   className="team-photo"
                 />
-                <h4>Member 8</h4>
+                <h4>
+                  Marlene Habib{" "}
+                  <a href="https://github.com/marleneh456" target="_blank">
+                    <i className="fab fa-github social-icon"></i>
+                  </a>
+                </h4>
+                <p>React Engineer</p>
+                <p>B.S. Computer Science - MTSU</p>
               </div>
               <div className="team-member">
                 <img
-                  src="/bill-summary-deploy/images/member9.jpg"
+                  src="./bill-summary-deploy/images/Raymond.jpg"
                   alt="Member 9"
                   className="team-photo"
                 />
-                <h4>Member 9</h4>
+                <h4>
+                  Raymond Green{" "}
+                  <a href="https://github.com/Reowulf" target="_blank">
+                    <i className="fab fa-github social-icon"></i>
+                  </a>
+                </h4>
+                <p>REST API Team Leader</p>
+                <p>B.S. Computer Science - MTSU</p>
               </div>
             </div>
-            {/* Third row - Three members */}
+            {/* Third row - */}
             <div className="team-row">
               <div className="team-member">
                 <img
-                  src="/bill-summary-deploy/images/member10.jpg"
+                  src="./bill-summary-deploy/images/Rogena.jpg"
                   alt="Member 10"
                   className="team-photo"
                 />
-                <h4>Member 10</h4>
+                <h4>
+                  Rogena Khella{" "}
+                  <a href="https://github.com/rogenakhella3" target="_blank">
+                    <i className="fab fa-github social-icon"></i>
+                  </a>
+                </h4>
+                <p>React Engineer</p>
+                <p>B.S. Computer Science - MTSU</p>
               </div>
               <div className="team-member">
                 <img
-                  src="/bill-summary-deploy/images/member11.jpg"
+                  src="./bill-summary-deploy/images/Josh.jpg"
                   alt="Member 11"
                   className="team-photo"
                 />
-                <h4>Member 11</h4>
+                <h4>
+                  Joshua Kirkpatrick{" "}
+                  <a href="https://github.com/jbk3h" target="_blank">
+                    <i className="fab fa-github social-icon"></i>
+                  </a>
+                </h4>
+                <p>Backend Engineer</p>
+                <p>B.S. Computer Science - MTSU</p>
               </div>
+            </div>
+            {/* Fourth row */}
+            <div className="team-row">
               <div className="team-member">
                 <img
-                  src="/bill-summary-deploy/images/member12.jpg"
+                  src="./bill-summary-deploy/images/Van.jpg"
                   alt="Member 12"
                   className="team-photo"
                 />
-                <h4>Member 12</h4>
+                <h4>
+                  Van Lawn{" "}
+                  <a href="https://github.com/JohnnyLawma" target="_blank">
+                    <i className="fab fa-github social-icon"></i>
+                  </a>
+                </h4>
+                <p>Backend Engineer</p>
+                <p>B.S. Computer Science - MTSU</p>
+              </div>
+              <div className="team-member">
+                <img
+                  src="./bill-summary-deploy/images/Drew.jpg"
+                  alt="Member 13"
+                  className="team-photo"
+                />
+                <h4>
+                  Ivan Orta{" "}
+                  <a href="https://github.com/idorta" target="_blank">
+                    <i className="fab fa-github social-icon"></i>
+                  </a>
+                </h4>
+                <p>Backend Engineer</p>
+                <p>B.S. Computer Science - MTSU</p>
+              </div>
+            </div>
+            <div className="team-row">
+              <div className="team-member">
+                <img
+                  src="./bill-summary-deploy/images/Herrick.jpg"
+                  alt="Member 14"
+                  className="team-photo"
+                />
+                <h4>
+                  Herrick Vasck{" "}
+                  <a href="https://github.com/HerrickVasck" target="_blank">
+                    <i className="fab fa-github social-icon"></i>
+                  </a>
+                </h4>
+                <p>Backend Server Development</p>
+                <p>B.S. Computer Science - MTSU</p>
               </div>
             </div>
           </div>
@@ -207,12 +366,11 @@ function AboutPage() {
       </section>
 
       {/* Go to Top Button */}
-	  {showTopBtn && (
-	  <button className="go-top-btn" onClick={scrollToTop}>
-	  &uarr; {/* Use upwards arrow symbol */}
-	  </button>
-	)}
-
+      {showTopBtn && (
+        <button className="go-top-btn" onClick={scrollToTop}>
+          &uarr; {/* Use upwards arrow symbol */}
+        </button>
+      )}
     </div>
   );
 }

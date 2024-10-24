@@ -21,17 +21,17 @@ function Footer() {
         <div className="footer-social">
           {/* Facebook Link */}
           <a href="https://facebook.com" target="_blank" rel="noreferrer">
-            <i className="fab fa-facebook-f"></i>
+            <img src="./images/facebook icon.png" />
           </a>
 
           {/* Twitter Link */}
           <a href="https://twitter.com" target="_blank" rel="noreferrer">
-            <i className="fab fa-twitter"></i>
+			<img src="./images/twitterx icon.png" />
           </a>
 
           {/* LinkedIn Link */}
           <a href="https://linkedin.com" target="_blank" rel="noreferrer">
-            <i className="fab fa-linkedin-in"></i>
+            <img src="./images/linkedin icon.png" />
           </a>
 
           {/* GitHub Repository Link */}
@@ -40,7 +40,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <i className="fab fa-github"></i>
+            <img src="./images/github icon.png" />
           </a>
         </div>
       </div>

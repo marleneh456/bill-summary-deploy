@@ -33,7 +33,11 @@ function Navbar() {
           className="logo"
           onClick={() => (window.location.href = "/")} // Redirect to home page on logo click
         />
-        <h2 className="bill-summary">What's in the Bill?</h2> {/* Company title */}
+        <img
+          src="./images/WITB_Transparent_Title.png"
+          alt="Company Title Card"
+          className="title-card"
+        />
       </div>
 
       {/* Show Desktop Navigation on larger screens (when isMobile is false) */}
