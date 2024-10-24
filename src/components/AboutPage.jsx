@@ -248,6 +248,22 @@ function AboutPage() {
             </div>
             {/* Second row  */}
             <div className="team-row">
+			   <div className="team-member">
+                <img
+                  src="./bill-summary-deploy/images/Raymond.jpg"
+                  alt="Member 9"
+                  className="team-photo"
+                />
+                <h4>
+                  Raymond Green{" "}
+                  <a href="https://github.com/Reowulf" target="_blank">
+                    <i className="fab fa-github social-icon"></i>
+                  </a>
+                </h4>
+                <p>REST API Team Leader</p>
+                <p>B.S. Computer Science - MTSU</p>
+              </div>
+			  
               <div className="team-member">
                 <img
                   src="./bill-summary-deploy/images/Marlene.jpg"
@@ -261,21 +277,6 @@ function AboutPage() {
                   </a>
                 </h4>
                 <p>React Engineer</p>
-                <p>B.S. Computer Science - MTSU</p>
-              </div>
-              <div className="team-member">
-                <img
-                  src="./bill-summary-deploy/images/Raymond.jpg"
-                  alt="Member 9"
-                  className="team-photo"
-                />
-                <h4>
-                  Raymond Green{" "}
-                  <a href="https://github.com/Reowulf" target="_blank">
-                    <i className="fab fa-github social-icon"></i>
-                  </a>
-                </h4>
-                <p>REST API Team Leader</p>
                 <p>B.S. Computer Science - MTSU</p>
               </div>
             </div>
