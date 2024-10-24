@@ -961,7 +961,7 @@ main {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a shadow */
   max-height: 150px; /* Sets a minimum height */
   overflow: visible; /* Ensures content is visible */
-  min-height: 400px;
+  min-height: 380px;
 }
 
 .team-member img {
@@ -973,7 +973,7 @@ main {
 }
 
 .team-member h4 {
-  font-size: 16px; /* Sets the font size */
+  font-size: 1.3rem; /* Sets the font size */
   margin-top: 5px; /* Adds space above the text */
 }
 
@@ -995,12 +995,12 @@ main {
 
 /* Ensure both cards have the same size */
 .team-member.large {
-  max-height: 400px; /* Ensure minimum height is consistent */
+  min-height: 420px; /* Ensure minimum height is consistent */
 }
 
 .team-member p {
   font-family: "Jacques Francois", serif;
-  font-size: 16px;
+  font-size: 1.1rem;
   line-height: 1.5;
   color: #7f7f7f;
 }
@@ -1052,17 +1052,25 @@ main {
 
 @media (max-width: 1024px) and (orientation: portrait) {
   
+  .team-member {
+	min-height: 330px;
+  }
+  
+  .team-member.large {
+    min-height: 330px; /* Ensure minimum height is consistent */
+  }
+  
   .team-member img {
-    width: 100px;
-    height: 100px;
+   width: 120px;
+   height: 120px;
   }
 
   .team-member h4 {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   
   .team-member p {
-	font-size: 12px;
+	font-size: 0.75rem;
   }
 }
 
@@ -1070,27 +1078,24 @@ main {
 
 @media (max-width: 1024px) and (orientation: landscape) {
 
-
-  .team-member.large {
-    max-height: 5px;
-	max-width: 380px;
-  }
-
   .team-member {
-    max-height: 200px; /* Set uniform height for all members */
-	max-width: 380px;
+	min-height: 300px;
+  }
+  
+  .team-member.large {
+    min-height: 310px; /* Ensure minimum height is consistent */
   }
   
   .team-member img {
-    width: 100px;
-    height: 100px;
+   width: 100px;
+   height: 100px;
   }
 
   .team-member h4 {
-    font-size: 14px;
+    font-size: 0.75rem;
   }
   
   .team-member p {
-	font-size: 14px;
+	font-size: 0.75rem;
   }
 }

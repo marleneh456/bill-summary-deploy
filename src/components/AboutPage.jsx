@@ -109,8 +109,11 @@ function AboutPage() {
                 <p>
                   M.S. in Computer Science with concentration in Arificial
                   Intelligence, Machine Learning, Deep Learning, and Big Data -
-                  MTSU <br /> B.S. Computer Science - MTSU
+                  MTSU
                 </p>
+				<p>
+				  B.S. Computer Science - MTSU
+				</p>
               </div>
             </div>
             {/* Second row */}
