@@ -104,7 +104,7 @@ main {
     background-color: #4a5c79; /* Sets the button's background color */
     color: white; /* Makes the button text white */
     border: none; /* Removes the button border */
-    font-size: 24px; /* Increases the button's font size */
+    font-size: 18px; /* Increases the button's font size */
     cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
     border-radius: 15px; /* Rounds the button's corners */
     padding: 8px 15px; /* Adds padding to the button */
@@ -959,7 +959,7 @@ main {
   background-color: #fff; /* White background */
   border-radius: 10px; /* Rounds the corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a shadow */
-  min-height: 150px; /* Sets a minimum height */
+  max-height: 150px; /* Sets a minimum height */
   overflow: visible; /* Ensures content is visible */
   min-height: 400px;
 }
@@ -973,7 +973,7 @@ main {
 }
 
 .team-member h4 {
-  font-size: 1.1em; /* Sets the font size */
+  font-size: 16px; /* Sets the font size */
   margin-top: 5px; /* Adds space above the text */
 }
 
@@ -995,7 +995,7 @@ main {
 
 /* Ensure both cards have the same size */
 .team-member.large {
-  min-height: 400px; /* Ensure minimum height is consistent */
+  max-height: 400px; /* Ensure minimum height is consistent */
 }
 
 .team-member p {
@@ -1051,154 +1051,46 @@ main {
 /* Portrait Mode (for screens less than 1024px wide) */
 
 @media (max-width: 1024px) and (orientation: portrait) {
-  .about-page {
-    padding: 20px;
-    background-color: #f0f4f8;
-    font-family: "Poppins", sans-serif;
-  }
-
-  .about-description {
-    font-size: 1rem;
-    padding: 5px;
-    word-wrap: break-word;
-    text-overflow: ellipsis;
-    max-width: 100%;
-    margin: 0 auto;
-    line-height: 1.6;
-  }
-
-  .team-columns {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .team-section {
-    max-width: 100%;
-    margin-bottom: 20px;
-    animation: slide-down 0.5s ease-out forwards;
-  }
-
-  @keyframes slide-down {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  .team-row {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .team-member {
-    margin-bottom: 20px;
-    width: 90%;
-	min-height: 300px;
-  }
-
-  .team-member.large {
-    min-height: 300px;
-  }
-
+  
   .team-member img {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
   }
 
   .team-member h4 {
-    font-size: 14px;
-    margin-top: 5px;
+    font-size: 12px;
   }
   
   .team-member p {
 	font-size: 12px;
-  }
-  .tech-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .go-top-btn {
-    bottom: 15px;
-    right: 15px;
-    font-size: 20px;
   }
 }
 
 /* Landscape Mode (for screens less than 1024px wide) */
 
 @media (max-width: 1024px) and (orientation: landscape) {
-  .about-page {
-    padding: 20px;
-  }
 
-  .team-columns {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .team-section {
-    max-width: 45%;
-    margin-bottom: 20px;
-    animation: slide-down 0.5s ease-out forwards;
-  }
-
-  .team-row {
-    flex-direction: row;
-    justify-content: space-between;
-  }
 
   .team-member.large {
-    min-height: 500px;
+    max-height: 5px;
+	max-width: 380px;
   }
 
   .team-member {
-    min-height: 400px; /* Set uniform height for all members */
-    align-items: center;
-    justify-content: center;
-    padding: 15px; /* Ensure even padding */
-    box-sizing: border-box; /* Include padding within height */
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a shadow */
-    margin: 10px;
+    max-height: 200px; /* Set uniform height for all members */
+	max-width: 380px;
   }
   
   .team-member img {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
   }
 
   .team-member h4 {
     font-size: 14px;
-    margin-top: 5px;
   }
   
   .team-member p {
-	font-size: 12px;
-  }
-
-  .tech-grid {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .tech-card {
-    width: 30%;
-    margin: 15px;
-  }
-
-  .go-top-btn {
-    bottom: 15px;
-    right: 15px;
-    font-size: 20px;
+	font-size: 14px;
   }
 }
-
