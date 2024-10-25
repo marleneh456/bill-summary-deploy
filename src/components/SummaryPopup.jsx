@@ -79,7 +79,7 @@ function SummaryPopup({ parsedText, closePopup, handleStartOver }) {
             <img
               src="./bill-summary-deploy/images/download.svg"
               alt="Download"
-              style={{ width: '20px', marginRight: '8px', opacity: 0.6}} // Add opacity here
+              style={{ width: '20px', marginRight: '8px'}} // Add opacity here
             />
             Download
           </button>
