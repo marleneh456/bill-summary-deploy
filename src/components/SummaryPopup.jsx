@@ -80,6 +80,8 @@ function SummaryPopup({ parsedText, closePopup, handleStartOver }) {
               src="./bill-summary-deploy/images/download.svg"
               alt="Download"
               style={{ width: '20px', marginRight: '8px'}}
+              style={{ width: '20px', marginRight: '8px'}} 
+
             />
             Download
           </button>
@@ -101,6 +103,7 @@ function SummaryPopup({ parsedText, closePopup, handleStartOver }) {
                 src={isPaused ? "./bill-summary-deploy/images/play.svg" : "./bill-summary-deploy/images/pause.svg"}
                 alt={isPaused ? "Play" : "Pause"}
                 style={{ width: '20px'}}
+                style={{ width: '20px'}} 
               />
             </button>
           )}
