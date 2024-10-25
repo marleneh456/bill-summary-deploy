@@ -79,7 +79,7 @@ function SummaryPopup({ parsedText, closePopup, handleStartOver }) {
             <img
               src="./bill-summary-deploy/images/download.svg"
               alt="Download"
-              style={{ width: '20px', marginRight: '8px', opacity: 0.6}} // Add opacity here
+              style={{ width: '20px', marginRight: '8px'}}
             />
             Download
           </button>
@@ -87,9 +87,9 @@ function SummaryPopup({ parsedText, closePopup, handleStartOver }) {
           {/* Restart button */}
           <button className="do-it-again-btn" onClick={handleStartOver}>
             <img
-              src="./bill-summary-deploy/images/redo.svg"
+              src="./bill-summary-deploy/images/redo file icon.svg"
               alt="Redo"
-              style={{ width: '20px', marginRight: '8px'}} // Add opacity here
+              style={{ width: '20px', marginRight: '8px'}} 
             />
             Summarize Another Bill
           </button>
@@ -100,7 +100,7 @@ function SummaryPopup({ parsedText, closePopup, handleStartOver }) {
               <img
                 src={isPaused ? "./bill-summary-deploy/images/play.svg" : "./bill-summary-deploy/images/pause.svg"}
                 alt={isPaused ? "Play" : "Pause"}
-                style={{ width: '20px'}} // Add opacity here
+                style={{ width: '20px'}}
               />
             </button>
           )}
