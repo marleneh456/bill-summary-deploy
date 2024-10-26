@@ -474,7 +474,7 @@ main {
   }
   
   .popup-content h3 {
-	font-size: 14px;
+	font-size: 12px;
   }
   
   .close-popup {
@@ -507,11 +507,11 @@ main {
   }
   
   .file-selected {
-	font-size: 14px; /* Sets the font size */
+	font-size: 12px; /* Sets the font size */
   }
   
   .file-selected .remove-btn {
-   font-size: 14px; /* Sets the font size */
+   font-size: 16px; /* Sets the font size */
   }
 }
 
