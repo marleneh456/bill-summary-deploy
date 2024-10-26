@@ -423,6 +423,7 @@ main {
 @media (max-width: 1024px) and (orientation: portrait) {
   .popup-content {
     min-width: 350px; /* Ensures it scales well on smaller screens */
+	font-size: 14px;
   }
   
   .close-popup {
