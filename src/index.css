@@ -474,7 +474,7 @@ main {
 
 @media (max-width: 1024px) and (orientation: landscape) {
   .popup-content {
-    width: 690px; /* Keeps a larger width in landscape mode */
+    width: 800px; /* Keeps a larger width in landscape mode */
     height: 230px; /* Limits the height */
   }
   
