@@ -34,11 +34,16 @@ main {
 
 /* Mobile-specific Styles */
 
-@media (max-width: 1024px) and (orientation: portrait) {  
+@media (max-width: 1024px) {
+  .welcome-section {
+    margin-bottom: 80px; /* Adds space below the welcome section */
+  }
+  
   .welcome-section h1{
 	font-size: 25px;
   }
 }
+
 
 /* Navbar Styles */
 .navbar {
@@ -465,7 +470,7 @@ main {
 @media (max-width: 1024px) and (orientation: landscape) {
   .popup-content {
     width: 620px; /* Keeps a larger width in landscape mode */
-    height: 250px; /* Limits the height */
+    height: 230px; /* Limits the height */
   }
   
   .popup-content h3 {
@@ -479,28 +484,30 @@ main {
   
   .upload-container {
     width: 400px; /* Limits the container width */
-	height: 180px;
-    padding: 0; /* Reduces padding */
+	height: 170px;
+    padding: 1px; /* Reduces padding */
     margin: auto; /* Centers the container */
     font-size: 10px; /* Reduces font size */
   }
 
   .upload-btn {
     font-size: 10px; /* Reduces button font size */
+	margin: 8px; /* Adds margin around the button */
+    padding: 5px 10px; /* Adds padding inside the button */
   }
 
   .upload-dropzone {
-    width: 280px; /* Limits dropzone width */
-	height: 25px;
-    margin-left: 40px; /* Adds margin on the left */
+    width: 250px; /* Limits dropzone width */
+	height: 20px;
+    margin-left: 50px; /* Adds margin on the left */
   }
 
   .upload-dropzone p {
-    font-size: 12px; /* Reduces text size */
+    font-size: 10px; /* Reduces text size */
   }
   
   .file-selected {
-	font-size: 12px; /* Sets the font size */
+	font-size: 10px; /* Sets the font size */
   }
   
   .file-selected .remove-btn {
