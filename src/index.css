@@ -442,6 +442,14 @@ main {
   .upload-dropzone p {
     font-size: 12px; /* Slightly reduces text size */
   }
+  
+  .file-selected {
+	font-size: 12px; /* Sets the font size */
+  }
+  
+  .file-selected .remove-btn {
+   font-size: 12px; /* Sets the font size */
+  }
 }
 
 
@@ -475,6 +483,14 @@ main {
 
   .upload-dropzone p {
     font-size: 12px; /* Reduces text size */
+  }
+  
+  .file-selected {
+	font-size: 12px; /* Sets the font size */
+  }
+  
+  .file-selected .remove-btn {
+   font-size: 12px; /* Sets the font size */
   }
 }
 
@@ -655,7 +671,7 @@ main {
 /* Landscape Mobile Styles */
 @media (max-width: 1024px) and (orientation: landscape) {
   .summary-box {
-    height: 150px; /* Reduces height for landscape mode */	
+    height: 100px; /* Reduces height for landscape mode */	
   }
   
   .download-btn, .do-it-again-btn, .pause-play-btn{
