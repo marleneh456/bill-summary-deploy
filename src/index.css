@@ -409,6 +409,10 @@ main {
   box-sizing: border-box; /* Ensures padding is included in the element's width */
 }
 
+.popup-content h3 {
+	font-size: 16px;
+}
+
 .close-popup {
   position: absolute; /* Positions the button inside the popup */
   top: 2px; /* Aligns it to the top */
@@ -423,7 +427,6 @@ main {
 @media (max-width: 1024px) and (orientation: portrait) {
   .popup-content {
     min-width: 350px; /* Ensures it scales well on smaller screens */
-	font-size: 14px;
   }
   
   .close-popup {
@@ -432,10 +435,14 @@ main {
   }
 
   .upload-container {
-    width: 90%; /* Adjusts the container width */
-    padding: 20px; /* Reduces padding for smaller screens */
+    width: 80%; /* Adjusts the container width */
+    padding: 25px; /* Reduces padding for smaller screens */
   }
-
+  
+  .upload-container p {
+	font-size: 14px;
+  }
+  
   .upload-btn {
     font-size: 14px; /* Adjusts the font size */
   }
@@ -593,7 +600,7 @@ main {
   margin-top: 20px; /* Adds space above the summary box */
   text-align: center; /* Centers the text */
   position: relative; /* Positions the box relative to other elements */
-  max-width: 90%; /* Ensures it scales on smaller screens */
+  width: 590px; /* Ensures it scales on smaller screens */
   height: 250px; /* Sets a fixed height */
   overflow-y: auto; /* Enables vertical scrolling */
   border: 1px solid #ccc; /* Adds a border */
@@ -634,7 +641,7 @@ main {
 /* Button Styles */
 .download-btn, .do-it-again-btn, .pause-play-btn {
   padding: 5px 10px;
-  width: 90%; /* Full width buttons */
+  width: 200px; 
   background-color: #4682B4;
   color: white;
   border: none;
@@ -658,13 +665,12 @@ main {
   }
   
   .summary-box {
-    width: 290px; 	
+    max-width: 300px; 	
 	height: 280px; 
-	margin-top: auto;
   }
   
   .download-btn, .do-it-again-btn, .pause-play-btn{
-	width: 100%; /* Full width buttons */
+	min-width: 340px; /* Full width buttons */
   }
   
 }
@@ -673,6 +679,7 @@ main {
 @media (max-width: 1024px) and (orientation: landscape) {
   .summary-box {
     height: 100px; /* Reduces height for landscape mode */	
+	width: 535px; 
   }
   
   .download-btn, .do-it-again-btn, .pause-play-btn{
