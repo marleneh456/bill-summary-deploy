@@ -697,7 +697,7 @@ main {
 @media (max-width: 1024px) and (orientation: landscape) {
   .summary-box {
     height: 90px; /* Reduces height for landscape mode */	
-	width: 540px; 
+	width: 530px; 
   }
   
   .summary-box-pre {
