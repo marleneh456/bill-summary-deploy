@@ -474,8 +474,8 @@ main {
 
 @media (max-width: 1024px) and (orientation: landscape) {
   .popup-content {
-    width: 500px; /* Keeps a larger width in landscape mode */
-    height: 240px; /* Limits the height */
+    width: 800px; /* Keeps a larger width in landscape mode */
+    height: 250px; /* Limits the height */
   }
   
   .popup-content h3 {
@@ -697,8 +697,12 @@ main {
 @media (max-width: 1024px) and (orientation: landscape) {
   .summary-box {
     height: 110px; /* Reduces height for landscape mode */	
-	width: 730px; 
+	width: 600px; 
   }
+  
+  .summary-box-pre {
+   font-size: 8px; /* Sets the font size */
+ }
   
   .download-btn, .do-it-again-btn, .pause-play-btn{
 	font-size: 10px;
