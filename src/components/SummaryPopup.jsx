@@ -60,24 +60,16 @@ function SummaryPopup({ parsedText, closePopup, handleStartOver }) {
     });
   };
   
-  // Detect if in landscape mode on mobile
-  const isLandscapeMobile = window.innerWidth <= 1024 && window.innerWidth > window.innerHeight;
-  
   return (
     <div className="popup-overlay">
       <div className="popup-content">
         <h3>Here is the generated summary</h3>
 
         {/* Scrollable summary box */}
-         <div className="summary-box">
-          <pre
-            className="summary-box-pre"
-            style={{
-              fontSize: isLandscapeMobile ? '10px' : '16px', // Smaller font size for landscape mobile only
-            }}
-          >
+        <div className="summary-box">
+          <pre className="summary-box-pre">
             {animatedText}
-            {!isAnimationDone && <span className="blinking-cursor">|</span>}
+            {!isAnimationDone && <span className="blinking-cursor">|</span>} {/* Blinking cursor during animation */}
           </pre>
         </div>
 

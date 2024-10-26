@@ -416,7 +416,7 @@ main {
 }
 
 .popup-content h3 {
-	font-size: 16px;
+	font-size: 20px;
 }
 
 .close-popup {
@@ -433,6 +433,10 @@ main {
 @media (max-width: 1024px) and (orientation: portrait) {
   .popup-content {
     min-width: 350px; /* Ensures it scales well on smaller screens */
+  }
+  
+  .popup-content h3 {
+	font-size: 16px;
   }
   
   .close-popup {
@@ -645,9 +649,8 @@ main {
 
 /* Button Icon Styles */
 .button-icon {
-  width: 20px; /* Sets the icon width */
-  height: auto; /* Maintains aspect ratio */
-  margin-right: 8px; /* Adds space between the icon and text */
+  width: 35px; /* Sets the icon width */
+  height: 30px; /* Maintains aspect ratio */
   vertical-align: middle; /* Centers the icon with text */
 }
 
@@ -696,20 +699,22 @@ main {
 @media (max-width: 1024px) and (orientation: landscape) {
   .summary-box {
     height: 80px; /* Reduces height for landscape mode */	
-	width: 555px; 
+	width: 550px; 
   }
   
   .summary-box-pre {
-    font-size: 10px !important;
-    line-height: 1.2 !important; /* Ensures the text isn't too spaced out */
+    font-size: 10px; /* Even smaller font size for landscape mobile */
   }
   
   .download-btn, .do-it-again-btn, .pause-play-btn{
 	font-size: 10px;
+	width: 200px; /* Full width buttons */
   }
   
   .button-icon {
-    margin-right: 10px;
+    margin-right: 10px; /* Adds space between the icon and text */
+	width: 20px; /* Sets the icon width */
+    height: 20px; /* Maintains aspect ratio */
   }
 }
 
