@@ -455,8 +455,8 @@ main {
 
 @media (max-width: 1024px) and (orientation: landscape) {
   .popup-content {
-    min-width: 500px; /* Keeps a larger width in landscape mode */
-    min-height: 290px; /* Limits the height */
+    max-width: 580px; /* Keeps a larger width in landscape mode */
+    max-height: 280px; /* Limits the height */
     font-size: 12px; /* Adjusts the text size */
   }
   
@@ -671,7 +671,8 @@ main {
 /* Landscape Mobile Styles */
 @media (max-width: 1024px) and (orientation: landscape) {
   .summary-box {
-    height: 100px; /* Reduces height for landscape mode */	
+    max-height: 120px; /* Reduces height for landscape mode */	
+	max-width: 590px;
   }
   
   .download-btn, .do-it-again-btn, .pause-play-btn{
