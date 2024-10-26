@@ -700,7 +700,8 @@ main {
   }
   
   .summary-box-pre {
-    font-size: 10px !important; /* Force smaller font size for landscape mobile */
+    font-size: 10px !important;
+    line-height: 1.2 !important; /* Ensures the text isn't too spaced out */
   }
   
   .download-btn, .do-it-again-btn, .pause-play-btn{
@@ -708,9 +709,7 @@ main {
   }
   
   .button-icon {
-    width: 16px; /* Adjust icon size for better fit */
-    height: 16px;
-    margin-right: 8px;
+    margin-right: 10px;
   }
 }
 

@@ -59,17 +59,25 @@ function SummaryPopup({ parsedText, closePopup, handleStartOver }) {
       saveAs(blob, 'summary.docx'); // Save the document as 'summary.docx'
     });
   };
-
+  
+  // Detect if in landscape mode on mobile
+  const isLandscapeMobile = window.innerWidth <= 1024 && window.innerWidth > window.innerHeight;
+  
   return (
     <div className="popup-overlay">
       <div className="popup-content">
         <h3>Here is the generated summary</h3>
 
         {/* Scrollable summary box */}
-        <div className="summary-box">
-          <pre className="summary-box-pre">
+         <div className="summary-box">
+          <pre
+            className="summary-box-pre"
+            style={{
+              fontSize: isLandscapeMobile ? '10px' : '16px', // Smaller font size for landscape mobile only
+            }}
+          >
             {animatedText}
-            {!isAnimationDone && <span className="blinking-cursor">|</span>} {/* Blinking cursor during animation */}
+            {!isAnimationDone && <span className="blinking-cursor">|</span>}
           </pre>
         </div>
 
