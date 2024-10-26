@@ -484,7 +484,7 @@ main {
   
   .upload-container {
     width: 400px;  
-	height: 148px;
+	height: 150px;
     padding: 1px; /* Reduces padding */
     margin: auto; /* Centers the container */
     font-size: 13px; /* Reduces font size */
