@@ -413,7 +413,6 @@ main {
   width: 680px; /* Sets a fixed width */
   max-width: 90%; /* Ensures it scales on smaller screens */
   position: relative; /* Positions elements relative to the popup */
-  box-sizing: border-box; /* Ensures padding is included in the element's width */
 }
 
 .popup-content h3 {
@@ -474,12 +473,12 @@ main {
 
 @media (max-width: 1024px) and (orientation: landscape) {
   .popup-content {
-    width: 800px; /* Keeps a larger width in landscape mode */
-    height: 240px; /* Limits the height */
+    width: 800px;
+    height: 230px; /* Limits the height */
   }
   
   .popup-content h3 {
-	font-size: 10px;
+	font-size: 14px;
   }
   
   .close-popup {
@@ -492,11 +491,10 @@ main {
 	height: 150px;
     padding: 1px; /* Reduces padding */
     margin: auto; /* Centers the container */
-    font-size: 10px; /* Reduces font size */
   }
 
   .upload-btn {
-    font-size: 10px; /* Reduces button font size */
+    font-size: 12px; /* Reduces button font size */
 	margin: 8px; /* Adds margin around the button */
     padding: 5px 15px; /* Adds padding inside the button */
   }
@@ -508,15 +506,15 @@ main {
   }
 
   .upload-dropzone p {
-    font-size: 10px; /* Reduces text size */
+    font-size: 12px; /* Reduces text size */
   }
   
   .file-selected {
-	font-size: 10px; /* Sets the font size */
+	font-size: 12px; /* Sets the font size */
   }
   
   .file-selected .remove-btn {
-   font-size: 10px; /* Sets the font size */
+   font-size: 12px; /* Sets the font size */
   }
 }
 
@@ -696,8 +694,8 @@ main {
 /* Landscape Mobile Styles */
 @media (max-width: 1024px) and (orientation: landscape) {
   .summary-box {
-    height: 110px; /* Reduces height for landscape mode */	
-	width: 730px; 
+    height: 100px; /* Reduces height for landscape mode */	
+	width: 600px; 
   }
   
   .download-btn, .do-it-again-btn, .pause-play-btn{
