@@ -696,8 +696,8 @@ main {
 /* Landscape Mobile Styles */
 @media (max-width: 1024px) and (orientation: landscape) {
   .summary-box {
-    height: 80px; /* Reduces height for landscape mode */	
-	width: 600px; 
+    height: 110px; /* Reduces height for landscape mode */	
+	width: 730px; 
   }
   
   .download-btn, .do-it-again-btn, .pause-play-btn{
@@ -707,8 +707,8 @@ main {
   
   .button-icon {
     margin-right: 10px; /* Adds space between the icon and text */
-	width: 20px; /* Sets the icon width */
-    height: 20px; /* Maintains aspect ratio */
+	width: 15px; /* Sets the icon width */
+    height: 15px; /* Maintains aspect ratio */
   }
 }
 
