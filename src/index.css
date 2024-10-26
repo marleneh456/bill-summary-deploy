@@ -701,7 +701,7 @@ main {
   }
   
   .summary-box-pre {
-   font-size: 5px; /* Sets the font size */
+   font-size-adjust: 0.4;
  }
   
   .download-btn, .do-it-again-btn, .pause-play-btn{
