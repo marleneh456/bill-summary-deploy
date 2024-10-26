@@ -464,7 +464,11 @@ main {
 @media (max-width: 1024px) and (orientation: landscape) {
   .popup-content {
     width: 620px; /* Keeps a larger width in landscape mode */
-    height: 280px; /* Limits the height */
+    height: 250px; /* Limits the height */
+  }
+  
+  .popup-content h3 {
+	font-size: 10px;
   }
   
   .close-popup {
@@ -474,7 +478,7 @@ main {
   
   .upload-container {
     width: 400px; /* Limits the container width */
-	height: 200px;
+	height: 180px;
     padding: 0; /* Reduces padding */
     margin: auto; /* Centers the container */
     font-size: 10px; /* Reduces font size */
@@ -679,7 +683,7 @@ main {
 /* Landscape Mobile Styles */
 @media (max-width: 1024px) and (orientation: landscape) {
   .summary-box {
-    height: 120px; /* Reduces height for landscape mode */	
+    height: 100px; /* Reduces height for landscape mode */	
 	width: 555px; 
   }
   
