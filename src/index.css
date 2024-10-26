@@ -462,7 +462,7 @@ main {
   }
   
   .file-selected .remove-btn {
-   font-size: 12px; /* Sets the font size */
+   font-size: 16px; /* Sets the font size */
   }
 }
 
@@ -484,7 +484,7 @@ main {
   
   .upload-container {
     width: 400px;  
-	height: 170px;
+	height: 150px;
     padding: 1px; /* Reduces padding */
     margin: auto; /* Centers the container */
     font-size: 10px; /* Reduces font size */
