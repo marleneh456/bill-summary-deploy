@@ -700,7 +700,7 @@ main {
   }
   
   .summary-box-pre {
-    font-size: 10px; /* Even smaller font size for landscape mobile */
+    font-size: 10px !important; /* Force smaller font size for landscape mobile */
   }
   
   .download-btn, .do-it-again-btn, .pause-play-btn{
