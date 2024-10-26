@@ -67,7 +67,7 @@ function SummaryPopup({ parsedText, closePopup, handleStartOver }) {
 
         {/* Scrollable summary box */}
         <div className="summary-box">
-          <pre className="summary-box-pre" style={{ fontSize: '15px' }}>
+          <pre className="summary-box-pre">
             {animatedText}
             {!isAnimationDone && <span className="blinking-cursor">|</span>} {/* Blinking cursor during animation */}
           </pre>
