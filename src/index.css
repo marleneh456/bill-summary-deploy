@@ -498,7 +498,7 @@ main {
 
   .upload-dropzone {
     width: 250px; /* Limits dropzone width */
-	height: 20px;
+	height: 15px;
     margin-left: 50px; /* Adds margin on the left */
   }
 
