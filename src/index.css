@@ -708,7 +708,9 @@ main {
   }
   
   .button-icon {
-    margin-right: 10px; /* Adds space between the icon and text */
+    width: 16px; /* Adjust icon size for better fit */
+    height: 16px;
+    margin-right: 8px;
   }
 }
 
