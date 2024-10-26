@@ -464,7 +464,7 @@ main {
 @media (max-width: 1024px) and (orientation: landscape) {
   .popup-content {
     width: 620px; /* Keeps a larger width in landscape mode */
-    height: 300px; /* Limits the height */
+    height: 280px; /* Limits the height */
   }
   
   .close-popup {
@@ -679,7 +679,7 @@ main {
 /* Landscape Mobile Styles */
 @media (max-width: 1024px) and (orientation: landscape) {
   .summary-box {
-    height: 100px; /* Reduces height for landscape mode */	
+    height: 120px; /* Reduces height for landscape mode */	
 	width: 555px; 
   }
   
