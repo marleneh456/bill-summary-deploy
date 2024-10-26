@@ -475,11 +475,11 @@ main {
 @media (max-width: 1024px) and (orientation: landscape) {
   .popup-content {
     width: 800px; /* Keeps a larger width in landscape mode */
-    height: 250px; /* Limits the height */
+    height: 230px; /* Limits the height */
   }
   
   .popup-content h3 {
-	font-size: 10px;
+	font-size: 12px;
   }
   
   .close-popup {
@@ -492,7 +492,7 @@ main {
 	height: 150px;
     padding: 1px; /* Reduces padding */
     margin: auto; /* Centers the container */
-    font-size: 10px; /* Reduces font size */
+    font-size: 12px; /* Reduces font size */
   }
 
   .upload-btn {
@@ -508,15 +508,15 @@ main {
   }
 
   .upload-dropzone p {
-    font-size: 10px; /* Reduces text size */
+    font-size: 12px; /* Reduces text size */
   }
   
   .file-selected {
-	font-size: 10px; /* Sets the font size */
+	font-size: 12px; /* Sets the font size */
   }
   
   .file-selected .remove-btn {
-   font-size: 10px; /* Sets the font size */
+   font-size: 12px; /* Sets the font size */
   }
 }
 
@@ -696,7 +696,7 @@ main {
 /* Landscape Mobile Styles */
 @media (max-width: 1024px) and (orientation: landscape) {
   .summary-box {
-    height: 100px; /* Reduces height for landscape mode */	
+    height: 90px; /* Reduces height for landscape mode */	
 	width: 540px; 
   }
   
