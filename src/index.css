@@ -677,7 +677,7 @@ main {
 /* Landscape Mobile Styles */
 @media (max-width: 1024px) and (orientation: landscape) {
   .summary-box {
-    height: 80px; /* Reduces height for landscape mode */	
+    height: 50px; /* Reduces height for landscape mode */	
 	width: 555px; 
   }
   
