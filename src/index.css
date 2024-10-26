@@ -507,11 +507,11 @@ main {
   }
   
   .file-selected {
-	font-size: 12px; /* Sets the font size */
+	font-size: 10px; /* Sets the font size */
   }
   
   .file-selected .remove-btn {
-   font-size: 16px; /* Sets the font size */
+   font-size: 14px; /* Sets the font size */
   }
 }
 
