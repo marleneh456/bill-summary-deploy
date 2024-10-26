@@ -474,7 +474,7 @@ main {
   }
   
   .popup-content h3 {
-	font-size: 11px;
+	font-size: 12px;
   }
   
   .close-popup {
@@ -484,10 +484,10 @@ main {
   
   .upload-container {
     width: 400px;  
-	height: 150px;
+	height: 148px;
     padding: 1px; /* Reduces padding */
     margin: auto; /* Centers the container */
-    font-size: 10px; /* Reduces font size */
+    font-size: 12px; /* Reduces font size */
   }
 
   .upload-btn {
@@ -507,7 +507,7 @@ main {
   }
   
   .file-selected {
-	font-size: 10px; /* Sets the font size */
+	font-size: 11px; /* Sets the font size */
   }
   
   .file-selected .remove-btn {
