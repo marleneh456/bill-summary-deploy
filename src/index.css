@@ -474,7 +474,7 @@ main {
   }
   
   .popup-content h3 {
-	font-size: 10px;
+	font-size: 11px;
   }
   
   .close-popup {
@@ -503,7 +503,7 @@ main {
   }
 
   .upload-dropzone p {
-    font-size: 10px; /* Reduces text size */
+    font-size: 11px; /* Reduces text size */
   }
   
   .file-selected {
