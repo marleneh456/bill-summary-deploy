@@ -672,7 +672,6 @@ main {
 @media (max-width: 1024px) and (orientation: landscape) {
   .summary-box {
     height: 100px; /* Reduces height for landscape mode */	
-	//width: 900px;
   }
   
   .download-btn, .do-it-again-btn, .pause-play-btn{
