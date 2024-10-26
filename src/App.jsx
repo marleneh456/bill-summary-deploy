@@ -57,8 +57,8 @@ function App() {
               <div>
                 {/* Step 1: Welcome section */}
                 <div className="welcome-section">
-                  <h1>Meet the AI that explains what the govt is actually doing</h1>
-                  <p>Our AI directly summarizes official US govt bills to inform you, instead of confusing you.</p>
+                  <h1>Meet the AI that explains what the government is actually doing</h1>
+                  <p>Our AI directly summarizes official US government bills to inform you, instead of confusing you.</p>
                   <button className="try-it-btn" onClick={togglePopup}>
                     Try It Yourself!
                   </button>
