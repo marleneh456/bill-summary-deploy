@@ -430,7 +430,7 @@ main {
 }
 
 /* Mobile Adjustments */
-@media (max-width: 1800px) and (orientation: portrait) {
+@media (max-width: 1024px) and (orientation: portrait) {
   .popup-content {
     min-width: 350px; /* Ensures it scales well on smaller screens */
   }
@@ -467,7 +467,7 @@ main {
 }
 
 
-@media (max-width: 1800px) and (orientation: landscape) {
+@media (max-width: 1024px) and (orientation: landscape) {
   .popup-content {
     width: 620px; /* Keeps a larger width in landscape mode */
     height: 230px; /* Limits the height */
@@ -672,7 +672,7 @@ main {
 }
 
 /* Portrait Mobile Styles */
-@media (max-width: 1800px) and (orientation: portrait) {
+@media (max-width: 1024px) and (orientation: portrait) {
   .summary-btns-container {
     flex-direction: column; /* Stack buttons vertically */
   }
@@ -693,7 +693,7 @@ main {
 }
 
 /* Landscape Mobile Styles */
-@media (max-width: 1800px) and (orientation: landscape) {
+@media (max-width: 1024px) and (orientation: landscape) {
   .summary-box {
     height: 80px; /* Reduces height for landscape mode */	
 	width: 555px; 
