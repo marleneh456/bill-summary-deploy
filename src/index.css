@@ -475,16 +475,16 @@ main {
 @media (max-width: 1024px) and (orientation: landscape) {
   .popup-content {
     width: 800px; /* Keeps a larger width in landscape mode */
-    height: 235px; /* Limits the height */
+    height: 250px; /* Limits the height */
   }
   
   .popup-content h3 {
-	font-size: 13px;
+	font-size: 10px;
   }
   
   .close-popup {
 	right: 4px; /* Aligns it to the right */
-	font-size: 12px;
+	font-size: 10px;
   }
   
   .upload-container {
@@ -492,11 +492,11 @@ main {
 	height: 150px;
     padding: 1px; /* Reduces padding */
     margin: auto; /* Centers the container */
-    font-size: 13px; /* Reduces font size */
+    font-size: 10px; /* Reduces font size */
   }
 
   .upload-btn {
-    font-size: 12px; /* Reduces button font size */
+    font-size: 10px; /* Reduces button font size */
 	margin: 8px; /* Adds margin around the button */
     padding: 5px 15px; /* Adds padding inside the button */
   }
@@ -508,15 +508,15 @@ main {
   }
 
   .upload-dropzone p {
-    font-size: 12px; /* Reduces text size */
+    font-size: 10px; /* Reduces text size */
   }
   
   .file-selected {
-	font-size: 12px; /* Sets the font size */
+	font-size: 10px; /* Sets the font size */
   }
   
   .file-selected .remove-btn {
-   font-size: 14px; /* Sets the font size */
+   font-size: 10px; /* Sets the font size */
   }
 }
 
