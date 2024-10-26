@@ -700,10 +700,6 @@ main {
 	width: 530px; 
   }
   
-  .summary-box-pre {
-   font-size-adjust: 0.4;
- }
-  
   .download-btn, .do-it-again-btn, .pause-play-btn{
 	font-size: 10px;
 	width: 180px; /* Full width buttons */
@@ -711,8 +707,8 @@ main {
   
   .button-icon {
     margin-right: 10px; /* Adds space between the icon and text */
-	width: 15px; /* Sets the icon width */
-    height: 15px; /* Maintains aspect ratio */
+	width: 18px; /* Sets the icon width */
+    height: 18px; /* Maintains aspect ratio */
   }
 }
 
