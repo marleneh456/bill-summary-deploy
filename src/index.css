@@ -473,18 +473,20 @@ main {
   }
   
   .upload-container {
-    max-width: 400px; /* Limits the container width */
+    width: 400px; /* Limits the container width */
+	height: 200px;
     padding: 0; /* Reduces padding */
     margin: auto; /* Centers the container */
     font-size: 10px; /* Reduces font size */
   }
 
   .upload-btn {
-    font-size: 12px; /* Reduces button font size */
+    font-size: 10px; /* Reduces button font size */
   }
 
   .upload-dropzone {
     width: 280px; /* Limits dropzone width */
+	height: 25px;
     margin-left: 40px; /* Adds margin on the left */
   }
 
@@ -677,7 +679,7 @@ main {
 /* Landscape Mobile Styles */
 @media (max-width: 1024px) and (orientation: landscape) {
   .summary-box {
-    height: 50px; /* Reduces height for landscape mode */	
+    height: 100px; /* Reduces height for landscape mode */	
 	width: 555px; 
   }
   
