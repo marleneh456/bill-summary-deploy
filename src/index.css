@@ -33,9 +33,10 @@ main {
 }
 
 /* Mobile-specific Styles */
-@media (max-width: 1024px) {
-  .welcome-section {
-    margin-bottom: 80px; /* Adds space below the welcome section */
+
+@media (max-width: 1024px) and (orientation: portrait) {  
+  .welcome-section h1{
+	font-size: 25px;
   }
 }
 
@@ -440,7 +441,7 @@ main {
   }
   
   .upload-container p {
-	font-size: 14px;
+	font-size: 12px;
   }
   
   .upload-btn {
@@ -544,7 +545,7 @@ main {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (orientation: portrait) {
   .loading-spinner p {
     font-size: 15px; /* Increases font size */
   }
@@ -618,7 +619,7 @@ main {
 .summary-box-pre {
   white-space: pre-wrap; /* Ensures lines wrap */
   word-wrap: break-word; /* Breaks long words */
-  font-size: 14px; /* Sets the font size */
+  font-size: 16px; /* Sets the font size */
   text-align: left; /* Aligns the text to the left */
   color: #333; /* Text color */
 }
@@ -674,6 +675,10 @@ main {
 	height: 280px; 
   }
   
+  .summary-box-pre {
+    font-size: 12px; /* Smaller font size for portrait mobile */
+  }
+  
   .download-btn, .do-it-again-btn, .pause-play-btn{
 	width: 340px; /* Full width buttons */
   }
@@ -685,6 +690,10 @@ main {
   .summary-box {
     height: 80px; /* Reduces height for landscape mode */	
 	width: 555px; 
+  }
+  
+  .summary-box-pre {
+    font-size: 10px; /* Even smaller font size for landscape mobile */
   }
   
   .download-btn, .do-it-again-btn, .pause-play-btn{
