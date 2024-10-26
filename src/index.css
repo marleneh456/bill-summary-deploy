@@ -630,7 +630,7 @@ main {
 .summary-box-pre {
   white-space: pre-wrap; /* Ensures lines wrap */
   word-wrap: break-word; /* Breaks long words */
-  font-size: 16px; /* Sets the font size */
+  font-size: 12px; /* Sets the font size */
   text-align: left; /* Aligns the text to the left */
   color: #333; /* Text color */
 }
@@ -649,8 +649,9 @@ main {
 
 /* Button Icon Styles */
 .button-icon {
-  width: 35px; /* Sets the icon width */
-  height: 30px; /* Maintains aspect ratio */
+  width: 28px; /* Sets the icon width */
+  height: 28px; /* Maintains aspect ratio */
+  margin-right: auto;
   vertical-align: middle; /* Centers the icon with text */
 }
 
@@ -685,10 +686,6 @@ main {
 	height: 280px; 
   }
   
-  .summary-box-pre {
-    font-size: 12px; /* Smaller font size for portrait mobile */
-  }
-  
   .download-btn, .do-it-again-btn, .pause-play-btn{
 	width: 340px; /* Full width buttons */
   }
@@ -700,10 +697,6 @@ main {
   .summary-box {
     height: 80px; /* Reduces height for landscape mode */	
 	width: 550px; 
-  }
-  
-  .summary-box-pre {
-    font-size: 10px; /* Even smaller font size for landscape mobile */
   }
   
   .download-btn, .do-it-again-btn, .pause-play-btn{

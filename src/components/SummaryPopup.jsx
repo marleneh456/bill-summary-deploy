@@ -17,7 +17,7 @@ function SummaryPopup({ parsedText, closePopup, handleStartOver }) {
       const interval = setInterval(() => {
         setAnimatedText((prev) => prev + fullText[index]); // Add one character at a time to the animated text
         setIndex((prevIndex) => prevIndex + 1); // Increment the character index
-      }, 50); // Speed of the typewriter effect
+      }, 40); // Speed of the typewriter effect
       return () => clearInterval(interval); // Cleanup interval on unmount or re-render
     }
     if (index === fullText.length) {
