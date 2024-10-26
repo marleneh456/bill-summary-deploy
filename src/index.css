@@ -606,6 +606,14 @@ main {
   margin-top: 20px;
 }
 
+/* Button Icon Styles */
+.button-icon {
+  width: 20px; /* Sets the icon width */
+  height: auto; /* Maintains aspect ratio */
+  margin-right: 8px; /* Adds space between the icon and text */
+  vertical-align: middle; /* Centers the icon with text */
+}
+
 /* Button Styles */
 .download-btn, .do-it-again-btn, .pause-play-btn {
   padding: 5px 10px;
@@ -652,7 +660,6 @@ main {
   
   .download-btn, .do-it-again-btn, .pause-play-btn{
 	font-size: 10px;
-	padding: 5px;
   }
 }
 

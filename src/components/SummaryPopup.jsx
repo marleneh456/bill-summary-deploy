@@ -79,8 +79,7 @@ function SummaryPopup({ parsedText, closePopup, handleStartOver }) {
             <img
               src="./bill-summary-deploy/images/download.svg"
               alt="Download"
-              style={{ width: '20px', marginRight: '8px'}}
-              style={{ width: '20px', marginRight: '8px'}} 
+              className="button-icon"
 
             />
             Download
@@ -91,7 +90,7 @@ function SummaryPopup({ parsedText, closePopup, handleStartOver }) {
             <img
               src="./bill-summary-deploy/images/redo file icon.svg"
               alt="Redo"
-              style={{ width: '20px', marginRight: '8px'}} 
+              className="button-icon"
             />
             Summarize Another Bill
           </button>
@@ -102,8 +101,7 @@ function SummaryPopup({ parsedText, closePopup, handleStartOver }) {
               <img
                 src={isPaused ? "./bill-summary-deploy/images/play.svg" : "./bill-summary-deploy/images/pause.svg"}
                 alt={isPaused ? "Play" : "Pause"}
-                style={{ width: '20px'}}
-                style={{ width: '20px'}} 
+                className="button-icon"
               />
             </button>
           )}
