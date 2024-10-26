@@ -422,7 +422,7 @@ main {
 /* Mobile Adjustments */
 @media (max-width: 1024px) and (orientation: portrait) {
   .popup-content {
-    max-width: 350px; /* Ensures it scales well on smaller screens */
+    min-width: 350px; /* Ensures it scales well on smaller screens */
   }
   
   .close-popup {
@@ -440,15 +440,15 @@ main {
   }
 
   .upload-dropzone p {
-    font-size: 14px; /* Slightly reduces text size */
+    font-size: 12px; /* Slightly reduces text size */
   }
 }
 
 
 @media (max-width: 1024px) and (orientation: landscape) {
   .popup-content {
-    max-width: 500px; /* Keeps a larger width in landscape mode */
-    max-height: 290px; /* Limits the height */
+    min-width: 500px; /* Keeps a larger width in landscape mode */
+    min-height: 290px; /* Limits the height */
     font-size: 12px; /* Adjusts the text size */
   }
   
@@ -641,7 +641,7 @@ main {
   }
   
   .summary-box {
-    width: 290px; 	
+    min-width: 310px; 	
 	height: 280px; 
 	margin-top: auto;
   }
@@ -655,11 +655,15 @@ main {
 /* Landscape Mobile Styles */
 @media (max-width: 1024px) and (orientation: landscape) {
   .summary-box {
-    height: 100px; /* Reduces height for landscape mode */	
+    height: 150px; /* Reduces height for landscape mode */	
   }
   
   .download-btn, .do-it-again-btn, .pause-play-btn{
 	font-size: 10px;
+  }
+  
+  .button-icon {
+    margin-right: 10px; /* Adds space between the icon and text */
   }
 }
 
