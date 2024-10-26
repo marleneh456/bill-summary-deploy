@@ -433,7 +433,7 @@ main {
 /* Mobile Adjustments */
 @media (max-width: 1024px) and (orientation: portrait) {
   .popup-content {
-    min-width: 350px; /* Ensures it scales well on smaller screens */
+    width: 400px; /* Ensures it scales well on smaller screens */
   }
   
   .popup-content h3 {
@@ -474,7 +474,7 @@ main {
 
 @media (max-width: 1024px) and (orientation: landscape) {
   .popup-content {
-    width: 620px; /* Keeps a larger width in landscape mode */
+    width: 690px; /* Keeps a larger width in landscape mode */
     height: 230px; /* Limits the height */
   }
   
@@ -683,7 +683,7 @@ main {
   }
   
   .summary-box {
-    width: 310px; 	
+    width: 315px; 	
 	height: 280px; 
   }
   
@@ -697,7 +697,7 @@ main {
 @media (max-width: 1024px) and (orientation: landscape) {
   .summary-box {
     height: 80px; /* Reduces height for landscape mode */	
-	width: 550px; 
+	width: 600px; 
   }
   
   .download-btn, .do-it-again-btn, .pause-play-btn{
