@@ -463,9 +463,8 @@ main {
 
 @media (max-width: 1024px) and (orientation: landscape) {
   .popup-content {
-    max-width: 600px; /* Keeps a larger width in landscape mode */
-    max-height: 290px; /* Limits the height */
-    font-size: 12px; /* Adjusts the text size */
+    width: 620px; /* Keeps a larger width in landscape mode */
+    height: 300px; /* Limits the height */
   }
   
   .close-popup {
@@ -665,12 +664,12 @@ main {
   }
   
   .summary-box {
-    max-width: 300px; 	
+    width: 310px; 	
 	height: 280px; 
   }
   
   .download-btn, .do-it-again-btn, .pause-play-btn{
-	min-width: 340px; /* Full width buttons */
+	width: 340px; /* Full width buttons */
   }
   
 }
@@ -679,7 +678,7 @@ main {
 @media (max-width: 1024px) and (orientation: landscape) {
   .summary-box {
     height: 100px; /* Reduces height for landscape mode */	
-	width: 535px; 
+	width: 555px; 
   }
   
   .download-btn, .do-it-again-btn, .pause-play-btn{
