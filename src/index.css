@@ -598,7 +598,7 @@ main {
 }
 
 /* Summary Box */
-.animated-summary pre {s
+.animated-summary pre {
   white-space: pre-wrap; /* Ensures long lines wrap */
   word-wrap: break-word; /* Breaks long words */
   margin: 20px auto; /* Centers the summary */
