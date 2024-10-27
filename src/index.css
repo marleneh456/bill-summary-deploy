@@ -631,9 +631,8 @@ main {
 .summary-box-pre {
   white-space: pre-wrap; /* Ensures lines wrap */
   word-wrap: break-word; /* Breaks long words */
-  font-size: 12px; /* Sets the font size */
+  font-size: 1rem; /* Sets the font size */
   text-align: left; /* Aligns the text to the left */
-  color: #333; /* Text color */
 }
 
 .animated-summary {
@@ -698,6 +697,10 @@ main {
   .summary-box {
     height: 90px; /* Reduces height for landscape mode */	
 	width: 530px; 
+  }
+  
+  .summary-box-pre {
+   font-size: 0.625rem; /* Sets the font size */
   }
   
   .download-btn, .do-it-again-btn, .pause-play-btn{
