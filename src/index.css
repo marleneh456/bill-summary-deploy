@@ -628,6 +628,7 @@ main {
 }
 
 .summary-box-pre {
+  font-family: "Times New Roman", Times, serif; /* Set font to Times New Roman */
   white-space: pre-wrap; /* Ensures lines wrap */
   word-wrap: break-word; /* Breaks long words */
   text-align: left; /* Aligns the text to the left */
