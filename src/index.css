@@ -479,7 +479,7 @@ main {
   }
   
   .popup-content h3 {
-	font-size: 12px;
+	font-size: 14px;
   }
   
   .close-popup {
@@ -616,6 +616,7 @@ main {
 .summary-box {
   margin-top: 20px; /* Adds space above the summary box */
   text-align: left; /* Centers the text */
+  font-size: 12px;
   position: relative; /* Positions the box relative to other elements */
   width: 590px; /* Ensures it scales on smaller screens */
   height: 250px; /* Sets a fixed height */
