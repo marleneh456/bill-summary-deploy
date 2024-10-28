@@ -34,7 +34,7 @@ function Navbar() {
           onClick={() => (window.location.href = "/")} // Redirect to home page on logo click
         />
         <img
-          src="./images/WITB_Transparent_Title.png"
+          src="./images/witb_titlecard_white.png"
           alt="Company Title Card"
           className="title-card"
         />
