@@ -5,11 +5,13 @@ import { saveAs } from 'file-saver';
 function SummaryPopup({ parsedText, closePopup, handleStartOver }) {
   const disclaimerText = `Disclaimer: Please note, that while our AI-powered summary aims to provide an accurate overview of this bill, the whatisnthebill.ai summary may not provide all pertinent topics or relevant details from within the bill. We encourage you to refer to the full text for a complete understanding of the bill. Thank you for using whatisinthebill.ai.\n\n`;
 
-  const fullText = disclaimerText + parsedText; // Prepend disclaimer to parsed text
+
   const [animatedText, setAnimatedText] = useState(''); // Store progressively animated text
   const [index, setIndex] = useState(0); // Track the current character index in the typewriter effect
   const [isPaused, setIsPaused] = useState(false); // Track if the animation is paused
   const [isAnimationDone, setIsAnimationDone] = useState(false); // Track if animation is complete
+  
+  const fullText = disclaimerText + parsedText; // Prepend disclaimer to parsed text
 
   // Typewriter animation effect
   useEffect(() => {
