@@ -1111,7 +1111,7 @@ main {
   }
   
   .team-member {
-	min-height: 330px;
+	height: 330px;
   }
   
   .team-member.large {
@@ -1145,11 +1145,7 @@ main {
   }
   
   .team-member {
-	min-height: 300px;
-  }
-  
-  .team-member.large {
-    min-height: 310px; /* Ensure minimum height is consistent */
+	height: 350px;
   }
   
   .team-member img {

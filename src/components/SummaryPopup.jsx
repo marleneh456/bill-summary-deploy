@@ -32,15 +32,21 @@ function SummaryPopup({ parsedText, closePopup, handleStartOver }) {
 
   // Function to download the parsed summary as a .docx file
   const handleDownloadDocx = () => {
-    const lines = fullText.split('\n'); // Split the text by lines
+    const disclaimerParagraph = new Paragraph({
+      children: [
+        new TextRun({
+          text: disclaimerText,
+          bold: true, // Makes the disclaimer bold in Word
+        }),
+      ],
+    });
 
-    // Create a paragraph for each line
-    const paragraphs = lines.map((line) =>
+    const summaryParagraphs = parsedText.split('\n').map((line) =>
       new Paragraph({
         children: [
           new TextRun({
-            text: line, // Add the line of text
-            break: 1,   // Ensure it breaks lines properly
+            text: line,
+            break: 1,
           }),
         ],
       })
@@ -50,7 +56,7 @@ function SummaryPopup({ parsedText, closePopup, handleStartOver }) {
       sections: [
         {
           properties: {},
-          children: paragraphs, // Add paragraphs to the document
+          children: [disclaimerParagraph, ...summaryParagraphs], // Adds disclaimer first, then the summary
         },
       ],
     });
@@ -59,7 +65,7 @@ function SummaryPopup({ parsedText, closePopup, handleStartOver }) {
       saveAs(blob, 'summary.docx'); // Save the document as 'summary.docx'
     });
   };
-  
+
   return (
     <div className="popup-overlay">
       <div className="popup-content">
@@ -68,7 +74,8 @@ function SummaryPopup({ parsedText, closePopup, handleStartOver }) {
         {/* Scrollable summary box */}
         <div className="summary-box">
           <pre className="summary-box-pre">
-            {animatedText}
+            <span style={{ fontWeight: 'bold' }}>{animatedText.slice(0, disclaimerText.length)}</span>
+            <span>{animatedText.slice(disclaimerText.length)}</span>
             {!isAnimationDone && <span className="blinking-cursor">|</span>} {/* Blinking cursor during animation */}
           </pre>
         </div>
@@ -80,7 +87,6 @@ function SummaryPopup({ parsedText, closePopup, handleStartOver }) {
               src="./bill-summary-deploy/images/download.svg"
               alt="Download"
               className="button-icon"
-
             />
             Download
           </button>
@@ -109,10 +115,10 @@ function SummaryPopup({ parsedText, closePopup, handleStartOver }) {
 
         {/* Close button */}
         <button className="close-popup" onClick={closePopup}>
-            <img
-                src="./bill-summary-deploy/images/close-icon.svg"
-				style={{ width: '20px'}} 
-            />
+          <img
+            src="./bill-summary-deploy/images/close-icon.svg"
+            style={{ width: '20px' }}
+          />
         </button>
       </div>
     </div>
