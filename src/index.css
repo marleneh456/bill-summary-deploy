@@ -1102,6 +1102,14 @@ main {
 
 @media (max-width: 1024px) and (orientation: portrait) {
   
+  .about-description {
+    font-size: 0.8rem; /* Reduces the font size */
+    padding: 5px; /* Reduces padding */
+    word-wrap: break-word; /* Ensures long words wrap */
+    text-overflow: ellipsis; /* Adds ellipsis for overflow */
+    max-width: 100%; /* Ensures the content stays within the viewport */
+  }
+  
   .team-member {
 	min-height: 330px;
   }
@@ -1127,7 +1135,15 @@ main {
 /* Landscape Mode (for screens less than 1024px wide) */
 
 @media (max-width: 1024px) and (orientation: landscape) {
-
+	
+  .about-description {
+   font-size: 0.8rem; /* Reduces the font size */
+   padding: 5px; /* Reduces padding */
+   word-wrap: break-word; /* Ensures long words wrap */
+   text-overflow: ellipsis; /* Adds ellipsis for overflow */
+   max-width: 100%; /* Ensures the content stays within the viewport */
+  }
+  
   .team-member {
 	min-height: 300px;
   }
