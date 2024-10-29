@@ -616,7 +616,7 @@ main {
 .summary-box {
   margin-top: 20px; /* Adds space above the summary box */
   text-align: left; /* Centers the text */
-  font-size: 12px;
+  font-size: 16px;
   position: relative; /* Positions the box relative to other elements */
   width: 590px; /* Ensures it scales on smaller screens */
   height: 250px; /* Sets a fixed height */
@@ -645,8 +645,8 @@ main {
 
 /* Button Icon Styles */
 .button-icon {
-  width: 30px; /* Sets the icon width */
-  height: 30px; /* Maintains aspect ratio */
+  width: 32px; /* Sets the icon width */
+  height: 32px; /* Maintains aspect ratio */
   margin-right: auto;
   vertical-align: middle; /* Centers the icon with text */
 }
@@ -655,7 +655,7 @@ main {
 .download-btn, .do-it-again-btn, .pause-play-btn {
   padding: 5px 10px;
   width: 200px; 
-  background-color: #4682B4;
+  background-color: #6c9dc6;
   color: white;
   border: none;
   border-radius: 40px;
@@ -667,7 +667,7 @@ main {
 }
 
 .download-btn:hover, .do-it-again-btn:hover, .pause-play-btn:hover {
-  background-color: #396a93;
+  background-color: #5a91bf;
   transform: translateY(-3px);
 }
 
@@ -985,13 +985,13 @@ main {
 
 .team-section {
   flex: 1; /* Expands the section */
-  max-width: 600px; /* Sets a max width */
+  width: 600px; /* Sets a max width */
   padding: 10px; /* Adds padding */
   margin: 10px; /* Adds margin */
   background-color: #f9f9f9; /* Light background */
   border-radius: 5px; /* Rounds the corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a shadow */
-  min-height: 400px; /* Sets a minimum height */
+  height: 700px; /* Sets a minimum height */
   height: auto; /* Adjusts height based on content */
   overflow: visible; /* Ensures content is visible */
 }
@@ -1010,9 +1010,8 @@ main {
   background-color: #fff; /* White background */
   border-radius: 10px; /* Rounds the corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a shadow */
-  max-height: 150px; /* Sets a minimum height */
+  height: 460px; /* Sets a minimum height */
   overflow: visible; /* Ensures content is visible */
-  min-height: 380px;
 }
 
 .team-member img {

@@ -92,15 +92,21 @@ function AboutPage() {
                   className="team-photo"
                 />
                 <h4>
-                  Taylor Hartman{" "}
-				  <br />
-				  <br />
-                  <a href="https://github.com/cheaptrix2" target="_blank" className="github-link">
+                  Taylor Hartman <br />
+                  <br />
+                  <a
+                    href="https://github.com/cheaptrix2"
+                    target="_blank"
+                    className="github-link"
+                  >
                     <i className="fab fa-github social-icon"></i>
                   </a>
-                  
-				  <a href="https://github.com/cheaptrix2" target="_blank" className="username-link">
-                   @cheaptrix2
+                  <a
+                    href="https://github.com/cheaptrix2"
+                    target="_blank"
+                    className="username-link"
+                  >
+                    @cheaptrix2
                   </a>
                 </h4>
                 <p>
@@ -111,9 +117,7 @@ function AboutPage() {
                   Intelligence, Machine Learning, Deep Learning, and Big Data -
                   MTSU
                 </p>
-				<p>
-				  B.S. Computer Science - MTSU
-				</p>
+                <p>B.S. Computer Science - MTSU</p>
               </div>
             </div>
             {/* Second row */}
@@ -125,50 +129,60 @@ function AboutPage() {
                   className="team-photo"
                 />
                 <h4>
-                  Wasim Mondal{" "}
-				  
-				  <br />
-				  <br />
-				  
-                  <a href="https://github.com/wasimmondal" target="_blank" className="github-link">
+                  Wasim Mondal <br />
+                  <br />
+                  <a
+                    href="https://github.com/wasimmondal"
+                    target="_blank"
+                    className="github-link"
+                  >
                     <i className="fab fa-github social-icon"></i>
                   </a>
-				  
-				  <a href="https://github.com/wasimmondal" target="_blank" className="username-link">
+                  <a
+                    href="https://github.com/wasimmondal"
+                    target="_blank"
+                    className="username-link"
+                  >
                     @wasimmondal
                   </a>
-				  
                 </h4>
-				
+
                 <p>Artificial Intelligence Team Leader</p>
-				
+
                 <p>B.S. Computer Science - MTSU</p>
-				
               </div>
-			  
+
               <div className="team-member">
                 <img
                   src="./bill-summary-deploy/images/Chris.jpg"
                   alt="Member 2"
                   className="team-photo"
                 />
-				
+
                 <h4>
-                  Chris Keiningham{" "}
-				  <br />
-				  <br />
-                  <a href="https://github.com/chriskein1" target="_blank" className="github-link">
+                  Chris Keiningham <br />
+                  <br />
+                  <a
+                    href="https://github.com/chriskein1"
+                    target="_blank"
+                    className="github-link"
+                  >
                     <i className="fab fa-github social-icon"></i>
                   </a>
-				  
-				  <a href="https://github.com/chriskein1" target="_blank" className="username-link">
+                  <a
+                    href="https://github.com/chriskein1"
+                    target="_blank"
+                    className="username-link"
+                  >
                     @chriskein1
                   </a>
-				  
                 </h4>
-				
+
                 <p>Artificial Intelligence Engineer</p>
-                <p>B.S. Computer Science - MTSU</p>
+
+                <p>B.S. Computer Science, Professional Concentration - MTSU</p>
+                <p>Minor in Mathematics - MTSU</p>
+
               </div>
             </div>
             {/* Third row */}
@@ -180,19 +194,26 @@ function AboutPage() {
                   className="team-photo"
                 />
                 <h4>
-                  Tyler Stickel{" "}
-				  <br />
-				  <br />
-                  <a href="https://github.com/Sarafae" target="_blank" className="github-link">
+                  Tyler Stickel 
+                  <br />
+                  <br />
+                  <a
+                    href="https://github.com/Sarafae"
+                    target="_blank"
+                    className="github-link"
+                  >
                     <i className="fab fa-github social-icon"></i>
                   </a>
-				  
-				  <a href="https://github.com/Sarafae" target="_blank" className="username-link">
+                  <a
+                    href="https://github.com/Sarafae"
+                    target="_blank"
+                    className="username-link"
+                  >
                     @Sarafae
                   </a>
-				  
                 </h4>
                 <p>Artificial Intelligence Engineer</p>
+
                 <p>B.S. Computer Science - MTSU</p>
               </div>
               <div className="team-member">
@@ -202,23 +223,31 @@ function AboutPage() {
                   className="team-photo"
                 />
                 <h4>
-                  Evan Smith{" "}
-				  <br />
-				  <br />
-                  <a href="https://github.com/EvanSmith1016" target="_blank" className="github-link">
+                  Evan Smith 
+                  <br />
+                  <br />
+                  <a
+                    href="https://github.com/EvanSmith1016"
+                    target="_blank"
+                    className="github-link"
+                  >
                     <i className="fab fa-github social-icon"></i>
                   </a>
-				  
-				  <a href="https://github.com/EvanSmith1016" target="_blank" className="username-link">
+                  <a
+                    href="https://github.com/EvanSmith1016"
+                    target="_blank"
+                    className="username-link"
+                  >
                     @EvanSmith1016
                   </a>
-				  
                 </h4>
                 <p>Artificial Intelligence Engineer</p>
-                <p>B.S. Computer Science - MTSU</p>
+
+                <p>B.S. Computer Science, Professional Concentration - MTSU</p>
+                <p>Minor in Mathematics - MTSU</p>
               </div>
             </div>
-			
+
             {/* Fourth row */}
             <div className="team-row">
               <div className="team-member">
@@ -227,25 +256,32 @@ function AboutPage() {
                   alt="Member 5"
                   className="team-photo"
                 />
-				
+
                 <h4>
-                  Om Patel{" "}
-				  <br />
-				  <br />
-                  <a href="https://github.com/Omp200g" target="_blank" className="github-link">
+                  Om Patel 
+                  <br />
+                  <br />
+                  <a
+                    href="https://github.com/Omp200g"
+                    target="_blank"
+                    className="github-link"
+                  >
                     <i className="fab fa-github social-icon"></i>
                   </a>
-				  
-				  <a href="https://github.com/Omp200g" target="_blank" className="username-link">
+                  <a
+                    href="https://github.com/Omp200g"
+                    target="_blank"
+                    className="username-link"
+                  >
                     @Omp200g
                   </a>
-				  
                 </h4>
-				
+
                 <p>Artificial Intelligence Engineer</p>
+
                 <p>B.S. Computer Science - MTSU</p>
               </div>
-			  
+
               <div className="team-member">
                 <img
                   src="./bill-summary-deploy/images/Jacob.jpg"
@@ -253,46 +289,61 @@ function AboutPage() {
                   className="team-photo"
                 />
                 <h4>
-                  Jacob Sherlin{" "}
-				  <br />
-				  <br />
-				  
-                  <a href="https://github.com/jacobsherlin" target="_blank" className="github-link">
+                  Jacob Sherlin 
+                  <br />
+                  <br />
+                  <a
+                    href="https://github.com/jacobsherlin"
+                    target="_blank"
+                    className="github-link"
+                  >
                     <i className="fab fa-github social-icon"></i>
                   </a>
-				  
-				  <a href="https://github.com/jacobsherlin" target="_blank" className="username-link">
+                  <a
+                    href="https://github.com/jacobsherlin"
+                    target="_blank"
+                    className="username-link"
+                  >
                     @jacobsherlin
                   </a>
-				  
                 </h4>
                 <p>Artificial Intelligence Engineer</p>
-                <p>B.S. Computer Science - MTSU</p>
+
+                <p>B.S. Computer Science, Professional Concentration - MTSU</p>
+                <p>Minor in Engineering Technology - MTSU</p>
               </div>
             </div>
-			
+
             <div className="team-row">
               <div className="team-member">
                 <img
-                  src="./bill-summary-deploy/images/member2.avif"
+                  src="./bill-summary-deploy/images/Nahid.png"
                   alt="Member 14"
                   className="team-photo"
                 />
                 <h4>
-                  Nahid Hasan{" "}
-				  <br />
-				  <br />
-                  <a href="https://github.com/" target="_blank" className="github-link">
+                  Nahid Hasan 
+                  <br />
+                  <br />
+                  <a
+                    href="https://github.com/mnhasan44"
+                    target="_blank"
+                    className="github-link"
+                  >
                     <i className="fab fa-github social-icon"></i>
                   </a>
-				  
-				  <a href="https://github.com/" target="_blank" className="username-link">
-                    @github
+                  <a
+                    href="https://github.com/mnhasan44"
+                    target="_blank"
+                    className="username-link"
+                  >
+                    @mnhasan44
                   </a>
-				  
                 </h4>
                 <p>Artificial Intelligence Engineer</p>
+
                 <p>B.S. Computer Science - MTSU</p>
+                <p>Minor in Computational and Data Science - MTSU</p>
               </div>
             </div>
           </div>
@@ -309,48 +360,62 @@ function AboutPage() {
                   className="team-photo"
                 />
                 <h4>
-                  Scott Hartsell{" "}
-				  <br />
-				  <br />
-                  <a href="https://github.com/jasonscotth" target="_blank" className="github-link">
+                  Scott Hartsell 
+                  <br />
+                  <br />
+                  <a
+                    href="https://github.com/jasonscotth"
+                    target="_blank"
+                    className="github-link"
+                  >
                     <i className="fab fa-github social-icon"></i>
                   </a>
-				  
-				  <a href="https://github.com/jasonscotth" target="_blank" className="username-link">
+                  <a
+                    href="https://github.com/jasonscotth"
+                    target="_blank"
+                    className="username-link"
+                  >
                     @jasonscotth
                   </a>
-				  
                 </h4>
                 <p>Assistant Project Manager and Lead Backend Engineer</p>
+
                 <p>B.S. Computer Science - MTSU</p>
               </div>
             </div>
-			
+
             {/* Second row  */}
             <div className="team-row">
-			   <div className="team-member">
+              <div className="team-member">
                 <img
                   src="./bill-summary-deploy/images/Raymond.jpg"
                   alt="Member 9"
                   className="team-photo"
                 />
                 <h4>
-                  Raymond Green{" "}
-				  <br />
-				  <br />
-                  <a href="https://github.com/Reowulf" target="_blank" className="github-link">
+                  Raymond Green 
+                  <br />
+                  <br />
+                  <a
+                    href="https://github.com/Reowulf"
+                    target="_blank"
+                    className="github-link"
+                  >
                     <i className="fab fa-github social-icon"></i>
                   </a>
-				  
-				  <a href="https://github.com/Reowulf" target="_blank" className="username-link">
+                  <a
+                    href="https://github.com/Reowulf"
+                    target="_blank"
+                    className="username-link"
+                  >
                     @Reowulf
                   </a>
-				  
                 </h4>
                 <p>REST API Team Leader</p>
-                <p>B.S. Computer Science - MTSU</p>
+
+                <p>B.S. Computer Science, Professional Concentration - MTSU</p>
               </div>
-			  
+
               <div className="team-member">
                 <img
                   src="./bill-summary-deploy/images/Marlene.jpg"
@@ -358,23 +423,31 @@ function AboutPage() {
                   className="team-photo"
                 />
                 <h4>
-                  Marlene Habib{" "}
-				  <br />
-				  <br />
-                  <a href="https://github.com/marleneh456" target="_blank" className="github-link">
+                  Marlene Habib 
+                  <br />
+                  <br />
+                  <a
+                    href="https://github.com/marleneh456"
+                    target="_blank"
+                    className="github-link"
+                  >
                     <i className="fab fa-github social-icon"></i>
                   </a>
-				  
-				  <a href="https://github.com/marleneh456" target="_blank" className="username-link">
+                  <a
+                    href="https://github.com/marleneh456"
+                    target="_blank"
+                    className="username-link"
+                  >
                     @marleneh456
                   </a>
                 </h4>
                 <p>React Engineer</p>
-                <p>B.S. Computer Science - MTSU</p>
-				<p>Minor in Mathematics - MTSU</p>
+
+                <p>B.S. Computer Science, Professional Concentration - MTSU</p>
+                <p>Minor in Mathematics - MTSU</p>
               </div>
             </div>
-			
+
             {/* Third row - */}
             <div className="team-row">
               <div className="team-member">
@@ -384,19 +457,26 @@ function AboutPage() {
                   className="team-photo"
                 />
                 <h4>
-                  Rogena Khella{" "}
-				  <br />
-				  <br />
-                  <a href="https://github.com/rogenakhella3" target="_blank" className="github-link">
+                  Rogena Khella 
+                  <br />
+                  <br />
+                  <a
+                    href="https://github.com/rogenakhella3"
+                    target="_blank"
+                    className="github-link"
+                  >
                     <i className="fab fa-github social-icon"></i>
                   </a>
-				  
-				  <a href="https://github.com/rogenakhella3" target="_blank" className="username-link">
+                  <a
+                    href="https://github.com/rogenakhella3"
+                    target="_blank"
+                    className="username-link"
+                  >
                     @rogenakhella3
                   </a>
-				  
                 </h4>
                 <p>React Engineer</p>
+
                 <p>B.S. Computer Science - MTSU</p>
               </div>
               <div className="team-member">
@@ -406,19 +486,26 @@ function AboutPage() {
                   className="team-photo"
                 />
                 <h4>
-                  Joshua Kirkpatrick{" "}
-				  <br />
-				  <br />
-                  <a href="https://github.com/jbk3h" target="_blank" className="github-link">
+                  Joshua Kirkpatrick 
+                  <br />
+                  <br />
+                  <a
+                    href="https://github.com/jbk3h"
+                    target="_blank"
+                    className="github-link"
+                  >
                     <i className="fab fa-github social-icon"></i>
                   </a>
-				  
-				  <a href="https://github.com/jbk3h" target="_blank" className="username-link">
+                  <a
+                    href="https://github.com/jbk3h"
+                    target="_blank"
+                    className="username-link"
+                  >
                     @jbk3h
                   </a>
-				  
                 </h4>
                 <p>Backend Engineer</p>
+
                 <p>B.S. Computer Science - MTSU</p>
               </div>
             </div>
@@ -431,19 +518,26 @@ function AboutPage() {
                   className="team-photo"
                 />
                 <h4>
-                  Van Lawn{" "}
-				  <br />
-				  <br />
-                  <a href="https://github.com/JohnnyLawma" target="_blank" className="github-link">
+                  Van Lawn 
+                  <br />
+                  <br />
+                  <a
+                    href="https://github.com/JohnnyLawma"
+                    target="_blank"
+                    className="github-link"
+                  >
                     <i className="fab fa-github social-icon"></i>
                   </a>
-				  
-				  <a href="https://github.com/JohnnyLawma" target="_blank" className="username-link">
+                  <a
+                    href="https://github.com/JohnnyLawma"
+                    target="_blank"
+                    className="username-link"
+                  >
                     @JohnnyLawma
                   </a>
-				  
                 </h4>
                 <p>Backend Engineer</p>
+
                 <p>B.S. Computer Science - MTSU</p>
               </div>
               <div className="team-member">
@@ -453,43 +547,56 @@ function AboutPage() {
                   className="team-photo"
                 />
                 <h4>
-                  Ivan Orta{" "}
-				  <br />
-				  <br />
-                  <a href="https://github.com/idorta" target="_blank" className="github-link">
+                  Ivan Orta <br />
+                  <br />
+                  <a
+                    href="https://github.com/idorta"
+                    target="_blank"
+                    className="github-link"
+                  >
                     <i className="fab fa-github social-icon"></i>
                   </a>
-				  
-				  <a href="https://github.com/idorta" target="_blank" className="username-link">
+                  <a
+                    href="https://github.com/idorta"
+                    target="_blank"
+                    className="username-link"
+                  >
                     @idorta
                   </a>
-				  
                 </h4>
                 <p>Backend Engineer</p>
+
                 <p>B.S. Computer Science - MTSU</p>
               </div>
             </div>
             <div className="team-row">
               <div className="team-member">
                 <img
-                  src="./bill-summary-deploy/images/member1.jpg"
+                  src="./bill-summary-deploy/images/Herrick.jpg"
                   alt="Member 14"
                   className="team-photo"
                 />
                 <h4>
-                  Herrick Vasck{" "}
-				  <br />
-				  <br />
-                  <a href="https://github.com/HerrickVasck" target="_blank" className="github-link">
+                  Herrick Vasck 
+                  <br />
+                  <br />
+                  <a
+                    href="https://github.com/HerrickVasck"
+                    target="_blank"
+                    className="github-link"
+                  >
                     <i className="fab fa-github social-icon"></i>
                   </a>
-				  
-				  <a href="https://github.com/HerrickVasck" target="_blank" className="username-link">
+                  <a
+                    href="https://github.com/HerrickVasck"
+                    target="_blank"
+                    className="username-link"
+                  >
                     @HerrickVasck
                   </a>
-				  
                 </h4>
                 <p>Backend Server Development</p>
+
                 <p>B.S. Computer Science - MTSU</p>
               </div>
             </div>
