@@ -1096,41 +1096,62 @@ main {
   background-color: #061d48; /* Changes the background color on hover */
 }
 
+/* Universal box-sizing reset */
+* {
+  box-sizing: border-box;
+}
+
 /* Mobile-specific Styles */
 
-/* Portrait Mode (for screens less than 1024px wide) */
-
 @media (max-width: 1024px) and (orientation: portrait) {
-  
-  .about-description {
+
+  /* General adjustments */
+  body, .about-page, .technologies, .meet-the-team {
+    width: 100%; /* Ensures full width for mobile */
+    margin: 0 auto; /* Centers content */
+  }
+
+  /* Header and Titles */
+  .about-company h1,
+  .technologies h2,
+  .meet-the-team h1 {
+    font-size: 1.2rem; /* Further reduces title font size */
+    margin-bottom: 15px; /* Minimal space below titles */
+  }
+
+   .about-description {
     font-size: 0.8rem; /* Reduces the font size */
     padding: 5px; /* Reduces padding */
     word-wrap: break-word; /* Ensures long words wrap */
     text-overflow: ellipsis; /* Adds ellipsis for overflow */
     max-width: 100%; /* Ensures the content stays within the viewport */
   }
-  
+
+  .tech-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Team Member Section */
   .team-member {
-	height: 330px;
+    height: 400px;
   }
-  
-  .team-member.large {
-    min-height: 330px; /* Ensure minimum height is consistent */
-  }
-  
+
   .team-member img {
-   width: 120px;
-   height: 120px;
+    width: 100px; /* Profile pic 100px */
+    height: 100px;
+    margin-bottom: 8px;
   }
 
   .team-member h4 {
     font-size: 0.75rem;
   }
-  
+
   .team-member p {
-	font-size: 0.75rem;
+    font-size: 0.75rem;
   }
 }
+
 
 /* Landscape Mode (for screens less than 1024px wide) */
 
