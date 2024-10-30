@@ -478,11 +478,11 @@ main {
 @media (max-width: 1024px) and (orientation: landscape) {
   .popup-content {
     width: 800px; /* Keeps a larger width in landscape mode */
-    height: 230px; /* Limits the height */
+    height: 240px; /* Limits the height */
   }
   
   .popup-content h3 {
-	font-size: 12px;
+	font-size: 14px;
   }
   
   .close-popup {
@@ -499,15 +499,15 @@ main {
   }
 
   .upload-btn {
-    font-size: 10px; /* Reduces button font size */
+    font-size: 12px; /* Reduces button font size */
 	margin: 8px; /* Adds margin around the button */
     padding: 5px 15px; /* Adds padding inside the button */
   }
 
   .upload-dropzone {
-    width: 300px; /* Limits dropzone width */
-	height: 70px;
-    margin-left: 50px; /* Adds margin on the left */
+    width: 320px; /* Limits dropzone width */
+	height: 60px;
+    margin-left: 40px; /* Adds margin on the left */
   }
 
   .upload-dropzone p {
@@ -695,13 +695,13 @@ main {
 @media (max-width: 1024px) and (orientation: landscape) {
   .summary-box {
     height: 100px; /* Reduces height for landscape mode */	
-	width: 550px; 
+	width: 750px; 
     font-size: 14px;
   }
   
   .download-btn, .do-it-again-btn, .pause-play-btn{
 	font-size: 10px;
-	width: 180px; /* Full width buttons */
+	width: 300px; /* Full width buttons */
   }
   
   .button-icon {
