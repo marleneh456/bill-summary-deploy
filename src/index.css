@@ -681,12 +681,12 @@ main {
   }
   
   .summary-box {
-    width: 310px; 	
+    width: 330px; 	
 	height: 280px; 
   }
   
   .download-btn, .do-it-again-btn, .pause-play-btn{
-	width: 320px; /* Full width buttons */
+	width: 340px; /* Full width buttons */
   }
   
 }
@@ -694,7 +694,7 @@ main {
 /* Landscape Mobile Styles */
 @media (max-width: 1024px) and (orientation: landscape) {
   .summary-box {
-    height: 90px; /* Reduces height for landscape mode */	
+    height: 100px; /* Reduces height for landscape mode */	
 	width: 550px; 
     font-size: 14px;
   }
@@ -706,8 +706,8 @@ main {
   
   .button-icon {
     margin-right: 10px; /* Adds space between the icon and text */
-	width: 18px; /* Sets the icon width */
-    height: 18px; /* Maintains aspect ratio */
+	width: 25px; /* Sets the icon width */
+    height: 25px; /* Maintains aspect ratio */
   }
 }
 
