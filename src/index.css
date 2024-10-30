@@ -695,13 +695,13 @@ main {
 @media (max-width: 1024px) and (orientation: landscape) {
   .summary-box {
     height: 100px; /* Reduces height for landscape mode */	
-	width: 685px; 
+	width: 620px; 
     font-size: 14px;
   }
   
   .download-btn, .do-it-again-btn, .pause-play-btn{
 	font-size: 10px;
-	width: 300px; /* Full width buttons */
+	width: 200px; /* Full width buttons */
   }
   
   .button-icon {
