@@ -695,7 +695,7 @@ main {
 @media (max-width: 1024px) and (orientation: landscape) {
   .summary-box {
     height: 100px; /* Reduces height for landscape mode */	
-	width: 680px; 
+	width: 686px; 
     font-size: 14px;
   }
   
