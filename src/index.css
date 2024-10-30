@@ -36,6 +36,9 @@ main {
 /* Mobile-specific Styles */
 
 @media (max-width: 1024px) {
+  * {
+    box-sizing: border-box;
+  }
   .welcome-section {
     margin-bottom: 80px; /* Adds space below the welcome section */
   }
@@ -446,7 +449,7 @@ main {
   }
 
   .upload-container {
-    width: 80%; /* Adjusts the container width */
+    width: 300px; /* Adjusts the container width */
     padding: 25px; /* Reduces padding for smaller screens */
   }
   
@@ -502,8 +505,8 @@ main {
   }
 
   .upload-dropzone {
-    width: 250px; /* Limits dropzone width */
-	height: 10px;
+    width: 300px; /* Limits dropzone width */
+	height: 70px;
     margin-left: 50px; /* Adds margin on the left */
   }
 
@@ -678,12 +681,12 @@ main {
   }
   
   .summary-box {
-    width: 315px; 	
+    width: 310px; 	
 	height: 280px; 
   }
   
   .download-btn, .do-it-again-btn, .pause-play-btn{
-	width: 340px; /* Full width buttons */
+	width: 320px; /* Full width buttons */
   }
   
 }
@@ -692,7 +695,8 @@ main {
 @media (max-width: 1024px) and (orientation: landscape) {
   .summary-box {
     height: 90px; /* Reduces height for landscape mode */	
-	width: 530px; 
+	width: 550px; 
+    font-size: 14px;
   }
   
   .download-btn, .do-it-again-btn, .pause-play-btn{
@@ -860,7 +864,7 @@ main {
 }
 
 /* Mobile-specific Styles */
-@media (max-width: 1024px) {
+@media (max-width: 1024px)and (orientation: portrait) {
   .contact-page {
     margin: 0; /* Removes margin on smaller screens */
   }
@@ -872,6 +876,25 @@ main {
 
   .contact-info p {
     margin-bottom: 38px; /* Adds space below the text */
+  }
+
+  .contact-form button {
+    padding: 10px 20px; /* Adds padding */
+    font-size: 16px; /* Increases the font size */
+    width: 100%; /* Makes the button full width */
+    margin-top: 10px; /* Adds space above the button */
+  }
+}
+
+/* Mobile-specific Styles */
+@media (max-width: 1024px)and (orientation: landscape) {
+  .contact-form-container {
+    padding: 50px; /* Adds padding */
+    margin-bottom: 150px; /* Adds margin at the bottom */
+  }
+
+  .contact-info p {
+    margin-bottom: 20px; /* Adds space below the text */
   }
 
   .contact-form button {
@@ -1079,8 +1102,8 @@ main {
   color: white; /* Sets the text color */
   border: none; /* Removes the border */
   border-radius: 50%; /* Makes the button circular */
-  padding: 10px; /* Adds padding */
-  font-size: 24px; /* Sets the font size */
+  padding: 15px; /* Adds padding */
+  font-size: 28px; /* Sets the font size */
   cursor: pointer; /* Changes the cursor on hover */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a shadow */
   z-index: 1000; /* Ensures the button stays on top */
@@ -1095,11 +1118,7 @@ main {
 /* Mobile-specific Styles */
 
 @media (max-width: 1024px) and (orientation: portrait) {
-	
-/* Universal box-sizing reset */
-* {
-  box-sizing: border-box;
-}
+
   /* General adjustments */
   body, .about-page, .technologies, .meet-the-team {
     width: 100%; /* Ensures full width for mobile */
@@ -1152,6 +1171,13 @@ main {
 
 @media (max-width: 1024px) and (orientation: landscape) {
 	
+  /* Header and Titles */
+  .about-company h1,
+  .technologies h2,
+  .meet-the-team h1 {
+    font-size: 1.2rem; /* Further reduces title font size */
+    margin-bottom: 15px; /* Minimal space below titles */
+  }
   .about-description {
    font-size: 0.8rem; /* Reduces the font size */
    padding: 5px; /* Reduces padding */
@@ -1160,8 +1186,13 @@ main {
    max-width: 100%; /* Ensures the content stays within the viewport */
   }
   
+  .tech-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
   .team-member {
-	height: 350px;
+	height: 400px;
   }
   
   .team-member img {
