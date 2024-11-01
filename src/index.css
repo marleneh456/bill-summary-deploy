@@ -624,9 +624,9 @@ main {
 
 @media (max-width: 1024px) and (orientation: landscape) {
   .popup-content {
-    max-width: 600px; /* Keeps a larger width in landscape mode */
-    max-height: 340px; /* Limits the height */
-	//overflow-y: auto; /* Adds vertical scrolling if needed */
+    width: 80vmax;
+    height: 70vmax; /* Limits the height */
+	overflow-y: auto; /* Adds vertical scrolling if needed */
   }
   
   .popup-content h3 {
@@ -841,14 +841,14 @@ main {
 /* Landscape Mobile Styles */
 @media (max-width: 1024px) and (orientation: landscape) {
   .summary-box {
-    max-height: 200px; /* Reduces height for landscape mode */	
-	max-width: 560px; 
+    max-height: 40vmax; 
+	max-width: 74vmax; 
     font-size: 14px;
   }
   
   .download-btn, .do-it-again-btn, .pause-play-btn{
 	font-size: 10px;
-	width: 200px; /* Full width buttons */
+	width: 180px; /* Full width buttons */
   }
   
   .button-icon {
