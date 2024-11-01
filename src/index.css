@@ -624,9 +624,9 @@ main {
 
 @media (max-width: 1024px) and (orientation: landscape) {
   .popup-content {
-    width: 80vmax;
-    height: 70vmax; /* Limits the height */
-	overflow-y: auto; /* Adds vertical scrolling if needed */
+    max-width: 450pt;
+    max-height: 350pt; /* Limits the height */
+	//overflow-y: auto; /* Adds vertical scrolling if needed */
   }
   
   .popup-content h3 {
@@ -841,8 +841,8 @@ main {
 /* Landscape Mobile Styles */
 @media (max-width: 1024px) and (orientation: landscape) {
   .summary-box {
-    max-height: 40vmax; 
-	max-width: 74vmax; 
+    max-height: 230pt; 
+	max-width: 420pt; 
     font-size: 14px;
   }
   
