@@ -57,12 +57,43 @@ function App() {
               <div>
                 {/* Step 1: Welcome section */}
                 <div className="welcome-section">
-                  <h1>Meet the AI that explains what the government is actually doing</h1>
-                  <p>Our AI directly summarizes official US government bills to inform you, instead of confusing you.</p>
-                  <button className="try-it-btn" onClick={togglePopup}>
-                    Try It Yourself!
-                  </button>
-                </div>
+                <h1>Meet the AI that explains what the government is actually doing</h1>
+                <p>Our AI directly summarizes official US government bills to inform you, instead of confusing you.</p>
+              </div>
+
+              {/* Main Content Layout */}
+              <div className="content-container">
+              {/* Left Column - Information Blocks */}
+              <div className="info-section">
+               <div className="info-block">
+                <h4>mission statement</h4>
+              </div>
+			  
+              <div className="info-block">
+               <h4>Fema act </h4>
+               <p>summary</p>
+               <a href="#fema-link">link to bill</a>
+              </div>
+			  
+             <div className="info-block">
+              <h4>border act 2024</h4>
+              <p>summary</p>
+              <a href="#border-link">link to bill</a>
+            </div>
+			
+          </div>
+
+          {/* Right Column - Usage Instructions */}
+          <div className="usage-section">
+            <h3>How to use:</h3>
+            <p>pick a bill you want to know about: congress.gov link</p>
+            <p>only xml files work currently</p>
+            <button className="try-it-btn" onClick={togglePopup}>
+              Try It Yourself!
+            </button>
+          </div>
+		  
+        </div>
 
                 {/* Conditionally render different steps or modals based on step */}
                 {isPopupOpen && (

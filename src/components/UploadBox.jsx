@@ -31,7 +31,7 @@ function UploadBox({ onGenerateSummary }) {
       {/* Conditionally render the upload input or the file selected message */}
       {!file ? (
         <div className="upload-dropzone">
-          <p>Choose File to upload</p>
+          <p>Upload your file or copy/paste</p>
           <input
             id="file-input" // Add an ID to reference the input field
             type="file"
@@ -60,4 +60,4 @@ function UploadBox({ onGenerateSummary }) {
   );
 }
 
-export default UploadBox;
+export default UploadBox; // Exports the component to be used in other parts of the app

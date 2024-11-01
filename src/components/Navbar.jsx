@@ -61,8 +61,8 @@ function Navbar() {
       {/* Show Mobile Menu Button and Links when isMobile is true */}
       {isMobile && (
         <>
-          {/* Mobile menu button that toggles between hamburger and close icon */}
-          <button className="mobile-menu-button" onClick={toggleMenu}>
+          {/* Menu button that toggles between hamburger and close icon */}
+          <button className="menu-button" onClick={toggleMenu}>
             {isMenuOpen ? <span>&times;</span> : <span>&#9776;</span>} {/* Show &times; if open, otherwise show &#9776; */}
           </button>
 
