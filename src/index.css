@@ -1423,7 +1423,7 @@ main {
 	
 	.popup-content {
     width: 650px;
-    height: 250px; /* Limits the height */
+    height: 240px; /* Limits the height */
   }
   
   .popup-content h3 {
