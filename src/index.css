@@ -1187,21 +1187,14 @@ main {
 	.summary-box {
         width: 340px; 	
 	    height: 440px; 
-	    font-size: 12px;
+	    font-size: 14px;
     }
 
-
-	/* Button Icon Styles */
-    .button-icon {
-        width: 22px; /* Sets the icon width */
-        height: 22px; /* Maintains aspect ratio */
-    }
-  
-    .download-btn, .do-it-again-btn, .pause-play-btn{
-	    width: 150px; /* Full width buttons */
-		padding: 12px 20px;
-		font-size: 10px;
-    }
+.download-btn, .do-it-again-btn, .pause-play-btn{
+	width: 100px; /* Full width buttons */
+	font-size: 10px;
+	margin-left: 5px;
+  }
 	
 .contact-page {
     margin-top: 52px;
@@ -1477,7 +1470,7 @@ main {
   .summary-box {
     height: 100px; 
 	width: 590px; 
-    font-size: 14px;
+    font-size: 12px;
   }
   
   .download-btn, .do-it-again-btn, .pause-play-btn{
