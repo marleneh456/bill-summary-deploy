@@ -102,24 +102,24 @@ main {
 
 	/* Main Content Layout */
 	.content-container {
-	  width: 700px;
+	  width: auto;
+	  margin-left: 10px;
 	  
 	}
 
-	.info-block {
-	  margin-left: 20px;	
+	.info-block {	
 	  padding: 40px;
 	}
 
 	/* Right Column - Usage Instructions */
 	.usage-section {
 	  height: 360px;
+	  margin-right: 20px;
 	}
 
 }
 
 /* Mobile Landscape Styles */
-
 
 @media (max-width: 1024px) and (max-height: 600px) {
   * {
@@ -180,7 +180,6 @@ main {
 
 }
 
-
 /* Mobile Portrait Styles */
 
 @media (max-width: 680px) and (max-height: 1200px) {
@@ -192,16 +191,59 @@ main {
 	 background-color: #B0E0E6; /*PowderBlue */
 	}
 
-
-	.content-container {
-	  width: 700px;
-	  margin-left: 30px;
+	/* Welcome Section */
+	.welcome-section h1{
+	 font-size: 20px;
 	}
 	
-
-	.usage-section {
-	  height: 320px;
+	/* Welcome Section */
+	.welcome-section p{
+	 font-size: 14px;
 	}
+
+	/* Main Content Layout */
+	.content-container {
+	  width: 200px;
+	  margin-bottom: 150px;
+	}
+
+	.info-block {
+	  margin-left: 20px;	
+	  padding: 40px;
+	}
+	
+	.info-block h4{
+	  font-size: 14px;
+	}
+	
+	.info-block p{
+	  font-size: 12px;
+	}
+	
+	.info-block a {
+      font-size: 12px;
+    }
+
+	/* Right Column - Usage Instructions */
+	.usage-section {
+	  padding: 20px;
+	  margin-left: 10px;
+	  height: 355px;
+	}
+	
+	.usage-section h3{
+	  font-size: 14px;
+	}
+	
+	.usage-section p{
+	  font-size: 12px;
+	}
+
+	.try-it-btn {
+	  padding: 10px 30px; /* Adds padding to the button */
+	  font-size: 14px;
+	}
+
 }
 
 
@@ -261,7 +303,7 @@ main {
 
 /* Mobile Portrait Styles */
 
-@media (max-device-width: 4000px) and (orientation: portrait)    {
+@media (max-width: 680px) and (max-height: 1200px) {
   .desktop-nav-links {
     display: none; /* Hides the desktop navigation on mobile */
   }
@@ -363,7 +405,7 @@ main {
 
 /* Mobile Landscape Styles */
 
-@media (max-device-width: 4000px) and (orientation: landscape) {
+@media (max-width: 1024px) and (max-height: 600px) {
   .desktop-nav-links {
     display: none; /* Hides the desktop navigation on mobile */
   }
@@ -458,7 +500,7 @@ main {
 
 /* Splitting the desktop */
 
-@media (700px < width < 800px) {
+@media (max-width: 1000px) and (max-height: 1000px) {
   .desktop-nav-links {
     display: none; /* Hides the desktop navigation on mobile */
   }
@@ -692,13 +734,13 @@ main {
 
 /* Mobile Portrait Styles */
 
-@media (max-device-width: 4000px) and (orientation: portrait)    {
+@media (max-width: 680px) and (max-height: 1200px) {
   .popup-content {
-    width: 300px; /* Ensures it scales well on smaller screens */
+    width: 200in; 
   }
   
   .popup-content h3 {
-	font-size: 14px;
+	font-size: 10px;
   }
 
   .upload-container {
@@ -708,15 +750,15 @@ main {
   
   
   .upload-btn {
-    font-size: 14px; /* Adjusts the font size */
+    font-size: 12px; /* Adjusts the font size */
   }
 
   .upload-dropzone p {
-    font-size: 12px; /* Slightly reduces text size */
+    font-size: 10px; /* Slightly reduces text size */
   }
   
   .file-selected {
-	font-size: 12px; /* Sets the font size */
+	font-size: 10px; /* Sets the font size */
   }
   
   .file-selected .remove-btn {
@@ -726,7 +768,7 @@ main {
 
 /* Mobile Landscape Styles */
 
-@media (max-device-width: 4000px) and (orientation: landscape) {
+@media (max-width: 1024px) and (max-height: 600px) {
   .popup-content {
     width: 150px;
     height: 150pt; /* Limits the height */
@@ -777,10 +819,51 @@ main {
 
 /* Splitting the desktop */
 
-@media (700px < width < 800px)  {
+@media (max-width: 1000px) and (max-height: 1000px)  {
   .popup-content {
     width: 700px;
-    height: 500px; 
+    height: 300pt; /* Limits the height */
+  }
+  
+  .popup-content h3 {
+	font-size: 16px;
+  }
+  
+  .close-popup {
+	right: 4px; /* Aligns it to the right */
+	font-size: 10px;
+  }
+  
+  .upload-container {
+    width: 400px;  
+	height: 250px;
+    padding: 1px; /* Reduces padding */
+    margin: auto; /* Centers the container */
+    font-size: 12px; /* Reduces font size */
+  }
+
+  .upload-btn {
+    font-size: 14px; /* Reduces button font size */
+	margin: 18px; /* Adds margin around the button */
+    padding: 10px 20px; /* Adds padding inside the button */
+  }
+
+  .upload-dropzone {
+    width: 320px; /* Limits dropzone width */
+	height: 80px;
+    margin-left: 40px; /* Adds margin on the left */
+  }
+
+  .upload-dropzone p {
+    font-size: 16px; /* Reduces text size */
+  }
+  
+  .file-selected {
+	font-size: 16px; /* Sets the font size */
+  }
+  
+  .file-selected .remove-btn {
+   font-size: 16px; /* Sets the font size */
   }
 }
 
@@ -822,7 +905,7 @@ main {
 
 /* Mobile Portrait Styles */
 
-@media (max-device-width: 4000px) and (orientation: portrait)     {
+@media (max-width: 680px) and (max-height: 1200px) {
   .loading-spinner p {
     font-size: 15px; /* Increases font size */
   }
@@ -830,7 +913,7 @@ main {
 
 /* Mobile Landscape Styles */
 
-@media (max-device-width: 4000px) and (orientation: landscape) {
+@media (max-width: 1024px) and (max-height: 600px) {
   .loading-spinner p {
     font-size: 12px; /* Decreases text size */
   }
@@ -940,7 +1023,7 @@ main {
 
 /* Mobile Portrait Styles */
 
-@media (max-device-width: 4000px) and (orientation: portrait)    {
+@media (max-width: 680px) and (max-height: 1200px)    {
   .summary-btns-container {
     flex-direction: column; /* Stack buttons vertically */
   }
@@ -959,7 +1042,7 @@ main {
 
 /* Mobile Landscape Styles */
 
-@media (max-device-width: 4000px) and (orientation: landscape)  {
+@media (max-width: 1024px) and (max-height: 600px)  {
   .summary-box {
     max-height: 230px; 
 	max-width: 420pt; 
@@ -980,9 +1063,9 @@ main {
 
 /* Splitting the desktop */
 
-@media (700px < width < 800px)  {
+@media (max-width: 1000px) and (max-height: 1000px)  {
   .summary-box {
-    height: 320px; 
+    height: 250px; 
 	width: 650px; 
   }
   
@@ -1145,7 +1228,7 @@ main {
 
 /* Mobile Portrait Styles */
 
-@media (max-device-width: 4000px) and (orientation: portrait)   {
+@media (max-width: 680px) and (max-height: 1200px)   {
   .contact-page {
     margin: 0; /* Removes margin on smaller screens */
   }
@@ -1169,7 +1252,7 @@ main {
 
 /* Mobile Landscape Styles */
 
-@media (max-device-width: 4000px) and (orientation: landscape) {
+@media (max-width: 1024px) and (max-height: 600px) {
   .contact-form-container {
     padding: 90px; /* Adds padding */
     margin-bottom: 490px; /* Adds margin at the bottom */
@@ -1400,7 +1483,7 @@ main {
 
 /* Mobile Portrait Styles */
 
-@media (max-device-width: 4000px) and (orientation: portrait)   {
+@media (max-width: 680px) and (max-height: 1200px)   {
 
   /* General adjustments */
   body, .about-page, .technologies, .meet-the-team {
@@ -1458,7 +1541,7 @@ main {
 
 /* Mobile Landscape Styles */
 
-@media (max-device-width: 4000px) and (orientation: landscape)  {
+@media (max-width: 1024px) and (max-height: 600px) {
 	
   /* Header and Titles */
   .about-company h1,
@@ -1500,7 +1583,12 @@ main {
 
 /* Splitting the desktop */
 
-@media (700px < width < 800px)  {
+@media (max-width: 1000px) and (max-height: 1000px)  {
+	
+  .tech-card {
+	width: 90%;
+    margin-bottom: 20px;
+  }
   
   .team-member img {
    width: 100px;
