@@ -1048,12 +1048,11 @@ main {
     width: 90%; /* Makes the button full width */
     margin-top: 10px; /* Adds space above the button */
   }
-
-/* General adjustments */
-  body, .about-page, .technologies, .meet-the-team {
-    width: 100%; /* Ensures full width for mobile */
-    margin: 0 auto; /* Centers content */
-  }
+  
+  .about-page {
+  padding: 30px 10px; /* Adds padding */
+  width: 90%; /* Ensures full width for mobile */
+}
 
   /* Header and Titles */
   .about-company h1,
@@ -1104,7 +1103,7 @@ main {
 
 
 /* Mobile Landscape */
-@media (max-width: 1024px) and (max-height: 600px) and (orientation: portrait){
+@media (max-width: 1024px) and (max-height: 600px) and (orientation: landscape){
   .desktop-nav-links {
     display: none; /* Hides the desktop navigation on mobile */
   }
@@ -1339,6 +1338,10 @@ main {
     margin-top: 10px; /* Adds space above the button */
   }
 
+.about-page {
+  width: 90%; /* Ensures full width for mobile */
+}
+
 about-company h1,
   .technologies h2,
   .meet-the-team h1 {
@@ -1354,12 +1357,12 @@ about-company h1,
   }
   
   .tech-card {
-    width: 100%;
+    width: 90%;
     margin-bottom: 20px;
   }
   
   .team-member {
-	height: 400px;
+	height: 350px;
   }
   
   .team-member img {
