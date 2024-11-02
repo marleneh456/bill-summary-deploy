@@ -153,7 +153,7 @@ main {
 
 /* Mobile Landscape Styles */
 
-@media (min-width: 127mm) and (max-width: 215mm)  and (orientation: portrait) {
+@media (max-width: 12in) and (orientation: landscape) {
   * {
 	 box-sizing: border-box;
 	}
@@ -749,7 +749,7 @@ main {
 
 /* Mobile Landscape Styles */
 
-@media (max-width: 9in) and (orientation: landscape) {
+@media (max-width: 12in) and (orientation: landscape) {
   .popup-content {
     width: 150px;
     height: 150pt; /* Limits the height */
