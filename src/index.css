@@ -284,7 +284,7 @@ main {
 
 /* Mobile Portrait Styles */
 
-@media (min-width: 3.33in) and (max-width: 5in) and (orientation: portrait)   {
+@media (max-width: 77.8mm) and (orientation: portrait)   {
   .desktop-nav-links {
     display: none; /* Hides the desktop navigation on mobile */
   }
@@ -386,7 +386,7 @@ main {
 
 /* Mobile Landscape Styles */
 
-@media (max-width: 12in) and (orientation: landscape) {
+@media (min-width: 127mm) and (max-width: 215mm) and (orientation: landscape) {
   .desktop-nav-links {
     display: none; /* Hides the desktop navigation on mobile */
   }
@@ -481,7 +481,7 @@ main {
 
 /* Splitting the desktop */
 
-@media (max-width: 8in)  {
+@media (max-width: 339mm)  {
   .desktop-nav-links {
     display: none; /* Hides the desktop navigation on mobile */
   }
@@ -575,7 +575,7 @@ main {
 }
 
 /* Larger Screens */
-@media (min-width: 13.33in) and (max-width: 26.67in) {
+@media (max-width: 568mm) {
   .menu-button {
     display: none; /* Hides the mobile menu button on large screens */
   }
@@ -715,7 +715,7 @@ main {
 
 /* Mobile Portrait Styles */
 
-@media (min-width: 3.33in) and (max-width: 5in) and (orientation: portrait)    {
+@media (max-width: 77.8mm) and (orientation: portrait)    {
   .popup-content {
     width: 300px; /* Ensures it scales well on smaller screens */
   }
@@ -749,7 +749,7 @@ main {
 
 /* Mobile Landscape Styles */
 
-@media (max-width: 12in) and (orientation: landscape) {
+@media (max-width: 160.9mm) and (orientation: landscape) {
   .popup-content {
     width: 150px;
     height: 150pt; /* Limits the height */
@@ -800,7 +800,7 @@ main {
 
 /* Splitting the desktop */
 
-@media (max-width: 8in)  {
+@media (max-width: 339mm)  {
   .popup-content {
     width: 700px;
     height: 500px; 
@@ -845,7 +845,7 @@ main {
 
 /* Mobile Portrait Styles */
 
-@media (min-width: 3.33in) and (max-width: 5in) and (orientation: portrait)    {
+@media (max-width: 77.8mm) and (orientation: portrait)    {
   .loading-spinner p {
     font-size: 15px; /* Increases font size */
   }
@@ -853,7 +853,7 @@ main {
 
 /* Mobile Landscape Styles */
 
-@media (max-width: 12in) and (orientation: landscape) {
+@media (max-width: 160.9mm) and (orientation: landscape) {
   .loading-spinner p {
     font-size: 12px; /* Decreases text size */
   }
@@ -963,7 +963,7 @@ main {
 
 /* Mobile Portrait Styles */
 
-@media (min-width: 3.33in) and (max-width: 5in) and (orientation: portrait)   {
+@media (max-width: 160.9) and (orientation: portrait)   {
   .summary-btns-container {
     flex-direction: column; /* Stack buttons vertically */
   }
@@ -982,7 +982,7 @@ main {
 
 /* Mobile Landscape Styles */
 
-@media (max-width: 12in) and (orientation: landscape)  {
+@media (max-width: 160.9mm) and (orientation: landscape)  {
   .summary-box {
     max-height: 230px; 
 	max-width: 420pt; 
@@ -1003,7 +1003,7 @@ main {
 
 /* Splitting the desktop */
 
-@media (max-width: 8in)  {
+@media (max-width: 339mm)  {
   .summary-box {
     height: 320px; 
 	width: 650px; 
@@ -1168,7 +1168,7 @@ main {
 
 /* Mobile Portrait Styles */
 
-@media (min-width: 3.33in) and (max-width: 5in) and (orientation: portrait)  {
+@media (max-width: 77.8mm) and (orientation: portrait)  {
   .contact-page {
     margin: 0; /* Removes margin on smaller screens */
   }
@@ -1192,7 +1192,7 @@ main {
 
 /* Mobile Landscape Styles */
 
-@media (max-width: 12in) and (orientation: landscape) {
+@media (max-width: 160.9mm) and (orientation: landscape) {
   .contact-form-container {
     padding: 90px; /* Adds padding */
     margin-bottom: 490px; /* Adds margin at the bottom */
@@ -1423,7 +1423,7 @@ main {
 
 /* Mobile Portrait Styles */
 
-@media (min-width: 3.33in) and (max-width: 5in) and (orientation: portrait)  {
+@media (max-width: 77.8mm) and (orientation: portrait)  {
 
   /* General adjustments */
   body, .about-page, .technologies, .meet-the-team {
@@ -1481,7 +1481,7 @@ main {
 
 /* Mobile Landscape Styles */
 
-@media (max-width: 12in) and (orientation: landscape)  {
+@media (max-width: 160.9mm) and (orientation: landscape)  {
 	
   /* Header and Titles */
   .about-company h1,
@@ -1523,7 +1523,7 @@ main {
 
 /* Splitting the desktop */
 
-@media (max-width: 8in)  {
+@media (max-width: 339mm)  {
 	
   /* Header and Titles */
   .about-company h1,
