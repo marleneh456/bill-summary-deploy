@@ -1165,7 +1165,7 @@ main {
 	}
 
     .popup-content {
-       width: 350px; 
+       width: 380px; 
     }
   
 	.popup-content h3 {
@@ -1195,20 +1195,21 @@ main {
 	}
 	
 	.summary-box {
-        width: 300px; 	
+        width: 340px; 	
 	    height: 450px; 
-	    font-size: 14px;
+	    font-size: 12px;
     }
 	
 	/* Button Icon Styles */
     .button-icon {
-        width: 20px; /* Sets the icon width */
-        height: 20px; /* Maintains aspect ratio */
+        width: 15px; /* Sets the icon width */
+        height: 15px; /* Maintains aspect ratio */
     }
   
     .download-btn, .do-it-again-btn, .pause-play-btn{
-	    width: auto; /* Full width buttons */
-		font-size: 10px;
+	    width: 200px; /* Full width buttons */
+		padding: 8px 15px;
+		font-size: 12px;
     }
 	
 .contact-page {
