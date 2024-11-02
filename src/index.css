@@ -89,73 +89,45 @@ main {
   transform: scale(1.05); /* Slightly enlarges the container when hovered */
 }
 
-/* Mobile Portrait Styles */
+/* Splitting the desktop */
 
-@media (min-width: 3.33in) and (max-width: 5in) and (orientation: portrait)    {
+@media (700px < width < 800px){
 	* {
 	 box-sizing: border-box;
 	}
-
-	/* Welcome Section */
-	.welcome-section h1{
-	 font-size: 20px;
-	}
 	
-	/* Welcome Section */
-	.welcome-section p{
-	 font-size: 14px;
+	body{
+	 background-color: #FFF8DC; /*Cornsilk*/
 	}
 
 	/* Main Content Layout */
 	.content-container {
-	  width: 200px;
-	  margin-bottom: 150px;
+	  width: 700px;
+	  
 	}
 
 	.info-block {
 	  margin-left: 20px;	
 	  padding: 40px;
 	}
-	
-	.info-block h4{
-	  font-size: 14px;
-	}
-	
-	.info-block p{
-	  font-size: 12px;
-	}
-	
-	.info-block a {
-      font-size: 12px;
-    }
 
 	/* Right Column - Usage Instructions */
 	.usage-section {
-	  padding: 20px;
-	  margin-left: 10px;
-	  height: 350px;
-	}
-	
-	.usage-section h3{
-	  font-size: 14px;
-	}
-	
-	.usage-section p{
-	  font-size: 12px;
-	}
-
-	.try-it-btn {
-	  padding: 10px 30px; /* Adds padding to the button */
-	  font-size: 14px;
+	  height: 360px;
 	}
 
 }
 
 /* Mobile Landscape Styles */
 
-@media (max-width: 12in) and (orientation: landscape) {
+
+@media (max-device-width: 950px) and (orientation: landscape) {
   * {
 	 box-sizing: border-box;
+	}
+	
+	body{
+	 background-color: #DDA0DD; /*Plum*/
 	}
 
 	/* Welcome Section */
@@ -208,20 +180,25 @@ main {
 
 }
 
-/* Splitting the desktop */
 
-@media (max-width: 8in) {
+/* Mobile Portrait Styles */
+
+@media (max-device-width: 700px) and (orientation: portrait) {
   * {
 	 box-sizing: border-box;
 	}
+	
+	body{
+	 background-color: #B0E0E6; /*PowderBlue */
+	}
 
-	/* Main Content Layout */
+
 	.content-container {
 	  width: 700px;
 	  margin-left: 30px;
 	}
 	
-	/* Right Column - Usage Instructions */
+
 	.usage-section {
 	  height: 320px;
 	}
@@ -284,7 +261,7 @@ main {
 
 /* Mobile Portrait Styles */
 
-@media (max-width: 77.8mm) and (orientation: portrait)   {
+@media (max-device-width: 700px) and (orientation: portrait)    {
   .desktop-nav-links {
     display: none; /* Hides the desktop navigation on mobile */
   }
@@ -386,7 +363,7 @@ main {
 
 /* Mobile Landscape Styles */
 
-@media (min-width: 127mm) and (max-width: 215mm) and (orientation: landscape) {
+@media (max-device-width: 950px) and (orientation: landscape) {
   .desktop-nav-links {
     display: none; /* Hides the desktop navigation on mobile */
   }
@@ -481,7 +458,7 @@ main {
 
 /* Splitting the desktop */
 
-@media (max-width: 339mm)  {
+@media (700px < width < 800px) {
   .desktop-nav-links {
     display: none; /* Hides the desktop navigation on mobile */
   }
@@ -575,7 +552,7 @@ main {
 }
 
 /* Larger Screens */
-@media (max-width: 568mm) {
+@media screen and (min-width: 1281px) {
   .menu-button {
     display: none; /* Hides the mobile menu button on large screens */
   }
@@ -715,7 +692,7 @@ main {
 
 /* Mobile Portrait Styles */
 
-@media (max-width: 77.8mm) and (orientation: portrait)    {
+@media (max-device-width: 700px) and (orientation: portrait)    {
   .popup-content {
     width: 300px; /* Ensures it scales well on smaller screens */
   }
@@ -749,7 +726,7 @@ main {
 
 /* Mobile Landscape Styles */
 
-@media (max-width: 160.9mm) and (orientation: landscape) {
+@media (max-device-width: 950px) and (orientation: landscape) {
   .popup-content {
     width: 150px;
     height: 150pt; /* Limits the height */
@@ -800,7 +777,7 @@ main {
 
 /* Splitting the desktop */
 
-@media (max-width: 339mm)  {
+@media (700px < width < 800px)  {
   .popup-content {
     width: 700px;
     height: 500px; 
@@ -845,7 +822,7 @@ main {
 
 /* Mobile Portrait Styles */
 
-@media (max-width: 77.8mm) and (orientation: portrait)    {
+@media (max-device-width: 700px) and (orientation: portrait)     {
   .loading-spinner p {
     font-size: 15px; /* Increases font size */
   }
@@ -853,7 +830,7 @@ main {
 
 /* Mobile Landscape Styles */
 
-@media (max-width: 160.9mm) and (orientation: landscape) {
+@media (max-device-width: 950px) and (orientation: landscape) {
   .loading-spinner p {
     font-size: 12px; /* Decreases text size */
   }
@@ -963,7 +940,7 @@ main {
 
 /* Mobile Portrait Styles */
 
-@media (max-width: 160.9) and (orientation: portrait)   {
+@media (max-device-width: 700px) and (orientation: portrait)    {
   .summary-btns-container {
     flex-direction: column; /* Stack buttons vertically */
   }
@@ -982,7 +959,7 @@ main {
 
 /* Mobile Landscape Styles */
 
-@media (max-width: 160.9mm) and (orientation: landscape)  {
+@media (max-device-width: 950px) and (orientation: landscape)  {
   .summary-box {
     max-height: 230px; 
 	max-width: 420pt; 
@@ -1003,7 +980,7 @@ main {
 
 /* Splitting the desktop */
 
-@media (max-width: 339mm)  {
+@media (700px < width < 800px)  {
   .summary-box {
     height: 320px; 
 	width: 650px; 
@@ -1168,7 +1145,7 @@ main {
 
 /* Mobile Portrait Styles */
 
-@media (max-width: 77.8mm) and (orientation: portrait)  {
+@media (max-device-width: 700px) and (orientation: portrait)   {
   .contact-page {
     margin: 0; /* Removes margin on smaller screens */
   }
@@ -1192,7 +1169,7 @@ main {
 
 /* Mobile Landscape Styles */
 
-@media (max-width: 160.9mm) and (orientation: landscape) {
+@media (max-device-width: 950px) and (orientation: landscape) {
   .contact-form-container {
     padding: 90px; /* Adds padding */
     margin-bottom: 490px; /* Adds margin at the bottom */
@@ -1423,7 +1400,7 @@ main {
 
 /* Mobile Portrait Styles */
 
-@media (max-width: 77.8mm) and (orientation: portrait)  {
+@media (max-device-width: 700px) and (orientation: portrait)   {
 
   /* General adjustments */
   body, .about-page, .technologies, .meet-the-team {
@@ -1481,7 +1458,7 @@ main {
 
 /* Mobile Landscape Styles */
 
-@media (max-width: 160.9mm) and (orientation: landscape)  {
+@media (max-device-width: 950px) and (orientation: landscape)  {
 	
   /* Header and Titles */
   .about-company h1,
@@ -1523,31 +1500,7 @@ main {
 
 /* Splitting the desktop */
 
-@media (max-width: 339mm)  {
-	
-  /* Header and Titles */
-  .about-company h1,
-  .technologies h2,
-  .meet-the-team h1 {
-    font-size: 1.2rem; /* Further reduces title font size */
-    margin-bottom: 15px; /* Minimal space below titles */
-  }
-  .about-description {
-   font-size: 0.8rem; /* Reduces the font size */
-   padding: 5px; /* Reduces padding */
-   word-wrap: break-word; /* Ensures long words wrap */
-   text-overflow: ellipsis; /* Adds ellipsis for overflow */
-   max-width: 100%; /* Ensures the content stays within the viewport */
-  }
-  
-  .tech-card {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  .team-member {
-	height: 400px;
-  }
+@media (700px < width < 800px)  {
   
   .team-member img {
    width: 100px;
