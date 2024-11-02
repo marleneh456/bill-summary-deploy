@@ -1203,8 +1203,8 @@ main {
 
 	/* Button Icon Styles */
     .button-icon {
-        width: 25px; /* Sets the icon width */
-        height: 25px; /* Maintains aspect ratio */
+        width: 22px; /* Sets the icon width */
+        height: 22px; /* Maintains aspect ratio */
     }
   
     .download-btn, .do-it-again-btn, .pause-play-btn{
