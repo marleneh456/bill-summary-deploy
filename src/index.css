@@ -1199,17 +1199,18 @@ main {
 	    height: 450px; 
 	    font-size: 12px;
     }
-	
+
+
 	/* Button Icon Styles */
     .button-icon {
-        width: 15px; /* Sets the icon width */
-        height: 15px; /* Maintains aspect ratio */
+        width: 20px; /* Sets the icon width */
+        height: 20px; /* Maintains aspect ratio */
     }
   
     .download-btn, .do-it-again-btn, .pause-play-btn{
 	    width: 200px; /* Full width buttons */
 		padding: 8px 15px;
-		font-size: 12px;
+		font-size: 10px;
     }
 	
 .contact-page {
