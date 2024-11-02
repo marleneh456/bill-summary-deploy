@@ -41,6 +41,11 @@ main {
   border-radius: 20px;
   padding: 30px;
   text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.info-block:hover {
+  transform: scale(1.02);
 }
 
 .info-block h4 {
@@ -61,6 +66,11 @@ main {
   text-align: center;
   margin-left: 100px;
   height: 300px;
+  transition: transform 0.3s ease;
+}
+
+.usage-section:hover {
+  transform: scale(1.02);
 }
 
 .try-it-btn {
@@ -79,9 +89,9 @@ main {
   transform: scale(1.05); /* Slightly enlarges the container when hovered */
 }
 
-/* Mobile-specific Styles */
+/* Mobile Portrait Styles */
 
-@media (max-width: 1024px) and (orientation: portrait)  {
+@media (min-width: 3.33in) and (max-width: 5in) and (orientation: portrait)    {
 	* {
 	 box-sizing: border-box;
 	}
@@ -141,7 +151,9 @@ main {
 
 }
 
-@media (max-width: 1024px) and (orientation: landscape)  {
+/* Mobile Landscape Styles */
+
+@media (min-width: 127mm) and (max-width: 215mm)  and (orientation: portrait) {
   * {
 	 box-sizing: border-box;
 	}
@@ -178,7 +190,7 @@ main {
 	.usage-section {
 	  padding: 20px;
 	  margin-left: 10px;
-	  height: 300px;
+	  height: 310px;
 	}
 	
 	.usage-section h3{
@@ -192,6 +204,26 @@ main {
 	.try-it-btn {
 	  padding: 10px 30px; /* Adds padding to the button */
 	  font-size: 14px;
+	}
+
+}
+
+/* Splitting the desktop */
+
+@media (max-width: 8in) {
+  * {
+	 box-sizing: border-box;
+	}
+
+	/* Main Content Layout */
+	.content-container {
+	  width: 700px;
+	  margin-left: 30px;
+	}
+	
+	/* Right Column - Usage Instructions */
+	.usage-section {
+	  height: 320px;
 	}
 }
 
@@ -250,8 +282,9 @@ main {
   background-color: #3d4e66; /* Changes background color on hover */
 }
 
-/* Mobile-specific Styles */
-@media (max-width: 1024px) and (orientation: portrait)  {
+/* Mobile Portrait Styles */
+
+@media (min-width: 3.33in) and (max-width: 5in) and (orientation: portrait)   {
   .desktop-nav-links {
     display: none; /* Hides the desktop navigation on mobile */
   }
@@ -351,8 +384,104 @@ main {
   }
 }
 
-/* Mobile Landscape-specific Styles */
-@media (max-width: 1024px) and (orientation: landscape) {
+/* Mobile Landscape Styles */
+
+@media (max-width: 12in) and (orientation: landscape) {
+  .desktop-nav-links {
+    display: none; /* Hides the desktop navigation on mobile */
+  }
+
+  .menu-button {
+    display: block; /* Makes the menu button visible on mobile */
+    background-color: #4a5c79; /* Sets the button's background color */
+    color: white; /* Makes the button text white */
+    border: none; /* Removes the button border */
+    font-size: 24px; /* Increases the button's font size */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+    border-radius: 15px; /* Rounds the button's corners */
+    padding: 8px 15px; /* Adds padding to the button */
+    z-index: 10; /* Ensures the button stays above other elements */
+    position: absolute; /* Positions the button relative to the viewport */
+    right: 10px; /* Positions the button 10px from the right edge */
+    top: 5x; /* Positions the button 10px from the top */
+  }
+
+  .nav-links {
+    display: none; /* Hides the mobile navigation links initially */
+    position: absolute; /* Changes position to absolute */
+    top: 65px; /* Pushes the navigation links down by 55px */
+    left: 0; /* Aligns the navigation to the left */
+    width: 100%; /* Makes the navigation take up the full width */
+    background-color: #1a3d6c; /* Background color */
+    justify-content: flex-start; /* Align navigation links to the left */
+    z-index: 9; /* Ensure the navigation appears above other elements */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+  }
+
+  /* Show navigation links when the menu is open */
+  .nav-links.open {
+    display: flex; /* Makes links visible */
+    flex-direction: row; /* Arrange links horizontally */
+    animation: slideDown 0.1s forwards; /* Sliding down effect */
+    justify-content: flex-start; /* Align links to the left */
+  }
+
+  .nav-links ul {
+    list-style: none; /* Removes bullets */
+    padding: 0; /* Removes padding around the links */
+    margin: 0; /* Removes margin around the links */
+    display: flex; /* Arranges the links horizontally */
+    flex-direction: row; /* Arrange links horizontally */
+    gap: 20px; /* Adds space between links */
+    margin-left: auto; /* Align links to the left */
+    margin-top: 20px; /* Adds space above the links */
+    margin-bottom: 20px; /* Adds space below the links */
+  }
+
+  .nav-links ul li {
+    margin: 10px 0; /* Adds space between each link */
+  }
+
+  .nav-links ul li a {
+    color: white; /* Makes the link text white */
+    text-decoration: none; /* Removes the underline from the links */
+    font-size: 16px; /* Sets the font size for the links */
+    padding: 10px 15px; /* Adds padding inside the links */
+    background-color: #4a5c79; /* Sets the background color */
+    border-radius: 15px; /* Rounds the corners */
+    transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
+  }
+
+  .nav-links ul li a:hover {
+    background-color: #3d4e66; /* Changes the background color on hover */
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px); /* Start 20px above */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Move to original position */
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 1;
+      transform: translateY(0); /* Start at original position */
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-20px); /* Slide 20px up */
+    }
+  }
+}
+
+/* Splitting the desktop */
+
+@media (max-width: 8in)  {
   .desktop-nav-links {
     display: none; /* Hides the desktop navigation on mobile */
   }
@@ -446,9 +575,13 @@ main {
 }
 
 /* Larger Screens */
-@media (min-width: 1025px) {
+@media (min-width: 13.33in) and (max-width: 26.67in) {
   .menu-button {
     display: none; /* Hides the mobile menu button on large screens */
+  }
+  
+  .desktop-nav-links {
+    display: flex; /* Show desktop navigation */
   }
 }
 
@@ -580,29 +713,22 @@ main {
   font-size: 18px;
 }
 
-/* Mobile Adjustments */
-@media (max-width: 1024px) and (orientation: portrait) {
+/* Mobile Portrait Styles */
+
+@media (min-width: 3.33in) and (max-width: 5in) and (orientation: portrait)    {
   .popup-content {
-    width: 400px; /* Ensures it scales well on smaller screens */
+    width: 300px; /* Ensures it scales well on smaller screens */
   }
   
   .popup-content h3 {
-	font-size: 16px;
-  }
-  
-  .close-popup {
-	right: 4px; /* Aligns it to the right */
-	font-size: 12px;
+	font-size: 14px;
   }
 
   .upload-container {
-    width: 300px; /* Adjusts the container width */
-    padding: 25px; /* Reduces padding for smaller screens */
+    width: 250px; /* Adjusts the container width */
+    padding: 20px; /* Reduces padding for smaller screens */
   }
   
-  .upload-container p {
-	font-size: 12px;
-  }
   
   .upload-btn {
     font-size: 14px; /* Adjusts the font size */
@@ -621,12 +747,13 @@ main {
   }
 }
 
+/* Mobile Landscape Styles */
 
-@media (max-width: 1024px) and (orientation: landscape) {
+@media (max-width: 9in) and (orientation: landscape) {
   .popup-content {
-    max-width: 450pt;
-    max-height: 350pt; /* Limits the height */
-	//overflow-y: auto; /* Adds vertical scrolling if needed */
+    width: 150px;
+    height: 150pt; /* Limits the height */
+	overflow-y: auto; /* Adds vertical scrolling if needed */
   }
   
   .popup-content h3 {
@@ -671,6 +798,15 @@ main {
   }
 }
 
+/* Splitting the desktop */
+
+@media (max-width: 8in)  {
+  .popup-content {
+    width: 700px;
+    height: 500px; 
+  }
+}
+
 /* Loading Spinner */
 .loading-spinner {
   display: flex; /* Flexbox layout for centering */
@@ -707,13 +843,17 @@ main {
   }
 }
 
-@media (max-width: 1024px) and (orientation: portrait) {
+/* Mobile Portrait Styles */
+
+@media (min-width: 3.33in) and (max-width: 5in) and (orientation: portrait)    {
   .loading-spinner p {
     font-size: 15px; /* Increases font size */
   }
 }
 
-@media (max-width: 1024px) and (orientation: landscape) {
+/* Mobile Landscape Styles */
+
+@media (max-width: 12in) and (orientation: landscape) {
   .loading-spinner p {
     font-size: 12px; /* Decreases text size */
   }
@@ -821,27 +961,30 @@ main {
   transform: translateY(-3px);
 }
 
-/* Portrait Mobile Styles */
-@media (max-width: 1024px) and (orientation: portrait) {
+/* Mobile Portrait Styles */
+
+@media (min-width: 3.33in) and (max-width: 5in) and (orientation: portrait)   {
   .summary-btns-container {
     flex-direction: column; /* Stack buttons vertically */
   }
   
   .summary-box {
-    width: 330px; 	
-	height: 280px; 
+    width: 260px; 	
+	height: 340px; 
+	font-size: 14px;
   }
   
   .download-btn, .do-it-again-btn, .pause-play-btn{
-	width: 340px; /* Full width buttons */
+	width: 260px; /* Full width buttons */
   }
   
 }
 
-/* Landscape Mobile Styles */
-@media (max-width: 1024px) and (orientation: landscape) {
+/* Mobile Landscape Styles */
+
+@media (max-width: 12in) and (orientation: landscape)  {
   .summary-box {
-    max-height: 230pt; 
+    max-height: 230px; 
 	max-width: 420pt; 
     font-size: 14px;
   }
@@ -855,6 +998,19 @@ main {
     margin-right: 10px; /* Adds space between the icon and text */
 	width: 25px; /* Sets the icon width */
     height: 25px; /* Maintains aspect ratio */
+  }
+}
+
+/* Splitting the desktop */
+
+@media (max-width: 8in)  {
+  .summary-box {
+    height: 320px; 
+	width: 650px; 
+  }
+  
+  .download-btn, .do-it-again-btn, .pause-play-btn{
+	width: 210px; 
   }
 }
 
@@ -1010,8 +1166,9 @@ main {
   margin-bottom: 15px; /* Adds margin below the text */
 }
 
-/* Mobile-specific Styles */
-@media (max-width: 1024px)and (orientation: portrait) {
+/* Mobile Portrait Styles */
+
+@media (min-width: 3.33in) and (max-width: 5in) and (orientation: portrait)  {
   .contact-page {
     margin: 0; /* Removes margin on smaller screens */
   }
@@ -1033,11 +1190,12 @@ main {
   }
 }
 
-/* Mobile-specific Styles */
-@media (max-width: 1024px)and (orientation: landscape) {
+/* Mobile Landscape Styles */
+
+@media (max-width: 12in) and (orientation: landscape) {
   .contact-form-container {
-    padding: 50px; /* Adds padding */
-    margin-bottom: 150px; /* Adds margin at the bottom */
+    padding: 90px; /* Adds padding */
+    margin-bottom: 490px; /* Adds margin at the bottom */
   }
 
   .contact-info p {
@@ -1051,6 +1209,7 @@ main {
     margin-top: 10px; /* Adds space above the button */
   }
 }
+
 
 /* About Page */
 .about-page {
@@ -1262,9 +1421,9 @@ main {
 }
 
 
-/* Mobile-specific Styles */
+/* Mobile Portrait Styles */
 
-@media (max-width: 1024px) and (orientation: portrait) {
+@media (min-width: 3.33in) and (max-width: 5in) and (orientation: portrait)  {
 
   /* General adjustments */
   body, .about-page, .technologies, .meet-the-team {
@@ -1294,6 +1453,12 @@ main {
   }
 
   /* Team Member Section */
+  
+  .team-section{
+	margin-left: 3px;
+	width: 320px;
+  }
+  
   .team-member {
     height: 460px;
   }
@@ -1314,9 +1479,9 @@ main {
 }
 
 
-/* Landscape Mode (for screens less than 1024px wide) */
+/* Mobile Landscape Styles */
 
-@media (max-width: 1024px) and (orientation: landscape) {
+@media (max-width: 12in) and (orientation: landscape)  {
 	
   /* Header and Titles */
   .about-company h1,
@@ -1356,3 +1521,44 @@ main {
   }
 }
 
+/* Splitting the desktop */
+
+@media (max-width: 8in)  {
+	
+  /* Header and Titles */
+  .about-company h1,
+  .technologies h2,
+  .meet-the-team h1 {
+    font-size: 1.2rem; /* Further reduces title font size */
+    margin-bottom: 15px; /* Minimal space below titles */
+  }
+  .about-description {
+   font-size: 0.8rem; /* Reduces the font size */
+   padding: 5px; /* Reduces padding */
+   word-wrap: break-word; /* Ensures long words wrap */
+   text-overflow: ellipsis; /* Adds ellipsis for overflow */
+   max-width: 100%; /* Ensures the content stays within the viewport */
+  }
+  
+  .tech-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .team-member {
+	height: 400px;
+  }
+  
+  .team-member img {
+   width: 100px;
+   height: 100px;
+  }
+
+  .team-member h4 {
+    font-size: 0.75rem;
+  }
+  
+  .team-member p {
+	font-size: 0.75rem;
+  }
+}
