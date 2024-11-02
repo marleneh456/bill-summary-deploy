@@ -983,24 +983,14 @@ main {
 	width: 210px; 
   }
 
+.about-page {
+  width: 90%; /* Ensures full width for mobile */
+}
+
 .tech-card {
 	width: 90%;
     margin-bottom: 20px;
   }
-  
-  .team-member img {
-   width: 100px;
-   height: 100px;
-  }
-
-  .team-member h4 {
-    font-size: 0.75rem;
-  }
-  
-  .team-member p {
-	font-size: 0.75rem;
-  }
-
 }
 
 /* Mobile Portrait */
@@ -1205,13 +1195,11 @@ main {
     .button-icon {
         width: 22px; /* Sets the icon width */
         height: 22px; /* Maintains aspect ratio */
-		margin-left: 3px;
-		margin-bottom: 5px;
     }
   
     .download-btn, .do-it-again-btn, .pause-play-btn{
-	    width: 180px; /* Full width buttons */
-		padding: 8px 15px;
+	    width: 150px; /* Full width buttons */
+		padding: 12px 20px;
 		font-size: 10px;
     }
 	
