@@ -1205,6 +1205,7 @@ main {
     .button-icon {
         width: 22px; /* Sets the icon width */
         height: 22px; /* Maintains aspect ratio */
+		margin-left: 3px;
     }
   
     .download-btn, .do-it-again-btn, .pause-play-btn{
