@@ -1196,19 +1196,19 @@ main {
 	
 	.summary-box {
         width: 340px; 	
-	    height: 450px; 
+	    height: 440px; 
 	    font-size: 12px;
     }
 
 
 	/* Button Icon Styles */
     .button-icon {
-        width: 20px; /* Sets the icon width */
-        height: 20px; /* Maintains aspect ratio */
+        width: 25px; /* Sets the icon width */
+        height: 25px; /* Maintains aspect ratio */
     }
   
     .download-btn, .do-it-again-btn, .pause-play-btn{
-	    width: 200px; /* Full width buttons */
+	    width: 180px; /* Full width buttons */
 		padding: 8px 15px;
 		font-size: 10px;
     }
