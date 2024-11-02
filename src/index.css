@@ -1422,7 +1422,7 @@ main {
 	}
 	
 	.popup-content {
-    width: 650px;
+    width: 660px;
     height: 220px; 
   }
   
@@ -1437,7 +1437,7 @@ main {
   
   .upload-container {
     width: 400px;  
-	height: 150px;
+	height: 145px;
     padding: 1px; /* Reduces padding */
     margin: auto; /* Centers the container */
     font-size: 12px; /* Reduces font size */
@@ -1468,7 +1468,7 @@ main {
   }
   
   .summary-box {
-    height: 100px; 
+    height: 80px; 
 	width: 590px; 
     font-size: 12px;
   }
