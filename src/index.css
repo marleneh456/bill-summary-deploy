@@ -121,7 +121,7 @@ main {
 /* Mobile Landscape Styles */
 
 
-@media (max-device-width: 950px) and (orientation: landscape) {
+@media (max-device-width: 4000px) and (orientation: landscape) {
   * {
 	 box-sizing: border-box;
 	}
@@ -183,7 +183,7 @@ main {
 
 /* Mobile Portrait Styles */
 
-@media (max-device-width: 700px) and (orientation: portrait) {
+@media (max-device-width: 4000px) and (orientation: portrait) {
   * {
 	 box-sizing: border-box;
 	}
@@ -261,7 +261,7 @@ main {
 
 /* Mobile Portrait Styles */
 
-@media (max-device-width: 700px) and (orientation: portrait)    {
+@media (max-device-width: 4000px) and (orientation: portrait)    {
   .desktop-nav-links {
     display: none; /* Hides the desktop navigation on mobile */
   }
@@ -363,7 +363,7 @@ main {
 
 /* Mobile Landscape Styles */
 
-@media (max-device-width: 950px) and (orientation: landscape) {
+@media (max-device-width: 4000px) and (orientation: landscape) {
   .desktop-nav-links {
     display: none; /* Hides the desktop navigation on mobile */
   }
@@ -692,7 +692,7 @@ main {
 
 /* Mobile Portrait Styles */
 
-@media (max-device-width: 700px) and (orientation: portrait)    {
+@media (max-device-width: 4000px) and (orientation: portrait)    {
   .popup-content {
     width: 300px; /* Ensures it scales well on smaller screens */
   }
@@ -726,7 +726,7 @@ main {
 
 /* Mobile Landscape Styles */
 
-@media (max-device-width: 950px) and (orientation: landscape) {
+@media (max-device-width: 4000px) and (orientation: landscape) {
   .popup-content {
     width: 150px;
     height: 150pt; /* Limits the height */
@@ -822,7 +822,7 @@ main {
 
 /* Mobile Portrait Styles */
 
-@media (max-device-width: 700px) and (orientation: portrait)     {
+@media (max-device-width: 4000px) and (orientation: portrait)     {
   .loading-spinner p {
     font-size: 15px; /* Increases font size */
   }
@@ -830,7 +830,7 @@ main {
 
 /* Mobile Landscape Styles */
 
-@media (max-device-width: 950px) and (orientation: landscape) {
+@media (max-device-width: 4000px) and (orientation: landscape) {
   .loading-spinner p {
     font-size: 12px; /* Decreases text size */
   }
@@ -940,7 +940,7 @@ main {
 
 /* Mobile Portrait Styles */
 
-@media (max-device-width: 700px) and (orientation: portrait)    {
+@media (max-device-width: 4000px) and (orientation: portrait)    {
   .summary-btns-container {
     flex-direction: column; /* Stack buttons vertically */
   }
@@ -959,7 +959,7 @@ main {
 
 /* Mobile Landscape Styles */
 
-@media (max-device-width: 950px) and (orientation: landscape)  {
+@media (max-device-width: 4000px) and (orientation: landscape)  {
   .summary-box {
     max-height: 230px; 
 	max-width: 420pt; 
@@ -1145,7 +1145,7 @@ main {
 
 /* Mobile Portrait Styles */
 
-@media (max-device-width: 700px) and (orientation: portrait)   {
+@media (max-device-width: 4000px) and (orientation: portrait)   {
   .contact-page {
     margin: 0; /* Removes margin on smaller screens */
   }
@@ -1169,7 +1169,7 @@ main {
 
 /* Mobile Landscape Styles */
 
-@media (max-device-width: 950px) and (orientation: landscape) {
+@media (max-device-width: 4000px) and (orientation: landscape) {
   .contact-form-container {
     padding: 90px; /* Adds padding */
     margin-bottom: 490px; /* Adds margin at the bottom */
@@ -1400,7 +1400,7 @@ main {
 
 /* Mobile Portrait Styles */
 
-@media (max-device-width: 700px) and (orientation: portrait)   {
+@media (max-device-width: 4000px) and (orientation: portrait)   {
 
   /* General adjustments */
   body, .about-page, .technologies, .meet-the-team {
@@ -1458,7 +1458,7 @@ main {
 
 /* Mobile Landscape Styles */
 
-@media (max-device-width: 950px) and (orientation: landscape)  {
+@media (max-device-width: 4000px) and (orientation: landscape)  {
 	
   /* Header and Titles */
   .about-company h1,
