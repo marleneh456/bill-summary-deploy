@@ -111,9 +111,10 @@ function App() {
               </div>
             }
           />
-          {/* Define routes for other pages */}
+           {/* Define routes for other pages */}
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/team" element={<TeamPage />} />
         </Routes>
       </main>
       <Footer /> {/* Render the footer */}

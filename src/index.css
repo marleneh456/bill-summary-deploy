@@ -779,26 +779,6 @@ main {
   padding-bottom: 100px; /* Adds padding at the bottom */
 }
 
-.go-top-btn {
-  position: fixed; /* Fixes the button to the viewport */
-  bottom: 20px; /* Positions it 20px from the bottom */
-  right: 20px; /* Positions it 20px from the right */
-  background-color: #4a5c79; /* Sets the background color */
-  color: white; /* Sets the text color */
-  border: none; /* Removes the border */
-  border-radius: 50%; /* Makes the button circular */
-  padding: 15px; /* Adds padding */
-  font-size: 28px; /* Sets the font size */
-  cursor: pointer; /* Changes the cursor on hover */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a shadow */
-  z-index: 1000; /* Ensures the button stays on top */
-  transition: background-color 0.3s ease; /* Smooth transitions */
-}
-
-.go-top-btn:hover {
-  background-color: #061d48; /* Changes the background color on hover */
-}
-
 /*
   Media Queries
 */

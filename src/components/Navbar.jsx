@@ -52,6 +52,10 @@ function Navbar() {
               <Link to="/about">About</Link> {/* Link to about page */}
             </li>
             <li>
+              <Link to="/team">Meet The Team</Link>{" "}
+              {/* Link to meet the team page */}
+            </li>
+            <li>
               <Link to="/contact">Contact</Link> {/* Link to contact page */}
             </li>
           </ul>
@@ -63,7 +67,8 @@ function Navbar() {
         <>
           {/* Menu button that toggles between hamburger and close icon */}
           <button className="menu-button" onClick={toggleMenu}>
-            {isMenuOpen ? <span>&times;</span> : <span>&#9776;</span>} {/* Show &times; if open, otherwise show &#9776; */}
+            {isMenuOpen ? <span>&times;</span> : <span>&#9776;</span>}{" "}
+            {/* Show &times; if open, otherwise show &#9776; */}
           </button>
 
           {/* Mobile navigation that opens or closes based on isMenuOpen state */}
@@ -78,6 +83,11 @@ function Navbar() {
               <li>
                 <Link to="/about" onClick={toggleMenu}>
                   About
+                </Link>
+              </li>
+              <li>
+                <Link to="/team" onClick={toggleMenu}>
+                  Meet The Team
                 </Link>
               </li>
               <li>
