@@ -8,7 +8,7 @@ function Navbar() {
   // useEffect to handle screen resizing and toggle mobile view
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 1500); // Set isMobile to true if the screen width is 1024px or less
+      setIsMobile(window.innerWidth < 1510); // Set isMobile to true if the screen width is 1024px or less
     };
 
     window.addEventListener("resize", handleResize); // Add event listener for window resizing
