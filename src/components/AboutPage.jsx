@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react"; // Import React, and the hooks useState and useEffect
+import React from "react"; // Import React
 
 function AboutPage() {
-
   return (
     <div className="about-page">
       {/* About Section */}
@@ -49,13 +48,6 @@ function AboutPage() {
           </div>
         </div>
       </section>
-
-      {/* Go to Top Button */}
-      {showTopBtn && (
-        <button className="go-top-btn" onClick={scrollToTop}>
-          &uarr; {/* Use upwards arrow symbol */}
-        </button>
-      )}
     </div>
   );
 }

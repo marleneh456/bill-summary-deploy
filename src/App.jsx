@@ -1,14 +1,15 @@
 // Import necessary dependencies and components
-import React, { useState } from 'react'; // React and useState for managing state
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // React Router for page navigation
-import Navbar from './components/Navbar'; // Navigation bar component
-import Footer from './components/Footer'; // Footer component
-import ContactPage from './components/ContactPage'; // Contact page component
-import AboutPage from './components/AboutPage'; // About page component
-import UploadBoxPopup from './components/UploadBoxPopup'; // Component for the upload box modal
-import LoadingPopup from './components/LoadingPopup'; // Component for showing a loading popup
-import SummaryPopup from './components/SummaryPopup'; // Component to show the parsed summary
-import XMLParser from './components/XMLParser';  // XML parsing function for handling files
+import React, { useState } from "react"; // React and useState for managing state
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // React Router for page navigation
+import Navbar from "./components/Navbar"; // Navigation bar component
+import Footer from "./components/Footer"; // Footer component
+import ContactPage from "./components/ContactPage"; // Contact page component
+import AboutPage from "./components/AboutPage"; // About page component
+import UploadBoxPopup from "./components/UploadBoxPopup"; // Component for the upload box modal
+import LoadingPopup from "./components/LoadingPopup"; // Component for showing a loading popup
+import SummaryPopup from "./components/SummaryPopup"; // Component to show the parsed summary
+import XMLParser from "./components/XMLParser"; // XML parsing function for handling files
+import TeamPage from "./components/TeamPage"; // component for meet the team
 
 // Main functional component for the app
 function App() {
@@ -48,7 +49,13 @@ function App() {
   return (
     <Router>
       <Navbar /> {/* Render the navigation bar */}
-      <main style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <main
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
         <Routes>
           {/* Define route for home page */}
           <Route
@@ -57,43 +64,47 @@ function App() {
               <div>
                 {/* Step 1: Welcome section */}
                 <div className="welcome-section">
-                <h1>Meet the AI that explains what the government is actually doing</h1>
-                <p>Our AI directly summarizes official US government bills to inform you, instead of confusing you.</p>
-              </div>
+                  <h1>
+                    Meet the AI that explains what the government is actually
+                    doing
+                  </h1>
+                  <p>
+                    Our AI directly summarizes official US government bills to
+                    inform you, instead of confusing you.
+                  </p>
+                </div>
 
-              {/* Main Content Layout */}
-              <div className="content-container">
-              {/* Left Column - Information Blocks */}
-              <div className="info-section">
-               <div className="info-block">
-                <h4>mission statement</h4>
-              </div>
-			  
-              <div className="info-block">
-               <h4>Fema act </h4>
-               <p>summary</p>
-               <a href="#fema-link">link to bill</a>
-              </div>
-			  
-             <div className="info-block">
-              <h4>border act 2024</h4>
-              <p>summary</p>
-              <a href="#border-link">link to bill</a>
-            </div>
-			
-          </div>
+                {/* Main Content Layout */}
+                <div className="content-container">
+                  {/* Left Column - Information Blocks */}
+                  <div className="info-section">
+                    <div className="info-block">
+                      <h4>mission statement</h4>
+                    </div>
 
-          {/* Right Column - Usage Instructions */}
-          <div className="usage-section">
-            <h3>How to use:</h3>
-            <p>pick a bill you want to know about: congress.gov link</p>
-            <p>only xml files work currently</p>
-            <button className="try-it-btn" onClick={togglePopup}>
-              Try It Yourself!
-            </button>
-          </div>
-		  
-        </div>
+                    <div className="info-block">
+                      <h4>Fema act </h4>
+                      <p>summary</p>
+                      <a href="#fema-link">link to bill</a>
+                    </div>
+
+                    <div className="info-block">
+                      <h4>border act 2024</h4>
+                      <p>summary</p>
+                      <a href="#border-link">link to bill</a>
+                    </div>
+                  </div>
+
+                  {/* Right Column - Usage Instructions */}
+                  <div className="usage-section">
+                    <h3>How to use:</h3>
+                    <p>pick a bill you want to know about: congress.gov link</p>
+                    <p>only xml files work currently</p>
+                    <button className="try-it-btn" onClick={togglePopup}>
+                      Try It Yourself!
+                    </button>
+                  </div>
+                </div>
 
                 {/* Conditionally render different steps or modals based on step */}
                 {isPopupOpen && (
@@ -111,7 +122,7 @@ function App() {
               </div>
             }
           />
-           {/* Define routes for other pages */}
+          {/* Define routes for other pages */}
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/team" element={<TeamPage />} />
