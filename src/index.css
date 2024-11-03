@@ -1145,7 +1145,7 @@ main {
   }
 
   .popup-content h3 {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .upload-container {
@@ -1154,15 +1154,15 @@ main {
   }
 
   .upload-btn {
-    font-size: 12px; /* Adjusts the font size */
+    font-size: 14px; /* Adjusts the font size */
   }
 
   .upload-dropzone p {
-    font-size: 10px; /* Slightly reduces text size */
+    font-size: 14px; /* Slightly reduces text size */
   }
 
   .file-selected {
-    font-size: 10px; /* Sets the font size */
+    font-size: 12px; /* Sets the font size */
   }
 
   .file-selected .remove-btn {
@@ -1171,7 +1171,7 @@ main {
 
   .summary-box {
     width: 340px;
-    height: 440px;
+    height: 430px;
     font-size: 14px;
   }
 
