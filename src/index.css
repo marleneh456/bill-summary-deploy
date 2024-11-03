@@ -1141,7 +1141,8 @@ main {
   }
 
   .popup-content {
-    width: 380px;
+    width: 360px;
+	height: 600px;
   }
 
   .popup-content h3 {
@@ -1181,7 +1182,7 @@ main {
   }
 
   .summary-box {
-    width: 340px;
+    width: 320px;
     height: 430px;
     font-size: 14px;
   }
