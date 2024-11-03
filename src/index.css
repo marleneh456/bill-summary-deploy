@@ -1158,6 +1158,12 @@ main {
     padding: 20px; /* Reduces padding for smaller screens */
   }
 
+  .upload-dropzone {
+    width: 250px; /* Limits dropzone width */
+    height: 80px;
+    margin-left: 20px; /* Adds margin on the left */
+  }
+  
   .upload-btn {
     font-size: 14px; /* Adjusts the font size */
   }
