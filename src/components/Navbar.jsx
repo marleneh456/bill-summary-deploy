@@ -3,12 +3,12 @@ import { Link } from "react-router-dom"; // Import Link from react-router-dom fo
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to control mobile menu visibility
-  const [isMobile, setIsMobile] = useState(false); // State to track whether the screen size is mobile
+  const [isNotFullDesktop, setIsNotFullDesktop] = useState(false); // State to track whether the screen size is not full desktop
 
   // useEffect to handle screen resizing and toggle mobile view
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 1510); // Set isMobile to true if the screen width is 1024px or less
+      setIsNotFullDesktop(window.innerWidth < 1510); // Set isNotFullDesktop to true if the screen width is less than 1510px
     };
 
     window.addEventListener("resize", handleResize); // Add event listener for window resizing
@@ -40,8 +40,8 @@ function Navbar() {
         />
       </div>
 
-      {/* Show Desktop Navigation on larger screens (when isMobile is false) */}
-      {!isMobile && (
+      {/* Show Desktop Navigation on larger screens (when isNotFullDesktop is false) */}
+      {!isNotFullDesktop && (
         <nav className="desktop-nav-links">
           <ul>
             {/* Each Link navigates to different pages */}
@@ -62,8 +62,8 @@ function Navbar() {
         </nav>
       )}
 
-      {/* Show Mobile Menu Button and Links when isMobile is true */}
-      {isMobile && (
+      {/* Show Mobile Menu Button and Links when isNotFullDesktop is true */}
+      {isNotFullDesktop && (
         <>
           {/* Menu button that toggles between hamburger and close icon */}
           <button className="menu-button" onClick={toggleMenu}>
