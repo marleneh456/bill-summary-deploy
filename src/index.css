@@ -1042,8 +1042,8 @@ main {
   .nav-links ul li a {
     color: white; /* Makes the link text white */
     text-decoration: none; /* Removes the underline from the links */
-    font-size: 18px; /* Sets the font size for the links */
-    padding: 10px 20px; /* Adds padding inside the links */
+    font-size: 16px; /* Sets the font size for the links */
+    padding: 10px 10px; /* Adds padding inside the links */
     background-color: #4a5c79; /* Sets the background color */
     border-radius: 15px; /* Rounds the corners */
     transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
