@@ -1042,7 +1042,7 @@ main {
   .nav-links ul li a {
     color: white; /* Makes the link text white */
     text-decoration: none; /* Removes the underline from the links */
-    font-size: 16px; /* Sets the font size for the links */
+    font-size: 14px; /* Sets the font size for the links */
     padding: 10px 10px; /* Adds padding inside the links */
     background-color: #4a5c79; /* Sets the background color */
     border-radius: 15px; /* Rounds the corners */
@@ -1162,7 +1162,7 @@ main {
   }
 
   .file-selected {
-    font-size: 12px; /* Sets the font size */
+    font-size: 10px; /* Sets the font size */
   }
 
   .file-selected .remove-btn {
