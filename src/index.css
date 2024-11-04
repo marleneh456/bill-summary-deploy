@@ -792,11 +792,10 @@ main {
   .desktop-nav-links {
     display: flex; /* Show desktop navigation */
   }
-  /* Additional full desktop-specific styles... */
 }
 
 /* Split Desktop */
-@media (max-width: 1500px) and (max-height: 1500px) {
+@media (max-width: 1000px) and (max-height: 1000px) {
   .desktop-nav-links {
     display: none; /* Hides the desktop navigation on mobile */
   }
