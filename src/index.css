@@ -795,24 +795,18 @@ main {
 }
 
 /* Split Desktop */
-@media (max-width: 1530px) and (min-width: 600px) and (max-height: 700px) and (orientation: landscape){
+@media (max-width: 1000px) and (max-height: 1000px) and (orientation: landscape){
   .desktop-nav-links {
     display: none; /* Hides the desktop navigation on mobile */
   }
 
   .menu-button {
-    display: block; /* Makes the menu button visible on mobile */
-    background-color: #4a5c79; /* Sets the button's background color */
-    color: white; /* Makes the button text white */
-    border: none; /* Removes the button border */
-    font-size: 24px; /* Increases the button's font size */
-    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
-    border-radius: 15px; /* Rounds the button's corners */
-    padding: 8px 15px; /* Adds padding to the button */
-    z-index: 10; /* Ensures the button stays above other elements */
-    position: absolute; /* Positions the button relative to the viewport */
-    right: 10px; /* Positions the button 10px from the right edge */
-    top: 5x; /* Positions the button 10px from the top */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
   }
 
   .nav-links {
@@ -985,18 +979,12 @@ main {
   }
 
   .menu-button {
-    display: block; /* Makes the menu button visible on mobile */
-    background-color: #4a5c79; /* Sets the button's background color */
-    color: white; /* Makes the button text white */
-    border: none; /* Removes the button border */
-    font-size: 18px; /* Increases the button's font size */
-    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
-    border-radius: 15px; /* Rounds the button's corners */
-    padding: 8px 15px; /* Adds padding to the button */
-    z-index: 10; /* Ensures the button stays above other elements */
-    position: absolute; /* Positions the button relative to the viewport */
-    right: 10px; /* Positions the button 10px from the right edge */
-    top: 5x; /* Positions the button 10px from the top */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
   }
 
   .nav-links {
@@ -1274,18 +1262,12 @@ main {
   }
 
   .menu-button {
-    display: block; /* Makes the menu button visible on mobile */
-    background-color: #4a5c79; /* Sets the button's background color */
-    color: white; /* Makes the button text white */
-    border: none; /* Removes the button border */
-    font-size: 18px; /* Increases the button's font size */
-    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
-    border-radius: 15px; /* Rounds the button's corners */
-    padding: 8px 15px; /* Adds padding to the button */
-    z-index: 10; /* Ensures the button stays above other elements */
-    position: absolute; /* Positions the button relative to the viewport */
-    right: 10px; /* Positions the button 10px from the right edge */
-    top: 5x; /* Positions the button 10px from the top */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
   }
 
   .nav-links {
