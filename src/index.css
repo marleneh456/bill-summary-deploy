@@ -795,7 +795,7 @@ main {
 }
 
 /* Split Desktop */
-@media (max-width: 1530px) and (min-width: 600px) and (max-height: 700px) {
+@media (max-width: 1530px) and (min-width: 600px) and (max-height: 700px) and (orientation: landscape){
   .desktop-nav-links {
     display: none; /* Hides the desktop navigation on mobile */
   }
