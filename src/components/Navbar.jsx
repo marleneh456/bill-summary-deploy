@@ -8,7 +8,7 @@ function Navbar() {
   // useEffect to handle screen resizing and toggle mobile view
   useEffect(() => {
     const handleResize = () => {
-      setIsNotFullDesktop(window.innerWidth <= 1024); // Set isNotFullDesktop to true if the screen width is less than 1500px
+      setIsNotFullDesktop(window.innerWidth < 1024); // Set isNotFullDesktop to true if the screen width is less than 1500px
     };
 
     window.addEventListener("resize", handleResize); // Add event listener for window resizing
