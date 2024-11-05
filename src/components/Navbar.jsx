@@ -1,37 +1,35 @@
-import React, { useState, useEffect } from "react"; // Import React and hooks (useState, useEffect)
-import { Link } from "react-router-dom"; // Import Link from react-router-dom for navigation
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // State to control mobile menu visibility
-  const [isNotFullDesktop, setIsNotFullDesktop] = useState(false); // State to track whether the screen size is not full desktop
+  // Initialize isFullDesktop based on current window width
+  const [isFullDesktop, setIsFullDesktop] = useState(window.innerWidth >= 1024);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // useEffect to handle screen resizing and toggle mobile view
   useEffect(() => {
     const handleResize = () => {
-      setIsNotFullDesktop(window.innerWidth < 1024); // Set isNotFullDesktop to true if the screen width is less than 1500px
+      // Update isFullDesktop based on window width
+      setIsFullDesktop(window.innerWidth >= 1024);
     };
 
-    window.addEventListener("resize", handleResize); // Add event listener for window resizing
+    window.addEventListener("resize", handleResize);
+    handleResize();
 
-    handleResize(); // Call handleResize immediately to set the initial state
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
-    return () => window.removeEventListener("resize", handleResize); // Cleanup the event listener on unmount
-  }, []); // Empty dependency array ensures this runs only on component mount/unmount
-
-  // Toggle mobile menu visibility
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen); // Flip the isMenuOpen state (open if closed, close if open)
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
     <header className="navbar">
       <div className="logo-container">
-        {/* Logo image that redirects to home page when clicked */}
         <img
           src="./images/logo.png"
           alt="Company Logo"
           className="logo"
-          onClick={() => (window.location.href = "/")} // Redirect to home page on logo click
+          onClick={() => (window.location.href = "/")}
         />
         <img
           src="./images/witb_titlecard_white.png"
@@ -40,61 +38,27 @@ function Navbar() {
         />
       </div>
 
-      {/* Show Desktop Navigation on larger screens (when isNotFullDesktop is false) */}
-      {!isNotFullDesktop && (
+      {isFullDesktop ? (
         <nav className="desktop-nav-links">
           <ul>
-            {/* Each Link navigates to different pages */}
-            <li>
-              <Link to="/">Home</Link> {/* Link to home page */}
-            </li>
-            <li>
-              <Link to="/about">About</Link> {/* Link to about page */}
-            </li>
-            <li>
-              <Link to="/team">Meet The Team</Link>{" "}
-              {/* Link to meet the team page */}
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link> {/* Link to contact page */}
-            </li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/team">Meet The Team</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </nav>
-      )}
-
-      {/* Show Mobile Menu Button and Links when isNotFullDesktop is true */}
-      {isNotFullDesktop && (
+      ) : (
         <>
-          {/* Menu button that toggles between hamburger and close icon */}
           <button className="menu-button" onClick={toggleMenu}>
-            {isMenuOpen ? <span>&times;</span> : <span>&#9776;</span>}{" "}
-            {/* Show &times; if open, otherwise show &#9776; */}
+            {isMenuOpen ? <span>&times;</span> : <span>&#9776;</span>}
           </button>
 
-          {/* Mobile navigation that opens or closes based on isMenuOpen state */}
           <nav className={`nav-links ${isMenuOpen ? "open" : "close"}`}>
             <ul>
-              <li>
-                {/* Each link closes the menu after clicking */}
-                <Link to="/" onClick={toggleMenu}>
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/about" onClick={toggleMenu}>
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link to="/team" onClick={toggleMenu}>
-                  Meet The Team
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" onClick={toggleMenu}>
-                  Contact
-                </Link>
-              </li>
+              <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
+              <li><Link to="/about" onClick={toggleMenu}>About</Link></li>
+              <li><Link to="/team" onClick={toggleMenu}>Meet The Team</Link></li>
+              <li><Link to="/contact" onClick={toggleMenu}>Contact</Link></li>
             </ul>
           </nav>
         </>
@@ -103,4 +67,4 @@ function Navbar() {
   );
 }
 
-export default Navbar; // Export the Navbar component for use in other parts of the app
+export default Navbar;

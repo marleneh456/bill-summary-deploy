@@ -39,53 +39,114 @@ main {
 
 /* Desktop Navigation */
 .desktop-nav-links {
-  display: flex; /* Arranges navigation links horizontally */
-  margin-left: auto; /* Pushes the navigation links to the right */
+  display: flex;
+  margin-left: auto;
 }
 
 .desktop-nav-links ul {
-  list-style: none; /* Removes the bullet points from the list */
-  display: flex; /* Arranges the list items horizontally */
-  gap: 15px; /* Adds space between the links */
-  margin: 0; /* Removes margin around the list */
-  padding: 0; /* Removes padding around the list */
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
 }
 
 .desktop-nav-links ul li a {
-  color: white; /* Makes the link text white */
-  text-decoration: none; /* Removes the underline from the links */
-  font-size: 16px; /* Sets the font size for links */
-  padding: 8px 15px; /* Adds padding inside the links */
-  background-color: #4a5c79; /* Sets the background color of the links */
-  border-radius: 20px; /* Rounds the corners of the links */
-  transition: background-color 0.3s ease; /* Smooth transition for background color changes */
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 15px;
+  background-color: #4a5c79;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
 }
 
 .desktop-nav-links ul li a:hover {
-  background-color: #3d4e66; /* Changes background color on hover */
+  background-color: #3d4e66;
 }
 
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Mobile Navigation */
+.menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
 }
 
-@keyframes slideUp {
-  from {
-    opacity: 1;
-    transform: translateY(0);
+.nav-links {
+    display: none; /* Hides the mobile navigation links initially */
+    position: absolute; /* Changes position to absolute */
+    top: 65px; /* Pushes the navigation links down by 55px */
+    left: 0; /* Aligns the navigation to the left */
+    width: 100%; /* Makes the navigation take up the full width */
+    background-color: #1a3d6c; /* Background color */
+    justify-content: flex-start; /* Align navigation links to the left */
+    z-index: 9; /* Ensure the navigation appears above other elements */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
   }
-  to {
-    opacity: 0;
-    transform: translateY(-20px);
+
+  /* Show navigation links when the menu is open */
+  .nav-links.open {
+    display: flex; /* Makes links visible */
+    flex-direction: row; /* Arrange links horizontally */
+    animation: slideDown 0.1s forwards; /* Sliding down effect */
+    justify-content: flex-start; /* Align links to the left */
   }
-}
+
+  .nav-links ul {
+    list-style: none; /* Removes bullets */
+    padding: 0; /* Removes padding around the links */
+    margin: 0; /* Removes margin around the links */
+    display: flex; /* Arranges the links horizontally */
+    flex-direction: row; /* Arrange links horizontally */
+    gap: 20px; /* Adds space between links */
+    margin-left: auto; /* Align links to the left */
+    margin-top: 20px; /* Adds space above the links */
+    margin-bottom: 20px; /* Adds space below the links */
+  }
+
+  .nav-links ul li {
+    margin: 10px 0; /* Adds space between each link */
+  }
+
+  .nav-links ul li a {
+    color: white; /* Makes the link text white */
+    text-decoration: none; /* Removes the underline from the links */
+    font-size: 16px; /* Sets the font size for the links */
+    padding: 10px 15px; /* Adds padding inside the links */
+    background-color: #4a5c79; /* Sets the background color */
+    border-radius: 15px; /* Rounds the corners */
+    transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
+  }
+
+  .nav-links ul li a:hover {
+    background-color: #3d4e66; /* Changes the background color on hover */
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px); /* Start 20px above */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Move to original position */
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 1;
+      transform: translateY(0); /* Start at original position */
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-20px); /* Slide 20px up */
+    }
+  }
+
 
 /* Welcome Section */
 .welcome-section {
@@ -786,107 +847,30 @@ main {
 /* Full Desktop */
 @media (min-width: 1024px) {
   .menu-button {
-    display: none; /* Hides the mobile menu button on large screens */
+    display: none;
   }
 
   .desktop-nav-links {
-    display: flex; /* Show desktop navigation */
+    display: flex;
   }
 }
 
-/* Split Desktop */
-@media (max-width: 1000px) and (max-height: 1000px) {
+/* Split Desktop  */
+@media (max-width: 1024px) and (max-height: 700px) {
+	
   .desktop-nav-links {
-    display: none; /* Hides the desktop navigation on mobile */
+    display: none;
   }
 
   .menu-button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-    z-index: 10;
+    display: block;
   }
-
-  .nav-links {
-    display: none; /* Hides the mobile navigation links initially */
-    position: absolute; /* Changes position to absolute */
-    top: 65px; /* Pushes the navigation links down by 55px */
-    left: 0; /* Aligns the navigation to the left */
-    width: 100%; /* Makes the navigation take up the full width */
-    background-color: #1a3d6c; /* Background color */
-    justify-content: flex-start; /* Align navigation links to the left */
-    z-index: 9; /* Ensure the navigation appears above other elements */
-    transition: transform 0.3s ease-in-out; /* Smooth transition */
-  }
-
-  /* Show navigation links when the menu is open */
-  .nav-links.open {
-    display: flex; /* Makes links visible */
-    flex-direction: row; /* Arrange links horizontally */
-    animation: slideDown 0.1s forwards; /* Sliding down effect */
-    justify-content: flex-start; /* Align links to the left */
-  }
-
-  .nav-links ul {
-    list-style: none; /* Removes bullets */
-    padding: 0; /* Removes padding around the links */
-    margin: 0; /* Removes margin around the links */
-    display: flex; /* Arranges the links horizontally */
-    flex-direction: row; /* Arrange links horizontally */
-    gap: 20px; /* Adds space between links */
-    margin-left: auto; /* Align links to the left */
-    margin-top: 20px; /* Adds space above the links */
-    margin-bottom: 20px; /* Adds space below the links */
-  }
-
-  .nav-links ul li {
-    margin: 10px 0; /* Adds space between each link */
-  }
-
-  .nav-links ul li a {
-    color: white; /* Makes the link text white */
-    text-decoration: none; /* Removes the underline from the links */
-    font-size: 16px; /* Sets the font size for the links */
-    padding: 10px 15px; /* Adds padding inside the links */
-    background-color: #4a5c79; /* Sets the background color */
-    border-radius: 15px; /* Rounds the corners */
-    transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
-  }
-
-  .nav-links ul li a:hover {
-    background-color: #3d4e66; /* Changes the background color on hover */
-  }
-
-  @keyframes slideDown {
-    from {
-      opacity: 0;
-      transform: translateY(-20px); /* Start 20px above */
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0); /* Move to original position */
-    }
-  }
-
-  @keyframes slideUp {
-    from {
-      opacity: 1;
-      transform: translateY(0); /* Start at original position */
-    }
-    to {
-      opacity: 0;
-      transform: translateY(-20px); /* Slide 20px up */
-    }
-  }
-
   * {
     box-sizing: border-box;
   }
 
   body {
-    background-color: #fff8dc; /*Cornsilk*/
+    background-color: pink; /*Cornsilk*/
   }
 
   /* Main Content Layout */
@@ -974,96 +958,23 @@ main {
 
 /* Mobile Portrait */
 @media (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-  .desktop-nav-links {
-    display: none; /* Hides the desktop navigation on mobile */
+	 .title-card {
+    width: 200px; /* Sets the width of the logo */
+  }
+	.desktop-nav-links {
+    display: none;
   }
 
   .menu-button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-    z-index: 10;
+    display: block;
   }
-
+  
   .nav-links {
-    display: none; /* Hides the mobile navigation links initially */
-    position: absolute; /* Changes position to absolute */
     top: 55px; /* Pushes the navigation links down by 55px */
-    left: 0; /* Aligns the navigation to the left */
-    width: 100%; /* Makes the navigation take up the full width */
-    background-color: #1a3d6c; /* Background color */
-    justify-content: center; /* Centers the navigation links */
-    z-index: 9; /* Ensure the navigation appears above other elements */
-    transition: transform 0.3s ease-in-out; /* Smooth transition */
   }
-
-  /* Show navigation links when the menu is open */
-  .nav-links.open {
-    display: flex; /* Makes links visible */
-    flex-direction: column; /* Stacks links vertically */
-    animation: slideDown 0.1s forwards; /* Sliding down effect */
-  }
-
-  /* Close animation */
-  .nav-links.close {
-    animation: slideUp 0.1s forwards; /* Sliding up effect */
-  }
-
-  .nav-links ul {
-    list-style: none; /* Removes bullets */
-    padding: 0; /* Removes padding around the links */
-    margin: 0; /* Removes margin around the links */
-    display: flex; /* Arranges the links horizontally */
-    gap: 20px; /* Adds space between the links */
-    margin-left: auto;
-    margin-top: 30px; /* Adds 30px of space above the links */
-    margin-bottom: 20px; /* Adds 20px of space below the links */
-  }
-
-  .nav-links ul li {
-    margin: 10px 0; /* Adds space between each link */
-  }
-
+  
   .nav-links ul li a {
-    color: white; /* Makes the link text white */
-    text-decoration: none; /* Removes the underline from the links */
     font-size: 14px; /* Sets the font size for the links */
-    padding: 10px 10px; /* Adds padding inside the links */
-    background-color: #4a5c79; /* Sets the background color */
-    border-radius: 15px; /* Rounds the corners */
-    transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
-  }
-
-  .nav-links ul li a:hover {
-    background-color: #3d4e66; /* Changes the background color on hover */
-  }
-
-  .title-card {
-    width: 200px; /* Sets the width of the logo */
-  }
-
-  @keyframes slideDown {
-    from {
-      opacity: 0;
-      transform: translateY(-20px); /* Start 20px above */
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0); /* Move to original position */
-    }
-  }
-
-  @keyframes slideUp {
-    from {
-      opacity: 1;
-      transform: translateY(0); /* Start at original position */
-    }
-    to {
-      opacity: 0;
-      transform: translateY(-20px); /* Slide 20px up */
-    }
   }
 
   * {
@@ -1257,98 +1168,21 @@ main {
 
 /* Mobile Landscape */
 @media (max-width: 1024px) and (max-height: 600px) and (orientation: landscape) {
-  .desktop-nav-links {
-    display: none; /* Hides the desktop navigation on mobile */
+	 .title-card {
+    width: 200px; /* Sets the width of the logo */
+  }
+	.desktop-nav-links {
+    display: none;
   }
 
   .menu-button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-    z-index: 10;
+    display: block;
   }
-
+  
   .nav-links {
-    display: none; /* Hides the mobile navigation links initially */
-    position: absolute; /* Changes position to absolute */
     top: 55px; /* Pushes the navigation links down by 55px */
-    left: 0; /* Aligns the navigation to the left */
-    width: 100%; /* Makes the navigation take up the full width */
-    background-color: #1a3d6c; /* Background color */
-    justify-content: center; /* Centers the navigation links */
-    z-index: 9; /* Ensure the navigation appears above other elements */
-    transition: transform 0.3s ease-in-out; /* Smooth transition */
   }
-
-  /* Show navigation links when the menu is open */
-  .nav-links.open {
-    display: flex; /* Makes links visible */
-    flex-direction: column; /* Stacks links vertically */
-    animation: slideDown 0.1s forwards; /* Sliding down effect */
-  }
-
-  /* Close animation */
-  .nav-links.close {
-    animation: slideUp 0.1s forwards; /* Sliding up effect */
-  }
-
-  .nav-links ul {
-    list-style: none; /* Removes bullets */
-    padding: 0; /* Removes padding around the links */
-    margin: 0; /* Removes margin around the links */
-    display: flex; /* Arranges the links horizontally */
-    gap: 20px; /* Adds space between the links */
-    margin-left: auto;
-    margin-top: 30px; /* Adds 30px of space above the links */
-    margin-bottom: 20px; /* Adds 20px of space below the links */
-  }
-
-  .nav-links ul li {
-    margin: 10px 0; /* Adds space between each link */
-  }
-
-  .nav-links ul li a {
-    color: white; /* Makes the link text white */
-    text-decoration: none; /* Removes the underline from the links */
-    font-size: 18px; /* Sets the font size for the links */
-    padding: 10px 20px; /* Adds padding inside the links */
-    background-color: #4a5c79; /* Sets the background color */
-    border-radius: 15px; /* Rounds the corners */
-    transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
-  }
-
-  .nav-links ul li a:hover {
-    background-color: #3d4e66; /* Changes the background color on hover */
-  }
-
-  .title-card {
-    width: 200px; /* Sets the width of the logo */
-  }
-
-  @keyframes slideDown {
-    from {
-      opacity: 0;
-      transform: translateY(-20px); /* Start 20px above */
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0); /* Move to original position */
-    }
-  }
-
-  @keyframes slideUp {
-    from {
-      opacity: 1;
-      transform: translateY(0); /* Start at original position */
-    }
-    to {
-      opacity: 0;
-      transform: translateY(-20px); /* Slide 20px up */
-    }
-  }
-
+  
   * {
     box-sizing: border-box;
   }
