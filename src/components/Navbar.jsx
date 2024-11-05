@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   // Initialize isFullDesktop based on current window width
-  const [isFullDesktop, setIsFullDesktop] = useState(window.innerWidth >= 1024);
+  const [isFullDesktop, setIsFullDesktop] = useState(window.innerWidth >= 1000);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
       // Update isFullDesktop based on window width
-      setIsFullDesktop(window.innerWidth >= 1024);
+      setIsFullDesktop(window.innerWidth >= 1000);
     };
 
     window.addEventListener("resize", handleResize);
