@@ -975,6 +975,7 @@ main {
   
   .nav-links ul li a {
     font-size: 14px; /* Sets the font size for the links */
+	padding: 10px 10px; /* Adds padding inside the links */
   }
 
   * {
