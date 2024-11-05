@@ -784,7 +784,7 @@ main {
 */
 
 /* Full Desktop */
-@media (min-width: 1024px) {
+@media (min-width: 1000px) {
   .menu-button {
     display: none; /* Hides the mobile menu button on large screens */
   }
