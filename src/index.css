@@ -806,7 +806,8 @@ main {
     color: white;
     font-size: 30px;
     cursor: pointer;
-    margin-left: 4px;
+    right: 10px; /* Positions the button 10px from the right edge */
+    top: 5x; /* Positions the button 10px from the top */
   }
 
   .nav-links {
@@ -984,7 +985,8 @@ main {
     color: white;
     font-size: 30px;
     cursor: pointer;
-    margin-left: 4px;
+    right: 10px; /* Positions the button 10px from the right edge */
+    top: 5x; /* Positions the button 10px from the top */
   }
 
   .nav-links {
@@ -1267,7 +1269,8 @@ main {
     color: white;
     font-size: 30px;
     cursor: pointer;
-    margin-left: 4px;
+    right: 10px; /* Positions the button 10px from the right edge */
+    top: 5x; /* Positions the button 10px from the top */
   }
 
   .nav-links {
