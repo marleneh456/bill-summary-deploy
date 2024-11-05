@@ -806,7 +806,7 @@ main {
     color: white;
     font-size: 30px;
     cursor: pointer;
-    z-index: 10;
+    margin-left:auto;
   }
 
   .nav-links {
@@ -984,7 +984,7 @@ main {
     color: white;
     font-size: 30px;
     cursor: pointer;
-    z-index: 10;
+    margin-left:auto;
   }
 
   .nav-links {
@@ -1267,7 +1267,7 @@ main {
     color: white;
     font-size: 30px;
     cursor: pointer;
-    z-index: 10;
+    margin-left:auto;
   }
 
   .nav-links {
