@@ -783,8 +783,9 @@ main {
   Media Queries
 */
 
+
 /* Full Desktop */
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .menu-button {
     display: none; /* Hides the mobile menu button on large screens */
   }
@@ -794,8 +795,10 @@ main {
   }
 }
 
+
+
 /* Split Desktop */
-@media (max-width: 1000px) and (max-height: 1000px) {
+@media (max-width: 1023px) and (max-height: 1023px) {
   .desktop-nav-links {
     display: none; /* Hides the desktop navigation on mobile */
   }
@@ -973,7 +976,176 @@ main {
   }
 }
 
-/* Mobile Portrait */
+/* Tablet - Portrait */
+@media (max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
+  .desktop-nav-links {
+    display: none; /* Hides the desktop navigation on mobile */
+  }
+
+  .menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    right: 10px; /* Positions the button 10px from the right edge */
+    top: 5x; /* Positions the button 10px from the top */
+  }
+
+  .nav-links {
+    display: none; /* Hides the mobile navigation links initially */
+    position: absolute; /* Changes position to absolute */
+    top: 55px; /* Pushes the navigation links down by 55px */
+    left: 0; /* Aligns the navigation to the left */
+    width: 100%; /* Makes the navigation take up the full width */
+    background-color: #1a3d6c; /* Background color */
+    justify-content: center; /* Centers the navigation links */
+    z-index: 9; /* Ensure the navigation appears above other elements */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+  }
+
+  /* Show navigation links when the menu is open */
+  .nav-links.open {
+    display: flex; /* Makes links visible */
+    flex-direction: column; /* Stacks links vertically */
+    animation: slideDown 0.1s forwards; /* Sliding down effect */
+  }
+
+  /* Close animation */
+  .nav-links.close {
+    animation: slideUp 0.1s forwards; /* Sliding up effect */
+  }
+
+  .nav-links ul {
+    list-style: none; /* Removes bullets */
+    padding: 0; /* Removes padding around the links */
+    margin: 0; /* Removes margin around the links */
+    display: flex; /* Arranges the links horizontally */
+    gap: 20px; /* Adds space between the links */
+    margin-left: auto;
+    margin-top: 30px; /* Adds 30px of space above the links */
+    margin-bottom: 20px; /* Adds 20px of space below the links */
+  }
+
+  .nav-links ul li {
+    margin: 10px 0; /* Adds space between each link */
+  }
+
+  .nav-links ul li a {
+    color: white; /* Makes the link text white */
+    text-decoration: none; /* Removes the underline from the links */
+    font-size: 18px; /* Sets the font size for the links */
+    padding: 10px 10px; /* Adds padding inside the links */
+    background-color: #4a5c79; /* Sets the background color */
+    border-radius: 15px; /* Rounds the corners */
+    transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
+  }
+
+  .nav-links ul li a:hover {
+    background-color: #3d4e66; /* Changes the background color on hover */
+  }
+
+  .title-card {
+    width: 200px; /* Sets the width of the logo */
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px); /* Start 20px above */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Move to original position */
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 1;
+      transform: translateY(0); /* Start at original position */
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-20px); /* Slide 20px up */
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #FFA07A; /*Light Salmon */
+  }
+  
+   .close-popup {
+	right: 4px; /* Aligns it to the right */
+	font-size: 10px;
+  }
+
+  .summary-box {
+    width: 840px;
+	height: 440px;
+  }
+
+  .contact-form button {
+    width: 90%; /* Makes the button full width */
+  }
+
+  .about-page {
+    padding: 30px 10px; /* Adds padding */
+    width: 90%; /* Ensures full width for mobile */
+  }
+
+  /* Header and Titles */
+  .about-company h1,
+  .technologies h2,
+  .meet-the-team h1 {
+    font-size: 1.2rem; /* Further reduces title font size */
+    margin-bottom: 15px; /* Minimal space below titles */
+  }
+
+  .about-description {
+    font-size: 0.8rem; /* Reduces the font size */
+    padding: 5px; /* Reduces padding */
+    word-wrap: break-word; /* Ensures long words wrap */
+    text-overflow: ellipsis; /* Adds ellipsis for overflow */
+    max-width: 100%; /* Ensures the content stays within the viewport */
+  }
+
+  .tech-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Team Member Section */
+
+  .team-section {
+    margin-left: 3px;
+    width: 320px;
+  }
+
+  .team-member {
+    height: 460px;
+  }
+
+  .team-member img {
+    width: 100px; /* Profile pic 100px */
+    height: 100px;
+    margin-bottom: 8px;
+  }
+
+  .team-member h4 {
+    font-size: 0.75rem;
+  }
+
+  .team-member p {
+    font-size: 0.75rem;
+  }
+}
+
+/* Mobile and mini tablet Portrait */
 @media (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
   .desktop-nav-links {
     display: none; /* Hides the desktop navigation on mobile */
@@ -1245,6 +1417,295 @@ main {
   .team-member img {
     width: 100px; /* Profile pic 100px */
     height: 100px;
+    margin-bottom: 8px;
+  }
+
+  .team-member h4 {
+    font-size: 0.75rem;
+  }
+
+  .team-member p {
+    font-size: 0.75rem;
+  }
+}
+
+/* Small Mobile Portrait */
+
+@media only screen and (max-width: 395px) and (max-width: 852px){
+  .desktop-nav-links {
+    display: none; /* Hides the desktop navigation on mobile */
+  }
+
+  .menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    right: 10px; /* Positions the button 10px from the right edge */
+    top: 5x; /* Positions the button 10px from the top */
+  }
+
+  .nav-links {
+    display: none; /* Hides the mobile navigation links initially */
+    position: absolute; /* Changes position to absolute */
+    top: 55px; /* Pushes the navigation links down by 55px */
+    left: 0; /* Aligns the navigation to the left */
+    width: 100%; /* Makes the navigation take up the full width */
+    background-color: #1a3d6c; /* Background color */
+    justify-content: center; /* Centers the navigation links */
+    z-index: 9; /* Ensure the navigation appears above other elements */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+  }
+
+  /* Show navigation links when the menu is open */
+  .nav-links.open {
+    display: flex; /* Makes links visible */
+    flex-direction: column; /* Stacks links vertically */
+    animation: slideDown 0.1s forwards; /* Sliding down effect */
+  }
+
+  /* Close animation */
+  .nav-links.close {
+    animation: slideUp 0.1s forwards; /* Sliding up effect */
+  }
+
+  .nav-links ul {
+    list-style: none; /* Removes bullets */
+    padding: 0; /* Removes padding around the links */
+    margin: 0; /* Removes margin around the links */
+    display: flex; /* Arranges the links horizontally */
+    gap: 20px; /* Adds space between the links */
+    margin-left: auto;
+    margin-top: 30px; /* Adds 30px of space above the links */
+    margin-bottom: 20px; /* Adds 20px of space below the links */
+  }
+
+  .nav-links ul li {
+    margin: 10px 0; /* Adds space between each link */
+  }
+
+  .nav-links ul li a {
+    color: white; /* Makes the link text white */
+    text-decoration: none; /* Removes the underline from the links */
+    font-size: 12px; /* Sets the font size for the links */
+    padding: 8px; /* Adds padding inside the links */
+    background-color: #4a5c79; /* Sets the background color */
+    border-radius: 15px; /* Rounds the corners */
+    transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
+  }
+
+  .nav-links ul li a:hover {
+    background-color: #3d4e66; /* Changes the background color on hover */
+  }
+
+  .title-card {
+    width: 200px; /* Sets the width of the logo */
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px); /* Start 20px above */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Move to original position */
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 1;
+      transform: translateY(0); /* Start at original position */
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-20px); /* Slide 20px up */
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: pink; /*Pink */
+  }
+
+  /* Welcome Section */
+  .welcome-section h1 {
+    font-size: 20px;
+  }
+
+  /* Welcome Section */
+  .welcome-section p {
+    font-size: 12px;
+  }
+
+  /* Main Content Layout */
+  .content-container {
+    width: 200px;
+    margin-bottom: 150px;
+  }
+
+  .info-block {
+    margin-left: 2px;
+    padding: 40px;
+  }
+
+  .info-block h4 {
+    font-size: 14px;
+  }
+
+  .info-block p {
+    font-size: 12px;
+  }
+
+  .info-block a {
+    font-size: 12px;
+  }
+
+  /* Right Column - Usage Instructions */
+  .usage-section {
+	width: 130px;  
+    padding: 10px;
+    margin-left: 3px;
+    height: 355px;
+  }
+
+  .usage-section h3 {
+    font-size: 14px;
+  }
+
+  .usage-section p {
+    font-size: 12px;
+  }
+
+  .try-it-btn {
+    padding: 5px 20px; /* Adds padding to the button */
+    font-size: 12px;
+  }
+
+  .popup-content {
+    width: 260px;
+	height: 450px;
+  }
+
+  .popup-content h3 {
+    font-size: 14px;
+  }
+  
+   .close-popup {
+	right: 4px; /* Aligns it to the right */
+	font-size: 10px;
+  }
+
+  .upload-container {
+    width: 220px; /* Adjusts the container width */
+    padding: 20px; /* Reduces padding for smaller screens */
+  }
+
+  .upload-dropzone {
+    width: 180px; /* Limits dropzone width */
+    height: 80px;
+    margin-left: 5px; /* Adds margin on the left */
+  }
+  
+  .upload-btn {
+    font-size: 11px; /* Adjusts the font size */
+  }
+
+  .upload-dropzone p {
+    font-size: 14px; /* Slightly reduces text size */
+  }
+
+  .file-selected {
+    font-size: 10px; /* Sets the font size */
+  }
+
+  .file-selected .remove-btn {
+    font-size: 16px; /* Sets the font size */
+  }
+
+  .summary-box {
+    width: 220px;
+    height: 250px;
+    font-size: 14px;
+  }
+
+  .download-btn,
+  .do-it-again-btn,
+  .pause-play-btn {
+    width: 90%; /* Full width buttons */
+	padding: 15px 10px;
+    font-size: 10px;
+    margin-left: 2px;
+  }
+
+  .contact-page {
+    margin-top: 52px;
+    max-height: 700px;
+	width: 290px;
+    margin-bottom: 180px;
+  }
+  .contact-form-container {
+    width: 250px; /* Sets a max width */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%; /* Full width inputs */
+  }
+
+  .contact-form button {
+    padding: 10px 20px; /* Adds padding */
+    font-size: 16px; /* Increases the font size */
+    width: 90%; /* Makes the button full width */
+    margin-top: 10px; /* Adds space above the button */
+	margin-left: 5px;
+  }
+
+  .about-page {
+    padding: 30px 10px; /* Adds padding */
+    width: 90%; /* Ensures full width for mobile */
+  }
+
+  /* Header and Titles */
+  .about-company h1,
+  .technologies h2,
+  .meet-the-team h1 {
+    font-size: 1.2rem; /* Further reduces title font size */
+    margin-bottom: 15px; /* Minimal space below titles */
+  }
+
+  .about-description {
+    font-size: 0.8rem; /* Reduces the font size */
+    padding: 5px; /* Reduces padding */
+    word-wrap: break-word; /* Ensures long words wrap */
+    text-overflow: ellipsis; /* Adds ellipsis for overflow */
+    max-width: 100%; /* Ensures the content stays within the viewport */
+  }
+
+  .tech-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Team Member Section */
+
+  .team-section {
+    margin-left: 3px;
+    width: 200px;
+  }
+
+  .team-member {
+    height: 430px;
+  }
+
+  .team-member img {
+    width: 80px; /* Profile pic 100px */
+    height: 80px;
     margin-bottom: 8px;
   }
 
