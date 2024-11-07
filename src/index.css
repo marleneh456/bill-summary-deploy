@@ -2449,6 +2449,7 @@ main {
   }
 
   .button-icon {
+	margin-right: 10px; /* Adds space between the icon and text */
     width: 20px; /* Sets the icon width */
     height: 20px; /* Maintains aspect ratio */
   }
