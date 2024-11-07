@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-  // Only full desktop, large protrait tablets, and landscape tablets have no menu button
+  // Only full desktop, large protrait tablets, and large landscape tablets have no menu button
   const [isFullScreen, setIsFullScreen] = useState(window.innerWidth >= 1022);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
