@@ -1884,21 +1884,16 @@ main {
   .summary-box {
     width: 220px;
     height: 250px;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .download-btn,
   .do-it-again-btn,
   .pause-play-btn {
-    width: 100%; 
+    width: 100%; /* Full width buttons */
 	padding: 10px;
     font-size: 10px;
-    margin-left: 2px;
-  }
-  
-  .button-icon {
-    width: 15px; /* Sets the icon width */
-    height: 15px; /* Maintains aspect ratio */
+    margin-left: auto;
   }
 
   .contact-page {
@@ -2443,7 +2438,7 @@ main {
   .summary-box {
     height: 80px;
     width: 460px;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .download-btn,
@@ -2455,7 +2450,7 @@ main {
 
   .button-icon {
     width: 18px; /* Sets the icon width */
-    height: 20px; /* Maintains aspect ratio */
+    height: 18px; /* Maintains aspect ratio */
   }
 
   .contact-page {
