@@ -2264,12 +2264,12 @@ main {
   .do-it-again-btn,
   .pause-play-btn {
     font-size: 10px;
-    width: 150px; /* Full width buttons */
+    width: 100%; /* Full width buttons */
   }
 
   .button-icon {
-    width: 25px; /* Sets the icon width */
-    height: 25px; /* Maintains aspect ratio */
+    width: 18px; /* Sets the icon width */
+    height: 20px; /* Maintains aspect ratio */
   }
 
   .contact-page {
