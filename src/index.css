@@ -1890,10 +1890,10 @@ main {
   .download-btn,
   .do-it-again-btn,
   .pause-play-btn {
-    width: 90%; /* Full width buttons */
-	padding: 15px 10px;
+    width: 100%; /* Full width buttons */
+	padding: 10px;
     font-size: 10px;
-    margin-left: 2px;
+    margin-left: auto;
   }
 
   .contact-page {
