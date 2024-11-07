@@ -105,8 +105,7 @@ function TeamPage() {
 
                 <p>Artificial Intelligence Engineer</p>
 
-                <p>B.S. Computer Science, Professional Concentration - MTSU</p>
-                <p>Minor in Mathematics - MTSU</p>
+                <p>B.S. Computer Science, Professional Concentration & Minor in Mathematics - MTSU</p>
               </div>
             </div>
             {/* Third row */}
@@ -167,8 +166,7 @@ function TeamPage() {
                 </h4>
                 <p>Artificial Intelligence Engineer</p>
 
-                <p>B.S. Computer Science, Professional Concentration - MTSU</p>
-                <p>Minor in Mathematics - MTSU</p>
+                <p>B.S. Computer Science, Professional Concentration & Minor in Mathematics - MTSU</p>
               </div>
             </div>
 
@@ -233,8 +231,7 @@ function TeamPage() {
                 </h4>
                 <p>Artificial Intelligence Engineer</p>
 
-                <p>B.S. Computer Science, Professional Concentration - MTSU</p>
-                <p>Minor in Engineering Technology - MTSU</p>
+                <p>B.S. Computer Science, Professional Concentration & Minor in Engineering Technology - MTSU</p>
               </div>
             </div>
 
@@ -266,8 +263,7 @@ function TeamPage() {
                 </h4>
                 <p>Artificial Intelligence Engineer</p>
 
-                <p>B.S. Computer Science - MTSU</p>
-                <p>Minor in Computational and Data Science - MTSU</p>
+                <p>B.S. Computer Science & Minor in Computational and Data Science - MTSU</p>
               </div>
             </div>
           </div>
@@ -367,8 +363,7 @@ function TeamPage() {
                 </h4>
                 <p>Frontend Engineer</p>
 
-                <p>B.S. Computer Science, Professional Concentration - MTSU</p>
-                <p>Minor in Mathematics - MTSU</p>
+                <p>B.S. Computer Science, Professional Concentration & Minor in Mathematics - MTSU</p>
               </div>
             </div>
 
