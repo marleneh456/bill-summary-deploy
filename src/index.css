@@ -1992,7 +1992,7 @@ main {
   }
 }
 
-/* Big Mobile Landscape */
+/* Big and Small Mobile Landscape */
 @media (max-width: 932px) and (max-height: 430px) and (orientation: landscape) {
   .desktop-nav-links {
     display: none; /* Hides the desktop navigation on mobile */
