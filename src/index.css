@@ -38,12 +38,12 @@ main {
 }
 
 /* Desktop Navigation */
-.desktop-nav-links {
+.full-screen-nav-links {
   display: flex; /* Arranges navigation links horizontally */
   margin-left: auto; /* Pushes the navigation links to the right */
 }
 
-.desktop-nav-links ul {
+.full-screen-nav-links ul {
   list-style: none; /* Removes the bullet points from the list */
   display: flex; /* Arranges the list items horizontally */
   gap: 15px; /* Adds space between the links */
@@ -51,7 +51,7 @@ main {
   padding: 0; /* Removes padding around the list */
 }
 
-.desktop-nav-links ul li a {
+.full-screen-nav-links ul li a {
   color: white; /* Makes the link text white */
   text-decoration: none; /* Removes the underline from the links */
   font-size: 16px; /* Sets the font size for links */
@@ -61,30 +61,8 @@ main {
   transition: background-color 0.3s ease; /* Smooth transition for background color changes */
 }
 
-.desktop-nav-links ul li a:hover {
+.full-screen-nav-links ul li a:hover {
   background-color: #3d4e66; /* Changes background color on hover */
-}
-
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideUp {
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  to {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
 }
 
 /* Welcome Section */
@@ -784,13 +762,13 @@ main {
 */
 
 
-/* Full Desktop */
-@media (min-width: 1024px) {
+/* Full desktop, large protrait tablets, and landscape tablets */
+@media (min-width: 1023px) {
   .menu-button {
     display: none; /* Hides the mobile menu button on large screens */
   }
 
-  .desktop-nav-links {
+  .full-screen-nav-links {
     display: flex; /* Show desktop navigation */
   }
 }
@@ -799,7 +777,7 @@ main {
 
 /* Split Desktop */
 @media (max-width: 1023px) and (max-height: 1023px) {
-  .desktop-nav-links {
+  .full-screen-nav-links {
     display: none; /* Hides the desktop navigation on mobile */
   }
 
@@ -910,8 +888,8 @@ main {
   }
 
   .popup-content {
-    width: 700px;
-    height: 300pt; /* Limits the height */
+    width: 600px;
+    height: 400px; 
   }
 
   .popup-content h3 {
@@ -957,7 +935,7 @@ main {
 
   .summary-box {
     height: 250px;
-    width: 650px;
+    width: 550px;
   }
 
   .download-btn,
@@ -977,8 +955,8 @@ main {
 }
 
 /* Tablet - Portrait */
-@media (max-width: 1024px) and (max-height: 1366px) and (orientation: portrait) {
-  .desktop-nav-links {
+@media (max-width: 834px) and (max-height: 1194px) and (orientation: portrait) {
+  .full-screen-nav-links {
     display: none; /* Hides the desktop navigation on mobile */
   }
 
@@ -1079,6 +1057,89 @@ main {
     background-color: #FFA07A; /*Light Salmon */
   }
   
+  /* Welcome Section */
+  .welcome-section h1 {
+    font-size: 22px;
+  }
+
+  /* Welcome Section */
+  .welcome-section p {
+    font-size: 15px;
+  }
+  
+  /* Main Content Layout */
+  .content-container {
+    width: auto;
+    margin-left: 10px;
+  }
+
+  .info-block {
+    padding: 40px;
+  }
+
+  /* Right Column - Usage Instructions */
+  .usage-section {
+    height: 360px;
+    margin-right: 20px;
+  }
+
+  .popup-content {
+    width: 700px;
+    height: 400px; /* Limits the height */
+  }
+
+  .popup-content h3 {
+    font-size: 16px;
+  }
+
+  .close-popup {
+    right: 4px; /* Aligns it to the right */
+    font-size: 10px;
+  }
+
+  .upload-container {
+    width: 400px;
+    height: 250px;
+    padding: 1px; /* Reduces padding */
+    margin: auto; /* Centers the container */
+    font-size: 12px; /* Reduces font size */
+  }
+
+  .upload-btn {
+    font-size: 14px; /* Reduces button font size */
+    margin: 18px; /* Adds margin around the button */
+    padding: 10px 20px; /* Adds padding inside the button */
+  }
+
+  .upload-dropzone {
+    width: 320px; /* Limits dropzone width */
+    height: 80px;
+    margin-left: 40px; /* Adds margin on the left */
+  }
+
+  .upload-dropzone p {
+    font-size: 16px; /* Reduces text size */
+  }
+
+  .file-selected {
+    font-size: 16px; /* Sets the font size */
+  }
+
+  .file-selected .remove-btn {
+    font-size: 16px; /* Sets the font size */
+  }
+
+  .summary-box {
+    height: 250px;
+    width: 650px;
+  }
+
+  .download-btn,
+  .do-it-again-btn,
+  .pause-play-btn {
+    width: 210px;
+  }
+  
    .close-popup {
 	right: 4px; /* Aligns it to the right */
 	font-size: 10px;
@@ -1145,9 +1206,9 @@ main {
   }
 }
 
-/* Mobile and mini tablet Portrait */
+/* Mini tablet Portrait */
 @media (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-  .desktop-nav-links {
+  .full-screen-nav-links {
     display: none; /* Hides the desktop navigation on mobile */
   }
 
@@ -1429,10 +1490,294 @@ main {
   }
 }
 
+/* Mobile Portrait */
+@media (max-width: 430px) and (max-height: 932px) and (orientation: portrait) {
+  .full-screen-nav-links {
+    display: none; /* Hides the desktop navigation on mobile */
+  }
+
+  .menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    right: 10px; /* Positions the button 10px from the right edge */
+    top: 5x; /* Positions the button 10px from the top */
+  }
+
+  .nav-links {
+    display: none; /* Hides the mobile navigation links initially */
+    position: absolute; /* Changes position to absolute */
+    top: 55px; /* Pushes the navigation links down by 55px */
+    left: 0; /* Aligns the navigation to the left */
+    width: 100%; /* Makes the navigation take up the full width */
+    background-color: #1a3d6c; /* Background color */
+    justify-content: center; /* Centers the navigation links */
+    z-index: 9; /* Ensure the navigation appears above other elements */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+  }
+
+  /* Show navigation links when the menu is open */
+  .nav-links.open {
+    display: flex; /* Makes links visible */
+    flex-direction: column; /* Stacks links vertically */
+    animation: slideDown 0.1s forwards; /* Sliding down effect */
+  }
+
+  /* Close animation */
+  .nav-links.close {
+    animation: slideUp 0.1s forwards; /* Sliding up effect */
+  }
+
+  .nav-links ul {
+    list-style: none; /* Removes bullets */
+    padding: 0; /* Removes padding around the links */
+    margin: 0; /* Removes margin around the links */
+    display: flex; /* Arranges the links horizontally */
+    gap: 20px; /* Adds space between the links */
+    margin-left: auto;
+    margin-top: 30px; /* Adds 30px of space above the links */
+    margin-bottom: 20px; /* Adds 20px of space below the links */
+  }
+
+  .nav-links ul li {
+    margin: 10px 0; /* Adds space between each link */
+  }
+
+  .nav-links ul li a {
+    color: white; /* Makes the link text white */
+    text-decoration: none; /* Removes the underline from the links */
+    font-size: 14px; /* Sets the font size for the links */
+    padding: 10px 10px; /* Adds padding inside the links */
+    background-color: #4a5c79; /* Sets the background color */
+    border-radius: 15px; /* Rounds the corners */
+    transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
+  }
+
+  .nav-links ul li a:hover {
+    background-color: #3d4e66; /* Changes the background color on hover */
+  }
+
+  .title-card {
+    width: 200px; /* Sets the width of the logo */
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px); /* Start 20px above */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Move to original position */
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 1;
+      transform: translateY(0); /* Start at original position */
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-20px); /* Slide 20px up */
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #90EE90; /*Light Green */
+  }
+
+  /* Welcome Section */
+  .welcome-section h1 {
+    font-size: 20px;
+  }
+
+  /* Welcome Section */
+  .welcome-section p {
+    font-size: 14px;
+  }
+
+  /* Main Content Layout */
+  .content-container {
+    width: 200px;
+    margin-bottom: 150px;
+  }
+
+  .info-block {
+    margin-left: 20px;
+    padding: 40px;
+  }
+
+  .info-block h4 {
+    font-size: 14px;
+  }
+
+  .info-block p {
+    font-size: 12px;
+  }
+
+  .info-block a {
+    font-size: 12px;
+  }
+
+  /* Right Column - Usage Instructions */
+  .usage-section {
+    padding: 20px;
+    margin-left: 10px;
+    height: 355px;
+  }
+
+  .usage-section h3 {
+    font-size: 14px;
+  }
+
+  .usage-section p {
+    font-size: 12px;
+  }
+
+  .try-it-btn {
+    padding: 10px 30px; /* Adds padding to the button */
+    font-size: 14px;
+  }
+
+  .popup-content {
+    width: 360px;
+	height: 600px;
+  }
+
+  .popup-content h3 {
+    font-size: 14px;
+  }
+  
+   .close-popup {
+	right: 4px; /* Aligns it to the right */
+	font-size: 10px;
+  }
+
+  .upload-container {
+    width: 320px; /* Adjusts the container width */
+    padding: 20px; /* Reduces padding for smaller screens */
+  }
+
+  .upload-dropzone {
+    width: 250px; /* Limits dropzone width */
+    height: 80px;
+    margin-left: 20px; /* Adds margin on the left */
+  }
+  
+  .upload-btn {
+    font-size: 14px; /* Adjusts the font size */
+  }
+
+  .upload-dropzone p {
+    font-size: 14px; /* Slightly reduces text size */
+  }
+
+  .file-selected {
+    font-size: 13px; /* Sets the font size */
+  }
+
+  .file-selected .remove-btn {
+    font-size: 16px; /* Sets the font size */
+  }
+
+  .summary-box {
+    width: 320px;
+    height: 430px;
+    font-size: 14px;
+  }
+
+  .download-btn,
+  .do-it-again-btn,
+  .pause-play-btn {
+    width: 100px; /* Full width buttons */
+    font-size: 10px;
+    margin-left: 5px;
+  }
+
+  .contact-page {
+    margin-top: 52px;
+    max-height: 700px;
+    margin-bottom: 180px;
+  }
+  .contact-form-container {
+    width: 300px; /* Sets a max width */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 90%; /* Full width inputs */
+  }
+
+  .contact-form button {
+    padding: 10px 20px; /* Adds padding */
+    font-size: 16px; /* Increases the font size */
+    width: 90%; /* Makes the button full width */
+    margin-top: 10px; /* Adds space above the button */
+  }
+
+  .about-page {
+    padding: 30px 10px; /* Adds padding */
+    width: 90%; /* Ensures full width for mobile */
+  }
+
+  /* Header and Titles */
+  .about-company h1,
+  .technologies h2,
+  .meet-the-team h1 {
+    font-size: 1.2rem; /* Further reduces title font size */
+    margin-bottom: 15px; /* Minimal space below titles */
+  }
+
+  .about-description {
+    font-size: 0.8rem; /* Reduces the font size */
+    padding: 5px; /* Reduces padding */
+    word-wrap: break-word; /* Ensures long words wrap */
+    text-overflow: ellipsis; /* Adds ellipsis for overflow */
+    max-width: 100%; /* Ensures the content stays within the viewport */
+  }
+
+  .tech-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Team Member Section */
+
+  .team-section {
+    margin-left: 3px;
+    width: 320px;
+  }
+
+  .team-member {
+    height: 460px;
+  }
+
+  .team-member img {
+    width: 100px; /* Profile pic 100px */
+    height: 100px;
+    margin-bottom: 8px;
+  }
+
+  .team-member h4 {
+    font-size: 0.75rem;
+  }
+
+  .team-member p {
+    font-size: 0.75rem;
+  }
+}
+
 /* Small Mobile Portrait */
 
-@media only screen and (max-width: 395px) and (max-width: 852px){
-  .desktop-nav-links {
+@media (max-width: 395px) and (max-height: 852px) and (orientation: portrait){
+  .full-screen-nav-links {
     display: none; /* Hides the desktop navigation on mobile */
   }
 
@@ -1718,9 +2063,9 @@ main {
   }
 }
 
-/* Mobile Landscape */
-@media (max-width: 1024px) and (max-height: 600px) and (orientation: landscape) {
-  .desktop-nav-links {
+/* Big And Small Mobile Landscape */
+@media (max-width: 932px) and (max-height: 430px) and (orientation: landscape) {
+  .full-screen-nav-links {
     display: none; /* Hides the desktop navigation on mobile */
   }
 
@@ -1847,7 +2192,7 @@ main {
   .usage-section {
     padding: 20px;
     margin-left: 10px;
-    height: 298px;
+    height: 336px;
   }
 
   .usage-section h3 {
@@ -1864,7 +2209,7 @@ main {
   }
 
   .popup-content {
-    width: 660px;
+    width: 500px;
     height: 220px;
   }
 
@@ -1911,7 +2256,7 @@ main {
 
   .summary-box {
     height: 80px;
-    width: 590px;
+    width: 460px;
     font-size: 12px;
   }
 
@@ -1919,11 +2264,10 @@ main {
   .do-it-again-btn,
   .pause-play-btn {
     font-size: 10px;
-    width: 190px; /* Full width buttons */
+    width: 150px; /* Full width buttons */
   }
 
   .button-icon {
-    margin-right: 10px; /* Adds space between the icon and text */
     width: 25px; /* Sets the icon width */
     height: 25px; /* Maintains aspect ratio */
   }
@@ -1968,6 +2312,10 @@ main {
     max-width: 100%; /* Ensures the content stays within the viewport */
   }
 
+  .team-section {
+    width: 300px;
+  }
+  
   .tech-card {
     width: 90%;
     margin-bottom: 20px;
@@ -1975,6 +2323,7 @@ main {
 
   .team-member {
     height: 350px;
+	width: 150px;
   }
 
   .team-member img {
