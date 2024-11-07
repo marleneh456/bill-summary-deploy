@@ -2199,8 +2199,8 @@ main {
   .button-icon {
 	text-align: center;
 	margin-right: 10px; 
-    width: 20px; /* Sets the icon width */
-    height: 20px; /* Maintains aspect ratio */
+    width: 18px; /* Sets the icon width */
+    height: 18px; /* Maintains aspect ratio */
   }
 
 
