@@ -764,7 +764,7 @@ main {
 
 
 /* Full desktop, large protrait tablets, and landscape tablets */
-@media only screen (min-width: 1022px) {
+@media (min-width: 1023px) {
   .menu-button {
     display: none; /* Hides the mobile menu button on large screens */
   }
@@ -775,7 +775,7 @@ main {
 }
 
 /* Split Desktop */
-@media (max-width: 1022px) and (max-height: 700px) {
+@media (max-width: 1023px) and (max-height: 1023px) {
   .full-screen-nav-links {
     display: none; /* Hides the desktop navigation on mobile */
   }
