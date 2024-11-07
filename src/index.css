@@ -1884,16 +1884,22 @@ main {
   .summary-box {
     width: 220px;
     height: 250px;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .download-btn,
   .do-it-again-btn,
   .pause-play-btn {
-    width: 100%; /* Full width buttons */
+    width: 100%; 
 	padding: 10px;
     font-size: 10px;
     margin-left: auto;
+  }
+  
+  .button-icon {
+    margin-right: 10px; /* Adds space between the icon and text */
+    width: 18px; /* Sets the icon width */
+    height: 18px; /* Maintains aspect ratio */
   }
 
   .contact-page {
