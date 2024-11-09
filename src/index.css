@@ -1737,11 +1737,12 @@ font-size: 14px;
 
   /* Welcome Section */
   .welcome-section p {
-    font-size: 12px;
+    font-size: 11px;
   }
   
   .content-container {
-   width: 300px;
+   width: 200px;
+   margin-left: 15px;
  }
   
  .mission-block {
@@ -1766,7 +1767,7 @@ font-size: 14px;
 
 
   .try-it-btn {
-	margin-bottom: 120px;
+	margin-bottom: 150px;
 	font-size: 14px;
   }
 
