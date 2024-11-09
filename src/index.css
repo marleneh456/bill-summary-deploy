@@ -2406,9 +2406,10 @@ font-size: 10px;
   }
   
   .content-container {
-   width: 530px;
-   margin-left: 30px;
- }
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   
  .mission-block {
   //width: 600px;
@@ -2430,7 +2431,11 @@ font-size: 10px;
 .recent-bills-section h3{
 font-size: 11px;
 }
-	
+
+ .bill-item {
+    width: 45%;
+  }
+  
  .bill-item h4 {
   font-size: 11px;
   margin-bottom: 5px;
