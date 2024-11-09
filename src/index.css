@@ -1228,7 +1228,7 @@ main {
   
   /* Main Content Layout */
   .content-container {
-    width: 660px;
+    width: 600px;
   }
 
   .model-section {
@@ -1496,11 +1496,11 @@ font-size: 14px;
   }
   
   .content-container {
-   width: 700px;
+   width: 600px;
  }
   
  .mission-block {
-  width: 700px;
+  //width: 700px;
  }
  
 .recent-bills-section h3{
@@ -1509,7 +1509,7 @@ font-size: 12px;
 
   .model-section {
    margin-bottom: 240px;
-   width: 700px;
+   //width: 700px;
   }
 
 
@@ -1767,17 +1767,17 @@ font-size: 14px;
   }
   
   .content-container {
-   width: 200px;
+   width: 250px;
    margin-left: 15px;
  }
   
  .mission-block {
-  width: 365px;
+  width: 366px;
  }
-
+ 
   .model-section {
    margin-bottom: 580px;
-   width: 365px;
+   width: 366px;
   }
   
   .instructions-section {
@@ -2051,7 +2051,8 @@ font-size: 14px;
   }
   
   .content-container {
-   width: 300px;
+   width: 200px;
+   margin-left: 10px;
  }
   
  .mission-block {
@@ -2406,7 +2407,7 @@ font-size: 10px;
   
   .content-container {
    width: 530px;
-   margin-left: 10px;
+   margin-left: 30px;
  }
   
  .mission-block {
