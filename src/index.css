@@ -2412,6 +2412,7 @@ font-size: 10px;
   
  .mission-block {
   //width: 600px;
+  position:relative;
  }
  
  .mission-block h3{
@@ -2436,6 +2437,7 @@ font-size: 12px;
 }
 
   .model-section {
+   position:relative;
    margin-bottom: 140px;
    //width: 600px;
   }
