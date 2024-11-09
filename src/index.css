@@ -74,66 +74,133 @@ main {
 
 /* Main Content Layout */
 .content-container {
-  display: flex;
-  justify-content: space-between;
   font-family: "Poppins", sans-serif;
-  width: 900px;
-  gap: 20px;
+  width: 960px;
   margin-bottom: 150px;
+  padding-bottom: 200px;
 }
 
-/* Left Column - Information Blocks */
-.info-section {
-  flex: 1;
+.mission-block {
+  border: 1px solid black;
+  padding: 15px;
+  margin-bottom: 50px;
+  transition: transform 0.3s ease;
+}
+
+.mission-block:hover{
+  transform: scale(1.02);
+}
+
+.recent-bills {
   display: flex;
-  flex-direction: column;
+  flex: 1;
+  margin-top: 20px;
   gap: 20px;
 }
 
-.info-block {
-  border: 2px solid black;
-  border-radius: 20px;
-  padding: 30px;
+.bill-item {
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+  
+}
+
+.bill-item:hover{
+  transform: scale(1.02);
+}
+
+.bill-item h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.bill-item p {
+  font-size: 14px;
+}
+
+.text-link {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.model-section {
+  border: 1px solid black;
+  padding: 15px;
+  margin-bottom: 200px;
   text-align: center;
   transition: transform 0.3s ease;
 }
 
-.info-block:hover {
+.model-section:hover {
   transform: scale(1.02);
 }
 
-.info-block h4 {
-  font-weight: bold;
+.instructions-section {
+  background-color: #e3eaf7; /* Unified background color */
+  position: absolute;
+  width: 100%; /* Add a max-width to center-align it */
+  left: 0; /* Center it horizontally */
+  bottom: 122px; /* Align it to the bottom */
 }
 
-.info-block a {
+
+.instructions-section h3 {
+  text-align: center;
+}
+
+.instruction-item-one {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.instruction-item-two-to-four {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.instruction-item {
+    padding: 10px;
+}
+
+.instruction-item-five {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.instruction-separator {
+    margin: 20px auto;
+    width: 80%;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.website-link {
   text-decoration: none;
   color: blue;
 }
 
-/* Right Column - Usage Instructions */
-.usage-section {
-  flex: 1;
-  border: 2px solid black;
-  border-radius: 20px;
-  padding: 10px;
-  text-align: center;
-  margin-left: 100px;
-  height: 300px;
-  transition: transform 0.3s ease;
-}
-
-.usage-section:hover {
-  transform: scale(1.02);
+.image-link {
+    display: block;
+    margin-top: 5px;
+    text-decoration: underline;
+    color: blue;
+    font-weight: 600;
 }
 
 .try-it-btn {
-  padding: 20px 50px;
+  padding: 8px 30px;
   font-size: 16px;
+  margin-bottom: 10px;
   background-color: #4a5c79;
   color: white;
   border: none;
-  border-radius: 20px;
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -142,6 +209,87 @@ main {
   background-color: #061d48;
   transform: scale(1.05);
 }
+
+.highlight-quote {
+  color: green;
+  font-weight: bold;
+}
+
+
+
+.image-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.image-popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 850px;
+  height: 500px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.popup-image {
+  width: 100%;
+  height: 100%;
+}
+
+.image-close-popup {
+  position: absolute; /* Positions the button inside the popup */
+  top: 2px; /* Aligns it to the top */
+  right: 2px; /* Aligns it to the right */
+  background: none; /* Removes the background */
+  border: none; /* Removes the border */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 18px;
+}
+
+.text-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.text-popup-content {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 80%;
+  text-align: center;
+}
+
+.text-close-popup {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.text-close-popup:hover {
+  background-color: #c9302c;
+}
+
 
 /* Popup Styles */
 .popup-overlay {
@@ -428,55 +576,62 @@ main {
   left: 0; /* Aligns the footer to the left */
 }
 
-/* Footer Content */
-.footer-logo img {
-  width: 40px; /* Sets the width of the logo */
-  margin-bottom: 0px; /* Removes margin below the logo */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 
-.footer-logo p {
-  font-size: 12px; /* Sets the font size */
-  color: #d1d1d1; /* Text color */
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
 }
 
-.footer-links {
-  display: flex; /* Arranges the links horizontally */
-  justify-content: center; /* Centers the links */
-  gap: 15px; /* Adds space between the links */
-  margin-bottom: 10px; /* Adds margin below the links */
+.google-logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
-.footer-links a {
-  color: #d1d1d1; /* Text color */
-  text-decoration: none; /* Removes the underline */
-  font-size: 12px; /* Sets the font size */
-  transition: color 0.3s ease; /* Smooth color transition */
+.google-logo img {
+  width: 30px;
 }
 
-.footer-links a:hover {
-  color: #ffffff; /* Changes color on hover */
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.company-logo {
+  width: 40px;
+  margin-bottom: 5px;
 }
 
 .footer-social {
-  display: flex; /* Flexbox layout for social icons */
-  gap: 10px; /* Adds space between the icons */
-  justify-content: center; /* Centers the icons */
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
 }
 
 .footer-social a img {
   width: 20px;
   height: 20px;
-  margin-top: 2px;
-  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transitions for hover effects */
+  transition: transform 0.3s, filter 0.3s;
 }
 
 .footer-social a:hover img {
-  filter: brightness(0) saturate(100%) invert(72%) sepia(89%) saturate(292%)
-    hue-rotate(360deg) brightness(104%) contrast(101%);
-  transform: translateY(
-    -2px
-  ); /* Adds the same hover lift effect for the image */
+  transform: translateY(-2px);
+  filter: brightness(0) saturate(100%) invert(72%) sepia(89%) saturate(292%) hue-rotate(360deg) brightness(104%) contrast(101%);
 }
+
+.footer-right {
+  text-align: center;
+}
+
+
 
 /* Contact Page General Styles */
 .contact-page {
@@ -870,20 +1025,17 @@ main {
     background-color: #fff8dc; /*Cornsilk*/
   }
 
-  /* Main Content Layout */
   .content-container {
-    width: auto;
-    margin-left: 10px;
+   width: 100%;
+ }
+  
+  .model-section {
+   margin-bottom: 500px;
   }
 
-  .info-block {
-    padding: 40px;
-  }
-
-  /* Right Column - Usage Instructions */
-  .usage-section {
-    height: 360px;
-    margin-right: 20px;
+  
+  .instructions-section {
+   bottom: 130px; /* Align it to the bottom */
   }
 
   .popup-content {
@@ -1068,19 +1220,28 @@ main {
   
   /* Main Content Layout */
   .content-container {
-    width: auto;
-    margin-left: 10px;
+    width: 660px;
   }
 
-  .info-block {
-    padding: 40px;
+  .model-section {
+   margin-bottom: 250px;
   }
+  
+.instruction-item {
+    padding: 5px;
+}
 
-  /* Right Column - Usage Instructions */
-  .usage-section {
-    height: 360px;
-    margin-right: 20px;
-  }
+.instruction-item-one p{
+font-size: 14px;
+}
+
+.instruction-item-two-to-four p{
+font-size: 14px;
+}
+
+.instruction-item-five p{
+font-size: 14px;
+}
 
   .popup-content {
     width: 700px;
@@ -1316,6 +1477,53 @@ main {
     background-color: #b0e0e6; /*PowderBlue */
   }
   
+  .content-container {
+   width: 700px;
+ }
+  
+ .mission-block {
+  width: 700px;
+ }
+ 
+.recent-bills-section h3{
+font-size: 12px;
+}
+
+  .model-section {
+   margin-bottom: 240px;
+   width: 700px;
+  }
+
+
+  
+  .instructions-section {
+   bottom: 100px; /* Align it to the bottom */
+  }
+  
+
+
+.instruction-item {
+    padding: 5px;
+}
+
+.instruction-item-one p{
+font-size: 14px;
+}
+
+.instruction-item-two-to-four p{
+font-size: 14px;
+}
+
+.instruction-item-five p{
+font-size: 14px;
+}
+
+  .try-it-btn {
+	margin-bottom: 70px;
+  }
+
+
+
   .popup-content {
     width: 450px;
     height: 400px; /* Limits the height */
@@ -1529,51 +1737,40 @@ main {
 
   /* Welcome Section */
   .welcome-section p {
-    font-size: 14px;
+    font-size: 12px;
   }
-
-  /* Main Content Layout */
+  
   .content-container {
-    width: 200px;
-    margin-bottom: 150px;
+   width: 300px;
+ }
+  
+ .mission-block {
+  width: 365px;
+ }
+
+  .model-section {
+   margin-bottom: 580px;
+   width: 365px;
+  }
+  
+  .instructions-section {
+   bottom: 120px; /* Align it to the bottom */
   }
 
-  .info-block {
-    margin-left: 20px;
-    padding: 40px;
-  }
 
-  .info-block h4 {
-    font-size: 14px;
-  }
 
-  .info-block p {
-    font-size: 12px;
-  }
+.instruction-item {
+    padding: 5px;
+}
 
-  .info-block a {
-    font-size: 12px;
-  }
 
-  /* Right Column - Usage Instructions */
-  .usage-section {
-    padding: 20px;
-    margin-left: 10px;
-    height: 355px;
-  }
-
-  .usage-section h3 {
-    font-size: 14px;
-  }
-
-  .usage-section p {
-    font-size: 12px;
-  }
 
   .try-it-btn {
-    padding: 10px 30px; /* Adds padding to the button */
-    font-size: 14px;
+	margin-bottom: 120px;
+	font-size: 14px;
   }
+
+
 
   .popup-content {
     width: 360px;
@@ -1816,50 +2013,106 @@ main {
   .welcome-section p {
     font-size: 12px;
   }
-
-  /* Main Content Layout */
+  
   .content-container {
-    width: 200px;
-    margin-bottom: 150px;
+   width: 300px;
+ }
+  
+ .mission-block {
+  width: 300px;
+ }
+ 
+ .mission-block h3{
+  font-size: 12px;
+ }
+ 
+ .mission-block p{
+  font-size: 10px;
+ }
+ 
+.recent-bills-section h3{
+font-size: 12px;
+}
+	
+ .bill-item h4 {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.bill-item p {
+  font-size: 10px;
+}
+
+  .model-section {
+   margin-bottom: 240px;
+   width: 300px;
   }
 
-  .info-block {
-    margin-left: 2px;
-    padding: 40px;
+.model-section h4{
+ font-size: 12px;
+}
+
+.model-section p{
+ font-size: 10px;
+}
+
+.text-link {
+  font-size: 10px;
+}
+  
+  .instructions-section {
+   bottom: 120px; /* Align it to the bottom */
+  }
+  
+    .instructions-section h3{
+   font-size: 12px;
   }
 
-  .info-block h4 {
-    font-size: 14px;
-  }
+.instruction-item-one p {
+	font-size: 10px;
+}
 
-  .info-block p {
-    font-size: 12px;
-  }
+.website-link a{
+	font-size: 12px;
+}
 
-  .info-block a {
-    font-size: 12px;
-  }
+.instruction-item {
+    padding: 5px;
+}
 
-  /* Right Column - Usage Instructions */
-  .usage-section {
-	width: 130px;  
-    padding: 10px;
-    margin-left: 3px;
-    height: 355px;
-  }
+.instruction-item-two-to-four p{
+font-size: 10px;
+}
 
-  .usage-section h3 {
-    font-size: 14px;
-  }
-
-  .usage-section p {
-    font-size: 12px;
-  }
+.instruction-item-five p{
+	font-size: 10px;
+}
 
   .try-it-btn {
-    padding: 5px 20px; /* Adds padding to the button */
-    font-size: 12px;
+	margin-bottom: 70px;
+	font-size: 10px;
   }
+
+.image-link {
+font-size: 10px;
+}
+
+.footer{
+font-size: 10px;
+}
+
+.footer-content {
+  padding: 0 3px;
+}
+
+.google-logo img {
+  width: 25px;
+}
+
+.footer-social a img {
+  width: 15px;
+  height: 15px;
+}
 
   .popup-content {
     width: 260px;
@@ -1921,7 +2174,7 @@ main {
     margin-top: 52px;
     max-height: 700px;
 	width: 290px;
-    margin-bottom: 180px;
+    margin-bottom: 300px;
   }
   .contact-form-container {
     width: 250px; /* Sets a max width */
@@ -1993,7 +2246,7 @@ main {
 }
 
 /* Big and Small Mobile Landscape */
-@media (max-width: 1000px) and (max-height: 430px) and (orientation: landscape) {
+@media (max-width: 1000px) and (max-height: 435px) and (orientation: landscape) {
   .desktop-nav-links {
     display: none; /* Hides the desktop navigation on mobile */
   }
@@ -2102,40 +2355,108 @@ main {
 
   /* Welcome Section */
   .welcome-section p {
-    font-size: 14px;
-  }
-
-  .info-block h4 {
-    font-size: 14px;
-  }
-
-  .info-block p {
     font-size: 12px;
   }
+  
+  .content-container {
+   width: 600px;
+ }
+  
+ .mission-block {
+  width: 600px;
+ }
+ 
+ .mission-block h3{
+  font-size: 12px;
+ }
+ 
+ .mission-block p{
+  font-size: 10px;
+ }
+ 
+.recent-bills-section h3{
+font-size: 12px;
+}
+	
+ .bill-item h4 {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
 
-  .info-block a {
-    font-size: 12px;
+.bill-item p {
+  font-size: 10px;
+}
+
+  .model-section {
+   margin-bottom: 140px;
+   width: 600px;
   }
 
-  /* Right Column - Usage Instructions */
-  .usage-section {
-    padding: 20px;
-    margin-left: 10px;
-    height: 298px;
+.model-section h4{
+ font-size: 12px;
+}
+
+.model-section p{
+ font-size: 10px;
+}
+
+.text-link {
+  font-size: 10px;
+}
+  
+  .instructions-section {
+   bottom: 100px; /* Align it to the bottom */
+  }
+  
+    .instructions-section h3{
+   font-size: 12px;
   }
 
-  .usage-section h3 {
-    font-size: 14px;
-  }
+.instruction-item-one p {
+	font-size: 10px;
+}
 
-  .usage-section p {
-    font-size: 12px;
-  }
+.website-link a{
+	font-size: 12px;
+}
+
+.instruction-item {
+    padding: 5px;
+}
+
+.instruction-item-two-to-four p{
+font-size: 10px;
+}
+
+.instruction-item-five p{
+	font-size: 10px;
+}
 
   .try-it-btn {
-    padding: 10px 30px; /* Adds padding to the button */
-    font-size: 14px;
+	margin-bottom: 70px;
+	font-size: 10px;
   }
+
+.image-link {
+font-size: 10px;
+}
+
+.footer{
+font-size: 10px;
+}
+
+.footer-content {
+  padding: 0 3px;
+}
+
+.google-logo img {
+  width: 25px;
+}
+
+.footer-social a img {
+  width: 15px;
+  height: 15px;
+}
 
   .popup-content {
     width: 500px;
