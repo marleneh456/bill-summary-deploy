@@ -2424,7 +2424,7 @@ font-size: 10px;
  }
  
  .recent-bills-section{
- position:relative;
+ //position:relative;
  }
  
 .recent-bills-section h3{
@@ -2441,7 +2441,7 @@ font-size: 11px;
 }
 
   .model-section {
-   position:relative;
+   //position:relative;
    margin-bottom: 140px;
    //width: 600px;
   }
