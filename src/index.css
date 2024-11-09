@@ -2412,11 +2412,11 @@ font-size: 10px;
   
  .mission-block {
   //width: 600px;
-  position:relative;
+  //position:relative;
  }
  
  .mission-block h3{
-  font-size: 12px;
+  font-size: 11px;
  }
  
  .mission-block p{
@@ -2428,11 +2428,11 @@ font-size: 10px;
  }
  
 .recent-bills-section h3{
-font-size: 12px;
+font-size: 11px;
 }
 	
  .bill-item h4 {
-  font-size: 12px;
+  font-size: 11px;
   margin-bottom: 5px;
 }
 
@@ -2447,7 +2447,7 @@ font-size: 12px;
   }
 
 .model-section h4{
- font-size: 12px;
+ font-size: 11px;
 }
 
 .model-section p{
@@ -2463,7 +2463,7 @@ font-size: 12px;
   }
   
     .instructions-section h3{
-   font-size: 12px;
+   font-size: 11px;
   }
 
 .instruction-item-one p {
@@ -2471,7 +2471,7 @@ font-size: 12px;
 }
 
 .website-link a{
-	font-size: 12px;
+	font-size: 10px;
 }
 
 .instruction-item {
