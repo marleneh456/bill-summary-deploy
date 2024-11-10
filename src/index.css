@@ -2044,52 +2044,52 @@ font-size: 14px;
   .welcome-section p {
     font-size: 12px;
   }
-  
-  .content-container {
-   width: 200px;
-   margin-left: 10px;
+ 
+ .content-container {
+   //max-width: 350px; 
+   font-size: 10px;
  }
   
  .mission-block {
-  width: 300px;
+  max-width: 300px;
  }
  
  .mission-block h3{
-  font-size: 12px;
+  //font-size: 12px;
  }
  
  .mission-block p{
-  font-size: 10px;
+  //font-size: 10px;
  }
  
-.recent-bills-section h3{
-font-size: 12px;
+.recent-bills-section {
+width: 300px;
 }
 	
  .bill-item h4 {
-  font-size: 12px;
+  //font-size: 12px;
   margin-bottom: 5px;
 }
 
 .bill-item p {
-  font-size: 10px;
+  //font-size: 10px;
 }
 
   .model-section {
-   margin-bottom: 240px;
+   margin-bottom: 300px;
    width: 300px;
   }
 
 .model-section h4{
- font-size: 12px;
+ //font-size: 12px;
 }
 
 .model-section p{
- font-size: 10px;
+ //font-size: 10px;
 }
 
 .text-link {
-  font-size: 10px;
+  //font-size: 10px;
 }
   
   .instructions-section {
@@ -2097,7 +2097,7 @@ font-size: 12px;
   }
   
     .instructions-section h3{
-   font-size: 12px;
+   font-size: 10px;
   }
 
 .instruction-item-one p {
@@ -2105,7 +2105,7 @@ font-size: 12px;
 }
 
 .website-link a{
-	font-size: 12px;
+	font-size: 10px;
 }
 
 .instruction-item {
@@ -2402,7 +2402,6 @@ font-size: 10px;
   
   .content-container {
    width: 500px; 
-   //margin-left: 20px;
    font-size: max(8px, 10px);
  }
 
