@@ -2406,15 +2406,9 @@ font-size: 10px;
   }
   
   .content-container {
-   width: 530px;
-   margin-left: 30px;
+   width: max(400px, 500px); 
+   margin-left: max(48px, 35px);
  }
-  
- .mission-block {
-  //width: 600px;
-  //position:relative;
- }
- 
  .mission-block h3{
   font-size: 11px;
  }
