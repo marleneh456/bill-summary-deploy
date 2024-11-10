@@ -2407,7 +2407,7 @@ font-size: 10px;
   
   .content-container {
    width: max(400px, 500px); 
-   margin-left: max(48px, 35px, 18px);
+   margin-left: max(18px, 35px, 48px);
  }
  .mission-block h3{
   font-size: 11px;
