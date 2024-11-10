@@ -138,34 +138,15 @@ main {
   width: 100%; /* Add a max-width to center-align it */
   left: 0; /* Center it horizontally */
   bottom: 122px; /* Align it to the bottom */
-}
-
-
-.instructions-section h3 {
   text-align: center;
-}
-
-.instruction-item-one {
-    text-align: center;
-    margin-bottom: 15px;
 }
 
 .instruction-item-two-to-four {
     display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 20px;
-    text-align: center;
     margin-top: 15px;
     margin-bottom: 15px;
-}
-
-.instruction-item {
-    padding: 10px;
-}
-
-.instruction-item-five {
-    text-align: center;
-    margin-top: 20px;
 }
 
 .instruction-separator {
@@ -1021,12 +1002,12 @@ main {
   }
 
   .content-container {
-   width: 800px;
+   width: 900px;
    margin-left: 25px;
  }
   
   .model-section {
-   margin-bottom: 500px;
+   //margin-bottom: 500px;
   }
 
   
@@ -1227,7 +1208,7 @@ main {
   }
 
   .model-section {
-   margin-bottom: 250px;
+   margin-bottom: 280px;
   }
   
 .instruction-item {
@@ -1503,7 +1484,7 @@ font-size: 12px;
 }
 
   .model-section {
-   margin-bottom: 240px;
+   margin-bottom: 350px;
    //width: 700px;
   }
 
@@ -1565,7 +1546,7 @@ font-size: 14px;
   .pause-play-btn {
     font-size: 11px;
     width: 100px; 
-	margin-left: 18px;
+	  margin-left: 18px;
   }
 
   .button-icon {
@@ -1762,8 +1743,9 @@ font-size: 14px;
   }
   
   .content-container {
-   width: 500px; 
-   font-size: max(8px, 10px);
+    width: 85vw;
+    margin-left: 1vw;
+   font-size: 10px;
  }
 
   .model-section {
@@ -2060,21 +2042,22 @@ font-size: 10px;
 
   /* Welcome Section */
   .welcome-section p {
-    font-size: 11px;
+    font-size: 12px;
   }
   
   .content-container {
-   width: 250px;
+    width: 90vw;
    margin-left: 15px;
+   font-size: 14px;
  }
   
  .mission-block {
-  width: 366px;
+  //width: 366px;
  }
  
   .model-section {
    margin-bottom: 580px;
-   width: 366px;
+   //width: 366px;
   }
   
   .instructions-section {
@@ -2348,26 +2331,26 @@ font-size: 10px;
   }
  
  .content-container {
-   width: 200px; 
+   width: 90vw;
    font-size: 10px;
  }
   
  .mission-block {
-  max-width: 270px;
+  width: 90vw;
  }
 	
  .bill-item h4 {
   margin-bottom: 5px;
 }
 
-
   .model-section {
    margin-bottom: 300px;
-   max-width: 270px;
+   width: 90vw;
   }
   
   .instructions-section {
-   bottom: 120px; /* Align it to the bottom */
+   bottom: 100px; /* Align it to the bottom */
+   font-size: 10px;
   }
   
     .instructions-section h3{
