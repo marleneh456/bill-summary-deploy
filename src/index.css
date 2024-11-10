@@ -111,12 +111,7 @@ main {
 }
 
 .bill-item h4 {
-  font-size: 16px;
   margin-bottom: 5px;
-}
-
-.bill-item p {
-  font-size: 14px;
 }
 
 .text-link {
@@ -2409,81 +2404,29 @@ font-size: 10px;
    width: max(400px, 500px); 
    margin-left: max(18px, 35px, 48px);
  }
- .mission-block h3{
+ .mission-block {
   font-size: max(8px, 10px);
  }
  
- .mission-block p{
-  font-size: max(8px, 10px);
- }
- 
-.recent-bills-section h3{
-font-size: 11px;
-}
-	
- .bill-item h4 {
-  font-size: max(10px, 11px);
-  margin-bottom: 5px;
-}
-
-.bill-item p {
-  font-size: max(10px, 11px);
-}
-
-  .model-section {
-   //position:relative;
-   margin-bottom: 140px;
-   //width: 600px;
-  }
-
-.model-section h4{
- font-size: max(8px, 10px);
-}
-
-.model-section p{
- font-size: max(8px, 10px);
-}
-
-.text-link {
-  font-size: max(8px, 10px);
-}
-  
-  .instructions-section {
-   bottom: 100px; /* Align it to the bottom */
-  }
-  
-    .instructions-section h3{
-   font-size: max(10px, 11px);
-  }
-
-.instruction-item-one p {
-	font-size: max(10px, 11px);
-}
-
-.website-link a{
-	font-size: max(8px, 10px);
-}
-
-.instruction-item {
-    padding: 5px;
-}
-
-.instruction-item-two-to-four p{
+.recent-bills-section {
 font-size: max(8px, 10px);
 }
 
-.instruction-item-five p{
-	font-size: max(8px, 10px);
-}
+  .model-section {
+   margin-bottom: 140px;
+  font-size: max(8px, 10px);
+  }
+
+  
+  .instructions-section {
+   bottom: 100px;
+   font-size: max(8px, 10px);
+  }
 
   .try-it-btn {
 	margin-bottom: 70px;
 	font-size: max(10px, 11px);
   }
-
-.image-link {
-font-size: 10px;
-}
 
 .footer{
 font-size: 10px;
