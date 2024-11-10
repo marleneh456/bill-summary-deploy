@@ -191,8 +191,6 @@ main {
   font-weight: bold;
 }
 
-
-
 .image-popup-overlay {
   position: fixed;
   top: 0;
@@ -266,8 +264,7 @@ main {
   background-color: #c9302c;
 }
 
-
-/* Popup Styles */
+/* Upload Popup Styles */
 .popup-overlay {
   position: fixed; /* Fixes the popup to the viewport */
   top: 0; /* Aligns the popup to the top */
@@ -606,8 +603,6 @@ main {
 .footer-right {
   text-align: center;
 }
-
-
 
 /* Contact Page General Styles */
 .contact-page {
@@ -1529,11 +1524,11 @@ font-size: 14px;
 
   .popup-content {
     width: 450px;
-    height: 400px; /* Limits the height */
+    height: 400px; 
   }
   
   .close-popup {
-	right: 4px; /* Aligns it to the right */
+	right: 4px; 
     font-size: 10px;
   }
 
@@ -2052,26 +2047,17 @@ font-size: 10px;
    font-size: 14px;
  }
   
- .mission-block {
-  //width: 366px;
- }
- 
   .model-section {
    margin-bottom: 580px;
-   //width: 366px;
   }
   
   .instructions-section {
    bottom: 120px; /* Align it to the bottom */
   }
 
-
-
 .instruction-item {
     padding: 5px;
 }
-
-
 
   .try-it-btn {
 	margin-bottom: 150px;
