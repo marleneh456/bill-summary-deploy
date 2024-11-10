@@ -144,7 +144,7 @@ main {
 .instruction-item-two-to-four {
     display: grid;
     grid-template-columns: auto auto auto;
-    column-gap: 20px;
+    column-gap: 10px;
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -906,7 +906,7 @@ main {
 }
 
 /* Split Desktop */
-@media (max-width: 1022px) {
+@media (max-width: 1022px) and (max-height: 2100px){
   .full-screen-nav-links {
     display: none; /* Hides the desktop navigation on mobile */
   }
@@ -1001,13 +1001,23 @@ main {
     background-color: #fff8dc; /*Cornsilk*/
   }
 
+  .welcome-section h1 {
+    font-size: 28px;
+  }
+
+  /* Welcome Section */
+  .welcome-section p {
+    font-size: 14px;
+  }
+
+
   .content-container {
-   width: 900px;
-   margin-left: 25px;
+   width: 90vw;
+   margin-left: auto;
  }
   
   .model-section {
-   //margin-bottom: 500px;
+   margin-bottom: 300px;
   }
 
   
@@ -1204,7 +1214,8 @@ main {
   
   /* Main Content Layout */
   .content-container {
-    width: 600px;
+    width: 80vw;
+    margin-left: auto;
   }
 
   .model-section {
@@ -1472,24 +1483,14 @@ font-size: 14px;
   }
   
   .content-container {
-   width: 600px;
+    width: 90vw;
+    margin-right: auto;
  }
   
- .mission-block {
-  //width: 700px;
- }
- 
-.recent-bills-section h3{
-font-size: 12px;
-}
-
   .model-section {
-   margin-bottom: 350px;
-   //width: 700px;
+   margin-bottom: 380px;
   }
 
-
-  
   .instructions-section {
    bottom: 100px; /* Align it to the bottom */
   }
@@ -1744,7 +1745,7 @@ font-size: 14px;
   
   .content-container {
     width: 85vw;
-    margin-left: 1vw;
+    margin-right: auto;
    font-size: 10px;
  }
 
@@ -2047,7 +2048,7 @@ font-size: 10px;
   
   .content-container {
     width: 90vw;
-   margin-left: 15px;
+   margin-left: auto;
    font-size: 14px;
  }
   
@@ -2138,7 +2139,7 @@ font-size: 10px;
   .download-btn,
   .do-it-again-btn,
   .pause-play-btn {
-    width: 100px; /* Full width buttons */
+    width: 100px; 
     font-size: 10px;
     margin-left: 5px;
   }
@@ -2149,12 +2150,12 @@ font-size: 10px;
     margin-bottom: 180px;
   }
   .contact-form-container {
-    width: 300px; /* Sets a max width */
+    width: 300px; 
   }
 
   .contact-form input,
   .contact-form textarea {
-    width: 90%; /* Full width inputs */
+    width: 90%; 
   }
 
   .contact-form button {
@@ -2333,6 +2334,7 @@ font-size: 10px;
  .content-container {
    width: 90vw;
    font-size: 10px;
+   margin-left: auto;
  }
   
  .mission-block {
