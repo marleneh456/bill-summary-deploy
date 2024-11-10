@@ -2401,28 +2401,18 @@ font-size: 10px;
   }
   
   .content-container {
-   width: max(400px, 500px); 
-   margin-left: max(18px, 35px, 48px);
+   width: 500px; 
+   margin-left: 50px;
    font-size: max(8px, 10px);
  }
- 
- .mission-block {
-  //font-size: max(8px, 10px);
- }
- 
-.recent-bills-section {
-//font-size: max(8px, 10px);
-}
 
   .model-section {
-   margin-bottom: 140px;
-  //font-size: max(8px, 10px);
+   margin-bottom: 150px;
   }
 
   
   .instructions-section {
    bottom: 100px;
-   //font-size: max(8px, 10px);
   }
 
   .try-it-btn {
