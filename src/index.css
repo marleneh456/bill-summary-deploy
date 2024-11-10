@@ -2410,11 +2410,11 @@ font-size: 10px;
    margin-left: max(18px, 35px, 48px);
  }
  .mission-block h3{
-  font-size: max(11px, 10px);
+  font-size: max(9px, 10px);
  }
  
  .mission-block p{
-  font-size: max(10px, 11px);
+  font-size: max(9px, 10px);
  }
  
 .recent-bills-section h3{
@@ -2427,7 +2427,7 @@ font-size: 11px;
 }
 
 .bill-item p {
-  font-size: 10px;
+  font-size: max(10px, 11px);
 }
 
   .model-section {
@@ -2453,15 +2453,15 @@ font-size: 11px;
   }
   
     .instructions-section h3{
-   font-size: 11px;
+   font-size: max(10px, 11px);
   }
 
 .instruction-item-one p {
-	font-size: 10px;
+	font-size: max(10px, 11px);
 }
 
 .website-link a{
-	font-size: 10px;
+	font-size: max(10px, 11px);
 }
 
 .instruction-item {
@@ -2469,16 +2469,16 @@ font-size: 11px;
 }
 
 .instruction-item-two-to-four p{
-font-size: 10px;
+font-size: max(10px, 11px);
 }
 
 .instruction-item-five p{
-	font-size: 10px;
+	font-size: max(10px, 11px);
 }
 
   .try-it-btn {
 	margin-bottom: 70px;
-	font-size: 10px;
+	font-size: max(10px, 11px);
   }
 
 .image-link {
