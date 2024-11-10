@@ -2410,15 +2410,11 @@ font-size: 10px;
    margin-left: max(18px, 35px, 48px);
  }
  .mission-block h3{
-  font-size: 11px;
+  font-size: max(11px, 10px);
  }
  
  .mission-block p{
-  font-size: 10px;
- }
- 
- .recent-bills-section{
- //position:relative;
+  font-size: max(10px, 11px);
  }
  
 .recent-bills-section h3{
@@ -2426,7 +2422,7 @@ font-size: 11px;
 }
 	
  .bill-item h4 {
-  font-size: 11px;
+  font-size: max(10px, 11px);
   margin-bottom: 5px;
 }
 
