@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function UploadBox({ onGenerateSummary }) {
   const [file, setFile] = useState(null); // State to keep track of the uploaded file
+  const [text, setText] = useState(""); // State to keep track of the input text
 
   // Function to handle file selection
   const handleFileChange = (event) => {
@@ -20,7 +21,7 @@ function UploadBox({ onGenerateSummary }) {
   // Function to clear the selected file
   const clearSelectedFile = () => {
     setFile(null); // Resets the selected file state
-    document.getElementById('file-input').value = ''; // Resets the file input field
+    document.getElementById("file-input").value = ""; // Resets the file input field
   };
 
   return (
@@ -52,8 +53,23 @@ function UploadBox({ onGenerateSummary }) {
         </div>
       )}
 
+      {/* Text area for direct text input */}
+      <div className="text-input">
+        <h3>Or Enter Text to Summarize</h3>
+        <textarea
+          placeholder="Enter text here..."
+          value={text}
+          onChange={(e) => setText(e.target.value)} // Updates text state on input
+          className="text-box"
+        />
+      </div>
+
       {/* Always show the "Generate Summary" button, but only enable it when a file is selected */}
-      <button onClick={handleFileUpload} className="upload-btn" disabled={!file}>
+      <button
+        onClick={handleFileUpload}
+        className="upload-btn"
+        disabled={!file}
+      >
         Generate Summary
       </button>
     </div>

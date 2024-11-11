@@ -1,10 +1,9 @@
 import React from 'react'; // Import React (optional if not in a React environment)
 
-function XMLParser(xmlFile, setParsedText, setIsLoading, setStep) {
-  const reader = new FileReader(); // Create a FileReader to read the uploaded file
-  reader.onload = () => {
+function XMLParser(input, setParsedText, setIsLoading, setStep) {
+  const processXMLContent = (xmlContent) => {
     const parser = new DOMParser(); // Create a DOMParser to parse XML
-    const xmlDoc = parser.parseFromString(reader.result, 'application/xml'); // Parse the file as XML
+    const xmlDoc = parser.parseFromString(xmlContent, 'application/xml'); // Parse the content as XML
 
     let extractedText = ''; // Initialize a string to accumulate the extracted content
 
@@ -39,7 +38,18 @@ function XMLParser(xmlFile, setParsedText, setIsLoading, setStep) {
     setStep(4); // Move to the summary display step
   };
 
-  reader.readAsText(xmlFile); // Read the XML file as text
+  // Check if the input is a file or a string
+  if (typeof input === 'string') {
+    // If it's a string, assume it's XML content and process directly
+    processXMLContent(input);
+  } else {
+    // If it's a file, read it and then process the content
+    const reader = new FileReader(); // Create a FileReader to read the uploaded file
+    reader.onload = () => {
+      processXMLContent(reader.result); // Process the file content as XML
+    };
+    reader.readAsText(input); // Read the XML file as text
+  }
 }
 
 export default XMLParser; // Export the function for use in other components

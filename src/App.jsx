@@ -159,18 +159,22 @@ function App() {
                   </div>
 
                   <div className="model-section"> {/* Model information section */}
-                    <h4>About Model</h4> {/* Heading for model section */}
-                    <p>Our model is specifically designed to summarize federal legislation...</p> {/* Description of the model */}
-                    <a
-                      onClick={() =>
-                        openTextPopup(
-                          "Our model is specifically designed to summarize federal legislation. This includes, but is not limited to bills, acts, and amendments. Submitting other types of documents, including unsupported formats, may lead to unexpected or inaccurate results."
-                        )
-                      }
-                      className="text-link"
-                    >
-                      LEARN MORE {/* Link to learn more about the model */}
-                    </a>
+                    <div className="model-container">
+                      <div className="model-block">
+                        <h4>About Model</h4> {/* Heading for model section */}
+                        <p>Our model is specifically designed to summarize federal legislation...</p> {/* Description of the model */}
+                        <a
+                          onClick={() =>
+                            openTextPopup(
+                              "Our model is specifically designed to summarize federal legislation. This includes, but is not limited to bills, acts, and amendments. Submitting other types of documents, including unsupported formats, may lead to unexpected or inaccurate results."
+                            )
+                          }
+                          className="text-link"
+                        >
+                          LEARN MORE {/* Link to learn more about the model */}
+                        </a>
+                      </div>
+                    </div>
                   </div>
 
                   <div className="instructions-section"> {/* Instructions section */}
