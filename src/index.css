@@ -110,6 +110,14 @@
   align-items: center;
 }
 
+/* Styles the recent mission section */
+.mission-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
 /* Styles mission blocks with border, padding, margin, and a transform transition */
 .mission-block {
   border: 1px solid black; /* Adds a solid black border */
@@ -164,7 +172,7 @@
   text-decoration: underline;
 }
 
-.model-container {
+.model-section {
   width: 960px;
   text-align: center;
 }
@@ -194,9 +202,6 @@
 
 /* Instruction items */
 .instruction-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-top: 15px;
   margin-bottom: 15px;
 }
