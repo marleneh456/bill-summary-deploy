@@ -1,92 +1,103 @@
-//App.jsx
+// App.jsx
 
 // Import necessary dependencies and components
-import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import ContactPage from "./components/ContactPage";
-import AboutPage from "./components/AboutPage";
-import UploadBoxPopup from "./components/UploadBoxPopup";
-import LoadingPopup from "./components/LoadingPopup";
-import SummaryPopup from "./components/SummaryPopup";
-import XMLParser from "./components/XMLParser";
-import TeamPage from "./components/TeamPage";
-import ImagePopup from "./components/ImagePopup";
-import TextPopup from "./components/TextPopup";
+import React, { useState } from "react"; // Import React and the useState hook for managing state
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Import Router components for client-side routing
+import Navbar from "./components/Navbar"; // Import the Navbar component
+import Footer from "./components/Footer"; // Import the Footer component
+import ContactPage from "./components/ContactPage"; // Import the ContactPage component
+import AboutPage from "./components/AboutPage"; // Import the AboutPage component
+import UploadBoxPopup from "./components/UploadBoxPopup"; // Import the UploadBoxPopup component
+import LoadingPopup from "./components/LoadingPopup"; // Import the LoadingPopup component
+import SummaryPopup from "./components/SummaryPopup"; // Import the SummaryPopup component
+import XMLParser from "./components/XMLParser"; // Import the XMLParser utility/function
+import TeamPage from "./components/TeamPage"; // Import the TeamPage component
+import ImagePopup from "./components/ImagePopup"; // Import the ImagePopup component
+import TextPopup from "./components/TextPopup"; // Import the TextPopup component
 
+// Define the main App component
 function App() {
-  const [step, setStep] = useState(1);
-  const [isLoading, setIsLoading] = useState(false);
-  const [parsedText, setParsedText] = useState("");
-  const [isUploadPopupOpen, setIsUploadPopupOpen] = useState(false);
-  const [isImagePopupOpen, setIsImagePopupOpen] = useState(false);
-  const [isTextPopupOpen, setIsTextPopupOpen] = useState(false);
-  const [popupImage, setPopupImage] = useState("");
-  const [popupText, setPopupText] = useState("");
+  // Define state variables using the useState hook
+  const [step, setStep] = useState(1); // Tracks the current step in the upload process
+  const [isLoading, setIsLoading] = useState(false); // Indicates if the app is currently loading
+  const [parsedText, setParsedText] = useState(""); // Stores the parsed text from the uploaded XML
+  const [isUploadPopupOpen, setIsUploadPopupOpen] = useState(false); // Controls the visibility of the upload popup
+  const [isImagePopupOpen, setIsImagePopupOpen] = useState(false); // Controls the visibility of the image popup
+  const [isTextPopupOpen, setIsTextPopupOpen] = useState(false); // Controls the visibility of the text popup
+  const [popupImage, setPopupImage] = useState(""); // Stores the source of the image to display in the image popup
+  const [popupText, setPopupText] = useState(""); // Stores the text content to display in the text popup
 
+  // Function to toggle the upload popup visibility
   const toggleUploadPopup = () => {
-    setIsUploadPopupOpen(!isUploadPopupOpen);
-    setStep(2);
+    setIsUploadPopupOpen(!isUploadPopupOpen); // Toggle the upload popup state
+    setStep(2); // Set the current step to 2
   };
 
+  // Function to close the upload popup
   const closeUploadPopup = () => {
-    setIsUploadPopupOpen(false);
-    setStep(1);
+    setIsUploadPopupOpen(false); // Hide the upload popup
+    setStep(1); // Reset the current step to 1
   };
 
+  // Function to open the image popup with a specific image source
   const openImagePopup = (imageSrc) => {
-    setPopupImage(imageSrc);
-    setIsImagePopupOpen(true);
+    setPopupImage(imageSrc); // Set the image source for the popup
+    setIsImagePopupOpen(true); // Show the image popup
   };
 
+  // Function to close the image popup
   const closeImagePopup = () => {
-    setIsImagePopupOpen(false);
-    setPopupImage("");
+    setIsImagePopupOpen(false); // Hide the image popup
+    setPopupImage(""); // Clear the image source
   };
 
+  // Function to open the text popup with specific text content
   const openTextPopup = (textContent) => {
-    setPopupText(textContent);
-    setIsTextPopupOpen(true);
+    setPopupText(textContent); // Set the text content for the popup
+    setIsTextPopupOpen(true); // Show the text popup
   };
 
+  // Function to close the text popup
   const closeTextPopup = () => {
-    setIsTextPopupOpen(false);
-    setPopupText("");
+    setIsTextPopupOpen(false); // Hide the text popup
+    setPopupText(""); // Clear the text content
   };
 
+  // Function to handle the generation of the summary from the uploaded XML file
   const handleGenerateSummary = (xmlFile) => {
-    setIsLoading(true);
-    setTimeout(() => {
-      XMLParser(xmlFile, setParsedText, setIsLoading, setStep);
-    }, 3000);
+    setIsLoading(true); // Set loading state to true
+    setTimeout(() => { // Simulate a delay (e.g., for processing)
+      XMLParser(xmlFile, setParsedText, setIsLoading, setStep); // Call the XMLParser function with necessary callbacks
+    }, 3000); // Delay of 3 seconds
   };
 
+  // Function to reset the parsed text and set the step to 2 for starting over
   const handleStartOver = () => {
-    setParsedText("");
-    setStep(2);
+    setParsedText(""); // Clear the parsed text
+    setStep(2); // Set the current step to 2
   };
 
+  // Render the component
   return (
-    <Router>
-      <Navbar />
-      <main style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-        <Routes>
+    <Router> {/* Wrap the application in a Router to enable routing */}
+      <Navbar /> {/* Render the Navbar component */}
+      <main style={{ display: "flex", flexDirection: "column", alignItems: "center" }}> {/* Main content area with flexbox styling */}
+        <Routes> {/* Define the routes for the application */}
           <Route
-            path="/"
-            element={
-              <div>
-                <div className="welcome-section">
-                  <h1>Meet the AI that explains what the government is actually doing</h1>
+            path="/" // Define the root path
+            element={ // Define the component to render for the root path
+              <div> {/* Container div */}
+                <div className="welcome-section"> {/* Welcome section */}
+                  <h1>Meet the AI that explains what the government is actually doing</h1> {/* Main heading */}
                   <p>
                     Our AI directly summarizes official US government bills to inform you, instead of confusing you.
-                  </p>
+                  </p> {/* Subheading/description */}
                 </div>
 
-                <div className="content-container">
-                  <div className="mission-section">
-                    <div className="mission-block">
-                      <h3>Mission Statement:</h3>
+                <div className="content-container"> {/* Content container */}
+                  <div className="mission-section"> {/* Mission section */}
+                    <div className="mission-block"> {/* Mission block */}
+                      <h3>Mission Statement:</h3> {/* Mission statement heading */}
                       <p>
                         Whatsinthebill.ai aims to provide accurate, non-partisan summaries of United States legislation; 
                         it is a service designed so that any voter or legislator can quickly view pertinent information 
@@ -95,7 +106,7 @@ function App() {
                         we all have been directly impacted by multiple federal legislations, 
                         both positively and negatively, so this service is more than just a service. 
                         It aims to bring important information to any voter that can access this site, that would ordinarily be difficult to obtain. ...
-                      </p>
+                      </p> {/* Mission statement paragraph */}
                       <a
                         onClick={() =>
                           openTextPopup(
@@ -104,50 +115,50 @@ function App() {
                         }
                         className="text-link"
                       >
-                        LEARN MORE
+                        LEARN MORE {/* Link to learn more about the mission */}
                       </a>
                     </div>
                   </div>
 
-                  <div className="recent-bills-section">
-                    <h3>Recent Bills</h3>
-                    <div className="recent-bills">
-                      <div className="bill-item">
-                        <h4>Education Reform</h4>
+                  <div className="recent-bills-section"> {/* Recent bills section */}
+                    <h3>Recent Bills</h3> {/* Heading for recent bills */}
+                    <div className="recent-bills"> {/* Container for recent bills */}
+                      <div className="bill-item"> {/* Individual bill item */}
+                        <h4>Education Reform</h4> {/* Bill title */}
                         <p>
                           Aims to improve public school funding and introduce new curriculum standards to enhance
                           student learning.
-                        </p>
+                        </p> {/* Bill description */}
                         <a onClick={() => openTextPopup("Full Education Reform Bill...")} className="text-link">
-                          View Full Bill
+                          View Full Bill {/* Link to view the full bill */}
                         </a>
                       </div>
-                      <div className="bill-item">
-                        <h4>Cybersecurity Act</h4>
+                      <div className="bill-item"> {/* Another bill item */}
+                        <h4>Cybersecurity Act</h4> {/* Bill title */}
                         <p>
                           Enhances national security through improved cyber defenses, partnership with tech companies,
                           and public awareness campaigns...
-                        </p>
+                        </p> {/* Bill description */}
                         <a onClick={() => openTextPopup("Full Cybersecurity Act Bill...")} className="text-link">
-                          View Full Bill
+                          View Full Bill {/* Link to view the full bill */}
                         </a>
                       </div>
-                      <div className="bill-item">
-                        <h4>Education Reform</h4>
+                      <div className="bill-item"> {/* Another bill item */}
+                        <h4>Education Reform</h4> {/* Bill title */}
                         <p>
                           Aims to improve public school funding and introduce new curriculum standards to enhance
                           student learning.
-                        </p>
+                        </p> {/* Bill description */}
                         <a onClick={() => openTextPopup("Full Education Reform Bill...")} className="text-link">
-                          View Full Bill
+                          View Full Bill {/* Link to view the full bill */}
                         </a>
                       </div>
                     </div>
                   </div>
 
-                  <div className="model-section">
-                    <h4>About Model</h4>
-                    <p>Our model is specifically designed to summarize federal legislation...</p>
+                  <div className="model-section"> {/* Model information section */}
+                    <h4>About Model</h4> {/* Heading for model section */}
+                    <p>Our model is specifically designed to summarize federal legislation...</p> {/* Description of the model */}
                     <a
                       onClick={() =>
                         openTextPopup(
@@ -156,97 +167,118 @@ function App() {
                       }
                       className="text-link"
                     >
-                      LEARN MORE
+                      LEARN MORE {/* Link to learn more about the model */}
                     </a>
                   </div>
 
-                  <div className="instructions-section">
-                    <h3>How to Use This Model:</h3>
+                  <div className="instructions-section"> {/* Instructions section */}
+                    <h3>How to Use This Model:</h3> {/* Heading for instructions */}
 
-                    <div className="instruction-item">
+                    <div className="instruction-item"> {/* Instruction step 1 */}
                       <div className="instruction-item-one">
                         <p>
-                          1. Visit <a href="https://www.congress.gov/" target="_blank" className="website-link">Congress.gov</a>
-                        </p>
+                          1. Visit <a href="https://www.congress.gov/" target="_blank" rel="noopener noreferrer" className="website-link">Congress.gov</a>
+                        </p> {/* Step 1 instruction with link */}
                       </div>
                     </div>
 
-                    <div className="instruction-item">
-                      <div className="instruction-item-two-to-four">
-                        <div className="instruction-item">
+                    <div className="instruction-item"> {/* Instruction steps 2-4 */}
+                      <div className="instruction-item-two-to-four"> {/* Container for steps 2-4 */}
+                        <div className="instruction-item"> {/* Instruction step 2 */}
                           <p>
                             2. If you already know the name of your desired legislature, enter it into the search bar, e.g.,
                             <span className="highlight-quote"> “H.R.1234”</span> or <span className="highlight-quote">“S.5678”</span>.
                             If you would instead like to browse, click the <span className="highlight-quote">“Legislation”</span> navigation button in the top right corner of the site.
-                          </p>
+                          </p> {/* Step 2 instruction */}
                           <a onClick={() => openImagePopup("./bill-summary-deploy/images/Legislation.png")} className="image-link">
-                            View Legislation Instruction
+                            View Legislation Instruction {/* Link to view legislation instruction image */}
                           </a>
                         </div>
 
-                        <div className="instruction-item">
+                        <div className="instruction-item"> {/* Instruction step 3 */}
                           <p>
                             3. Once you have selected your desired legislation, click the <span className="highlight-quote">“Text”</span> tab
-                          </p>
+                          </p> {/* Step 3 instruction */}
                           <a onClick={() => openImagePopup("./bill-summary-deploy/images/text instruction.png")} className="image-link">
-                            View Text Instruction
+                            View Text Instruction {/* Link to view text instruction image */}
                           </a>
                         </div>
 
-                        <div className="instruction-item">
+                        <div className="instruction-item"> {/* Instruction step 4 */}
                           <p>
                             4. If not already selected, click on the XML option, right-click on the document, and select
                             <span className="highlight-quote"> “Save As”</span>
-                          </p>
+                          </p> {/* Step 4 instruction */}
                           <a onClick={() => openImagePopup("./bill-summary-deploy/images/Xml instruction.png")} className="image-link">
-                            View XML Instruction
+                            View XML Instruction {/* Link to view XML instruction image */}
                           </a>
                           <a onClick={() => openImagePopup("./bill-summary-deploy/images/Save as instruction.png")} className="image-link">
-                            View Save as Instruction
+                            View Save as Instruction {/* Link to view 'Save As' instruction image */}
                           </a>
                         </div>
                       </div>
                     </div>
 
-                    <hr className="instruction-separator" />
+                    <hr className="instruction-separator" /> {/* Separator line */}
 
-                    <div className="instruction-item">
+                    <div className="instruction-item"> {/* Instruction step 5 */}
                       <div className="instruction-item-five">
                         <p>
                           5. Once the document has been saved, upload your document by clicking the <span className="highlight-quote">“Try it Yourself”</span> button below and following the instructions.
-                        </p>
+                        </p> {/* Step 5 instruction */}
                         <button className="try-it-btn" onClick={toggleUploadPopup}>
-                          Try It Yourself!
+                          Try It Yourself! {/* Button to open the upload popup */}
                         </button>
                       </div>
                     </div>
                   </div>
                 </div>
 
+                {/* Conditional rendering of popups based on state */}
                 {isImagePopupOpen && (
-                  <ImagePopup isOpen={isImagePopupOpen} imageSrc={popupImage} onClose={closeImagePopup} />
+                  <ImagePopup
+                    isOpen={isImagePopupOpen} // Pass the open state to ImagePopup
+                    imageSrc={popupImage} // Pass the image source to ImagePopup
+                    onClose={closeImagePopup} // Pass the close function to ImagePopup
+                  />
                 )}
                 {isTextPopupOpen && (
-                  <TextPopup isOpen={isTextPopupOpen} textContent={popupText} onClose={closeTextPopup} />
+                  <TextPopup
+                    isOpen={isTextPopupOpen} // Pass the open state to TextPopup
+                    textContent={popupText} // Pass the text content to TextPopup
+                    onClose={closeTextPopup} // Pass the close function to TextPopup
+                  />
                 )}
                 {isUploadPopupOpen && (
-                  <>
-                    {step === 2 && !isLoading && <UploadBoxPopup onGenerateSummary={handleGenerateSummary} closePopup={closeUploadPopup} />}
-                    {isLoading && <LoadingPopup />}
-                    {step === 4 && <SummaryPopup parsedText={parsedText} closePopup={closeUploadPopup} handleStartOver={handleStartOver} />}
+                  <> {/* Fragment to group multiple elements */}
+                    {step === 2 && !isLoading && (
+                      <UploadBoxPopup
+                        onGenerateSummary={handleGenerateSummary} // Pass the summary generation handler
+                        closePopup={closeUploadPopup} // Pass the close function
+                      />
+                    )}
+                    {isLoading && <LoadingPopup />} {/* Render LoadingPopup if loading */}
+                    {step === 4 && (
+                      <SummaryPopup
+                        parsedText={parsedText} // Pass the parsed text to SummaryPopup
+                        closePopup={closeUploadPopup} // Pass the close function
+                        handleStartOver={handleStartOver} // Pass the start over handler
+                      />
+                    )}
                   </>
                 )}
               </div>
             }
           />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/team" element={<TeamPage />} />
+          <Route path="/contact" element={<ContactPage />} /> {/* Route for ContactPage */}
+          <Route path="/about" element={<AboutPage />} /> {/* Route for AboutPage */}
+          <Route path="/team" element={<TeamPage />} /> {/* Route for TeamPage */}
         </Routes>
       </main>
-      <Footer />
+      <Footer /> {/* Render the Footer component */}
     </Router>
   );
 }
 
+// Export the App component as the default export
 export default App;
