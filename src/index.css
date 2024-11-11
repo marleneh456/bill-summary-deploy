@@ -80,7 +80,14 @@ main {
   padding-bottom: 200px;
 }
 
+.misson-container{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
 .mission-block {
+  text-align: center;
   border: 1px solid black;
   padding: 15px;
   margin-bottom: 50px;
@@ -146,7 +153,7 @@ main {
 
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100px;
-  grid-gap: 10px;
+  gap: 10px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
