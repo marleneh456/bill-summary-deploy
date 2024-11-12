@@ -569,7 +569,6 @@
        subtle shadow, left-aligned text, responsive max width,
        fixed height, and vertical scrolling */
   .animated-summary pre {
-    display: flex;
     white-space: pre-wrap; /* Ensures long lines wrap */
     word-wrap: break-word; /* Breaks long words */
     margin: 20px auto; /* Centers the summary */
