@@ -88,63 +88,47 @@
     background-color: #3d4e66; /* Changes background color on hover */
   }
   
+  /* Home Page */
+  .HomePage
+  {
+    font-family: "Poppins", sans-serif;
+    width: 960px;
+    margin-bottom: 150px;
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   /* Welcome Section */
   
   /* Centers text, applies a specific font family, and adds bottom margin */
   .welcome-section {
     text-align: center;
-    font-family: "Poppins", sans-serif;
     margin-bottom: 20px;
   }
   
-/* Main Content Layout */
-
-/* Sets the font family, fixed width, adds bottom and padding space */
-.content-container {
-  font-family: "Poppins", sans-serif;
-  width: 960px;
-  margin-bottom: 150px;
-  padding-bottom: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 /* Styles the recent mission section */
 .mission-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   margin-top: 20px;
-}
-
-/* Styles mission blocks with border, padding, margin, and a transform transition */
-.mission-block {
   border: 1px solid black; /* Adds a solid black border */
   padding: 15px; /* Adds padding inside the block */
-  margin-bottom: 50px; /* Adds space below each block */
+  margin-bottom: 90px; /* Adds space below each block */
   transition: transform 0.3s ease; /* Smooth transform transition */
 }
 
 /* Slightly enlarges mission blocks on hover */
-.mission-block:hover {
+.mission-section:hover {
   transform: scale(1.02);
 }
 
 /* Styles the recent bills section */
 .recent-bills-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   margin-top: 20px;
-}
-
-/* Styles recent bills as a flex container with gap */
-.recent-bills {
-  display: flex;
-  flex: 1;
-  gap: 20px;
-  margin-top: 20px;
+  margin-bottom: 90px; /* Adds space below each block */
 }
 
 /* Styles individual bill items with border, padding, margin, and transform transition */
@@ -173,20 +157,16 @@
 }
 
 .model-section {
-  width: 960px;
+  width: 940px;
   text-align: center;
-}
-
-/* Styles model blocks with border, padding, margin, and a transform transition */
-.model-block {
   border: 1px solid black; /* Adds a solid black border */
   padding: 15px; /* Adds padding inside the block */
-  margin-bottom: 50px; /* Adds space below each block */
+  margin-bottom: 90px; /* Adds space below each block */
   transition: transform 0.3s ease; /* Smooth transform transition */
 }
 
 /* Slightly enlarges model blocks on hover */
-.model-block:hover {
+.model-section:hover {
   transform: scale(1.02);
 }
 
@@ -200,18 +180,10 @@
   bottom: 0; /* Aligns it towards the bottom of the container */
 }
 
-/* Instruction items */
-.instruction-item {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
   /* Styles a grid layout for instruction items two to four */
   .instruction-item-two-to-four {
-    display: grid; /* Uses CSS Grid Layout */
-    grid-template-columns: 1fr 1fr 1fr; /* Defines three equal columns */
-    grid-template-rows: 100px; /* Defines a single row with 100px height */
-    grid-gap: 10px; /* Adds space between grid items */
+    flex: 1;
+    gap: 10px; /* Adds space between grid items */
     margin-top: 15px; /* Adds space above the grid */
     margin-bottom: 15px; /* Adds space below the grid */
   }
@@ -597,6 +569,7 @@
        subtle shadow, left-aligned text, responsive max width,
        fixed height, and vertical scrolling */
   .animated-summary pre {
+    display: flex;
     white-space: pre-wrap; /* Ensures long lines wrap */
     word-wrap: break-word; /* Breaks long words */
     margin: 20px auto; /* Centers the summary */

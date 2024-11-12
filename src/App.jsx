@@ -86,45 +86,42 @@ function App() {
           <Route
             path="/" // Define the root path
             element={ // Define the component to render for the root path
-              <div> {/* Container div */}
-                <div className="welcome-section"> {/* Welcome section */}
+              <div className="HomePage"> {/* Container div */}
+                <section className="welcome-section"> {/* Welcome section */}
                   <h1>Meet the AI that explains what the government is actually doing</h1> {/* Main heading */}
                   <p>
                     Our AI directly summarizes official US government bills to inform you, instead of confusing you.
                   </p> {/* Subheading/description */}
-                </div>
+                </section>
 
-                <div className="content-container"> {/* Content container */}
-                  <div className="mission-section"> {/* Mission section */}
-                    <div className="mission-container"> {/* Misson container */}
-                      <div className="mission-block"> {/* Mission block */}
-                        <h3>Mission Statement:</h3> {/* Mission statement heading */}
-                        <p>
-                          Whatsinthebill.ai aims to provide accurate, non-partisan summaries of United States legislation; 
-                          it is a service designed so that any voter or legislator can quickly view pertinent information 
-                          from within a given bill, act, or amendment. Our team is made up of recently graduated college 
-                          students and a Marine Corps combat veteran of two foreign wars; 
-                          we all have been directly impacted by multiple federal legislations, 
-                          both positively and negatively, so this service is more than just a service. 
-                          It aims to bring important information to any voter that can access this site, that would ordinarily be difficult to obtain. ...
-                        </p> {/* Mission statement paragraph */}
-                        <a
-                          onClick={() =>
-                            openTextPopup(
-                              "Whatsinthebill.ai aims to provide accurate, non-partisan summaries of United States legislation; it is a service designed so that any voter or legislator can quickly view pertinent information from within a given bill, act, or amendment. Our team is made up of recently graduated college students and a Marine Corps combat veteran of two foreign wars; we all have been directly impacted by multiple federal legislations, both positively and negatively, so this service is more than just a service. It aims to bring important information to any voter that can access this site, that would ordinarily be difficult to obtain. While we do have ads to support our maintenance, the service is and will continue to be free of charge for all users: this is a passion of ours. Future expansion will support state legislation, and potentially other countries as well. Thank you for visiting whatsinthebill.ai. We hope this helps."
-                            )
-                          }
-                          className="text-link"
-                        >
-                          LEARN MORE {/* Link to learn more about the mission */}
-                        </a>
-                      </div>
-                    </div>
-                  </div>
+                <section className="mission-section"> {/* Mission section */}
+                  <h3>Mission Statement:</h3> {/* Mission statement heading */}
+                    <p>
+                      Whatsinthebill.ai aims to provide accurate, non-partisan summaries of United States legislation; 
+                      it is a service designed so that any voter or legislator can quickly view pertinent information 
+                      from within a given bill, act, or amendment. Our team is made up of recently graduated college 
+                      students and a Marine Corps combat veteran of two foreign wars; 
+                      we all have been directly impacted by multiple federal legislations, 
+                      both positively and negatively, so this service is more than just a service. 
+                      It aims to bring important information to any voter that can access this site, that would ordinarily be difficult to obtain. ...
+                    </p> {/* Mission statement paragraph */}
+                    
+                    <a
+                      onClick={() =>
+                        openTextPopup(
+                          "Whatsinthebill.ai aims to provide accurate, non-partisan summaries of United States legislation; it is a service designed so that any voter or legislator can quickly view pertinent information from within a given bill, act, or amendment. Our team is made up of recently graduated college students and a Marine Corps combat veteran of two foreign wars; we all have been directly impacted by multiple federal legislations, both positively and negatively, so this service is more than just a service. It aims to bring important information to any voter that can access this site, that would ordinarily be difficult to obtain. While we do have ads to support our maintenance, the service is and will continue to be free of charge for all users: this is a passion of ours. Future expansion will support state legislation, and potentially other countries as well. Thank you for visiting whatsinthebill.ai. We hope this helps."
+                        )
+                      }
+                      className="text-link"
+                    >
+                      LEARN MORE {/* Link to learn more about the mission */}
+                    </a>
 
-                  <div className="recent-bills-section"> {/* Recent bills section */}
+                </section>
+
+                <section className="recent-bills-section"> {/* Recent bills section */}
+
                     <h3>Recent Bills</h3> {/* Heading for recent bills */}
-                    <div className="recent-bills"> {/* Container for recent bills */}
                       <div className="bill-item"> {/* Individual bill item */}
                         <h4>Education Reform</h4> {/* Bill title */}
                         <p>
@@ -135,6 +132,7 @@ function App() {
                           View Full Bill {/* Link to view the full bill */}
                         </a>
                       </div>
+
                       <div className="bill-item"> {/* Another bill item */}
                         <h4>Cybersecurity Act</h4> {/* Bill title */}
                         <p>
@@ -145,6 +143,7 @@ function App() {
                           View Full Bill {/* Link to view the full bill */}
                         </a>
                       </div>
+
                       <div className="bill-item"> {/* Another bill item */}
                         <h4>Education Reform</h4> {/* Bill title */}
                         <p>
@@ -155,12 +154,10 @@ function App() {
                           View Full Bill {/* Link to view the full bill */}
                         </a>
                       </div>
-                    </div>
-                  </div>
 
-                  <div className="model-section"> {/* Model information section */}
-                    <div className="model-container">
-                      <div className="model-block">
+                </section>
+
+                  <section className="model-section"> {/* Model information section */}
                         <h4>About Model</h4> {/* Heading for model section */}
                         <p>Our model is specifically designed to summarize federal legislation...</p> {/* Description of the model */}
                         <a
@@ -173,24 +170,18 @@ function App() {
                         >
                           LEARN MORE {/* Link to learn more about the model */}
                         </a>
-                      </div>
-                    </div>
-                  </div>
+                  </section>
 
-                  <div className="instructions-section"> {/* Instructions section */}
+                  <section className="instructions-section"> {/* Instructions section */}
                     <h3>How to Use This Model:</h3> {/* Heading for instructions */}
 
-                    <div className="instruction-item"> {/* Instruction step 1 */}
                       <div className="instruction-item-one">
                         <p>
                           1. Visit <a href="https://www.congress.gov/" target="_blank" rel="noopener noreferrer" className="website-link">Congress.gov</a>
                         </p> {/* Step 1 instruction with link */}
                       </div>
-                    </div>
 
-                    <div className="instruction-item"> {/* Instruction steps 2-4 */}
                       <div className="instruction-item-two-to-four"> {/* Container for steps 2-4 */}
-                        <div className="instruction-item"> {/* Instruction step 2 */}
                           <p>
                             2. If you already know the name of your desired legislature, enter it into the search bar, e.g.,
                             <span className="highlight-quote"> “H.R.1234”</span> or <span className="highlight-quote">“S.5678”</span>.
@@ -199,18 +190,13 @@ function App() {
                           <a onClick={() => openImagePopup("./bill-summary-deploy/images/Legislation.png")} className="image-link">
                             View Legislation Instruction {/* Link to view legislation instruction image */}
                           </a>
-                        </div>
-
-                        <div className="instruction-item"> {/* Instruction step 3 */}
                           <p>
                             3. Once you have selected your desired legislation, click the <span className="highlight-quote">“Text”</span> tab
                           </p> {/* Step 3 instruction */}
                           <a onClick={() => openImagePopup("./bill-summary-deploy/images/text instruction.png")} className="image-link">
                             View Text Instruction {/* Link to view text instruction image */}
                           </a>
-                        </div>
 
-                        <div className="instruction-item"> {/* Instruction step 4 */}
                           <p>
                             4. If not already selected, click on the XML option, right-click on the document, and select
                             <span className="highlight-quote"> “Save As”</span>
@@ -221,13 +207,10 @@ function App() {
                           <a onClick={() => openImagePopup("./bill-summary-deploy/images/Save as instruction.png")} className="image-link">
                             View Save as Instruction {/* Link to view 'Save As' instruction image */}
                           </a>
-                        </div>
-                      </div>
-                    </div>
+                       </div>
 
                     <hr className="instruction-separator" /> {/* Separator line */}
 
-                    <div className="instruction-item"> {/* Instruction step 5 */}
                       <div className="instruction-item-five">
                         <p>
                           5. Once the document has been saved, upload your document by clicking the <span className="highlight-quote">“Try it Yourself”</span> button below and following the instructions.
@@ -236,9 +219,8 @@ function App() {
                           Try It Yourself! {/* Button to open the upload popup */}
                         </button>
                       </div>
-                    </div>
-                  </div>
-                </div>
+                  </section>
+
 
                 {/* Conditional rendering of popups based on state */}
                 {isImagePopupOpen && (

@@ -36,7 +36,7 @@ function XMLParser(xmlFile, setParsedText, setIsLoading, setStep) {
 
     setParsedText(extractedText); // Update the parsed text state
     setIsLoading(false); // Set loading state to false
-    //setStep(4); // Move to the summary display step
+    setStep(4); // Move to the summary display step
   };
 
   reader.readAsText(xmlFile); // Read the XML file as text
