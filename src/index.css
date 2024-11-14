@@ -88,156 +88,179 @@
     background-color: #3d4e66; /* Changes background color on hover */
   }
   
-  /* Home Page */
-  .HomePage
-  {
-    font-family: "Poppins", sans-serif;
-    width: 960px;
-    margin-bottom: 150px;
-    padding-bottom: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   /* Welcome Section */
   
   /* Centers text, applies a specific font family, and adds bottom margin */
   .welcome-section {
     text-align: center;
-    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 40px;
   }
   
+  /* Main Content Layout */
+  
+  /* Sets the font family, fixed width, adds bottom and padding space */
+  .content-container {
+    font-family: "Poppins", sans-serif;
+    width: 960px;
+    margin-bottom: 150px;
+    padding-bottom: 200px;
+  }
+  
+  /* Styles mission blocks with border, padding, margin, and a transform transition */
+  .mission-block {
 
-/* Styles the recent mission section */
-.mission-section {
-  text-align: center;
-  margin-top: 20px;
-  border: 1px solid black; /* Adds a solid black border */
-  padding: 15px; /* Adds padding inside the block */
-  margin-bottom: 90px; /* Adds space below each block */
-  transition: transform 0.3s ease; /* Smooth transform transition */
-}
+    background: #f9f9f9; /* Light background */
+  border-radius: 10px; /* Rounds the corners */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Adds a shadow */
+  padding: 10px; /* Adds padding */
+  text-align: center; /* Centers the text */
+  transition: transform 0.3s, box-shadow 0.3s; /* Adds hover effects */
+  margin-bottom: 70px; /* Adds space below each block */
+  }
+  
+  /* Slightly enlarges mission blocks on hover */
+  .mission-block:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Styles the recent bills section as a flex container with gap */
+  .recent-bills {
+    display: flex; /* Flexbox layout */
+    justify-items: center;
+    gap: 20px; /* Adds space between items */ 
+  }
+  
+  /* Styles individual bill items with border, padding, margin, and transform transition */
+  .bill-item {
 
-/* Slightly enlarges mission blocks on hover */
-.mission-section:hover {
-  transform: scale(1.02);
-}
+    background: #f9f9f9; /* Light background */
+  border-radius: 10px; /* Rounds the corners */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Adds a shadow */
+  padding: 30px; /* Adds padding */
+  transition: transform 0.3s, box-shadow 0.3s; /* Adds hover effects */
+  width: 400px; /* Sets a fixed width */
+  margin-bottom: 70px; /* Adds space below each block */
+  }
+  
+  /* Slightly enlarges bill items on hover */
+  .bill-item:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Styles the heading inside bill items */
+  .bill-item h4 {
+    margin-bottom: 5px; /* Adds space below the heading */
+  }
+  
+  /* Styles text links with blue color, pointer cursor, and underline */
+  .text-link {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  /* Styles the model section with border, padding, margin, centered text,
+       and a transform transition */
+  .model-section {
+    background: #f9f9f9; /* Light background */
+  border-radius: 10px; /* Rounds the corners */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Adds a shadow */
+  padding: 10px; /* Adds padding */
+  text-align: center; /* Centers the text */
+  transition: transform 0.3s, box-shadow 0.3s; /* Adds hover effects */
+  margin-bottom: 70px; /* Adds space below each block */
+  }
+  
+  /* Slightly enlarges the model section on hover */
+  .model-section:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Instructions Section */
+  
+  /* Sets background color, positions absolutely at the bottom,
+       centers text, and ensures full width */
+       .instructions-section {
+        background-color: #D3D3D3; /* Unified background color */
+        padding: 20px; /* Increase padding for readability */
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s; /* Adds hover effects */
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Adds a shadow */
+        position: relative;
+        border-radius: 10px; /* Add smooth corners */
+      }
 
-/* Styles the recent bills section */
-.recent-bills-section {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 90px; /* Adds space below each block */
-}
+      .instructions-section:hover {
+        transform: scale(1.02);
+      }
 
-/* Styles individual bill items with border, padding, margin, and transform transition */
-.bill-item {
-  border: 1px solid black;
-  padding: 30px;
-  margin-bottom: 50px;
-  transition: transform 0.3s ease;
-}
-
-/* Slightly enlarges bill items on hover */
-.bill-item:hover {
-  transform: scale(1.02);
-}
-
-/* Styles the heading inside bill items */
-.bill-item h4 {
-  margin-bottom: 5px;
-}
-
-/* Styles text links with blue color, pointer cursor, and underline */
-.text-link {
-  color: blue;
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-.model-section {
-  width: 940px;
-  text-align: center;
-  border: 1px solid black; /* Adds a solid black border */
-  padding: 15px; /* Adds padding inside the block */
-  margin-bottom: 90px; /* Adds space below each block */
-  transition: transform 0.3s ease; /* Smooth transform transition */
-}
-
-/* Slightly enlarges model blocks on hover */
-.model-section:hover {
-  transform: scale(1.02);
-}
-
-/* Instructions Section */
-.instructions-section {
-  background-color: #e3eaf7;
-  width: 930px;
-  padding: 20px;
-  position: relative; /* Sets position relative within its container */
-  text-align: center;
-  bottom: 0; /* Aligns it towards the bottom of the container */
-}
-
+  
   /* Styles a grid layout for instruction items two to four */
   .instruction-item-two-to-four {
-    flex: 1;
-    gap: 10px; /* Adds space between grid items */
+    display: grid; /* Uses CSS Grid Layout */
+    grid-template-columns: 1fr 1fr 1fr; /* Defines three equal columns */
+    grid-template-rows: 100px; /* Defines a single row with 100px height */
+    grid-gap: 10px; /* Adds space between grid items */
     margin-top: 15px; /* Adds space above the grid */
     margin-bottom: 15px; /* Adds space below the grid */
   }
-
-/* Styles a separator line with margin and border */
-.instruction-separator {
-  margin: 20px auto;
-  margin-top: 100px;
-  width: 80%;
-  border: none;
-  border-top: 1px solid #ccc;
-}
-
-/* Styles website links */
-.website-link {
-  text-decoration: none;
-  color: blue;
-}
-
-/* Styles image links */
-.image-link {
-  display: block;
-  margin-top: 5px;
-  text-decoration: underline;
-  color: blue;
-  font-weight: 600;
-}
-
-/* Styles the "Try It" button */
-.try-it-btn {
-  padding: 8px 30px;
-  font-size: 16px;
-  margin-bottom: 10px;
-  background-color: #4a5c79;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-/* Changes background color and slightly enlarges the button on hover */
-.try-it-btn:hover {
-  background-color: #061d48;
-  transform: scale(1.05);
-}
-
-/* Styles highlighted quotes */
-.highlight-quote {
-  color: green;
-  font-weight: bold;
-}
-
-
+  
+  /* Styles a separator line with margin and border */
+  .instruction-separator {
+    margin: 20px auto; /* Centers the separator with vertical margin */
+    margin-top: 90px; /* Adds additional top margin */
+    width: 80%; /* Sets the width of the separator */
+    border: none; /* Removes any existing border */
+    border-top: 1px solid #000066; /* Adds a top border */
+  }
+  
+  .number-bold{
+    font-weight: 800;
+  }
+  /* Styles website links with no text decoration and blue color */
+  .website-link {
+    text-decoration: none;
+    color: blue;
+    cursor: pointer; /* Changes cursor to pointer on hover */
+  }
+  
+  /* Styles image links as block elements with top margin, underline, blue color,
+       and bold font weight */
+  .image-link {
+    display: block;
+    margin-top: 5px;
+    text-decoration: underline;
+    color: blue;
+    font-weight: 600;
+    cursor: pointer; /* Changes cursor to pointer on hover */
+  }
+  
+  /* Styles the "Try It" button with padding, font size, margin, background color,
+       text color, no border, rounded corners, cursor pointer, and transition effects */
+  .try-it-btn {
+    padding: 20px 15px; /* Adds padding inside the button */
+    font-size: 16px; /* Sets the font size */
+    margin-bottom: 10px; /* Adds space below the button */
+    background-color: #4a5c79; /* Sets the background color */
+    color: white; /* Sets the text color to white */
+    border: none; /* Removes the border */
+    border-radius: 5px; /* Rounds the corners */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adds smooth transitions */
+  }
+  
+  /* Changes background color and slightly enlarges the button on hover */
+  .try-it-btn:hover {
+    background-color: #061d48; /* Changes background color on hover */
+    transform: scale(1.05); /* Slightly enlarges the button */
+  }
+  
+  /* Styles highlighted quotes with green color and bold font weight */
+  .highlight-quote {
+    color: green;
+    font-weight: bold;
+  }
   
   /* Styles the overlay for image popups with fixed positioning,
        semi-transparent background, centers content, and sets high z-index */
@@ -2639,6 +2662,9 @@
       #8e2de2
     ); /* Gradient line */
     padding-bottom: 10px; /* Space below the heading */
+    border-image-slice: 1;
+    border-width: 2px;
+    text-align: center;
   }
   
   .transparency p {
@@ -2661,6 +2687,8 @@
     border-radius: 20px; /* Rounded corners */
     transition: transform 0.4s, box-shadow 0.4s; /* Smooth hover effects */
     border: 1px solid rgba(255, 255, 255, 0.5); /* Border for structure */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   }
   
   .comparison-item:hover {
@@ -2670,6 +2698,7 @@
   
   .comparison-item h4 {
     font-size: 1.8em; /* Heading size */
+    font-weight: 600;
     color: #6a0dad; /* Purple color for titles */
     margin-bottom: 12px; /* Space below heading */
   }
@@ -2712,25 +2741,6 @@
     color: #00b4db; /* Lighter color on hover */
   }
   
-  /* Go to Top Button */
-  .go-top-btn {
-    position: fixed; /* Stays in one place on screen */
-    bottom: 40px; /* Distance from bottom of screen */
-    right: 40px; /* Distance from right side */
-    background: linear-gradient(135deg, #00b4db, #8e2de2); /* Gradient color */
-    color: #ffffff; /* White text */
-    border-radius: 50%; /* Circular button */
-    width: 60px; /* Button size */
-    height: 60px; /* Button size */
-    font-size: 1.5em; /* Icon size */
-    cursor: pointer; /* Pointer cursor on hover */
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-  }
-  
-  .go-top-btn:hover {
-    transform: translateY(-5px); /* Moves button up on hover */
-  }
-  
   /* Hover Animation for Links */
   .transparency a,
   .sources-section a {
@@ -2767,4 +2777,10 @@
     cursor: pointer; /* Changes the cursor to pointer on hover */
     transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
   }
-  
+  .subheading {
+    font-size: 24px; /* Adjust to match desired size */
+    font-weight: 600;
+    text-align: center;
+    color: #6a0dad; /* Replace with your preferred shade of purple */
+    margin-bottom: 15px;
+  }

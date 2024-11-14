@@ -1,3 +1,9 @@
+/* 
+  The Footer component includes two main sections: 
+  1. A logo and copyright notice for the "Bill Summary" project.
+  2. A list of social media icons (Facebook, Twitter, LinkedIn, GitHub) that link to the corresponding platforms.
+  Each link opens in a new tab without affecting the current page (using target="_blank").
+*/
 import React from "react";
 
 function Footer() {
@@ -7,7 +13,7 @@ function Footer() {
         {/* Left: Google Logo and Text */}
         <div className="footer-left">
           <div className="google-logo">
-            <img src="./images/google-icon.png" alt="Google Icon" />
+            <img src="./images/google.png" alt="Google Icon" />
             <span>powered by Google technology</span>
           </div>
         </div>
