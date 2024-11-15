@@ -332,48 +332,6 @@
     font-size: 18px; /* Sets the font size */
   }
   
-  /* Styles the overlay for text popups similar to image popups */
-  .text-popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    display: flex; /* Uses flexbox for centering */
-    align-items: center; /* Centers content vertically */
-    justify-content: center; /* Centers content horizontally */
-    z-index: 1000; /* Ensures the overlay is on top */
-  }
-  
-  /* Styles the content area of text popups with white background,
-       specific font, padding, rounded corners, max width, and centered text */
-  .text-popup-content {
-    background-color: white; /* Sets a white background */
-    font-family: "Poppins", sans-serif; /* Sets the font family */
-    padding: 20px; /* Adds padding around the content */
-    border-radius: 8px; /* Rounds the corners */
-    max-width: 80%; /* Limits the maximum width */
-    text-align: center; /* Centers the text */
-  }
-  
-  /* Styles the close button for text popups with background color,
-       white text, no border, rounded corners, padding, pointer cursor,
-       and transition effects */
-  .text-close-popup {
-    background-color: #d9534f; /* Sets the background color */
-    color: white; /* Sets the text color to white */
-    border: none; /* Removes the border */
-    border-radius: 5px; /* Rounds the corners */
-    padding: 5px 10px; /* Adds padding inside the button */
-    cursor: pointer; /* Changes cursor to pointer */
-  }
-  
-  /* Changes background color of text close button on hover */
-  .text-close-popup:hover {
-    background-color: #c9302c; /* Darkens the background on hover */
-  }
-  
   /* Upload Popup Styles */
   
   /* Styles the popup overlay with fixed positioning,
@@ -399,8 +357,8 @@
     background: white; /* Sets a white background */
     padding: 20px; /* Adds padding around the content */
     border-radius: 10px; /* Rounds the corners */
-    width: 880px; /* Sets a fixed width */
-    height: 600px; /* Sets a fixed height */
+    width: 980px; /* Sets a fixed width */
+    height: 800px; /* Sets a fixed height */
     position: relative; /* Positions elements relative to the popup */
     box-sizing: border-box; /* Includes padding in width and height */
   }
@@ -429,18 +387,19 @@
        and applies a transform transition */
   .upload-container {
     text-align: center; /* Centers the content inside the upload container */
-    margin: 40px auto; /* Centers the container and adds space around it */
-    padding: 50px; /* Adds padding around the container */
-    width: 500px; /* Sets a fixed width */
+    //margin: 40px auto; /* Centers the container and adds space around it */
+    //padding: 50px; /* Adds padding around the container */
+    //width: 800px; /* Sets a fixed width */
     border-radius: 12px; /* Rounds the corners */
-    background-color: #ffffff; /* Sets a white background */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-    transition: transform 0.3s ease; /* Adds a smooth hover effect */
+    height: 700px;
+    //background-color: #ffffff; /* Sets a white background */
+    //box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    //transition: transform 0.3s ease; /* Adds a smooth hover effect */
   }
   
   /* Slightly enlarges the upload container on hover */
   .upload-container:hover {
-    transform: scale(1.05); /* Slightly enlarges the container when hovered */
+    //transform: scale(1.05); /* Slightly enlarges the container when hovered */
   }
   
   /* Upload Dropzone */
@@ -515,8 +474,8 @@
        pointer cursor, transition effects, and box shadow */
   .upload-btn {
     margin: 15px 10px; /* Adds margin around the button */
-    padding: 10px 20px; /* Adds padding inside the button */
-    background-color: #082c6c; /* Sets the background color */
+    padding: 15px 50px; /* Adds padding inside the button */
+    background-color: #B31942; /* Sets the background color */
     color: white; /* Makes the button text white */
     border: none; /* Removes the border */
     border-radius: 40px; /* Rounds the button's corners */
@@ -529,26 +488,26 @@
   
   /* Changes background color and lifts the button on hover */
   .upload-btn:hover {
-    background-color: #061d48; /* Changes the background color on hover */
+    background-color: #e64d75; /* Changes the background color on hover */
     transform: translateY(-3px); /* Lifts the button on hover */
   }
 
   /* Text Input */
 .text-input {
   margin-top: 20px;
-  width: 750px; /* Match the width of the upload box */
-  margin-left: -120px;
+  width: 1500px; /* Match the width of the upload box */
+  margin-left: -280px;
 }
 
 /* Text Box */
 .text-box {
   width: 100%; /* Ensure it matches the width of its container */
-  height: 200px; /* Set a fixed height */
-  border: 2px dashed #082c6c; /* Matching border style */
-  border-radius: 12px; /* Rounded corners */
-  padding: 15px; /* Add padding inside */
+  height: 400px; /* Set a fixed height */
+  //border: 2px dashed #082c6c; /* Matching border style */
+  //border-radius: 12px; /* Rounded corners */
+  //padding: 15px; /* Add padding inside */
   resize: none; /* Disable resize to prevent stretching */
-  overflow-y: scroll; /* Vertical scrollbar for overflow */
+  overflow-y: auto; /* Vertical scrollbar for overflow */
   font-size: 16px; /* Font size */
   line-height: 1.5; /* Line height for readability */
 }
@@ -665,8 +624,8 @@
     text-align: left; /* Centers the text */
     font-size: 16px; /* Sets the font size */
     position: relative; /* Positions the box relative to other elements */
-    width: 820px; /* Ensures it scales on smaller screens */
-    height: 400px; /* Sets a fixed height */
+    width: 920px; /* Ensures it scales on smaller screens */
+    height: 620px; /* Sets a fixed height */
     overflow-y: auto; /* Enables vertical scrolling */
     border: 1px solid #ccc; /* Adds a border */
     padding: 10px; /* Adds padding */
@@ -716,7 +675,7 @@
   .do-it-again-btn,
   .pause-play-btn {
     padding: 5px 10px;
-    width: 280px;
+    width: 320px;
     background-color: #6c9dc6;
     color: white;
     border: none;
