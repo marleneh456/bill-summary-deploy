@@ -32,6 +32,11 @@ function AboutPage() {
             <p>AI for Summarization</p>
           </div>
           <div className="tech-card">
+            <img src="./bill-summary-deploy/images/python.png" alt="Python" className="tech-icon" />
+            <h5>Python</h5>
+            <p>Backend Development</p>
+          </div>
+          <div className="tech-card">
             <img src="./bill-summary-deploy/images/react.png" alt="React" className="tech-icon" />
             <h5>React</h5>
             <p>Frontend Development</p>
@@ -39,11 +44,6 @@ function AboutPage() {
           <div className="tech-card">
             <img src="./bill-summary-deploy/images/flask.jpg" alt="Flask" className="tech-icon" />
             <h5>Flask</h5>
-            <p>Backend Development</p>
-          </div>
-          <div className="tech-card">
-            <img src="./bill-summary-deploy/images/python.png" alt="Python" className="tech-icon" />
-            <h5>Python</h5>
             <p>Backend Development</p>
           </div>
           <div className="tech-card">
