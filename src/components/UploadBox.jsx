@@ -57,11 +57,12 @@ function UploadBox({ onGenerateSummary }) {
       <div className="text-input">
         <h3>Or Enter Text to Summarize</h3>
         <textarea
-          placeholder="Enter text here..."
-          value={text}
-          onChange={(e) => setText(e.target.value)} // Updates text state on input
-          className="text-box"
-        />
+    placeholder="Enter text here..."
+    value={text}
+    onChange={(e) => setText(e.target.value)}
+    className="text-box"
+/>
+
       </div>
 
       {/* Always show the "Generate Summary" button, but only enable it when a file is selected */}
