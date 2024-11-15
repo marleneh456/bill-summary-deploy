@@ -93,77 +93,30 @@ function App() {
                   Our AI directly summarizes official US government bills to inform you, instead of confusing you.
                 </p> {/* Subheading/description */}
               </div>
-
+  
               <div className="content-container"> {/* Content container */}
                 <div className="mission-section"> {/* Mission section */}
                   <div className="mission-block"> {/* Mission block */}
                     <h3>Mission Statement:</h3> {/* Mission statement heading */}
                     <p>
-                      Whatsinthebill.ai aims to provide accurate, non-partisan summaries of United States legislation; 
-                      it is a service designed so that any voter or legislator can quickly view pertinent information 
-                      from within a given bill, act, or amendment. Our team is made up of recently graduated college 
-                      students and a Marine Corps combat veteran of two foreign wars; 
-                      we all have been directly impacted by multiple federal legislations, 
-                      both positively and negatively, so this service is more than just a service. 
-                      It aims to bring important information to any voter that can access this site, that would ordinarily be difficult to obtain. ...
+                    Whatsinthebill.ai aims to provide accurate, non-partisan summaries of United States legislation; 
+                    it is a service designed so that any voter or legislator can quickly view pertinent information from within a 
+                    given bill, act, or amendment. Our team is made up of recently graduated college students and a Marine Corps 
+                    combat veteran of two foreign wars; we all have been directly impacted by multiple 
+                    federal legislations, both positively and negatively, so this service is 
+                    more than just a service. It aims to bring important information to 
+                    any voter that can access this site, that would ordinarily be difficult to obtain. 
+                    While we do have ads to support our maintenance, the service is and will continue 
+                    to be free of charge for all users: this is a passion of ours. Future expansion 
+                    will support state legislation, and potentially other countries as well. 
+                    Thank you for visiting whatsinthebill.ai. We hope this helps.
                     </p> {/* Mission statement paragraph */}
-                    <a
-                      onClick={() =>
-                        openTextPopup(
-                          "Whatsinthebill.ai aims to provide accurate, non-partisan summaries of United States legislation; it is a service designed so that any voter or legislator can quickly view pertinent information from within a given bill, act, or amendment. Our team is made up of recently graduated college students and a Marine Corps combat veteran of two foreign wars; we all have been directly impacted by multiple federal legislations, both positively and negatively, so this service is more than just a service. It aims to bring important information to any voter that can access this site, that would ordinarily be difficult to obtain. While we do have ads to support our maintenance, the service is and will continue to be free of charge for all users: this is a passion of ours. Future expansion will support state legislation, and potentially other countries as well. Thank you for visiting whatsinthebill.ai. We hope this helps."
-                        )
-                      }
-                      className="text-link"
-                    >
-                      LEARN MORE {/* Link to learn more about the mission */}
-                    </a>
                   </div>
                 </div>
-
-                <div className="recent-bills-section"> {/* Recent bills section */}
-                  <h3>Recent bills summarized by our AI</h3> {/* Heading for recent bills */}
-                  <div className="recent-bills"> {/* Container for recent bills */}
-                    <div className="bill-item"> {/* Individual bill item */}
-                      <h4>English Language Unity Act of 2023</h4> {/* Bill title */}
-                      <p>
-                      English Language Unity Act of 2023 This bill requires the Department of Homeland Security (DHS) 
-                      to issue for public notice and comment a proposed rule for uniform testing of English language ... 
-                      </p> {/* Bill description */}
-                      <a onClick={() => openTextPopup("English Language Unity Act of 2023 This bill requires the Department of Homeland Security (DHS) to issue for public notice and comment a proposed rule for uniform testing of English language ability of candidates for naturalization, based on the principles that: (1) all citizens should be able to read and understand generally the English language text of the Declaration of Independence, the Constitution, and the laws of the United States which are made in pursuance thereof; and (2) any exceptions to this standard should be limited to extraordinary circumstances, such as asylum.")} className="text-link">
-                        View Full Bill {/* Link to view the full bill */}
-                      </a>
-                    </div>
-                    <div className="bill-item"> {/* Another bill item */}
-                      <h4>Civil Rights Legacy Protection Act</h4> {/* Bill title */}
-                      <p>
-                      Civil Rights Legacy Protection Act This bill prohibits the destruction of a protected memorial or any structure, plaque, statue, or monument on public property that commemorates a civil rights event or a covered civil rights figure ...
-                      </p> {/* Bill description */}
-                      <a onClick={() => openTextPopup("Civil Rights Legacy Protection Act This bill prohibits the destruction of a protected memorial or any structure, plaque, statue, or monument on public property that commemorates a civil rights event or a covered civil rights figure. The bill requires the United States Commission on Civil Rights to develop and submit to the Attorney General a list of civil rights events and figures as follows: (1) memorializes the struggle to secure equal rights for groups suffering from discrimination on the basis of race, religion, disability, gender identity, or sexual orientation during the Civil Rights Movement and other social movements; and (2) left a positive impression and legacy on a unit of local government, a state, or the U.S.")} className="text-link">
-                        View Full Bill {/* Link to view the full bill */}
-                      </a>
-                    </div>
-                    <div className="bill-item"> {/* Another bill item */}
-                      <h4>Rail Bridge Safety and Transparency Act</h4> {/* Bill title */}
-                      <p>
-                      Rail Bridge Safety and Transparency Act This bill requires the Department of Transportation (DOT) 
-                      to issue a final rule establishing minimum structural and safety standards for movable railroad bridges 
-                      and railroad drawbridges spanning the navigable waters of the United States. 
-                      </p> {/* Bill description */}
-                      <a onClick={() => openTextPopup("Rail Bridge Safety and Transparency Act This bill requires the Department of Transportation (DOT) to issue a final rule establishing minimum structural and safety standards for movable railroad bridges and railroad drawbridges spanning the navigable waters of the United States. DOT must: (1) make available to the public a version of the database that includes for each bridge inspection report only the following information: (1) the date of last inspection of the bridge, (2) the location of such bridge, and (3) the amount of corrosion, cracking, spalling, and rusting permissible for each such condition; and (2) an estimate of the cost to perform such actions.")} className="text-link">
-                        View Full Bill {/* Link to view the full bill */}
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="model-section"> {/* Model information section */}
-                  <h4>Disclaimer</h4> {/* Heading for model section */}
-                  <p>Our model is specifically designed to summarize federal legislation. This includes, but is not limited to bills, acts, and amendments. Submitting other types of documents, including unsupported formats, may lead to unexpected or inaccurate results.</p> {/* Description of the model */}
-                </div>
-
+  
                 <div className="instructions-section"> {/* Instructions section */}
                   <h3>How to Use This Model:</h3> {/* Heading for instructions */}
-
+  
                   <div className="instruction-item"> {/* Instruction step 1 */}
                     <div className="instruction-item-one">
                       <p>
@@ -171,7 +124,7 @@ function App() {
                       </p> {/* Step 1 instruction with link */}
                     </div>
                   </div>
-
+  
                   <div className="instruction-item"> {/* Instruction steps 2-4 */}
                     <div className="instruction-item-two-to-four"> {/* Container for steps 2-4 */}
                       <div className="instruction-item"> {/* Instruction step 2 */}
@@ -184,7 +137,7 @@ function App() {
                           View Legislation Instruction {/* Link to view legislation instruction image */}
                         </a>
                       </div>
-
+  
                       <div className="instruction-item"> {/* Instruction step 3 */}
                         <p>
                         <span className="number-bold">3. </span> Once you have selected your desired legislation, click the <span className="highlight-quote">“Text”</span> tab
@@ -193,7 +146,7 @@ function App() {
                           View Text Instruction {/* Link to view text instruction image */}
                         </a>
                       </div>
-
+  
                       <div className="instruction-item"> {/* Instruction step 4 */}
                         <p>
                         <span className="number-bold"> 4. </span> If not already selected, click on the XML option, right-click on the document, and select
@@ -209,9 +162,9 @@ function App() {
                       </div>
                     </div>
                   </div>
-
+  
                   <hr className="instruction-separator" /> {/* Separator line */}
-
+  
                   <div className="instruction-item"> {/* Instruction step 5 */}
                     <div className="instruction-item-five">
                       <p>
@@ -220,6 +173,63 @@ function App() {
                       <button className="try-it-btn" onClick={toggleUploadPopup}>
                         Try It Yourself! {/* Button to open the upload popup */}
                       </button>
+                    </div>
+                  </div>
+                </div>
+  
+                <div className="model-section"> {/* Model information section */}
+                  <h4>Disclaimer</h4> {/* Heading for model section */}
+                  <p>Our model is specifically designed to summarize federal legislation. This includes, but is not limited to bills, acts, and amendments. Submitting other types of documents, including unsupported formats, may lead to unexpected or inaccurate results.</p> {/* Description of the model */}
+                </div>
+  
+                <div className="recent-bills-section"> {/* Recent bills section */}
+                  <h3>Recent bills summarized by our AI</h3> {/* Heading for recent bills */}
+                  <hr className="Recent-bills-line" /> {/* Separator line */}
+                  <div className="recent-bills"> {/* Container for recent bills */}
+                    <div className="bill-item"> {/* Individual bill item */}
+                      <h4>English Language Unity Act of 2023</h4> {/* Bill title */}
+                      <p>
+                      English Language Unity Act of 2023 This bill requires the Department of Homeland Security (DHS) to issue for
+                      public notice and comment a proposed rule for uniform testing of English language ability of candidates for 
+                      naturalization, based on the principles that: (1) all citizens should be able to read and understand generally the 
+                      English language text of the Declaration of Independence, the Constitution, and the laws of the United States 
+                      which are made in pursuance thereof; and (2) any exceptions to this standard should be limited to extraordinary 
+                      circumstances, such as asylum.
+  
+                      </p> {/* Bill description */}
+  
+                      <a href="https://www.congress.gov/bill/118th-congress/house-bill/997/text" target="_blank" className="bill-link">
+                      View Full Bill
+                      </a>
+                    </div>
+                    <div className="bill-item"> {/* Another bill item */}
+                      <h4>Civil Rights Legacy Protection Act</h4> {/* Bill title */}
+                      <p>
+                      Civil Rights Legacy Protection Act This bill prohibits the destruction of a protected memorial or any structure, 
+                      plaque, statue, or monument on public property that commemorates a civil rights event or a covered civil rights 
+                      figure. The bill requires the United States Commission on Civil Rights to develop and submit to the Attorney 
+                      General a list of civil rights events and figures as follows: (1) memorializes the struggle to secure equal rights 
+                      for groups suffering from discrimination on the basis of race, religion, disability, gender identity, or sexual 
+                      orientation during the Civil Rights Movement and other social movements; and (2) left a positive impression
+                      and legacy on a unit of local government, a state, or the U.S.
+                      </p> {/* Bill description */}
+                      <a href="https://www.congress.gov/bill/118th-congress/house-bill/999/text" target="_blank" className="bill-link">
+                      View Full Bill
+                      </a>
+                    </div>
+                    <div className="bill-item"> {/* Another bill item */}
+                      <h4>Rail Bridge Safety and Transparency Act</h4> {/* Bill title */}
+                      <p>
+                      Rail Bridge Safety and Transparency Act This bill requires the Department of Transportation (DOT) to issue a 
+                      final rule establishing minimum structural and safety standards for movable railroad bridges and railroad 
+                      drawbridges spanning the navigable waters of the United States. DOT must: (1) make available to the public a 
+                      version of the database that includes for each bridge inspection report only the following information: (1) the 
+                      date of last inspection of the bridge, (2) the location of such bridge, and (3) the amount of corrosion, cracking, 
+                      spalling, and rusting permissible for each such condition; and (2) an estimate of the cost to perform such actions.
+                      </p> {/* Bill description */}
+                      <a href="https://www.congress.gov/bill/118th-congress/house-bill/9998/text" target="_blank" className="bill-link">
+                      View Full Bill
+                      </a>
                     </div>
                   </div>
                 </div>

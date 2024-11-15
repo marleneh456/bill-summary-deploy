@@ -124,6 +124,26 @@
     transform: scale(1.02);
   }
   
+  .mission-block h3{
+    color: #0A3161;
+  }
+
+  /* Styles the heading inside bill items */
+  .recent-bills-section h3 {
+    text-align: center;
+    color: #0A3161; 
+  }
+
+    /* Styles a separator line with margin and border */
+    .Recent-bills-line {
+      margin: 20px auto; /* Centers the separator with vertical margin */
+      margin-top: 2px; /* Adds additional top margin */
+      width: 32%; /* Sets the width of the separator */
+      border: none; /* Removes any existing border */
+      border-top: 2px solid #B31942; /* Adds a top border */
+      margin-bottom: 45px;
+    }
+
   /* Styles the recent bills section as a flex container with gap */
   .recent-bills {
     display: flex; /* Flexbox layout */
@@ -131,6 +151,7 @@
     gap: 20px; /* Adds space between items */ 
   }
   
+    
   /* Styles individual bill items with border, padding, margin, and transform transition */
   .bill-item {
 
@@ -147,14 +168,14 @@
   .bill-item:hover {
     transform: scale(1.02);
   }
-  
+
   /* Styles the heading inside bill items */
   .bill-item h4 {
     margin-bottom: 5px; /* Adds space below the heading */
   }
   
   /* Styles text links with blue color, pointer cursor, and underline */
-  .text-link {
+  .bill-link {
     color: blue;
     cursor: pointer;
     text-decoration: underline;
@@ -176,6 +197,10 @@
   .model-section:hover {
     transform: scale(1.02);
   }
+
+  .model-section h4 {
+    color: #0A3161; 
+  }
   
   /* Instructions Section */
   
@@ -189,6 +214,7 @@
         box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Adds a shadow */
         position: relative;
         border-radius: 10px; /* Add smooth corners */
+        margin-bottom: 70px;
       }
 
       .instructions-section:hover {
@@ -210,9 +236,9 @@
   .instruction-separator {
     margin: 20px auto; /* Centers the separator with vertical margin */
     margin-top: 90px; /* Adds additional top margin */
-    width: 80%; /* Sets the width of the separator */
+    width: 100%; /* Sets the width of the separator */
     border: none; /* Removes any existing border */
-    border-top: 1px solid #000066; /* Adds a top border */
+    border-top: 2px solid #000066; /* Adds a top border */
   }
   
   .number-bold{
@@ -239,10 +265,10 @@
   /* Styles the "Try It" button with padding, font size, margin, background color,
        text color, no border, rounded corners, cursor pointer, and transition effects */
   .try-it-btn {
-    padding: 20px 15px; /* Adds padding inside the button */
+    padding: 15px 50px; /* Adds padding inside the button */
     font-size: 16px; /* Sets the font size */
     margin-bottom: 10px; /* Adds space below the button */
-    background-color: #4a5c79; /* Sets the background color */
+    background-color: #B31942; /* Sets the background color */
     color: white; /* Sets the text color to white */
     border: none; /* Removes the border */
     border-radius: 5px; /* Rounds the corners */
@@ -252,7 +278,7 @@
   
   /* Changes background color and slightly enlarges the button on hover */
   .try-it-btn:hover {
-    background-color: #061d48; /* Changes background color on hover */
+    background-color: #e64d75; /* Changes background color on hover */
     transform: scale(1.05); /* Slightly enlarges the button */
   }
   
@@ -695,7 +721,7 @@
     padding: 5px 0; /* Adds padding inside the footer */
     text-align: center; /* Centers the text */
     color: white; /* Sets the text color */
-    font-size: 12px; /* Sets the font size */
+    font-size: 14px; /* Sets the font size */
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Sets the font */
     position: absolute; /* Positions the footer at the bottom */
     bottom: 0; /* Aligns the footer to the bottom */
@@ -772,118 +798,148 @@
     text-align: center;
   }
   
-  /* Contact Page General Styles */
+/* Contact Page General Styles */
   
   /* Styles the contact page with padding, background color, centered text,
        box shadow, rounded corners, max width, and centered alignment */
-  .contact-page {
-    padding: 20px; /* Adds padding */
-    background-color: #f9fafb; /* Light background */
-    text-align: center; /* Centers the text */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-    border-radius: 20px; /* Rounds the corners */
-    max-width: 900px; /* Sets a max width */
-    margin: 8px auto; /* Centers the page */
-  }
-  
-  /* Styles the main heading of the contact page with font size, color, and bottom margin */
-  .contact-page h1 {
-    font-size: 32px; /* Sets the font size */
-    color: #082c6c; /* Text color */
-    margin-bottom: 15px; /* Adds margin below the heading */
-  }
-  
-  /* Styles the paragraph text in the contact page with font size, color, and bottom margin */
-  .contact-page p {
-    font-size: 14px; /* Sets the font size */
-    color: #555; /* Text color */
-    margin-bottom: 20px; /* Adds margin below the text */
-  }
-  
-  /* Contact Form */
-  
-  /* Styles the contact form container with flex layout, space between,
-       wrapping on smaller screens, gaps, max width, centered alignment,
-       white background, padding, box shadow, rounded corners,
-       and transition effects */
-  .contact-form-container {
-    display: flex; /* Flexbox layout */
-    justify-content: space-between; /* Space between form and address */
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-    gap: 10px; /* Adds space between elements */
-    max-width: 700px; /* Sets a max width */
-    margin: 0 auto; /* Centers the form */
-    background-color: #ffffff; /* White background */
-    padding: 5px; /* Adds padding */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Adds a shadow */
-    border-radius: 12px; /* Rounds the corners */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
-  }
-  
-  /* Allows the contact form to expand within the container */
-  .contact-form {
-    flex: 1; /* Allows the form to expand */
-    min-width: 200px; /* Sets a minimum width */
-  }
-  
-  /* Styles the labels within the contact form with specific font size */
-  .contact-form label {
-    font-size: 13px; /* Sets the font size */
-  }
-  
-  /* Styles input and textarea elements within the contact form with full width,
-       padding, bottom margin, border, and rounded corners */
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%; /* Full width inputs */
-    padding: 6px; /* Adds padding */
-    margin-bottom: 8px; /* Adds margin below inputs */
-    border: 1px solid #ddd; /* Adds a border */
-    border-radius: 5px; /* Rounds the corners */
-  }
-  
-  /* Styles the submit button within the contact form with padding,
-       background color, white text, no border, rounded corners,
-       pointer cursor, and transition effects */
-  .contact-form button {
-    padding: 8px 16px; /* Adds padding */
-    background-color: #082c6c; /* Sets the background color */
-    color: white; /* Makes the text white */
-    border: none; /* Removes the border */
-    border-radius: 30px; /* Rounds the corners */
-    cursor: pointer; /* Changes the cursor on hover */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-  }
-  
-  /* Changes the button's background color, lifts it, and adds a deeper shadow on hover */
-  .contact-form button:hover {
-    background-color: #061d48; /* Changes the background color on hover */
-    transform: translateY(-5px); /* Lifts the button on hover */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds a deeper shadow */
-  }
-  
-  /* Contact Info Section */
-  
-  /* Styles the contact info section to expand within the container
-       and sets a minimum width */
-  .contact-info {
-    flex: 1; /* Allows the contact info to expand */
-    min-width: 250px; /* Sets a minimum width */
-  }
-  
-  /* Styles the headings within contact info with color, font size, and bottom margin */
-  .contact-info h3 {
-    color: #082c6c; /* Sets the text color */
-    font-size: 16px; /* Sets the font size */
-    margin-bottom: 8px; /* Adds margin below the heading */
-  }
-  
-  /* Styles the paragraphs within contact info with font size, color, and bottom margin */
-  .contact-info p {
-    font-size: 14px; /* Sets the font size */
-    color: #555; /* Sets the text color */
-    margin-bottom: 15px; /* Adds margin below the text */
-  }
+       .contact-page {
+        padding: 20px; /* Adds padding */
+        background-color: #f9fafb; /* Light background */
+        text-align: center; /* Centers the text */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+        border-radius: 20px; /* Rounds the corners */
+        max-width: 900px; /* Sets a max width */
+        margin: 8px auto; /* Centers the page */
+      }
+      
+      /* Styles the main heading of the contact page with font size, color, and bottom margin */
+      .contact-page h1 {
+        font-size: 32px; /* Sets the font size */
+        color: #082c6c; /* Text color */
+        margin-bottom: 15px; /* Adds margin below the heading */
+      }
+      
+      /* Styles the paragraph text in the contact page with font size, color, and bottom margin */
+      .contact-page p {
+        font-size: 14px; /* Sets the font size */
+        color: #555; /* Text color */
+        margin-bottom: 20px; /* Adds margin below the text */
+      }
+      
+      /* Contact Form */
+      
+      /* Styles the contact form container with flex layout, space between,
+           wrapping on smaller screens, gaps, max width, centered alignment,
+           white background, padding, box shadow, rounded corners,
+           and transition effects */
+      .contact-form-container {
+        display: flex; /* Flexbox layout */
+        justify-content: space-between; /* Space between form and address */
+        flex-wrap: wrap; /* Allows wrapping on smaller screens */
+        gap: 10px; /* Adds space between elements */
+        max-width: 700px; /* Sets a max width */
+        margin: 0 auto; /* Centers the form */
+        background-color: #ffffff; /* White background */
+        padding: 5px; /* Adds padding */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Adds a shadow */
+        border-radius: 12px; /* Rounds the corners */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+      }
+      
+      /* Allows the contact form to expand within the container */
+      .contact-form {
+        flex: 1; /* Allows the form to expand */
+        min-width: 200px; /* Sets a minimum width */
+        min-height: 510px;
+      }
+      
+      /* Styles the labels within the contact form with specific font size */
+      .contact-form label {
+        font-size: 16x; /* Sets the font size */
+      }
+      
+      /* Styles input and textarea elements within the contact form with full width,
+           padding, bottom margin, border, and rounded corners */
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%; /* Full width inputs */
+        padding: 6px; /* Adds padding */
+        margin-bottom: 12px; /* Adds margin below inputs */
+        border: 1px solid #ddd; /* Adds a border */
+        border-radius: 5px; /* Rounds the corners */
+        font-size: 16x; /* Sets the font size */
+        margin-top: 15px;
+      }
+      
+    /* Styles for the upload section */
+    .contact-form input[type="file"] {
+      display: block;
+      width: 100%;
+      padding: 6px;
+      margin-top: 8px;
+      margin-bottom: 12px;
+      border: 1px dashed #ddd;
+      border-radius: 5px;
+      font-size: 14px;
+      color: #333;
+      cursor: pointer;
+    }
+    
+    .upload-instructions {
+      font-size: 12px;
+      color: #666;
+      margin-top: 10px;
+      margin-bottom: 8px;
+    }
+    
+    /* Container for file upload and clear button */
+    .file-upload-container {
+      position: relative;
+    }
+    
+    
+      /* Styles the submit button within the contact form with padding,
+           background color, white text, no border, rounded corners,
+           pointer cursor, and transition effects */
+      .contact-form button {
+        padding: 8px 16px; /* Adds padding */
+        background-color: #082c6c; /* Sets the background color */
+        color: white; /* Makes the text white */
+        border: none; /* Removes the border */
+        border-radius: 30px; /* Rounds the corners */
+        cursor: pointer; /* Changes the cursor on hover */
+        transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+      }
+      
+      /* Changes the button's background color, lifts it, and adds a deeper shadow on hover */
+      .contact-form button:hover {
+        background-color: #061d48; /* Changes the background color on hover */
+        transform: translateY(-5px); /* Lifts the button on hover */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds a deeper shadow */
+      }
+      
+      /* Contact Info Section */
+      
+      /* Styles the contact info section to expand within the container
+           and sets a minimum width */
+      .contact-info {
+        flex: 1; /* Allows the contact info to expand */
+        min-width: 250px; /* Sets a minimum width */
+      }
+      
+      /* Styles the headings within contact info with color, font size, and bottom margin */
+      .contact-info h3 {
+        color: #082c6c; /* Sets the text color */
+        font-size: 16px; /* Sets the font size */
+        margin-bottom: 8px; /* Adds margin below the heading */
+      }
+      
+      /* Styles the paragraphs within contact info with font size, color, and bottom margin */
+      .contact-info p {
+        font-size: 14px; /* Sets the font size */
+        color: #555; /* Sets the text color */
+        margin-bottom: 15px; /* Adds margin below the text */
+      }
   
   /* About Page */
   
@@ -1276,20 +1332,13 @@
       width: 90vw;
       margin-left: 40px;
     }
-  
-    /* Increases the bottom margin of the model section */
-    .model-section {
-      margin-bottom: 300px;
+    
+    .instruction-separator {
+      margin-top: 150px;
     }
-  
-    /* Adjusts the position of the instructions section */
-    .instructions-section {
-      bottom: 100px; /* Align it to the bottom */
-    }
-  
-    /* Adds additional bottom margin to the "Try It" button */
-    .try-it-btn {
-      margin-bottom: 50px;
+
+    .Recent-bills-line{
+      width: 40%;
     }
   
     /* Reduces the size of the image popup content */
@@ -1300,8 +1349,8 @@
   
     /* Adjusts the popup content size for smaller screens */
     .popup-content {
-      width: 600px;
-      height: 400px;
+      width: 800px;
+      height: 500px;
     }
   
     /* Reduces the font size of headings within popups */
@@ -1317,8 +1366,8 @@
   
     /* Adjusts the upload container size and padding for smaller screens */
     .upload-container {
-      width: 400px;
-      height: 250px;
+      width: 700px;
+      height: 350px;
       padding: 1px; /* Reduces padding */
       margin: auto; /* Centers the container */
       font-size: 12px; /* Reduces font size */
@@ -1335,7 +1384,7 @@
     .upload-dropzone {
       width: 320px; /* Limits dropzone width */
       height: 80px;
-      margin-left: 40px; /* Adds margin on the left */
+      margin-left: 180px; /* Adds margin on the left */
     }
   
     /* Adjusts the paragraph inside the dropzone */
@@ -1355,15 +1404,15 @@
   
     /* Adjusts the summary box size for smaller screens */
     .summary-box {
-      height: 250px; /* Sets the height */
-      width: 550px; /* Sets the width */
+      height: 350px; /* Sets the height */
+      width: 750px; /* Sets the width */
     }
   
     /* Adjusts the width of summary buttons for smaller screens */
     .download-btn,
     .do-it-again-btn,
     .pause-play-btn {
-      width: 210px;
+      width: 244px;
     }
   
     /* Ensures the about page takes up 90% of the width on smaller screens */
@@ -1375,6 +1424,9 @@
     .tech-card {
       width: 90%;
       margin-bottom: 20px;
+    }
+    .footer{
+      font-size: 12px;
     }
   }
   

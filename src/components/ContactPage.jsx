@@ -28,6 +28,12 @@ function ContactPage() {
           <label htmlFor="message">Message:</label>
           <textarea id="message" name="message" rows="4" required></textarea>
 
+          {/* Upload Box */}
+          <label htmlFor="file">Attachments</label>
+          <p className="upload-instructions">
+            Allowed file types: jpg, jpeg, png, xml, txt, pdf, doc, docx, and less than 25MB.
+          </p>
+          <input type="file" id="file" name="file" multiple />
           {/* Submit button to send the form */}
           <button type="submit">Send Message</button>
         </form>
