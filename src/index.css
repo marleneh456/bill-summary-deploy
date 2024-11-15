@@ -162,6 +162,7 @@
   transition: transform 0.3s, box-shadow 0.3s; /* Adds hover effects */
   width: 400px; /* Sets a fixed width */
   margin-bottom: 70px; /* Adds space below each block */
+  text-align: center;
   }
   
   /* Slightly enlarges bill items on hover */
@@ -1579,6 +1580,7 @@
     .Recent-bills-line{
       width: 48%;
     }
+
     /* Adjusts the padding of the instructions section */
     .instructions-section {
       bottom: 50px; /* Align it to the bottom */
@@ -1833,10 +1835,14 @@
       width: 85vw;
       margin-left: auto;
     }
-  
+    
+    .mission-block{
+      margin-bottom: 130px;
+    }
+
     /* Increases the bottom margin of the model section */
     .model-section {
-      margin-bottom: 300px;
+      margin-bottom: 100px;
     }
   
     .Recent-bills-line{
@@ -1845,7 +1851,7 @@
     
     /* Adjusts the padding of the instructions section */
     .instructions-section {
-      bottom: 100px; /* Align it to the bottom */
+      margin-bottom: 60px; /* Align it to the bottom */
     }
   
     /* Adds padding to instruction items */
@@ -2351,7 +2357,7 @@
          adds right margin, and sets font size */
     .content-container {
       width: 90vw;
-      margin-left: auto;
+      margin-left: 20px;
       font-size: 14px;
     }
   
