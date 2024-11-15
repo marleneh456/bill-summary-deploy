@@ -41,12 +41,8 @@ function ContactPage() {
         {/* Contact Information Section */}
         <div className="contact-info">
           {/* Displaying the address */}
-          <h3>Our Address</h3>
-          <p>1234 Street Name, City, State, 56789</p>
-
-          {/* Displaying the phone number */}
-          <h3>Phone</h3>
-          <p>(123) 456-7890</p>
+          <h3>Location</h3>
+          <p>Nashville, TN</p>
 
           {/* Displaying the email address */}
           <h3>Email</h3>
