@@ -1564,18 +1564,24 @@
     /* Adjusts the content container to use 80% of viewport width
          and centers it */
     .content-container {
-      width: 80vw;
+      width: 85vw;
       margin-left: auto;
     }
   
+    .mission-block{
+      margin-bottom: 150px;
+    }
     /* Increases the bottom margin of the model section */
     .model-section {
-      margin-bottom: 300px;
+      margin-bottom: 100px;
     }
   
+    .Recent-bills-line{
+      width: 48%;
+    }
     /* Adjusts the padding of the instructions section */
     .instructions-section {
-      bottom: 100px; /* Align it to the bottom */
+      bottom: 50px; /* Align it to the bottom */
     }
   
     /* Adds padding to instruction items */
@@ -1824,7 +1830,7 @@
     /* Adjusts the content container to use 80% of viewport width
          and centers it */
     .content-container {
-      width: 80vw;
+      width: 85vw;
       margin-left: auto;
     }
   
@@ -1833,6 +1839,10 @@
       margin-bottom: 300px;
     }
   
+    .Recent-bills-line{
+      width: 48%;
+    }
+    
     /* Adjusts the padding of the instructions section */
     .instructions-section {
       bottom: 100px; /* Align it to the bottom */
