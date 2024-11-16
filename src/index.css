@@ -2087,6 +2087,10 @@
       margin-left: auto;
       font-size: 10px;
     }
+
+    .mission-block{
+      font-size: 10px;
+    }
   
     /* Increases the bottom margin of the model section */
     .model-section {
@@ -2100,17 +2104,17 @@
   
     /* Sets the font size of paragraphs in specific instruction items */
     .instruction-item-one p {
-      //font-size: 14px;
+      font-size: 10px;
     }
   
     /* Sets the font size of paragraphs in specific instruction items */
     .instruction-item-two-to-four p {
-      //font-size: 14px;
+      font-size: 10px;
     }
   
     /* Sets the font size of paragraphs in specific instruction items */
     .instruction-item-five p {
-      //font-size: 14px;
+      font-size: 10px;
     }
 
     .try-it-btn {
