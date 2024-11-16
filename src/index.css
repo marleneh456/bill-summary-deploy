@@ -2090,7 +2090,7 @@
   
     /* Increases the bottom margin of the model section */
     .model-section {
-      //margin-bottom: 380px;
+      font-size: 10px;
     }
   
     /* Adjusts padding of instruction items */
@@ -2100,17 +2100,17 @@
   
     /* Sets the font size of paragraphs in specific instruction items */
     .instruction-item-one p {
-      font-size: 14px;
+      //font-size: 14px;
     }
   
     /* Sets the font size of paragraphs in specific instruction items */
     .instruction-item-two-to-four p {
-      font-size: 14px;
+      //font-size: 14px;
     }
   
     /* Sets the font size of paragraphs in specific instruction items */
     .instruction-item-five p {
-      font-size: 14px;
+      //font-size: 14px;
     }
 
     .try-it-btn {
@@ -2201,6 +2201,7 @@
     .summary-box {
       height: 170px; /* Sets the height */
       width: 560px; /* Sets the width */
+      font-size: 10px;
     }
   
     /* Adjusts the width of summary buttons for smaller screens */
