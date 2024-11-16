@@ -43,26 +43,21 @@ function ContactPage() {
 
       <div className="contact-form-container">
         <form className="contact-form">
-          <label htmlFor="name">
+          <label htmlFor="fname">
             First Name <span className="required">*</span>
           </label>
-          <input type="text" id="name" name="name" required />
+          <input type="text" id="fname" name="firstname" placeholder="Frist Name" required />
 
-          <label htmlFor="name">
+          <label htmlFor="lname">
             Last Name <span className="required">*</span>
           </label>
-          <input type="text" id="name" name="name" required />
+          <input type="text" id="lname" name="lastname" placeholder="Last Name" required />
 
           <label htmlFor="email">
             Email <span className="required">*</span>
           </label>
-          <input type="email" id="email" name="email" required />
-
-          <label htmlFor="message">
-            Message <span className="required">*</span>
-          </label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-
+          <input type="email" id="email" name="email" placeholder="name@example.com" required />
+          
           <label>Attachments</label>
           <p className="upload-instructions">
             Allowed file types: jpg, jpeg, png, xml,
@@ -110,6 +105,11 @@ function ContactPage() {
               ))}
             </ul>
           )}
+
+          <label htmlFor="message">
+            Message <span className="required">*</span>
+          </label>
+          <textarea id="message" name="message" rows="4" placeholder="Leave us a message..." required></textarea>
 
           <button type="submit" className="send-button">
             Send Message
