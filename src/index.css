@@ -2113,7 +2113,7 @@
     }
   
     .instruction-separator{
-      margin-top: 30px;
+      margin-top: 20px;
     }
     /* Sets the font size of paragraphs in specific instruction items */
     .instruction-item-five p {
@@ -2166,6 +2166,7 @@
       font-size: 10px; /* Reduces button font size */
       margin: 18px; /* Adds margin around the button */
       padding: 10px 20px; /* Adds padding inside the button */
+      margin-right: 30px;
     }
   
     /* Adjusts the upload dropzone size and margin for smaller screens */
