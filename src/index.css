@@ -2112,6 +2112,9 @@
       font-size: 10px;
     }
   
+    .instruction-separator{
+      margin-top: 30px;
+    }
     /* Sets the font size of paragraphs in specific instruction items */
     .instruction-item-five p {
       font-size: 10px;
