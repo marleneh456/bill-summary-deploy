@@ -794,6 +794,7 @@
         border-radius: 20px; /* Rounds the corners */
         max-width: 900px; /* Sets a max width */
         margin: 8px auto; /* Centers the page */
+        margin-bottom: 180px;
       }
       
       /* Styles the main heading of the contact page with font size, color, and bottom margin */
@@ -1334,7 +1335,7 @@
     /* Adjusts the popup content size for smaller screens */
     .popup-content {
       width: 800px;
-      height: 500px;
+      height: 750px;
     }
   
     /* Reduces the font size of headings within popups */
@@ -1350,25 +1351,25 @@
   
     /* Adjusts the upload container size and padding for smaller screens */
     .upload-container {
-      width: 700px;
-      height: 350px;
-      padding: 1px; /* Reduces padding */
-      margin: auto; /* Centers the container */
-      font-size: 12px; /* Reduces font size */
+      //width: 800px;
+      //height: 850px;
+      //padding: 1px; /* Reduces padding */
+      //margin: auto; /* Centers the container */
+      //font-size: 12px; /* Reduces font size */
     }
   
     /* Adjusts the upload button size and padding for smaller screens */
     .upload-btn {
-      font-size: 14px; /* Reduces button font size */
-      margin: 18px; /* Adds margin around the button */
-      padding: 10px 20px; /* Adds padding inside the button */
+      //font-size: 14px; /* Reduces button font size */
+      //margin: 18px; /* Adds margin around the button */
+      //padding: 10px 20px; /* Adds padding inside the button */
     }
   
     /* Adjusts the upload dropzone size and margin for smaller screens */
     .upload-dropzone {
-      width: 320px; /* Limits dropzone width */
-      height: 80px;
-      margin-left: 180px; /* Adds margin on the left */
+      //width: 320px; /* Limits dropzone width */
+      //height: 80px;
+      //margin-left: 180px; /* Adds margin on the left */
     }
   
     /* Adjusts the paragraph inside the dropzone */
@@ -1385,10 +1386,18 @@
     .file-selected .remove-btn {
       font-size: 16px; /* Sets the font size */
     }
+
+     /* Text Input */
+.text-input {
+  margin-top: 20px;
+  width: 1270px; /* Match the width of the upload box */
+  margin-left: -257px;
+}
+
   
     /* Adjusts the summary box size for smaller screens */
     .summary-box {
-      height: 350px; /* Sets the height */
+      height: 600px; /* Sets the height */
       width: 750px; /* Sets the width */
     }
   
@@ -1552,16 +1561,10 @@
       margin-left: auto;
     }
   
-    /* Increases the bottom margin of the model section */
-    .model-section {
-      margin-bottom: 300px;
+    .Recent-bills-line {
+      width: 48%; /* Sets the width of the separator */
     }
-  
-    /* Adjusts the padding of the instructions section */
-    .instructions-section {
-      bottom: 100px; /* Align it to the bottom */
-    }
-  
+
     /* Adds padding to instruction items */
     .instruction-item {
       padding: 5px;
@@ -1597,7 +1600,7 @@
     /* Adjusts the popup content size for smaller screens */
     .popup-content {
       width: 700px;
-      height: 400px; /* Limits the height */
+      height: 780px; /* Limits the height */
     }
   
     /* Reduces the font size of headings within popups */
@@ -1613,8 +1616,8 @@
   
     /* Adjusts the upload container size and padding for smaller screens */
     .upload-container {
-      width: 400px;
-      height: 250px;
+      width: 700px;
+      height: 750px;
       padding: 1px; /* Reduces padding */
       margin: auto; /* Centers the container */
       font-size: 12px; /* Reduces font size */
@@ -1629,9 +1632,9 @@
   
     /* Adjusts the upload dropzone size and margin for smaller screens */
     .upload-dropzone {
-      width: 320px; /* Limits dropzone width */
+      width: 630px; /* Limits dropzone width */
       height: 80px;
-      margin-left: 40px; /* Adds margin on the left */
+      margin-left: 20px; /* Adds margin on the left */
     }
   
     /* Adjusts the paragraph inside the dropzone */
@@ -1648,10 +1651,23 @@
     .file-selected .remove-btn {
       font-size: 16px; /* Sets the font size */
     }
+
+     /* Text Input */
+.text-input {
+  width: 1050px; /* Match the width of the upload box */
+  margin-left: -190px;
+}
+
+/* Text Box */
+.text-box {
+  width: 100%; /* Ensure it matches the width of its container */
+  height: 450px; /* Set a fixed height */
+}
+
   
     /* Adjusts the summary box size for smaller screens */
     .summary-box {
-      height: 250px; /* Sets the height */
+      height: 630px; /* Sets the height */
       width: 650px; /* Sets the width */
     }
   
@@ -1808,23 +1824,8 @@
     /* Adjusts the content container to use 80% of viewport width
          and centers it */
     .content-container {
-      width: 80vw;
+      width: 85vw;
       margin-left: auto;
-    }
-  
-    /* Increases the bottom margin of the model section */
-    .model-section {
-      margin-bottom: 300px;
-    }
-  
-    /* Adjusts the padding of the instructions section */
-    .instructions-section {
-      bottom: 100px; /* Align it to the bottom */
-    }
-  
-    /* Adds padding to instruction items */
-    .instruction-item {
-      padding: 5px;
     }
   
     /* Sets the font size of paragraphs in specific instruction items */
@@ -1857,7 +1858,7 @@
     /* Adjusts the popup content size for smaller screens */
     .popup-content {
       width: 700px;
-      height: 400px; /* Limits the height */
+      height: 800px; /* Limits the height */
     }
   
     /* Reduces the font size of headings within popups */
@@ -1873,25 +1874,23 @@
   
     /* Adjusts the upload container size and padding for smaller screens */
     .upload-container {
-      width: 400px;
-      height: 250px;
-      padding: 1px; /* Reduces padding */
-      margin: auto; /* Centers the container */
-      font-size: 12px; /* Reduces font size */
+     width: 680px;
+      height: 700px;
+      padding: 10px; /* Reduces padding */
+      //margin: auto; /* Centers the container */
+      //font-size: 9px; /* Reduces font size */
     }
   
     /* Adjusts the upload button size and padding for smaller screens */
     .upload-btn {
-      font-size: 14px; /* Reduces button font size */
-      margin: 18px; /* Adds margin around the button */
-      padding: 10px 20px; /* Adds padding inside the button */
+      font-size: 15px; /* Reduces button font size */
+      padding: 10px 50px; /* Adds padding inside the button */
     }
   
     /* Adjusts the upload dropzone size and margin for smaller screens */
     .upload-dropzone {
-      width: 320px; /* Limits dropzone width */
-      height: 80px;
-      margin-left: 40px; /* Adds margin on the left */
+      width: 640px; 
+      margin-left: 2px; /* Adds margin on the left */
     }
   
     /* Adjusts the paragraph inside the dropzone */
@@ -1908,10 +1907,26 @@
     .file-selected .remove-btn {
       font-size: 16px; /* Sets the font size */
     }
+
+     /* Text Input */
+.text-input {
+  margin-top: 20px;
+  width: 1060px; /* Match the width of the upload box */
+  margin-left: -210px;
+}
+
+/* Text Box */
+.text-box {
+  width: 100%; /* Ensure it matches the width of its container */
+  height: 450px; /* Set a fixed height */
+  font-size: 14px; /* Font size */
+  line-height: 1.5; /* Line height for readability */
+}
+
   
     /* Adjusts the summary box size for smaller screens */
     .summary-box {
-      height: 250px; /* Sets the height */
+      height: 650px; /* Sets the height */
       width: 650px; /* Sets the width */
     }
   
@@ -2068,14 +2083,14 @@
     /* Adjusts the content container to use 90% of viewport width,
          adds right margin, and reduces font size */
     .content-container {
-      width: 90vw;
-      margin-right: auto;
+      width: 80vw;
+      margin-left: auto;
       font-size: 10px;
     }
   
     /* Increases the bottom margin of the model section */
     .model-section {
-      margin-bottom: 380px;
+      //margin-bottom: 380px;
     }
   
     /* Adjusts padding of instruction items */
@@ -2097,6 +2112,11 @@
     .instruction-item-five p {
       font-size: 14px;
     }
+
+    .try-it-btn {
+      font-size: 12px;
+      padding: 10px 20px;
+      }
   
     /* Reduces the size of image popup content */
     .image-popup-content {
@@ -2112,13 +2132,13 @@
   
     /* Adjusts the popup content size for smaller screens */
     .popup-content {
-      width: 700px;
-      height: 400px; /* Limits the height */
+      width: 600px;
+      height: 300px; /* Limits the height */
     }
   
     /* Reduces the font size of headings within popups */
     .popup-content h3 {
-      font-size: 16px;
+      font-size: 10px;
     }
   
     /* Adjusts the close button position and size within popups */
@@ -2129,46 +2149,58 @@
   
     /* Adjusts the upload container size and padding for smaller screens */
     .upload-container {
-      width: 400px;
-      height: 250px;
+      width: 600px;
+      height: 260px;
       padding: 1px; /* Reduces padding */
-      margin: auto; /* Centers the container */
-      font-size: 12px; /* Reduces font size */
     }
   
     /* Adjusts the upload button size and padding for smaller screens */
     .upload-btn {
-      font-size: 14px; /* Reduces button font size */
+      font-size: 10px; /* Reduces button font size */
       margin: 18px; /* Adds margin around the button */
       padding: 10px 20px; /* Adds padding inside the button */
     }
   
     /* Adjusts the upload dropzone size and margin for smaller screens */
     .upload-dropzone {
-      width: 320px; /* Limits dropzone width */
-      height: 80px;
+      width: 500px; /* Limits dropzone width */
+      height: 60px;
       margin-left: 40px; /* Adds margin on the left */
     }
   
     /* Adjusts the paragraph inside the dropzone */
     .upload-dropzone p {
-      font-size: 16px; /* Reduces text size */
+      font-size: 12px; /* Reduces text size */
     }
   
     /* Adjusts the font size of selected files display */
     .file-selected {
-      font-size: 16px; /* Sets the font size */
+      font-size: 10px; /* Sets the font size */
     }
   
     /* Adjusts the font size of the remove button */
     .file-selected .remove-btn {
-      font-size: 16px; /* Sets the font size */
+      font-size: 12px; /* Sets the font size */
     }
+
+     /* Text Input */
+.text-input {
+  margin-top: 8px;
+  width: 840px; /* Match the width of the upload box */
+  margin-left: -130px;
+}
+
+/* Text Box */
+.text-box {
+  height: 50px; /* Set a fixed height */
+  font-size: 10px; /* Font size */
+}
+
   
     /* Adjusts the summary box size for smaller screens */
     .summary-box {
-      height: 250px; /* Sets the height */
-      width: 650px; /* Sets the width */
+      height: 170px; /* Sets the height */
+      width: 560px; /* Sets the width */
     }
   
     /* Adjusts the width of summary buttons for smaller screens */
@@ -2176,7 +2208,14 @@
     .do-it-again-btn,
     .pause-play-btn {
       width: 210px;
+      font-size: 10px;
     }
+
+    .button-icon {
+      width: 22px; /* Sets the icon width */
+      height: 22px; /* Maintains aspect ratio */
+    }
+  
   
     /* Ensures the about page takes up 90% of the width on smaller screens */
     .about-page {
@@ -2187,6 +2226,10 @@
     .tech-card {
       width: 90%;
       margin-bottom: 20px;
+    }
+
+    .contact-page{
+      font-size: 12px;
     }
   }
   
@@ -2368,6 +2411,10 @@
     .instruction-separator {
       margin-top: 85px;
     }
+
+    .try-it-btn {
+      font-size: 10px;
+      }
   
     /* Reduces the size of image popup content */
     .image-popup-content {
@@ -2820,3 +2867,332 @@
     color: #6a0dad; /* Replace with your preferred shade of purple */
     margin-bottom: 15px;
   }
+
+  /* Small Mobile Portrait */
+
+@media only screen and (max-width: 395px) and (max-height: 852px) and (orientation: portrait){
+  .full-screen-nav-links {
+    display: none; /* Hides the desktop navigation on mobile */
+  }
+
+  .menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    right: 10px; /* Positions the button 10px from the right edge */
+    top: 5x; /* Positions the button 10px from the top */
+  }
+
+  .nav-links {
+    display: none; /* Hides the mobile navigation links initially */
+    position: absolute; /* Changes position to absolute */
+    top: 55px; /* Pushes the navigation links down by 55px */
+    left: 0; /* Aligns the navigation to the left */
+    width: 100%; /* Makes the navigation take up the full width */
+    background-color: #1a3d6c; /* Background color */
+    justify-content: center; /* Centers the navigation links */
+    z-index: 9; /* Ensure the navigation appears above other elements */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+  }
+
+  /* Show navigation links when the menu is open */
+  .nav-links.open {
+    display: flex; /* Makes links visible */
+    flex-direction: column; /* Stacks links vertically */
+    animation: slideDown 0.1s forwards; /* Sliding down effect */
+  }
+
+  /* Close animation */
+  .nav-links.close {
+    animation: slideUp 0.1s forwards; /* Sliding up effect */
+  }
+
+  .nav-links ul {
+    list-style: none; /* Removes bullets */
+    padding: 0; /* Removes padding around the links */
+    margin: 0; /* Removes margin around the links */
+    display: flex; /* Arranges the links horizontally */
+    gap: 20px; /* Adds space between the links */
+    margin-left: auto;
+    margin-top: 30px; /* Adds 30px of space above the links */
+    margin-bottom: 20px; /* Adds 20px of space below the links */
+  }
+
+  .nav-links ul li {
+    margin: 10px 0; /* Adds space between each link */
+  }
+
+  .nav-links ul li a {
+    color: white; /* Makes the link text white */
+    text-decoration: none; /* Removes the underline from the links */
+    font-size: 12px; /* Sets the font size for the links */
+    padding: 8px; /* Adds padding inside the links */
+    background-color: #4a5c79; /* Sets the background color */
+    border-radius: 15px; /* Rounds the corners */
+    transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
+  }
+
+  .nav-links ul li a:hover {
+    background-color: #3d4e66; /* Changes the background color on hover */
+  }
+
+  .title-card {
+    width: 200px; /* Sets the width of the logo */
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px); /* Start 20px above */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Move to original position */
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 1;
+      transform: translateY(0); /* Start at original position */
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-20px); /* Slide 20px up */
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: pink; /*Pink */
+  }
+
+  /* Welcome Section */
+  .welcome-section h1 {
+    font-size: 20px;
+  }
+
+  /* Welcome Section */
+  .welcome-section p {
+    font-size: 12px;
+  }
+ 
+ .content-container {
+   width: 90vw;
+   font-size: 10px;
+   margin-left: auto;
+ }
+  
+ .mission-block {
+  width: 90vw;
+ }
+	
+ .bill-item h4 {
+  margin-bottom: 5px;
+}
+
+  .model-section {
+   margin-bottom: 300px;
+   width: 90vw;
+  }
+  
+  .instructions-section {
+   bottom: 100px; /* Align it to the bottom */
+   font-size: 10px;
+  }
+  
+    .instructions-section h3{
+   font-size: 10px;
+  }
+
+.instruction-item-one p {
+	font-size: 10px;
+}
+
+.website-link a{
+	font-size: 10px;
+}
+
+.instruction-item {
+    padding: 5px;
+	font-size: 10px;
+}
+
+.instruction-item-two-to-four p{
+font-size: 10px;
+}
+
+.instruction-separator {
+  margin-top: 85px;
+}
+
+.instruction-item-five p{
+	font-size: 10px;
+}
+
+  .try-it-btn {
+	margin-bottom: 90px;
+	font-size: 10px;
+  }
+.footer{
+font-size: 10px;
+}
+
+.footer-content {
+  padding: 0 3px;
+}
+
+.google-logo img {
+  width: 25px;
+}
+
+.footer-social a img {
+  width: 15px;
+  height: 15px;
+}
+
+.image-popup-content {
+  width: 280px;
+  height: 400px;
+}
+
+.popup-image {
+  width: 95%;
+  height: 95%;
+}
+
+  .popup-content {
+    width: 260px;
+	height: 450px;
+  }
+
+  .popup-content h3 {
+    font-size: 14px;
+  }
+  
+   .close-popup {
+	right: 4px; /* Aligns it to the right */
+	font-size: 10px;
+  }
+
+  .upload-container {
+    width: 220px; /* Adjusts the container width */
+    padding: 20px; /* Reduces padding for smaller screens */
+  }
+
+  .upload-dropzone {
+    width: 180px; /* Limits dropzone width */
+    height: 80px;
+    margin-left: 5px; /* Adds margin on the left */
+  }
+  
+  .upload-btn {
+    font-size: 11px; /* Adjusts the font size */
+  }
+
+  .upload-dropzone p {
+    font-size: 14px; /* Slightly reduces text size */
+  }
+
+  .file-selected {
+    font-size: 10px; /* Sets the font size */
+  }
+
+  .file-selected .remove-btn {
+    font-size: 16px; /* Sets the font size */
+  }
+
+  .summary-box {
+    width: 220px;
+    height: 250px;
+    font-size: 14px;
+  }
+
+  .download-btn,
+  .do-it-again-btn,
+  .pause-play-btn {
+    width: 100%; /* Full width buttons */
+	padding: 10px;
+    font-size: 10px;
+    margin-left: auto;
+  }
+
+  .contact-page {
+    margin-top: 52px;
+    max-height: 700px;
+	width: 290px;
+    margin-bottom: 300px;
+  }
+  .contact-form-container {
+    width: 250px; /* Sets a max width */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%; /* Full width inputs */
+  }
+
+  .contact-form button {
+    padding: 10px 20px; /* Adds padding */
+    font-size: 16px; /* Increases the font size */
+    width: 90%; /* Makes the button full width */
+    margin-top: 10px; /* Adds space above the button */
+	margin-left: 5px;
+  }
+
+  .about-page {
+    padding: 30px 10px; /* Adds padding */
+    width: 90%; /* Ensures full width for mobile */
+  }
+
+  /* Header and Titles */
+  .about-company h1,
+  .technologies h2,
+  .meet-the-team h1 {
+    font-size: 1.2rem; /* Further reduces title font size */
+    margin-bottom: 15px; /* Minimal space below titles */
+  }
+
+  .about-description {
+    font-size: 0.8rem; /* Reduces the font size */
+    padding: 5px; /* Reduces padding */
+    word-wrap: break-word; /* Ensures long words wrap */
+    text-overflow: ellipsis; /* Adds ellipsis for overflow */
+    max-width: 100%; /* Ensures the content stays within the viewport */
+  }
+
+  .tech-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Team Member Section */
+
+  .team-section {
+    margin-left: 3px;
+    width: 200px;
+  }
+
+  .team-member {
+    height: 430px;
+  }
+
+  .team-member img {
+    width: 80px; 
+    height: 80px;
+    margin-bottom: 8px;
+  }
+
+  .team-member h4 {
+    font-size: 0.75rem;
+  }
+
+  .team-member p {
+    font-size: 0.75rem;
+  }
+}

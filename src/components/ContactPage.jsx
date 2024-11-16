@@ -17,15 +17,19 @@ function ContactPage() {
         {/* Contact Form Section */}
         <form className="contact-form">
           {/* Input field for the user's name */}
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="name">First Name</label>
           <input type="text" id="name" name="name" required />
 
+          <label htmlFor="name">Last Name</label>
+          <input type="text" id="name" name="name" required />
+
+
           {/* Input field for the user's email address */}
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email">Email *</label>
           <input type="email" id="email" name="email" required />
 
           {/* Textarea for the user's message */}
-          <label htmlFor="message">Message:</label>
+          <label htmlFor="message">Message *</label>
           <textarea id="message" name="message" rows="4" required></textarea>
 
           {/* Upload Box */}
