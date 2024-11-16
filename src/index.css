@@ -415,6 +415,7 @@
     position: relative; /* Allows positioning of child elements */
     cursor: pointer; /* Changes the cursor to pointer on hover */
     transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+    width: 890px;
   }
   
   /* Changes background and border color of dropzone on hover */
@@ -511,12 +512,6 @@
   font-size: 16px; /* Font size */
   line-height: 1.5; /* Line height for readability */
 }
-
-  
-  
-  
-  
-  
   
   /* Loading Spinner */
   
@@ -854,6 +849,7 @@
         border-radius: 5px; /* Rounds the corners */
         font-size: 16x; /* Sets the font size */
         margin-top: 15px;
+        resize:none;  
       }
       
     /* Styles for the upload section */
@@ -863,7 +859,7 @@
       padding: 6px;
       margin-top: 8px;
       margin-bottom: 12px;
-      border: 1px dashed #ddd;
+      border: 2px dashed #ddd;
       border-radius: 5px;
       font-size: 14px;
       color: #333;
@@ -877,10 +873,45 @@
       margin-bottom: 8px;
     }
     
-    /* Container for file upload and clear button */
-    .file-upload-container {
-      position: relative;
+    .file-list {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 10px;
+      text-align: left;
+      color: #333;
+      font-size: 14px;
     }
+    
+    .file-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      word-break: break-word; /* Prevents long file names from overflowing */
+    }
+    
+    .remove-file-btn{
+      background-color: red !important; /* Force red background */
+      color: white !important; /* Ensure white text */
+      border: none;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 1;
+    }
+    
+    .remove-file-btn:hover {
+      background-color: darkred !important; /* Force dark red hover background */
+    }
+    
+    
+    
     
     
       /* Styles the submit button within the contact form with padding,

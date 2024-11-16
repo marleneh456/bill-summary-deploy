@@ -1,54 +1,89 @@
-/* 
-  The ContactPage component provides a simple form for users to reach out to the team. 
-  It includes fields for name, email, and a message. There is also a section displaying 
-  contact information like the company's address, phone number, and email. 
-  This page allows users to submit inquiries or messages directly through the form.
-*/
-import React from "react";
+import React, { useState, useRef } from "react";
 
 function ContactPage() {
+  const [fileNames, setFileNames] = useState([]);
+  const fileInputRef = useRef(null);
+
+  // Function to handle file uploads and update the file names
+  const handleFileChange = (event) => {
+    const files = event.target.files;
+    const names = Array.from(files).map((file) => file.name);
+    setFileNames((prevFiles) => [...prevFiles, ...names]);
+  };
+
+  // Function to remove a specific file by name
+  const removeFile = (fileName) => {
+    const updatedFiles = fileNames.filter((file) => file !== fileName);
+    setFileNames(updatedFiles);
+
+    // Reset the file input field to synchronize with the list
+    if (fileInputRef.current) {
+      const dataTransfer = new DataTransfer();
+      Array.from(fileInputRef.current.files)
+        .filter((file) => file.name !== fileName)
+        .forEach((file) => dataTransfer.items.add(file));
+
+      fileInputRef.current.files = dataTransfer.files;
+    }
+  };
+
   return (
     <div className="contact-page">
-      {/* Page Title */}
       <h1>Contact Us</h1>
       <p>If you have any questions, feel free to reach out!</p>
 
       <div className="contact-form-container">
-        {/* Contact Form Section */}
         <form className="contact-form">
-          {/* Input field for the user's name */}
           <label htmlFor="name">First Name</label>
           <input type="text" id="name" name="name" required />
 
           <label htmlFor="name">Last Name</label>
           <input type="text" id="name" name="name" required />
 
-
-          {/* Input field for the user's email address */}
           <label htmlFor="email">Email *</label>
           <input type="email" id="email" name="email" required />
 
-          {/* Textarea for the user's message */}
           <label htmlFor="message">Message *</label>
           <textarea id="message" name="message" rows="4" required></textarea>
 
-          {/* Upload Box */}
           <label htmlFor="file">Attachments</label>
           <p className="upload-instructions">
             Allowed file types: jpg, jpeg, png, xml, txt, pdf, doc, docx, and less than 25MB.
           </p>
-          <input type="file" id="file" name="file" multiple />
-          {/* Submit button to send the form */}
+          <input
+            type="file"
+            id="file"
+            name="file"
+            multiple
+            onChange={handleFileChange}
+            ref={fileInputRef}
+          />
+
+          {/* Displaying the uploaded file names with red X buttons */}
+          {fileNames.length > 0 && (
+            <ul className="file-list">
+              {fileNames.map((fileName, index) => (
+                <li key={index} className="file-item">
+                  {fileName}
+                  <button
+                    type="button"
+                    className="remove-file-btn"
+                    onClick={() => removeFile(fileName)}
+                  >
+                    X
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
+
           <button type="submit">Send Message</button>
         </form>
 
-        {/* Contact Information Section */}
         <div className="contact-info">
-          {/* Displaying the address */}
           <h3>Location</h3>
           <p>Nashville, TN</p>
 
-          {/* Displaying the email address */}
           <h3>Email</h3>
           <p>admin@whatsinthebill.ai</p>
         </div>
