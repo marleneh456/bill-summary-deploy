@@ -1,30 +1,39 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 
 function ContactPage() {
-  const [fileNames, setFileNames] = useState([]);
-  const fileInputRef = useRef(null);
+  const [files, setFiles] = useState([]); // Store actual file objects
 
-  // Function to handle file uploads and update the file names
+  // Function to handle file uploads via drag-and-drop or file input
+  const handleFileUpload = (newFiles) => {
+    const uniqueFiles = Array.from(newFiles).filter(
+      (newFile) => !files.some((existingFile) => existingFile.name === newFile.name)
+    );
+
+    if (files.length + uniqueFiles.length > 3) {
+      alert("You can only upload up to 3 files.");
+      return;
+    }
+
+    setFiles((prevFiles) => [...prevFiles, ...uniqueFiles]);
+  };
+
+  // Function to handle drag-and-drop events
+  const handleDrop = (event) => {
+    event.preventDefault();
+    const newFiles = event.dataTransfer.files;
+    handleFileUpload(newFiles);
+  };
+
+  // Function to handle file input change
   const handleFileChange = (event) => {
-    const files = event.target.files;
-    const names = Array.from(files).map((file) => file.name);
-    setFileNames((prevFiles) => [...prevFiles, ...names]);
+    const newFiles = event.target.files;
+    handleFileUpload(newFiles);
   };
 
   // Function to remove a specific file by name
   const removeFile = (fileName) => {
-    const updatedFiles = fileNames.filter((file) => file !== fileName);
-    setFileNames(updatedFiles);
-
-    // Reset the file input field to synchronize with the list
-    if (fileInputRef.current) {
-      const dataTransfer = new DataTransfer();
-      Array.from(fileInputRef.current.files)
-        .filter((file) => file.name !== fileName)
-        .forEach((file) => dataTransfer.items.add(file));
-
-      fileInputRef.current.files = dataTransfer.files;
-    }
+    const updatedFiles = files.filter((file) => file.name !== fileName);
+    setFiles(updatedFiles);
   };
 
   return (
@@ -34,41 +43,66 @@ function ContactPage() {
 
       <div className="contact-form-container">
         <form className="contact-form">
-          <label htmlFor="name">First Name</label>
+          <label htmlFor="name">
+            First Name <span className="required">*</span>
+          </label>
           <input type="text" id="name" name="name" required />
 
-          <label htmlFor="name">Last Name</label>
+          <label htmlFor="name">
+            Last Name <span className="required">*</span>
+          </label>
           <input type="text" id="name" name="name" required />
 
-          <label htmlFor="email">Email *</label>
+          <label htmlFor="email">
+            Email <span className="required">*</span>
+          </label>
           <input type="email" id="email" name="email" required />
 
-          <label htmlFor="message">Message *</label>
+          <label htmlFor="message">
+            Message <span className="required">*</span>
+          </label>
           <textarea id="message" name="message" rows="4" required></textarea>
 
-          <label htmlFor="file">Attachments</label>
+          <label>Attachments</label>
           <p className="upload-instructions">
-            Allowed file types: jpg, jpeg, png, xml, txt, pdf, doc, docx, and less than 25MB.
+            Allowed file types: jpg, jpeg, png, xml,
+            txt, pdf, doc, docx, and less than 25MB.
           </p>
+
+          <p className="upload-instructions">
+            You can upload up to 3 files.
+          </p>
+
+          {/* Dropzone for uploading files */}
+          <div
+            className="dropzone"
+            onDragOver={(e) => e.preventDefault()}
+            onDrop={handleDrop}
+            onClick={() => document.getElementById("file-input").click()}
+          >
+            <p>Drag and drop files here or click to select</p>
+          </div>
+
+          {/* Hidden file input for click-to-upload */}
           <input
             type="file"
-            id="file"
+            id="file-input"
             name="file"
             multiple
+            className="file-input-hidden"
             onChange={handleFileChange}
-            ref={fileInputRef}
           />
 
           {/* Displaying the uploaded file names with red X buttons */}
-          {fileNames.length > 0 && (
+          {files.length > 0 && (
             <ul className="file-list">
-              {fileNames.map((fileName, index) => (
+              {files.map((file, index) => (
                 <li key={index} className="file-item">
-                  {fileName}
+                  {file.name}
                   <button
                     type="button"
                     className="remove-file-btn"
-                    onClick={() => removeFile(fileName)}
+                    onClick={() => removeFile(file.name)}
                   >
                     X
                   </button>
@@ -77,7 +111,9 @@ function ContactPage() {
             </ul>
           )}
 
-          <button type="submit">Send Message</button>
+          <button type="submit" className="send-button">
+            Send Message
+          </button>
         </form>
 
         <div className="contact-info">

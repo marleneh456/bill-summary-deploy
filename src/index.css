@@ -852,63 +852,70 @@
         resize:none;  
       }
       
-    /* Styles for the upload section */
-    .contact-form input[type="file"] {
-      display: block;
-      width: 100%;
-      padding: 6px;
-      margin-top: 8px;
-      margin-bottom: 12px;
-      border: 2px dashed #ddd;
-      border-radius: 5px;
-      font-size: 14px;
-      color: #333;
-      cursor: pointer;
-    }
+      .required{
+        color: red;
+      }
     
-    .upload-instructions {
-      font-size: 12px;
-      color: #666;
-      margin-top: 10px;
-      margin-bottom: 8px;
-    }
-    
-    .file-list {
-      list-style-type: none;
-      padding: 0;
-      margin-top: 10px;
-      text-align: left;
-      color: #333;
-      font-size: 14px;
-    }
-    
-    .file-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 15px;
-      word-break: break-word; /* Prevents long file names from overflowing */
-    }
-    
-    .remove-file-btn{
-      background-color: red !important; /* Force red background */
-      color: white !important; /* Ensure white text */
-      border: none;
-      border-radius: 50%;
-      width: 20px;
-      height: 20px;
-      font-size: 14px;
-      font-weight: bold;
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      line-height: 1;
-    }
-    
-    .remove-file-btn:hover {
-      background-color: darkred !important; /* Force dark red hover background */
-    }
+/* Dropzone Styles */
+.dropzone {
+  border: 2px dashed #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  width: 315px;
+  text-align: center;
+  color: #333;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.dropzone:hover {
+  background-color: #f1f1f1;
+}
+
+.file-input-hidden {
+  display: none; /* Hide the default file input */
+}
+
+/* File List */
+.file-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.file-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  word-break: break-word; /* Prevents long file names from overflowing */
+}
+
+.remove-file-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 8px 16px;
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.remove-file-btn:hover {
+  background-color: darkred;
+}
+
+
     
     
     
@@ -917,18 +924,19 @@
       /* Styles the submit button within the contact form with padding,
            background color, white text, no border, rounded corners,
            pointer cursor, and transition effects */
-      .contact-form button {
+      .send-button {
         padding: 8px 16px; /* Adds padding */
         background-color: #082c6c; /* Sets the background color */
         color: white; /* Makes the text white */
         border: none; /* Removes the border */
         border-radius: 30px; /* Rounds the corners */
         cursor: pointer; /* Changes the cursor on hover */
+        margin-bottom: 10px;
         transition: background-color 0.3s ease; /* Smooth transition for hover effect */
       }
       
       /* Changes the button's background color, lifts it, and adds a deeper shadow on hover */
-      .contact-form button:hover {
+      .send-button:hover {
         background-color: #061d48; /* Changes the background color on hover */
         transform: translateY(-5px); /* Lifts the button on hover */
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds a deeper shadow */

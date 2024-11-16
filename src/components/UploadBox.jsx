@@ -32,7 +32,7 @@ function UploadBox({ onGenerateSummary }) {
       {/* Conditionally render the upload input or the file selected message */}
       {!file ? (
         <div className="upload-dropzone">
-          <p>Upload your file or copy/paste</p>
+          <p>Drag and drop xml file here or click to select</p>
           <input
             id="file-input" // Add an ID to reference the input field
             type="file"
