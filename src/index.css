@@ -1337,7 +1337,7 @@
   
     /* Styles the main heading in the welcome section with reduced font size */
     .welcome-section h1 {
-      font-size: 28px;
+      font-size: 26px;
     }
   
     /* Styles the paragraph in the welcome section with reduced font size */
@@ -1348,7 +1348,7 @@
     /* Adjusts the content container to use 90% of viewport width
          and adds left margin */
     .content-container {
-      width: 840px;
+      width: 780px;
       margin-left: 10px;
     }
     
@@ -1368,7 +1368,7 @@
   
     /* Adjusts the popup content size for smaller screens */
     .popup-content {
-      width: 800px;
+      width: 780px;
     }
   
     /* Reduces the font size of headings within popups */
@@ -1384,7 +1384,7 @@
   
     /* Adjusts the upload dropzone size and margin for smaller screens */
     .upload-dropzone {
-      width: 760px; /* Limits dropzone width */
+      width: 740px; /* Limits dropzone width */
     }
   
     /* Adjusts the paragraph inside the dropzone */
@@ -1405,14 +1405,18 @@
      /* Text Input */
 .text-input {
   margin-top: 20px;
-  width: 1270px; /* Match the width of the upload box */
-  margin-left: -257px;
+  width: 1236px; /* Match the width of the upload box */
+  margin-left: -248px;
+}
+
+.text-box{
+  height: 280px;
 }
 
   
     /* Adjusts the summary box size for smaller screens */
     .summary-box {
-      width: 750px; /* Sets the width */
+      width: 740px; /* Sets the width */
     }
   
     /* Adjusts the width of summary buttons for smaller screens */
@@ -2285,641 +2289,6 @@
       font-size: 12px;
     }
   }
-  
-  /* Big Mobile Portrait */
-  
-  /* Applies styles for portrait-oriented big mobile devices with max width 490px,
-       max height 1000px, and portrait orientation */
-  @media only screen and (max-width: 490px) and (max-height: 1000px) and (orientation: portrait) {
-    /* Hides the desktop navigation on smaller screens */
-    .full-screen-nav-links {
-      display: none; /* Hides the desktop navigation on mobile */
-    }
-  
-    /* Styles the menu button similar to previous media queries */
-    .menu-button {
-      background: none;
-      border: none;
-      color: white;
-      font-size: 30px;
-      cursor: pointer;
-      right: 10px; /* Positions the button 10px from the right edge */
-      top: 5x; /* Positions the button 10px from the top */
-    }
-  
-    /* Hides the navigation links initially and styles their position,
-         width, background color, alignment, z-index, and transition */
-    .nav-links {
-      display: none; /* Hides the mobile navigation links initially */
-      position: absolute; /* Changes position to absolute */
-      top: 55px; /* Pushes the navigation links down by 55px */
-      left: 0; /* Aligns the navigation to the left */
-      width: 100%; /* Makes the navigation take up the full width */
-      background-color: #1a3d6c; /* Background color */
-      justify-content: center; /* Centers the navigation links */
-      z-index: 9; /* Ensure the navigation appears above other elements */
-      transition: transform 0.3s ease-in-out; /* Smooth transition */
-    }
-  
-    /* When nav-links has the class 'open', display as flex with column direction
-         and apply a slide down animation */
-    .nav-links.open {
-      display: flex; /* Makes links visible */
-      flex-direction: column; /* Stacks links vertically */
-      animation: slideDown 0.1s forwards; /* Sliding down effect */
-    }
-  
-    /* Applies slide up animation when nav-links has the class 'close' */
-    .nav-links.close {
-      animation: slideUp 0.1s forwards; /* Sliding up effect */
-    }
-  
-    /* Styles the unordered list within nav-links by removing list styling,
-         arranging items horizontally, adding gaps, and setting margins */
-    .nav-links ul {
-      list-style: none; /* Removes bullets */
-      padding: 0; /* Removes padding around the links */
-      margin: 0; /* Removes margin around the links */
-      display: flex; /* Arranges the links horizontally */
-      gap: 20px; /* Adds space between the links */
-      margin-left: auto;
-      margin-top: 30px; /* Adds 30px of space above the links */
-      margin-bottom: 20px; /* Adds 20px of space below the links */
-    }
-  
-    /* Styles individual list items within nav-links with vertical margins */
-    .nav-links ul li {
-      margin: 10px 0; /* Adds space between each link */
-    }
-  
-    /* Styles the anchor tags within nav-links list items */
-    .nav-links ul li a {
-      color: white; /* Makes the link text white */
-      text-decoration: none; /* Removes the underline from the links */
-      font-size: 14px; /* Sets the font size for the links */
-      padding: 8px; /* Adds padding inside the links */
-      background-color: #4a5c79; /* Sets the background color */
-      border-radius: 15px; /* Rounds the corners */
-      transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
-    }
-  
-    /* Changes the background color of nav links on hover */
-    .nav-links ul li a:hover {
-      background-color: #3d4e66; /* Changes the background color on hover */
-    }
-  
-    /* Sets the width of the title card */
-    .title-card {
-      width: 200px; /* Sets the width of the logo */
-    }
-  
-    /* Defines the slideDown keyframes for animation */
-    @keyframes slideDown {
-      from {
-        opacity: 0; /* Start fully transparent */
-        transform: translateY(-20px); /* Start 20px above */
-      }
-      to {
-        opacity: 1; /* End fully opaque */
-        transform: translateY(0); /* Move to original position */
-      }
-    }
-  
-    /* Defines the slideUp keyframes for animation */
-    @keyframes slideUp {
-      from {
-        opacity: 1; /* Start fully opaque */
-        transform: translateY(0); /* Start at original position */
-      }
-      to {
-        opacity: 0; /* End fully transparent */
-        transform: translateY(-20px); /* Slide 20px up */
-      }
-    }
-  
-    /* Ensures all elements use border-box sizing */
-    * {
-      box-sizing: border-box;
-    }
-  
-    /* Sets the body background color to Light Green */
-    body {
-      background-color: #90ee90; /* Light Green */
-    }
-  
-    /* Styles the main heading in the welcome section with reduced font size */
-    .welcome-section h1 {
-      font-size: 20px;
-    }
-  
-    /* Styles the paragraph in the welcome section with reduced font size */
-    .welcome-section p {
-      font-size: 12px;
-    }
-  
-    /* Adjusts the content container to use 90% of viewport width,
-         adds right margin, and sets font size */
-    .content-container {
-      width: 90vw;
-      margin-left: auto;
-      font-size: 14px;
-    }
-  
-    /* Increases the bottom margin of the model section */
-    .model-section {
-      margin-bottom: 580px;
-    }
-  
-    /* Adjusts the position of the instructions section */
-    .instructions-section {
-      bottom: 70px; /* Align it to the bottom */
-    }
-  
-    /* Styles the instruction items with padding */
-    .instruction-item {
-      padding: 5px;
-    }
-  
-    /* Sets the font size of paragraphs in specific instruction items */
-    .instruction-item-one p {
-      font-size: 10px;
-    }
-  
-    /* Sets the font size of website links */
-    .website-link a {
-      font-size: 10px;
-    }
-  
-    /* Sets the font size of paragraphs in specific instruction items */
-    .instruction-item-two-to-four p {
-      font-size: 10px;
-    }
-  
-    /* Sets the font size of paragraphs in specific instruction items */
-    .instruction-item-five p {
-      font-size: 10px;
-    }
-  
-    /* Sets the margin top of the instruction separator */
-    .instruction-separator {
-      margin-top: 85px;
-    }
-
-    .try-it-btn {
-      font-size: 10px;
-      }
-  
-    /* Reduces the size of image popup content */
-    .image-popup-content {
-      width: 350px;
-      height: 500px;
-    }
-  
-    /* Ensures the popup image fills the content area */
-    .popup-image {
-      width: 100%;
-      height: 100%;
-    }
-  
-    /* Adjusts the popup content size for smaller screens */
-    .popup-content {
-      width: 360px;
-      height: 600px;
-    }
-  
-    /* Reduces the font size of headings within popups */
-    .popup-content h3 {
-      font-size: 14px;
-    }
-  
-    /* Adjusts the close button position and size within popups */
-    .close-popup {
-      right: 4px; /* Aligns it to the right */
-      font-size: 10px; /* Sets the font size */
-    }
-  
-    /* Adjusts the upload container size and padding for smaller screens */
-    .upload-container {
-      width: 320px; /* Adjusts the container width */
-      padding: 20px; /* Reduces padding for smaller screens */
-    }
-  
-    /* Adjusts the upload dropzone size and margin for smaller screens */
-    .upload-dropzone {
-      width: 250px; /* Limits dropzone width */
-      height: 80px;
-      margin-left: 20px; /* Adds margin on the left */
-    }
-  
-    /* Adjusts the upload button size */
-    .upload-btn {
-      font-size: 14px; /* Adjusts the font size */
-    }
-  
-    /* Adjusts the paragraph inside the dropzone */
-    .upload-dropzone p {
-      font-size: 14px; /* Slightly reduces text size */
-    }
-  
-    /* Adjusts the font size of selected files display */
-    .file-selected {
-      font-size: 13px; /* Sets the font size */
-    }
-  
-    /* Adjusts the font size of the remove button */
-    .file-selected .remove-btn {
-      font-size: 16px; /* Sets the font size */
-    }
-  
-    /* Adjusts the summary box size and font size for smaller screens */
-    .summary-box {
-      width: 320px;
-      height: 430px;
-      font-size: 14px;
-    }
-  
-    /* Adjusts the summary buttons with full width, padding,
-         smaller font size, and left margin */
-    .download-btn,
-    .do-it-again-btn,
-    .pause-play-btn {
-      width: 100%; /* Full width buttons */
-      padding: 10px; /* Adds padding */
-      font-size: 10px; /* Smaller font size */
-      margin-left: 5px; /* Adds left margin */
-    }
-  
-    /* Styles the footer with smaller font size */
-    .footer {
-      font-size: 10px;
-    }
-  
-    /* Adjusts the footer content padding */
-    .footer-content {
-      padding: 0 3px;
-    }
-  
-    /* Sets the width of Google logo images */
-    .google-logo img {
-      width: 25px;
-    }
-  
-    /* Sets the size of social media icons within the footer */
-    .footer-social a img {
-      width: 15px;
-      height: 15px;
-    }
-  
-    /* Reduces the size of image popup content */
-    .image-popup-content {
-      width: 480px;
-      height: 250px;
-    }
-  
-    /* Ensures the popup image fills the content area */
-    .popup-image {
-      width: 95%;
-      height: 95%;
-    }
-  
-    /* Adjusts the popup content size for smaller screens */
-    .popup-content {
-      width: 500px;
-      height: 220px;
-    }
-  
-    /* Reduces the font size of headings within popups */
-    .popup-content h3 {
-      font-size: 14px;
-    }
-  
-    /* Adjusts the close button position and size within popups */
-    .close-popup {
-      right: 4px; /* Aligns it to the right */
-      font-size: 10px; /* Sets the font size */
-    }
-  
-    /* Adjusts the upload container size and padding for smaller screens */
-    .upload-container {
-      width: 220px; /* Adjusts the container width */
-      padding: 20px; /* Reduces padding for smaller screens */
-    }
-  
-    /* Adjusts the upload dropzone size and margin for smaller screens */
-    .upload-dropzone {
-      width: 180px; /* Limits dropzone width */
-      height: 80px;
-      margin-left: 5px; /* Adds margin on the left */
-    }
-  
-    /* Adjusts the upload button size */
-    .upload-btn {
-      font-size: 11px; /* Adjusts the font size */
-    }
-  
-    /* Adjusts the paragraph inside the dropzone */
-    .upload-dropzone p {
-      font-size: 14px; /* Slightly reduces text size */
-    }
-  
-    /* Adjusts the font size of selected files display */
-    .file-selected {
-      font-size: 10px; /* Sets the font size */
-    }
-  
-    /* Adjusts the font size of the remove button */
-    .file-selected .remove-btn {
-      font-size: 16px; /* Sets the font size */
-    }
-  
-    /* Adjusts the summary box size and font size for smaller screens */
-    .summary-box {
-      width: 220px;
-      height: 250px;
-      font-size: 14px;
-    }
-  
-    /* Adjusts the summary buttons with full width, padding,
-         smaller font size, and left margin */
-    .download-btn,
-    .do-it-again-btn,
-    .pause-play-btn {
-      width: 100%; /* Full width buttons */
-      padding: 10px; /* Adds padding */
-      font-size: 10px; /* Smaller font size */
-      margin-left: auto; /* Aligns buttons to the right */
-    }
-  
-    /* Adjusts the contact page with top margin, maximum height,
-         fixed width, and bottom margin */
-    .contact-page {
-      margin-top: 52px;
-      max-height: 700px;
-      width: 290px;
-      margin-bottom: 300px;
-    }
-  
-    /* Adjusts the contact form container size for smaller screens */
-    .contact-form-container {
-      width: 250px; /* Sets a max width */
-    }
-  
-    /* Ensures input and textarea elements take full width */
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%; /* Full width inputs */
-    }
-  
-    /* Styles the submit button within the contact form with padding,
-         font size, full width, top margin, and left margin */
-    .contact-form button {
-      padding: 10px 20px; /* Adds padding */
-      font-size: 16px; /* Increases the font size */
-      width: 90%; /* Makes the button full width */
-      margin-top: 10px; /* Adds space above the button */
-      margin-left: 5px; /* Adds left margin */
-    }
-  
-    /* Ensures the about page takes up 90% of the width on smaller screens */
-    .about-page {
-      padding: 30px 10px; /* Adds padding */
-      width: 90%; /* Ensures full width for mobile */
-    }
-  
-    /* Header and Titles */
-  
-    /* Styles the main headings in about, technologies, and team sections
-       with reduced font size and minimal bottom margin */
-    .about-company h1,
-    .technologies h2,
-    .meet-the-team h1 {
-      font-size: 1.2rem; /* Further reduces title font size */
-      margin-bottom: 15px; /* Minimal space below titles */
-    }
-  
-    /* Styles the about description with reduced font size, padding,
-       word wrapping, text overflow, and maximum width */
-    .about-description {
-      font-size: 0.8rem; /* Reduces the font size */
-      padding: 5px; /* Reduces padding */
-      word-wrap: break-word; /* Ensures long words wrap */
-      text-overflow: ellipsis; /* Adds ellipsis for overflow */
-      max-width: 100%; /* Ensures the content stays within the viewport */
-    }
-  
-    /* Styles the technology cards to be full width and adds bottom margin */
-    .tech-card {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-  
-    /* Team Member Section */
-  
-    /* Styles the team section with left margin and fixed width */
-    .team-section {
-      margin-left: 3px;
-      width: 320px;
-    }
-  
-    /* Styles team members with fixed height */
-    .team-member {
-      height: 430px;
-    }
-  
-    /* Styles the team member images with reduced size,
-       rounded corners, bottom margin, and shadow */
-    .team-member img {
-      width: 80px; /* Profile pic 80px */
-      height: 80px; /* Profile pic 80px */
-      margin-bottom: 8px; /* Adds space below the image */
-    }
-  
-    /* Styles the team member headings with reduced font size */
-    .team-member h4 {
-      font-size: 0.75rem; /* Sets the font size */
-    }
-  
-    /* Styles the team member paragraphs with reduced font size */
-    .team-member p {
-      font-size: 0.75rem; /* Sets the font size */
-    }
-  }
-  
-  /* Transparency Section */
-  .transparency {
-    background: rgba(255, 255, 255, 0.4); /* Light frosted glass effect */
-    backdrop-filter: blur(15px); /* Adds a blur to enhance the frosted look */
-    padding: 60px; /* Space inside the section */
-    border-radius: 25px; /* Rounded corners */
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15); /* Soft shadow around the box */
-    max-width: 900px; /* Limits how wide the section can get */
-    margin: 40px auto; /* Centers the section */
-    color: #1a202c; /* Text color */
-    text-align: center; /* Centers text */
-    position: relative; /* Needed for positioning child elements */
-    overflow: hidden; /* Hides any content that goes outside the box */
-  }
-  
-  /* Animated Background Blob */
-  .transparency::before {
-    content: ""; /* Empty content for decoration */
-    position: absolute; /* Positioned relative to .transparency */
-    width: 200%; /* Blob is twice the section’s width */
-    height: 200%; /* Blob is twice the section’s height */
-    top: -100%; /* Start above the section */
-    left: -100%; /* Start to the left of the section */
-    background: radial-gradient(
-      circle,
-      rgba(255, 255, 255, 0.3),
-      transparent
-    ); /* Fading circle effect */
-    transform: rotate(45deg); /* Rotate it for a softer look */
-    animation: blobAnimation 10s infinite alternate; /* Makes the blob move slightly */
-    z-index: -1; /* Sends blob to the background */
-  }
-  
-  /* Blob Animation */
-  @keyframes blobAnimation {
-    0% {
-      transform: rotate(45deg) translate(0, 0); /* Start position */
-    }
-    100% {
-      transform: rotate(45deg) translate(50px, 50px); /* End position */
-    }
-  }
-  
-  .transparency h2 {
-    font-size: 32px; /* Heading size */
-    color: #2c3e50; /* Heading color */
-    border-bottom: 4px solid; /* Line under the heading */
-    border-image-source: linear-gradient(
-      90deg,
-      #00b4db,
-      #8e2de2
-    ); /* Gradient line */
-    padding-bottom: 10px; /* Space below the heading */
-    border-image-slice: 1;
-    border-width: 2px;
-    text-align: center;
-  }
-  
-  .transparency p {
-    font-size: 1.2em; /* Text size */
-    line-height: 1.8; /* Space between lines */
-    color: #4a5568; /* Text color */
-  }
-  
-  /* Comparison Section */
-  .summary-comparison {
-    display: flex; /* Flex layout */
-    flex-direction: column; /* Stack items vertically */
-    gap: 40px; /* Space between items */
-    margin-top: 40px; /* Space above section */
-  }
-  
-  .comparison-item {
-    background: rgba(255, 255, 255, 0.4); /* Light frosted effect */
-    padding: 30px; /* Space inside the box */
-    border-radius: 20px; /* Rounded corners */
-    transition: transform 0.4s, box-shadow 0.4s; /* Smooth hover effects */
-    border: 1px solid rgba(255, 255, 255, 0.5); /* Border for structure */
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-  }
-  
-  .comparison-item:hover {
-    transform: translateY(-10px); /* Slight upward movement on hover */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
-  }
-  
-  .comparison-item h4 {
-    font-size: 1.8em; /* Heading size */
-    font-weight: 600;
-    color: #6a0dad; /* Purple color for titles */
-    margin-bottom: 12px; /* Space below heading */
-  }
-  
-  .comparison-item p {
-    margin: 8px 0; /* Spacing around text */
-    color: #2d3748; /* Dark text color */
-  }
-  
-  /* Sources Section */
-  .sources-section {
-    background: rgba(255, 255, 255, 0.4); /* Light frosted effect */
-    padding: 40px; /* Space inside */
-    border-radius: 25px; /* Rounded corners */
-    text-align: center; /* Center text */
-    margin-top: 40px; /* Space above section */
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15); /* Shadow for depth */
-  }
-  
-  .sources-section h3 {
-    font-size: 1.6em; /* Title size */
-    color: #8e2de2; /* Gradient color */
-    display: flex; /* Aligns icon and text */
-    align-items: center; /* Centers icon and text vertically */
-    gap: 8px; /* Space between icon and text */
-  }
-  
-  .sources-section p {
-    font-size: 1.1em; /* Paragraph size */
-    color: #4a5568; /* Text color */
-  }
-  
-  .sources-section a {
-    color: #8e2de2; /* Link color */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s; /* Smooth color change on hover */
-  }
-  
-  .sources-section a:hover {
-    color: #00b4db; /* Lighter color on hover */
-  }
-  
-  /* Hover Animation for Links */
-  .transparency a,
-  .sources-section a {
-    position: relative; /* Needed for pseudo-element */
-    color: #6a0dad; /* Link color */
-  }
-  
-  .transparency a::after,
-  .sources-section a::after {
-    content: ""; /* Decorative line under link */
-    position: absolute; /* Positioned below the link */
-    left: 0; /* Start at the left edge */
-    bottom: -2px; /* Slightly below the text */
-    width: 100%; /* Full width */
-    height: 2px; /* Thin line */
-    background-color: #8e2de2; /* Color of the line */
-    transform: scaleX(0); /* Starts hidden */
-    transition: transform 0.3s ease-in-out; /* Smoothly shows on hover */
-  }
-  
-  .transparency a:hover::after,
-  .sources-section a:hover::after {
-    transform: scaleX(1); /* Expands line on hover */
-  }
-  
-  /* Text input box for direct text entry */
-  .text-box {
-    border: 2px dashed #082c6c; /* Adds a dashed border */
-    border-radius: 10px; /* Rounds the corners */
-    width: 60%;
-    background-color: #f9fafb; /* Light background color */
-    padding: 20px; /* Adds padding inside the dropzone */
-    position: relative; /* Allows positioning of child elements */
-    cursor: pointer; /* Changes the cursor to pointer on hover */
-    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
-  }
-  .subheading {
-    font-size: 24px; /* Adjust to match desired size */
-    font-weight: 600;
-    text-align: center;
-    color: #6a0dad; /* Replace with your preferred shade of purple */
-    margin-bottom: 15px;
-  }
 
   /* Small Mobile Portrait */
 
@@ -3244,3 +2613,627 @@ font-size: 10px;
     font-size: 0.75rem;
   }
 }
+
+ /* Big Mobile Portrait */
+  
+  /* Applies styles for portrait-oriented big mobile devices with max width 490px,
+       max height 1000px, and portrait orientation */
+       @media only screen and (max-width: 490px) and (max-height: 1000px) and (orientation: portrait) {
+        /* Hides the desktop navigation on smaller screens */
+        .full-screen-nav-links {
+          display: none; /* Hides the desktop navigation on mobile */
+        }
+      
+        /* Styles the menu button similar to previous media queries */
+        .menu-button {
+          background: none;
+          border: none;
+          color: white;
+          font-size: 30px;
+          cursor: pointer;
+          right: 10px; /* Positions the button 10px from the right edge */
+          top: 5x; /* Positions the button 10px from the top */
+        }
+      
+        /* Hides the navigation links initially and styles their position,
+             width, background color, alignment, z-index, and transition */
+        .nav-links {
+          display: none; /* Hides the mobile navigation links initially */
+          position: absolute; /* Changes position to absolute */
+          top: 55px; /* Pushes the navigation links down by 55px */
+          left: 0; /* Aligns the navigation to the left */
+          width: 100%; /* Makes the navigation take up the full width */
+          background-color: #1a3d6c; /* Background color */
+          justify-content: center; /* Centers the navigation links */
+          z-index: 9; /* Ensure the navigation appears above other elements */
+          transition: transform 0.3s ease-in-out; /* Smooth transition */
+        }
+      
+        /* When nav-links has the class 'open', display as flex with column direction
+             and apply a slide down animation */
+        .nav-links.open {
+          display: flex; /* Makes links visible */
+          flex-direction: column; /* Stacks links vertically */
+          animation: slideDown 0.1s forwards; /* Sliding down effect */
+        }
+      
+        /* Applies slide up animation when nav-links has the class 'close' */
+        .nav-links.close {
+          animation: slideUp 0.1s forwards; /* Sliding up effect */
+        }
+      
+        /* Styles the unordered list within nav-links by removing list styling,
+             arranging items horizontally, adding gaps, and setting margins */
+        .nav-links ul {
+          list-style: none; /* Removes bullets */
+          padding: 0; /* Removes padding around the links */
+          margin: 0; /* Removes margin around the links */
+          display: flex; /* Arranges the links horizontally */
+          gap: 20px; /* Adds space between the links */
+          margin-left: auto;
+          margin-top: 30px; /* Adds 30px of space above the links */
+          margin-bottom: 20px; /* Adds 20px of space below the links */
+        }
+      
+        /* Styles individual list items within nav-links with vertical margins */
+        .nav-links ul li {
+          margin: 10px 0; /* Adds space between each link */
+        }
+      
+        /* Styles the anchor tags within nav-links list items */
+        .nav-links ul li a {
+          color: white; /* Makes the link text white */
+          text-decoration: none; /* Removes the underline from the links */
+          font-size: 14px; /* Sets the font size for the links */
+          padding: 8px; /* Adds padding inside the links */
+          background-color: #4a5c79; /* Sets the background color */
+          border-radius: 15px; /* Rounds the corners */
+          transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
+        }
+      
+        /* Changes the background color of nav links on hover */
+        .nav-links ul li a:hover {
+          background-color: #3d4e66; /* Changes the background color on hover */
+        }
+      
+        /* Sets the width of the title card */
+        .title-card {
+          width: 200px; /* Sets the width of the logo */
+        }
+      
+        /* Defines the slideDown keyframes for animation */
+        @keyframes slideDown {
+          from {
+            opacity: 0; /* Start fully transparent */
+            transform: translateY(-20px); /* Start 20px above */
+          }
+          to {
+            opacity: 1; /* End fully opaque */
+            transform: translateY(0); /* Move to original position */
+          }
+        }
+      
+        /* Defines the slideUp keyframes for animation */
+        @keyframes slideUp {
+          from {
+            opacity: 1; /* Start fully opaque */
+            transform: translateY(0); /* Start at original position */
+          }
+          to {
+            opacity: 0; /* End fully transparent */
+            transform: translateY(-20px); /* Slide 20px up */
+          }
+        }
+      
+        /* Ensures all elements use border-box sizing */
+        * {
+          box-sizing: border-box;
+        }
+      
+        /* Sets the body background color to Light Green */
+        body {
+          background-color: #90ee90; /* Light Green */
+        }
+      
+        /* Styles the main heading in the welcome section with reduced font size */
+        .welcome-section h1 {
+          font-size: 20px;
+        }
+      
+        /* Styles the paragraph in the welcome section with reduced font size */
+        .welcome-section p {
+          font-size: 12px;
+        }
+      
+        /* Adjusts the content container to use 90% of viewport width,
+             adds right margin, and sets font size */
+        .content-container {
+          width: 400px;
+          margin-left: 14px;
+          font-size: 14px;
+        }
+      
+        /* Styles the instruction items with padding */
+        .instruction-item {
+          padding: 5px;
+        }
+      
+        /* Sets the font size of paragraphs in specific instruction items */
+        .instruction-item-one p {
+          font-size: 10px;
+        }
+      
+        /* Sets the font size of website links */
+        .website-link a {
+          font-size: 10px;
+        }
+      
+        /* Sets the font size of paragraphs in specific instruction items */
+        .instruction-item-two-to-four p {
+          font-size: 10px;
+        }
+      
+        /* Sets the font size of paragraphs in specific instruction items */
+        .instruction-item-five p {
+          font-size: 10px;
+        }
+      
+        /* Sets the margin top of the instruction separator */
+        .instruction-separator {
+          margin-top: 125px;
+        }
+    
+        .try-it-btn {
+          font-size: 10px;
+          }
+      
+        /* Reduces the size of image popup content */
+        .image-popup-content {
+          width: 350px;
+          height: 500px;
+        }
+      
+        /* Ensures the popup image fills the content area */
+        .popup-image {
+          width: 100%;
+          height: 100%;
+        }
+      
+        /* Adjusts the popup content size for smaller screens */
+        .popup-content {
+          height: 900px;
+        }
+      
+        /* Reduces the font size of headings within popups */
+        .popup-content h3 {
+          font-size: 14px;
+        }
+      
+        /* Adjusts the close button position and size within popups */
+        .close-popup {
+          right: 4px; /* Aligns it to the right */
+          font-size: 10px; /* Sets the font size */
+        }
+      
+        /* Adjusts the upload container size and padding for smaller screens */
+        .upload-container {
+          width: 200px; /* Adjusts the container width */
+          padding: 20px; /* Reduces padding for smaller screens */
+        }
+      
+        /* Adjusts the upload dropzone size and margin for smaller screens */
+        .upload-dropzone {
+          width: 250px; /* Limits dropzone width */
+          height: 80px;
+          margin-left: 20px; /* Adds margin on the left */
+        }
+      
+        /* Adjusts the upload button size */
+        .upload-btn {
+          font-size: 14px; /* Adjusts the font size */
+        }
+      
+        /* Adjusts the paragraph inside the dropzone */
+        .upload-dropzone p {
+          font-size: 14px; /* Slightly reduces text size */
+        }
+      
+        /* Adjusts the font size of selected files display */
+        .file-selected {
+          font-size: 13px; /* Sets the font size */
+        }
+      
+        /* Adjusts the font size of the remove button */
+        .file-selected .remove-btn {
+          font-size: 16px; /* Sets the font size */
+        }
+      
+        /* Adjusts the summary box size and font size for smaller screens */
+        .summary-box {
+          width: 320px;
+          height: 430px;
+          font-size: 14px;
+        }
+      
+        /* Adjusts the summary buttons with full width, padding,
+             smaller font size, and left margin */
+        .download-btn,
+        .do-it-again-btn,
+        .pause-play-btn {
+          width: 100%; /* Full width buttons */
+          padding: 10px; /* Adds padding */
+          font-size: 10px; /* Smaller font size */
+          margin-left: 5px; /* Adds left margin */
+        }
+      
+        /* Styles the footer with smaller font size */
+        .footer {
+          font-size: 10px;
+        }
+      
+        /* Adjusts the footer content padding */
+        .footer-content {
+          padding: 0 3px;
+        }
+      
+        /* Sets the width of Google logo images */
+        .google-logo img {
+          width: 25px;
+        }
+      
+        /* Sets the size of social media icons within the footer */
+        .footer-social a img {
+          width: 15px;
+          height: 15px;
+        }
+      
+        /* Reduces the size of image popup content */
+        .image-popup-content {
+          width: 480px;
+          height: 250px;
+        }
+      
+        /* Ensures the popup image fills the content area */
+        .popup-image {
+          width: 95%;
+          height: 95%;
+        }
+      
+        /* Adjusts the popup content size for smaller screens */
+        .popup-content {
+          width: 500px;
+          height: 220px;
+        }
+      
+        /* Reduces the font size of headings within popups */
+        .popup-content h3 {
+          font-size: 14px;
+        }
+      
+        /* Adjusts the close button position and size within popups */
+        .close-popup {
+          right: 4px; /* Aligns it to the right */
+          font-size: 10px; /* Sets the font size */
+        }
+      
+        /* Adjusts the upload container size and padding for smaller screens */
+        .upload-container {
+          width: 220px; /* Adjusts the container width */
+          padding: 20px; /* Reduces padding for smaller screens */
+        }
+      
+        /* Adjusts the upload dropzone size and margin for smaller screens */
+        .upload-dropzone {
+          width: 180px; /* Limits dropzone width */
+          height: 80px;
+          margin-left: 5px; /* Adds margin on the left */
+        }
+      
+        /* Adjusts the upload button size */
+        .upload-btn {
+          font-size: 11px; /* Adjusts the font size */
+        }
+      
+        /* Adjusts the paragraph inside the dropzone */
+        .upload-dropzone p {
+          font-size: 14px; /* Slightly reduces text size */
+        }
+      
+        /* Adjusts the font size of selected files display */
+        .file-selected {
+          font-size: 10px; /* Sets the font size */
+        }
+      
+        /* Adjusts the font size of the remove button */
+        .file-selected .remove-btn {
+          font-size: 16px; /* Sets the font size */
+        }
+      
+        /* Adjusts the summary box size and font size for smaller screens */
+        .summary-box {
+          width: 220px;
+          height: 250px;
+          font-size: 14px;
+        }
+      
+        /* Adjusts the summary buttons with full width, padding,
+             smaller font size, and left margin */
+        .download-btn,
+        .do-it-again-btn,
+        .pause-play-btn {
+          width: 100%; /* Full width buttons */
+          padding: 10px; /* Adds padding */
+          font-size: 10px; /* Smaller font size */
+          margin-left: auto; /* Aligns buttons to the right */
+        }
+      
+        /* Adjusts the contact page with top margin, maximum height,
+             fixed width, and bottom margin */
+        .contact-page {
+          margin-top: 52px;
+          max-height: 700px;
+          width: 290px;
+          margin-bottom: 300px;
+        }
+      
+        /* Adjusts the contact form container size for smaller screens */
+        .contact-form-container {
+          width: 250px; /* Sets a max width */
+        }
+      
+        /* Ensures input and textarea elements take full width */
+        .contact-form input,
+        .contact-form textarea {
+          width: 100%; /* Full width inputs */
+        }
+      
+        /* Styles the submit button within the contact form with padding,
+             font size, full width, top margin, and left margin */
+        .contact-form button {
+          padding: 10px 20px; /* Adds padding */
+          font-size: 16px; /* Increases the font size */
+          width: 90%; /* Makes the button full width */
+          margin-top: 10px; /* Adds space above the button */
+          margin-left: 5px; /* Adds left margin */
+        }
+      
+        /* Ensures the about page takes up 90% of the width on smaller screens */
+        .about-page {
+          padding: 30px 10px; /* Adds padding */
+          width: 90%; /* Ensures full width for mobile */
+        }
+      
+        /* Header and Titles */
+      
+        /* Styles the main headings in about, technologies, and team sections
+           with reduced font size and minimal bottom margin */
+        .about-company h1,
+        .technologies h2,
+        .meet-the-team h1 {
+          font-size: 1.2rem; /* Further reduces title font size */
+          margin-bottom: 15px; /* Minimal space below titles */
+        }
+      
+        /* Styles the about description with reduced font size, padding,
+           word wrapping, text overflow, and maximum width */
+        .about-description {
+          font-size: 0.8rem; /* Reduces the font size */
+          padding: 5px; /* Reduces padding */
+          word-wrap: break-word; /* Ensures long words wrap */
+          text-overflow: ellipsis; /* Adds ellipsis for overflow */
+          max-width: 100%; /* Ensures the content stays within the viewport */
+        }
+      
+        /* Styles the technology cards to be full width and adds bottom margin */
+        .tech-card {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      
+        /* Team Member Section */
+      
+        /* Styles the team section with left margin and fixed width */
+        .team-section {
+          margin-left: 3px;
+          width: 320px;
+        }
+      
+        /* Styles team members with fixed height */
+        .team-member {
+          height: 430px;
+        }
+      
+        /* Styles the team member images with reduced size,
+           rounded corners, bottom margin, and shadow */
+        .team-member img {
+          width: 80px; /* Profile pic 80px */
+          height: 80px; /* Profile pic 80px */
+          margin-bottom: 8px; /* Adds space below the image */
+        }
+      
+        /* Styles the team member headings with reduced font size */
+        .team-member h4 {
+          font-size: 0.75rem; /* Sets the font size */
+        }
+      
+        /* Styles the team member paragraphs with reduced font size */
+        .team-member p {
+          font-size: 0.75rem; /* Sets the font size */
+        }
+      }
+      
+      /* Transparency Section */
+      .transparency {
+        background: rgba(255, 255, 255, 0.4); /* Light frosted glass effect */
+        backdrop-filter: blur(15px); /* Adds a blur to enhance the frosted look */
+        padding: 60px; /* Space inside the section */
+        border-radius: 25px; /* Rounded corners */
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15); /* Soft shadow around the box */
+        max-width: 900px; /* Limits how wide the section can get */
+        margin: 40px auto; /* Centers the section */
+        color: #1a202c; /* Text color */
+        text-align: center; /* Centers text */
+        position: relative; /* Needed for positioning child elements */
+        overflow: hidden; /* Hides any content that goes outside the box */
+      }
+      
+      /* Animated Background Blob */
+      .transparency::before {
+        content: ""; /* Empty content for decoration */
+        position: absolute; /* Positioned relative to .transparency */
+        width: 200%; /* Blob is twice the section’s width */
+        height: 200%; /* Blob is twice the section’s height */
+        top: -100%; /* Start above the section */
+        left: -100%; /* Start to the left of the section */
+        background: radial-gradient(
+          circle,
+          rgba(255, 255, 255, 0.3),
+          transparent
+        ); /* Fading circle effect */
+        transform: rotate(45deg); /* Rotate it for a softer look */
+        animation: blobAnimation 10s infinite alternate; /* Makes the blob move slightly */
+        z-index: -1; /* Sends blob to the background */
+      }
+      
+      /* Blob Animation */
+      @keyframes blobAnimation {
+        0% {
+          transform: rotate(45deg) translate(0, 0); /* Start position */
+        }
+        100% {
+          transform: rotate(45deg) translate(50px, 50px); /* End position */
+        }
+      }
+      
+      .transparency h2 {
+        font-size: 32px; /* Heading size */
+        color: #2c3e50; /* Heading color */
+        border-bottom: 4px solid; /* Line under the heading */
+        border-image-source: linear-gradient(
+          90deg,
+          #00b4db,
+          #8e2de2
+        ); /* Gradient line */
+        padding-bottom: 10px; /* Space below the heading */
+        border-image-slice: 1;
+        border-width: 2px;
+        text-align: center;
+      }
+      
+      .transparency p {
+        font-size: 1.2em; /* Text size */
+        line-height: 1.8; /* Space between lines */
+        color: #4a5568; /* Text color */
+      }
+      
+      /* Comparison Section */
+      .summary-comparison {
+        display: flex; /* Flex layout */
+        flex-direction: column; /* Stack items vertically */
+        gap: 40px; /* Space between items */
+        margin-top: 40px; /* Space above section */
+      }
+      
+      .comparison-item {
+        background: rgba(255, 255, 255, 0.4); /* Light frosted effect */
+        padding: 30px; /* Space inside the box */
+        border-radius: 20px; /* Rounded corners */
+        transition: transform 0.4s, box-shadow 0.4s; /* Smooth hover effects */
+        border: 1px solid rgba(255, 255, 255, 0.5); /* Border for structure */
+        backdrop-filter: blur(10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      }
+      
+      .comparison-item:hover {
+        transform: translateY(-10px); /* Slight upward movement on hover */
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+      }
+      
+      .comparison-item h4 {
+        font-size: 1.8em; /* Heading size */
+        font-weight: 600;
+        color: #6a0dad; /* Purple color for titles */
+        margin-bottom: 12px; /* Space below heading */
+      }
+      
+      .comparison-item p {
+        margin: 8px 0; /* Spacing around text */
+        color: #2d3748; /* Dark text color */
+      }
+      
+      /* Sources Section */
+      .sources-section {
+        background: rgba(255, 255, 255, 0.4); /* Light frosted effect */
+        padding: 40px; /* Space inside */
+        border-radius: 25px; /* Rounded corners */
+        text-align: center; /* Center text */
+        margin-top: 40px; /* Space above section */
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15); /* Shadow for depth */
+      }
+      
+      .sources-section h3 {
+        font-size: 1.6em; /* Title size */
+        color: #8e2de2; /* Gradient color */
+        display: flex; /* Aligns icon and text */
+        align-items: center; /* Centers icon and text vertically */
+        gap: 8px; /* Space between icon and text */
+      }
+      
+      .sources-section p {
+        font-size: 1.1em; /* Paragraph size */
+        color: #4a5568; /* Text color */
+      }
+      
+      .sources-section a {
+        color: #8e2de2; /* Link color */
+        text-decoration: none; /* Remove underline */
+        transition: color 0.3s; /* Smooth color change on hover */
+      }
+      
+      .sources-section a:hover {
+        color: #00b4db; /* Lighter color on hover */
+      }
+      
+      /* Hover Animation for Links */
+      .transparency a,
+      .sources-section a {
+        position: relative; /* Needed for pseudo-element */
+        color: #6a0dad; /* Link color */
+      }
+      
+      .transparency a::after,
+      .sources-section a::after {
+        content: ""; /* Decorative line under link */
+        position: absolute; /* Positioned below the link */
+        left: 0; /* Start at the left edge */
+        bottom: -2px; /* Slightly below the text */
+        width: 100%; /* Full width */
+        height: 2px; /* Thin line */
+        background-color: #8e2de2; /* Color of the line */
+        transform: scaleX(0); /* Starts hidden */
+        transition: transform 0.3s ease-in-out; /* Smoothly shows on hover */
+      }
+      
+      .transparency a:hover::after,
+      .sources-section a:hover::after {
+        transform: scaleX(1); /* Expands line on hover */
+      }
+      
+      /* Text input box for direct text entry */
+      .text-box {
+        border: 2px dashed #082c6c; /* Adds a dashed border */
+        border-radius: 10px; /* Rounds the corners */
+        width: 60%;
+        background-color: #f9fafb; /* Light background color */
+        padding: 20px; /* Adds padding inside the dropzone */
+        position: relative; /* Allows positioning of child elements */
+        cursor: pointer; /* Changes the cursor to pointer on hover */
+        transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+      }
+      .subheading {
+        font-size: 24px; /* Adjust to match desired size */
+        font-weight: 600;
+        text-align: center;
+        color: #6a0dad; /* Replace with your preferred shade of purple */
+        margin-bottom: 15px;
+      }
