@@ -389,21 +389,10 @@
        and applies a transform transition */
   .upload-container {
     text-align: center; /* Centers the content inside the upload container */
-    //margin: 40px auto; /* Centers the container and adds space around it */
-    //padding: 50px; /* Adds padding around the container */
-    //width: 800px; /* Sets a fixed width */
     border-radius: 12px; /* Rounds the corners */
     height: 500px;
-    //background-color: #ffffff; /* Sets a white background */
-    //box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-    //transition: transform 0.3s ease; /* Adds a smooth hover effect */
   }
-  
-  /* Slightly enlarges the upload container on hover */
-  .upload-container:hover {
-    //transform: scale(1.05); /* Slightly enlarges the container when hovered */
-  }
-  
+    
   /* Upload Dropzone */
   
   /* Styles the upload dropzone with dashed border, rounded corners,
@@ -506,9 +495,6 @@
 .text-box {
   width: 100%; /* Ensure it matches the width of its container */
   height: 200px; /* Set a fixed height */
-  //border: 2px dashed #082c6c; /* Matching border style */
-  //border-radius: 12px; /* Rounded corners */
-  //padding: 15px; /* Add padding inside */
   resize: none; /* Disable resize to prevent stretching */
   overflow-y: auto; /* Vertical scrollbar for overflow */
   font-size: 16px; /* Font size */
@@ -1362,8 +1348,8 @@
     /* Adjusts the content container to use 90% of viewport width
          and adds left margin */
     .content-container {
-      width: 90vw;
-      margin-left: 40px;
+      width: 840px;
+      margin-left: 10px;
     }
     
     .instruction-separator {
@@ -1383,7 +1369,6 @@
     /* Adjusts the popup content size for smaller screens */
     .popup-content {
       width: 800px;
-      height: 750px;
     }
   
     /* Reduces the font size of headings within popups */
@@ -1397,27 +1382,9 @@
       font-size: 10px; /* Sets the font size */
     }
   
-    /* Adjusts the upload container size and padding for smaller screens */
-    .upload-container {
-      //width: 800px;
-      //height: 850px;
-      //padding: 1px; /* Reduces padding */
-      //margin: auto; /* Centers the container */
-      //font-size: 12px; /* Reduces font size */
-    }
-  
-    /* Adjusts the upload button size and padding for smaller screens */
-    .upload-btn {
-      //font-size: 14px; /* Reduces button font size */
-      //margin: 18px; /* Adds margin around the button */
-      //padding: 10px 20px; /* Adds padding inside the button */
-    }
-  
     /* Adjusts the upload dropzone size and margin for smaller screens */
     .upload-dropzone {
-      //width: 320px; /* Limits dropzone width */
-      //height: 80px;
-      //margin-left: 180px; /* Adds margin on the left */
+      width: 760px; /* Limits dropzone width */
     }
   
     /* Adjusts the paragraph inside the dropzone */
@@ -1445,7 +1412,6 @@
   
     /* Adjusts the summary box size for smaller screens */
     .summary-box {
-      height: 600px; /* Sets the height */
       width: 750px; /* Sets the width */
     }
   
@@ -1469,6 +1435,9 @@
     .footer{
       font-size: 12px;
     }
+    .dropzone{
+      width: 340px;
+     }
   }
   
   /* Tablet - Portrait */
@@ -1648,7 +1617,7 @@
     /* Adjusts the popup content size for smaller screens */
     .popup-content {
       width: 700px;
-      height: 780px; /* Limits the height */
+      height: 580px; /* Limits the height */
     }
   
     /* Reduces the font size of headings within popups */
@@ -1665,7 +1634,7 @@
     /* Adjusts the upload container size and padding for smaller screens */
     .upload-container {
       width: 700px;
-      height: 750px;
+      height: 550px;
       padding: 1px; /* Reduces padding */
       margin: auto; /* Centers the container */
       font-size: 12px; /* Reduces font size */
@@ -1680,9 +1649,9 @@
   
     /* Adjusts the upload dropzone size and margin for smaller screens */
     .upload-dropzone {
-      width: 630px; /* Limits dropzone width */
+      width: 650px; /* Limits dropzone width */
       height: 80px;
-      margin-left: 20px; /* Adds margin on the left */
+      margin-left: 3px; /* Adds margin on the left */
     }
   
     /* Adjusts the paragraph inside the dropzone */
@@ -1702,20 +1671,20 @@
 
      /* Text Input */
 .text-input {
-  width: 1050px; /* Match the width of the upload box */
-  margin-left: -190px;
+  width: 1080px; /* Match the width of the upload box */
+  margin-left: -210px;
 }
 
 /* Text Box */
 .text-box {
   width: 100%; /* Ensure it matches the width of its container */
-  height: 450px; /* Set a fixed height */
+  height: 250px; /* Set a fixed height */
 }
 
   
     /* Adjusts the summary box size for smaller screens */
     .summary-box {
-      height: 630px; /* Sets the height */
+      height: 430px; /* Sets the height */
       width: 650px; /* Sets the width */
     }
   
@@ -1736,6 +1705,10 @@
       width: 90%;
       margin-bottom: 20px;
     }
+
+    .dropzone{
+      width: 340px;
+     }
   }
   
   /* Mini Tablet Portrait */
@@ -1872,8 +1845,8 @@
     /* Adjusts the content container to use 80% of viewport width
          and centers it */
     .content-container {
-      width: 85vw;
-      margin-left: auto;
+      width: 680px;
+      margin-left: 2px;
     }
   
     /* Sets the font size of paragraphs in specific instruction items */
@@ -1886,6 +1859,9 @@
       font-size: 14px;
     }
   
+    .instruction-separator {
+      margin-top: 200px;
+    }
     /* Sets the font size of paragraphs in specific instruction items */
     .instruction-item-five p {
       font-size: 14px;
@@ -1896,6 +1872,15 @@
       width: 750px;
       height: 500px;
     }
+
+    .recent-bills{
+      gap: 8px;
+    }
+
+    .bill-item{
+      padding: 12px;
+
+    }
   
     /* Ensures the popup image fills the content area */
     .popup-image {
@@ -1905,8 +1890,8 @@
   
     /* Adjusts the popup content size for smaller screens */
     .popup-content {
-      width: 700px;
-      height: 800px; /* Limits the height */
+      width: 600px;
+      height: 700px; /* Limits the height */
     }
   
     /* Reduces the font size of headings within popups */
@@ -1922,11 +1907,9 @@
   
     /* Adjusts the upload container size and padding for smaller screens */
     .upload-container {
-     width: 680px;
+      width: 580px;
       height: 700px;
       padding: 10px; /* Reduces padding */
-      //margin: auto; /* Centers the container */
-      //font-size: 9px; /* Reduces font size */
     }
   
     /* Adjusts the upload button size and padding for smaller screens */
@@ -1937,8 +1920,8 @@
   
     /* Adjusts the upload dropzone size and margin for smaller screens */
     .upload-dropzone {
-      width: 640px; 
-      margin-left: 2px; /* Adds margin on the left */
+      width: 550px; 
+      margin-left: -7px; /* Adds margin on the left */
     }
   
     /* Adjusts the paragraph inside the dropzone */
@@ -1959,14 +1942,14 @@
      /* Text Input */
 .text-input {
   margin-top: 20px;
-  width: 1060px; /* Match the width of the upload box */
-  margin-left: -210px;
+  width: 920px; /* Match the width of the upload box */
+  margin-left: -190px;
 }
 
 /* Text Box */
 .text-box {
   width: 100%; /* Ensure it matches the width of its container */
-  height: 450px; /* Set a fixed height */
+  height: 350px; /* Set a fixed height */
   font-size: 14px; /* Font size */
   line-height: 1.5; /* Line height for readability */
 }
@@ -1974,15 +1957,20 @@
   
     /* Adjusts the summary box size for smaller screens */
     .summary-box {
-      height: 650px; /* Sets the height */
-      width: 650px; /* Sets the width */
+      height: 480px; /* Sets the height */
+      width: 560px; /* Sets the width */
+    }
+  
+    .button-icon {
+      width: 26px; /* Sets the icon width */
+      height: 26px; /* Maintains aspect ratio */
     }
   
     /* Adjusts the width of summary buttons for smaller screens */
     .download-btn,
     .do-it-again-btn,
     .pause-play-btn {
-      width: 210px;
+      width: 180px;
     }
   
     /* Ensures the about page takes up 90% of the width on smaller screens */
@@ -1994,6 +1982,14 @@
     .tech-card {
       width: 90%;
       margin-bottom: 20px;
+    }
+
+    .sources-section{
+      margin-bottom: 50px;
+    }
+
+    .dropzone{
+     width: 340px;
     }
   }
   
