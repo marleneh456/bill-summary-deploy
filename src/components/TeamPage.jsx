@@ -105,7 +105,10 @@ function TeamPage() {
 
                 <p>Artificial Intelligence Engineer</p>
 
-                <p>B.S. Computer Science, Professional Concentration & Minor in Mathematics - MTSU</p>
+                <p>
+                  B.S. Computer Science, Professional Concentration & Minor in
+                  Mathematics - MTSU
+                </p>
               </div>
             </div>
             {/* Third row */}
@@ -166,7 +169,10 @@ function TeamPage() {
                 </h4>
                 <p>Artificial Intelligence Engineer</p>
 
-                <p>B.S. Computer Science, Professional Concentration & Minor in Mathematics - MTSU</p>
+                <p>
+                  B.S. Computer Science, Professional Concentration & Minor in
+                  Mathematics - MTSU
+                </p>
               </div>
             </div>
 
@@ -231,10 +237,13 @@ function TeamPage() {
                 </h4>
                 <p>Artificial Intelligence Engineer</p>
 
-                <p>B.S. Computer Science, Professional Concentration & Minor in Engineering Technology - MTSU</p>
+                <p>
+                  B.S. Computer Science, Professional Concentration & Minor in
+                  Engineering Technology - MTSU
+                </p>
               </div>
             </div>
-
+            {/* Fifth row */}
             <div className="team-row">
               <div className="team-member">
                 <img
@@ -263,7 +272,26 @@ function TeamPage() {
                 </h4>
                 <p>Artificial Intelligence Engineer</p>
 
-                <p>B.S. Computer Science & Minor in Computational and Data Science - MTSU</p>
+                <p>
+                  B.S. Computer Science & Minor in Computational and Data
+                  Science - MTSU
+                </p>
+              </div>
+
+              <div className="team-member">
+                <img src="" alt="Member 15" className="team-photo" />
+                <h4>
+                  New Member
+                  <br />
+                  <br />
+                  <a href="h" target="_blank" className="github-link">
+                    <i className="fab fa-github social-icon"></i>
+                  </a>
+                  <a href="" target="_blank" className="username-link"></a>
+                </h4>
+                <p></p>
+
+                <p></p>
               </div>
             </div>
           </div>
@@ -363,7 +391,10 @@ function TeamPage() {
                 </h4>
                 <p>Frontend Engineer</p>
 
-                <p>B.S. Computer Science, Professional Concentration & Minor in Mathematics - MTSU</p>
+                <p>
+                  B.S. Computer Science, Professional Concentration & Minor in
+                  Mathematics - MTSU
+                </p>
               </div>
             </div>
 
@@ -517,6 +548,21 @@ function TeamPage() {
                 <p>Backend Engineer</p>
 
                 <p>B.S. Computer Science - MTSU</p>
+              </div>
+              <div className="team-member">
+                <img src="" alt="Member 15" className="team-photo" />
+                <h4>
+                  New Member
+                  <br />
+                  <br />
+                  <a href="h" target="_blank" className="github-link">
+                    <i className="fab fa-github social-icon"></i>
+                  </a>
+                  <a href="" target="_blank" className="username-link"></a>
+                </h4>
+                <p></p>
+
+                <p></p>
               </div>
             </div>
           </div>
