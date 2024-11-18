@@ -2170,6 +2170,10 @@
       font-size: 12px;
       padding: 10px 20px;
       }
+
+      .Recent-bills-line{
+        width: 68%;
+      }
   
     /* Reduces the size of image popup content */
     .image-popup-content {
@@ -2422,7 +2426,7 @@
   }
 
   .Recent-bills-line{
-    width: 58%;
+    width: 68%;
   }
 .image-popup-content {
   width: 350px;
