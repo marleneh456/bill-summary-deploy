@@ -2188,7 +2188,7 @@
     /* Adjusts the popup content size for smaller screens */
     .popup-content {
       width: 600px;
-      height: 300px; /* Limits the height */
+      height: 280px; /* Limits the height */
     }
   
     /* Reduces the font size of headings within popups */
@@ -2205,7 +2205,7 @@
     /* Adjusts the upload container size and padding for smaller screens */
     .upload-container {
       width: 580px;
-      height: 260px;
+      height: 220px;
       padding: 1px; /* Reduces padding */
     }
   
@@ -2215,6 +2215,7 @@
       margin: 18px; /* Adds margin around the button */
       padding: 10px 20px; /* Adds padding inside the button */
       margin-left: auto;
+      margin-top: 3px;
     }
   
     /* Adjusts the upload dropzone size and margin for smaller screens */
@@ -2244,6 +2245,7 @@
   margin-top: 8px;
   width: 580px; /* Match the width of the upload box */
   margin-left: -10px;
+  font-size: 10px;
 }
 
 /* Text Box */
