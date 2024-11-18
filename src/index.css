@@ -2509,6 +2509,7 @@
     }
     .contact-form-container {
       width: 380px; 
+      margin-left: -10px;
     }
   
     .contact-form input,
@@ -2531,6 +2532,7 @@
     .about-page {
       padding: 30px 10px; /* Adds padding */
       width: 90%; /* Ensures full width for mobile */
+      margin-bottom: 100px;
     }
   
     /* Header and Titles */
