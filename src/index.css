@@ -2421,7 +2421,9 @@
 	font-size: 14px;
   }
 
-
+  .Recent-bills-line{
+    width: 58%;
+  }
 .image-popup-content {
   width: 350px;
   height: 200px;
@@ -2732,6 +2734,10 @@ font-size: 10px;
   .try-it-btn {
 	margin-bottom: 90px;
 	font-size: 10px;
+  }
+
+  .Recent-bills-line{
+    width: 58%;
   }
 .footer{
 font-size: 10px;
