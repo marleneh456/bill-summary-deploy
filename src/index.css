@@ -493,7 +493,7 @@
 
 /* Text Box */
 .text-box {
-  width: 100%; /* Ensure it matches the width of its container */
+  width: 940px; /* Ensure it matches the width of its container */
   height: 200px; /* Set a fixed height */
   resize: none; /* Disable resize to prevent stretching */
   overflow-y: auto; /* Vertical scrollbar for overflow */
@@ -1402,15 +1402,16 @@
       font-size: 16px; /* Sets the font size */
     }
 
-     /* Text Input */
+    /* Text Input */
 .text-input {
   margin-top: 20px;
-  width: 1236px; /* Match the width of the upload box */
-  margin-left: -248px;
+  margin-left: -380px;
 }
 
-.text-box{
-  height: 280px;
+/* Text Box */
+.text-box {
+  width: 738px; /* Ensure it matches the width of its container */
+  height: 200px; /* Set a fixed height */
 }
 
   
@@ -1640,7 +1641,6 @@
       width: 700px;
       height: 550px;
       padding: 1px; /* Reduces padding */
-      margin: auto; /* Centers the container */
       font-size: 12px; /* Reduces font size */
     }
   
@@ -1649,6 +1649,7 @@
       font-size: 14px; /* Reduces button font size */
       margin: 18px; /* Adds margin around the button */
       padding: 10px 20px; /* Adds padding inside the button */
+      margin-left: 2px;
     }
   
     /* Adjusts the upload dropzone size and margin for smaller screens */
@@ -1675,13 +1676,12 @@
 
      /* Text Input */
 .text-input {
-  width: 1080px; /* Match the width of the upload box */
-  margin-left: -210px;
+  margin-left: -418px;
 }
 
 /* Text Box */
 .text-box {
-  width: 100%; /* Ensure it matches the width of its container */
+  width: 644px; /* Ensure it matches the width of its container */
   height: 250px; /* Set a fixed height */
 }
 
@@ -1945,14 +1945,12 @@
 
      /* Text Input */
 .text-input {
-  margin-top: 20px;
-  width: 920px; /* Match the width of the upload box */
-  margin-left: -190px;
+  margin-left: -480px;
 }
 
 /* Text Box */
 .text-box {
-  width: 100%; /* Ensure it matches the width of its container */
+  width: 550px; /* Ensure it matches the width of its container */
   height: 350px; /* Set a fixed height */
   font-size: 14px; /* Font size */
   line-height: 1.5; /* Line height for readability */
@@ -2188,7 +2186,8 @@
     /* Adjusts the popup content size for smaller screens */
     .popup-content {
       width: 600px;
-      height: 260px; /* Limits the height */
+      height: 220px; /* Limits the height */
+      overflow-y: auto;
     }
   
     /* Reduces the font size of headings within popups */
@@ -2205,7 +2204,7 @@
     /* Adjusts the upload container size and padding for smaller screens */
     .upload-container {
       width: 580px;
-      height: 200px;
+      height: 100px;
       padding: 1px; /* Reduces padding */
     }
   
@@ -2215,7 +2214,7 @@
       margin: 18px; /* Adds margin around the button */
       padding: 5px 20px; /* Adds padding inside the button */
       margin-left: auto;
-      margin-top: 5px;
+      margin-top: 15px;
     }
   
     /* Adjusts the upload dropzone size and margin for smaller screens */
@@ -2242,15 +2241,15 @@
 
      /* Text Input */
 .text-input {
-  margin-top: 8px;
-  width: 580px; /* Match the width of the upload box */
-  margin-left: -10px;
+  margin-top: 2px;
   font-size: 10px;
+  margin-left: -465px;
 }
 
 /* Text Box */
 .text-box {
-  height: 50px; /* Set a fixed height */
+  width: 568px; /* Match the width of the upload box */
+  height: 40px; /* Set a fixed height */
   font-size: 10px; /* Font size */
 }
 
@@ -2448,14 +2447,14 @@
   }
 
   .upload-container {
-    width: 200px; /* Adjusts the container width */
+    width: 260px; /* Adjusts the container width */
+    height: 400px;
     padding: 10px; /* Reduces padding for smaller screens */
   }
 
   .upload-dropzone {
-    width: 280px; /* Limits dropzone width */
+    width: 250px; /* Limits dropzone width */
     height: 80px;
-    margin-left: -50px; /* Adds margin on the left */
   }
   
   .upload-btn {
@@ -2474,15 +2473,15 @@
     font-size: 16px; /* Sets the font size */
   }
 
-   /* Text Input */
+    /* Text Input */
 .text-input {
   margin-top: 8px;
-  width: 278px; /* Match the width of the upload box */
-  margin-left: -50px;
+  margin-left: -635px;
 }
 
 /* Text Box */
 .text-box {
+  width: 250px; /* Match the width of the upload box */
   height: 80px; /* Set a fixed height */
   font-size: 10px; /* Font size */
 }
@@ -2781,9 +2780,9 @@ font-size: 10px;
   }
 
   .upload-dropzone {
-    width: 250px; /* Limits dropzone width */
+    width: 230px; /* Limits dropzone width */
     height: 80px;
-    margin-left: -35px; /* Adds margin on the left */
+    margin-left: -20px; /* Adds margin on the left */
   }
   
   .upload-btn {
@@ -2805,12 +2804,12 @@ font-size: 10px;
    /* Text Input */
 .text-input {
   margin-top: 8px;
-  width: 240px; /* Match the width of the upload box */
-  margin-left: -30px;
+  margin-left: -658px;
 }
 
 /* Text Box */
 .text-box {
+  width: 230px; /* Match the width of the upload box */
   height: 80px; /* Set a fixed height */
   font-size: 10px; /* Font size */
 }
