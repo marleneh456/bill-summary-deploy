@@ -349,153 +349,151 @@
   /* Styles the content area of upload popups with white background,
          padding, rounded corners, fixed size, relative positioning,
          and box-sizing to include padding in width calculations */
-  .popup-content {
-    background: white; /* Sets a white background */
-    padding: 20px; /* Adds padding around the content */
-    border-radius: 10px; /* Rounds the corners */
-    width: 980px; /* Sets a fixed width */
-    height: 600px; /* Sets a fixed height */
-    position: relative; /* Positions elements relative to the popup */
-    box-sizing: border-box; /* Includes padding in width and height */
-    overflow-y: hidden;
-    overflow-x: hidden;
-  }
-  
-  /* Styles the heading inside upload popups with a specific font size */
-  .popup-content h3 {
-    font-size: 20px; /* Sets the font size */
-  }
-  
-  /* Styles the close button inside upload popups with absolute positioning,
-         no background or border, pointer cursor, and font size */
-  .close-popup {
-    position: absolute; /* Positions the button inside the popup */
-    top: 2px; /* Aligns it to the top */
-    right: 2px; /* Aligns it to the right */
-    background: none; /* Removes the background */
-    border: none; /* Removes the border */
-    cursor: pointer; /* Changes cursor to pointer */
-    font-size: 18px; /* Sets the font size */
-  }
-  
-  /* Upload Container */
-  
-  /* Centers content, adds margins and padding, sets fixed width,
-         rounds corners, sets background color, adds box shadow,
-         and applies a transform transition */
-  .upload-container {
-    text-align: center; /* Centers the content inside the upload container */
-    border-radius: 12px; /* Rounds the corners */
-    height: 500px;
-  }
-  
-  /* Upload Dropzone */
-  
-  /* Styles the upload dropzone with dashed border, rounded corners,
-         light background color, padding, relative positioning,
-         pointer cursor, and transition effects */
-  .upload-dropzone {
-    border: 2px dashed #082c6c; /* Adds a dashed border */
-    border-radius: 12px; /* Rounds the corners */
-    background-color: #f9fafb; /* Light background color */
-    padding: 25px; /* Adds padding inside the dropzone */
-    position: relative; /* Allows positioning of child elements */
-    cursor: pointer; /* Changes the cursor to pointer on hover */
-    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
-    width: 890px;
-  }
-  
-  /* Changes background and border color of dropzone on hover */
-  .upload-dropzone:hover {
-    background-color: #e2e8f0; /* Changes background color on hover */
-    border-color: #061d48; /* Changes border color on hover */
-  }
-  
-  /* Styles the paragraph inside the dropzone with specific font size and color */
-  .upload-dropzone p {
-    font-size: 16px; /* Sets the font size */
-    color: #555555; /* Text color */
-    margin: 0; /* Removes margin around the text */
-  }
-  
-  /* Hides the file input by making it transparent and covering the entire dropzone */
-  .file-input {
-    opacity: 0; /* Hides the file input */
-    position: absolute; /* Positions the input over the dropzone */
-    top: 0; /* Aligns the input to the top */
-    left: 0; /* Aligns the input to the left */
-    width: 100%; /* Makes the input full width */
-    height: 100%; /* Makes the input full height */
-    cursor: pointer; /* Pointer cursor */
-  }
-  
-  /* Styles the display of selected files with margin, font size,
-         bold font weight, and text color */
-  .file-selected {
-    margin-top: 10px; /* Adds margin above the selected file info */
-    font-size: 14px; /* Sets the font size */
-    font-weight: bold; /* Makes the text bold */
-    color: #333; /* Text color */
-  }
-  
-  /* Styles the remove button inside file-selected with no background or border,
-         red color, larger font size, bold font weight, pointer cursor, and transition */
-  .file-selected .remove-btn {
-    background: none; /* Removes the background */
-    border: none; /* Removes the border */
-    color: #ff6b6b; /* Sets the color for the remove button */
-    font-size: 20px; /* Sets the font size */
-    font-weight: bold; /* Makes the text bold */
-    cursor: pointer; /* Pointer cursor */
-    transition: color 0.3s ease; /* Smooth color transition */
-  }
-  
-  /* Changes the remove button color on hover */
-  .file-selected .remove-btn:hover {
-    color: #ff4a4a; /* Changes the color on hover */
-  }
-  
-  /* Upload Button */
-  
-  /* Styles the upload button with margin, padding, background color,
-         white text, no border, rounded corners, font size and weight,
-         pointer cursor, transition effects, and box shadow */
-  .upload-btn {
-    margin: 15px 10px; /* Adds margin around the button */
-    padding: 15px 50px; /* Adds padding inside the button */
-    background-color: #b31942; /* Sets the background color */
-    color: white; /* Makes the button text white */
-    border: none; /* Removes the border */
-    border-radius: 40px; /* Rounds the button's corners */
-    font-size: 16px; /* Sets the font size */
-    font-weight: 600; /* Makes the text bold */
-    cursor: pointer; /* Changes the cursor to pointer on hover */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Adds smooth transitions */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
-  }
-  
-  /* Changes background color and lifts the button on hover */
-  .upload-btn:hover {
-    background-color: #e64d75; /* Changes the background color on hover */
-    transform: translateY(-3px); /* Lifts the button on hover */
-  }
-  
-  /* Text Input */
-  .text-input {
-    margin-top: 20px;
-    width: 1500px; /* Match the width of the upload box */
-    margin-left: -280px;
-  }
-  
-  /* Text Box */
-  .text-box {
-    width: 100%; /* Ensure it matches the width of its container */
-    height: 200px; /* Set a fixed height */
-    resize: none; /* Disable resize to prevent stretching */
-    overflow-y: auto; /* Vertical scrollbar for overflow */
-    font-size: 16px; /* Font size */
-    line-height: 1.5; /* Line height for readability */
-  }
+         .popup-content {
+          background: white; /* Sets a white background */
+          padding: 20px; /* Adds padding around the content */
+          border-radius: 10px; /* Rounds the corners */
+          width: 980px; /* Sets a fixed width */
+          height: 600px; /* Sets a fixed height */
+          position: relative; /* Positions elements relative to the popup */
+          box-sizing: border-box; /* Includes padding in width and height */
+        }
+        
+        /* Styles the heading inside upload popups with a specific font size */
+        .popup-content h3 {
+          font-size: 20px; /* Sets the font size */
+        }
+        
+        /* Styles the close button inside upload popups with absolute positioning,
+               no background or border, pointer cursor, and font size */
+        .close-popup {
+          position: absolute; /* Positions the button inside the popup */
+          top: 2px; /* Aligns it to the top */
+          right: 2px; /* Aligns it to the right */
+          background: none; /* Removes the background */
+          border: none; /* Removes the border */
+          cursor: pointer; /* Changes cursor to pointer */
+          font-size: 18px; /* Sets the font size */
+        }
+        
+        /* Upload Container */
+        
+        /* Centers content, adds margins and padding, sets fixed width,
+               rounds corners, sets background color, adds box shadow,
+               and applies a transform transition */
+        .upload-container {
+          text-align: center; /* Centers the content inside the upload container */
+          border-radius: 12px; /* Rounds the corners */
+          height: 500px;
+        }
+        
+        /* Upload Dropzone */
+        
+        /* Styles the upload dropzone with dashed border, rounded corners,
+               light background color, padding, relative positioning,
+               pointer cursor, and transition effects */
+        .upload-dropzone {
+          border: 2px dashed #082c6c; /* Adds a dashed border */
+          border-radius: 12px; /* Rounds the corners */
+          background-color: #f9fafb; /* Light background color */
+          padding: 25px; /* Adds padding inside the dropzone */
+          position: relative; /* Allows positioning of child elements */
+          cursor: pointer; /* Changes the cursor to pointer on hover */
+          transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+          width: 890px;
+        }
+        
+        /* Changes background and border color of dropzone on hover */
+        .upload-dropzone:hover {
+          background-color: #e2e8f0; /* Changes background color on hover */
+          border-color: #061d48; /* Changes border color on hover */
+        }
+        
+        /* Styles the paragraph inside the dropzone with specific font size and color */
+        .upload-dropzone p {
+          font-size: 16px; /* Sets the font size */
+          color: #555555; /* Text color */
+          margin: 0; /* Removes margin around the text */
+        }
+        
+        /* Hides the file input by making it transparent and covering the entire dropzone */
+        .file-input {
+          opacity: 0; /* Hides the file input */
+          position: absolute; /* Positions the input over the dropzone */
+          top: 0; /* Aligns the input to the top */
+          left: 0; /* Aligns the input to the left */
+          width: 100%; /* Makes the input full width */
+          height: 100%; /* Makes the input full height */
+          cursor: pointer; /* Pointer cursor */
+        }
+        
+        /* Styles the display of selected files with margin, font size,
+               bold font weight, and text color */
+        .file-selected {
+          margin-top: 10px; /* Adds margin above the selected file info */
+          font-size: 14px; /* Sets the font size */
+          font-weight: bold; /* Makes the text bold */
+          color: #333; /* Text color */
+        }
+        
+        /* Styles the remove button inside file-selected with no background or border,
+               red color, larger font size, bold font weight, pointer cursor, and transition */
+        .file-selected .remove-btn {
+          background: none; /* Removes the background */
+          border: none; /* Removes the border */
+          color: #ff6b6b; /* Sets the color for the remove button */
+          font-size: 20px; /* Sets the font size */
+          font-weight: bold; /* Makes the text bold */
+          cursor: pointer; /* Pointer cursor */
+          transition: color 0.3s ease; /* Smooth color transition */
+        }
+        
+        /* Changes the remove button color on hover */
+        .file-selected .remove-btn:hover {
+          color: #ff4a4a; /* Changes the color on hover */
+        }
+        
+        /* Upload Button */
+        
+        /* Styles the upload button with margin, padding, background color,
+               white text, no border, rounded corners, font size and weight,
+               pointer cursor, transition effects, and box shadow */
+        .upload-btn {
+          margin: 15px 10px; /* Adds margin around the button */
+          padding: 15px 50px; /* Adds padding inside the button */
+          background-color: #b31942; /* Sets the background color */
+          color: white; /* Makes the button text white */
+          border: none; /* Removes the border */
+          border-radius: 40px; /* Rounds the button's corners */
+          font-size: 16px; /* Sets the font size */
+          font-weight: 600; /* Makes the text bold */
+          cursor: pointer; /* Changes the cursor to pointer on hover */
+          transition: background-color 0.3s ease, transform 0.3s ease; /* Adds smooth transitions */
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+        }
+        
+        /* Changes background color and lifts the button on hover */
+        .upload-btn:hover {
+          background-color: #e64d75; /* Changes the background color on hover */
+          transform: translateY(-3px); /* Lifts the button on hover */
+        }
+        
+        /* Text Input */
+        .text-input {
+          margin-top: 20px;
+          width: 1500px; /* Match the width of the upload box */
+          margin-left: -280px;
+        }
+        
+        /* Text Box */
+        .text-box {
+          width: 940px; /* Ensure it matches the width of its container */
+          height: 200px; /* Set a fixed height */
+          resize: none; /* Disable resize to prevent stretching */
+          overflow-y: auto; /* Vertical scrollbar for overflow */
+          font-size: 16px; /* Font size */
+          line-height: 1.5; /* Line height for readability */
+        }
   
   /* Loading Spinner */
   
@@ -1205,1069 +1203,1079 @@
     }
   }
   
-  /* Split Desktop */
+    /* Split Desktop */
   
   /* Applies styles when the viewport is at most 1022px wide and
          at most 2100px high */
-  @media (max-width: 1022px) and (max-height: 2100px) {
-    /* Hides the desktop navigation on smaller screens */
-    .full-screen-nav-links {
-      display: none; /* Hides the desktop navigation on mobile */
-    }
-  
-    /* Styles the menu button with no background or border,
-           white color, large font size, pointer cursor, and positions it */
-    .menu-button {
-      background: none;
-      border: none;
-      color: white;
-      font-size: 30px;
-      cursor: pointer;
-      right: 10px; /* Positions the button 10px from the right edge */
-      top: 5x; /* Positions the button 10px from the top */
-    }
-  
-    /* Hides the navigation links initially and styles their position,
-           width, background color, alignment, z-index, and transition */
-    .nav-links {
-      display: none; /* Hides the mobile navigation links initially */
-      position: absolute; /* Changes position to absolute */
-      top: 65px; /* Pushes the navigation links down by 65px */
-      left: 0; /* Aligns the navigation to the left */
-      width: 100%; /* Makes the navigation take up the full width */
-      background-color: #1a3d6c; /* Background color */
-      justify-content: flex-start; /* Align navigation links to the left */
-      z-index: 9; /* Ensure the navigation appears above other elements */
-      transition: transform 0.3s ease-in-out; /* Smooth transition */
-    }
-  
-    /* When nav-links has the class 'open', display as flex with row direction
-           and apply a slide down animation */
-    .nav-links.open {
-      display: flex; /* Makes links visible */
-      flex-direction: row; /* Arrange links horizontally */
-      animation: slideDown 0.1s forwards; /* Sliding down effect */
-      justify-content: flex-start; /* Align links to the left */
-    }
-  
-    /* Removes display flex and applies a slide up animation when 'close' class is added */
-    .nav-links.close {
-      animation: slideUp 0.1s forwards; /* Sliding up effect */
-    }
-  
-    /* Styles the unordered list within nav-links by removing list styling,
-           arranging items horizontally, adding gaps, and setting margins */
-    .nav-links ul {
-      list-style: none; /* Removes bullets */
-      padding: 0; /* Removes padding around the links */
-      margin: 0; /* Removes margin around the links */
-      display: flex; /* Arranges the links horizontally */
-      flex-direction: row; /* Arrange links horizontally */
-      gap: 20px; /* Adds space between links */
-      margin-left: auto; /* Align links to the left */
-      margin-top: 20px; /* Adds space above the links */
-      margin-bottom: 20px; /* Adds space below the links */
-    }
-  
-    /* Styles individual list items within nav-links with vertical margins */
-    .nav-links ul li {
-      margin: 10px 0; /* Adds space between each link */
-    }
-  
-    /* Styles the anchor tags within nav-links list items */
-    .nav-links ul li a {
-      color: white; /* Makes the link text white */
-      text-decoration: none; /* Removes the underline from the links */
-      font-size: 16px; /* Sets the font size for the links */
-      padding: 10px 15px; /* Adds padding inside the links */
-      background-color: #4a5c79; /* Sets the background color */
-      border-radius: 15px; /* Rounds the corners */
-      transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
-    }
-  
-    /* Changes the background color of nav links on hover */
-    .nav-links ul li a:hover {
-      background-color: #3d4e66; /* Changes the background color on hover */
-    }
-  
-    /* Defines the slideDown keyframes for animation */
-    @keyframes slideDown {
-      from {
-        opacity: 0; /* Start fully transparent */
-        transform: translateY(-20px); /* Start 20px above */
+         @media (max-width: 1022px) and (max-height: 2100px) {
+          /* Hides the desktop navigation on smaller screens */
+          .full-screen-nav-links {
+            display: none; /* Hides the desktop navigation on mobile */
+          }
+        
+          /* Styles the menu button with no background or border,
+                 white color, large font size, pointer cursor, and positions it */
+          .menu-button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            right: 10px; /* Positions the button 10px from the right edge */
+            top: 5x; /* Positions the button 10px from the top */
+          }
+        
+          /* Hides the navigation links initially and styles their position,
+                 width, background color, alignment, z-index, and transition */
+          .nav-links {
+            display: none; /* Hides the mobile navigation links initially */
+            position: absolute; /* Changes position to absolute */
+            top: 65px; /* Pushes the navigation links down by 65px */
+            left: 0; /* Aligns the navigation to the left */
+            width: 100%; /* Makes the navigation take up the full width */
+            background-color: #1a3d6c; /* Background color */
+            justify-content: flex-start; /* Align navigation links to the left */
+            z-index: 9; /* Ensure the navigation appears above other elements */
+            transition: transform 0.3s ease-in-out; /* Smooth transition */
+          }
+        
+          /* When nav-links has the class 'open', display as flex with row direction
+                 and apply a slide down animation */
+          .nav-links.open {
+            display: flex; /* Makes links visible */
+            flex-direction: row; /* Arrange links horizontally */
+            animation: slideDown 0.1s forwards; /* Sliding down effect */
+            justify-content: flex-start; /* Align links to the left */
+          }
+        
+          /* Removes display flex and applies a slide up animation when 'close' class is added */
+          .nav-links.close {
+            animation: slideUp 0.1s forwards; /* Sliding up effect */
+          }
+        
+          /* Styles the unordered list within nav-links by removing list styling,
+                 arranging items horizontally, adding gaps, and setting margins */
+          .nav-links ul {
+            list-style: none; /* Removes bullets */
+            padding: 0; /* Removes padding around the links */
+            margin: 0; /* Removes margin around the links */
+            display: flex; /* Arranges the links horizontally */
+            flex-direction: row; /* Arrange links horizontally */
+            gap: 20px; /* Adds space between links */
+            margin-left: auto; /* Align links to the left */
+            margin-top: 20px; /* Adds space above the links */
+            margin-bottom: 20px; /* Adds space below the links */
+          }
+        
+          /* Styles individual list items within nav-links with vertical margins */
+          .nav-links ul li {
+            margin: 10px 0; /* Adds space between each link */
+          }
+        
+          /* Styles the anchor tags within nav-links list items */
+          .nav-links ul li a {
+            color: white; /* Makes the link text white */
+            text-decoration: none; /* Removes the underline from the links */
+            font-size: 16px; /* Sets the font size for the links */
+            padding: 10px 15px; /* Adds padding inside the links */
+            background-color: #4a5c79; /* Sets the background color */
+            border-radius: 15px; /* Rounds the corners */
+            transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
+          }
+        
+          /* Changes the background color of nav links on hover */
+          .nav-links ul li a:hover {
+            background-color: #3d4e66; /* Changes the background color on hover */
+          }
+        
+          /* Defines the slideDown keyframes for animation */
+          @keyframes slideDown {
+            from {
+              opacity: 0; /* Start fully transparent */
+              transform: translateY(-20px); /* Start 20px above */
+            }
+            to {
+              opacity: 1; /* End fully opaque */
+              transform: translateY(0); /* Move to original position */
+            }
+          }
+        
+          /* Defines the slideUp keyframes for animation */
+          @keyframes slideUp {
+            from {
+              opacity: 1; /* Start fully opaque */
+              transform: translateY(0); /* Start at original position */
+            }
+            to {
+              opacity: 0; /* End fully transparent */
+              transform: translateY(-20px); /* Slide 20px up */
+            }
+          }
+        
+          /* Ensures all elements use border-box sizing */
+          * {
+            box-sizing: border-box;
+          }
+        
+          /* Sets the body background color to Cornsilk */
+          body {
+            background-color: #fff8dc; /* Cornsilk */
+          }
+        
+          /* Styles the main heading in the welcome section with reduced font size */
+          .welcome-section h1 {
+            font-size: 28px;
+          }
+        
+          /* Styles the paragraph in the welcome section with reduced font size */
+          .welcome-section p {
+            font-size: 14px;
+          }
+        
+          /* Adjusts the content container to use 90% of viewport width
+                 and adds left margin */
+          .content-container {
+            width: 800px;
+            margin-left: 10px;
+          }
+        
+          .instruction-separator {
+            margin-top: 150px;
+          }
+        
+          .Recent-bills-line {
+            width: 40%;
+          }
+        
+          /* Reduces the size of the image popup content */
+          .image-popup-content {
+            width: 750px;
+            height: 500px;
+          }
+        
+          /* Adjusts the popup content size for smaller screens */
+          .popup-content {
+            width: 800px;
+          }
+        
+          /* Reduces the font size of headings within popups */
+          .popup-content h3 {
+            font-size: 16px;
+          }
+        
+          /* Adjusts the close button position and size within popups */
+          .close-popup {
+            right: 4px; /* Aligns it to the right */
+            font-size: 10px; /* Sets the font size */
+          }
+        
+          /* Adjusts the upload dropzone size and margin for smaller screens */
+          .upload-dropzone {
+            width: 740px; /* Limits dropzone width */
+          }
+        
+          /* Adjusts the paragraph inside the dropzone */
+          .upload-dropzone p {
+            font-size: 16px; /* Reduces text size */
+          }
+        
+          /* Adjusts the font size of selected files display */
+          .file-selected {
+            font-size: 16px; /* Sets the font size */
+          }
+        
+          /* Adjusts the font size of the remove button */
+          .file-selected .remove-btn {
+            font-size: 16px; /* Sets the font size */
+          }
+        
+           /* Text Input */
+      .text-input {
+        margin-top: 20px;
+        margin-left: -380px;
       }
-      to {
-        opacity: 1; /* End fully opaque */
-        transform: translateY(0); /* Move to original position */
+      
+      /* Text Box */
+      .text-box {
+        width: 738px; /* Ensure it matches the width of its container */
+        height: 200px; /* Set a fixed height */
       }
-    }
+      
+       /* Adjusts the width of summary buttons for smaller screens */
+       .download-btn,
+       .do-it-again-btn,
+       .pause-play-btn {
+         width: 244px;
+       }
+          /* Ensures the about page takes up 90% of the width on smaller screens */
+          .about-page {
+            width: 90%; /* Ensures full width for mobile */
+          }
+        
+          /* Styles the technology cards to be responsive and adds bottom margin */
+          .tech-card {
+            width: 90%;
+            margin-bottom: 20px;
+          }
+          .footer {
+            font-size: 12px;
+          }
+          .dropzone {
+            width: 340px;
+          }
+        }
   
-    /* Defines the slideUp keyframes for animation */
-    @keyframes slideUp {
-      from {
-        opacity: 1; /* Start fully opaque */
-        transform: translateY(0); /* Start at original position */
-      }
-      to {
-        opacity: 0; /* End fully transparent */
-        transform: translateY(-20px); /* Slide 20px up */
-      }
-    }
-  
-    /* Ensures all elements use border-box sizing */
-    * {
-      box-sizing: border-box;
-    }
-  
-    /* Sets the body background color to Cornsilk */
-    body {
-      background-color: #fff8dc; /* Cornsilk */
-    }
-  
-    /* Styles the main heading in the welcome section with reduced font size */
-    .welcome-section h1 {
-      font-size: 28px;
-    }
-  
-    /* Styles the paragraph in the welcome section with reduced font size */
-    .welcome-section p {
-      font-size: 14px;
-    }
-  
-    /* Adjusts the content container to use 90% of viewport width
-           and adds left margin */
-    .content-container {
-      width: 840px;
-      margin-left: 10px;
-    }
-  
-    .instruction-separator {
-      margin-top: 150px;
-    }
-  
-    .Recent-bills-line {
-      width: 40%;
-    }
-  
-    /* Reduces the size of the image popup content */
-    .image-popup-content {
-      width: 750px;
-      height: 500px;
-    }
-  
-    /* Adjusts the popup content size for smaller screens */
-    .popup-content {
-      width: 800px;
-    }
-  
-    /* Reduces the font size of headings within popups */
-    .popup-content h3 {
-      font-size: 16px;
-    }
-  
-    /* Adjusts the close button position and size within popups */
-    .close-popup {
-      right: 4px; /* Aligns it to the right */
-      font-size: 10px; /* Sets the font size */
-    }
-  
-    /* Adjusts the upload dropzone size and margin for smaller screens */
-    .upload-dropzone {
-      width: 760px; /* Limits dropzone width */
-    }
-  
-    /* Adjusts the paragraph inside the dropzone */
-    .upload-dropzone p {
-      font-size: 16px; /* Reduces text size */
-    }
-  
-    /* Adjusts the font size of selected files display */
-    .file-selected {
-      font-size: 16px; /* Sets the font size */
-    }
-  
-    /* Adjusts the font size of the remove button */
-    .file-selected .remove-btn {
-      font-size: 16px; /* Sets the font size */
-    }
-  
-    /* Text Input */
-    .text-input {
-      margin-top: 20px;
-      width: 1270px; /* Match the width of the upload box */
-      margin-left: -257px;
-    }
-  
-    /* Adjusts the summary box size for smaller screens */
-    .summary-box {
-      width: 750px; /* Sets the width */
-    }
-  
-    /* Adjusts the width of summary buttons for smaller screens */
-    .download-btn,
-    .do-it-again-btn,
-    .pause-play-btn {
-      width: 244px;
-    }
-  
-    /* Ensures the about page takes up 90% of the width on smaller screens */
-    .about-page {
-      width: 90%; /* Ensures full width for mobile */
-    }
-  
-    /* Styles the technology cards to be responsive and adds bottom margin */
-    .tech-card {
-      width: 90%;
-      margin-bottom: 20px;
-    }
-    .footer {
-      font-size: 12px;
-    }
-    .dropzone {
-      width: 340px;
-    }
-  }
-  
-  /* Tablet - Portrait */
+   /* Tablet - Portrait */
   
   /* Applies styles for portrait-oriented tablets with max width 835px
          and max height 1195px */
-  @media only screen and (max-width: 835px) and (max-height: 1195px) and (orientation: portrait) {
-    /* Hides the desktop navigation on smaller screens */
-    .full-screen-nav-links {
-      display: none; /* Hides the desktop navigation on mobile */
-    }
+         @media only screen and (max-width: 835px) and (max-height: 1195px) and (orientation: portrait) {
+          /* Hides the desktop navigation on smaller screens */
+          .full-screen-nav-links {
+            display: none; /* Hides the desktop navigation on mobile */
+          }
+        
+          /* Styles the menu button similar to previous media queries */
+          .menu-button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            right: 10px; /* Positions the button 10px from the right edge */
+            top: 5x; /* Positions the button 10px from the top */
+          }
+        
+          /* Hides the navigation links initially and styles their position,
+                 width, background color, alignment, z-index, and transition */
+          .nav-links {
+            display: none; /* Hides the mobile navigation links initially */
+            position: absolute; /* Changes position to absolute */
+            top: 55px; /* Pushes the navigation links down by 55px */
+            left: 0; /* Aligns the navigation to the left */
+            width: 100%; /* Makes the navigation take up the full width */
+            background-color: #1a3d6c; /* Background color */
+            justify-content: center; /* Centers the navigation links */
+            z-index: 9; /* Ensure the navigation appears above other elements */
+            transition: transform 0.3s ease-in-out; /* Smooth transition */
+          }
+        
+          /* When nav-links has the class 'open', display as flex with column direction
+                 and apply a slide down animation */
+          .nav-links.open {
+            display: flex; /* Makes links visible */
+            flex-direction: column; /* Stacks links vertically */
+            animation: slideDown 0.1s forwards; /* Sliding down effect */
+          }
+        
+          /* Applies slide up animation when nav-links has the class 'close' */
+          .nav-links.close {
+            animation: slideUp 0.1s forwards; /* Sliding up effect */
+          }
+        
+          /* Styles the unordered list within nav-links by removing list styling,
+                 arranging items horizontally, adding gaps, and setting margins */
+          .nav-links ul {
+            list-style: none; /* Removes bullets */
+            padding: 0; /* Removes padding around the links */
+            margin: 0; /* Removes margin around the links */
+            display: flex; /* Arranges the links horizontally */
+            gap: 20px; /* Adds space between the links */
+            margin-left: auto;
+            margin-top: 30px; /* Adds 30px of space above the links */
+            margin-bottom: 20px; /* Adds 20px of space below the links */
+          }
+        
+          /* Styles individual list items within nav-links with vertical margins */
+          .nav-links ul li {
+            margin: 10px 0; /* Adds space between each link */
+          }
+        
+          /* Styles the anchor tags within nav-links list items */
+          .nav-links ul li a {
+            color: white; /* Makes the link text white */
+            text-decoration: none; /* Removes the underline from the links */
+            font-size: 18px; /* Sets the font size for the links */
+            padding: 10px 20px; /* Adds padding inside the links */
+            background-color: #4a5c79; /* Sets the background color */
+            border-radius: 15px; /* Rounds the corners */
+            transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
+          }
+        
+          /* Changes the background color of nav links on hover */
+          .nav-links ul li a:hover {
+            background-color: #3d4e66; /* Changes the background color on hover */
+          }
+        
+          /* Sets the width of the title card */
+          .title-card {
+            width: 200px; /* Sets the width of the logo */
+          }
+        
+          /* Defines the slideDown keyframes for animation */
+          @keyframes slideDown {
+            from {
+              opacity: 0; /* Start fully transparent */
+              transform: translateY(-20px); /* Start 20px above */
+            }
+            to {
+              opacity: 1; /* End fully opaque */
+              transform: translateY(0); /* Move to original position */
+            }
+          }
+        
+          /* Defines the slideUp keyframes for animation */
+          @keyframes slideUp {
+            from {
+              opacity: 1; /* Start fully opaque */
+              transform: translateY(0); /* Start at original position */
+            }
+            to {
+              opacity: 0; /* End fully transparent */
+              transform: translateY(-20px); /* Slide 20px up */
+            }
+          }
+        
+          /* Ensures all elements use border-box sizing */
+          * {
+            box-sizing: border-box;
+          }
+        
+          /* Sets the body background color to Light Salmon */
+          body {
+            background-color: #ffa07a; /* Light Salmon */
+          }
+        
+          /* Styles the main heading in the welcome section with reduced font size */
+          .welcome-section h1 {
+            font-size: 22px;
+          }
+        
+          /* Styles the paragraph in the welcome section with reduced font size */
+          .welcome-section p {
+            font-size: 15px;
+          }
+        
+          /* Adjusts the content container to use 80% of viewport width
+                 and centers it */
+          .content-container {
+            width: 80vw;
+            margin-left: auto;
+          }
+        
+          .Recent-bills-line {
+            width: 48%; /* Sets the width of the separator */
+          }
+        
+          /* Adds padding to instruction items */
+          .instruction-item {
+            padding: 5px;
+          }
+        
+          /* Sets the font size of paragraphs in specific instruction items */
+          .instruction-item-one p {
+            font-size: 14px;
+          }
+        
+          /* Sets the font size of paragraphs in specific instruction items */
+          .instruction-item-two-to-four p {
+            font-size: 14px;
+          }
+        
+          /* Sets the font size of paragraphs in specific instruction items */
+          .instruction-item-five p {
+            font-size: 14px;
+          }
+        
+          /* Reduces the size of image popup content */
+          .image-popup-content {
+            width: 750px;
+            height: 500px;
+          }
+        
+          /* Ensures the popup image fills the content area */
+          .popup-image {
+            width: 100%;
+            height: 100%;
+          }
+        
+          /* Adjusts the popup content size for smaller screens */
+          .popup-content {
+            width: 700px;
+            height: 580px; /* Limits the height */
+          }
+        
+          /* Reduces the font size of headings within popups */
+          .popup-content h3 {
+            font-size: 16px;
+          }
+        
+          /* Adjusts the close button position and size within popups */
+          .close-popup {
+            right: 4px; /* Aligns it to the right */
+            font-size: 10px; /* Sets the font size */
+          }
+        
+          /* Adjusts the upload container size and padding for smaller screens */
+          .upload-container {
+            width: 700px;
+            height: 550px;
+            padding: 1px; /* Reduces padding */
+            margin: auto; /* Centers the container */
+            font-size: 12px; /* Reduces font size */
+          }
+        
+          /* Adjusts the upload button size and padding for smaller screens */
+          .upload-btn {
+            font-size: 14px; /* Reduces button font size */
+            margin: 18px; /* Adds margin around the button */
+            margin-left: 2px;
+            padding: 10px 20px; /* Adds padding inside the button */
+          }
+        
+          /* Adjusts the upload dropzone size and margin for smaller screens */
+          .upload-dropzone {
+            width: 650px; /* Limits dropzone width */
+            height: 80px;
+            margin-left: 3px; /* Adds margin on the left */
+          }
+        
+          /* Adjusts the paragraph inside the dropzone */
+          .upload-dropzone p {
+            font-size: 16px; /* Reduces text size */
+          }
+        
+          /* Adjusts the font size of selected files display */
+          .file-selected {
+            font-size: 16px; /* Sets the font size */
+          }
+        
+          /* Adjusts the font size of the remove button */
+          .file-selected .remove-btn {
+            font-size: 16px; /* Sets the font size */
+          }
+        
+           /* Text Input */
+           .text-input {
+            margin-left: -418px;
+          }
+          
+          /* Text Box */
+          .text-box {
+            width: 644px; /* Ensure it matches the width of its container */
+            height: 250px; /* Set a fixed height */
+          }
+        
+          /* Adjusts the summary box size for smaller screens */
+          .summary-box {
+            height: 430px; /* Sets the height */
+            width: 650px; /* Sets the width */
+          }
+        
+          /* Adjusts the width of summary buttons for smaller screens */
+          .download-btn,
+          .do-it-again-btn,
+          .pause-play-btn {
+            width: 210px;
+          }
+        
+          /* Ensures the about page takes up 90% of the width on smaller screens */
+          .about-page {
+            width: 90%; /* Ensures full width for mobile */
+          }
+        
+          /* Styles the technology cards to be responsive and adds bottom margin */
+          .tech-card {
+            width: 90%;
+            margin-bottom: 20px;
+          }
+        
+          .dropzone {
+            width: 340px;
+          }
+        }
   
-    /* Styles the menu button similar to previous media queries */
-    .menu-button {
-      background: none;
-      border: none;
-      color: white;
-      font-size: 30px;
-      cursor: pointer;
-      right: 10px; /* Positions the button 10px from the right edge */
-      top: 5x; /* Positions the button 10px from the top */
-    }
-  
-    /* Hides the navigation links initially and styles their position,
-           width, background color, alignment, z-index, and transition */
-    .nav-links {
-      display: none; /* Hides the mobile navigation links initially */
-      position: absolute; /* Changes position to absolute */
-      top: 55px; /* Pushes the navigation links down by 55px */
-      left: 0; /* Aligns the navigation to the left */
-      width: 100%; /* Makes the navigation take up the full width */
-      background-color: #1a3d6c; /* Background color */
-      justify-content: center; /* Centers the navigation links */
-      z-index: 9; /* Ensure the navigation appears above other elements */
-      transition: transform 0.3s ease-in-out; /* Smooth transition */
-    }
-  
-    /* When nav-links has the class 'open', display as flex with column direction
-           and apply a slide down animation */
-    .nav-links.open {
-      display: flex; /* Makes links visible */
-      flex-direction: column; /* Stacks links vertically */
-      animation: slideDown 0.1s forwards; /* Sliding down effect */
-    }
-  
-    /* Applies slide up animation when nav-links has the class 'close' */
-    .nav-links.close {
-      animation: slideUp 0.1s forwards; /* Sliding up effect */
-    }
-  
-    /* Styles the unordered list within nav-links by removing list styling,
-           arranging items horizontally, adding gaps, and setting margins */
-    .nav-links ul {
-      list-style: none; /* Removes bullets */
-      padding: 0; /* Removes padding around the links */
-      margin: 0; /* Removes margin around the links */
-      display: flex; /* Arranges the links horizontally */
-      gap: 20px; /* Adds space between the links */
-      margin-left: auto;
-      margin-top: 30px; /* Adds 30px of space above the links */
-      margin-bottom: 20px; /* Adds 20px of space below the links */
-    }
-  
-    /* Styles individual list items within nav-links with vertical margins */
-    .nav-links ul li {
-      margin: 10px 0; /* Adds space between each link */
-    }
-  
-    /* Styles the anchor tags within nav-links list items */
-    .nav-links ul li a {
-      color: white; /* Makes the link text white */
-      text-decoration: none; /* Removes the underline from the links */
-      font-size: 18px; /* Sets the font size for the links */
-      padding: 10px 20px; /* Adds padding inside the links */
-      background-color: #4a5c79; /* Sets the background color */
-      border-radius: 15px; /* Rounds the corners */
-      transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
-    }
-  
-    /* Changes the background color of nav links on hover */
-    .nav-links ul li a:hover {
-      background-color: #3d4e66; /* Changes the background color on hover */
-    }
-  
-    /* Sets the width of the title card */
-    .title-card {
-      width: 200px; /* Sets the width of the logo */
-    }
-  
-    /* Defines the slideDown keyframes for animation */
-    @keyframes slideDown {
-      from {
-        opacity: 0; /* Start fully transparent */
-        transform: translateY(-20px); /* Start 20px above */
-      }
-      to {
-        opacity: 1; /* End fully opaque */
-        transform: translateY(0); /* Move to original position */
-      }
-    }
-  
-    /* Defines the slideUp keyframes for animation */
-    @keyframes slideUp {
-      from {
-        opacity: 1; /* Start fully opaque */
-        transform: translateY(0); /* Start at original position */
-      }
-      to {
-        opacity: 0; /* End fully transparent */
-        transform: translateY(-20px); /* Slide 20px up */
-      }
-    }
-  
-    /* Ensures all elements use border-box sizing */
-    * {
-      box-sizing: border-box;
-    }
-  
-    /* Sets the body background color to Light Salmon */
-    body {
-      background-color: #ffa07a; /* Light Salmon */
-    }
-  
-    /* Styles the main heading in the welcome section with reduced font size */
-    .welcome-section h1 {
-      font-size: 22px;
-    }
-  
-    /* Styles the paragraph in the welcome section with reduced font size */
-    .welcome-section p {
-      font-size: 15px;
-    }
-  
-    /* Adjusts the content container to use 80% of viewport width
-           and centers it */
-    .content-container {
-      width: 80vw;
-      margin-left: auto;
-    }
-  
-    .Recent-bills-line {
-      width: 48%; /* Sets the width of the separator */
-    }
-  
-    /* Adds padding to instruction items */
-    .instruction-item {
-      padding: 5px;
-    }
-  
-    /* Sets the font size of paragraphs in specific instruction items */
-    .instruction-item-one p {
-      font-size: 14px;
-    }
-  
-    /* Sets the font size of paragraphs in specific instruction items */
-    .instruction-item-two-to-four p {
-      font-size: 14px;
-    }
-  
-    /* Sets the font size of paragraphs in specific instruction items */
-    .instruction-item-five p {
-      font-size: 14px;
-    }
-  
-    /* Reduces the size of image popup content */
-    .image-popup-content {
-      width: 750px;
-      height: 500px;
-    }
-  
-    /* Ensures the popup image fills the content area */
-    .popup-image {
-      width: 100%;
-      height: 100%;
-    }
-  
-    /* Adjusts the popup content size for smaller screens */
-    .popup-content {
-      width: 700px;
-      height: 580px; /* Limits the height */
-    }
-  
-    /* Reduces the font size of headings within popups */
-    .popup-content h3 {
-      font-size: 16px;
-    }
-  
-    /* Adjusts the close button position and size within popups */
-    .close-popup {
-      right: 4px; /* Aligns it to the right */
-      font-size: 10px; /* Sets the font size */
-    }
-  
-    /* Adjusts the upload container size and padding for smaller screens */
-    .upload-container {
-      width: 700px;
-      height: 550px;
-      padding: 1px; /* Reduces padding */
-      margin: auto; /* Centers the container */
-      font-size: 12px; /* Reduces font size */
-    }
-  
-    /* Adjusts the upload button size and padding for smaller screens */
-    .upload-btn {
-      font-size: 14px; /* Reduces button font size */
-      margin: 18px; /* Adds margin around the button */
-      padding: 10px 20px; /* Adds padding inside the button */
-    }
-  
-    /* Adjusts the upload dropzone size and margin for smaller screens */
-    .upload-dropzone {
-      width: 650px; /* Limits dropzone width */
-      height: 80px;
-      margin-left: 3px; /* Adds margin on the left */
-    }
-  
-    /* Adjusts the paragraph inside the dropzone */
-    .upload-dropzone p {
-      font-size: 16px; /* Reduces text size */
-    }
-  
-    /* Adjusts the font size of selected files display */
-    .file-selected {
-      font-size: 16px; /* Sets the font size */
-    }
-  
-    /* Adjusts the font size of the remove button */
-    .file-selected .remove-btn {
-      font-size: 16px; /* Sets the font size */
-    }
-  
-    /* Text Input */
-    .text-input {
-      width: 1080px; /* Match the width of the upload box */
-      margin-left: -210px;
-    }
-  
-    /* Text Box */
-    .text-box {
-      width: 100%; /* Ensure it matches the width of its container */
-      height: 250px; /* Set a fixed height */
-    }
-  
-    /* Adjusts the summary box size for smaller screens */
-    .summary-box {
-      height: 430px; /* Sets the height */
-      width: 650px; /* Sets the width */
-    }
-  
-    /* Adjusts the width of summary buttons for smaller screens */
-    .download-btn,
-    .do-it-again-btn,
-    .pause-play-btn {
-      width: 210px;
-    }
-  
-    /* Ensures the about page takes up 90% of the width on smaller screens */
-    .about-page {
-      width: 90%; /* Ensures full width for mobile */
-    }
-  
-    /* Styles the technology cards to be responsive and adds bottom margin */
-    .tech-card {
-      width: 90%;
-      margin-bottom: 20px;
-    }
-  
-    .dropzone {
-      width: 340px;
-    }
-  }
-  
-  /* Mini Tablet Portrait */
+    /* Mini Tablet Portrait */
   
   /* Applies styles for portrait-oriented mini tablets with max width 768px,
          max height 1024px, and portrait orientation */
-  @media only screen and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-    /* Hides the desktop navigation on smaller screens */
-    .full-screen-nav-links {
-      display: none; /* Hides the desktop navigation on mobile */
-    }
-  
-    /* Styles the menu button similar to previous media queries */
-    .menu-button {
-      background: none;
-      border: none;
-      color: white;
-      font-size: 30px;
-      cursor: pointer;
-      right: 10px; /* Positions the button 10px from the right edge */
-      top: 5x; /* Positions the button 10px from the top */
-    }
-  
-    /* Hides the navigation links initially and styles their position,
-           width, background color, alignment, z-index, and transition */
-    .nav-links {
-      display: none; /* Hides the mobile navigation links initially */
-      position: absolute; /* Changes position to absolute */
-      top: 55px; /* Pushes the navigation links down by 55px */
-      left: 0; /* Aligns the navigation to the left */
-      width: 100%; /* Makes the navigation take up the full width */
-      background-color: #1a3d6c; /* Background color */
-      justify-content: center; /* Centers the navigation links */
-      z-index: 9; /* Ensure the navigation appears above other elements */
-      transition: transform 0.3s ease-in-out; /* Smooth transition */
-    }
-  
-    /* When nav-links has the class 'open', display as flex with column direction
-           and apply a slide down animation */
-    .nav-links.open {
-      display: flex; /* Makes links visible */
-      flex-direction: column; /* Stacks links vertically */
-      animation: slideDown 0.1s forwards; /* Sliding down effect */
-    }
-  
-    /* Applies slide up animation when nav-links has the class 'close' */
-    .nav-links.close {
-      animation: slideUp 0.1s forwards; /* Sliding up effect */
-    }
-  
-    /* Styles the unordered list within nav-links by removing list styling,
-           arranging items horizontally, adding gaps, and setting margins */
-    .nav-links ul {
-      list-style: none; /* Removes bullets */
-      padding: 0; /* Removes padding around the links */
-      margin: 0; /* Removes margin around the links */
-      display: flex; /* Arranges the links horizontally */
-      gap: 20px; /* Adds space between the links */
-      margin-left: auto;
-      margin-top: 30px; /* Adds 30px of space above the links */
-      margin-bottom: 20px; /* Adds 20px of space below the links */
-    }
-  
-    /* Styles individual list items within nav-links with vertical margins */
-    .nav-links ul li {
-      margin: 10px 0; /* Adds space between each link */
-    }
-  
-    /* Styles the anchor tags within nav-links list items */
-    .nav-links ul li a {
-      color: white; /* Makes the link text white */
-      text-decoration: none; /* Removes the underline from the links */
-      font-size: 18px; /* Sets the font size for the links */
-      padding: 10px 20px; /* Adds padding inside the links */
-      background-color: #4a5c79; /* Sets the background color */
-      border-radius: 15px; /* Rounds the corners */
-      transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
-    }
-  
-    /* Changes the background color of nav links on hover */
-    .nav-links ul li a:hover {
-      background-color: #3d4e66; /* Changes the background color on hover */
-    }
-  
-    /* Sets the width of the title card */
-    .title-card {
-      width: 200px; /* Sets the width of the logo */
-    }
-  
-    /* Defines the slideDown keyframes for animation */
-    @keyframes slideDown {
-      from {
-        opacity: 0; /* Start fully transparent */
-        transform: translateY(-20px); /* Start 20px above */
+         @media only screen and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+          /* Hides the desktop navigation on smaller screens */
+          .full-screen-nav-links {
+            display: none; /* Hides the desktop navigation on mobile */
+          }
+        
+          /* Styles the menu button similar to previous media queries */
+          .menu-button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            right: 10px; /* Positions the button 10px from the right edge */
+            top: 5x; /* Positions the button 10px from the top */
+          }
+        
+          /* Hides the navigation links initially and styles their position,
+                 width, background color, alignment, z-index, and transition */
+          .nav-links {
+            display: none; /* Hides the mobile navigation links initially */
+            position: absolute; /* Changes position to absolute */
+            top: 55px; /* Pushes the navigation links down by 55px */
+            left: 0; /* Aligns the navigation to the left */
+            width: 100%; /* Makes the navigation take up the full width */
+            background-color: #1a3d6c; /* Background color */
+            justify-content: center; /* Centers the navigation links */
+            z-index: 9; /* Ensure the navigation appears above other elements */
+            transition: transform 0.3s ease-in-out; /* Smooth transition */
+          }
+        
+          /* When nav-links has the class 'open', display as flex with column direction
+                 and apply a slide down animation */
+          .nav-links.open {
+            display: flex; /* Makes links visible */
+            flex-direction: column; /* Stacks links vertically */
+            animation: slideDown 0.1s forwards; /* Sliding down effect */
+          }
+        
+          /* Applies slide up animation when nav-links has the class 'close' */
+          .nav-links.close {
+            animation: slideUp 0.1s forwards; /* Sliding up effect */
+          }
+        
+          /* Styles the unordered list within nav-links by removing list styling,
+                 arranging items horizontally, adding gaps, and setting margins */
+          .nav-links ul {
+            list-style: none; /* Removes bullets */
+            padding: 0; /* Removes padding around the links */
+            margin: 0; /* Removes margin around the links */
+            display: flex; /* Arranges the links horizontally */
+            gap: 20px; /* Adds space between the links */
+            margin-left: auto;
+            margin-top: 30px; /* Adds 30px of space above the links */
+            margin-bottom: 20px; /* Adds 20px of space below the links */
+          }
+        
+          /* Styles individual list items within nav-links with vertical margins */
+          .nav-links ul li {
+            margin: 10px 0; /* Adds space between each link */
+          }
+        
+          /* Styles the anchor tags within nav-links list items */
+          .nav-links ul li a {
+            color: white; /* Makes the link text white */
+            text-decoration: none; /* Removes the underline from the links */
+            font-size: 18px; /* Sets the font size for the links */
+            padding: 10px 20px; /* Adds padding inside the links */
+            background-color: #4a5c79; /* Sets the background color */
+            border-radius: 15px; /* Rounds the corners */
+            transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
+          }
+        
+          /* Changes the background color of nav links on hover */
+          .nav-links ul li a:hover {
+            background-color: #3d4e66; /* Changes the background color on hover */
+          }
+        
+          /* Sets the width of the title card */
+          .title-card {
+            width: 200px; /* Sets the width of the logo */
+          }
+        
+          /* Defines the slideDown keyframes for animation */
+          @keyframes slideDown {
+            from {
+              opacity: 0; /* Start fully transparent */
+              transform: translateY(-20px); /* Start 20px above */
+            }
+            to {
+              opacity: 1; /* End fully opaque */
+              transform: translateY(0); /* Move to original position */
+            }
+          }
+        
+          /* Defines the slideUp keyframes for animation */
+          @keyframes slideUp {
+            from {
+              opacity: 1; /* Start fully opaque */
+              transform: translateY(0); /* Start at original position */
+            }
+            to {
+              opacity: 0; /* End fully transparent */
+              transform: translateY(-20px); /* Slide 20px up */
+            }
+          }
+        
+          /* Ensures all elements use border-box sizing */
+          * {
+            box-sizing: border-box;
+          }
+        
+          /* Sets the body background color to PowderBlue */
+          body {
+            background-color: #b0e0e6; /* PowderBlue */
+          }
+        
+          /* Styles the main heading in the welcome section with reduced font size */
+          .welcome-section h1 {
+            font-size: 22px;
+          }
+        
+          /* Styles the paragraph in the welcome section with reduced font size */
+          .welcome-section p {
+            font-size: 15px;
+          }
+        
+          /* Adjusts the content container to use 80% of viewport width
+                 and centers it */
+          .content-container {
+            width: 680px;
+            margin-left: 2px;
+          }
+        
+          /* Sets the font size of paragraphs in specific instruction items */
+          .instruction-item-one p {
+            font-size: 14px;
+          }
+        
+          /* Sets the font size of paragraphs in specific instruction items */
+          .instruction-item-two-to-four p {
+            font-size: 14px;
+          }
+        
+          .instruction-separator {
+            margin-top: 200px;
+          }
+          /* Sets the font size of paragraphs in specific instruction items */
+          .instruction-item-five p {
+            font-size: 14px;
+          }
+        
+          /* Reduces the size of image popup content */
+          .image-popup-content {
+            width: 750px;
+            height: 500px;
+          }
+        
+          .recent-bills {
+            gap: 8px;
+          }
+        
+          .bill-item {
+            padding: 12px;
+          }
+        
+          /* Ensures the popup image fills the content area */
+          .popup-image {
+            width: 100%;
+            height: 100%;
+          }
+        
+          /* Adjusts the popup content size for smaller screens */
+          .popup-content {
+            width: 600px;
+            height: 700px; /* Limits the height */
+          }
+        
+          /* Reduces the font size of headings within popups */
+          .popup-content h3 {
+            font-size: 16px;
+          }
+        
+          /* Adjusts the close button position and size within popups */
+          .close-popup {
+            right: 4px; /* Aligns it to the right */
+            font-size: 10px; /* Sets the font size */
+          }
+        
+          /* Adjusts the upload container size and padding for smaller screens */
+          .upload-container {
+            width: 580px;
+            height: 700px;
+            padding: 10px; /* Reduces padding */
+          }
+        
+          /* Adjusts the upload button size and padding for smaller screens */
+          .upload-btn {
+            font-size: 15px; /* Reduces button font size */
+            padding: 10px 50px; /* Adds padding inside the button */
+          }
+        
+          /* Adjusts the upload dropzone size and margin for smaller screens */
+          .upload-dropzone {
+            width: 550px;
+            margin-left: -7px; /* Adds margin on the left */
+          }
+        
+          /* Adjusts the paragraph inside the dropzone */
+          .upload-dropzone p {
+            font-size: 16px; /* Reduces text size */
+          }
+        
+          /* Adjusts the font size of selected files display */
+          .file-selected {
+            font-size: 16px; /* Sets the font size */
+          }
+        
+          /* Adjusts the font size of the remove button */
+          .file-selected .remove-btn {
+            font-size: 16px; /* Sets the font size */
+          }
+        
+             /* Text Input */
+      .text-input {
+        margin-left: -480px;
       }
-      to {
-        opacity: 1; /* End fully opaque */
-        transform: translateY(0); /* Move to original position */
+      
+      /* Text Box */
+      .text-box {
+        width: 550px; /* Ensure it matches the width of its container */
+        height: 350px; /* Set a fixed height */
+        font-size: 14px; /* Font size */
       }
-    }
-  
-    /* Defines the slideUp keyframes for animation */
-    @keyframes slideUp {
-      from {
-        opacity: 1; /* Start fully opaque */
-        transform: translateY(0); /* Start at original position */
-      }
-      to {
-        opacity: 0; /* End fully transparent */
-        transform: translateY(-20px); /* Slide 20px up */
-      }
-    }
-  
-    /* Ensures all elements use border-box sizing */
-    * {
-      box-sizing: border-box;
-    }
-  
-    /* Sets the body background color to PowderBlue */
-    body {
-      background-color: #b0e0e6; /* PowderBlue */
-    }
-  
-    /* Styles the main heading in the welcome section with reduced font size */
-    .welcome-section h1 {
-      font-size: 22px;
-    }
-  
-    /* Styles the paragraph in the welcome section with reduced font size */
-    .welcome-section p {
-      font-size: 15px;
-    }
-  
-    /* Adjusts the content container to use 80% of viewport width
-           and centers it */
-    .content-container {
-      width: 680px;
-      margin-left: 2px;
-    }
-  
-    /* Sets the font size of paragraphs in specific instruction items */
-    .instruction-item-one p {
-      font-size: 14px;
-    }
-  
-    /* Sets the font size of paragraphs in specific instruction items */
-    .instruction-item-two-to-four p {
-      font-size: 14px;
-    }
-  
-    .instruction-separator {
-      margin-top: 200px;
-    }
-    /* Sets the font size of paragraphs in specific instruction items */
-    .instruction-item-five p {
-      font-size: 14px;
-    }
-  
-    /* Reduces the size of image popup content */
-    .image-popup-content {
-      width: 750px;
-      height: 500px;
-    }
-  
-    .recent-bills {
-      gap: 8px;
-    }
-  
-    .bill-item {
-      padding: 12px;
-    }
-  
-    /* Ensures the popup image fills the content area */
-    .popup-image {
-      width: 100%;
-      height: 100%;
-    }
-  
-    /* Adjusts the popup content size for smaller screens */
-    .popup-content {
-      width: 600px;
-      height: 700px; /* Limits the height */
-    }
-  
-    /* Reduces the font size of headings within popups */
-    .popup-content h3 {
-      font-size: 16px;
-    }
-  
-    /* Adjusts the close button position and size within popups */
-    .close-popup {
-      right: 4px; /* Aligns it to the right */
-      font-size: 10px; /* Sets the font size */
-    }
-  
-    /* Adjusts the upload container size and padding for smaller screens */
-    .upload-container {
-      width: 580px;
-      height: 700px;
-      padding: 10px; /* Reduces padding */
-    }
-  
-    /* Adjusts the upload button size and padding for smaller screens */
-    .upload-btn {
-      font-size: 15px; /* Reduces button font size */
-      padding: 10px 50px; /* Adds padding inside the button */
-    }
-  
-    /* Adjusts the upload dropzone size and margin for smaller screens */
-    .upload-dropzone {
-      width: 550px;
-      margin-left: -7px; /* Adds margin on the left */
-    }
-  
-    /* Adjusts the paragraph inside the dropzone */
-    .upload-dropzone p {
-      font-size: 16px; /* Reduces text size */
-    }
-  
-    /* Adjusts the font size of selected files display */
-    .file-selected {
-      font-size: 16px; /* Sets the font size */
-    }
-  
-    /* Adjusts the font size of the remove button */
-    .file-selected .remove-btn {
-      font-size: 16px; /* Sets the font size */
-    }
-  
-    /* Text Input */
-    .text-input {
-      margin-top: 20px;
-      width: 920px; /* Match the width of the upload box */
-      margin-left: -190px;
-    }
-  
-    /* Text Box */
-    .text-box {
-      width: 100%; /* Ensure it matches the width of its container */
-      height: 350px; /* Set a fixed height */
-      font-size: 14px; /* Font size */
-      line-height: 1.5; /* Line height for readability */
-    }
-  
-    /* Adjusts the summary box size for smaller screens */
-    .summary-box {
-      height: 480px; /* Sets the height */
-      width: 560px; /* Sets the width */
-    }
-  
-    .button-icon {
-      width: 26px; /* Sets the icon width */
-      height: 26px; /* Maintains aspect ratio */
-    }
-  
-    /* Adjusts the width of summary buttons for smaller screens */
-    .download-btn,
-    .do-it-again-btn,
-    .pause-play-btn {
-      width: 180px;
-    }
-  
-    /* Ensures the about page takes up 90% of the width on smaller screens */
-    .about-page {
-      width: 90%; /* Ensures full width for mobile */
-    }
-  
-    /* Styles the technology cards to be responsive and adds bottom margin */
-    .tech-card {
-      width: 90%;
-      margin-bottom: 20px;
-    }
-  
-    .sources-section {
-      margin-bottom: 50px;
-    }
-  
-    .dropzone {
-      width: 340px;
-    }
-  }
+      
+        
+          /* Adjusts the summary box size for smaller screens */
+          .summary-box {
+            height: 480px; /* Sets the height */
+            width: 560px; /* Sets the width */
+          }
+        
+          .button-icon {
+            width: 26px; /* Sets the icon width */
+            height: 26px; /* Maintains aspect ratio */
+          }
+        
+          /* Adjusts the width of summary buttons for smaller screens */
+          .download-btn,
+          .do-it-again-btn,
+          .pause-play-btn {
+            width: 180px;
+          }
+        
+          /* Ensures the about page takes up 90% of the width on smaller screens */
+          .about-page {
+            width: 90%; /* Ensures full width for mobile */
+          }
+        
+          /* Styles the technology cards to be responsive and adds bottom margin */
+          .tech-card {
+            width: 90%;
+            margin-bottom: 20px;
+          }
+        
+          .sources-section {
+            margin-bottom: 50px;
+          }
+        
+          .dropzone {
+            width: 340px;
+          }
+        }
   
   /* Big and Small Mobile Landscape */
   
   /* Applies styles for landscape-oriented mobile devices with max width 1000px,
          max height 435px, and landscape orientation */
-  @media (max-width: 1000px) and (max-height: 435px) and (orientation: landscape) {
-    /* Hides the desktop navigation on smaller screens */
-    .desktop-nav-links {
-      display: none; /* Hides the desktop navigation on mobile */
-    }
-  
-    /* Styles the menu button similar to previous media queries */
-    .menu-button {
-      background: none;
-      border: none;
-      color: white;
-      font-size: 30px;
-      cursor: pointer;
-      right: 10px; /* Positions the button 10px from the right edge */
-      top: 5x; /* Positions the button 10px from the top */
-    }
-  
-    /* Hides the navigation links initially and styles their position,
-           width, background color, alignment, z-index, and transition */
-    .nav-links {
-      display: none; /* Hides the mobile navigation links initially */
-      position: absolute; /* Changes position to absolute */
-      top: 55px; /* Pushes the navigation links down by 55px */
-      left: 0; /* Aligns the navigation to the left */
-      width: 100%; /* Makes the navigation take up the full width */
-      background-color: #1a3d6c; /* Background color */
-      justify-content: center; /* Centers the navigation links */
-      z-index: 9; /* Ensure the navigation appears above other elements */
-      transition: transform 0.3s ease-in-out; /* Smooth transition */
-    }
-  
-    /* When nav-links has the class 'open', display as flex with column direction
-           and apply a slide down animation */
-    .nav-links.open {
-      display: flex; /* Makes links visible */
-      flex-direction: column; /* Stacks links vertically */
-      animation: slideDown 0.1s forwards; /* Sliding down effect */
-    }
-  
-    /* Applies slide up animation when nav-links has the class 'close' */
-    .nav-links.close {
-      animation: slideUp 0.1s forwards; /* Sliding up effect */
-    }
-  
-    /* Styles the unordered list within nav-links by removing list styling,
-           arranging items horizontally, adding gaps, and setting margins */
-    .nav-links ul {
-      list-style: none; /* Removes bullets */
-      padding: 0; /* Removes padding around the links */
-      margin: 0; /* Removes margin around the links */
-      display: flex; /* Arranges the links horizontally */
-      gap: 20px; /* Adds space between the links */
-      margin-left: auto;
-      margin-top: 30px; /* Adds 30px of space above the links */
-      margin-bottom: 20px; /* Adds 20px of space below the links */
-    }
-  
-    /* Styles individual list items within nav-links with vertical margins */
-    .nav-links ul li {
-      margin: 10px 0; /* Adds space between each link */
-    }
-  
-    /* Styles the anchor tags within nav-links list items */
-    .nav-links ul li a {
-      color: white; /* Makes the link text white */
-      text-decoration: none; /* Removes the underline from the links */
-      font-size: 18px; /* Sets the font size for the links */
-      padding: 10px 20px; /* Adds padding inside the links */
-      background-color: #4a5c79; /* Sets the background color */
-      border-radius: 15px; /* Rounds the corners */
-      transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
-    }
-  
-    /* Changes the background color of nav links on hover */
-    .nav-links ul li a:hover {
-      background-color: #3d4e66; /* Changes the background color on hover */
-    }
-  
-    /* Sets the width of the title card */
-    .title-card {
-      width: 200px; /* Sets the width of the logo */
-    }
-  
-    /* Defines the slideDown keyframes for animation */
-    @keyframes slideDown {
-      from {
-        opacity: 0; /* Start fully transparent */
-        transform: translateY(-20px); /* Start 20px above */
+         @media (max-width: 1000px) and (max-height: 435px) and (orientation: landscape) {
+          /* Hides the desktop navigation on smaller screens */
+          .desktop-nav-links {
+            display: none; /* Hides the desktop navigation on mobile */
+          }
+        
+          /* Styles the menu button similar to previous media queries */
+          .menu-button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            right: 10px; /* Positions the button 10px from the right edge */
+            top: 5x; /* Positions the button 10px from the top */
+          }
+        
+          /* Hides the navigation links initially and styles their position,
+                 width, background color, alignment, z-index, and transition */
+          .nav-links {
+            display: none; /* Hides the mobile navigation links initially */
+            position: absolute; /* Changes position to absolute */
+            top: 55px; /* Pushes the navigation links down by 55px */
+            left: 0; /* Aligns the navigation to the left */
+            width: 100%; /* Makes the navigation take up the full width */
+            background-color: #1a3d6c; /* Background color */
+            justify-content: center; /* Centers the navigation links */
+            z-index: 9; /* Ensure the navigation appears above other elements */
+            transition: transform 0.3s ease-in-out; /* Smooth transition */
+          }
+        
+          /* When nav-links has the class 'open', display as flex with column direction
+                 and apply a slide down animation */
+          .nav-links.open {
+            display: flex; /* Makes links visible */
+            flex-direction: column; /* Stacks links vertically */
+            animation: slideDown 0.1s forwards; /* Sliding down effect */
+          }
+        
+          /* Applies slide up animation when nav-links has the class 'close' */
+          .nav-links.close {
+            animation: slideUp 0.1s forwards; /* Sliding up effect */
+          }
+        
+          /* Styles the unordered list within nav-links by removing list styling,
+                 arranging items horizontally, adding gaps, and setting margins */
+          .nav-links ul {
+            list-style: none; /* Removes bullets */
+            padding: 0; /* Removes padding around the links */
+            margin: 0; /* Removes margin around the links */
+            display: flex; /* Arranges the links horizontally */
+            gap: 20px; /* Adds space between the links */
+            margin-left: auto;
+            margin-top: 30px; /* Adds 30px of space above the links */
+            margin-bottom: 20px; /* Adds 20px of space below the links */
+          }
+        
+          /* Styles individual list items within nav-links with vertical margins */
+          .nav-links ul li {
+            margin: 10px 0; /* Adds space between each link */
+          }
+        
+          /* Styles the anchor tags within nav-links list items */
+          .nav-links ul li a {
+            color: white; /* Makes the link text white */
+            text-decoration: none; /* Removes the underline from the links */
+            font-size: 18px; /* Sets the font size for the links */
+            padding: 10px 20px; /* Adds padding inside the links */
+            background-color: #4a5c79; /* Sets the background color */
+            border-radius: 15px; /* Rounds the corners */
+            transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
+          }
+        
+          /* Changes the background color of nav links on hover */
+          .nav-links ul li a:hover {
+            background-color: #3d4e66; /* Changes the background color on hover */
+          }
+        
+          /* Sets the width of the title card */
+          .title-card {
+            width: 200px; /* Sets the width of the logo */
+          }
+        
+          /* Defines the slideDown keyframes for animation */
+          @keyframes slideDown {
+            from {
+              opacity: 0; /* Start fully transparent */
+              transform: translateY(-20px); /* Start 20px above */
+            }
+            to {
+              opacity: 1; /* End fully opaque */
+              transform: translateY(0); /* Move to original position */
+            }
+          }
+        
+          /* Defines the slideUp keyframes for animation */
+          @keyframes slideUp {
+            from {
+              opacity: 1; /* Start fully opaque */
+              transform: translateY(0); /* Start at original position */
+            }
+            to {
+              opacity: 0; /* End fully transparent */
+              transform: translateY(-20px); /* Slide 20px up */
+            }
+          }
+        
+          /* Ensures all elements use border-box sizing */
+          * {
+            box-sizing: border-box;
+          }
+        
+          /* Sets the body background color to Plum */
+          body {
+            background-color: #dda0dd; /* Plum */
+          }
+        
+          /* Styles the main heading in the welcome section with reduced font size */
+          .welcome-section h1 {
+            font-size: 20px;
+          }
+        
+          /* Styles the paragraph in the welcome section with reduced font size */
+          .welcome-section p {
+            font-size: 12px;
+          }
+        
+          /* Adjusts the content container to use 90% of viewport width,
+                 adds right margin, and reduces font size */
+          .content-container {
+            width: 580px;
+            margin-left: 10px;
+            font-size: 10px;
+          }
+        
+          .mission-block {
+            font-size: 10px;
+          }
+        
+          /* Increases the bottom margin of the model section */
+          .model-section {
+            font-size: 10px;
+          }
+        
+          /* Adjusts padding of instruction items */
+          .instruction-item {
+            padding: 5px;
+          }
+        
+          /* Sets the font size of paragraphs in specific instruction items */
+          .instruction-item-one p {
+            font-size: 10px;
+          }
+        
+          /* Sets the font size of paragraphs in specific instruction items */
+          .instruction-item-two-to-four p {
+            font-size: 10px;
+          }
+        
+          .instruction-separator {
+            margin-top: 20px;
+          }
+          /* Sets the font size of paragraphs in specific instruction items */
+          .instruction-item-five p {
+            font-size: 10px;
+          }
+        
+          .try-it-btn {
+            font-size: 12px;
+            padding: 10px 20px;
+          }
+      
+          .Recent-bills-line{
+            width: 68%;
+          }
+      
+        
+          /* Reduces the size of image popup content */
+          .image-popup-content {
+            width: 750px;
+            height: 500px;
+          }
+        
+          /* Ensures the popup image fills the content area */
+          .popup-image {
+            width: 100%;
+            height: 100%;
+          }
+        
+           /* Adjusts the popup content size for smaller screens */
+           .popup-content {
+            width: 600px;
+            height: 220px; /* Limits the height */
+            overflow-y: auto;
+          }
+      
+        
+          /* Reduces the font size of headings within popups */
+          .popup-content h3 {
+            font-size: 10px;
+          }
+        
+          /* Adjusts the close button position and size within popups */
+          .close-popup {
+            right: 4px; /* Aligns it to the right */
+            font-size: 10px; /* Sets the font size */
+          }
+        
+           /* Adjusts the upload container size and padding for smaller screens */
+           .upload-container {
+            width: 580px;
+            height: 100px;
+            padding: 1px; /* Reduces padding */
+          }
+        
+          /* Adjusts the upload button size and padding for smaller screens */
+          .upload-btn {
+            font-size: 10px; /* Reduces button font size */
+            margin: 18px; /* Adds margin around the button */
+            padding: 10px 20px; /* Adds padding inside the button */
+            margin-right: 30px;
+          }
+        
+          /* Adjusts the upload dropzone size and margin for smaller screens */
+          .upload-dropzone {
+            width: 580px; /* Limits dropzone width */
+            height: 60px;
+            margin-left: -10px; /* Adds margin on the left */
+          }
+      
+          /* Adjusts the paragraph inside the dropzone */
+          .upload-dropzone p {
+            font-size: 12px; /* Reduces text size */
+          }
+        
+          /* Adjusts the font size of selected files display */
+          .file-selected {
+            font-size: 10px; /* Sets the font size */
+          }
+        
+          /* Adjusts the font size of the remove button */
+          .file-selected .remove-btn {
+            font-size: 12px; /* Sets the font size */
+          }
+        
+           /* Text Input */
+      .text-input {
+        margin-top: 2px;
+        font-size: 10px;
+        margin-left: -470px;
       }
-      to {
-        opacity: 1; /* End fully opaque */
-        transform: translateY(0); /* Move to original position */
+      
+      /* Text Box */
+      .text-box {
+        width: 576px; /* Match the width of the upload box */
+        height: 40px; /* Set a fixed height */
+        font-size: 10px; /* Font size */
       }
-    }
+        
+          /* Adjusts the summary box size for smaller screens */
+          .summary-box {
+            height: 130px; /* Sets the height */
+            width: 560px; /* Sets the width */
+            font-size: 10px;
+          }
+        
+          /* Adjusts the width of summary buttons for smaller screens */
+          .download-btn,
+          .do-it-again-btn,
+          .pause-play-btn {
+            width: 210px;
+            font-size: 10px;
+          }
+        
+          .button-icon {
+            width: 22px; /* Sets the icon width */
+            height: 22px; /* Maintains aspect ratio */
+          }
+        
+          /* Ensures the about page takes up 90% of the width on smaller screens */
+          .about-page {
+            width: 90%; /* Ensures full width for mobile */
+          }
+        
+          /* Styles the technology cards to be responsive and adds bottom margin */
+          .tech-card {
+            width: 90%;
+            margin-bottom: 20px;
+          }
+        
+          .contact-page {
+            font-size: 12px;
+          }
+          .send-button{
+            width: 100%;
+          }
+        }
+        
   
-    /* Defines the slideUp keyframes for animation */
-    @keyframes slideUp {
-      from {
-        opacity: 1; /* Start fully opaque */
-        transform: translateY(0); /* Start at original position */
-      }
-      to {
-        opacity: 0; /* End fully transparent */
-        transform: translateY(-20px); /* Slide 20px up */
-      }
-    }
-  
-    /* Ensures all elements use border-box sizing */
-    * {
-      box-sizing: border-box;
-    }
-  
-    /* Sets the body background color to Plum */
-    body {
-      background-color: #dda0dd; /* Plum */
-    }
-  
-    /* Styles the main heading in the welcome section with reduced font size */
-    .welcome-section h1 {
-      font-size: 20px;
-    }
-  
-    /* Styles the paragraph in the welcome section with reduced font size */
-    .welcome-section p {
-      font-size: 12px;
-    }
-  
-    /* Adjusts the content container to use 90% of viewport width,
-           adds right margin, and reduces font size */
-    .content-container {
-      width: 80vw;
-      margin-left: auto;
-      font-size: 10px;
-    }
-  
-    .mission-block {
-      font-size: 10px;
-    }
-  
-    /* Increases the bottom margin of the model section */
-    .model-section {
-      font-size: 10px;
-    }
-  
-    /* Adjusts padding of instruction items */
-    .instruction-item {
-      padding: 5px;
-    }
-  
-    /* Sets the font size of paragraphs in specific instruction items */
-    .instruction-item-one p {
-      font-size: 10px;
-    }
-  
-    /* Sets the font size of paragraphs in specific instruction items */
-    .instruction-item-two-to-four p {
-      font-size: 10px;
-    }
-  
-    .instruction-separator {
-      margin-top: 20px;
-    }
-    /* Sets the font size of paragraphs in specific instruction items */
-    .instruction-item-five p {
-      font-size: 10px;
-    }
-  
-    .try-it-btn {
-      font-size: 12px;
-      padding: 10px 20px;
-    }
-  
-    /* Reduces the size of image popup content */
-    .image-popup-content {
-      width: 750px;
-      height: 500px;
-    }
-  
-    /* Ensures the popup image fills the content area */
-    .popup-image {
-      width: 100%;
-      height: 100%;
-    }
-  
-    /* Adjusts the popup content size for smaller screens */
-    .popup-content {
-      width: 600px;
-      height: 300px; /* Limits the height */
-    }
-  
-    /* Reduces the font size of headings within popups */
-    .popup-content h3 {
-      font-size: 10px;
-    }
-  
-    /* Adjusts the close button position and size within popups */
-    .close-popup {
-      right: 4px; /* Aligns it to the right */
-      font-size: 10px; /* Sets the font size */
-    }
-  
-    /* Adjusts the upload container size and padding for smaller screens */
-    .upload-container {
-      width: 600px;
-      height: 260px;
-      padding: 1px; /* Reduces padding */
-    }
-  
-    /* Adjusts the upload button size and padding for smaller screens */
-    .upload-btn {
-      font-size: 10px; /* Reduces button font size */
-      margin: 18px; /* Adds margin around the button */
-      padding: 10px 20px; /* Adds padding inside the button */
-      margin-right: 30px;
-    }
-  
-    /* Adjusts the upload dropzone size and margin for smaller screens */
-    .upload-dropzone {
-      width: 500px; /* Limits dropzone width */
-      height: 60px;
-      margin-left: 40px; /* Adds margin on the left */
-    }
-  
-    /* Adjusts the paragraph inside the dropzone */
-    .upload-dropzone p {
-      font-size: 12px; /* Reduces text size */
-    }
-  
-    /* Adjusts the font size of selected files display */
-    .file-selected {
-      font-size: 10px; /* Sets the font size */
-    }
-  
-    /* Adjusts the font size of the remove button */
-    .file-selected .remove-btn {
-      font-size: 12px; /* Sets the font size */
-    }
-  
-    /* Text Input */
-    .text-input {
-      margin-top: 8px;
-      width: 840px; /* Match the width of the upload box */
-      margin-left: -130px;
-    }
-  
-    /* Text Box */
-    .text-box {
-      height: 50px; /* Set a fixed height */
-      font-size: 10px; /* Font size */
-    }
-  
-    /* Adjusts the summary box size for smaller screens */
-    .summary-box {
-      height: 170px; /* Sets the height */
-      width: 560px; /* Sets the width */
-      font-size: 10px;
-    }
-  
-    /* Adjusts the width of summary buttons for smaller screens */
-    .download-btn,
-    .do-it-again-btn,
-    .pause-play-btn {
-      width: 210px;
-      font-size: 10px;
-    }
-  
-    .button-icon {
-      width: 22px; /* Sets the icon width */
-      height: 22px; /* Maintains aspect ratio */
-    }
-  
-    /* Ensures the about page takes up 90% of the width on smaller screens */
-    .about-page {
-      width: 90%; /* Ensures full width for mobile */
-    }
-  
-    /* Styles the technology cards to be responsive and adds bottom margin */
-    .tech-card {
-      width: 90%;
-      margin-bottom: 20px;
-    }
-  
-    .contact-page {
-      font-size: 12px;
-    }
-  }
   
   /* Big Mobile Portrait */
   
@@ -2400,267 +2408,123 @@
       font-size: 12px;
     }
   
-    /* Adjusts the content container to use 90% of viewport width,
-           adds right margin, and sets font size */
     .content-container {
-      width: 90vw;
-      margin-left: auto;
-      font-size: 14px;
-    }
+      width: 400px;
+     margin-left: 18px;
+     font-size: 14px;
+   }
   
-    /* Increases the bottom margin of the model section */
-    .model-section {
-      margin-bottom: 580px;
-    }
-  
-    /* Adjusts the position of the instructions section */
-    .instructions-section {
-      bottom: 70px; /* Align it to the bottom */
-    }
-  
-    /* Styles the instruction items with padding */
-    .instruction-item {
-      padding: 5px;
-    }
-  
-    /* Sets the font size of paragraphs in specific instruction items */
-    .instruction-item-one p {
-      font-size: 10px;
-    }
-  
-    /* Sets the font size of website links */
-    .website-link a {
-      font-size: 10px;
-    }
-  
-    /* Sets the font size of paragraphs in specific instruction items */
-    .instruction-item-two-to-four p {
-      font-size: 10px;
-    }
-  
-    /* Sets the font size of paragraphs in specific instruction items */
-    .instruction-item-five p {
-      font-size: 10px;
-    }
-  
-    /* Sets the margin top of the instruction separator */
-    .instruction-separator {
-      margin-top: 85px;
-    }
-  
+  .instruction-separator {
+    margin-top: 300px;
+  }
     .try-it-btn {
-      font-size: 10px;
+    font-size: 14px;
     }
   
-    /* Reduces the size of image popup content */
-    .image-popup-content {
-      width: 350px;
-      height: 500px;
+    .Recent-bills-line{
+      width: 68%;
     }
+  .image-popup-content {
+    width: 350px;
+    height: 200px;
+  }
   
-    /* Ensures the popup image fills the content area */
-    .popup-image {
-      width: 100%;
-      height: 100%;
-    }
+  .popup-image {
+    width: 100%;
+    height: 100%;
+  }
   
-    /* Adjusts the popup content size for smaller screens */
     .popup-content {
-      width: 360px;
-      height: 600px;
+      width: 300px;
+    height: 500px;
     }
   
-    /* Reduces the font size of headings within popups */
     .popup-content h3 {
       font-size: 14px;
     }
-  
-    /* Adjusts the close button position and size within popups */
-    .close-popup {
-      right: 4px; /* Aligns it to the right */
-      font-size: 10px; /* Sets the font size */
+    
+     .close-popup {
+    right: 4px; /* Aligns it to the right */
+    font-size: 10px;
     }
   
-    /* Adjusts the upload container size and padding for smaller screens */
     .upload-container {
-      width: 320px; /* Adjusts the container width */
-      padding: 20px; /* Reduces padding for smaller screens */
+      width: 260px; /* Adjusts the container width */
+      height: 400px;
+      padding: 10px; /* Reduces padding for smaller screens */
     }
   
-    /* Adjusts the upload dropzone size and margin for smaller screens */
     .upload-dropzone {
       width: 250px; /* Limits dropzone width */
       height: 80px;
-      margin-left: 20px; /* Adds margin on the left */
     }
-  
-    /* Adjusts the upload button size */
+    
     .upload-btn {
       font-size: 14px; /* Adjusts the font size */
+      margin-left: 12px;
     }
   
-    /* Adjusts the paragraph inside the dropzone */
     .upload-dropzone p {
       font-size: 14px; /* Slightly reduces text size */
     }
   
-    /* Adjusts the font size of selected files display */
     .file-selected {
       font-size: 13px; /* Sets the font size */
     }
   
-    /* Adjusts the font size of the remove button */
     .file-selected .remove-btn {
       font-size: 16px; /* Sets the font size */
     }
   
-    /* Adjusts the summary box size and font size for smaller screens */
+      /* Text Input */
+  .text-input {
+    margin-top: 8px;
+    margin-left: -630px;
+  }
+  
+  /* Text Box */
+  .text-box {
+    width: 256px; /* Match the width of the upload box */
+    height: 80px; /* Set a fixed height */
+    font-size: 10px; /* Font size */
+  }
+  
     .summary-box {
-      width: 320px;
-      height: 430px;
+      width: 258px;
+      height: 320px;
       font-size: 14px;
     }
   
-    /* Adjusts the summary buttons with full width, padding,
-           smaller font size, and left margin */
     .download-btn,
     .do-it-again-btn,
     .pause-play-btn {
-      width: 100%; /* Full width buttons */
-      padding: 10px; /* Adds padding */
-      font-size: 10px; /* Smaller font size */
-      margin-left: 5px; /* Adds left margin */
-    }
-  
-    /* Styles the footer with smaller font size */
-    .footer {
+      width: 100px; 
       font-size: 10px;
+      margin-left: 5px;
     }
   
-    /* Adjusts the footer content padding */
-    .footer-content {
-      padding: 0 3px;
-    }
-  
-    /* Sets the width of Google logo images */
-    .google-logo img {
-      width: 25px;
-    }
-  
-    /* Sets the size of social media icons within the footer */
-    .footer-social a img {
-      width: 15px;
-      height: 15px;
-    }
-  
-    /* Reduces the size of image popup content */
-    .image-popup-content {
-      width: 480px;
-      height: 250px;
-    }
-  
-    /* Ensures the popup image fills the content area */
-    .popup-image {
-      width: 95%;
-      height: 95%;
-    }
-  
-    /* Adjusts the popup content size for smaller screens */
-    .popup-content {
-      width: 500px;
-      height: 220px;
-    }
-  
-    /* Reduces the font size of headings within popups */
-    .popup-content h3 {
-      font-size: 14px;
-    }
-  
-    /* Adjusts the close button position and size within popups */
-    .close-popup {
-      right: 4px; /* Aligns it to the right */
-      font-size: 10px; /* Sets the font size */
-    }
-  
-    /* Adjusts the upload container size and padding for smaller screens */
-    .upload-container {
-      width: 220px; /* Adjusts the container width */
-      padding: 20px; /* Reduces padding for smaller screens */
-    }
-  
-    /* Adjusts the upload dropzone size and margin for smaller screens */
-    .upload-dropzone {
-      width: 180px; /* Limits dropzone width */
-      height: 80px;
-      margin-left: 5px; /* Adds margin on the left */
-    }
-  
-    /* Adjusts the upload button size */
-    .upload-btn {
-      font-size: 11px; /* Adjusts the font size */
-    }
-  
-    /* Adjusts the paragraph inside the dropzone */
-    .upload-dropzone p {
-      font-size: 14px; /* Slightly reduces text size */
-    }
-  
-    /* Adjusts the font size of selected files display */
-    .file-selected {
-      font-size: 10px; /* Sets the font size */
-    }
-  
-    /* Adjusts the font size of the remove button */
-    .file-selected .remove-btn {
-      font-size: 16px; /* Sets the font size */
-    }
-  
-    /* Adjusts the summary box size and font size for smaller screens */
-    .summary-box {
-      width: 220px;
-      height: 250px;
-      font-size: 14px;
-    }
-  
-    /* Adjusts the summary buttons with full width, padding,
-           smaller font size, and left margin */
-    .download-btn,
-    .do-it-again-btn,
-    .pause-play-btn {
-      width: 100%; /* Full width buttons */
-      padding: 10px; /* Adds padding */
-      font-size: 10px; /* Smaller font size */
-      margin-left: auto; /* Aligns buttons to the right */
-    }
-  
-    /* Adjusts the contact page with top margin, maximum height,
-           fixed width, and bottom margin */
     .contact-page {
-      margin-top: 52px;
-      max-height: 700px;
-      width: 290px;
-      margin-bottom: 300px;
+      width: 400px;
+      margin-bottom: 280px;
     }
-  
-    /* Adjusts the contact form container size for smaller screens */
     .contact-form-container {
-      width: 250px; /* Sets a max width */
+      width: 380px; 
     }
   
-    /* Ensures input and textarea elements take full width */
     .contact-form input,
     .contact-form textarea {
-      width: 100%; /* Full width inputs */
+      width: 360px; 
+      margin-left: -12px;
     }
   
-    /* Styles the submit button within the contact form with padding,
-           font size, full width, top margin, and left margin */
-    .contact-form button {
+    .dropzone{
+      width: 360px;
+    }
+  
+    .send-button{
       padding: 10px 20px; /* Adds padding */
       font-size: 16px; /* Increases the font size */
-      width: 90%; /* Makes the button full width */
-      margin-top: 10px; /* Adds space above the button */
-      margin-left: 5px; /* Adds left margin */
+      width: 98%; /* Makes the button full width */
     }
   
     /* Ensures the about page takes up 90% of the width on smaller screens */
@@ -2890,18 +2754,7 @@
   .sources-section a:hover::after {
     transform: scaleX(1); /* Expands line on hover */
   }
-  
-  /* Text input box for direct text entry */
-  .text-box {
-    border: 2px dashed #082c6c; /* Adds a dashed border */
-    border-radius: 10px; /* Rounds the corners */
-    width: 60%;
-    background-color: #f9fafb; /* Light background color */
-    padding: 20px; /* Adds padding inside the dropzone */
-    position: relative; /* Allows positioning of child elements */
-    cursor: pointer; /* Changes the cursor to pointer on hover */
-    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
-  }
+
   .subheading {
     font-size: 24px; /* Adjust to match desired size */
     font-weight: 600;
