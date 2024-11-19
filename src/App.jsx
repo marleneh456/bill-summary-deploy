@@ -264,7 +264,8 @@ function App() {
                         closePopup={closeUploadPopup} // Pass the close function
                       />
                     )}
-                    {isLoading && <LoadingPopup />} {/* Render LoadingPopup if loading */}
+                    {isLoading && <LoadingPopup closePopup={closeUploadPopup} />}
+                    {/* Render LoadingPopup if loading */}
                     {step === 4 && (
                       <SummaryPopup
                         parsedText={parsedText} // Pass the parsed text to SummaryPopup

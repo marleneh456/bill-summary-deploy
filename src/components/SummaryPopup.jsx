@@ -39,6 +39,7 @@ function SummaryPopup({ parsedText, closePopup, handleStartOver }) {
         new TextRun({
           text: disclaimerText,
           bold: true, // Makes the disclaimer bold in Word
+          font: "Arial", // Apply Arial font
         }),
       ],
     });
@@ -49,6 +50,7 @@ function SummaryPopup({ parsedText, closePopup, handleStartOver }) {
           new TextRun({
             text: line,
             break: 1,
+            font: "Arial", // Apply Arial font
           }),
         ],
       })
