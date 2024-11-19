@@ -8,6 +8,7 @@
     flex-direction: column;
     min-height: 100vh;
     position: relative;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   /* Allows the main content area to grow and fill available space */
@@ -91,7 +92,6 @@
   /* Centers text, applies a specific font family, and adds bottom margin */
   .welcome-section {
     text-align: center;
-    font-family: "Poppins", sans-serif;
     margin-bottom: 40px;
   }
   
@@ -99,7 +99,6 @@
   
   /* Sets the font family, fixed width, adds bottom and padding space */
   .content-container {
-    font-family: "Poppins", sans-serif;
     width: 960px;
     margin-bottom: 150px;
     padding-bottom: 200px;
@@ -125,6 +124,9 @@
     color: #0a3161;
   }
   
+  .thank-you-message{
+    font-size: 18px;
+  }
   /* Styles the heading inside bill items */
   .recent-bills-section h3 {
     text-align: center;
@@ -490,11 +492,12 @@
         /* Text Box */
         .text-box {
           width: 940px; /* Ensure it matches the width of its container */
-          height: 200px; /* Set a fixed height */
+          height: 280px; /* Set a fixed height */
           resize: none; /* Disable resize to prevent stretching */
           overflow-y: auto; /* Vertical scrollbar for overflow */
           font-size: 16px; /* Font size */
           line-height: 1.5; /* Line height for readability */
+          font-family: Arial, Helvetica, sans-serif;
         }
   
   /* Loading Spinner */
@@ -604,7 +607,7 @@
     font-size: 16px; /* Sets the font size */
     position: relative; /* Positions the box relative to other elements */
     width: 920px; /* Ensures it scales on smaller screens */
-    height: 420px; /* Sets a fixed height */
+    height: 460px; /* Sets a fixed height */
     overflow-y: auto; /* Enables vertical scrolling */
     border: 1px solid #ccc; /* Adds a border */
     padding: 10px; /* Adds padding */
@@ -616,7 +619,6 @@
   /* Styles the preformatted text inside the summary box with specific font,
          word wrapping, and left-aligned text */
   .summary-box-pre {
-    font-family: "Times New Roman", Times, serif; /* Set font to Times New Roman */
     white-space: pre-wrap; /* Ensures lines wrap */
     word-wrap: break-word; /* Breaks long words */
     text-align: left; /* Aligns the text to the left */
@@ -685,7 +687,6 @@
     text-align: center; /* Centers the text */
     color: white; /* Sets the text color */
     font-size: 14px; /* Sets the font size */
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Sets the font */
     position: absolute; /* Positions the footer at the bottom */
     bottom: 0; /* Aligns the footer to the bottom */
     width: 100%; /* Ensures it takes up the full width */
@@ -785,7 +786,7 @@
   
   /* Styles the paragraph text in the contact page with font size, color, and bottom margin */
   .contact-page p {
-    font-size: 14px; /* Sets the font size */
+    font-size: 16px; /* Sets the font size */
     color: #555; /* Text color */
     margin-bottom: 20px; /* Adds margin below the text */
   }
@@ -830,6 +831,7 @@
              padding, bottom margin, border, and rounded corners */
   .contact-form input,
   .contact-form textarea {
+    font-family: Arial, Helvetica, sans-serif;
     width: 100%; /* Full width inputs */
     padding: 6px; /* Adds padding */
     margin-bottom: 12px; /* Adds margin below inputs */
@@ -957,7 +959,6 @@
     padding: 50px 20px; /* Adds padding */
     text-align: center; /* Centers the text */
     background-color: #f0f4f8; /* Sets a softer background color */
-    font-family: "Poppins", sans-serif; /* Sets the font */
   }
   
   /* Styles the about company section with bottom margin and bold font weight */
@@ -1093,6 +1094,11 @@
     height: auto; /* Adjusts height based on content */
     overflow: visible; /* Ensures content is visible */
   }
+
+  .team-section h3{
+    text-align: center;
+    font-size: 20px;
+  }
   
   /* Styles rows within team sections with flex layout,
          space between rows, and bottom margin */
@@ -1156,7 +1162,6 @@
   /* Styles the paragraphs within team members with specific font,
          font size, line height, and text color */
   .team-member p {
-    font-family: "Jacques Francois", serif; /* Sets the font family */
     font-size: 1.1rem; /* Sets the font size */
     line-height: 1.5; /* Sets line height for readability */
     color: #7f7f7f; /* Sets the text color */

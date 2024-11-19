@@ -99,16 +99,21 @@ function App() {
                   <div className="mission-block"> {/* Mission block */}
                     <h3>Mission Statement:</h3> {/* Mission statement heading */}
                     <p>
-                    Whatsinthebill.ai aims to provide accurate, non-partisan summaries of United States legislation; 
+                    Whatsinthebill.ai aims to provide <b>accurate, non-partisan summaries of United States legislation; </b>
                     it is a service designed so that any voter or legislator can quickly view pertinent information from within a 
                     given bill, act, or amendment. Our team is made up of recently graduated college students and a Marine Corps 
                     combat veteran of two foreign wars; we all have been directly impacted by multiple 
                     federal legislations, both positively and negatively, so this service is 
-                    more than just a service. It aims to bring important information to 
-                    any voter that can access this site, that would ordinarily be difficult to obtain. 
-                    While we do have ads to support our maintenance, the service is and will continue 
-                    to be free of charge for all users: this is a passion of ours. Future expansion 
-                    will support state legislation, and potentially other countries as well. 
+                    more than just a service. <b>It aims to bring important information to 
+                    any voter that can access this site, that would ordinarily be difficult to obtain. </b>
+                    </p>
+
+                    <p><i>While we do have ads to support our maintenance, the service is and will continue 
+                    to be free of charge for all users: this is a passion of ours. </i>
+                    Future expansion will support state legislation, and potentially other countries as well. 
+                    </p> 
+
+                    <p className="thank-you-message">
                     Thank you for visiting whatsinthebill.ai. We hope this helps.
                     </p> {/* Mission statement paragraph */}
                   </div>

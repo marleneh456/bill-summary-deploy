@@ -71,7 +71,6 @@ function SummaryPopup({ parsedText, closePopup, handleStartOver }) {
   return (
     <div className="popup-overlay">
       <div className="popup-content">
-        <h3>Here is the generated summary</h3>
 
         {/* Scrollable summary box */}
         <div className="summary-box">
