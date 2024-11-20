@@ -1409,7 +1409,7 @@
   
     /* Split Desktop */
   
-  /* Applies styles when the viewport is at most 1022px wide and
+  /* Applies styles when the viewport is at most 1018px wide and
          at most 2100px high */
          @media (max-width: 1018px) and (max-height: 2100px) {
           /* Hides the desktop navigation on smaller screens */
