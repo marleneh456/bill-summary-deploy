@@ -1942,7 +1942,7 @@
           /* Adjusts the summary box size for smaller screens */
           .summary-box {
             height: 130px; /* Sets the height */
-            width: 548px; /* Sets the width */
+            width: 560px; /* Sets the width */
             font-size: 10px;
           }
         
@@ -1977,7 +1977,7 @@
   
   /* Small Mobile Landscape */
   
-  /* Applies styles for landscape-oriented mobile devices with max width 1000px,
+  /* Applies styles for landscape-oriented mobile devices with max width 852px,
          max height 435px, and landscape orientation */
          @media (max-width: 852px) and (max-height: 395px) and (orientation: landscape) {
           /* Hides the desktop navigation on smaller screens */
@@ -2292,7 +2292,7 @@
             font-size: 12px;
           }
         }
-        
+
    /* Tablet - Portrait */
   
   /* Applies styles for portrait-oriented tablets with max width 835px
