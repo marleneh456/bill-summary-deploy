@@ -2368,7 +2368,7 @@
           /* Adjusts the content container to use 90% of viewport width,
                  adds right margin, and reduces font size */
           .content-container {
-            width: 580px;
+            width: 600px;
             margin-left: 10px;
             font-size: 10px;
           }
@@ -3169,12 +3169,13 @@ font-size: 10px;
   }
   .contact-form-container {
     width: 260px; /* Sets a max width */
+    margin-left: 1px;
   }
 
   .contact-form input,
   .contact-form textarea {
     width: 98%; /* Full width inputs */
-    margin-left: -10px;
+    margin-left: -5px;
   }
 
   .dropzone{
