@@ -1942,7 +1942,7 @@
           /* Adjusts the summary box size for smaller screens */
           .summary-box {
             height: 130px; /* Sets the height */
-            width: 568px; /* Sets the width */
+            width: 569px; /* Sets the width */
             font-size: 10px;
           }
         
