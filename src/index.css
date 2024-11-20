@@ -1791,14 +1791,23 @@
         
           /* Adjusts the content container to use 90% of viewport width,
                  adds right margin, and reduces font size */
-                 .content-container {
-                  width: 500px;
-                  margin-left: 20px;
-                  font-size: 10px !important;
-                }
+          .content-container {
+            width: 600px;
+            margin-left: 10px;
+            font-size: 10px;
+          }
+        
+          .mission-block {
+            font-size: 10px;
+          }
 
           .thank-you-message{
             font-size: 12px;
+          }
+        
+          /* Increases the bottom margin of the model section */
+          .model-section {
+            font-size: 10px;
           }
         
           /* Adjusts padding of instruction items */
@@ -1806,8 +1815,22 @@
             padding: 5px;
           }
         
+          /* Sets the font size of paragraphs in specific instruction items */
+          .instruction-item-one p {
+            font-size: 10px;
+          }
+        
+          /* Sets the font size of paragraphs in specific instruction items */
+          .instruction-item-two-to-four p {
+            font-size: 10px;
+          }
+        
           .instruction-separator {
             margin-top: 20px;
+          }
+          /* Sets the font size of paragraphs in specific instruction items */
+          .instruction-item-five p {
+            font-size: 10px;
           }
         
           .try-it-btn {
@@ -2086,9 +2109,22 @@
           /* Adjusts the content container to use 90% of viewport width,
                  adds right margin, and reduces font size */
           .content-container {
-            width: 500px;
-            margin-left: 20px;
-            font-size: 10px !important;
+            width: 520px;
+            margin-left: 10px;
+            font-size: 10px;
+          }
+        
+          .mission-block {
+            font-size: 10px;
+          }
+
+          .thank-you-message{
+            font-size: 12px;
+          }
+        
+          /* Increases the bottom margin of the model section */
+          .model-section {
+            font-size: 10px;
           }
         
           /* Adjusts padding of instruction items */
@@ -2096,8 +2132,22 @@
             padding: 5px;
           }
         
+          /* Sets the font size of paragraphs in specific instruction items */
+          .instruction-item-one p {
+            font-size: 10px;
+          }
+        
+          /* Sets the font size of paragraphs in specific instruction items */
+          .instruction-item-two-to-four p {
+            font-size: 10px;
+          }
+        
           .instruction-separator {
             margin-top: 50px;
+          }
+          /* Sets the font size of paragraphs in specific instruction items */
+          .instruction-item-five p {
+            font-size: 10px;
           }
         
           .try-it-btn {
