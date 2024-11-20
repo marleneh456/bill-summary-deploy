@@ -2086,7 +2086,7 @@
           /* Adjusts the content container to use 90% of viewport width,
                  adds right margin, and reduces font size */
           .content-container {
-            width: 630px;
+            width: 690px;
             margin-left: 8px;
             font-size: 10px !important;
           }
