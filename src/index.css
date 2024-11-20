@@ -2259,7 +2259,7 @@
           /* Adjusts the summary box size for smaller screens */
           .summary-box {
             height: 180px; /* Sets the height */
-            width: 350px; /* Sets the width */
+            width: 370px; /* Sets the width */
             font-size: 10px;
           }
         
