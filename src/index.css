@@ -3095,7 +3095,7 @@
     
     /* Text Box */
     .text-box {
-      width: 252px; /* Match the width of the upload box */
+      width: 250px; /* Match the width of the upload box */
       height: 180px; /* Set a fixed height */
       font-size: 11px; /* Font size */
     }
