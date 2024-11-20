@@ -2087,8 +2087,8 @@
                  adds right margin, and reduces font size */
           .content-container {
             width: 600px;
-            margin-left: 10px;
-            font-size: 10px !important;
+            margin-left: auto;
+            font-size: 10px;
           }
 
           .thank-you-message{
