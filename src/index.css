@@ -2162,27 +2162,27 @@
         
           /* Reduces the size of image popup content */
           .image-popup-content {
-            width: 550px;
+            width: 530px;
             height: 200px;
           }
         
           .legislation-instruction {
-            width: 500px;
+            width: 480px;
             height: 150px;
           }
           
           .text-instruction {
-            width: 500px;
+            width: 480px;
             height: 150px;
           }
           
           .xml-instruction {
-            width: 500px;
+            width: 480px;
             height: 150px;
           }
           
           .save-as-instruction {
-            width: 500px;
+            width: 480px;
             height: 150px;
           }
         
@@ -2287,9 +2287,24 @@
             width: 90%;
             margin-bottom: 20px;
           }
+
+          .team-section{
+            width: 98%;
+            font-size: 10px;
+            margin-bottom: 40px;
+          }
+
+          .team-member{
+            height: 500px;
+          }
         
           .contact-page {
-            font-size: 12px;
+            width: 98%;
+            font-size: 10px;
+          }
+
+          .dropzone{
+            width: 100%;
           }
         }
 
