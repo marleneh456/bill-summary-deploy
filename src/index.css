@@ -514,7 +514,7 @@
         /* Text Box */
         .text-box {
           width: 940px; /* Ensure it matches the width of its container */
-          height: 280px; /* Set a fixed height */
+          height: 250px; /* Set a fixed height */
           resize: none; /* Disable resize to prevent stretching */
           overflow-y: auto; /* Vertical scrollbar for overflow */
           font-size: 16px; /* Font size */
@@ -631,7 +631,7 @@
     font-size: 16px; /* Sets the font size */
     position: relative; /* Positions the box relative to other elements */
     width: 920px; /* Ensures it scales on smaller screens */
-    height: 460px; /* Sets a fixed height */
+    height: 420px; /* Sets a fixed height */
     overflow-y: auto; /* Enables vertical scrolling */
     border: 1px solid #ccc; /* Adds a border */
     padding: 10px; /* Adds padding */
@@ -1622,12 +1622,12 @@
       /* Text Box */
       .text-box {
         width: 756px; /* Ensure it matches the width of its container */
-        height: 320px; /* Set a fixed height */
+        height: 280px; /* Set a fixed height */
       }
 
       .summary-box{
         width: 758px;
-        height: 480px;
+        height: 450px;
       }
       
        /* Adjusts the width of summary buttons for smaller screens */
@@ -1910,12 +1910,12 @@
           /* Text Box */
           .text-box {
             width: 652px; /* Ensure it matches the width of its container */
-            height: 300px; /* Set a fixed height */
+            height: 250px; /* Set a fixed height */
           }
         
           /* Adjusts the summary box size for smaller screens */
           .summary-box {
-            height: 460px; /* Sets the height */
+            height: 430px; /* Sets the height */
             width: 650px; /* Sets the width */
           }
         
@@ -2191,14 +2191,14 @@
       /* Text Box */
       .text-box {
         width: 550px; /* Ensure it matches the width of its container */
-        height: 410px; /* Set a fixed height */
+        height: 350px; /* Set a fixed height */
         font-size: 14px; /* Font size */
       }
       
         
           /* Adjusts the summary box size for smaller screens */
           .summary-box {
-            height: 570px; /* Sets the height */
+            height: 540px; /* Sets the height */
             width: 560px; /* Sets the width */
           }
         
@@ -2780,13 +2780,13 @@
     /* Text Box */
     .text-box {
       width: 252px; /* Match the width of the upload box */
-      height: 180px; /* Set a fixed height */
+      height: 150px; /* Set a fixed height */
       font-size: 11px; /* Font size */
     }
   
     .summary-box {
       width: 258px;
-      height: 360px;
+      height: 330px;
       font-size: 14px;
     }
   
@@ -3143,14 +3143,14 @@ font-size: 10px;
   /* Text Box */
   .text-box {
     width: 220px; /* Match the width of the upload box */
-    height: 140px; /* Set a fixed height */
+    height: 80px; /* Set a fixed height */
     font-size: 10px; /* Font size */
   }
 
 
   .summary-box {
     width: 220px;
-    height: 300px;
+    height: 270px;
     font-size: 14px;
   }
 
