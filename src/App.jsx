@@ -13,7 +13,6 @@ import SummaryPopup from "./components/SummaryPopup"; // Import the SummaryPopup
 import XMLParser from "./components/XMLParser"; // Import the XMLParser utility/function
 import TeamPage from "./components/TeamPage"; // Import the TeamPage component
 import ImagePopup from "./components/ImagePopup"; // Import the ImagePopup component
-import TextPopup from "./components/TextPopup"; // Import the TextPopup component
 
 // Define the main App component
 function App() {
@@ -23,9 +22,7 @@ function App() {
   const [parsedText, setParsedText] = useState(""); // Stores the parsed text from the uploaded XML
   const [isUploadPopupOpen, setIsUploadPopupOpen] = useState(false); // Controls the visibility of the upload popup
   const [isImagePopupOpen, setIsImagePopupOpen] = useState(false); // Controls the visibility of the image popup
-  const [isTextPopupOpen, setIsTextPopupOpen] = useState(false); // Controls the visibility of the text popup
-  const [popupImage, setPopupImage] = useState(""); // Stores the source of the image to display in the image popup
-  const [popupText, setPopupText] = useState(""); // Stores the text content to display in the text popup
+  const [popupImage, setPopupImage] = useState({ src: "", className: "" }); // Stores the source of the image to display in the image popup
 
   // Function to toggle the upload popup visibility
   const toggleUploadPopup = () => {
@@ -40,27 +37,15 @@ function App() {
   };
 
   // Function to open the image popup with a specific image source
-  const openImagePopup = (imageSrc) => {
-    setPopupImage(imageSrc); // Set the image source for the popup
+  const openImagePopup = (imageData) => {
+    setPopupImage(imageData); // Set both the image source and class name
     setIsImagePopupOpen(true); // Show the image popup
-  };
+  };  
 
   // Function to close the image popup
   const closeImagePopup = () => {
     setIsImagePopupOpen(false); // Hide the image popup
     setPopupImage(""); // Clear the image source
-  };
-
-  // Function to open the text popup with specific text content
-  const openTextPopup = (textContent) => {
-    setPopupText(textContent); // Set the text content for the popup
-    setIsTextPopupOpen(true); // Show the text popup
-  };
-
-  // Function to close the text popup
-  const closeTextPopup = () => {
-    setIsTextPopupOpen(false); // Hide the text popup
-    setPopupText(""); // Clear the text content
   };
 
   // Function to handle the generation of the summary from the uploaded XML file
@@ -109,8 +94,8 @@ function App() {
                     </p>
 
                     <p><i>While we do have ads to support our maintenance, the service is and will continue 
-                    to be free of charge for all users: this is a passion of ours. </i>
-                    Future expansion will support state legislation, and potentially other countries as well. 
+                    to be free of charge for all users: this is a passion of ours. 
+                    Future expansion will support state legislation, and potentially other countries as well. </i>
                     </p> 
 
                     <p className="thank-you-message">
@@ -138,18 +123,24 @@ function App() {
                           <span className="highlight-quote"> “H.R.1234”</span> or <span className="highlight-quote">“S.5678”</span>.
                           If you would instead like to browse, click the <span className="highlight-quote">“Legislation”</span> navigation button in the top right corner of the site.
                         </p> {/* Step 2 instruction */}
-                        <a onClick={() => openImagePopup("./bill-summary-deploy/images/Legislation.png")} className="image-link">
-                          View Legislation Instruction {/* Link to view legislation instruction image */}
-                        </a>
+                        <a 
+  onClick={() => openImagePopup({ src: "./bill-summary-deploy/images/Legislation.png", className: "legislation-instruction" })} 
+  className="image-link"
+>
+  View Legislation Instruction
+</a>
                       </div>
   
                       <div className="instruction-item"> {/* Instruction step 3 */}
                         <p>
                         <span className="number-bold">3. </span> Once you have selected your desired legislation, click the <span className="highlight-quote">“Text”</span> tab
                         </p> {/* Step 3 instruction */}
-                        <a onClick={() => openImagePopup("./bill-summary-deploy/images/text instruction.png")} className="image-link">
-                          View Text Instruction {/* Link to view text instruction image */}
-                        </a>
+                        <a 
+  onClick={() => openImagePopup({ src: "./bill-summary-deploy/images/text instruction.png", className: "text-instruction" })} 
+  className="image-link"
+>
+  View Text Instruction
+</a>
                       </div>
   
                       <div className="instruction-item"> {/* Instruction step 4 */}
@@ -157,13 +148,19 @@ function App() {
                         <span className="number-bold"> 4. </span> If not already selected, click on the XML option, right-click on the document, and select
                           <span className="highlight-quote"> “Save As”</span>
                         </p> {/* Step 4 instruction */}
-                        <a onClick={() => openImagePopup("./bill-summary-deploy/images/Xml instruction.png")} className="image-link">
-                          View XML Instruction {/* Link to view XML instruction image */}
-                        </a>
+                        <a 
+  onClick={() => openImagePopup({ src: "./bill-summary-deploy/images/Xml instruction.png", className: "xml-instruction" })} 
+  className="image-link"
+>
+  View XML Instruction
+</a>
                         <br />
-                        <a onClick={() => openImagePopup("./bill-summary-deploy/images/Save as instruction.png")} className="image-link">
-                          View Save as Instruction {/* Link to view 'Save As' instruction image */}
-                        </a>
+                        <a 
+  onClick={() => openImagePopup({ src: "./bill-summary-deploy/images/Save as instruction.png", className: "save-as-instruction" })} 
+  className="image-link"
+>
+  View Save as Instruction
+</a>
                       </div>
                     </div>
                   </div>
@@ -247,13 +244,6 @@ function App() {
                     isOpen={isImagePopupOpen} // Pass the open state to ImagePopup
                     imageSrc={popupImage} // Pass the image source to ImagePopup
                     onClose={closeImagePopup} // Pass the close function to ImagePopup
-                  />
-                )}
-                {isTextPopupOpen && (
-                  <TextPopup
-                    isOpen={isTextPopupOpen} // Pass the open state to TextPopup
-                    textContent={popupText} // Pass the text content to TextPopup
-                    onClose={closeTextPopup} // Pass the close function to TextPopup
                   />
                 )}
                 {isUploadPopupOpen && (

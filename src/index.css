@@ -307,18 +307,40 @@
     padding: 20px; /* Adds padding around the content */
     border-radius: 8px; /* Rounds the corners */
     width: 850px; /* Sets a fixed width */
-    height: 400px; /* Sets a fixed height */
+    height: 320px; /* Sets a fixed height */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adds a box shadow */
     position: relative; /* Positions elements relative to the popup */
   }
   
-  /* Styles the image within the popup to take full width and height */
-  .popup-image {
-    width: 800px;
-    height: 380px;
+  .legislation-instruction {
+    width: 840px;
+    height: 300px;
     margin-top: 10px;
-    margin-left: 20px;
+    border-radius: 8px;
   }
+  
+  .text-instruction {
+    width: 840px;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+  
+  .xml-instruction {
+    width: 840px;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+  
+  .save-as-instruction {
+    width: 840px;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+  
+  
   
   /* Styles the close button inside image popups with absolute positioning,
          no background or border, pointer cursor, and font size */
@@ -435,7 +457,7 @@
                bold font weight, and text color */
         .file-selected {
           margin-top: 10px; /* Adds margin above the selected file info */
-          font-size: 14px; /* Sets the font size */
+          font-size: 18px; /* Sets the font size */
           font-weight: bold; /* Makes the text bold */
           color: #333; /* Text color */
         }
@@ -498,6 +520,8 @@
           font-size: 16px; /* Font size */
           line-height: 1.5; /* Line height for readability */
           font-family: Arial, Helvetica, sans-serif;
+          border: 2px solid black;
+          border-radius: 8px; /* Rounds the corners */
         }
   
   /* Loading Spinner */
@@ -841,6 +865,7 @@
     font-size: 16x; /* Sets the font size */
     margin-top: 15px;
     resize: none;
+    border: 2px solid black;
   }
   
   .required {
@@ -849,7 +874,7 @@
   
   /* Dropzone Styles */
   .dropzone {
-    border: 2px dashed #ddd;
+    border: 2px dashed #A9A9A9;
     border-radius: 5px;
     padding: 20px;
     width: 315px;
@@ -1049,6 +1074,177 @@
   .tech-card p {
     font-size: 0.9rem; /* Sets the font size */
     color: #7f8c8d; /* Sets the text color */
+  }
+
+  /* Transparency Section */
+  .transparency {
+    background: rgba(255, 255, 255, 0.4); /* Light frosted glass effect */
+    backdrop-filter: blur(15px); /* Adds a blur to enhance the frosted look */
+    padding: 60px; /* Space inside the section */
+    border-radius: 25px; /* Rounded corners */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15); /* Soft shadow around the box */
+    max-width: 900px; /* Limits how wide the section can get */
+    margin: 40px auto; /* Centers the section */
+    color: #1a202c; /* Text color */
+    text-align: center; /* Centers text */
+    position: relative; /* Needed for positioning child elements */
+    overflow: hidden; /* Hides any content that goes outside the box */
+  }
+  
+  /* Animated Background Blob */
+  .transparency::before {
+    content: ""; /* Empty content for decoration */
+    position: absolute; /* Positioned relative to .transparency */
+    width: 200%; /* Blob is twice the section’s width */
+    height: 200%; /* Blob is twice the section’s height */
+    top: -100%; /* Start above the section */
+    left: -100%; /* Start to the left of the section */
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.3),
+      transparent
+    ); /* Fading circle effect */
+    transform: rotate(45deg); /* Rotate it for a softer look */
+    animation: blobAnimation 10s infinite alternate; /* Makes the blob move slightly */
+    z-index: -1; /* Sends blob to the background */
+  }
+  
+  /* Blob Animation */
+  @keyframes blobAnimation {
+    0% {
+      transform: rotate(45deg) translate(0, 0); /* Start position */
+    }
+    100% {
+      transform: rotate(45deg) translate(50px, 50px); /* End position */
+    }
+  }
+  
+  .transparency h2 {
+    font-size: 32px; /* Heading size */
+    color: #2c3e50; /* Heading color */
+    border-bottom: 4px solid; /* Line under the heading */
+    border-image-source: linear-gradient(
+      90deg,
+      #b31942,
+      #b31942
+    ); /* Gradient line */
+    padding-bottom: 10px; /* Space below the heading */
+    border-image-slice: 1;
+    border-width: 2px;
+    text-align: center;
+  }
+  
+  .transparency p {
+    font-size: 1.2em; /* Text size */
+    line-height: 1.8; /* Space between lines */
+    color: #4a5568; /* Text color */
+  }
+  
+  /* Comparison Section */
+  .summary-comparison {
+    display: flex; /* Flex layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 40px; /* Space between items */
+    margin-top: 40px; /* Space above section */
+  }
+  
+  .comparison-item {
+    background: rgba(255, 255, 255, 0.4); /* Light frosted effect */
+    padding: 30px; /* Space inside the box */
+    border-radius: 20px; /* Rounded corners */
+    transition: transform 0.4s, box-shadow 0.4s; /* Smooth hover effects */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Border for structure */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .comparison-item:hover {
+    transform: translateY(-10px); /* Slight upward movement on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  .comparison-item h4 {
+    font-size: 1.8em; /* Heading size */
+    font-weight: 600;
+    color: #0a3161; /* Purple color for titles */
+    margin-bottom: 12px; /* Space below heading */
+  }
+  
+  .comparison-item p {
+    margin: 8px 0; /* Spacing around text */
+    color: #2d3748; /* Dark text color */
+  }
+  
+  /* Sources Section */
+  .sources-section {
+    background: rgba(255, 255, 255, 0.4); /* Light frosted effect */
+    padding: 40px; /* Space inside */
+    border-radius: 25px; /* Rounded corners */
+    text-align: center; /* Center text */
+    margin-top: 40px; /* Space above section */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15); /* Shadow for depth */
+  }
+  
+  .sources-section h3 {
+    font-size: 1.6em; /* Title size */
+    color: #0a3161; /* Gradient color */
+    display: flex; /* Aligns icon and text */
+    align-items: center; /* Centers icon and text vertically */
+    gap: 8px; /* Space between icon and text */
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sources-section p {
+    font-size: 1.1em; /* Paragraph size */
+    color: #4a5568; /* Text color */
+  }
+  
+  .sources-section a {
+    color: #0a3161; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color change on hover */
+  }
+  
+  .sources-section a:hover,
+  .transparency a:hover {
+    color: #b31942; /* Lighter color on hover */
+  }
+  
+  /* Hover Animation for Links */
+  .transparency a,
+  .sources-section a {
+    text-decoration: none; /* Remove default underline */
+    position: relative; /* Needed for pseudo-element */
+    color: #0a3161; /* Link color */
+    font-weight: bold; /* Make the link text bold */
+  }
+  
+  .transparency a::after,
+  .sources-section a::after {
+    content: ""; /* Decorative line under link */
+    position: absolute; /* Positioned below the link */
+    left: 0; /* Start at the left edge */
+    bottom: -2px; /* Slightly below the text */
+    width: 100%; /* Full width */
+    height: 2px; /* Thin line */
+    background-color: #b31942; /* Color of the line */
+    transform: scaleX(0); /* Starts hidden */
+    transition: transform 0.3s ease-in-out; /* Smoothly shows on hover */
+  }
+  
+  .transparency a:hover::after,
+  .sources-section a:hover::after {
+    transform: scaleX(1); /* Expands line on hover */
+  }
+
+  .subheading {
+    font-size: 24px; /* Adjust to match desired size */
+    font-weight: 600;
+    text-align: center;
+    color: #0a3161; /* Replace with your preferred shade of blue */
+    margin-bottom: 15px;
   }
   
   /* Team Section */
@@ -1358,12 +1554,27 @@
           /* Reduces the size of the image popup content */
           .image-popup-content {
             width: 95%;
-            height: 360px;
+            height: 300px;
           }
 
-          .popup-image {
-            width: 760px;
-            height: 300px;
+          .legislation-instruction {
+            width: 740px;
+            height: 250px;
+          }
+          
+          .text-instruction {
+            width: 740px;
+            height: 250px;
+          }
+          
+          .xml-instruction {
+            width: 740px;
+            height: 250px;
+          }
+          
+          .save-as-instruction {
+            width: 740px;
+            height: 250px;
           }
         
           /* Adjusts the popup content size for smaller screens */
@@ -1384,7 +1595,7 @@
         
           /* Adjusts the upload dropzone size and margin for smaller screens */
           .upload-dropzone {
-            width: 740px; /* Limits dropzone width */
+            width: 760px; /* Limits dropzone width */
           }
         
           /* Adjusts the paragraph inside the dropzone */
@@ -1399,19 +1610,24 @@
         
           /* Adjusts the font size of the remove button */
           .file-selected .remove-btn {
-            font-size: 16px; /* Sets the font size */
+            font-size: 20px; /* Sets the font size */
           }
         
            /* Text Input */
       .text-input {
         margin-top: 20px;
-        margin-left: -380px;
+        margin-left: -370px;
       }
       
       /* Text Box */
       .text-box {
-        width: 738px; /* Ensure it matches the width of its container */
-        height: 200px; /* Set a fixed height */
+        width: 756px; /* Ensure it matches the width of its container */
+        height: 320px; /* Set a fixed height */
+      }
+
+      .summary-box{
+        width: 758px;
+        height: 480px;
       }
       
        /* Adjusts the width of summary buttons for smaller screens */
@@ -1435,6 +1651,10 @@
           }
           .dropzone {
             width: 340px;
+          }
+
+          .send-button{
+            width: 100%;
           }
         }
   
@@ -1603,13 +1823,27 @@
           /* Reduces the size of image popup content */
           .image-popup-content {
             width: 750px;
-            height: 350px;
+            height: 280px;
           }
         
-          /* Ensures the popup image fills the content area */
-          .popup-image {
-            width: 660px;
-            height: 300px;
+          .legislation-instruction {
+            width: 700px;
+            height: 220px;
+          }
+          
+          .text-instruction {
+            width: 700px;
+            height: 220px;
+          }
+          
+          .xml-instruction {
+            width: 700px;
+            height: 220px;
+          }
+          
+          .save-as-instruction {
+            width: 700px;
+            height: 220px;
           }
         
           /* Adjusts the popup content size for smaller screens */
@@ -1642,7 +1876,7 @@
           .upload-btn {
             font-size: 14px; /* Reduces button font size */
             margin: 18px; /* Adds margin around the button */
-            margin-left: 2px;
+            margin-left: -15px;
             padding: 10px 20px; /* Adds padding inside the button */
           }
         
@@ -1670,18 +1904,18 @@
         
            /* Text Input */
            .text-input {
-            margin-left: -418px;
+            margin-left: -422px;
           }
           
           /* Text Box */
           .text-box {
-            width: 644px; /* Ensure it matches the width of its container */
-            height: 250px; /* Set a fixed height */
+            width: 652px; /* Ensure it matches the width of its container */
+            height: 300px; /* Set a fixed height */
           }
         
           /* Adjusts the summary box size for smaller screens */
           .summary-box {
-            height: 430px; /* Sets the height */
+            height: 460px; /* Sets the height */
             width: 650px; /* Sets the width */
           }
         
@@ -1874,14 +2108,28 @@
 
           /* Reduces the size of image popup content */
           .image-popup-content {
-            width: 90%;
-            height: 40%;
+            width: 650px;
+            height: 280px;
           }
         
-          /* Ensures the popup image fills the content area */
-          .popup-image {
-            width: 620px;
-            height: 300px;
+          .legislation-instruction {
+            width: 630px;
+            height: 220px;
+          }
+          
+          .text-instruction {
+            width: 630px;
+            height: 220px;
+          }
+          
+          .xml-instruction {
+            width: 630px;
+            height: 220px;
+          }
+          
+          .save-as-instruction {
+            width: 630px;
+            height: 220px;
           }
         
           /* Adjusts the popup content size for smaller screens */
@@ -1932,25 +2180,25 @@
         
           /* Adjusts the font size of the remove button */
           .file-selected .remove-btn {
-            font-size: 16px; /* Sets the font size */
+            font-size: 20px; /* Sets the font size */
           }
         
              /* Text Input */
       .text-input {
-        margin-left: -480px;
+        margin-left: -482px;
       }
       
       /* Text Box */
       .text-box {
         width: 550px; /* Ensure it matches the width of its container */
-        height: 350px; /* Set a fixed height */
+        height: 410px; /* Set a fixed height */
         font-size: 14px; /* Font size */
       }
       
         
           /* Adjusts the summary box size for smaller screens */
           .summary-box {
-            height: 480px; /* Sets the height */
+            height: 570px; /* Sets the height */
             width: 560px; /* Sets the width */
           }
         
@@ -2128,6 +2376,10 @@
           .mission-block {
             font-size: 10px;
           }
+
+          .thank-you-message{
+            font-size: 12px;
+          }
         
           /* Increases the bottom margin of the model section */
           .model-section {
@@ -2163,7 +2415,7 @@
           }
       
           .Recent-bills-line{
-            width: 68%;
+            width: 36%;
           }
       
         
@@ -2173,10 +2425,24 @@
             height: 200px;
           }
         
-          /* Ensures the popup image fills the content area */
-          .popup-image {
-            width: 90%;
-            height: 90%;
+          .legislation-instruction {
+            width: 500px;
+            height: 150px;
+          }
+          
+          .text-instruction {
+            width: 500px;
+            height: 150px;
+          }
+          
+          .xml-instruction {
+            width: 500px;
+            height: 150px;
+          }
+          
+          .save-as-instruction {
+            width: 500px;
+            height: 150px;
           }
         
            /* Adjusts the popup content size for smaller screens */
@@ -2282,9 +2548,6 @@
         
           .contact-page {
             font-size: 12px;
-          }
-          .send-button{
-            width: 100%;
           }
         }
         
@@ -2426,9 +2689,13 @@
      margin-left: 12px;
      font-size: 14px;
    }
+
+   .thank-you-message{
+    font-size: 16px;
+   }
   
   .instruction-separator {
-    margin-top: 360px;
+    margin-top: 330px;
   }
     .try-it-btn {
     font-size: 14px;
@@ -2442,9 +2709,24 @@
     height: 200px;
   }
   
-  .popup-image {
-    width: 90%;
-    height: 90%;
+  .legislation-instruction {
+    width: 300px;
+    height: 150px;
+  }
+  
+  .text-instruction {
+    width: 300px;
+    height: 150px;
+  }
+  
+  .xml-instruction {
+    width: 300px;
+    height: 150px;
+  }
+  
+  .save-as-instruction {
+    width: 300px;
+    height: 150px;
   }
   
     .popup-content {
@@ -2482,29 +2764,29 @@
     }
   
     .file-selected {
-      font-size: 13px; /* Sets the font size */
+      font-size: 11px; /* Sets the font size */
     }
   
     .file-selected .remove-btn {
       font-size: 16px; /* Sets the font size */
     }
   
-      /* Text Input */
-  .text-input {
-    margin-top: 8px;
-    margin-left: -630px;
-  }
-  
-  /* Text Box */
-  .text-box {
-    width: 256px; /* Match the width of the upload box */
-    height: 80px; /* Set a fixed height */
-    font-size: 10px; /* Font size */
-  }
+        /* Text Input */
+    .text-input {
+      margin-top: 8px;
+      margin-left: -634px;
+    }
+    
+    /* Text Box */
+    .text-box {
+      width: 252px; /* Match the width of the upload box */
+      height: 180px; /* Set a fixed height */
+      font-size: 11px; /* Font size */
+    }
   
     .summary-box {
       width: 258px;
-      height: 320px;
+      height: 360px;
       font-size: 14px;
     }
   
@@ -2605,177 +2887,6 @@
     .team-member p {
       font-size: 0.75rem; /* Sets the font size */
     }
-  }
-  
-  /* Transparency Section */
-  .transparency {
-    background: rgba(255, 255, 255, 0.4); /* Light frosted glass effect */
-    backdrop-filter: blur(15px); /* Adds a blur to enhance the frosted look */
-    padding: 60px; /* Space inside the section */
-    border-radius: 25px; /* Rounded corners */
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15); /* Soft shadow around the box */
-    max-width: 900px; /* Limits how wide the section can get */
-    margin: 40px auto; /* Centers the section */
-    color: #1a202c; /* Text color */
-    text-align: center; /* Centers text */
-    position: relative; /* Needed for positioning child elements */
-    overflow: hidden; /* Hides any content that goes outside the box */
-  }
-  
-  /* Animated Background Blob */
-  .transparency::before {
-    content: ""; /* Empty content for decoration */
-    position: absolute; /* Positioned relative to .transparency */
-    width: 200%; /* Blob is twice the section’s width */
-    height: 200%; /* Blob is twice the section’s height */
-    top: -100%; /* Start above the section */
-    left: -100%; /* Start to the left of the section */
-    background: radial-gradient(
-      circle,
-      rgba(255, 255, 255, 0.3),
-      transparent
-    ); /* Fading circle effect */
-    transform: rotate(45deg); /* Rotate it for a softer look */
-    animation: blobAnimation 10s infinite alternate; /* Makes the blob move slightly */
-    z-index: -1; /* Sends blob to the background */
-  }
-  
-  /* Blob Animation */
-  @keyframes blobAnimation {
-    0% {
-      transform: rotate(45deg) translate(0, 0); /* Start position */
-    }
-    100% {
-      transform: rotate(45deg) translate(50px, 50px); /* End position */
-    }
-  }
-  
-  .transparency h2 {
-    font-size: 32px; /* Heading size */
-    color: #2c3e50; /* Heading color */
-    border-bottom: 4px solid; /* Line under the heading */
-    border-image-source: linear-gradient(
-      90deg,
-      #b31942,
-      #b31942
-    ); /* Gradient line */
-    padding-bottom: 10px; /* Space below the heading */
-    border-image-slice: 1;
-    border-width: 2px;
-    text-align: center;
-  }
-  
-  .transparency p {
-    font-size: 1.2em; /* Text size */
-    line-height: 1.8; /* Space between lines */
-    color: #4a5568; /* Text color */
-  }
-  
-  /* Comparison Section */
-  .summary-comparison {
-    display: flex; /* Flex layout */
-    flex-direction: column; /* Stack items vertically */
-    gap: 40px; /* Space between items */
-    margin-top: 40px; /* Space above section */
-  }
-  
-  .comparison-item {
-    background: rgba(255, 255, 255, 0.4); /* Light frosted effect */
-    padding: 30px; /* Space inside the box */
-    border-radius: 20px; /* Rounded corners */
-    transition: transform 0.4s, box-shadow 0.4s; /* Smooth hover effects */
-    border: 1px solid rgba(255, 255, 255, 0.5); /* Border for structure */
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-  }
-  
-  .comparison-item:hover {
-    transform: translateY(-10px); /* Slight upward movement on hover */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
-  }
-  
-  .comparison-item h4 {
-    font-size: 1.8em; /* Heading size */
-    font-weight: 600;
-    color: #0a3161; /* Purple color for titles */
-    margin-bottom: 12px; /* Space below heading */
-  }
-  
-  .comparison-item p {
-    margin: 8px 0; /* Spacing around text */
-    color: #2d3748; /* Dark text color */
-  }
-  
-  /* Sources Section */
-  .sources-section {
-    background: rgba(255, 255, 255, 0.4); /* Light frosted effect */
-    padding: 40px; /* Space inside */
-    border-radius: 25px; /* Rounded corners */
-    text-align: center; /* Center text */
-    margin-top: 40px; /* Space above section */
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15); /* Shadow for depth */
-  }
-  
-  .sources-section h3 {
-    font-size: 1.6em; /* Title size */
-    color: #0a3161; /* Gradient color */
-    display: flex; /* Aligns icon and text */
-    align-items: center; /* Centers icon and text vertically */
-    gap: 8px; /* Space between icon and text */
-    font-weight: 600;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .sources-section p {
-    font-size: 1.1em; /* Paragraph size */
-    color: #4a5568; /* Text color */
-  }
-  
-  .sources-section a {
-    color: #0a3161; /* Link color */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s; /* Smooth color change on hover */
-  }
-  
-  .sources-section a:hover,
-  .transparency a:hover {
-    color: #b31942; /* Lighter color on hover */
-  }
-  
-  /* Hover Animation for Links */
-  .transparency a,
-  .sources-section a {
-    text-decoration: none; /* Remove default underline */
-    position: relative; /* Needed for pseudo-element */
-    color: #0a3161; /* Link color */
-    font-weight: bold; /* Make the link text bold */
-  }
-  
-  .transparency a::after,
-  .sources-section a::after {
-    content: ""; /* Decorative line under link */
-    position: absolute; /* Positioned below the link */
-    left: 0; /* Start at the left edge */
-    bottom: -2px; /* Slightly below the text */
-    width: 100%; /* Full width */
-    height: 2px; /* Thin line */
-    background-color: #b31942; /* Color of the line */
-    transform: scaleX(0); /* Starts hidden */
-    transition: transform 0.3s ease-in-out; /* Smoothly shows on hover */
-  }
-  
-  .transparency a:hover::after,
-  .sources-section a:hover::after {
-    transform: scaleX(1); /* Expands line on hover */
-  }
-
-  .subheading {
-    font-size: 24px; /* Adjust to match desired size */
-    font-weight: 600;
-    text-align: center;
-    color: #0a3161; /* Replace with your preferred shade of blue */
-    margin-bottom: 15px;
   }
   
 /* Small Mobile Portrait */
@@ -2957,13 +3068,28 @@ font-size: 10px;
 }
 
 .image-popup-content {
-  width: 90%;
+  width: 300px;
   height: 200px;
 }
 
-.popup-image {
-  width: 90%;
-  height: 90%;
+.legislation-instruction {
+  width: 260px;
+  height: 150px;
+}
+
+.text-instruction {
+  width: 260px;
+  height: 150px;
+}
+
+.xml-instruction {
+  width: 260px;
+  height: 150px;
+}
+
+.save-as-instruction {
+  width: 260px;
+  height: 150px;
 }
 
   .popup-content {
@@ -2986,7 +3112,7 @@ font-size: 10px;
   }
 
   .upload-dropzone {
-    width: 230px; /* Limits dropzone width */
+    width: 224px; /* Limits dropzone width */
     height: 80px;
     margin-left: -20px; /* Adds margin on the left */
   }
@@ -3008,23 +3134,23 @@ font-size: 10px;
     font-size: 16px; /* Sets the font size */
   }
 
-   /* Text Input */
-.text-input {
-  margin-top: 8px;
-  margin-left: -658px;
-}
+    /* Text Input */
+  .text-input {
+    margin-top: 8px;
+    margin-left: -658px;
+  }
 
-/* Text Box */
-.text-box {
-  width: 230px; /* Match the width of the upload box */
-  height: 80px; /* Set a fixed height */
-  font-size: 10px; /* Font size */
-}
+  /* Text Box */
+  .text-box {
+    width: 220px; /* Match the width of the upload box */
+    height: 140px; /* Set a fixed height */
+    font-size: 10px; /* Font size */
+  }
 
 
   .summary-box {
     width: 220px;
-    height: 250px;
+    height: 300px;
     font-size: 14px;
   }
 
