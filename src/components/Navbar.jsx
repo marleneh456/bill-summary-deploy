@@ -1,17 +1,15 @@
-// Navbar.jsx
-
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
   // Only full desktop, large protrait tablets, and landscape tablets have no menu button
-  const [isFullScreen, setIsFullScreen] = useState(window.innerWidth >= 1022);
+  const [isFullScreen, setIsFullScreen] = useState(window.innerWidth >= 1018);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
       // Update isFullScreen based on window width
-      setIsFullScreen(window.innerWidth >= 1022);
+      setIsFullScreen(window.innerWidth >= 1018);
     };
 
     window.addEventListener("resize", handleResize);
