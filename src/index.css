@@ -2111,7 +2111,7 @@
           .content-container {
             width: 500px;
             margin-left: 20px;
-            font-size: 10px;
+            font-size: 10px !important;;
           }
 
           .thank-you-message{
