@@ -1794,7 +1794,7 @@
                  .content-container {
                   width: 500px;
                   margin-left: 20px;
-                  font-size: 10px !important;;
+                  font-size: 10px !important;
                 }
 
           .thank-you-message{
@@ -2088,11 +2088,7 @@
           .content-container {
             width: 500px;
             margin-left: 20px;
-            font-size: 10px !important;;
-          }
-
-          .thank-you-message{
-            font-size: 12px;
+            font-size: 10px !important;
           }
         
           /* Adjusts padding of instruction items */
