@@ -279,19 +279,6 @@ function TeamPage() {
               </div>
 
               <div className="team-member">
-                <img src="" alt="Member 15" className="team-photo" />
-                <h4>
-                  New Member
-                  <br />
-                  <br />
-                  <a href="h" target="_blank" className="github-link">
-                    <i className="fab fa-github social-icon"></i>
-                  </a>
-                  <a href="" target="_blank" className="username-link"></a>
-                </h4>
-                <p></p>
-
-                <p></p>
               </div>
             </div>
           </div>
@@ -550,19 +537,6 @@ function TeamPage() {
                 <p>B.S. Computer Science - MTSU</p>
               </div>
               <div className="team-member">
-                <img src="" alt="Member 15" className="team-photo" />
-                <h4>
-                  New Member
-                  <br />
-                  <br />
-                  <a href="h" target="_blank" className="github-link">
-                    <i className="fab fa-github social-icon"></i>
-                  </a>
-                  <a href="" target="_blank" className="username-link"></a>
-                </h4>
-                <p></p>
-
-                <p></p>
               </div>
             </div>
           </div>

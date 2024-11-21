@@ -313,31 +313,32 @@
   }
   
   .legislation-instruction {
-    width: 840px;
+    width: 850px;
     height: 300px;
     margin-top: 10px;
-    border-radius: 8px;
+    object-fit: scale-down;
   }
   
   .text-instruction {
-    width: 840px;
-    height: 300px;
+    width: 850px;
+    height: 250px;
     margin-top: 10px;
     border-radius: 8px;
+    object-fit: scale-down;
   }
   
   .xml-instruction {
-    width: 840px;
-    height: 300px;
+    width: 850px;
+    height: 280px;
     margin-top: 10px;
-    border-radius: 8px;
+    object-fit: scale-down;
   }
   
   .save-as-instruction {
-    width: 840px;
+    width: 860px;
     height: 300px;
-    margin-top: 10px;
-    border-radius: 8px;
+    margin-top: 5px;
+    object-fit: scale-down;
   }
   
   
@@ -1553,28 +1554,28 @@
         
           /* Reduces the size of the image popup content */
           .image-popup-content {
-            width: 95%;
+            width: 750px;
             height: 300px;
           }
 
           .legislation-instruction {
-            width: 740px;
+            width: 710px;
             height: 250px;
           }
           
           .text-instruction {
-            width: 740px;
-            height: 250px;
+            width: 710px;
+            height: 240px;
           }
           
           .xml-instruction {
-            width: 740px;
-            height: 250px;
+            width: 710px;
+            height: 230px;
           }
           
           .save-as-instruction {
-            width: 740px;
-            height: 250px;
+            width: 720px;
+            height: 240px;
           }
         
           /* Adjusts the popup content size for smaller screens */
@@ -1827,22 +1828,22 @@
           }
         
           .legislation-instruction {
-            width: 500px;
+            width: 510px;
             height: 150px;
           }
           
           .text-instruction {
-            width: 500px;
+            width: 510px;
             height: 150px;
           }
           
           .xml-instruction {
-            width: 500px;
+            width: 510px;
             height: 150px;
           }
           
           .save-as-instruction {
-            width: 500px;
+            width: 510px;
             height: 150px;
           }
         
@@ -2121,18 +2122,18 @@
           }
         
           .legislation-instruction {
-            width: 480px;
+            width: 490px;
             height: 150px;
           }
           
           .text-instruction {
-            width: 480px;
+            width: 490px;
             height: 150px;
           }
           
           .xml-instruction {
-            width: 480px;
-            height: 150px;
+            width: 490px;
+            height: 140px;
           }
           
           .save-as-instruction {
@@ -2426,7 +2427,7 @@
         
           /* Reduces the size of image popup content */
           .image-popup-content {
-            width: 750px;
+            width: 740px;
             height: 280px;
           }
         
@@ -2716,22 +2717,22 @@
           }
         
           .legislation-instruction {
-            width: 630px;
+            width: 610px;
             height: 220px;
           }
           
           .text-instruction {
-            width: 630px;
+            width: 610px;
             height: 220px;
           }
           
           .xml-instruction {
-            width: 630px;
+            width: 610px;
             height: 220px;
           }
           
           .save-as-instruction {
-            width: 630px;
+            width: 610px;
             height: 220px;
           }
         
@@ -2995,22 +2996,22 @@
   }
   
   .legislation-instruction {
-    width: 300px;
+    width: 310px;
     height: 150px;
   }
   
   .text-instruction {
-    width: 300px;
+    width: 310px;
     height: 150px;
   }
   
   .xml-instruction {
-    width: 300px;
+    width: 310px;
     height: 150px;
   }
   
   .save-as-instruction {
-    width: 300px;
+    width: 310px;
     height: 150px;
   }
   
