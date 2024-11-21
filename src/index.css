@@ -2246,7 +2246,7 @@
           .team-section{
             width: 98%;
             font-size: 10px;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
           }
 
           .team-member{
@@ -3149,6 +3149,7 @@
     .team-section {
       margin-left: 3px;
       width: 320px;
+      margin-bottom: 80px;
     }
   
     /* Styles team members with fixed height */
@@ -3507,6 +3508,7 @@ font-size: 10px;
   .team-section {
     margin-left: 3px;
     width: 200px;
+    margin-bottom: 20px;
   }
 
   .team-member {
