@@ -124,11 +124,11 @@ function App() {
                           If you would instead like to browse, click the <span className="highlight-quote">“Legislation”</span> navigation button in the top right corner of the site.
                         </p> {/* Step 2 instruction */}
                         <a 
-  onClick={() => openImagePopup({ src: "./bill-summary-deploy/images/Legislation.png", className: "legislation-instruction" })} 
-  className="image-link"
->
-  View Legislation Instruction
-</a>
+                          onClick={() => openImagePopup({ src: "./bill-summary-deploy/images/Legislation.png", className: "legislation-instruction" })} 
+                          className="image-link"
+                        >
+                        View Legislation Instruction
+                      </a>
                       </div>
   
                       <div className="instruction-item"> {/* Instruction step 3 */}
@@ -136,11 +136,11 @@ function App() {
                         <span className="number-bold">3. </span> Once you have selected your desired legislation, click the <span className="highlight-quote">“Text”</span> tab
                         </p> {/* Step 3 instruction */}
                         <a 
-  onClick={() => openImagePopup({ src: "./bill-summary-deploy/images/text instruction.png", className: "text-instruction" })} 
-  className="image-link"
->
-  View Text Instruction
-</a>
+                        onClick={() => openImagePopup({ src: "./bill-summary-deploy/images/text instruction.png", className: "text-instruction" })} 
+                        className="image-link"
+                        >
+                        View Text Instruction
+                        </a>
                       </div>
   
                       <div className="instruction-item"> {/* Instruction step 4 */}
@@ -149,18 +149,18 @@ function App() {
                           <span className="highlight-quote"> “Save As”</span>
                         </p> {/* Step 4 instruction */}
                         <a 
-  onClick={() => openImagePopup({ src: "./bill-summary-deploy/images/Xml instruction.png", className: "xml-instruction" })} 
-  className="image-link"
->
-  View XML Instruction
-</a>
+                        onClick={() => openImagePopup({ src: "./bill-summary-deploy/images/Xml instruction.png", className: "xml-instruction" })} 
+                        className="image-link"
+                        >
+                        View XML Instruction
+                        </a>
                         <br />
                         <a 
-  onClick={() => openImagePopup({ src: "./bill-summary-deploy/images/Save as instruction.png", className: "save-as-instruction" })} 
-  className="image-link"
->
-  View Save as Instruction
-</a>
+                        onClick={() => openImagePopup({ src: "./bill-summary-deploy/images/Save as instruction.png", className: "save-as-instruction" })} 
+                        className="image-link"
+                        >
+                        View Save as Instruction
+                        </a>
                       </div>
                     </div>
                   </div>
