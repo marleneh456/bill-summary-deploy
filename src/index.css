@@ -2873,8 +2873,6 @@
           }
         }
         
-  
-  
   /* Big Mobile Portrait */
   
   /* Applies styles for portrait-oriented big mobile devices with max width 490px,
@@ -3007,7 +3005,7 @@
     }
   
     .content-container {
-      width: 350px;
+      width: 370px;
      margin-left: 20px;
      font-size: 14px;
    }
@@ -3233,11 +3231,49 @@
     .team-member p {
       font-size: 0.75rem; /* Sets the font size */
     }
+
+    .footer-content {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center align items */
+      text-align: center; /* Center text */
+      padding: 2px;
+    }
+  
+    .footer-left,
+    .footer-center,
+    .footer-right {
+      width: 100%; /* Full width for all sections */
+      margin-bottom: 10px; /* Add spacing between sections */
+    }
+  
+    .footer-left .google-logo {
+      display: flex;
+      flex-direction: column; /* Stack logo and text */
+      align-items: center;
+      line-height: 1.8; /* Increase line height for readability */
+    }
+  
+    .footer-social {
+      display: flex;
+      justify-content: center; /* Center social icons */
+      gap: 10px; /* Add spacing between icons */
+    }
+  
+    .footer-social a img {
+      width: 20px; /* Resize social icons */
+      height: 20px;
+    }
+  
+    .footer-disclaimer {
+      font-size: 12px; /* Adjust disclaimer font size */
+      line-height: 1.5; /* Increase line height for readability */
+    }
   }
   
 /* Small Mobile Portrait */
 
-@media (max-width: 380px) and (max-height: 640px){
+@media (max-width: 390px) and (max-height: 780px){
   .full-screen-nav-links {
     display: none; /* Hides the desktop navigation on mobile */
   }
@@ -3350,11 +3386,14 @@
   }
  
  .content-container {
-  width: 340px;
+  width: 330px;
    font-size: 10px;
-   margin-left: 10px;
+   margin-left: 20px;
  }
   
+ .thank-you-message{
+  font-size: 12px;
+ }
   .instructions-section {
    font-size: 10px;
   }
@@ -3381,7 +3420,7 @@ font-size: 10px;
 }
 
 .instruction-separator {
-  margin-top: 120px;
+  margin-top: 200px;
 }
 
 .instruction-item-five p{
@@ -3392,6 +3431,29 @@ font-size: 10px;
 	margin-bottom: 90px;
 	font-size: 10px;
   }
+
+  .recent-bills {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 15px; /* Space between the cards */
+    justify-content: center; /* Center the cards */
+  }
+
+  .bill-item {
+    max-width: 330px; /* Limit the max width of each card */
+    padding: 15px; /* Add space inside the card */
+  }
+
+  .bill-item h4 {
+    font-size: 12px; /* Adjust title font size */
+    margin-bottom: 10px; /* Space below title */
+  }
+
+  .bill-item p {
+    font-size: 10px; /* Adjust paragraph font size */
+    margin-bottom: 15px; /* Space below description */
+  }
+
 
   .Recent-bills-line{
     width: 58%;
