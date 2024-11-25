@@ -37,14 +37,14 @@ function AboutPage() {
             <p>Backend Development</p>
           </div>
           <div className="tech-card">
-            <img src="./bill-summary-deploy/images/react.png" alt="React" className="tech-icon" />
-            <h5>React</h5>
-            <p>Frontend Development</p>
-          </div>
-          <div className="tech-card">
             <img src="./bill-summary-deploy/images/flask.jpg" alt="Flask" className="tech-icon" />
             <h5>Flask</h5>
             <p>Backend Development</p>
+          </div>
+          <div className="tech-card">
+            <img src="./bill-summary-deploy/images/react.png" alt="React" className="tech-icon" />
+            <h5>React</h5>
+            <p>Frontend Development</p>
           </div>
           <div className="tech-card">
             <img src="./bill-summary-deploy/images/api.png" alt="REST API" className="tech-icon" />

@@ -19,8 +19,8 @@
   /* Navbar Styles */
   
   /* Defines the navbar as a flex container with space between items,
-         centers items vertically, adds padding, sets background color,
-         and adds a subtle box shadow */
+           centers items vertically, adds padding, sets background color,
+           and adds a subtle box shadow */
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -37,7 +37,7 @@
   }
   
   /* Styles the logo image with a fixed width and automatic height,
-         and adds right margin for spacing */
+           and adds right margin for spacing */
   .logo {
     width: 50px;
     height: auto;
@@ -53,14 +53,14 @@
   /* Desktop Navigation */
   
   /* Sets up a flex container for navigation links, aligning them horizontally
-         and pushing them to the right */
+           and pushing them to the right */
   .full-screen-nav-links {
     display: flex; /* Arranges navigation links horizontally */
     margin-left: auto; /* Pushes the navigation links to the right */
   }
   
   /* Removes list styling, arranges list items horizontally with gaps,
-         and removes default margins and padding */
+           and removes default margins and padding */
   .full-screen-nav-links ul {
     list-style: none; /* Removes the bullet points from the list */
     display: flex; /* Arranges the list items horizontally */
@@ -70,8 +70,8 @@
   }
   
   /* Styles the anchor tags within navigation links:
-         sets text color, removes underline, sets font size,
-         adds padding, background color, rounded corners, and transition effect */
+           sets text color, removes underline, sets font size,
+           adds padding, background color, rounded corners, and transition effect */
   .full-screen-nav-links ul li a {
     color: white; /* Makes the link text white */
     text-decoration: none; /* Removes the underline from the links */
@@ -124,7 +124,7 @@
     color: #0a3161;
   }
   
-  .thank-you-message{
+  .thank-you-message {
     font-size: 18px;
   }
   /* Styles the heading inside bill items */
@@ -180,7 +180,7 @@
   }
   
   /* Styles the model section with border, padding, margin, centered text,
-         and a transform transition */
+           and a transform transition */
   .model-section {
     background: #f9f9f9; /* Light background */
     border-radius: 10px; /* Rounds the corners */
@@ -203,7 +203,7 @@
   /* Instructions Section */
   
   /* Sets background color, positions absolutely at the bottom,
-         centers text, and ensures full width */
+           centers text, and ensures full width */
   .instructions-section {
     background-color: #e3e8ef; /* Unified background color */
     padding: 20px; /* Increase padding for readability */
@@ -249,7 +249,7 @@
   }
   
   /* Styles image links as block elements with top margin, underline, blue color,
-         and bold font weight */
+           and bold font weight */
   .image-link {
     display: block;
     margin-top: 5px;
@@ -260,7 +260,7 @@
   }
   
   /* Styles the "Try It" button with padding, font size, margin, background color,
-         text color, no border, rounded corners, cursor pointer, and transition effects */
+           text color, no border, rounded corners, cursor pointer, and transition effects */
   .try-it-btn {
     padding: 15px 50px; /* Adds padding inside the button */
     font-size: 16px; /* Sets the font size */
@@ -286,7 +286,7 @@
   }
   
   /* Styles the overlay for image popups with fixed positioning,
-         semi-transparent background, centers content, and sets high z-index */
+           semi-transparent background, centers content, and sets high z-index */
   .image-popup-overlay {
     position: fixed;
     top: 0;
@@ -301,7 +301,7 @@
   }
   
   /* Styles the content area of image popups with white background,
-         padding, rounded corners, fixed size, box shadow, and relative positioning */
+           padding, rounded corners, fixed size, box shadow, and relative positioning */
   .image-popup-content {
     background: white; /* Sets a white background */
     padding: 20px; /* Adds padding around the content */
@@ -341,10 +341,8 @@
     object-fit: scale-down;
   }
   
-  
-  
   /* Styles the close button inside image popups with absolute positioning,
-         no background or border, pointer cursor, and font size */
+           no background or border, pointer cursor, and font size */
   .image-close-popup {
     position: absolute; /* Positions the button inside the popup */
     top: 2px; /* Aligns it to the top */
@@ -358,8 +356,8 @@
   /* Upload Popup Styles */
   
   /* Styles the popup overlay with fixed positioning,
-         full viewport size, semi-transparent background, centers content,
-         and sets high z-index */
+           full viewport size, semi-transparent background, centers content,
+           and sets high z-index */
   .popup-overlay {
     position: fixed; /* Fixes the popup to the viewport */
     top: 0; /* Aligns the popup to the top */
@@ -374,161 +372,161 @@
   }
   
   /* Styles the content area of upload popups with white background,
-         padding, rounded corners, fixed size, relative positioning,
-         and box-sizing to include padding in width calculations */
-         .popup-content {
-          background: white; /* Sets a white background */
-          padding: 20px; /* Adds padding around the content */
-          border-radius: 10px; /* Rounds the corners */
-          width: 980px; /* Sets a fixed width */
-          height: 600px; /* Sets a fixed height */
-          position: relative; /* Positions elements relative to the popup */
-          box-sizing: border-box; /* Includes padding in width and height */
-        }
-        
-        /* Styles the heading inside upload popups with a specific font size */
-        .popup-content h3 {
-          font-size: 20px; /* Sets the font size */
-        }
-        
-        /* Styles the close button inside upload popups with absolute positioning,
-               no background or border, pointer cursor, and font size */
-        .close-popup {
-          position: absolute; /* Positions the button inside the popup */
-          top: 2px; /* Aligns it to the top */
-          right: 2px; /* Aligns it to the right */
-          background: none; /* Removes the background */
-          border: none; /* Removes the border */
-          cursor: pointer; /* Changes cursor to pointer */
-          font-size: 18px; /* Sets the font size */
-        }
-        
-        /* Upload Container */
-        
-        /* Centers content, adds margins and padding, sets fixed width,
-               rounds corners, sets background color, adds box shadow,
-               and applies a transform transition */
-        .upload-container {
-          text-align: center; /* Centers the content inside the upload container */
-          border-radius: 12px; /* Rounds the corners */
-          height: 500px;
-        }
-        
-        /* Upload Dropzone */
-        
-        /* Styles the upload dropzone with dashed border, rounded corners,
-               light background color, padding, relative positioning,
-               pointer cursor, and transition effects */
-        .upload-dropzone {
-          border: 2px dashed #082c6c; /* Adds a dashed border */
-          border-radius: 12px; /* Rounds the corners */
-          background-color: #f9fafb; /* Light background color */
-          padding: 25px; /* Adds padding inside the dropzone */
-          position: relative; /* Allows positioning of child elements */
-          cursor: pointer; /* Changes the cursor to pointer on hover */
-          transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
-          width: 890px;
-        }
-        
-        /* Changes background and border color of dropzone on hover */
-        .upload-dropzone:hover {
-          background-color: #e2e8f0; /* Changes background color on hover */
-          border-color: #061d48; /* Changes border color on hover */
-        }
-        
-        /* Styles the paragraph inside the dropzone with specific font size and color */
-        .upload-dropzone p {
-          font-size: 16px; /* Sets the font size */
-          color: #555555; /* Text color */
-          margin: 0; /* Removes margin around the text */
-        }
-        
-        /* Hides the file input by making it transparent and covering the entire dropzone */
-        .file-input {
-          opacity: 0; /* Hides the file input */
-          position: absolute; /* Positions the input over the dropzone */
-          top: 0; /* Aligns the input to the top */
-          left: 0; /* Aligns the input to the left */
-          width: 100%; /* Makes the input full width */
-          height: 100%; /* Makes the input full height */
-          cursor: pointer; /* Pointer cursor */
-        }
-        
-        /* Styles the display of selected files with margin, font size,
-               bold font weight, and text color */
-        .file-selected {
-          margin-top: 10px; /* Adds margin above the selected file info */
-          font-size: 18px; /* Sets the font size */
-          font-weight: bold; /* Makes the text bold */
-          color: #333; /* Text color */
-        }
-        
-        /* Styles the remove button inside file-selected with no background or border,
-               red color, larger font size, bold font weight, pointer cursor, and transition */
-        .file-selected .remove-btn {
-          background: none; /* Removes the background */
-          border: none; /* Removes the border */
-          color: #ff6b6b; /* Sets the color for the remove button */
-          font-size: 20px; /* Sets the font size */
-          font-weight: bold; /* Makes the text bold */
-          cursor: pointer; /* Pointer cursor */
-          transition: color 0.3s ease; /* Smooth color transition */
-        }
-        
-        /* Changes the remove button color on hover */
-        .file-selected .remove-btn:hover {
-          color: #ff4a4a; /* Changes the color on hover */
-        }
-        
-        /* Upload Button */
-        
-        /* Styles the upload button with margin, padding, background color,
-               white text, no border, rounded corners, font size and weight,
-               pointer cursor, transition effects, and box shadow */
-        .upload-btn {
-          margin: 15px 10px; /* Adds margin around the button */
-          padding: 15px 50px; /* Adds padding inside the button */
-          background-color: #b31942; /* Sets the background color */
-          color: white; /* Makes the button text white */
-          border: none; /* Removes the border */
-          border-radius: 40px; /* Rounds the button's corners */
-          font-size: 16px; /* Sets the font size */
-          font-weight: 600; /* Makes the text bold */
-          cursor: pointer; /* Changes the cursor to pointer on hover */
-          transition: background-color 0.3s ease, transform 0.3s ease; /* Adds smooth transitions */
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
-        }
-        
-        /* Changes background color and lifts the button on hover */
-        .upload-btn:hover {
-          background-color: #e64d75; /* Changes the background color on hover */
-          transform: translateY(-3px); /* Lifts the button on hover */
-        }
-        
-        /* Text Input */
-        .text-input {
-          margin-top: 20px;
-          width: 1500px; /* Match the width of the upload box */
-          margin-left: -280px;
-        }
-        
-        /* Text Box */
-        .text-box {
-          width: 940px; /* Ensure it matches the width of its container */
-          height: 280px; /* Set a fixed height */
-          resize: none; /* Disable resize to prevent stretching */
-          overflow-y: auto; /* Vertical scrollbar for overflow */
-          font-size: 16px; /* Font size */
-          line-height: 1.5; /* Line height for readability */
-          font-family: Arial, Helvetica, sans-serif;
-          border: 2px solid black;
-          border-radius: 8px; /* Rounds the corners */
-        }
+           padding, rounded corners, fixed size, relative positioning,
+           and box-sizing to include padding in width calculations */
+  .popup-content {
+    background: white; /* Sets a white background */
+    padding: 20px; /* Adds padding around the content */
+    border-radius: 10px; /* Rounds the corners */
+    width: 980px; /* Sets a fixed width */
+    height: 600px; /* Sets a fixed height */
+    position: relative; /* Positions elements relative to the popup */
+    box-sizing: border-box; /* Includes padding in width and height */
+  }
+  
+  /* Styles the heading inside upload popups with a specific font size */
+  .popup-content h3 {
+    font-size: 20px; /* Sets the font size */
+  }
+  
+  /* Styles the close button inside upload popups with absolute positioning,
+                 no background or border, pointer cursor, and font size */
+  .close-popup {
+    position: absolute; /* Positions the button inside the popup */
+    top: 2px; /* Aligns it to the top */
+    right: 2px; /* Aligns it to the right */
+    background: none; /* Removes the background */
+    border: none; /* Removes the border */
+    cursor: pointer; /* Changes cursor to pointer */
+    font-size: 18px; /* Sets the font size */
+  }
+  
+  /* Upload Container */
+  
+  /* Centers content, adds margins and padding, sets fixed width,
+                 rounds corners, sets background color, adds box shadow,
+                 and applies a transform transition */
+  .upload-container {
+    text-align: center; /* Centers the content inside the upload container */
+    border-radius: 12px; /* Rounds the corners */
+    height: 500px;
+  }
+  
+  /* Upload Dropzone */
+  
+  /* Styles the upload dropzone with dashed border, rounded corners,
+                 light background color, padding, relative positioning,
+                 pointer cursor, and transition effects */
+  .upload-dropzone {
+    border: 2px dashed #082c6c; /* Adds a dashed border */
+    border-radius: 12px; /* Rounds the corners */
+    background-color: #f9fafb; /* Light background color */
+    padding: 25px; /* Adds padding inside the dropzone */
+    position: relative; /* Allows positioning of child elements */
+    cursor: pointer; /* Changes the cursor to pointer on hover */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+    width: 890px;
+  }
+  
+  /* Changes background and border color of dropzone on hover */
+  .upload-dropzone:hover {
+    background-color: #e2e8f0; /* Changes background color on hover */
+    border-color: #061d48; /* Changes border color on hover */
+  }
+  
+  /* Styles the paragraph inside the dropzone with specific font size and color */
+  .upload-dropzone p {
+    font-size: 16px; /* Sets the font size */
+    color: #555555; /* Text color */
+    margin: 0; /* Removes margin around the text */
+  }
+  
+  /* Hides the file input by making it transparent and covering the entire dropzone */
+  .file-input {
+    opacity: 0; /* Hides the file input */
+    position: absolute; /* Positions the input over the dropzone */
+    top: 0; /* Aligns the input to the top */
+    left: 0; /* Aligns the input to the left */
+    width: 100%; /* Makes the input full width */
+    height: 100%; /* Makes the input full height */
+    cursor: pointer; /* Pointer cursor */
+  }
+  
+  /* Styles the display of selected files with margin, font size,
+                 bold font weight, and text color */
+  .file-selected {
+    margin-top: 10px; /* Adds margin above the selected file info */
+    font-size: 18px; /* Sets the font size */
+    font-weight: bold; /* Makes the text bold */
+    color: #333; /* Text color */
+  }
+  
+  /* Styles the remove button inside file-selected with no background or border,
+                 red color, larger font size, bold font weight, pointer cursor, and transition */
+  .file-selected .remove-btn {
+    background: none; /* Removes the background */
+    border: none; /* Removes the border */
+    color: #ff6b6b; /* Sets the color for the remove button */
+    font-size: 20px; /* Sets the font size */
+    font-weight: bold; /* Makes the text bold */
+    cursor: pointer; /* Pointer cursor */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  /* Changes the remove button color on hover */
+  .file-selected .remove-btn:hover {
+    color: #ff4a4a; /* Changes the color on hover */
+  }
+  
+  /* Upload Button */
+  
+  /* Styles the upload button with margin, padding, background color,
+                 white text, no border, rounded corners, font size and weight,
+                 pointer cursor, transition effects, and box shadow */
+  .upload-btn {
+    margin: 15px 10px; /* Adds margin around the button */
+    padding: 15px 50px; /* Adds padding inside the button */
+    background-color: #b31942; /* Sets the background color */
+    color: white; /* Makes the button text white */
+    border: none; /* Removes the border */
+    border-radius: 40px; /* Rounds the button's corners */
+    font-size: 16px; /* Sets the font size */
+    font-weight: 600; /* Makes the text bold */
+    cursor: pointer; /* Changes the cursor to pointer on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adds smooth transitions */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds a shadow for depth */
+  }
+  
+  /* Changes background color and lifts the button on hover */
+  .upload-btn:hover {
+    background-color: #e64d75; /* Changes the background color on hover */
+    transform: translateY(-3px); /* Lifts the button on hover */
+  }
+  
+  /* Text Input */
+  .text-input {
+    margin-top: 20px;
+    width: 1500px; /* Match the width of the upload box */
+    margin-left: -280px;
+  }
+  
+  /* Text Box */
+  .text-box {
+    width: 940px; /* Ensure it matches the width of its container */
+    height: 280px; /* Set a fixed height */
+    resize: none; /* Disable resize to prevent stretching */
+    overflow-y: auto; /* Vertical scrollbar for overflow */
+    font-size: 16px; /* Font size */
+    line-height: 1.5; /* Line height for readability */
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid black;
+    border-radius: 8px; /* Rounds the corners */
+  }
   
   /* Loading Spinner */
   
   /* Styles the loading spinner container with flexbox layout,
-         vertical arrangement, centered content, and fixed height */
+           vertical arrangement, centered content, and fixed height */
   .loading-spinner {
     display: flex; /* Flexbox layout for centering */
     flex-direction: column; /* Arranges items vertically */
@@ -538,7 +536,7 @@
   }
   
   /* Styles the spinner animation with border properties,
-         circular shape, size, animation, and bottom margin */
+           circular shape, size, animation, and bottom margin */
   .spinner {
     border: 4px solid rgba(0, 0, 0, 0.1); /* Light border */
     border-left-color: #000080; /* Darker color for one part of the spinner */
@@ -550,7 +548,7 @@
   }
   
   /* Styles the paragraph inside loading spinner with font size,
-         text color, top margin, centered text, and horizontal padding */
+           text color, top margin, centered text, and horizontal padding */
   .loading-spinner p {
     font-size: 1rem; /* Sets the font size */
     color: #333; /* Text color */
@@ -582,7 +580,7 @@
   }
   
   /* Styles the blinking cursor with background color,
-         blinking animation, and vertical alignment */
+           blinking animation, and vertical alignment */
   .blinking-cursor {
     background-color: black; /* Makes the cursor black */
     animation: blink 1s steps(2) infinite; /* Animates the cursor blinking */
@@ -605,9 +603,9 @@
   /* Summary Box */
   
   /* Styles the animated summary preformatted text with word wrapping,
-         centered margin, padding, light background, border, rounded corners,
-         subtle shadow, left-aligned text, responsive max width,
-         fixed height, and vertical scrolling */
+           centered margin, padding, light background, border, rounded corners,
+           subtle shadow, left-aligned text, responsive max width,
+           fixed height, and vertical scrolling */
   .animated-summary pre {
     white-space: pre-wrap; /* Ensures long lines wrap */
     word-wrap: break-word; /* Breaks long words */
@@ -624,8 +622,8 @@
   }
   
   /* Styles the summary box with margin, left-aligned text,
-         fixed size, overflow auto, border, padding, light background,
-         rounded corners, and subtle shadow */
+           fixed size, overflow auto, border, padding, light background,
+           rounded corners, and subtle shadow */
   .summary-box {
     margin-top: 20px; /* Adds space above the summary box */
     text-align: left; /* Centers the text */
@@ -642,7 +640,7 @@
   }
   
   /* Styles the preformatted text inside the summary box with specific font,
-         word wrapping, and left-aligned text */
+           word wrapping, and left-aligned text */
   .summary-box-pre {
     white-space: pre-wrap; /* Ensures lines wrap */
     word-wrap: break-word; /* Breaks long words */
@@ -653,7 +651,7 @@
   /* Button Container */
   
   /* Styles the container holding summary buttons with flex layout,
-         centered alignment, gap between buttons, and top margin */
+           centered alignment, gap between buttons, and top margin */
   .summary-btns-container {
     display: flex;
     align-items: center;
@@ -664,7 +662,7 @@
   /* Button Icon Styles */
   
   /* Styles the icons within buttons with fixed size, right margin,
-         and vertical alignment */
+           and vertical alignment */
   .button-icon {
     width: 32px; /* Sets the icon width */
     height: 32px; /* Maintains aspect ratio */
@@ -675,9 +673,9 @@
   /* Button Styles */
   
   /* Styles download, do-it-again, and pause-play buttons with padding,
-         fixed width, background color, white text, no border,
-         rounded corners, font size and weight, pointer cursor,
-         transition effects, and box shadow */
+           fixed width, background color, white text, no border,
+           rounded corners, font size and weight, pointer cursor,
+           transition effects, and box shadow */
   .download-btn,
   .do-it-again-btn,
   .pause-play-btn {
@@ -705,8 +703,8 @@
   /* Footer Styles */
   
   /* Styles the footer with background color, padding, centered text,
-         white text color, small font size, specific font family,
-         absolute positioning at the bottom, full width, and left alignment */
+           white text color, small font size, specific font family,
+           absolute positioning at the bottom, full width, and left alignment */
   .footer {
     background-color: #082c6c; /* Sets the footer background color */
     padding: 5px 0; /* Adds padding inside the footer */
@@ -720,7 +718,7 @@
   }
   
   /* Styles the content inside the footer as a flex container
-         with space between items and centered alignment */
+           with space between items and centered alignment */
   .footer-content {
     display: flex;
     justify-content: space-between;
@@ -736,7 +734,7 @@
   }
   
   /* Styles the Google logo section as a flex container with centered alignment
-         and gap between items */
+           and gap between items */
   .google-logo {
     display: flex;
     align-items: center;
@@ -749,7 +747,7 @@
   }
   
   /* Styles the center section of the footer as a flex container
-         with vertical alignment and centered items */
+           with vertical alignment and centered items */
   .footer-center {
     display: flex;
     flex-direction: column;
@@ -791,7 +789,7 @@
   /* Contact Page General Styles */
   
   /* Styles the contact page with padding, background color, centered text,
-         box shadow, rounded corners, max width, and centered alignment */
+           box shadow, rounded corners, max width, and centered alignment */
   .contact-page {
     padding: 20px; /* Adds padding */
     background-color: #f9fafb; /* Light background */
@@ -820,9 +818,9 @@
   /* Contact Form */
   
   /* Styles the contact form container with flex layout, space between,
-             wrapping on smaller screens, gaps, max width, centered alignment,
-             white background, padding, box shadow, rounded corners,
-             and transition effects */
+               wrapping on smaller screens, gaps, max width, centered alignment,
+               white background, padding, box shadow, rounded corners,
+               and transition effects */
   .contact-form-container {
     display: flex; /* Flexbox layout */
     justify-content: space-between; /* Space between form and address */
@@ -854,7 +852,7 @@
   }
   
   /* Styles input and textarea elements within the contact form with full width,
-             padding, bottom margin, border, and rounded corners */
+               padding, bottom margin, border, and rounded corners */
   .contact-form input,
   .contact-form textarea {
     font-family: Arial, Helvetica, sans-serif;
@@ -875,7 +873,7 @@
   
   /* Dropzone Styles */
   .dropzone {
-    border: 2px dashed #A9A9A9;
+    border: 2px dashed #a9a9a9;
     border-radius: 5px;
     padding: 20px;
     width: 315px;
@@ -933,8 +931,8 @@
   }
   
   /* Styles the submit button within the contact form with padding,
-             background color, white text, no border, rounded corners,
-             pointer cursor, and transition effects */
+               background color, white text, no border, rounded corners,
+               pointer cursor, and transition effects */
   .send-button {
     width: 105%;
     padding: 8px; /* Adds padding */
@@ -958,7 +956,7 @@
   /* Contact Info Section */
   
   /* Styles the contact info section to expand within the container
-             and sets a minimum width */
+               and sets a minimum width */
   .contact-info {
     flex: 1; /* Allows the contact info to expand */
     min-width: 250px; /* Sets a minimum width */
@@ -981,7 +979,7 @@
   /* About Page */
   
   /* Styles the about page with padding, centered text,
-         soft background color, and specific font family */
+           soft background color, and specific font family */
   .about-page {
     padding: 50px 20px; /* Adds padding */
     text-align: center; /* Centers the text */
@@ -1001,7 +999,7 @@
   }
   
   /* Styles the about description with max width, centered alignment,
-         font size, text color, and increased line height for readability */
+           font size, text color, and increased line height for readability */
   .about-description {
     max-width: 800px; /* Limits the width */
     margin: 0 auto; /* Centers the description */
@@ -1013,7 +1011,7 @@
   /* Technologies Section */
   
   /* Styles the technologies section with top margin, padding,
-         white background, and bottom margin */
+           white background, and bottom margin */
   .technologies {
     margin-top: 60px; /* Adds space above the section */
     padding: 20px; /* Adds padding */
@@ -1021,7 +1019,7 @@
   }
   
   /* Styles the heading in the technologies section with color,
-         font size, bottom margin, and centered text */
+           font size, bottom margin, and centered text */
   .technologies h2 {
     color: #2c3e50; /* Sets the text color */
     font-size: 2rem; /* Sets the font size */
@@ -1030,7 +1028,7 @@
   }
   
   /* Styles the grid container for technology cards with flex layout,
-         space around items, gaps, wrapping, and bottom margin */
+           space around items, gaps, wrapping, and bottom margin */
   .tech-grid {
     display: flex; /* Flexbox layout */
     justify-content: space-around; /* Space between items */
@@ -1039,8 +1037,8 @@
   }
   
   /* Styles individual technology cards with light background,
-         rounded corners, shadow, padding, centered text,
-         transform and shadow transitions, and fixed width */
+           rounded corners, shadow, padding, centered text,
+           transform and shadow transitions, and fixed width */
   .tech-card {
     background: #f9f9f9; /* Light background */
     border-radius: 10px; /* Rounds the corners */
@@ -1076,7 +1074,7 @@
     font-size: 0.9rem; /* Sets the font size */
     color: #7f8c8d; /* Sets the text color */
   }
-
+  
   /* Transparency Section */
   .transparency {
     background: rgba(255, 255, 255, 0.4); /* Light frosted glass effect */
@@ -1239,7 +1237,7 @@
   .sources-section a:hover::after {
     transform: scaleX(1); /* Expands line on hover */
   }
-
+  
   .subheading {
     font-size: 24px; /* Adjust to match desired size */
     font-weight: 600;
@@ -1251,7 +1249,7 @@
   /* Team Section */
   
   /* Styles the team section with top margin, visible overflow,
-         and bottom padding */
+           and bottom padding */
   .meet-the-team {
     margin-top: 50px; /* Adds space above the section */
     overflow: visible; /* Ensures the content is visible */
@@ -1259,7 +1257,7 @@
   }
   
   /* Styles the main heading of the team section with centered text,
-         bottom margin, font size, and color */
+           bottom margin, font size, and color */
   .meet-the-team h1 {
     text-align: center; /* Centers the heading */
     margin-bottom: 40px; /* Adds space below the heading */
@@ -1268,7 +1266,7 @@
   }
   
   /* Styles the container for team columns with flex layout,
-         space around columns, wrapping, full width, and visible overflow */
+           space around columns, wrapping, full width, and visible overflow */
   .team-columns {
     display: flex; /* Flexbox layout */
     justify-content: space-around; /* Space between columns */
@@ -1278,8 +1276,8 @@
   }
   
   /* Styles individual team sections with flexible width, fixed width,
-         padding, margin, light background, rounded corners, shadow,
-         minimum height, auto height based on content, and visible overflow */
+           padding, margin, light background, rounded corners, shadow,
+           minimum height, auto height based on content, and visible overflow */
   .team-section {
     flex: 1; /* Expands the section */
     width: 600px; /* Sets a max width */
@@ -1292,14 +1290,14 @@
     height: auto; /* Adjusts height based on content */
     overflow: visible; /* Ensures content is visible */
   }
-
-  .team-section h3{
+  
+  .team-section h3 {
     text-align: center;
     font-size: 20px;
   }
   
   /* Styles rows within team sections with flex layout,
-         space between rows, and bottom margin */
+           space between rows, and bottom margin */
   .team-row {
     display: flex; /* Flexbox layout */
     justify-content: space-between; /* Space between rows */
@@ -1307,8 +1305,8 @@
   }
   
   /* Styles individual team members with flexible width,
-         centered text, padding, margin, white background,
-         rounded corners, shadow, fixed height, and visible overflow */
+           centered text, padding, margin, white background,
+           rounded corners, shadow, fixed height, and visible overflow */
   .team-member {
     flex: 1; /* Expands the member block */
     text-align: center; /* Centers the text */
@@ -1322,7 +1320,7 @@
   }
   
   /* Styles the team member images with fixed size,
-         rounded corners, bottom margin, and shadow */
+           rounded corners, bottom margin, and shadow */
   .team-member img {
     width: 150px; /* Sets the image width */
     height: 150px; /* Sets the image height */
@@ -1338,7 +1336,7 @@
   }
   
   /* Styles GitHub links with right margin,
-         vertical alignment, and black color */
+           vertical alignment, and black color */
   .github-link {
     margin-right: 10px; /* Adjusts space between the icon and the text */
     vertical-align: middle; /* Ensures alignment with the text */
@@ -1346,7 +1344,7 @@
   }
   
   /* Styles username links with no text decoration,
-         black color, normal font weight, and underline on hover */
+           black color, normal font weight, and underline on hover */
   .username-link {
     text-decoration: none; /* Removes underline */
     color: black; /* Sets text color */
@@ -1358,7 +1356,7 @@
   }
   
   /* Styles the paragraphs within team members with specific font,
-         font size, line height, and text color */
+           font size, line height, and text color */
   .team-member p {
     font-size: 1.1rem; /* Sets the font size */
     line-height: 1.5; /* Sets line height for readability */
@@ -1371,7 +1369,7 @@
   }
   
   /* Limits the width of team members within three-member rows,
-         and adds padding and margin */
+           and adds padding and margin */
   .team-row.three-members .team-member {
     flex: 0 1 30%; /* Limits the width to 30% */
     padding: 15px; /* Adds padding */
@@ -1395,7 +1393,7 @@
   /* Full desktop, large portrait tablets, and large landscape tablets */
   
   /* Applies styles when the viewport is at least 1023px wide and
-         at least 2160px high */
+           at least 2160px high */
   @media (min-width: 1023px) and (min-height: 2160px) {
     /* Hides the mobile menu button on large screens */
     .menu-button {
@@ -1408,1476 +1406,554 @@
     }
   }
   
-    /* Split Desktop */
+  /* Split Desktop */
   
   /* Applies styles when the viewport is at most 1018px wide and
-         at most 2100px high */
-         @media (max-width: 1018px) and (max-height: 2100px) {
-          /* Hides the desktop navigation on smaller screens */
-          .full-screen-nav-links {
-            display: none; /* Hides the desktop navigation on mobile */
-          }
-        
-          /* Styles the menu button with no background or border,
-                 white color, large font size, pointer cursor, and positions it */
-          .menu-button {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 30px;
-            cursor: pointer;
-            right: 10px; /* Positions the button 10px from the right edge */
-            top: 5x; /* Positions the button 10px from the top */
-          }
-        
-          /* Hides the navigation links initially and styles their position,
-                 width, background color, alignment, z-index, and transition */
-          .nav-links {
-            display: none; /* Hides the mobile navigation links initially */
-            position: absolute; /* Changes position to absolute */
-            top: 65px; /* Pushes the navigation links down by 65px */
-            left: 0; /* Aligns the navigation to the left */
-            width: 100%; /* Makes the navigation take up the full width */
-            background-color: #1a3d6c; /* Background color */
-            justify-content: flex-start; /* Align navigation links to the left */
-            z-index: 9; /* Ensure the navigation appears above other elements */
-            transition: transform 0.3s ease-in-out; /* Smooth transition */
-          }
-        
-          /* When nav-links has the class 'open', display as flex with row direction
-                 and apply a slide down animation */
-          .nav-links.open {
-            display: flex; /* Makes links visible */
-            flex-direction: row; /* Arrange links horizontally */
-            animation: slideDown 0.1s forwards; /* Sliding down effect */
-            justify-content: flex-start; /* Align links to the left */
-          }
-        
-          /* Removes display flex and applies a slide up animation when 'close' class is added */
-          .nav-links.close {
-            animation: slideUp 0.1s forwards; /* Sliding up effect */
-          }
-        
-          /* Styles the unordered list within nav-links by removing list styling,
-                 arranging items horizontally, adding gaps, and setting margins */
-          .nav-links ul {
-            list-style: none; /* Removes bullets */
-            padding: 0; /* Removes padding around the links */
-            margin: 0; /* Removes margin around the links */
-            display: flex; /* Arranges the links horizontally */
-            flex-direction: row; /* Arrange links horizontally */
-            gap: 20px; /* Adds space between links */
-            margin-left: auto; /* Align links to the left */
-            margin-top: 20px; /* Adds space above the links */
-            margin-bottom: 20px; /* Adds space below the links */
-          }
-        
-          /* Styles individual list items within nav-links with vertical margins */
-          .nav-links ul li {
-            margin: 10px 0; /* Adds space between each link */
-          }
-        
-          /* Styles the anchor tags within nav-links list items */
-          .nav-links ul li a {
-            color: white; /* Makes the link text white */
-            text-decoration: none; /* Removes the underline from the links */
-            font-size: 16px; /* Sets the font size for the links */
-            padding: 10px 15px; /* Adds padding inside the links */
-            background-color: #4a5c79; /* Sets the background color */
-            border-radius: 15px; /* Rounds the corners */
-            transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
-          }
-        
-          /* Changes the background color of nav links on hover */
-          .nav-links ul li a:hover {
-            background-color: #3d4e66; /* Changes the background color on hover */
-          }
-        
-          /* Defines the slideDown keyframes for animation */
-          @keyframes slideDown {
-            from {
-              opacity: 0; /* Start fully transparent */
-              transform: translateY(-20px); /* Start 20px above */
-            }
-            to {
-              opacity: 1; /* End fully opaque */
-              transform: translateY(0); /* Move to original position */
-            }
-          }
-        
-          /* Defines the slideUp keyframes for animation */
-          @keyframes slideUp {
-            from {
-              opacity: 1; /* Start fully opaque */
-              transform: translateY(0); /* Start at original position */
-            }
-            to {
-              opacity: 0; /* End fully transparent */
-              transform: translateY(-20px); /* Slide 20px up */
-            }
-          }
-        
-          /* Ensures all elements use border-box sizing */
-          * {
-            box-sizing: border-box;
-          }
-        
-          /* Sets the body background color to Cornsilk */
-          body {
-            background-color: #fff8dc; /* Cornsilk */
-          }
-        
-          /* Styles the main heading in the welcome section with reduced font size */
-          .welcome-section h1 {
-            font-size: 28px;
-          }
-        
-          /* Styles the paragraph in the welcome section with reduced font size */
-          .welcome-section p {
-            font-size: 14px;
-          }
-        
-          /* Adjusts the content container to use 90% of viewport width
-                 and adds left margin */
-          .content-container {
-            width: 800px;
-            margin-left: 10px;
-          }
-        
-          .instruction-separator {
-            margin-top: 150px;
-          }
-        
-          .Recent-bills-line {
-            width: 40%;
-          }
-        
-          /* Reduces the size of the image popup content */
-          .image-popup-content {
-            width: 750px;
-            height: 300px;
-          }
-
-          .legislation-instruction {
-            width: 710px;
-            height: 250px;
-          }
-          
-          .text-instruction {
-            width: 710px;
-            height: 240px;
-          }
-          
-          .xml-instruction {
-            width: 710px;
-            height: 230px;
-          }
-          
-          .save-as-instruction {
-            width: 720px;
-            height: 240px;
-          }
-        
-          /* Adjusts the popup content size for smaller screens */
-          .popup-content {
-            width: 800px;
-          }
-        
-          /* Reduces the font size of headings within popups */
-          .popup-content h3 {
-            font-size: 16px;
-          }
-        
-          /* Adjusts the close button position and size within popups */
-          .close-popup {
-            right: 4px; /* Aligns it to the right */
-            font-size: 10px; /* Sets the font size */
-          }
-        
-          /* Adjusts the upload dropzone size and margin for smaller screens */
-          .upload-dropzone {
-            width: 760px; /* Limits dropzone width */
-          }
-        
-          /* Adjusts the paragraph inside the dropzone */
-          .upload-dropzone p {
-            font-size: 16px; /* Reduces text size */
-          }
-        
-          /* Adjusts the font size of selected files display */
-          .file-selected {
-            font-size: 16px; /* Sets the font size */
-          }
-        
-          /* Adjusts the font size of the remove button */
-          .file-selected .remove-btn {
-            font-size: 20px; /* Sets the font size */
-          }
-        
-           /* Text Input */
-      .text-input {
-        margin-top: 20px;
-        margin-left: -370px;
+           at most 2100px high */
+  @media (max-width: 1018px) and (max-height: 2100px) {
+    /* Hides the desktop navigation on smaller screens */
+    .full-screen-nav-links {
+      display: none; /* Hides the desktop navigation on mobile */
+    }
+  
+    /* Styles the menu button with no background or border,
+                   white color, large font size, pointer cursor, and positions it */
+    .menu-button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 30px;
+      cursor: pointer;
+      right: 10px; /* Positions the button 10px from the right edge */
+      top: 5x; /* Positions the button 10px from the top */
+    }
+  
+    /* Hides the navigation links initially and styles their position,
+                   width, background color, alignment, z-index, and transition */
+    .nav-links {
+      display: none; /* Hides the mobile navigation links initially */
+      position: absolute; /* Changes position to absolute */
+      top: 65px; /* Pushes the navigation links down by 65px */
+      left: 0; /* Aligns the navigation to the left */
+      width: 100%; /* Makes the navigation take up the full width */
+      background-color: #1a3d6c; /* Background color */
+      justify-content: flex-start; /* Align navigation links to the left */
+      z-index: 9; /* Ensure the navigation appears above other elements */
+      transition: transform 0.3s ease-in-out; /* Smooth transition */
+    }
+  
+    /* When nav-links has the class 'open', display as flex with row direction
+                   and apply a slide down animation */
+    .nav-links.open {
+      display: flex; /* Makes links visible */
+      flex-direction: row; /* Arrange links horizontally */
+      animation: slideDown 0.1s forwards; /* Sliding down effect */
+      justify-content: flex-start; /* Align links to the left */
+    }
+  
+    /* Removes display flex and applies a slide up animation when 'close' class is added */
+    .nav-links.close {
+      animation: slideUp 0.1s forwards; /* Sliding up effect */
+    }
+  
+    /* Styles the unordered list within nav-links by removing list styling,
+                   arranging items horizontally, adding gaps, and setting margins */
+    .nav-links ul {
+      list-style: none; /* Removes bullets */
+      padding: 0; /* Removes padding around the links */
+      margin: 0; /* Removes margin around the links */
+      display: flex; /* Arranges the links horizontally */
+      flex-direction: row; /* Arrange links horizontally */
+      gap: 20px; /* Adds space between links */
+      margin-left: auto; /* Align links to the left */
+      margin-top: 20px; /* Adds space above the links */
+      margin-bottom: 20px; /* Adds space below the links */
+    }
+  
+    /* Styles individual list items within nav-links with vertical margins */
+    .nav-links ul li {
+      margin: 10px 0; /* Adds space between each link */
+    }
+  
+    /* Styles the anchor tags within nav-links list items */
+    .nav-links ul li a {
+      color: white; /* Makes the link text white */
+      text-decoration: none; /* Removes the underline from the links */
+      font-size: 16px; /* Sets the font size for the links */
+      padding: 10px 15px; /* Adds padding inside the links */
+      background-color: #4a5c79; /* Sets the background color */
+      border-radius: 15px; /* Rounds the corners */
+      transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
+    }
+  
+    /* Changes the background color of nav links on hover */
+    .nav-links ul li a:hover {
+      background-color: #3d4e66; /* Changes the background color on hover */
+    }
+  
+    /* Defines the slideDown keyframes for animation */
+    @keyframes slideDown {
+      from {
+        opacity: 0; /* Start fully transparent */
+        transform: translateY(-20px); /* Start 20px above */
       }
-      
-      /* Text Box */
-      .text-box {
-        width: 756px; /* Ensure it matches the width of its container */
-        height: 310px; /* Set a fixed height */
+      to {
+        opacity: 1; /* End fully opaque */
+        transform: translateY(0); /* Move to original position */
       }
-
-      .summary-box{
-        width: 758px;
-        height: 480px;
+    }
+  
+    /* Defines the slideUp keyframes for animation */
+    @keyframes slideUp {
+      from {
+        opacity: 1; /* Start fully opaque */
+        transform: translateY(0); /* Start at original position */
       }
-      
-       /* Adjusts the width of summary buttons for smaller screens */
-       .download-btn,
-       .do-it-again-btn,
-       .pause-play-btn {
-         width: 244px;
-       }
-          /* Ensures the about page takes up 90% of the width on smaller screens */
-          .about-page {
-            width: 90%; /* Ensures full width for mobile */
-          }
-        
-          /* Styles the technology cards to be responsive and adds bottom margin */
-          .tech-card {
-            width: 90%;
-            margin-bottom: 20px;
-          }
-          .footer {
-            font-size: 12px;
-          }
-          .dropzone {
-            width: 340px;
-          }
-
-          .send-button{
-            width: 100%;
-          }
-        }
-
-      /* Big Mobile Landscape */
+      to {
+        opacity: 0; /* End fully transparent */
+        transform: translateY(-20px); /* Slide 20px up */
+      }
+    }
+  
+    /* Ensures all elements use border-box sizing */
+    * {
+      box-sizing: border-box;
+    }
+  
+    /* Sets the body background color to Cornsilk */
+    body {
+      background-color: #fff8dc; /* Cornsilk */
+    }
+  
+    /* Styles the main heading in the welcome section with reduced font size */
+    .welcome-section h1 {
+      font-size: 28px;
+    }
+  
+    /* Styles the paragraph in the welcome section with reduced font size */
+    .welcome-section p {
+      font-size: 14px;
+    }
+  
+    /* Adjusts the content container to use 90% of viewport width
+                   and adds left margin */
+    .content-container {
+      width: 800px;
+      margin-left: 10px;
+    }
+  
+    .instruction-separator {
+      margin-top: 150px;
+    }
+  
+    .Recent-bills-line {
+      width: 40%;
+    }
+  
+    /* Reduces the size of the image popup content */
+    .image-popup-content {
+      width: 750px;
+      height: 300px;
+    }
+  
+    .legislation-instruction {
+      width: 710px;
+      height: 250px;
+    }
+  
+    .text-instruction {
+      width: 710px;
+      height: 240px;
+    }
+  
+    .xml-instruction {
+      width: 710px;
+      height: 230px;
+    }
+  
+    .save-as-instruction {
+      width: 720px;
+      height: 240px;
+    }
+  
+    /* Adjusts the popup content size for smaller screens */
+    .popup-content {
+      width: 800px;
+    }
+  
+    /* Reduces the font size of headings within popups */
+    .popup-content h3 {
+      font-size: 16px;
+    }
+  
+    /* Adjusts the close button position and size within popups */
+    .close-popup {
+      right: 4px; /* Aligns it to the right */
+      font-size: 10px; /* Sets the font size */
+    }
+  
+    /* Adjusts the upload dropzone size and margin for smaller screens */
+    .upload-dropzone {
+      width: 760px; /* Limits dropzone width */
+    }
+  
+    /* Adjusts the paragraph inside the dropzone */
+    .upload-dropzone p {
+      font-size: 16px; /* Reduces text size */
+    }
+  
+    /* Adjusts the font size of selected files display */
+    .file-selected {
+      font-size: 16px; /* Sets the font size */
+    }
+  
+    /* Adjusts the font size of the remove button */
+    .file-selected .remove-btn {
+      font-size: 20px; /* Sets the font size */
+    }
+  
+    /* Text Input */
+    .text-input {
+      margin-top: 20px;
+      margin-left: -370px;
+    }
+  
+    /* Text Box */
+    .text-box {
+      width: 756px; /* Ensure it matches the width of its container */
+      height: 310px; /* Set a fixed height */
+    }
+  
+    .summary-box {
+      width: 758px;
+      height: 480px;
+    }
+  
+    /* Adjusts the width of summary buttons for smaller screens */
+    .download-btn,
+    .do-it-again-btn,
+    .pause-play-btn {
+      width: 244px;
+    }
+    /* Ensures the about page takes up 90% of the width on smaller screens */
+    .about-page {
+      width: 90%; /* Ensures full width for mobile */
+    }
+  
+    /* Styles the technology cards to be responsive and adds bottom margin */
+    .tech-card {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+    .footer {
+      font-size: 12px;
+    }
+    .dropzone {
+      width: 340px;
+    }
+  
+    .send-button {
+      width: 100%;
+    }
+  }
+  
+  /* Big Mobile Landscape */
   
   /* Applies styles for landscape-oriented mobile devices with max width 1000px,
-         max height 500px, and landscape orientation */
-         @media (max-width: 926px) and (max-height: 450px)  {
-          /* Hides the desktop navigation on smaller screens */
-          .desktop-nav-links {
-            display: none; /* Hides the desktop navigation on mobile */
-          }
-        
-          /* Styles the menu button similar to previous media queries */
-          .menu-button {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 30px;
-            cursor: pointer;
-            right: 10px; /* Positions the button 10px from the right edge */
-            top: 5x; /* Positions the button 10px from the top */
-          }
-        
-          /* Hides the navigation links initially and styles their position,
-                 width, background color, alignment, z-index, and transition */
-          .nav-links {
-            display: none; /* Hides the mobile navigation links initially */
-            position: absolute; /* Changes position to absolute */
-            top: 55px; /* Pushes the navigation links down by 55px */
-            left: 0; /* Aligns the navigation to the left */
-            width: 100%; /* Makes the navigation take up the full width */
-            background-color: #1a3d6c; /* Background color */
-            justify-content: center; /* Centers the navigation links */
-            z-index: 9; /* Ensure the navigation appears above other elements */
-            transition: transform 0.3s ease-in-out; /* Smooth transition */
-          }
-        
-          /* When nav-links has the class 'open', display as flex with column direction
-                 and apply a slide down animation */
-          .nav-links.open {
-            display: flex; /* Makes links visible */
-            flex-direction: column; /* Stacks links vertically */
-            animation: slideDown 0.1s forwards; /* Sliding down effect */
-          }
-        
-          /* Applies slide up animation when nav-links has the class 'close' */
-          .nav-links.close {
-            animation: slideUp 0.1s forwards; /* Sliding up effect */
-          }
-        
-          /* Styles the unordered list within nav-links by removing list styling,
-                 arranging items horizontally, adding gaps, and setting margins */
-          .nav-links ul {
-            list-style: none; /* Removes bullets */
-            padding: 0; /* Removes padding around the links */
-            margin: 0; /* Removes margin around the links */
-            display: flex; /* Arranges the links horizontally */
-            gap: 20px; /* Adds space between the links */
-            margin-left: auto;
-            margin-top: 30px; /* Adds 30px of space above the links */
-            margin-bottom: 20px; /* Adds 20px of space below the links */
-          }
-        
-          /* Styles individual list items within nav-links with vertical margins */
-          .nav-links ul li {
-            margin: 10px 0; /* Adds space between each link */
-          }
-        
-          /* Styles the anchor tags within nav-links list items */
-          .nav-links ul li a {
-            color: white; /* Makes the link text white */
-            text-decoration: none; /* Removes the underline from the links */
-            font-size: 18px; /* Sets the font size for the links */
-            padding: 10px 20px; /* Adds padding inside the links */
-            background-color: #4a5c79; /* Sets the background color */
-            border-radius: 15px; /* Rounds the corners */
-            transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
-          }
-        
-          /* Changes the background color of nav links on hover */
-          .nav-links ul li a:hover {
-            background-color: #3d4e66; /* Changes the background color on hover */
-          }
-        
-          /* Sets the width of the title card */
-          .title-card {
-            width: 200px; /* Sets the width of the logo */
-          }
-        
-          /* Defines the slideDown keyframes for animation */
-          @keyframes slideDown {
-            from {
-              opacity: 0; /* Start fully transparent */
-              transform: translateY(-20px); /* Start 20px above */
-            }
-            to {
-              opacity: 1; /* End fully opaque */
-              transform: translateY(0); /* Move to original position */
-            }
-          }
-        
-          /* Defines the slideUp keyframes for animation */
-          @keyframes slideUp {
-            from {
-              opacity: 1; /* Start fully opaque */
-              transform: translateY(0); /* Start at original position */
-            }
-            to {
-              opacity: 0; /* End fully transparent */
-              transform: translateY(-20px); /* Slide 20px up */
-            }
-          }
-        
-          /* Ensures all elements use border-box sizing */
-          * {
-            box-sizing: border-box;
-          }
-        
-          /* Sets the body background color to Plum */
-          body {
-            background-color: #dda0dd; /* Plum */
-          }
-        
-          /* Styles the main heading in the welcome section with reduced font size */
-          .welcome-section h1 {
-            font-size: 20px;
-          }
-        
-          /* Styles the paragraph in the welcome section with reduced font size */
-          .welcome-section p {
-            font-size: 12px;
-          }
-        
-          /* Adjusts the content container to use 90% of viewport width,
-                 adds right margin, and reduces font size */
-          .content-container {
-            width: 600px;
-            margin-left: auto;
-            font-size: 10px;
-          }
-
-          .thank-you-message{
-            font-size: 12px;
-          }
-        
-          /* Adjusts padding of instruction items */
-          .instruction-item {
-            padding: 5px;
-          }
-        
-          .instruction-separator {
-            margin-top: 20px;
-          }
-        
-          .try-it-btn {
-            font-size: 12px;
-            padding: 10px 20px;
-          }
-      
-          .Recent-bills-line{
-            width: 36%;
-          }
-      
-        
-          /* Reduces the size of image popup content */
-          .image-popup-content {
-            width: 550px;
-            height: 200px;
-          }
-        
-          .legislation-instruction {
-            width: 510px;
-            height: 150px;
-          }
-          
-          .text-instruction {
-            width: 510px;
-            height: 150px;
-          }
-          
-          .xml-instruction {
-            width: 510px;
-            height: 150px;
-          }
-          
-          .save-as-instruction {
-            width: 510px;
-            height: 150px;
-          }
-        
-           /* Adjusts the popup content size for smaller screens */
-           .popup-content {
-            width: 600px;
-            height: 220px; /* Limits the height */
-            overflow-y: auto;
-          }
-      
-        
-          /* Reduces the font size of headings within popups */
-          .popup-content h3 {
-            font-size: 10px;
-          }
-        
-          /* Adjusts the close button position and size within popups */
-          .close-popup {
-            right: 4px; /* Aligns it to the right */
-            font-size: 10px; /* Sets the font size */
-          }
-        
-           /* Adjusts the upload container size and padding for smaller screens */
-           .upload-container {
-            width: 580px;
-            height: 100px;
-            padding: 1px; /* Reduces padding */
-          }
-        
-          /* Adjusts the upload button size and padding for smaller screens */
-          .upload-btn {
-            font-size: 10px; /* Reduces button font size */
-            margin: 18px; /* Adds margin around the button */
-            padding: 10px 20px; /* Adds padding inside the button */
-            margin-right: 30px;
-          }
-        
-          /* Adjusts the upload dropzone size and margin for smaller screens */
-          .upload-dropzone {
-            width: 580px; /* Limits dropzone width */
-            height: 60px;
-            margin-left: -10px; /* Adds margin on the left */
-          }
-      
-          /* Adjusts the paragraph inside the dropzone */
-          .upload-dropzone p {
-            font-size: 12px; /* Reduces text size */
-          }
-        
-          /* Adjusts the font size of selected files display */
-          .file-selected {
-            font-size: 10px; /* Sets the font size */
-          }
-        
-          /* Adjusts the font size of the remove button */
-          .file-selected .remove-btn {
-            font-size: 12px; /* Sets the font size */
-          }
-        
-           /* Text Input */
-      .text-input {
-        margin-top: 2px;
-        font-size: 10px;
-        margin-left: -470px;
+           max height 500px, and landscape orientation */
+  @media (max-width: 926px) and (max-height: 450px) {
+    /* Hides the desktop navigation on smaller screens */
+    .desktop-nav-links {
+      display: none; /* Hides the desktop navigation on mobile */
+    }
+  
+    /* Styles the menu button similar to previous media queries */
+    .menu-button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 30px;
+      cursor: pointer;
+      right: 10px; /* Positions the button 10px from the right edge */
+      top: 5x; /* Positions the button 10px from the top */
+    }
+  
+    /* Hides the navigation links initially and styles their position,
+                   width, background color, alignment, z-index, and transition */
+    .nav-links {
+      display: none; /* Hides the mobile navigation links initially */
+      position: absolute; /* Changes position to absolute */
+      top: 55px; /* Pushes the navigation links down by 55px */
+      left: 0; /* Aligns the navigation to the left */
+      width: 100%; /* Makes the navigation take up the full width */
+      background-color: #1a3d6c; /* Background color */
+      justify-content: center; /* Centers the navigation links */
+      z-index: 9; /* Ensure the navigation appears above other elements */
+      transition: transform 0.3s ease-in-out; /* Smooth transition */
+    }
+  
+    /* When nav-links has the class 'open', display as flex with column direction
+                   and apply a slide down animation */
+    .nav-links.open {
+      display: flex; /* Makes links visible */
+      flex-direction: column; /* Stacks links vertically */
+      animation: slideDown 0.1s forwards; /* Sliding down effect */
+    }
+  
+    /* Applies slide up animation when nav-links has the class 'close' */
+    .nav-links.close {
+      animation: slideUp 0.1s forwards; /* Sliding up effect */
+    }
+  
+    /* Styles the unordered list within nav-links by removing list styling,
+                   arranging items horizontally, adding gaps, and setting margins */
+    .nav-links ul {
+      list-style: none; /* Removes bullets */
+      padding: 0; /* Removes padding around the links */
+      margin: 0; /* Removes margin around the links */
+      display: flex; /* Arranges the links horizontally */
+      gap: 20px; /* Adds space between the links */
+      margin-left: auto;
+      margin-top: 30px; /* Adds 30px of space above the links */
+      margin-bottom: 20px; /* Adds 20px of space below the links */
+    }
+  
+    /* Styles individual list items within nav-links with vertical margins */
+    .nav-links ul li {
+      margin: 10px 0; /* Adds space between each link */
+    }
+  
+    /* Styles the anchor tags within nav-links list items */
+    .nav-links ul li a {
+      color: white; /* Makes the link text white */
+      text-decoration: none; /* Removes the underline from the links */
+      font-size: 18px; /* Sets the font size for the links */
+      padding: 10px 20px; /* Adds padding inside the links */
+      background-color: #4a5c79; /* Sets the background color */
+      border-radius: 15px; /* Rounds the corners */
+      transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
+    }
+  
+    /* Changes the background color of nav links on hover */
+    .nav-links ul li a:hover {
+      background-color: #3d4e66; /* Changes the background color on hover */
+    }
+  
+    /* Sets the width of the title card */
+    .title-card {
+      width: 200px; /* Sets the width of the logo */
+    }
+  
+    /* Defines the slideDown keyframes for animation */
+    @keyframes slideDown {
+      from {
+        opacity: 0; /* Start fully transparent */
+        transform: translateY(-20px); /* Start 20px above */
       }
-      
-      /* Text Box */
-      .text-box {
-        width: 576px; /* Match the width of the upload box */
-        height: 40px; /* Set a fixed height */
-        font-size: 10px; /* Font size */
+      to {
+        opacity: 1; /* End fully opaque */
+        transform: translateY(0); /* Move to original position */
       }
-        
-          /* Adjusts the summary box size for smaller screens */
-          .summary-box {
-            height: 130px; /* Sets the height */
-            width: 569px; /* Sets the width */
-            font-size: 10px;
-          }
-        
-          /* Adjusts the width of summary buttons for smaller screens */
-          .download-btn,
-          .do-it-again-btn,
-          .pause-play-btn {
-            width: 210px;
-            font-size: 10px;
-          }
-        
-          .button-icon {
-            width: 22px; /* Sets the icon width */
-            height: 22px; /* Maintains aspect ratio */
-          }
-        
-          /* Ensures the about page takes up 90% of the width on smaller screens */
-          .about-page {
-            width: 90%; /* Ensures full width for mobile */
-          }
-        
-          /* Styles the technology cards to be responsive and adds bottom margin */
-          .tech-card {
-            width: 90%;
-            margin-bottom: 20px;
-          }
-        
-          .contact-page {
-            font-size: 12px;
-          }
-        }
-
-   /* Medium Tablet - Portrait */
+    }
+  
+    /* Defines the slideUp keyframes for animation */
+    @keyframes slideUp {
+      from {
+        opacity: 1; /* Start fully opaque */
+        transform: translateY(0); /* Start at original position */
+      }
+      to {
+        opacity: 0; /* End fully transparent */
+        transform: translateY(-20px); /* Slide 20px up */
+      }
+    }
+  
+    /* Ensures all elements use border-box sizing */
+    * {
+      box-sizing: border-box;
+    }
+  
+    /* Sets the body background color to Plum */
+    body {
+      background-color: #dda0dd; /* Plum */
+    }
+  
+    /* Styles the main heading in the welcome section with reduced font size */
+    .welcome-section h1 {
+      font-size: 20px;
+    }
+  
+    /* Styles the paragraph in the welcome section with reduced font size */
+    .welcome-section p {
+      font-size: 12px;
+    }
+  
+    /* Adjusts the content container to use 90% of viewport width,
+                   adds right margin, and reduces font size */
+    .content-container {
+      width: 600px;
+      margin-left: auto;
+      font-size: 10px;
+    }
+  
+    .thank-you-message {
+      font-size: 12px;
+    }
+  
+    /* Adjusts padding of instruction items */
+    .instruction-item {
+      padding: 5px;
+    }
+  
+    .instruction-separator {
+      margin-top: 20px;
+    }
+  
+    .try-it-btn {
+      font-size: 12px;
+      padding: 10px 20px;
+    }
+  
+    .Recent-bills-line {
+      width: 36%;
+    }
+  
+    /* Reduces the size of image popup content */
+    .image-popup-content {
+      width: 550px;
+      height: 200px;
+    }
+  
+    .legislation-instruction {
+      width: 510px;
+      height: 150px;
+    }
+  
+    .text-instruction {
+      width: 510px;
+      height: 150px;
+    }
+  
+    .xml-instruction {
+      width: 510px;
+      height: 150px;
+    }
+  
+    .save-as-instruction {
+      width: 510px;
+      height: 150px;
+    }
+  
+    /* Adjusts the popup content size for smaller screens */
+    .popup-content {
+      width: 600px;
+      height: 220px; /* Limits the height */
+      overflow-y: auto;
+    }
+  
+    /* Reduces the font size of headings within popups */
+    .popup-content h3 {
+      font-size: 10px;
+    }
+  
+    /* Adjusts the close button position and size within popups */
+    .close-popup {
+      right: 4px; /* Aligns it to the right */
+      font-size: 10px; /* Sets the font size */
+    }
+  
+    /* Adjusts the upload container size and padding for smaller screens */
+    .upload-container {
+      width: 580px;
+      height: 100px;
+      padding: 1px; /* Reduces padding */
+    }
+  
+    /* Adjusts the upload button size and padding for smaller screens */
+    .upload-btn {
+      font-size: 10px; /* Reduces button font size */
+      margin: 18px; /* Adds margin around the button */
+      padding: 10px 20px; /* Adds padding inside the button */
+      margin-right: 30px;
+    }
+  
+    /* Adjusts the upload dropzone size and margin for smaller screens */
+    .upload-dropzone {
+      width: 580px; /* Limits dropzone width */
+      height: 60px;
+      margin-left: -10px; /* Adds margin on the left */
+    }
+  
+    /* Adjusts the paragraph inside the dropzone */
+    .upload-dropzone p {
+      font-size: 12px; /* Reduces text size */
+    }
+  
+    /* Adjusts the font size of selected files display */
+    .file-selected {
+      font-size: 10px; /* Sets the font size */
+    }
+  
+    /* Adjusts the font size of the remove button */
+    .file-selected .remove-btn {
+      font-size: 12px; /* Sets the font size */
+    }
+  
+    /* Text Input */
+    .text-input {
+      margin-top: 2px;
+      font-size: 10px;
+      margin-left: -470px;
+    }
+  
+    /* Text Box */
+    .text-box {
+      width: 576px; /* Match the width of the upload box */
+      height: 40px; /* Set a fixed height */
+      font-size: 10px; /* Font size */
+    }
+  
+    /* Adjusts the summary box size for smaller screens */
+    .summary-box {
+      height: 130px; /* Sets the height */
+      width: 569px; /* Sets the width */
+      font-size: 10px;
+    }
+  
+    /* Adjusts the width of summary buttons for smaller screens */
+    .download-btn,
+    .do-it-again-btn,
+    .pause-play-btn {
+      width: 210px;
+      font-size: 10px;
+    }
+  
+    .button-icon {
+      width: 22px; /* Sets the icon width */
+      height: 22px; /* Maintains aspect ratio */
+    }
+  
+    /* Ensures the about page takes up 90% of the width on smaller screens */
+    .about-page {
+      width: 90%; /* Ensures full width for mobile */
+    }
+  
+    /* Styles the technology cards to be responsive and adds bottom margin */
+    .tech-card {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  
+    .contact-page {
+      font-size: 12px;
+    }
+  }
+  
+  /* Medium Tablet - Portrait */
   
   /* Applies styles for portrait-oriented tablets with max width 835px
-         and max height 1195px */
-         @media only screen and (max-width: 835px) and (max-height: 1290px) and (orientation: portrait) {
-          /* Hides the desktop navigation on smaller screens */
-          .full-screen-nav-links {
-            display: none; /* Hides the desktop navigation on mobile */
-          }
-        
-          /* Styles the menu button similar to previous media queries */
-          .menu-button {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 30px;
-            cursor: pointer;
-            right: 10px; /* Positions the button 10px from the right edge */
-            top: 5x; /* Positions the button 10px from the top */
-          }
-        
-          /* Hides the navigation links initially and styles their position,
-                 width, background color, alignment, z-index, and transition */
-          .nav-links {
-            display: none; /* Hides the mobile navigation links initially */
-            position: absolute; /* Changes position to absolute */
-            top: 55px; /* Pushes the navigation links down by 55px */
-            left: 0; /* Aligns the navigation to the left */
-            width: 100%; /* Makes the navigation take up the full width */
-            background-color: #1a3d6c; /* Background color */
-            justify-content: center; /* Centers the navigation links */
-            z-index: 9; /* Ensure the navigation appears above other elements */
-            transition: transform 0.3s ease-in-out; /* Smooth transition */
-          }
-        
-          /* When nav-links has the class 'open', display as flex with column direction
-                 and apply a slide down animation */
-          .nav-links.open {
-            display: flex; /* Makes links visible */
-            flex-direction: column; /* Stacks links vertically */
-            animation: slideDown 0.1s forwards; /* Sliding down effect */
-          }
-        
-          /* Applies slide up animation when nav-links has the class 'close' */
-          .nav-links.close {
-            animation: slideUp 0.1s forwards; /* Sliding up effect */
-          }
-        
-          /* Styles the unordered list within nav-links by removing list styling,
-                 arranging items horizontally, adding gaps, and setting margins */
-          .nav-links ul {
-            list-style: none; /* Removes bullets */
-            padding: 0; /* Removes padding around the links */
-            margin: 0; /* Removes margin around the links */
-            display: flex; /* Arranges the links horizontally */
-            gap: 20px; /* Adds space between the links */
-            margin-left: auto;
-            margin-top: 30px; /* Adds 30px of space above the links */
-            margin-bottom: 20px; /* Adds 20px of space below the links */
-          }
-        
-          /* Styles individual list items within nav-links with vertical margins */
-          .nav-links ul li {
-            margin: 10px 0; /* Adds space between each link */
-          }
-        
-          /* Styles the anchor tags within nav-links list items */
-          .nav-links ul li a {
-            color: white; /* Makes the link text white */
-            text-decoration: none; /* Removes the underline from the links */
-            font-size: 18px; /* Sets the font size for the links */
-            padding: 10px 20px; /* Adds padding inside the links */
-            background-color: #4a5c79; /* Sets the background color */
-            border-radius: 15px; /* Rounds the corners */
-            transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
-          }
-        
-          /* Changes the background color of nav links on hover */
-          .nav-links ul li a:hover {
-            background-color: #3d4e66; /* Changes the background color on hover */
-          }
-        
-          /* Sets the width of the title card */
-          .title-card {
-            width: 200px; /* Sets the width of the logo */
-          }
-        
-          /* Defines the slideDown keyframes for animation */
-          @keyframes slideDown {
-            from {
-              opacity: 0; /* Start fully transparent */
-              transform: translateY(-20px); /* Start 20px above */
-            }
-            to {
-              opacity: 1; /* End fully opaque */
-              transform: translateY(0); /* Move to original position */
-            }
-          }
-        
-          /* Defines the slideUp keyframes for animation */
-          @keyframes slideUp {
-            from {
-              opacity: 1; /* Start fully opaque */
-              transform: translateY(0); /* Start at original position */
-            }
-            to {
-              opacity: 0; /* End fully transparent */
-              transform: translateY(-20px); /* Slide 20px up */
-            }
-          }
-        
-          /* Ensures all elements use border-box sizing */
-          * {
-            box-sizing: border-box;
-          }
-        
-          /* Sets the body background color to Light Salmon */
-          body {
-            background-color: #ffa07a; /* Light Salmon */
-          }
-        
-          /* Styles the main heading in the welcome section with reduced font size */
-          .welcome-section h1 {
-            font-size: 22px;
-          }
-        
-          /* Styles the paragraph in the welcome section with reduced font size */
-          .welcome-section p {
-            font-size: 15px;
-          }
-        
-          /* Adjusts the content container to use 80% of viewport width
-                 and centers it */
-          .content-container {
-            width: 660px;
-            margin-left: auto;
-          }
-
-          .recent-bills {
-            display: flex;
-            flex-wrap: wrap; /* Allow items to wrap to the next line */
-            gap: 15px; /* Space between the cards */
-            justify-content: center; /* Center the cards */
-          }
-        
-          .bill-item {
-            max-width: 320px; /* Limit the max width of each card */
-            padding: 20px; /* Add space inside the card */
-          }
-        
-          .bill-item h4 {
-            font-size: 18px; /* Adjust title font size */
-            margin-bottom: 10px; /* Space below title */
-          }
-        
-          .bill-item p {
-            font-size: 14px; /* Adjust paragraph font size */
-            margin-bottom: 15px; /* Space below description */
-          }
-        
-          .Recent-bills-line {
-            width: 48%; /* Sets the width of the separator */
-          }
-        
-          /* Adds padding to instruction items */
-          .instruction-item {
-            padding: 5px;
-          }
-        
-          /* Sets the font size of paragraphs in specific instruction items */
-          .instruction-item-one p {
-            font-size: 14px;
-          }
-        
-          /* Sets the font size of paragraphs in specific instruction items */
-          .instruction-item-two-to-four p {
-            font-size: 14px;
-          }
-        
-          /* Sets the font size of paragraphs in specific instruction items */
-          .instruction-item-five p {
-            font-size: 14px;
-          }
-        
-          /* Reduces the size of image popup content */
-          .image-popup-content {
-            width: 740px;
-            height: 280px;
-          }
-        
-          .legislation-instruction {
-            width: 700px;
-            height: 220px;
-          }
-          
-          .text-instruction {
-            width: 700px;
-            height: 220px;
-          }
-          
-          .xml-instruction {
-            width: 700px;
-            height: 220px;
-          }
-          
-          .save-as-instruction {
-            width: 700px;
-            height: 220px;
-          }
-        
-          /* Adjusts the popup content size for smaller screens */
-          .popup-content {
-            width: 700px;
-            height: 580px; /* Limits the height */
-          }
-        
-          /* Reduces the font size of headings within popups */
-          .popup-content h3 {
-            font-size: 16px;
-          }
-        
-          /* Adjusts the close button position and size within popups */
-          .close-popup {
-            right: 4px; /* Aligns it to the right */
-            font-size: 10px; /* Sets the font size */
-          }
-        
-          /* Adjusts the upload container size and padding for smaller screens */
-          .upload-container {
-            width: 700px;
-            height: 550px;
-            padding: 1px; /* Reduces padding */
-            margin: auto; /* Centers the container */
-            font-size: 12px; /* Reduces font size */
-          }
-        
-          /* Adjusts the upload button size and padding for smaller screens */
-          .upload-btn {
-            font-size: 14px; /* Reduces button font size */
-            margin: 18px; /* Adds margin around the button */
-            margin-left: -15px;
-          }
-        
-          /* Adjusts the upload dropzone size and margin for smaller screens */
-          .upload-dropzone {
-            width: 650px; /* Limits dropzone width */
-            height: 80px;
-            margin-left: 3px; /* Adds margin on the left */
-          }
-        
-          /* Adjusts the paragraph inside the dropzone */
-          .upload-dropzone p {
-            font-size: 16px; /* Reduces text size */
-          }
-        
-          /* Adjusts the font size of selected files display */
-          .file-selected {
-            font-size: 16px; /* Sets the font size */
-          }
-        
-          /* Adjusts the font size of the remove button */
-          .file-selected .remove-btn {
-            font-size: 16px; /* Sets the font size */
-          }
-        
-           /* Text Input */
-           .text-input {
-            margin-left: -422px;
-          }
-          
-          /* Text Box */
-          .text-box {
-            width: 652px; /* Ensure it matches the width of its container */
-            height: 280px; /* Set a fixed height */
-          }
-        
-          /* Adjusts the summary box size for smaller screens */
-          .summary-box {
-            height: 470px; /* Sets the height */
-            width: 650px; /* Sets the width */
-          }
-        
-          /* Adjusts the width of summary buttons for smaller screens */
-          .download-btn,
-          .do-it-again-btn,
-          .pause-play-btn {
-            width: 210px;
-          }
-        
-          /* Ensures the about page takes up 90% of the width on smaller screens */
-          .about-page {
-            width: 90%; /* Ensures full width for mobile */
-          }
-        
-          /* Styles the technology cards to be responsive and adds bottom margin */
-          .tech-card {
-            width: 90%;
-            margin-bottom: 20px;
-          }
-        
-          .dropzone {
-            width: 340px;
-          }
-        }
-
-    /* Small Mobile Landscape */
-  
-  /* Applies styles for landscape-oriented mobile devices with max width 852px,
-         max height 435px, and landscape orientation */
-         @media (max-width: 840px) and (max-height: 380px) {
-          /* Hides the desktop navigation on smaller screens */
-          .desktop-nav-links {
-            display: none; /* Hides the desktop navigation on mobile */
-          }
-        
-          /* Styles the menu button similar to previous media queries */
-          .menu-button {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 30px;
-            cursor: pointer;
-            right: 10px; /* Positions the button 10px from the right edge */
-            top: 5x; /* Positions the button 10px from the top */
-          }
-        
-          /* Hides the navigation links initially and styles their position,
-                 width, background color, alignment, z-index, and transition */
-          .nav-links {
-            display: none; /* Hides the mobile navigation links initially */
-            position: absolute; /* Changes position to absolute */
-            top: 55px; /* Pushes the navigation links down by 55px */
-            left: 0; /* Aligns the navigation to the left */
-            width: 100%; /* Makes the navigation take up the full width */
-            background-color: #1a3d6c; /* Background color */
-            justify-content: center; /* Centers the navigation links */
-            z-index: 9; /* Ensure the navigation appears above other elements */
-            transition: transform 0.3s ease-in-out; /* Smooth transition */
-          }
-        
-          /* When nav-links has the class 'open', display as flex with column direction
-                 and apply a slide down animation */
-          .nav-links.open {
-            display: flex; /* Makes links visible */
-            flex-direction: column; /* Stacks links vertically */
-            animation: slideDown 0.1s forwards; /* Sliding down effect */
-          }
-        
-          /* Applies slide up animation when nav-links has the class 'close' */
-          .nav-links.close {
-            animation: slideUp 0.1s forwards; /* Sliding up effect */
-          }
-        
-          /* Styles the unordered list within nav-links by removing list styling,
-                 arranging items horizontally, adding gaps, and setting margins */
-          .nav-links ul {
-            list-style: none; /* Removes bullets */
-            padding: 0; /* Removes padding around the links */
-            margin: 0; /* Removes margin around the links */
-            display: flex; /* Arranges the links horizontally */
-            gap: 20px; /* Adds space between the links */
-            margin-left: auto;
-            margin-top: 30px; /* Adds 30px of space above the links */
-            margin-bottom: 20px; /* Adds 20px of space below the links */
-          }
-        
-          /* Styles individual list items within nav-links with vertical margins */
-          .nav-links ul li {
-            margin: 10px 0; /* Adds space between each link */
-          }
-        
-          /* Styles the anchor tags within nav-links list items */
-          .nav-links ul li a {
-            color: white; /* Makes the link text white */
-            text-decoration: none; /* Removes the underline from the links */
-            font-size: 18px; /* Sets the font size for the links */
-            padding: 10px 20px; /* Adds padding inside the links */
-            background-color: #4a5c79; /* Sets the background color */
-            border-radius: 15px; /* Rounds the corners */
-            transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
-          }
-        
-          /* Changes the background color of nav links on hover */
-          .nav-links ul li a:hover {
-            background-color: #3d4e66; /* Changes the background color on hover */
-          }
-        
-          /* Sets the width of the title card */
-          .title-card {
-            width: 200px; /* Sets the width of the logo */
-          }
-        
-          /* Defines the slideDown keyframes for animation */
-          @keyframes slideDown {
-            from {
-              opacity: 0; /* Start fully transparent */
-              transform: translateY(-20px); /* Start 20px above */
-            }
-            to {
-              opacity: 1; /* End fully opaque */
-              transform: translateY(0); /* Move to original position */
-            }
-          }
-        
-          /* Defines the slideUp keyframes for animation */
-          @keyframes slideUp {
-            from {
-              opacity: 1; /* Start fully opaque */
-              transform: translateY(0); /* Start at original position */
-            }
-            to {
-              opacity: 0; /* End fully transparent */
-              transform: translateY(-20px); /* Slide 20px up */
-            }
-          }
-        
-          /* Ensures all elements use border-box sizing */
-          * {
-            box-sizing: border-box;
-          }
-        
-          /* Sets the body background color to Green-Blue */
-          body {
-            background-color: #20B2AA; /* Green-Blue*/
-          }
-        
-          /* Styles the main heading in the welcome section with reduced font size */
-          .welcome-section h1 {
-            font-size: 20px;
-          }
-        
-          /* Styles the paragraph in the welcome section with reduced font size */
-          .welcome-section p {
-            font-size: 12px;
-          }
-        
-          /* Adjusts the content container to use 90% of viewport width,
-                 adds right margin, and reduces font size */
-          .content-container {
-            width: 98vw;
-            margin-left: 12px;
-            font-size: 10px;
-          }
-
-          .thank-you-message{
-            font-size: 12px;
-          }
-        
-          /* Adjusts padding of instruction items */
-          .instruction-item {
-            padding: 5px;
-          }
-        
-          .instruction-separator {
-            margin-top: 50px;
-          }
-        
-          .try-it-btn {
-            font-size: 12px;
-            padding: 10px 20px;
-          }
-      
-          .Recent-bills-line{
-            width: 42%;
-          }
-      
-        
-          /* Reduces the size of image popup content */
-          .image-popup-content {
-            width: 530px;
-            height: 200px;
-          }
-        
-          .legislation-instruction {
-            width: 490px;
-            height: 150px;
-          }
-          
-          .text-instruction {
-            width: 490px;
-            height: 150px;
-          }
-          
-          .xml-instruction {
-            width: 490px;
-            height: 140px;
-          }
-          
-          .save-as-instruction {
-            width: 480px;
-            height: 150px;
-          }
-        
-           /* Adjusts the popup content size for smaller screens */
-           .popup-content {
-            width: 400px;
-            height: 200px; /* Limits the height */
-            overflow-y: auto;
-          }
-      
-        
-          /* Reduces the font size of headings within popups */
-          .popup-content h3 {
-            font-size: 10px;
-          }
-        
-          /* Adjusts the close button position and size within popups */
-          .close-popup {
-            right: 4px; /* Aligns it to the right */
-            font-size: 10px; /* Sets the font size */
-          }
-        
-           /* Adjusts the upload container size and padding for smaller screens */
-           .upload-container {
-            width: 380px;
-            height: 100px;
-            padding: 1px; /* Reduces padding */
-          }
-        
-          /* Adjusts the upload button size and padding for smaller screens */
-          .upload-btn {
-            font-size: 10px; /* Reduces button font size */
-            margin: 18px; /* Adds margin around the button */
-            padding: 10px 20px; /* Adds padding inside the button */
-            margin-right: 30px;
-          }
-        
-          /* Adjusts the upload dropzone size and margin for smaller screens */
-          .upload-dropzone {
-            width: 370px; /* Limits dropzone width */
-            height: 60px;
-            margin-left: -10px; /* Adds margin on the left */
-          }
-      
-          /* Adjusts the paragraph inside the dropzone */
-          .upload-dropzone p {
-            font-size: 12px; /* Reduces text size */
-          }
-        
-          /* Adjusts the font size of selected files display */
-          .file-selected {
-            font-size: 10px; /* Sets the font size */
-          }
-        
-          /* Adjusts the font size of the remove button */
-          .file-selected .remove-btn {
-            font-size: 12px; /* Sets the font size */
-          }
-        
-           /* Text Input */
-      .text-input {
-        margin-top: 2px;
-        font-size: 10px;
-        margin-left: -576px;
-      }
-      
-      /* Text Box */
-      .text-box {
-        width: 368px; /* Match the width of the upload box */
-        height: 40px; /* Set a fixed height */
-        font-size: 10px; /* Font size */
-      }
-        
-          /* Adjusts the summary box size for smaller screens */
-          .summary-box {
-            height: 180px; /* Sets the height */
-            width: 368px; /* Sets the width */
-            font-size: 10px;
-          }
-        
-          /* Adjusts the width of summary buttons for smaller screens */
-          .download-btn,
-          .do-it-again-btn,
-          .pause-play-btn {
-            width: 210px;
-            padding: 5px 18px;
-            font-size: 10px;
-          }
-        
-          .button-icon {
-            width: 22px; /* Sets the icon width */
-            height: 22px; /* Maintains aspect ratio */
-          }
-        
-          /* Ensures the about page takes up 90% of the width on smaller screens */
-          .about-page {
-            width: 90%; /* Ensures full width for mobile */
-          }
-        
-          /* Styles the technology cards to be responsive and adds bottom margin */
-          .tech-card {
-            width: 90%;
-            margin-bottom: 20px;
-          }
-
-          .team-section{
-            width: 98%;
-            font-size: 10px;
-            margin-bottom: 20px;
-          }
-
-          .team-member{
-            height: 500px;
-          }
-        
-          .contact-page {
-            width: 98%;
-            font-size: 10px;
-          }
-
-          .dropzone{
-            width: 100%;
-          }
-        }
-  
-    /* Mini Tablet Portrait */
-  
-  /* Applies styles for portrait-oriented mini tablets with max width 768px,
-         max height 1024px, and portrait orientation */
-         @media only screen and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
-          /* Hides the desktop navigation on smaller screens */
-          .full-screen-nav-links {
-            display: none; /* Hides the desktop navigation on mobile */
-          }
-        
-          /* Styles the menu button similar to previous media queries */
-          .menu-button {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 30px;
-            cursor: pointer;
-            right: 10px; /* Positions the button 10px from the right edge */
-            top: 5x; /* Positions the button 10px from the top */
-          }
-        
-          /* Hides the navigation links initially and styles their position,
-                 width, background color, alignment, z-index, and transition */
-          .nav-links {
-            display: none; /* Hides the mobile navigation links initially */
-            position: absolute; /* Changes position to absolute */
-            top: 55px; /* Pushes the navigation links down by 55px */
-            left: 0; /* Aligns the navigation to the left */
-            width: 100%; /* Makes the navigation take up the full width */
-            background-color: #1a3d6c; /* Background color */
-            justify-content: center; /* Centers the navigation links */
-            z-index: 9; /* Ensure the navigation appears above other elements */
-            transition: transform 0.3s ease-in-out; /* Smooth transition */
-          }
-        
-          /* When nav-links has the class 'open', display as flex with column direction
-                 and apply a slide down animation */
-          .nav-links.open {
-            display: flex; /* Makes links visible */
-            flex-direction: column; /* Stacks links vertically */
-            animation: slideDown 0.1s forwards; /* Sliding down effect */
-          }
-        
-          /* Applies slide up animation when nav-links has the class 'close' */
-          .nav-links.close {
-            animation: slideUp 0.1s forwards; /* Sliding up effect */
-          }
-        
-          /* Styles the unordered list within nav-links by removing list styling,
-                 arranging items horizontally, adding gaps, and setting margins */
-          .nav-links ul {
-            list-style: none; /* Removes bullets */
-            padding: 0; /* Removes padding around the links */
-            margin: 0; /* Removes margin around the links */
-            display: flex; /* Arranges the links horizontally */
-            gap: 20px; /* Adds space between the links */
-            margin-left: auto;
-            margin-top: 30px; /* Adds 30px of space above the links */
-            margin-bottom: 20px; /* Adds 20px of space below the links */
-          }
-        
-          /* Styles individual list items within nav-links with vertical margins */
-          .nav-links ul li {
-            margin: 10px 0; /* Adds space between each link */
-          }
-        
-          /* Styles the anchor tags within nav-links list items */
-          .nav-links ul li a {
-            color: white; /* Makes the link text white */
-            text-decoration: none; /* Removes the underline from the links */
-            font-size: 18px; /* Sets the font size for the links */
-            padding: 10px 20px; /* Adds padding inside the links */
-            background-color: #4a5c79; /* Sets the background color */
-            border-radius: 15px; /* Rounds the corners */
-            transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
-          }
-        
-          /* Changes the background color of nav links on hover */
-          .nav-links ul li a:hover {
-            background-color: #3d4e66; /* Changes the background color on hover */
-          }
-        
-          /* Sets the width of the title card */
-          .title-card {
-            width: 200px; /* Sets the width of the logo */
-          }
-        
-          /* Defines the slideDown keyframes for animation */
-          @keyframes slideDown {
-            from {
-              opacity: 0; /* Start fully transparent */
-              transform: translateY(-20px); /* Start 20px above */
-            }
-            to {
-              opacity: 1; /* End fully opaque */
-              transform: translateY(0); /* Move to original position */
-            }
-          }
-        
-          /* Defines the slideUp keyframes for animation */
-          @keyframes slideUp {
-            from {
-              opacity: 1; /* Start fully opaque */
-              transform: translateY(0); /* Start at original position */
-            }
-            to {
-              opacity: 0; /* End fully transparent */
-              transform: translateY(-20px); /* Slide 20px up */
-            }
-          }
-        
-          /* Ensures all elements use border-box sizing */
-          * {
-            box-sizing: border-box;
-          }
-        
-          /* Sets the body background color to PowderBlue */
-          body {
-            background-color: #b0e0e6; /* PowderBlue */
-          }
-        
-          /* Styles the main heading in the welcome section with reduced font size */
-          .welcome-section h1 {
-            font-size: 20px;
-          }
-        
-          /* Styles the paragraph in the welcome section with reduced font size */
-          .welcome-section p {
-            font-size: 14px;
-          }
-        
-          /* Adjusts the content container to use 80% of viewport width
-                 and centers it */
-          .content-container {
-            width: 600px;
-            margin-left: 2px;
-          }
-        
-          /* Sets the font size of paragraphs in specific instruction items */
-          .instruction-item-one p {
-            font-size: 14px;
-          }
-        
-          /* Sets the font size of paragraphs in specific instruction items */
-          .instruction-item-two-to-four p {
-            font-size: 14px;
-          }
-        
-          .instruction-separator {
-            margin-top: 200px;
-          }
-          /* Sets the font size of paragraphs in specific instruction items */
-          .instruction-item-five p {
-            font-size: 14px;
-          }
-        
-          .recent-bills {
-            display: flex;
-            flex-wrap: wrap; /* Allow items to wrap to the next line */
-            gap: 15px; /* Space between the cards */
-            justify-content: center; /* Center the cards */
-          }
-        
-          .bill-item {
-            max-width: 290px; /* Limit the max width of each card */
-            padding: 15px; /* Add space inside the card */
-          }
-        
-          .bill-item h4 {
-            font-size: 18px; /* Adjust title font size */
-            margin-bottom: 10px; /* Space below title */
-          }
-        
-          .bill-item p {
-            font-size: 14px; /* Adjust paragraph font size */
-            margin-bottom: 15px; /* Space below description */
-          }
-
-          /* Reduces the size of image popup content */
-          .image-popup-content {
-            width: 650px;
-            height: 280px;
-          }
-        
-          .legislation-instruction {
-            width: 610px;
-            height: 220px;
-          }
-          
-          .text-instruction {
-            width: 610px;
-            height: 220px;
-          }
-          
-          .xml-instruction {
-            width: 610px;
-            height: 220px;
-          }
-          
-          .save-as-instruction {
-            width: 610px;
-            height: 220px;
-          }
-        
-          /* Adjusts the popup content size for smaller screens */
-          .popup-content {
-            width: 600px;
-            height: 700px; /* Limits the height */
-          }
-        
-          /* Reduces the font size of headings within popups */
-          .popup-content h3 {
-            font-size: 16px;
-          }
-        
-          /* Adjusts the close button position and size within popups */
-          .close-popup {
-            right: 4px; /* Aligns it to the right */
-            font-size: 10px; /* Sets the font size */
-          }
-        
-          /* Adjusts the upload container size and padding for smaller screens */
-          .upload-container {
-            width: 580px;
-            height: 700px;
-            padding: 10px; /* Reduces padding */
-          }
-        
-          /* Adjusts the upload button size and padding for smaller screens */
-          .upload-btn {
-            font-size: 15px; /* Reduces button font size */
-          }
-        
-          /* Adjusts the upload dropzone size and margin for smaller screens */
-          .upload-dropzone {
-            width: 550px;
-            margin-left: -7px; /* Adds margin on the left */
-          }
-        
-          /* Adjusts the paragraph inside the dropzone */
-          .upload-dropzone p {
-            font-size: 16px; /* Reduces text size */
-          }
-        
-          /* Adjusts the font size of selected files display */
-          .file-selected {
-            font-size: 16px; /* Sets the font size */
-          }
-        
-          /* Adjusts the font size of the remove button */
-          .file-selected .remove-btn {
-            font-size: 20px; /* Sets the font size */
-          }
-        
-             /* Text Input */
-      .text-input {
-        margin-left: -482px;
-      }
-      
-      /* Text Box */
-      .text-box {
-        width: 550px; /* Ensure it matches the width of its container */
-        height: 390px; /* Set a fixed height */
-        font-size: 14px; /* Font size */
-      }
-      
-        
-          /* Adjusts the summary box size for smaller screens */
-          .summary-box {
-            height: 570px; /* Sets the height */
-            width: 560px; /* Sets the width */
-          }
-        
-          .button-icon {
-            width: 26px; /* Sets the icon width */
-            height: 26px; /* Maintains aspect ratio */
-          }
-        
-          /* Adjusts the width of summary buttons for smaller screens */
-          .download-btn,
-          .do-it-again-btn,
-          .pause-play-btn {
-            width: 180px;
-          }
-        
-          /* Ensures the about page takes up 90% of the width on smaller screens */
-          .about-page {
-            width: 90%; /* Ensures full width for mobile */
-          }
-        
-          /* Styles the technology cards to be responsive and adds bottom margin */
-          .tech-card {
-            width: 90%;
-            margin-bottom: 20px;
-          }
-        
-          .sources-section {
-            margin-bottom: 50px;
-          }
-        
-          .dropzone {
-            width: 340px;
-          }
-        }
-        
-  /* Big Mobile Portrait */
-  
-  /* Applies styles for portrait-oriented big mobile devices with max width 490px,
-         max height 1000px, and portrait orientation */
-         @media (max-width: 660px) and (max-height: 926px) {
+           and max height 1195px */
+  @media only screen and (max-width: 835px) and (max-height: 1290px) and (orientation: portrait) {
     /* Hides the desktop navigation on smaller screens */
     .full-screen-nav-links {
       display: none; /* Hides the desktop navigation on mobile */
@@ -2895,7 +1971,7 @@
     }
   
     /* Hides the navigation links initially and styles their position,
-           width, background color, alignment, z-index, and transition */
+                   width, background color, alignment, z-index, and transition */
     .nav-links {
       display: none; /* Hides the mobile navigation links initially */
       position: absolute; /* Changes position to absolute */
@@ -2909,7 +1985,7 @@
     }
   
     /* When nav-links has the class 'open', display as flex with column direction
-           and apply a slide down animation */
+                   and apply a slide down animation */
     .nav-links.open {
       display: flex; /* Makes links visible */
       flex-direction: column; /* Stacks links vertically */
@@ -2922,7 +1998,924 @@
     }
   
     /* Styles the unordered list within nav-links by removing list styling,
-           arranging items horizontally, adding gaps, and setting margins */
+                   arranging items horizontally, adding gaps, and setting margins */
+    .nav-links ul {
+      list-style: none; /* Removes bullets */
+      padding: 0; /* Removes padding around the links */
+      margin: 0; /* Removes margin around the links */
+      display: flex; /* Arranges the links horizontally */
+      gap: 20px; /* Adds space between the links */
+      margin-left: auto;
+      margin-top: 30px; /* Adds 30px of space above the links */
+      margin-bottom: 20px; /* Adds 20px of space below the links */
+    }
+  
+    /* Styles individual list items within nav-links with vertical margins */
+    .nav-links ul li {
+      margin: 10px 0; /* Adds space between each link */
+    }
+  
+    /* Styles the anchor tags within nav-links list items */
+    .nav-links ul li a {
+      color: white; /* Makes the link text white */
+      text-decoration: none; /* Removes the underline from the links */
+      font-size: 18px; /* Sets the font size for the links */
+      padding: 10px 20px; /* Adds padding inside the links */
+      background-color: #4a5c79; /* Sets the background color */
+      border-radius: 15px; /* Rounds the corners */
+      transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
+    }
+  
+    /* Changes the background color of nav links on hover */
+    .nav-links ul li a:hover {
+      background-color: #3d4e66; /* Changes the background color on hover */
+    }
+  
+    /* Sets the width of the title card */
+    .title-card {
+      width: 200px; /* Sets the width of the logo */
+    }
+  
+    /* Defines the slideDown keyframes for animation */
+    @keyframes slideDown {
+      from {
+        opacity: 0; /* Start fully transparent */
+        transform: translateY(-20px); /* Start 20px above */
+      }
+      to {
+        opacity: 1; /* End fully opaque */
+        transform: translateY(0); /* Move to original position */
+      }
+    }
+  
+    /* Defines the slideUp keyframes for animation */
+    @keyframes slideUp {
+      from {
+        opacity: 1; /* Start fully opaque */
+        transform: translateY(0); /* Start at original position */
+      }
+      to {
+        opacity: 0; /* End fully transparent */
+        transform: translateY(-20px); /* Slide 20px up */
+      }
+    }
+  
+    /* Ensures all elements use border-box sizing */
+    * {
+      box-sizing: border-box;
+    }
+  
+    /* Sets the body background color to Light Salmon */
+    body {
+      background-color: #ffa07a; /* Light Salmon */
+    }
+  
+    /* Styles the main heading in the welcome section with reduced font size */
+    .welcome-section h1 {
+      font-size: 22px;
+    }
+  
+    /* Styles the paragraph in the welcome section with reduced font size */
+    .welcome-section p {
+      font-size: 15px;
+    }
+  
+    /* Adjusts the content container to use 80% of viewport width
+                   and centers it */
+    .content-container {
+      width: 660px;
+      margin-left: auto;
+    }
+  
+    .recent-bills {
+      display: flex;
+      flex-wrap: wrap; /* Allow items to wrap to the next line */
+      gap: 15px; /* Space between the cards */
+      justify-content: center; /* Center the cards */
+    }
+  
+    .bill-item {
+      max-width: 320px; /* Limit the max width of each card */
+      padding: 20px; /* Add space inside the card */
+    }
+  
+    .bill-item h4 {
+      font-size: 18px; /* Adjust title font size */
+      margin-bottom: 10px; /* Space below title */
+    }
+  
+    .bill-item p {
+      font-size: 14px; /* Adjust paragraph font size */
+      margin-bottom: 15px; /* Space below description */
+    }
+  
+    .Recent-bills-line {
+      width: 48%; /* Sets the width of the separator */
+    }
+  
+    /* Adds padding to instruction items */
+    .instruction-item {
+      padding: 5px;
+    }
+  
+    /* Sets the font size of paragraphs in specific instruction items */
+    .instruction-item-one p {
+      font-size: 14px;
+    }
+  
+    /* Sets the font size of paragraphs in specific instruction items */
+    .instruction-item-two-to-four p {
+      font-size: 14px;
+    }
+  
+    /* Sets the font size of paragraphs in specific instruction items */
+    .instruction-item-five p {
+      font-size: 14px;
+    }
+  
+    /* Reduces the size of image popup content */
+    .image-popup-content {
+      width: 740px;
+      height: 280px;
+    }
+  
+    .legislation-instruction {
+      width: 700px;
+      height: 220px;
+    }
+  
+    .text-instruction {
+      width: 700px;
+      height: 220px;
+    }
+  
+    .xml-instruction {
+      width: 700px;
+      height: 220px;
+    }
+  
+    .save-as-instruction {
+      width: 700px;
+      height: 220px;
+    }
+  
+    /* Adjusts the popup content size for smaller screens */
+    .popup-content {
+      width: 700px;
+      height: 580px; /* Limits the height */
+    }
+  
+    /* Reduces the font size of headings within popups */
+    .popup-content h3 {
+      font-size: 16px;
+    }
+  
+    /* Adjusts the close button position and size within popups */
+    .close-popup {
+      right: 4px; /* Aligns it to the right */
+      font-size: 10px; /* Sets the font size */
+    }
+  
+    /* Adjusts the upload container size and padding for smaller screens */
+    .upload-container {
+      width: 700px;
+      height: 550px;
+      padding: 1px; /* Reduces padding */
+      margin: auto; /* Centers the container */
+      font-size: 12px; /* Reduces font size */
+    }
+  
+    /* Adjusts the upload button size and padding for smaller screens */
+    .upload-btn {
+      font-size: 14px; /* Reduces button font size */
+      margin: 18px; /* Adds margin around the button */
+      margin-left: -15px;
+    }
+  
+    /* Adjusts the upload dropzone size and margin for smaller screens */
+    .upload-dropzone {
+      width: 650px; /* Limits dropzone width */
+      height: 80px;
+      margin-left: 3px; /* Adds margin on the left */
+    }
+  
+    /* Adjusts the paragraph inside the dropzone */
+    .upload-dropzone p {
+      font-size: 16px; /* Reduces text size */
+    }
+  
+    /* Adjusts the font size of selected files display */
+    .file-selected {
+      font-size: 16px; /* Sets the font size */
+    }
+  
+    /* Adjusts the font size of the remove button */
+    .file-selected .remove-btn {
+      font-size: 16px; /* Sets the font size */
+    }
+  
+    /* Text Input */
+    .text-input {
+      margin-left: -422px;
+    }
+  
+    /* Text Box */
+    .text-box {
+      width: 652px; /* Ensure it matches the width of its container */
+      height: 280px; /* Set a fixed height */
+    }
+  
+    /* Adjusts the summary box size for smaller screens */
+    .summary-box {
+      height: 470px; /* Sets the height */
+      width: 650px; /* Sets the width */
+    }
+  
+    /* Adjusts the width of summary buttons for smaller screens */
+    .download-btn,
+    .do-it-again-btn,
+    .pause-play-btn {
+      width: 210px;
+    }
+  
+    /* Ensures the about page takes up 90% of the width on smaller screens */
+    .about-page {
+      width: 90%; /* Ensures full width for mobile */
+    }
+  
+    /* Styles the technology cards to be responsive and adds bottom margin */
+    .tech-card {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  
+    .dropzone {
+      width: 340px;
+    }
+  }
+  
+  /* Small Mobile Landscape */
+  
+  /* Applies styles for landscape-oriented mobile devices with max width 852px,
+           max height 435px, and landscape orientation */
+  @media (max-width: 800px) and (max-height: 390px) {
+    /* Hides the desktop navigation on smaller screens */
+    .desktop-nav-links {
+      display: none; /* Hides the desktop navigation on mobile */
+    }
+  
+    /* Styles the menu button similar to previous media queries */
+    .menu-button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 30px;
+      cursor: pointer;
+      right: 10px; /* Positions the button 10px from the right edge */
+      top: 5x; /* Positions the button 10px from the top */
+    }
+  
+    /* Hides the navigation links initially and styles their position,
+                   width, background color, alignment, z-index, and transition */
+    .nav-links {
+      display: none; /* Hides the mobile navigation links initially */
+      position: absolute; /* Changes position to absolute */
+      top: 55px; /* Pushes the navigation links down by 55px */
+      left: 0; /* Aligns the navigation to the left */
+      width: 100%; /* Makes the navigation take up the full width */
+      background-color: #1a3d6c; /* Background color */
+      justify-content: center; /* Centers the navigation links */
+      z-index: 9; /* Ensure the navigation appears above other elements */
+      transition: transform 0.3s ease-in-out; /* Smooth transition */
+    }
+  
+    /* When nav-links has the class 'open', display as flex with column direction
+                   and apply a slide down animation */
+    .nav-links.open {
+      display: flex; /* Makes links visible */
+      flex-direction: column; /* Stacks links vertically */
+      animation: slideDown 0.1s forwards; /* Sliding down effect */
+    }
+  
+    /* Applies slide up animation when nav-links has the class 'close' */
+    .nav-links.close {
+      animation: slideUp 0.1s forwards; /* Sliding up effect */
+    }
+  
+    /* Styles the unordered list within nav-links by removing list styling,
+                   arranging items horizontally, adding gaps, and setting margins */
+    .nav-links ul {
+      list-style: none; /* Removes bullets */
+      padding: 0; /* Removes padding around the links */
+      margin: 0; /* Removes margin around the links */
+      display: flex; /* Arranges the links horizontally */
+      gap: 20px; /* Adds space between the links */
+      margin-left: auto;
+      margin-top: 30px; /* Adds 30px of space above the links */
+      margin-bottom: 20px; /* Adds 20px of space below the links */
+    }
+  
+    /* Styles individual list items within nav-links with vertical margins */
+    .nav-links ul li {
+      margin: 10px 0; /* Adds space between each link */
+    }
+  
+    /* Styles the anchor tags within nav-links list items */
+    .nav-links ul li a {
+      color: white; /* Makes the link text white */
+      text-decoration: none; /* Removes the underline from the links */
+      font-size: 18px; /* Sets the font size for the links */
+      padding: 10px 20px; /* Adds padding inside the links */
+      background-color: #4a5c79; /* Sets the background color */
+      border-radius: 15px; /* Rounds the corners */
+      transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
+    }
+  
+    /* Changes the background color of nav links on hover */
+    .nav-links ul li a:hover {
+      background-color: #3d4e66; /* Changes the background color on hover */
+    }
+  
+    /* Sets the width of the title card */
+    .title-card {
+      width: 200px; /* Sets the width of the logo */
+    }
+  
+    /* Defines the slideDown keyframes for animation */
+    @keyframes slideDown {
+      from {
+        opacity: 0; /* Start fully transparent */
+        transform: translateY(-20px); /* Start 20px above */
+      }
+      to {
+        opacity: 1; /* End fully opaque */
+        transform: translateY(0); /* Move to original position */
+      }
+    }
+  
+    /* Defines the slideUp keyframes for animation */
+    @keyframes slideUp {
+      from {
+        opacity: 1; /* Start fully opaque */
+        transform: translateY(0); /* Start at original position */
+      }
+      to {
+        opacity: 0; /* End fully transparent */
+        transform: translateY(-20px); /* Slide 20px up */
+      }
+    }
+  
+    /* Ensures all elements use border-box sizing */
+    * {
+      box-sizing: border-box;
+    }
+  
+    /* Sets the body background color to Green-Blue */
+    body {
+      background-color: #20b2aa; /* Green-Blue*/
+    }
+  
+    /* Styles the main heading in the welcome section with reduced font size */
+    .welcome-section h1 {
+      font-size: 20px;
+    }
+  
+    /* Styles the paragraph in the welcome section with reduced font size */
+    .welcome-section p {
+      font-size: 12px;
+    }
+  
+    /* Adjusts the content container to use 90% of viewport width,
+                   adds right margin, and reduces font size */
+    .content-container {
+      width: 98vw;
+      margin-left: 12px;
+      font-size: 10px;
+    }
+  
+    .thank-you-message {
+      font-size: 12px;
+    }
+  
+    /* Adjusts padding of instruction items */
+    .instruction-item {
+      padding: 5px;
+    }
+  
+    .instruction-separator {
+      margin-top: 50px;
+    }
+  
+    .try-it-btn {
+      font-size: 12px;
+      padding: 10px 20px;
+    }
+  
+    .Recent-bills-line {
+      width: 42%;
+    }
+  
+    /* Reduces the size of image popup content */
+    .image-popup-content {
+      width: 530px;
+      height: 200px;
+    }
+  
+    .legislation-instruction {
+      width: 490px;
+      height: 150px;
+    }
+  
+    .text-instruction {
+      width: 490px;
+      height: 150px;
+    }
+  
+    .xml-instruction {
+      width: 490px;
+      height: 140px;
+    }
+  
+    .save-as-instruction {
+      width: 480px;
+      height: 150px;
+    }
+  
+    /* Adjusts the popup content size for smaller screens */
+    .popup-content {
+      width: 400px;
+      height: 200px; /* Limits the height */
+      overflow-y: auto;
+    }
+  
+    /* Reduces the font size of headings within popups */
+    .popup-content h3 {
+      font-size: 10px;
+    }
+  
+    /* Adjusts the close button position and size within popups */
+    .close-popup {
+      right: 4px; /* Aligns it to the right */
+      font-size: 10px; /* Sets the font size */
+    }
+  
+    /* Adjusts the upload container size and padding for smaller screens */
+    .upload-container {
+      width: 380px;
+      height: 100px;
+      padding: 1px; /* Reduces padding */
+    }
+  
+    /* Adjusts the upload button size and padding for smaller screens */
+    .upload-btn {
+      font-size: 10px; /* Reduces button font size */
+      margin: 18px; /* Adds margin around the button */
+      padding: 10px 20px; /* Adds padding inside the button */
+      margin-right: 30px;
+    }
+  
+    /* Adjusts the upload dropzone size and margin for smaller screens */
+    .upload-dropzone {
+      width: 370px; /* Limits dropzone width */
+      height: 60px;
+      margin-left: -10px; /* Adds margin on the left */
+    }
+  
+    /* Adjusts the paragraph inside the dropzone */
+    .upload-dropzone p {
+      font-size: 12px; /* Reduces text size */
+    }
+  
+    /* Adjusts the font size of selected files display */
+    .file-selected {
+      font-size: 10px; /* Sets the font size */
+    }
+  
+    /* Adjusts the font size of the remove button */
+    .file-selected .remove-btn {
+      font-size: 12px; /* Sets the font size */
+    }
+  
+    /* Text Input */
+    .text-input {
+      margin-top: 2px;
+      font-size: 10px;
+      margin-left: -576px;
+    }
+  
+    /* Text Box */
+    .text-box {
+      width: 368px; /* Match the width of the upload box */
+      height: 40px; /* Set a fixed height */
+      font-size: 10px; /* Font size */
+    }
+  
+    /* Adjusts the summary box size for smaller screens */
+    .summary-box {
+      height: 180px; /* Sets the height */
+      width: 368px; /* Sets the width */
+      font-size: 10px;
+    }
+  
+    /* Adjusts the width of summary buttons for smaller screens */
+    .download-btn,
+    .do-it-again-btn,
+    .pause-play-btn {
+      width: 210px;
+      padding: 5px 18px;
+      font-size: 10px;
+    }
+  
+    .button-icon {
+      width: 22px; /* Sets the icon width */
+      height: 22px; /* Maintains aspect ratio */
+    }
+  
+    /* Ensures the about page takes up 90% of the width on smaller screens */
+    .about-page {
+      width: 90%; /* Ensures full width for mobile */
+    }
+  
+    /* Styles the technology cards to be responsive and adds bottom margin */
+    .tech-card {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  
+    .team-section {
+      width: 98%;
+      font-size: 10px;
+      margin-bottom: 20px;
+    }
+  
+    .team-member {
+      height: 500px;
+    }
+  
+    .contact-page {
+      width: 98%;
+      font-size: 10px;
+    }
+  
+    .dropzone {
+      width: 100%;
+    }
+  }
+  
+  /* Mini Tablet Portrait */
+  
+  /* Applies styles for portrait-oriented mini tablets with max width 768px,
+           max height 1024px, and portrait orientation */
+  @media only screen and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    /* Hides the desktop navigation on smaller screens */
+    .full-screen-nav-links {
+      display: none; /* Hides the desktop navigation on mobile */
+    }
+  
+    /* Styles the menu button similar to previous media queries */
+    .menu-button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 30px;
+      cursor: pointer;
+      right: 10px; /* Positions the button 10px from the right edge */
+      top: 5x; /* Positions the button 10px from the top */
+    }
+  
+    /* Hides the navigation links initially and styles their position,
+                   width, background color, alignment, z-index, and transition */
+    .nav-links {
+      display: none; /* Hides the mobile navigation links initially */
+      position: absolute; /* Changes position to absolute */
+      top: 55px; /* Pushes the navigation links down by 55px */
+      left: 0; /* Aligns the navigation to the left */
+      width: 100%; /* Makes the navigation take up the full width */
+      background-color: #1a3d6c; /* Background color */
+      justify-content: center; /* Centers the navigation links */
+      z-index: 9; /* Ensure the navigation appears above other elements */
+      transition: transform 0.3s ease-in-out; /* Smooth transition */
+    }
+  
+    /* When nav-links has the class 'open', display as flex with column direction
+                   and apply a slide down animation */
+    .nav-links.open {
+      display: flex; /* Makes links visible */
+      flex-direction: column; /* Stacks links vertically */
+      animation: slideDown 0.1s forwards; /* Sliding down effect */
+    }
+  
+    /* Applies slide up animation when nav-links has the class 'close' */
+    .nav-links.close {
+      animation: slideUp 0.1s forwards; /* Sliding up effect */
+    }
+  
+    /* Styles the unordered list within nav-links by removing list styling,
+                   arranging items horizontally, adding gaps, and setting margins */
+    .nav-links ul {
+      list-style: none; /* Removes bullets */
+      padding: 0; /* Removes padding around the links */
+      margin: 0; /* Removes margin around the links */
+      display: flex; /* Arranges the links horizontally */
+      gap: 20px; /* Adds space between the links */
+      margin-left: auto;
+      margin-top: 30px; /* Adds 30px of space above the links */
+      margin-bottom: 20px; /* Adds 20px of space below the links */
+    }
+  
+    /* Styles individual list items within nav-links with vertical margins */
+    .nav-links ul li {
+      margin: 10px 0; /* Adds space between each link */
+    }
+  
+    /* Styles the anchor tags within nav-links list items */
+    .nav-links ul li a {
+      color: white; /* Makes the link text white */
+      text-decoration: none; /* Removes the underline from the links */
+      font-size: 18px; /* Sets the font size for the links */
+      padding: 10px 20px; /* Adds padding inside the links */
+      background-color: #4a5c79; /* Sets the background color */
+      border-radius: 15px; /* Rounds the corners */
+      transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
+    }
+  
+    /* Changes the background color of nav links on hover */
+    .nav-links ul li a:hover {
+      background-color: #3d4e66; /* Changes the background color on hover */
+    }
+  
+    /* Sets the width of the title card */
+    .title-card {
+      width: 200px; /* Sets the width of the logo */
+    }
+  
+    /* Defines the slideDown keyframes for animation */
+    @keyframes slideDown {
+      from {
+        opacity: 0; /* Start fully transparent */
+        transform: translateY(-20px); /* Start 20px above */
+      }
+      to {
+        opacity: 1; /* End fully opaque */
+        transform: translateY(0); /* Move to original position */
+      }
+    }
+  
+    /* Defines the slideUp keyframes for animation */
+    @keyframes slideUp {
+      from {
+        opacity: 1; /* Start fully opaque */
+        transform: translateY(0); /* Start at original position */
+      }
+      to {
+        opacity: 0; /* End fully transparent */
+        transform: translateY(-20px); /* Slide 20px up */
+      }
+    }
+  
+    /* Ensures all elements use border-box sizing */
+    * {
+      box-sizing: border-box;
+    }
+  
+    /* Sets the body background color to PowderBlue */
+    body {
+      background-color: #b0e0e6; /* PowderBlue */
+    }
+  
+    /* Styles the main heading in the welcome section with reduced font size */
+    .welcome-section h1 {
+      font-size: 20px;
+    }
+  
+    /* Styles the paragraph in the welcome section with reduced font size */
+    .welcome-section p {
+      font-size: 14px;
+    }
+  
+    /* Adjusts the content container to use 80% of viewport width
+                   and centers it */
+    .content-container {
+      width: 600px;
+      margin-left: 2px;
+    }
+  
+    /* Sets the font size of paragraphs in specific instruction items */
+    .instruction-item-one p {
+      font-size: 14px;
+    }
+  
+    /* Sets the font size of paragraphs in specific instruction items */
+    .instruction-item-two-to-four p {
+      font-size: 14px;
+    }
+  
+    .instruction-separator {
+      margin-top: 200px;
+    }
+    /* Sets the font size of paragraphs in specific instruction items */
+    .instruction-item-five p {
+      font-size: 14px;
+    }
+  
+    .recent-bills {
+      display: flex;
+      flex-wrap: wrap; /* Allow items to wrap to the next line */
+      gap: 15px; /* Space between the cards */
+      justify-content: center; /* Center the cards */
+    }
+  
+    .bill-item {
+      max-width: 290px; /* Limit the max width of each card */
+      padding: 15px; /* Add space inside the card */
+    }
+  
+    .bill-item h4 {
+      font-size: 18px; /* Adjust title font size */
+      margin-bottom: 10px; /* Space below title */
+    }
+  
+    .bill-item p {
+      font-size: 14px; /* Adjust paragraph font size */
+      margin-bottom: 15px; /* Space below description */
+    }
+  
+    /* Reduces the size of image popup content */
+    .image-popup-content {
+      width: 650px;
+      height: 280px;
+    }
+  
+    .legislation-instruction {
+      width: 610px;
+      height: 220px;
+    }
+  
+    .text-instruction {
+      width: 610px;
+      height: 220px;
+    }
+  
+    .xml-instruction {
+      width: 610px;
+      height: 220px;
+    }
+  
+    .save-as-instruction {
+      width: 610px;
+      height: 220px;
+    }
+  
+    /* Adjusts the popup content size for smaller screens */
+    .popup-content {
+      width: 600px;
+      height: 700px; /* Limits the height */
+    }
+  
+    /* Reduces the font size of headings within popups */
+    .popup-content h3 {
+      font-size: 16px;
+    }
+  
+    /* Adjusts the close button position and size within popups */
+    .close-popup {
+      right: 4px; /* Aligns it to the right */
+      font-size: 10px; /* Sets the font size */
+    }
+  
+    /* Adjusts the upload container size and padding for smaller screens */
+    .upload-container {
+      width: 580px;
+      height: 700px;
+      padding: 10px; /* Reduces padding */
+    }
+  
+    /* Adjusts the upload button size and padding for smaller screens */
+    .upload-btn {
+      font-size: 15px; /* Reduces button font size */
+    }
+  
+    /* Adjusts the upload dropzone size and margin for smaller screens */
+    .upload-dropzone {
+      width: 550px;
+      margin-left: -7px; /* Adds margin on the left */
+    }
+  
+    /* Adjusts the paragraph inside the dropzone */
+    .upload-dropzone p {
+      font-size: 16px; /* Reduces text size */
+    }
+  
+    /* Adjusts the font size of selected files display */
+    .file-selected {
+      font-size: 16px; /* Sets the font size */
+    }
+  
+    /* Adjusts the font size of the remove button */
+    .file-selected .remove-btn {
+      font-size: 20px; /* Sets the font size */
+    }
+  
+    /* Text Input */
+    .text-input {
+      margin-left: -482px;
+    }
+  
+    /* Text Box */
+    .text-box {
+      width: 550px; /* Ensure it matches the width of its container */
+      height: 390px; /* Set a fixed height */
+      font-size: 14px; /* Font size */
+    }
+  
+    /* Adjusts the summary box size for smaller screens */
+    .summary-box {
+      height: 570px; /* Sets the height */
+      width: 560px; /* Sets the width */
+    }
+  
+    .button-icon {
+      width: 26px; /* Sets the icon width */
+      height: 26px; /* Maintains aspect ratio */
+    }
+  
+    /* Adjusts the width of summary buttons for smaller screens */
+    .download-btn,
+    .do-it-again-btn,
+    .pause-play-btn {
+      width: 180px;
+    }
+  
+    /* Ensures the about page takes up 90% of the width on smaller screens */
+    .about-page {
+      width: 90%; /* Ensures full width for mobile */
+    }
+  
+    /* Styles the technology cards to be responsive and adds bottom margin */
+    .tech-card {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  
+    .sources-section {
+      margin-bottom: 50px;
+    }
+  
+    .dropzone {
+      width: 340px;
+    }
+  }
+  
+  /* Big Mobile Portrait */
+  
+  /* Applies styles for portrait-oriented big mobile devices with max width 490px,
+           max height 1000px, and portrait orientation */
+  @media (max-width: 660px) and (max-height: 926px) {
+    /* Hides the desktop navigation on smaller screens */
+    .full-screen-nav-links {
+      display: none; /* Hides the desktop navigation on mobile */
+    }
+  
+    /* Styles the menu button similar to previous media queries */
+    .menu-button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 30px;
+      cursor: pointer;
+      right: 10px; /* Positions the button 10px from the right edge */
+      top: 5x; /* Positions the button 10px from the top */
+    }
+  
+    /* Hides the navigation links initially and styles their position,
+             width, background color, alignment, z-index, and transition */
+    .nav-links {
+      display: none; /* Hides the mobile navigation links initially */
+      position: absolute; /* Changes position to absolute */
+      top: 55px; /* Pushes the navigation links down by 55px */
+      left: 0; /* Aligns the navigation to the left */
+      width: 100%; /* Makes the navigation take up the full width */
+      background-color: #1a3d6c; /* Background color */
+      justify-content: center; /* Centers the navigation links */
+      z-index: 9; /* Ensure the navigation appears above other elements */
+      transition: transform 0.3s ease-in-out; /* Smooth transition */
+    }
+  
+    /* When nav-links has the class 'open', display as flex with column direction
+             and apply a slide down animation */
+    .nav-links.open {
+      display: flex; /* Makes links visible */
+      flex-direction: column; /* Stacks links vertically */
+      animation: slideDown 0.1s forwards; /* Sliding down effect */
+    }
+  
+    /* Applies slide up animation when nav-links has the class 'close' */
+    .nav-links.close {
+      animation: slideUp 0.1s forwards; /* Sliding up effect */
+    }
+  
+    /* Styles the unordered list within nav-links by removing list styling,
+             arranging items horizontally, adding gaps, and setting margins */
     .nav-links ul {
       list-style: none; /* Removes bullets */
       padding: 0; /* Removes padding around the links */
@@ -3006,19 +2999,19 @@
   
     .content-container {
       width: 370px;
-     margin-left: 20px;
-     font-size: 14px;
-   }
-
-   .thank-you-message{
-    font-size: 16px;
-   }
+      margin-left: 20px;
+      font-size: 14px;
+    }
   
-  .instruction-separator {
-    margin-top: 330px;
-  }
+    .thank-you-message {
+      font-size: 16px;
+    }
+  
+    .instruction-separator {
+      margin-top: 330px;
+    }
     .try-it-btn {
-    font-size: 14px;
+      font-size: 14px;
     }
   
     .recent-bills {
@@ -3042,34 +3035,34 @@
       font-size: 14px; /* Adjust paragraph font size */
       margin-bottom: 15px; /* Space below description */
     }
-
-    .Recent-bills-line{
+  
+    .Recent-bills-line {
       width: 80%;
     }
-  .image-popup-content {
-    width: 350px;
-    height: 200px;
-  }
+    .image-popup-content {
+      width: 350px;
+      height: 200px;
+    }
   
-  .legislation-instruction {
-    width: 310px;
-    height: 150px;
-  }
+    .legislation-instruction {
+      width: 310px;
+      height: 150px;
+    }
   
-  .text-instruction {
-    width: 310px;
-    height: 150px;
-  }
+    .text-instruction {
+      width: 310px;
+      height: 150px;
+    }
   
-  .xml-instruction {
-    width: 310px;
-    height: 150px;
-  }
+    .xml-instruction {
+      width: 310px;
+      height: 150px;
+    }
   
-  .save-as-instruction {
-    width: 310px;
-    height: 150px;
-  }
+    .save-as-instruction {
+      width: 310px;
+      height: 150px;
+    }
   
     .popup-content {
       width: 300px;
@@ -3079,10 +3072,10 @@
     .popup-content h3 {
       font-size: 14px;
     }
-    
-     .close-popup {
-    right: 4px; /* Aligns it to the right */
-    font-size: 10px;
+  
+    .close-popup {
+      right: 4px; /* Aligns it to the right */
+      font-size: 10px;
     }
   
     .upload-container {
@@ -3095,7 +3088,7 @@
       width: 250px; /* Limits dropzone width */
       height: 80px;
     }
-    
+  
     .upload-btn {
       font-size: 14px; /* Adjusts the font size */
       margin-left: 12px;
@@ -3113,12 +3106,12 @@
       font-size: 16px; /* Sets the font size */
     }
   
-        /* Text Input */
+    /* Text Input */
     .text-input {
       margin-top: 8px;
       margin-left: -634px;
     }
-    
+  
     /* Text Box */
     .text-box {
       width: 250px; /* Match the width of the upload box */
@@ -3135,7 +3128,7 @@
     .download-btn,
     .do-it-again-btn,
     .pause-play-btn {
-      width: 100px; 
+      width: 100px;
       font-size: 10px;
       margin-left: 5px;
     }
@@ -3145,21 +3138,21 @@
       margin-bottom: 350px;
     }
     .contact-form-container {
-      width: 380px; 
+      width: 380px;
       margin-left: -10px;
     }
   
     .contact-form input,
     .contact-form textarea {
-      width: 360px; 
+      width: 360px;
       margin-left: -12px;
     }
   
-    .dropzone{
+    .dropzone {
       width: 360px;
     }
   
-    .send-button{
+    .send-button {
       padding: 10px 20px; /* Adds padding */
       font-size: 16px; /* Increases the font size */
       width: 362px; /* Makes the button full width */
@@ -3176,7 +3169,7 @@
     /* Header and Titles */
   
     /* Styles the main headings in about, technologies, and team sections
-         with reduced font size and minimal bottom margin */
+           with reduced font size and minimal bottom margin */
     .about-company h1,
     .technologies h2,
     .meet-the-team h1 {
@@ -3185,7 +3178,7 @@
     }
   
     /* Styles the about description with reduced font size, padding,
-         word wrapping, text overflow, and maximum width */
+           word wrapping, text overflow, and maximum width */
     .about-description {
       font-size: 0.8rem; /* Reduces the font size */
       padding: 5px; /* Reduces padding */
@@ -3199,8 +3192,8 @@
       width: 100%;
       margin-bottom: 20px;
     }
-
-    .sources-section{
+  
+    .sources-section {
       margin-bottom: 100px;
     }
   
@@ -3219,7 +3212,7 @@
     }
   
     /* Styles the team member images with reduced size,
-         rounded corners, bottom margin, and shadow */
+           rounded corners, bottom margin, and shadow */
     .team-member img {
       width: 80px; /* Profile pic 80px */
       height: 80px; /* Profile pic 80px */
@@ -3235,7 +3228,7 @@
     .team-member p {
       font-size: 0.75rem; /* Sets the font size */
     }
-
+  
     .footer-content {
       display: flex;
       flex-direction: column; /* Stack items vertically */
@@ -3275,382 +3268,381 @@
     }
   }
   
-/* Small Mobile Portrait */
-
-@media (max-width: 390px) and (max-height: 780px){
-  .full-screen-nav-links {
-    display: none; /* Hides the desktop navigation on mobile */
-  }
-
-  .menu-button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-    right: 10px; /* Positions the button 10px from the right edge */
-    top: 5x; /* Positions the button 10px from the top */
-  }
-
-  .nav-links {
-    display: none; /* Hides the mobile navigation links initially */
-    position: absolute; /* Changes position to absolute */
-    top: 55px; /* Pushes the navigation links down by 55px */
-    left: 0; /* Aligns the navigation to the left */
-    width: 100%; /* Makes the navigation take up the full width */
-    background-color: #1a3d6c; /* Background color */
-    justify-content: center; /* Centers the navigation links */
-    z-index: 9; /* Ensure the navigation appears above other elements */
-    transition: transform 0.3s ease-in-out; /* Smooth transition */
-  }
-
-  /* Show navigation links when the menu is open */
-  .nav-links.open {
-    display: flex; /* Makes links visible */
-    flex-direction: column; /* Stacks links vertically */
-    animation: slideDown 0.1s forwards; /* Sliding down effect */
-  }
-
-  /* Close animation */
-  .nav-links.close {
-    animation: slideUp 0.1s forwards; /* Sliding up effect */
-  }
-
-  .nav-links ul {
-    list-style: none; /* Removes bullets */
-    padding: 0; /* Removes padding around the links */
-    margin: 0; /* Removes margin around the links */
-    display: flex; /* Arranges the links horizontally */
-    gap: 20px; /* Adds space between the links */
-    margin-left: auto;
-    margin-top: 30px; /* Adds 30px of space above the links */
-    margin-bottom: 20px; /* Adds 20px of space below the links */
-  }
-
-  .nav-links ul li {
-    margin: 10px 0; /* Adds space between each link */
-  }
-
-  .nav-links ul li a {
-    color: white; /* Makes the link text white */
-    text-decoration: none; /* Removes the underline from the links */
-    font-size: 12px; /* Sets the font size for the links */
-    padding: 8px; /* Adds padding inside the links */
-    background-color: #4a5c79; /* Sets the background color */
-    border-radius: 15px; /* Rounds the corners */
-    transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
-  }
-
-  .nav-links ul li a:hover {
-    background-color: #3d4e66; /* Changes the background color on hover */
-  }
-
-  .title-card {
-    width: 200px; /* Sets the width of the logo */
-  }
-
-  @keyframes slideDown {
-    from {
-      opacity: 0;
-      transform: translateY(-20px); /* Start 20px above */
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0); /* Move to original position */
-    }
-  }
-
-  @keyframes slideUp {
-    from {
-      opacity: 1;
-      transform: translateY(0); /* Start at original position */
-    }
-    to {
-      opacity: 0;
-      transform: translateY(-20px); /* Slide 20px up */
-    }
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-
-  body {
-    background-color: pink; /*Pink */
-  }
-
-  /* Welcome Section */
-  .welcome-section h1 {
-    font-size: 18px;
-  }
-
-  /* Welcome Section */
-  .welcome-section p {
-    font-size: 10px;
-  }
- 
- .content-container {
-  width: 330px;
-   font-size: 10px;
-   margin-left: 20px;
- }
+  /* Small Mobile Portrait */
   
- .thank-you-message{
-  font-size: 12px;
- }
-  .instructions-section {
-   font-size: 10px;
-  }
+  @media (max-width: 390px) and (max-height: 780px) {
+    .full-screen-nav-links {
+      display: none; /* Hides the desktop navigation on mobile */
+    }
   
-    .instructions-section h3{
-   font-size: 10px;
-  }
-
-.instruction-item-one p {
-	font-size: 10px;
-}
-
-.website-link a{
-	font-size: 10px;
-}
-
-.instruction-item {
-    padding: 5px;
-	font-size: 10px;
-}
-
-.instruction-item-two-to-four p{
-font-size: 10px;
-}
-
-.instruction-separator {
-  margin-top: 200px;
-}
-
-.instruction-item-five p{
-	font-size: 10px;
-}
-
-  .try-it-btn {
-	margin-bottom: 90px;
-	font-size: 10px;
-  }
-
-  .recent-bills {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    gap: 15px; /* Space between the cards */
-    justify-content: center; /* Center the cards */
-  }
-
-  .bill-item {
-    max-width: 330px; /* Limit the max width of each card */
-    padding: 15px; /* Add space inside the card */
-  }
-
-  .bill-item h4 {
-    font-size: 12px; /* Adjust title font size */
-    margin-bottom: 10px; /* Space below title */
-  }
-
-  .bill-item p {
-    font-size: 10px; /* Adjust paragraph font size */
-    margin-bottom: 15px; /* Space below description */
-  }
-
-
-  .Recent-bills-line{
-    width: 58%;
-  }
-.footer{
-font-size: 10px;
-}
-
-.footer-content {
-  padding: 0 3px;
-}
-
-.google-logo img {
-  width: 25px;
-}
-
-.footer-social a img {
-  width: 15px;
-  height: 15px;
-}
-
-.image-popup-content {
-  width: 300px;
-  height: 200px;
-}
-
-.legislation-instruction {
-  width: 260px;
-  height: 150px;
-}
-
-.text-instruction {
-  width: 260px;
-  height: 150px;
-}
-
-.xml-instruction {
-  width: 260px;
-  height: 150px;
-}
-
-.save-as-instruction {
-  width: 260px;
-  height: 150px;
-}
-
-  .popup-content {
-    width: 260px;
-	height: 450px;
-  }
-
-  .popup-content h3 {
-    font-size: 14px;
-  }
+    .menu-button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 30px;
+      cursor: pointer;
+      right: 10px; /* Positions the button 10px from the right edge */
+      top: 5x; /* Positions the button 10px from the top */
+    }
   
-   .close-popup {
-	right: 4px; /* Aligns it to the right */
-	font-size: 10px;
-  }
-
-  .upload-container {
-    width: 220px; /* Adjusts the container width */
-    padding: 20px; /* Reduces padding for smaller screens */
-  }
-
-  .upload-dropzone {
-    width: 224px; /* Limits dropzone width */
-    height: 80px;
-    margin-left: -20px; /* Adds margin on the left */
-  }
+    .nav-links {
+      display: none; /* Hides the mobile navigation links initially */
+      position: absolute; /* Changes position to absolute */
+      top: 55px; /* Pushes the navigation links down by 55px */
+      left: 0; /* Aligns the navigation to the left */
+      width: 100%; /* Makes the navigation take up the full width */
+      background-color: #1a3d6c; /* Background color */
+      justify-content: center; /* Centers the navigation links */
+      z-index: 9; /* Ensure the navigation appears above other elements */
+      transition: transform 0.3s ease-in-out; /* Smooth transition */
+    }
   
-  .upload-btn {
-    font-size: 11px; /* Adjusts the font size */
-    margin-left: 12px;
-  }
-
-  .upload-dropzone p {
-    font-size: 14px; /* Slightly reduces text size */
-  }
-
-  .file-selected {
-    font-size: 10px; /* Sets the font size */
-  }
-
-  .file-selected .remove-btn {
-    font-size: 16px; /* Sets the font size */
-  }
-
+    /* Show navigation links when the menu is open */
+    .nav-links.open {
+      display: flex; /* Makes links visible */
+      flex-direction: column; /* Stacks links vertically */
+      animation: slideDown 0.1s forwards; /* Sliding down effect */
+    }
+  
+    /* Close animation */
+    .nav-links.close {
+      animation: slideUp 0.1s forwards; /* Sliding up effect */
+    }
+  
+    .nav-links ul {
+      list-style: none; /* Removes bullets */
+      padding: 0; /* Removes padding around the links */
+      margin: 0; /* Removes margin around the links */
+      display: flex; /* Arranges the links horizontally */
+      gap: 20px; /* Adds space between the links */
+      margin-left: auto;
+      margin-top: 30px; /* Adds 30px of space above the links */
+      margin-bottom: 20px; /* Adds 20px of space below the links */
+    }
+  
+    .nav-links ul li {
+      margin: 10px 0; /* Adds space between each link */
+    }
+  
+    .nav-links ul li a {
+      color: white; /* Makes the link text white */
+      text-decoration: none; /* Removes the underline from the links */
+      font-size: 12px; /* Sets the font size for the links */
+      padding: 8px; /* Adds padding inside the links */
+      background-color: #4a5c79; /* Sets the background color */
+      border-radius: 15px; /* Rounds the corners */
+      transition: background-color 0.3s ease; /* Smooth transitions for hover effect */
+    }
+  
+    .nav-links ul li a:hover {
+      background-color: #3d4e66; /* Changes the background color on hover */
+    }
+  
+    .title-card {
+      width: 200px; /* Sets the width of the logo */
+    }
+  
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px); /* Start 20px above */
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0); /* Move to original position */
+      }
+    }
+  
+    @keyframes slideUp {
+      from {
+        opacity: 1;
+        transform: translateY(0); /* Start at original position */
+      }
+      to {
+        opacity: 0;
+        transform: translateY(-20px); /* Slide 20px up */
+      }
+    }
+  
+    * {
+      box-sizing: border-box;
+    }
+  
+    body {
+      background-color: pink; /*Pink */
+    }
+  
+    /* Welcome Section */
+    .welcome-section h1 {
+      font-size: 18px;
+    }
+  
+    /* Welcome Section */
+    .welcome-section p {
+      font-size: 10px;
+    }
+  
+    .content-container {
+      width: 330px;
+      font-size: 10px;
+      margin-left: 20px;
+    }
+  
+    .thank-you-message {
+      font-size: 12px;
+    }
+    .instructions-section {
+      font-size: 10px;
+    }
+  
+    .instructions-section h3 {
+      font-size: 10px;
+    }
+  
+    .instruction-item-one p {
+      font-size: 10px;
+    }
+  
+    .website-link a {
+      font-size: 10px;
+    }
+  
+    .instruction-item {
+      padding: 5px;
+      font-size: 10px;
+    }
+  
+    .instruction-item-two-to-four p {
+      font-size: 10px;
+    }
+  
+    .instruction-separator {
+      margin-top: 200px;
+    }
+  
+    .instruction-item-five p {
+      font-size: 10px;
+    }
+  
+    .try-it-btn {
+      margin-bottom: 90px;
+      font-size: 10px;
+    }
+  
+    .recent-bills {
+      display: flex;
+      flex-wrap: wrap; /* Allow items to wrap to the next line */
+      gap: 15px; /* Space between the cards */
+      justify-content: center; /* Center the cards */
+    }
+  
+    .bill-item {
+      max-width: 330px; /* Limit the max width of each card */
+      padding: 15px; /* Add space inside the card */
+    }
+  
+    .bill-item h4 {
+      font-size: 12px; /* Adjust title font size */
+      margin-bottom: 10px; /* Space below title */
+    }
+  
+    .bill-item p {
+      font-size: 10px; /* Adjust paragraph font size */
+      margin-bottom: 15px; /* Space below description */
+    }
+  
+    .Recent-bills-line {
+      width: 58%;
+    }
+    .footer {
+      font-size: 10px;
+    }
+  
+    .footer-content {
+      padding: 0 3px;
+    }
+  
+    .google-logo img {
+      width: 25px;
+    }
+  
+    .footer-social a img {
+      width: 15px;
+      height: 15px;
+    }
+  
+    .image-popup-content {
+      width: 300px;
+      height: 200px;
+    }
+  
+    .legislation-instruction {
+      width: 260px;
+      height: 150px;
+    }
+  
+    .text-instruction {
+      width: 260px;
+      height: 150px;
+    }
+  
+    .xml-instruction {
+      width: 260px;
+      height: 150px;
+    }
+  
+    .save-as-instruction {
+      width: 260px;
+      height: 150px;
+    }
+  
+    .popup-content {
+      width: 260px;
+      height: 450px;
+    }
+  
+    .popup-content h3 {
+      font-size: 14px;
+    }
+  
+    .close-popup {
+      right: 4px; /* Aligns it to the right */
+      font-size: 10px;
+    }
+  
+    .upload-container {
+      width: 220px; /* Adjusts the container width */
+      padding: 20px; /* Reduces padding for smaller screens */
+    }
+  
+    .upload-dropzone {
+      width: 224px; /* Limits dropzone width */
+      height: 80px;
+      margin-left: -20px; /* Adds margin on the left */
+    }
+  
+    .upload-btn {
+      font-size: 11px; /* Adjusts the font size */
+      margin-left: 12px;
+    }
+  
+    .upload-dropzone p {
+      font-size: 14px; /* Slightly reduces text size */
+    }
+  
+    .file-selected {
+      font-size: 10px; /* Sets the font size */
+    }
+  
+    .file-selected .remove-btn {
+      font-size: 16px; /* Sets the font size */
+    }
+  
     /* Text Input */
-  .text-input {
-    margin-top: 8px;
-    margin-left: -658px;
+    .text-input {
+      margin-top: 8px;
+      margin-left: -658px;
+    }
+  
+    /* Text Box */
+    .text-box {
+      width: 220px; /* Match the width of the upload box */
+      height: 120px; /* Set a fixed height */
+      font-size: 10px; /* Font size */
+    }
+  
+    .summary-box {
+      width: 220px;
+      height: 290px;
+      font-size: 14px;
+    }
+  
+    .download-btn,
+    .do-it-again-btn,
+    .pause-play-btn {
+      width: 100%; /* Full width buttons */
+      padding: 10px;
+      font-size: 10px;
+      margin-left: auto;
+    }
+  
+    .contact-page {
+      width: 300px;
+      margin-bottom: 300px;
+    }
+    .contact-form-container {
+      width: 260px; /* Sets a max width */
+      margin-left: 1px;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      width: 98%; /* Full width inputs */
+      margin-left: -5px;
+    }
+  
+    .dropzone {
+      width: 245px;
+    }
+  
+    .send-button {
+      padding: 10px 20px; /* Adds padding */
+      font-size: 16px; /* Increases the font size */
+      width: 248px; /* Makes the button full width */
+      margin-top: 10px; /* Adds space above the button */
+      margin-left: -3px;
+    }
+  
+    .about-page {
+      padding: 30px 10px; /* Adds padding */
+      width: 95%; /* Ensures full width for mobile */
+    }
+  
+    /* Header and Titles */
+    .about-company h1,
+    .technologies h2,
+    .meet-the-team h1 {
+      font-size: 1.2rem; /* Further reduces title font size */
+      margin-bottom: 15px; /* Minimal space below titles */
+    }
+  
+    .about-description {
+      font-size: 0.8rem; /* Reduces the font size */
+      padding: 5px; /* Reduces padding */
+      word-wrap: break-word; /* Ensures long words wrap */
+      text-overflow: ellipsis; /* Adds ellipsis for overflow */
+      max-width: 100%; /* Ensures the content stays within the viewport */
+    }
+  
+    .tech-card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    /* Team Member Section */
+  
+    .team-section {
+      margin-left: 8px;
+      width: 200px;
+      margin-bottom: 180px;
+    }
+  
+    .team-member {
+      height: 350px;
+    }
+  
+    .team-member img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 8px;
+    }
+  
+    .team-member h4 {
+      font-size: 0.75rem;
+    }
+  
+    .team-member p {
+      font-size: 0.75rem;
+    }
   }
-
-  /* Text Box */
-  .text-box {
-    width: 220px; /* Match the width of the upload box */
-    height: 120px; /* Set a fixed height */
-    font-size: 10px; /* Font size */
-  }
-
-
-  .summary-box {
-    width: 220px;
-    height: 290px;
-    font-size: 14px;
-  }
-
-  .download-btn,
-  .do-it-again-btn,
-  .pause-play-btn {
-    width: 100%; /* Full width buttons */
-	padding: 10px;
-    font-size: 10px;
-    margin-left: auto;
-  }
-
-  .contact-page {
-	width: 300px;
-    margin-bottom: 300px;
-  }
-  .contact-form-container {
-    width: 260px; /* Sets a max width */
-    margin-left: 1px;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    width: 98%; /* Full width inputs */
-    margin-left: -5px;
-  }
-
-  .dropzone{
-    width: 245px;
-  }
-
-  .send-button {
-    padding: 10px 20px; /* Adds padding */
-    font-size: 16px; /* Increases the font size */
-    width: 248px; /* Makes the button full width */
-    margin-top: 10px; /* Adds space above the button */
-	margin-left: -3px;
-  }
-
-  .about-page {
-    padding: 30px 10px; /* Adds padding */
-    width: 95%; /* Ensures full width for mobile */
-  }
-
-  /* Header and Titles */
-  .about-company h1,
-  .technologies h2,
-  .meet-the-team h1 {
-    font-size: 1.2rem; /* Further reduces title font size */
-    margin-bottom: 15px; /* Minimal space below titles */
-  }
-
-  .about-description {
-    font-size: 0.8rem; /* Reduces the font size */
-    padding: 5px; /* Reduces padding */
-    word-wrap: break-word; /* Ensures long words wrap */
-    text-overflow: ellipsis; /* Adds ellipsis for overflow */
-    max-width: 100%; /* Ensures the content stays within the viewport */
-  }
-
-  .tech-card {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  /* Team Member Section */
-
-  .team-section {
-    margin-left: 8px;
-    width: 200px;
-    margin-bottom: 180px;
-  }
-
-  .team-member {
-    height: 350px;
-  }
-
-  .team-member img {
-    width: 80px; 
-    height: 80px;
-    margin-bottom: 8px;
-  }
-
-  .team-member h4 {
-    font-size: 0.75rem;
-  }
-
-  .team-member p {
-    font-size: 0.75rem;
-  }
-}
+  
