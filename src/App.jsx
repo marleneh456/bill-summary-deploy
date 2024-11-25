@@ -170,7 +170,7 @@ function App() {
                   <div className="instruction-item"> {/* Instruction step 5 */}
                     <div className="instruction-item-five">
                       <p>
-                      <span className="number-bold"> 5. </span> Once the document has been saved, upload your document by clicking the <span className="highlight-quote">“Try it Yourself”</span> button below and following the instructions.
+                      <span className="number-bold"> 5. </span> Once the document has been saved, upload your document or copy the contents and paste in the text box by clicking the <span className="highlight-quote">“Try it Yourself”</span> button below and following the instructions.
                       </p> {/* Step 5 instruction */}
                       <button className="try-it-btn" onClick={toggleUploadPopup}>
                         Try It Yourself! {/* Button to open the upload popup */}
