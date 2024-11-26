@@ -2388,8 +2388,8 @@
     /* Adjusts the content container to use 90% of viewport width,
                    adds right margin, and reduces font size */
     .content-container {
-      width: 98vw;
-      margin-left: 12px;
+      width: 610px;
+      margin-left: auto;
       font-size: 10px;
     }
   
@@ -2471,7 +2471,7 @@
       font-size: 10px; /* Reduces button font size */
       margin: 18px; /* Adds margin around the button */
       padding: 10px 20px; /* Adds padding inside the button */
-      margin-right: 30px;
+      margin-left: -10px;
     }
   
     /* Adjusts the upload dropzone size and margin for smaller screens */
@@ -2513,7 +2513,7 @@
     /* Adjusts the summary box size for smaller screens */
     .summary-box {
       height: 180px; /* Sets the height */
-      width: 368px; /* Sets the width */
+      width: 360px; /* Sets the width */
       font-size: 10px;
     }
   
@@ -2521,8 +2521,8 @@
     .download-btn,
     .do-it-again-btn,
     .pause-play-btn {
-      width: 210px;
-      padding: 5px 18px;
+      width: 200px;
+      padding: 5px 20px;
       font-size: 10px;
     }
   
