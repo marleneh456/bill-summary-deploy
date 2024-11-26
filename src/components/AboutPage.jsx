@@ -60,19 +60,32 @@ function AboutPage() {
           We utilized a preexisting Large Language Model (LLM) that we
           customized, through a process called fine-tuning, to be able to
           summarize federal bills, acts, and amendments. The LLM we used is
-          Google’s Text-to-Text Transfer Transformer (T5) small model. This
-          model was trained by Google to be able to perform many Natural
+          Google’s{" "}
+          <a href="https://huggingface.co/google-t5/t5-small" target="_blank">
+            Text-to-Text Transfer Transformer (T5) small model
+          </a>
+          . This model was trained by Google to be able to perform many Natural
           Language Processing (NLP) tasks to include but not limited to text
           classification, question answering, and text summarization. We utilize
           the summarization task for our service.
         </p>
         <p>
           To fine-tune the model, we utilized data from the United States
-          Federal Government’s Bulk Data Website to pull legislation from the
-          113th Congress through the 118th Congress. This website offers bills,
-          acts, and amendments with their complementary summaries. We finished
-          training the T5-small model with these bills, acts, and amendments
-          with their complementary summaries to achieve our finished AI model
+          Federal Government’s{" "}
+          <a href="https://www.govinfo.gov/bulkdata/" target="_blank">
+            Bulk Data Website
+          </a>{" "}
+          to pull legislation from the 113th Congress through the 118th
+          Congress. This website offers bills, acts, and amendments with their
+          complementary summaries. We finished training the T5-small model with
+          these bills, acts, and amendments with their complementary summaries
+          to achieve our{" "}
+          <a
+            href="https://huggingface.co/cheaptrix/TokenizerTestingMTSUFall2024SoftwareEngineering"
+            target="_blank"
+          >
+            finished AI model
+          </a>{" "}
           that can summarize legislation with a high level of accuracy. It is
           hard to pinpoint a percentage of how accurate the model is due to
           limitations in comparison methods, currently. However, below are a few
@@ -80,7 +93,12 @@ function AboutPage() {
           the government’s bulk data website.
         </p>
 
-        <h2>Comparing AI-generated vs. official federal summaries:</h2>
+        <h2>Comparing AI-generated vs. Official Federal Summaries:</h2>
+        <h4 class="subheading">
+          Below are a few examples of how our AI generated summaries look
+          compared to the official government summaries for the same legislation
+        </h4>
+
         <div className="summary-comparison">
           <div className="comparison-item">
             <h4>Protecting Veterans Credit Act of 2018</h4>
@@ -141,6 +159,10 @@ function AboutPage() {
               paid by the employer in a calendar quarter. The amount of
               qualified expenses eligible for the credit is limited to $2,500
               per employee in any calendar quarter.
+              <p>
+                *This is an example of apotential error that may be present in
+                your summary.
+              </p>
             </p>
           </div>
         </div>
@@ -170,7 +192,7 @@ function AboutPage() {
           <p>
             Our AI model’s code and evaluation statistics can be found in our{" "}
             <a
-              href="https://huggingface.co/MTSUFall2024SoftwareEngineering/UnitedStatesSenateBillsSummarys"
+              href="https://huggingface.co/cheaptrix/TokenizerTestingMTSUFall2024SoftwareEngineering"
               target="_blank"
             >
               Hugging Face
